@@ -1,0 +1,33 @@
+#Timing report of worst 1 path(s)
+# Unit scale: 1e-09 seconds
+# Output precision: 3
+
+#Path 1
+Startpoint: b.inpad[0] (.input clocked by virtual_io_clock)
+Endpoint  : out:c.outpad[0] (.output clocked by virtual_io_clock)
+Path Type : setup
+
+Point                                                             Incr      Path
+--------------------------------------------------------------------------------
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+input external delay                                             0.000     0.000
+b.inpad[0] (.input)                                              0.000     0.000
+c.in[1] (.names)                                                 0.326     0.326
+c.out[0] (.names)                                                0.261     0.587
+out:c.outpad[0] (.output)                                        0.227     0.814
+data arrival time                                                          0.814
+
+clock virtual_io_clock (rise edge)                               0.000     0.000
+clock source latency                                             0.000     0.000
+clock uncertainty                                                0.000     0.000
+output external delay                                            0.000     0.000
+data required time                                                         0.000
+--------------------------------------------------------------------------------
+data required time                                                         0.000
+data arrival time                                                         -0.814
+--------------------------------------------------------------------------------
+slack (VIOLATED)                                                          -0.814
+
+
+#End of timing report
