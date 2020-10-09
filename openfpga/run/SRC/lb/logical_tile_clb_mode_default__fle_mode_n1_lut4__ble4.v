@@ -10,7 +10,7 @@
 
 // ----- BEGIN Physical programmable logic block Verilog module: ble4 -----
 // ----- Verilog module for logical_tile_clb_mode_default__fle_mode_n1_lut4__ble4 -----
-module logical_tile_clb_mode_default__fle_mode_n1_lut4__ble4(set,
+module ltile_clb_n1_lut4__ble4(set,
                                                              reset,
                                                              clk,
                                                              ble4_in,

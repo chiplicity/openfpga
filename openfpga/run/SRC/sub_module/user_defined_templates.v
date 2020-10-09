@@ -25,7 +25,6 @@ input [0:0] CK;
 input [0:0] D;
 //----- OUTPUT PORTS -----
 output [0:0] Q;
-
 //----- BEGIN wire-connection ports -----
 //----- END wire-connection ports -----
 

@@ -1,0 +1,1496 @@
+* NGSPICE file created from cby_1__1_.ext - technology: EFS8A
+
+* Black-box entry subcircuit for scs8hd_decap_12 abstract view
+.subckt scs8hd_decap_12 vgnd vpwr
+.ends
+
+* Black-box entry subcircuit for scs8hd_fill_2 abstract view
+.subckt scs8hd_fill_2 vpwr vgnd
+.ends
+
+* Black-box entry subcircuit for scs8hd_decap_8 abstract view
+.subckt scs8hd_decap_8 vgnd vpwr
+.ends
+
+* Black-box entry subcircuit for scs8hd_diode_2 abstract view
+.subckt scs8hd_diode_2 DIODE vgnd vpwr
+.ends
+
+* Black-box entry subcircuit for scs8hd_buf_2 abstract view
+.subckt scs8hd_buf_2 A X vgnd vpwr
+.ends
+
+* Black-box entry subcircuit for scs8hd_ebufn_2 abstract view
+.subckt scs8hd_ebufn_2 A TEB Z vgnd vpwr
+.ends
+
+* Black-box entry subcircuit for scs8hd_decap_3 abstract view
+.subckt scs8hd_decap_3 vgnd vpwr
+.ends
+
+* Black-box entry subcircuit for scs8hd_decap_4 abstract view
+.subckt scs8hd_decap_4 vgnd vpwr
+.ends
+
+* Black-box entry subcircuit for scs8hd_nor4_4 abstract view
+.subckt scs8hd_nor4_4 A B C D Y vgnd vpwr
+.ends
+
+* Black-box entry subcircuit for scs8hd_lpflow_inputisolatch_1 abstract view
+.subckt scs8hd_lpflow_inputisolatch_1 D Q SLEEPB vgnd vpwr
+.ends
+
+* Black-box entry subcircuit for scs8hd_decap_6 abstract view
+.subckt scs8hd_decap_6 vgnd vpwr
+.ends
+
+* Black-box entry subcircuit for scs8hd_tapvpwrvgnd_1 abstract view
+.subckt scs8hd_tapvpwrvgnd_1 vgnd vpwr
+.ends
+
+* Black-box entry subcircuit for scs8hd_inv_1 abstract view
+.subckt scs8hd_inv_1 A Y vgnd vpwr
+.ends
+
+* Black-box entry subcircuit for scs8hd_conb_1 abstract view
+.subckt scs8hd_conb_1 HI LO vgnd vpwr
+.ends
+
+* Black-box entry subcircuit for scs8hd_inv_8 abstract view
+.subckt scs8hd_inv_8 A Y vgnd vpwr
+.ends
+
+* Black-box entry subcircuit for scs8hd_fill_1 abstract view
+.subckt scs8hd_fill_1 vgnd vpwr
+.ends
+
+* Black-box entry subcircuit for scs8hd_or4_4 abstract view
+.subckt scs8hd_or4_4 A B C D X vgnd vpwr
+.ends
+
+* Black-box entry subcircuit for scs8hd_nor2_4 abstract view
+.subckt scs8hd_nor2_4 A B Y vgnd vpwr
+.ends
+
+* Black-box entry subcircuit for scs8hd_or2_4 abstract view
+.subckt scs8hd_or2_4 A B X vgnd vpwr
+.ends
+
+.subckt cby_1__1_ address[0] address[1] address[2] address[3] address[4] address[5]
++ chany_bottom_in[0] chany_bottom_in[1] chany_bottom_in[2] chany_bottom_in[3] chany_bottom_in[4]
++ chany_bottom_in[5] chany_bottom_in[6] chany_bottom_in[7] chany_bottom_in[8] chany_bottom_out[0]
++ chany_bottom_out[1] chany_bottom_out[2] chany_bottom_out[3] chany_bottom_out[4]
++ chany_bottom_out[5] chany_bottom_out[6] chany_bottom_out[7] chany_bottom_out[8]
++ chany_top_in[0] chany_top_in[1] chany_top_in[2] chany_top_in[3] chany_top_in[4]
++ chany_top_in[5] chany_top_in[6] chany_top_in[7] chany_top_in[8] chany_top_out[0]
++ chany_top_out[1] chany_top_out[2] chany_top_out[3] chany_top_out[4] chany_top_out[5]
++ chany_top_out[6] chany_top_out[7] chany_top_out[8] data_in enable left_grid_pin_1_
++ left_grid_pin_5_ left_grid_pin_9_ right_grid_pin_3_ right_grid_pin_7_ vpwr vgnd
+XFILLER_22_199 vgnd vpwr scs8hd_decap_12
+XFILLER_22_166 vgnd vpwr scs8hd_decap_12
+XFILLER_3_23 vpwr vgnd scs8hd_fill_2
+XFILLER_27_203 vgnd vpwr scs8hd_decap_8
+XFILLER_12_32 vpwr vgnd scs8hd_fill_2
+XFILLER_6_107 vpwr vgnd scs8hd_fill_2
+XANTENNA_mem_left_ipin_0.LATCH_1_.latch_SLEEPB _42_/Y vgnd vpwr scs8hd_diode_2
+XANTENNA_mux_left_ipin_0.mux_l2_in_0_.TGATE_0_.scs8hd_ebufn_2_TEB mem_left_ipin_0.LATCH_3_.latch/Q
++ vgnd vpwr scs8hd_diode_2
+X_66_ chany_top_in[6] chany_bottom_out[6] vgnd vpwr scs8hd_buf_2
+Xmux_right_ipin_0.mux_l1_in_0_.TGATE_2_.scs8hd_ebufn_2 mux_right_ipin_0.INVTX1_2_.scs8hd_inv_1/Y
++ mem_right_ipin_0.LATCH_2_.latch/Q mux_right_ipin_0.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2/Z
++ vgnd vpwr scs8hd_ebufn_2
+XFILLER_5_184 vgnd vpwr scs8hd_decap_12
+XFILLER_23_86 vgnd vpwr scs8hd_decap_12
+XANTENNA_mux_right_ipin_1.mux_l2_in_0_.TGATE_1_.scs8hd_ebufn_2_TEB _32_/Y vgnd vpwr
++ scs8hd_diode_2
+XFILLER_21_209 vgnd vpwr scs8hd_decap_3
+XFILLER_9_77 vgnd vpwr scs8hd_decap_4
+XFILLER_2_121 vpwr vgnd scs8hd_fill_2
+X_49_ address[1] address[2] _52_/A _46_/D _49_/Y vgnd vpwr scs8hd_nor4_4
+XFILLER_29_74 vgnd vpwr scs8hd_decap_12
+XFILLER_20_32 vgnd vpwr scs8hd_decap_12
+Xmem_right_ipin_2.LATCH_1_.latch data_in _34_/A _57_/Y vgnd vpwr scs8hd_lpflow_inputisolatch_1
+XFILLER_13_3 vgnd vpwr scs8hd_decap_3
+XFILLER_6_23 vpwr vgnd scs8hd_fill_2
+XFILLER_15_98 vpwr vgnd scs8hd_fill_2
+XFILLER_1_208 vgnd vpwr scs8hd_decap_4
+XFILLER_31_156 vgnd vpwr scs8hd_decap_12
+XFILLER_31_75 vgnd vpwr scs8hd_decap_12
+XFILLER_22_178 vgnd vpwr scs8hd_decap_12
+XANTENNA_mux_left_ipin_0.mux_l1_in_1_.TGATE_0_.scs8hd_ebufn_2_A mux_left_ipin_0.INVTX1_3_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_diode_2
+XFILLER_13_156 vgnd vpwr scs8hd_decap_12
+XFILLER_13_123 vpwr vgnd scs8hd_fill_2
+XFILLER_13_101 vpwr vgnd scs8hd_fill_2
+XFILLER_9_127 vpwr vgnd scs8hd_fill_2
+XFILLER_3_57 vpwr vgnd scs8hd_fill_2
+XFILLER_12_55 vpwr vgnd scs8hd_fill_2
+XFILLER_10_104 vpwr vgnd scs8hd_fill_2
+X_65_ chany_top_in[7] chany_bottom_out[7] vgnd vpwr scs8hd_buf_2
+XFILLER_5_196 vgnd vpwr scs8hd_decap_12
+XFILLER_23_98 vgnd vpwr scs8hd_decap_12
+XFILLER_9_34 vgnd vpwr scs8hd_decap_4
+XFILLER_0_58 vpwr vgnd scs8hd_fill_2
+XFILLER_20_210 vpwr vgnd scs8hd_fill_2
+X_48_ _40_/A address[2] address[0] _46_/D _48_/Y vgnd vpwr scs8hd_nor4_4
+XFILLER_18_32 vgnd vpwr scs8hd_decap_12
+Xmux_left_ipin_1.mux_l2_in_0_.TGATE_0_.scs8hd_ebufn_2 mux_left_ipin_1.mux_l1_in_0_.TGATE_1_.scs8hd_ebufn_2/Z
++ _30_/A mux_left_ipin_1.tap_buf4_0_.scs8hd_inv_1/A vgnd vpwr scs8hd_ebufn_2
+XANTENNA_mem_right_ipin_0.LATCH_5_.latch_D data_in vgnd vpwr scs8hd_diode_2
+XFILLER_15_7 vpwr vgnd scs8hd_fill_2
+XANTENNA_mux_left_ipin_1.mux_l2_in_0_.TGATE_0_.scs8hd_ebufn_2_A mux_left_ipin_1.mux_l1_in_0_.TGATE_1_.scs8hd_ebufn_2/Z
++ vgnd vpwr scs8hd_diode_2
+XANTENNA_mem_right_ipin_2.LATCH_1_.latch_D data_in vgnd vpwr scs8hd_diode_2
+XFILLER_29_86 vgnd vpwr scs8hd_decap_12
+XFILLER_29_53 vpwr vgnd scs8hd_fill_2
+XFILLER_20_44 vgnd vpwr scs8hd_decap_12
+XFILLER_1_90 vpwr vgnd scs8hd_fill_2
+XANTENNA_mux_right_ipin_0.INVTX1_2_.scs8hd_inv_1_A chany_bottom_in[2] vgnd vpwr scs8hd_diode_2
+XFILLER_19_184 vgnd vpwr scs8hd_decap_12
+XFILLER_6_79 vpwr vgnd scs8hd_fill_2
+XFILLER_25_110 vgnd vpwr scs8hd_decap_12
+XFILLER_15_22 vpwr vgnd scs8hd_fill_2
+XFILLER_15_11 vgnd vpwr scs8hd_decap_4
+XFILLER_31_168 vgnd vpwr scs8hd_decap_12
+XFILLER_31_87 vgnd vpwr scs8hd_decap_6
+XFILLER_31_32 vgnd vpwr scs8hd_decap_12
+XPHY_160 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XFILLER_16_154 vgnd vpwr scs8hd_decap_12
+XFILLER_30_190 vgnd vpwr scs8hd_decap_12
+XFILLER_26_32 vgnd vpwr scs8hd_decap_12
+XFILLER_13_168 vgnd vpwr scs8hd_decap_12
+XANTENNA_mem_left_ipin_0.LATCH_2_.latch_D data_in vgnd vpwr scs8hd_diode_2
+XANTENNA_mem_left_ipin_1.LATCH_0_.latch_D data_in vgnd vpwr scs8hd_diode_2
+XFILLER_12_190 vgnd vpwr scs8hd_decap_12
+X_81_ chany_bottom_in[0] chany_top_out[0] vgnd vpwr scs8hd_buf_2
+XFILLER_3_36 vpwr vgnd scs8hd_fill_2
+XFILLER_12_23 vpwr vgnd scs8hd_fill_2
+X_64_ chany_top_in[8] chany_bottom_out[8] vgnd vpwr scs8hd_buf_2
+XFILLER_15_208 vgnd vpwr scs8hd_decap_4
+XANTENNA_mux_right_ipin_0.tap_buf4_0_.scs8hd_inv_1_A mux_right_ipin_0.tap_buf4_0_.scs8hd_inv_1/A
++ vgnd vpwr scs8hd_diode_2
+XFILLER_4_90 vpwr vgnd scs8hd_fill_2
+XFILLER_9_13 vpwr vgnd scs8hd_fill_2
+XFILLER_3_3 vgnd vpwr scs8hd_decap_4
+XFILLER_9_57 vpwr vgnd scs8hd_fill_2
+X_47_ _40_/A address[2] _52_/A _46_/D _47_/Y vgnd vpwr scs8hd_nor4_4
+XFILLER_18_44 vgnd vpwr scs8hd_decap_12
+Xmux_left_ipin_1.tap_buf4_0_.scs8hd_inv_1 mux_left_ipin_1.tap_buf4_0_.scs8hd_inv_1/A
++ right_grid_pin_7_ vgnd vpwr scs8hd_inv_1
+XANTENNA_mux_right_ipin_2.INVTX1_0_.scs8hd_inv_1_A chany_bottom_in[4] vgnd vpwr scs8hd_diode_2
+Xmux_right_ipin_0.INVTX1_2_.scs8hd_inv_1 chany_bottom_in[2] mux_right_ipin_0.INVTX1_2_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_inv_1
+XFILLER_20_56 vgnd vpwr scs8hd_decap_12
+XFILLER_29_98 vgnd vpwr scs8hd_decap_12
+XFILLER_28_141 vgnd vpwr scs8hd_decap_12
+XFILLER_19_196 vgnd vpwr scs8hd_decap_12
+XFILLER_31_44 vgnd vpwr scs8hd_decap_12
+XFILLER_16_166 vgnd vpwr scs8hd_decap_12
+Xmux_left_ipin_0.INVTX1_1_.scs8hd_inv_1 chany_top_in[0] mux_left_ipin_0.INVTX1_1_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_inv_1
+XANTENNA_mem_right_ipin_1.LATCH_0_.latch_SLEEPB _56_/Y vgnd vpwr scs8hd_diode_2
+XFILLER_31_125 vgnd vpwr scs8hd_decap_12
+XPHY_161 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_150 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XFILLER_26_44 vgnd vpwr scs8hd_decap_12
+XFILLER_13_114 vpwr vgnd scs8hd_fill_2
+XFILLER_9_118 vpwr vgnd scs8hd_fill_2
+X_80_ chany_bottom_in[1] chany_top_out[1] vgnd vpwr scs8hd_buf_2
+XANTENNA_mux_left_ipin_0.mux_l1_in_0_.TGATE_1_.scs8hd_ebufn_2_TEB mem_left_ipin_0.LATCH_1_.latch/Q
++ vgnd vpwr scs8hd_diode_2
+XFILLER_8_151 vpwr vgnd scs8hd_fill_2
+Xmem_right_ipin_0.LATCH_4_.latch data_in mem_right_ipin_0.LATCH_4_.latch/Q _46_/Y
++ vgnd vpwr scs8hd_lpflow_inputisolatch_1
+XFILLER_12_68 vpwr vgnd scs8hd_fill_2
+Xmux_left_ipin_0.mux_l2_in_0_.TGATE_0_.scs8hd_ebufn_2 mux_left_ipin_0.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2/Z
++ mem_left_ipin_0.LATCH_3_.latch/Q mux_left_ipin_0.tap_buf4_0_.scs8hd_inv_1/A vgnd
++ vpwr scs8hd_ebufn_2
+XFILLER_5_132 vpwr vgnd scs8hd_fill_2
+XFILLER_5_143 vpwr vgnd scs8hd_fill_2
+X_63_ _63_/HI _63_/LO vgnd vpwr scs8hd_conb_1
+XANTENNA_mux_right_ipin_0.mux_l1_in_0_.TGATE_2_.scs8hd_ebufn_2_A mux_right_ipin_0.INVTX1_2_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_diode_2
+XFILLER_0_27 vpwr vgnd scs8hd_fill_2
+XFILLER_2_157 vgnd vpwr scs8hd_decap_12
+XFILLER_29_3 vgnd vpwr scs8hd_decap_12
+X_46_ address[1] _39_/B address[0] _46_/D _46_/Y vgnd vpwr scs8hd_nor4_4
+XFILLER_18_56 vgnd vpwr scs8hd_decap_12
+X_29_ enable _29_/Y vgnd vpwr scs8hd_inv_8
+XFILLER_20_68 vgnd vpwr scs8hd_decap_12
+XANTENNA_mux_right_ipin_0.mux_l2_in_0_.TGATE_0_.scs8hd_ebufn_2_A mux_right_ipin_0.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2/Z
++ vgnd vpwr scs8hd_diode_2
+XFILLER_6_37 vpwr vgnd scs8hd_fill_2
+Xmem_right_ipin_1.LATCH_0_.latch data_in _33_/A _56_/Y vgnd vpwr scs8hd_lpflow_inputisolatch_1
+XFILLER_31_56 vgnd vpwr scs8hd_decap_6
+XFILLER_25_123 vgnd vpwr scs8hd_decap_12
+XFILLER_15_57 vpwr vgnd scs8hd_fill_2
+XFILLER_0_211 vgnd vpwr scs8hd_fill_1
+XFILLER_31_137 vgnd vpwr scs8hd_decap_12
+XPHY_162 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_151 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_140 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XFILLER_16_178 vgnd vpwr scs8hd_decap_12
+Xmux_left_ipin_0.mux_l1_in_1_.TGATE_1_.scs8hd_ebufn_2 mux_left_ipin_0.INVTX1_4_.scs8hd_inv_1/Y
++ mem_left_ipin_0.LATCH_1_.latch/Q mux_left_ipin_0.mux_l1_in_1_.TGATE_0_.scs8hd_ebufn_2/Z
++ vgnd vpwr scs8hd_ebufn_2
+XFILLER_11_3 vpwr vgnd scs8hd_fill_2
+XFILLER_26_56 vgnd vpwr scs8hd_decap_12
+XFILLER_7_91 vpwr vgnd scs8hd_fill_2
+XFILLER_21_192 vgnd vpwr scs8hd_decap_3
+XANTENNA_mux_left_ipin_0.mux_l1_in_1_.TGATE_0_.scs8hd_ebufn_2_TEB mem_left_ipin_0.LATCH_0_.latch/Q
++ vgnd vpwr scs8hd_diode_2
+XFILLER_5_100 vpwr vgnd scs8hd_fill_2
+X_62_ _62_/HI _62_/LO vgnd vpwr scs8hd_conb_1
+XFILLER_2_125 vpwr vgnd scs8hd_fill_2
+XFILLER_2_169 vgnd vpwr scs8hd_decap_12
+XFILLER_20_202 vgnd vpwr scs8hd_decap_8
+XFILLER_18_68 vgnd vpwr scs8hd_decap_12
+Xmem_left_ipin_0.LATCH_4_.latch data_in mem_left_ipin_0.LATCH_4_.latch/Q _39_/Y vgnd
++ vpwr scs8hd_lpflow_inputisolatch_1
+X_45_ address[1] _39_/B _52_/A _46_/D _45_/Y vgnd vpwr scs8hd_nor4_4
+XANTENNA__23__A address[1] vgnd vpwr scs8hd_diode_2
+X_28_ address[3] _28_/Y vgnd vpwr scs8hd_inv_8
+XFILLER_1_71 vpwr vgnd scs8hd_fill_2
+XFILLER_28_154 vgnd vpwr scs8hd_decap_12
+XANTENNA_mux_right_ipin_0.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2_TEB mem_right_ipin_0.LATCH_0_.latch/Q
++ vgnd vpwr scs8hd_diode_2
+XFILLER_19_110 vgnd vpwr scs8hd_decap_12
+XFILLER_10_91 vgnd vpwr scs8hd_fill_1
+XFILLER_6_27 vpwr vgnd scs8hd_fill_2
+XFILLER_25_135 vgnd vpwr scs8hd_decap_12
+XFILLER_15_47 vgnd vpwr scs8hd_fill_1
+XFILLER_31_149 vgnd vpwr scs8hd_decap_6
+XPHY_163 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_152 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XFILLER_24_190 vgnd vpwr scs8hd_decap_12
+XPHY_141 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_130 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XFILLER_22_105 vgnd vpwr scs8hd_decap_12
+XFILLER_7_70 vgnd vpwr scs8hd_decap_4
+XFILLER_26_68 vgnd vpwr scs8hd_decap_12
+XFILLER_21_171 vgnd vpwr scs8hd_decap_12
+XFILLER_13_127 vgnd vpwr scs8hd_decap_12
+XANTENNA__31__A _31_/A vgnd vpwr scs8hd_diode_2
+XANTENNA_mux_right_ipin_0.mux_l1_in_1_.TGATE_0_.scs8hd_ebufn_2_A mux_right_ipin_0.INVTX1_3_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_diode_2
+XANTENNA__26__A address[4] vgnd vpwr scs8hd_diode_2
+XFILLER_10_108 vpwr vgnd scs8hd_fill_2
+Xmem_left_ipin_1.LATCH_0_.latch data_in _31_/A _53_/Y vgnd vpwr scs8hd_lpflow_inputisolatch_1
+X_61_ _61_/HI _61_/LO vgnd vpwr scs8hd_conb_1
+XANTENNA_mux_left_ipin_0.INVTX1_3_.scs8hd_inv_1_A chany_top_in[4] vgnd vpwr scs8hd_diode_2
+XFILLER_2_104 vpwr vgnd scs8hd_fill_2
+XFILLER_4_82 vpwr vgnd scs8hd_fill_2
+X_44_ address[3] _29_/Y _26_/Y address[5] _46_/D vgnd vpwr scs8hd_or4_4
+XFILLER_1_3 vpwr vgnd scs8hd_fill_2
+X_27_ address[5] _27_/Y vgnd vpwr scs8hd_inv_8
+XFILLER_1_94 vpwr vgnd scs8hd_fill_2
+XFILLER_29_57 vgnd vpwr scs8hd_decap_4
+XFILLER_28_166 vgnd vpwr scs8hd_decap_12
+XFILLER_20_15 vgnd vpwr scs8hd_decap_12
+XANTENNA_mux_right_ipin_1.mux_l2_in_0_.TGATE_0_.scs8hd_ebufn_2_A mux_right_ipin_1.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2/Z
++ vgnd vpwr scs8hd_diode_2
+XANTENNA_mem_left_ipin_0.LATCH_5_.latch_D data_in vgnd vpwr scs8hd_diode_2
+XANTENNA__34__A _34_/A vgnd vpwr scs8hd_diode_2
+XFILLER_25_147 vgnd vpwr scs8hd_decap_12
+XFILLER_15_37 vpwr vgnd scs8hd_fill_2
+XFILLER_15_26 vpwr vgnd scs8hd_fill_2
+XPHY_164 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XFILLER_31_106 vgnd vpwr scs8hd_decap_12
+XPHY_153 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_142 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_131 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_120 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XANTENNA__29__A enable vgnd vpwr scs8hd_diode_2
+XANTENNA_mem_right_ipin_0.LATCH_3_.latch_SLEEPB _47_/Y vgnd vpwr scs8hd_diode_2
+XFILLER_22_117 vgnd vpwr scs8hd_decap_12
+XPHY_0 vgnd vpwr scs8hd_decap_3
+XFILLER_13_139 vgnd vpwr scs8hd_decap_12
+XFILLER_16_80 vgnd vpwr scs8hd_decap_12
+XFILLER_8_154 vgnd vpwr scs8hd_decap_12
+XFILLER_12_27 vpwr vgnd scs8hd_fill_2
+Xmux_left_ipin_1.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2 mux_left_ipin_1.INVTX1_0_.scs8hd_inv_1/Y
++ _31_/A mux_left_ipin_1.mux_l1_in_0_.TGATE_1_.scs8hd_ebufn_2/Z vgnd vpwr scs8hd_ebufn_2
+X_60_ _60_/HI _60_/LO vgnd vpwr scs8hd_conb_1
+XANTENNA__42__A address[1] vgnd vpwr scs8hd_diode_2
+XFILLER_23_59 vpwr vgnd scs8hd_fill_2
+XFILLER_23_15 vgnd vpwr scs8hd_decap_12
+XFILLER_4_61 vpwr vgnd scs8hd_fill_2
+XFILLER_4_190 vgnd vpwr scs8hd_decap_12
+XANTENNA__37__A address[4] vgnd vpwr scs8hd_diode_2
+XFILLER_2_138 vpwr vgnd scs8hd_fill_2
+XFILLER_3_7 vgnd vpwr scs8hd_fill_1
+X_43_ address[1] address[2] address[0] _43_/D _43_/Y vgnd vpwr scs8hd_nor4_4
+XFILLER_18_15 vgnd vpwr scs8hd_decap_12
+XFILLER_7_208 vgnd vpwr scs8hd_decap_4
+XFILLER_27_3 vgnd vpwr scs8hd_decap_12
+XFILLER_24_80 vgnd vpwr scs8hd_decap_12
+XFILLER_29_47 vpwr vgnd scs8hd_fill_2
+XFILLER_20_27 vgnd vpwr scs8hd_decap_4
+X_26_ address[4] _26_/Y vgnd vpwr scs8hd_inv_8
+XANTENNA_mem_left_ipin_1.LATCH_0_.latch_SLEEPB _53_/Y vgnd vpwr scs8hd_diode_2
+Xmux_right_ipin_1.tap_buf4_0_.scs8hd_inv_1 mux_right_ipin_1.tap_buf4_0_.scs8hd_inv_1/A
++ left_grid_pin_5_ vgnd vpwr scs8hd_inv_1
+XFILLER_28_178 vgnd vpwr scs8hd_decap_12
+XFILLER_19_123 vgnd vpwr scs8hd_decap_12
+XANTENNA_mux_left_ipin_0.mux_l2_in_0_.TGATE_1_.scs8hd_ebufn_2_TEB mem_left_ipin_0.LATCH_4_.latch/Q
++ vgnd vpwr scs8hd_diode_2
+XANTENNA__50__A address[1] vgnd vpwr scs8hd_diode_2
+XFILLER_25_159 vgnd vpwr scs8hd_decap_12
+XPHY_165 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XFILLER_31_118 vgnd vpwr scs8hd_decap_6
+XFILLER_31_15 vgnd vpwr scs8hd_decap_12
+XPHY_154 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_143 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_132 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_121 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_110 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XANTENNA__45__A address[1] vgnd vpwr scs8hd_diode_2
+XFILLER_22_129 vgnd vpwr scs8hd_decap_12
+XPHY_1 vgnd vpwr scs8hd_decap_3
+XFILLER_26_15 vgnd vpwr scs8hd_decap_12
+XFILLER_21_184 vgnd vpwr scs8hd_decap_8
+XFILLER_13_118 vgnd vpwr scs8hd_decap_4
+XFILLER_12_151 vpwr vgnd scs8hd_fill_2
+XFILLER_8_166 vgnd vpwr scs8hd_decap_12
+XFILLER_8_111 vpwr vgnd scs8hd_fill_2
+XFILLER_3_19 vpwr vgnd scs8hd_fill_2
+XFILLER_26_210 vpwr vgnd scs8hd_fill_2
+XANTENNA__42__B address[2] vgnd vpwr scs8hd_diode_2
+XFILLER_5_114 vpwr vgnd scs8hd_fill_2
+XFILLER_5_136 vpwr vgnd scs8hd_fill_2
+XFILLER_5_147 vgnd vpwr scs8hd_decap_12
+XFILLER_4_40 vpwr vgnd scs8hd_fill_2
+XFILLER_23_27 vgnd vpwr scs8hd_decap_12
+XANTENNA__53__A address[0] vgnd vpwr scs8hd_diode_2
+XANTENNA__37__B address[5] vgnd vpwr scs8hd_diode_2
+XFILLER_13_71 vpwr vgnd scs8hd_fill_2
+X_42_ address[1] address[2] _52_/A _43_/D _42_/Y vgnd vpwr scs8hd_nor4_4
+XFILLER_1_150 vpwr vgnd scs8hd_fill_2
+XFILLER_1_161 vpwr vgnd scs8hd_fill_2
+XFILLER_18_27 vgnd vpwr scs8hd_decap_4
+XANTENNA__48__A _40_/A vgnd vpwr scs8hd_diode_2
+XFILLER_29_15 vgnd vpwr scs8hd_decap_12
+X_25_ address[0] _52_/A vgnd vpwr scs8hd_inv_8
+XFILLER_10_83 vpwr vgnd scs8hd_fill_2
+XFILLER_10_61 vpwr vgnd scs8hd_fill_2
+XANTENNA_mux_right_ipin_2.mux_l2_in_0_.TGATE_0_.scs8hd_ebufn_2_A mux_right_ipin_2.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2/Z
++ vgnd vpwr scs8hd_diode_2
+XANTENNA__50__B address[2] vgnd vpwr scs8hd_diode_2
+XFILLER_19_135 vgnd vpwr scs8hd_decap_12
+Xmux_left_ipin_0.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2 mux_left_ipin_0.INVTX1_0_.scs8hd_inv_1/Y
++ mem_left_ipin_0.LATCH_0_.latch/Q mux_left_ipin_0.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2/Z
++ vgnd vpwr scs8hd_ebufn_2
+XANTENNA_mux_left_ipin_0.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2_A mux_left_ipin_0.INVTX1_0_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_diode_2
+XFILLER_31_27 vgnd vpwr scs8hd_decap_4
+XFILLER_18_190 vgnd vpwr scs8hd_decap_12
+XFILLER_16_127 vgnd vpwr scs8hd_decap_12
+XFILLER_16_105 vgnd vpwr scs8hd_decap_12
+XPHY_100 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XANTENNA__45__B _39_/B vgnd vpwr scs8hd_diode_2
+XPHY_155 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_144 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_133 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_122 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_111 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XFILLER_11_7 vgnd vpwr scs8hd_decap_4
+XPHY_2 vgnd vpwr scs8hd_decap_3
+XFILLER_30_141 vgnd vpwr scs8hd_decap_12
+XFILLER_26_27 vgnd vpwr scs8hd_decap_4
+XFILLER_16_93 vgnd vpwr scs8hd_decap_12
+XFILLER_8_178 vgnd vpwr scs8hd_decap_12
+XFILLER_8_101 vgnd vpwr scs8hd_fill_1
+XANTENNA__56__A address[0] vgnd vpwr scs8hd_diode_2
+XANTENNA__42__C _52_/A vgnd vpwr scs8hd_diode_2
+XFILLER_5_104 vgnd vpwr scs8hd_fill_1
+XFILLER_5_159 vgnd vpwr scs8hd_decap_12
+XFILLER_23_39 vgnd vpwr scs8hd_decap_12
+Xmux_left_ipin_1.mux_l2_in_0_.TGATE_1_.scs8hd_ebufn_2 _60_/HI _30_/Y mux_left_ipin_1.tap_buf4_0_.scs8hd_inv_1/A
++ vgnd vpwr scs8hd_ebufn_2
+XANTENNA__37__C address[3] vgnd vpwr scs8hd_diode_2
+XANTENNA_mux_right_ipin_0.mux_l2_in_0_.TGATE_0_.scs8hd_ebufn_2_TEB mem_right_ipin_0.LATCH_3_.latch/Q
++ vgnd vpwr scs8hd_diode_2
+XANTENNA__53__B _52_/B vgnd vpwr scs8hd_diode_2
+X_41_ _40_/A address[2] address[0] _43_/D _41_/Y vgnd vpwr scs8hd_nor4_4
+XFILLER_1_140 vpwr vgnd scs8hd_fill_2
+XFILLER_1_184 vgnd vpwr scs8hd_decap_12
+XANTENNA_mux_right_ipin_0.INVTX1_3_.scs8hd_inv_1_A chany_top_in[2] vgnd vpwr scs8hd_diode_2
+XFILLER_24_93 vgnd vpwr scs8hd_decap_12
+XANTENNA__64__A chany_top_in[8] vgnd vpwr scs8hd_diode_2
+XFILLER_6_210 vpwr vgnd scs8hd_fill_2
+XANTENNA_mem_right_ipin_0.LATCH_1_.latch_D data_in vgnd vpwr scs8hd_diode_2
+XANTENNA__48__B address[2] vgnd vpwr scs8hd_diode_2
+XFILLER_1_75 vpwr vgnd scs8hd_fill_2
+XFILLER_1_53 vpwr vgnd scs8hd_fill_2
+X_24_ address[2] _39_/B vgnd vpwr scs8hd_inv_8
+XFILLER_29_27 vgnd vpwr scs8hd_decap_12
+XANTENNA__50__C address[0] vgnd vpwr scs8hd_diode_2
+XFILLER_19_147 vgnd vpwr scs8hd_decap_12
+XFILLER_15_18 vpwr vgnd scs8hd_fill_2
+XPHY_156 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_145 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_134 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_123 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XFILLER_16_139 vgnd vpwr scs8hd_decap_12
+XFILLER_16_117 vgnd vpwr scs8hd_decap_6
+XPHY_112 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_101 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XANTENNA__45__C _52_/A vgnd vpwr scs8hd_diode_2
+XPHY_3 vgnd vpwr scs8hd_decap_3
+XFILLER_21_197 vgnd vpwr scs8hd_decap_12
+XANTENNA__56__B _56_/B vgnd vpwr scs8hd_diode_2
+XANTENNA__72__A chany_top_in[0] vgnd vpwr scs8hd_diode_2
+XANTENNA__42__D _43_/D vgnd vpwr scs8hd_diode_2
+XFILLER_27_60 vgnd vpwr scs8hd_fill_1
+XANTENNA__67__A chany_top_in[5] vgnd vpwr scs8hd_diode_2
+XFILLER_2_108 vpwr vgnd scs8hd_fill_2
+XFILLER_4_86 vpwr vgnd scs8hd_fill_2
+XANTENNA__37__D _29_/Y vgnd vpwr scs8hd_diode_2
+XANTENNA_mux_right_ipin_2.INVTX1_1_.scs8hd_inv_1_A chany_top_in[4] vgnd vpwr scs8hd_diode_2
+X_40_ _40_/A address[2] _52_/A _43_/D _40_/Y vgnd vpwr scs8hd_nor4_4
+XFILLER_1_196 vgnd vpwr scs8hd_decap_12
+Xmem_right_ipin_0.LATCH_5_.latch data_in mem_right_ipin_0.LATCH_5_.latch/Q _45_/Y
++ vgnd vpwr scs8hd_lpflow_inputisolatch_1
+XANTENNA_mux_left_ipin_0.mux_l1_in_0_.TGATE_2_.scs8hd_ebufn_2_TEB mem_left_ipin_0.LATCH_2_.latch/Q
++ vgnd vpwr scs8hd_diode_2
+XANTENNA__48__C address[0] vgnd vpwr scs8hd_diode_2
+XFILLER_1_7 vpwr vgnd scs8hd_fill_2
+XANTENNA__80__A chany_bottom_in[1] vgnd vpwr scs8hd_diode_2
+X_23_ address[1] _40_/A vgnd vpwr scs8hd_inv_8
+XFILLER_1_32 vpwr vgnd scs8hd_fill_2
+XFILLER_29_39 vgnd vpwr scs8hd_decap_8
+XANTENNA_mem_left_ipin_0.LATCH_3_.latch_SLEEPB _40_/Y vgnd vpwr scs8hd_diode_2
+XFILLER_27_192 vgnd vpwr scs8hd_decap_3
+XANTENNA__75__A chany_bottom_in[6] vgnd vpwr scs8hd_diode_2
+XFILLER_19_159 vgnd vpwr scs8hd_decap_12
+XFILLER_10_74 vpwr vgnd scs8hd_fill_2
+XANTENNA__50__D _46_/D vgnd vpwr scs8hd_diode_2
+XANTENNA_mem_right_ipin_0.LATCH_0_.latch_SLEEPB _50_/Y vgnd vpwr scs8hd_diode_2
+XFILLER_25_3 vgnd vpwr scs8hd_decap_12
+XANTENNA_mux_left_ipin_1.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2_A mux_left_ipin_1.INVTX1_0_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_diode_2
+XPHY_157 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_146 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_135 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XFILLER_21_62 vgnd vpwr scs8hd_decap_12
+XFILLER_21_51 vgnd vpwr scs8hd_decap_8
+XPHY_124 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_113 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_102 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XANTENNA__45__D _46_/D vgnd vpwr scs8hd_diode_2
+XFILLER_30_154 vgnd vpwr scs8hd_decap_12
+XFILLER_15_184 vgnd vpwr scs8hd_decap_12
+XFILLER_15_151 vgnd vpwr scs8hd_decap_12
+Xmux_left_ipin_0.mux_l2_in_0_.TGATE_1_.scs8hd_ebufn_2 mux_left_ipin_0.mux_l1_in_1_.TGATE_0_.scs8hd_ebufn_2/Z
++ mem_left_ipin_0.LATCH_4_.latch/Q mux_left_ipin_0.tap_buf4_0_.scs8hd_inv_1/A vgnd
++ vpwr scs8hd_ebufn_2
+XPHY_4 vgnd vpwr scs8hd_decap_3
+XFILLER_7_53 vpwr vgnd scs8hd_fill_2
+XFILLER_21_110 vgnd vpwr scs8hd_decap_12
+XFILLER_16_62 vpwr vgnd scs8hd_fill_2
+XFILLER_16_51 vgnd vpwr scs8hd_decap_8
+XANTENNA_mux_left_ipin_1.INVTX1_0_.scs8hd_inv_1_A chany_bottom_in[1] vgnd vpwr scs8hd_diode_2
+XFILLER_12_154 vgnd vpwr scs8hd_decap_12
+XFILLER_12_110 vgnd vpwr scs8hd_decap_8
+XFILLER_26_202 vgnd vpwr scs8hd_decap_8
+Xmem_right_ipin_1.LATCH_1_.latch data_in _32_/A _55_/Y vgnd vpwr scs8hd_lpflow_inputisolatch_1
+XFILLER_4_32 vgnd vpwr scs8hd_fill_1
+XFILLER_4_65 vpwr vgnd scs8hd_fill_2
+XANTENNA__78__A chany_bottom_in[3] vgnd vpwr scs8hd_diode_2
+XFILLER_13_85 vgnd vpwr scs8hd_fill_1
+XFILLER_11_208 vgnd vpwr scs8hd_decap_4
+XANTENNA__48__D _46_/D vgnd vpwr scs8hd_diode_2
+Xmux_right_ipin_1.INVTX1_0_.scs8hd_inv_1 chany_bottom_in[3] mux_right_ipin_1.INVTX1_0_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_inv_1
+XFILLER_28_105 vgnd vpwr scs8hd_decap_12
+XANTENNA_mux_left_ipin_0.mux_l1_in_1_.TGATE_1_.scs8hd_ebufn_2_TEB mem_left_ipin_0.LATCH_1_.latch/Q
++ vgnd vpwr scs8hd_diode_2
+XFILLER_27_171 vgnd vpwr scs8hd_decap_12
+XFILLER_19_62 vgnd vpwr scs8hd_decap_12
+XFILLER_19_51 vgnd vpwr scs8hd_decap_8
+XFILLER_10_20 vpwr vgnd scs8hd_fill_2
+XFILLER_18_3 vgnd vpwr scs8hd_decap_12
+Xmux_left_ipin_0.mux_l1_in_1_.TGATE_2_.scs8hd_ebufn_2 mux_left_ipin_0.INVTX1_5_.scs8hd_inv_1/Y
++ mem_left_ipin_0.LATCH_2_.latch/Q mux_left_ipin_0.mux_l1_in_1_.TGATE_0_.scs8hd_ebufn_2/Z
++ vgnd vpwr scs8hd_ebufn_2
+XPHY_158 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_147 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XFILLER_24_141 vgnd vpwr scs8hd_decap_12
+XPHY_136 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XFILLER_21_74 vgnd vpwr scs8hd_decap_12
+XPHY_125 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_114 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_103 vgnd vpwr scs8hd_tapvpwrvgnd_1
+Xmem_left_ipin_0.LATCH_5_.latch data_in mem_left_ipin_0.LATCH_5_.latch/Q _38_/Y vgnd
++ vpwr scs8hd_lpflow_inputisolatch_1
+XFILLER_30_166 vgnd vpwr scs8hd_decap_12
+XFILLER_15_196 vgnd vpwr scs8hd_decap_12
+XFILLER_15_163 vgnd vpwr scs8hd_decap_12
+XFILLER_7_87 vpwr vgnd scs8hd_fill_2
+XPHY_5 vgnd vpwr scs8hd_decap_3
+XFILLER_7_43 vpwr vgnd scs8hd_fill_2
+XFILLER_16_74 vgnd vpwr scs8hd_decap_3
+XFILLER_16_30 vgnd vpwr scs8hd_fill_1
+XFILLER_12_166 vgnd vpwr scs8hd_decap_12
+XFILLER_8_115 vpwr vgnd scs8hd_fill_2
+XANTENNA_mux_right_ipin_0.mux_l1_in_0_.TGATE_1_.scs8hd_ebufn_2_TEB mem_right_ipin_0.LATCH_1_.latch/Q
++ vgnd vpwr scs8hd_diode_2
+XFILLER_27_62 vgnd vpwr scs8hd_decap_12
+XFILLER_27_40 vgnd vpwr scs8hd_decap_12
+XFILLER_5_118 vpwr vgnd scs8hd_fill_2
+XFILLER_4_11 vpwr vgnd scs8hd_fill_2
+XFILLER_4_22 vgnd vpwr scs8hd_decap_4
+XFILLER_4_140 vgnd vpwr scs8hd_decap_12
+XFILLER_14_206 vgnd vpwr scs8hd_decap_6
+XFILLER_13_97 vpwr vgnd scs8hd_fill_2
+XFILLER_13_75 vpwr vgnd scs8hd_fill_2
+XFILLER_13_53 vpwr vgnd scs8hd_fill_2
+XFILLER_1_132 vpwr vgnd scs8hd_fill_2
+XFILLER_1_154 vpwr vgnd scs8hd_fill_2
+XFILLER_1_165 vgnd vpwr scs8hd_decap_12
+XFILLER_6_202 vgnd vpwr scs8hd_decap_8
+XFILLER_28_117 vgnd vpwr scs8hd_decap_12
+Xmem_left_ipin_1.LATCH_1_.latch data_in _30_/A _52_/Y vgnd vpwr scs8hd_lpflow_inputisolatch_1
+XFILLER_19_74 vgnd vpwr scs8hd_decap_12
+XFILLER_10_87 vpwr vgnd scs8hd_fill_2
+XFILLER_10_32 vpwr vgnd scs8hd_fill_2
+XANTENNA_mux_right_ipin_2.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2_TEB _35_/A vgnd vpwr
++ scs8hd_diode_2
+XPHY_159 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_148 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_137 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_126 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_115 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_104 vgnd vpwr scs8hd_tapvpwrvgnd_1
+Xmux_right_ipin_0.mux_l1_in_1_.TGATE_0_.scs8hd_ebufn_2 mux_right_ipin_0.INVTX1_3_.scs8hd_inv_1/Y
++ mem_right_ipin_0.LATCH_0_.latch/Q mux_right_ipin_0.mux_l1_in_1_.TGATE_0_.scs8hd_ebufn_2/Z
++ vgnd vpwr scs8hd_ebufn_2
+XFILLER_30_178 vgnd vpwr scs8hd_decap_12
+XFILLER_21_86 vgnd vpwr scs8hd_decap_12
+XFILLER_15_175 vgnd vpwr scs8hd_decap_8
+Xmux_right_ipin_0.INVTX1_4_.scs8hd_inv_1 chany_bottom_in[6] mux_right_ipin_0.INVTX1_4_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_inv_1
+XANTENNA_mux_right_ipin_0.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2_A mux_right_ipin_0.INVTX1_0_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_diode_2
+XPHY_6 vgnd vpwr scs8hd_decap_3
+XFILLER_7_66 vpwr vgnd scs8hd_fill_2
+XFILLER_30_3 vgnd vpwr scs8hd_decap_12
+XFILLER_21_123 vgnd vpwr scs8hd_decap_12
+XFILLER_16_20 vgnd vpwr scs8hd_decap_8
+XFILLER_12_178 vgnd vpwr scs8hd_decap_12
+XFILLER_7_182 vgnd vpwr scs8hd_fill_1
+XFILLER_27_52 vgnd vpwr scs8hd_decap_8
+XANTENNA_mux_left_ipin_0.INVTX1_4_.scs8hd_inv_1_A chany_bottom_in[8] vgnd vpwr scs8hd_diode_2
+XANTENNA_mux_right_ipin_0.mux_l1_in_1_.TGATE_0_.scs8hd_ebufn_2_TEB mem_right_ipin_0.LATCH_0_.latch/Q
++ vgnd vpwr scs8hd_diode_2
+XFILLER_27_74 vgnd vpwr scs8hd_decap_12
+Xmux_left_ipin_0.INVTX1_3_.scs8hd_inv_1 chany_top_in[4] mux_left_ipin_0.INVTX1_3_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_inv_1
+XANTENNA_mem_right_ipin_0.LATCH_4_.latch_D data_in vgnd vpwr scs8hd_diode_2
+XFILLER_4_78 vpwr vgnd scs8hd_fill_2
+XFILLER_4_152 vgnd vpwr scs8hd_fill_1
+XANTENNA_mem_right_ipin_2.LATCH_0_.latch_D data_in vgnd vpwr scs8hd_diode_2
+XFILLER_8_3 vpwr vgnd scs8hd_fill_2
+XFILLER_1_144 vpwr vgnd scs8hd_fill_2
+XFILLER_1_177 vgnd vpwr scs8hd_decap_6
+XFILLER_10_210 vpwr vgnd scs8hd_fill_2
+XFILLER_1_57 vpwr vgnd scs8hd_fill_2
+XFILLER_28_129 vgnd vpwr scs8hd_decap_12
+XFILLER_27_184 vgnd vpwr scs8hd_decap_8
+XFILLER_19_86 vgnd vpwr scs8hd_decap_12
+XANTENNA_mem_left_ipin_0.LATCH_1_.latch_D data_in vgnd vpwr scs8hd_diode_2
+XPHY_116 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_105 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_149 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XFILLER_24_154 vgnd vpwr scs8hd_decap_12
+XPHY_138 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XFILLER_21_98 vgnd vpwr scs8hd_decap_12
+XPHY_127 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XFILLER_15_121 vgnd vpwr scs8hd_fill_1
+XPHY_7 vgnd vpwr scs8hd_decap_3
+XFILLER_23_3 vgnd vpwr scs8hd_decap_12
+XFILLER_21_135 vgnd vpwr scs8hd_decap_12
+XFILLER_7_12 vpwr vgnd scs8hd_fill_2
+XFILLER_20_190 vgnd vpwr scs8hd_decap_12
+XFILLER_16_32 vgnd vpwr scs8hd_decap_12
+Xmux_left_ipin_1.mux_l1_in_0_.TGATE_1_.scs8hd_ebufn_2 mux_left_ipin_1.INVTX1_1_.scs8hd_inv_1/Y
++ _31_/Y mux_left_ipin_1.mux_l1_in_0_.TGATE_1_.scs8hd_ebufn_2/Z vgnd vpwr scs8hd_ebufn_2
+XFILLER_8_139 vgnd vpwr scs8hd_decap_12
+XFILLER_8_128 vgnd vpwr scs8hd_decap_8
+XFILLER_7_150 vgnd vpwr scs8hd_decap_12
+XANTENNA_mux_left_ipin_0.mux_l2_in_0_.TGATE_2_.scs8hd_ebufn_2_TEB mem_left_ipin_0.LATCH_5_.latch/Q
++ vgnd vpwr scs8hd_diode_2
+XFILLER_27_86 vgnd vpwr scs8hd_decap_12
+Xmux_left_ipin_0.tap_buf4_0_.scs8hd_inv_1 mux_left_ipin_0.tap_buf4_0_.scs8hd_inv_1/A
++ right_grid_pin_3_ vgnd vpwr scs8hd_inv_1
+XANTENNA_mux_right_ipin_1.INVTX1_0_.scs8hd_inv_1_A chany_bottom_in[3] vgnd vpwr scs8hd_diode_2
+XFILLER_23_208 vgnd vpwr scs8hd_decap_4
+XANTENNA_mux_left_ipin_0.mux_l2_in_0_.TGATE_1_.scs8hd_ebufn_2_A mux_left_ipin_0.mux_l1_in_1_.TGATE_0_.scs8hd_ebufn_2/Z
++ vgnd vpwr scs8hd_diode_2
+Xmem_right_ipin_0.LATCH_0_.latch data_in mem_right_ipin_0.LATCH_0_.latch/Q _50_/Y
++ vgnd vpwr scs8hd_lpflow_inputisolatch_1
+XFILLER_24_32 vgnd vpwr scs8hd_decap_12
+XANTENNA_mem_left_ipin_0.LATCH_0_.latch_SLEEPB _43_/Y vgnd vpwr scs8hd_diode_2
+XFILLER_10_78 vgnd vpwr scs8hd_decap_3
+XFILLER_10_12 vpwr vgnd scs8hd_fill_2
+X_79_ chany_bottom_in[2] chany_top_out[2] vgnd vpwr scs8hd_buf_2
+XFILLER_19_98 vgnd vpwr scs8hd_decap_12
+XFILLER_18_141 vgnd vpwr scs8hd_decap_12
+XFILLER_24_166 vgnd vpwr scs8hd_decap_12
+XPHY_139 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_128 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_117 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_106 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XANTENNA_mux_right_ipin_1.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2_A mux_right_ipin_1.INVTX1_0_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_diode_2
+XFILLER_16_3 vgnd vpwr scs8hd_decap_12
+XPHY_8 vgnd vpwr scs8hd_decap_3
+XFILLER_7_57 vpwr vgnd scs8hd_fill_2
+XFILLER_21_147 vgnd vpwr scs8hd_decap_12
+XFILLER_16_66 vgnd vpwr scs8hd_decap_8
+XFILLER_16_44 vgnd vpwr scs8hd_decap_4
+XFILLER_7_184 vgnd vpwr scs8hd_decap_12
+XFILLER_7_162 vgnd vpwr scs8hd_decap_12
+XFILLER_27_98 vgnd vpwr scs8hd_decap_12
+XFILLER_4_36 vpwr vgnd scs8hd_fill_2
+XFILLER_4_154 vgnd vpwr scs8hd_decap_12
+XFILLER_13_34 vpwr vgnd scs8hd_fill_2
+XFILLER_24_44 vgnd vpwr scs8hd_decap_12
+Xmux_right_ipin_2.INVTX1_1_.scs8hd_inv_1 chany_top_in[4] mux_right_ipin_2.INVTX1_1_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_inv_1
+X_78_ chany_bottom_in[3] chany_top_out[3] vgnd vpwr scs8hd_buf_2
+Xmux_left_ipin_0.mux_l1_in_0_.TGATE_1_.scs8hd_ebufn_2 mux_left_ipin_0.INVTX1_1_.scs8hd_inv_1/Y
++ mem_left_ipin_0.LATCH_1_.latch/Q mux_left_ipin_0.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2/Z
++ vgnd vpwr scs8hd_ebufn_2
+Xmux_right_ipin_2.mux_l2_in_0_.TGATE_0_.scs8hd_ebufn_2 mux_right_ipin_2.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2/Z
++ _34_/A mux_right_ipin_2.tap_buf4_0_.scs8hd_inv_1/A vgnd vpwr scs8hd_ebufn_2
+XANTENNA_mux_left_ipin_0.mux_l1_in_1_.TGATE_1_.scs8hd_ebufn_2_A mux_left_ipin_0.INVTX1_4_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_diode_2
+Xmem_left_ipin_0.LATCH_0_.latch data_in mem_left_ipin_0.LATCH_0_.latch/Q _43_/Y vgnd
++ vpwr scs8hd_lpflow_inputisolatch_1
+XFILLER_10_57 vpwr vgnd scs8hd_fill_2
+XFILLER_10_24 vpwr vgnd scs8hd_fill_2
+XFILLER_3_208 vgnd vpwr scs8hd_decap_4
+XANTENNA_mux_right_ipin_0.mux_l2_in_0_.TGATE_1_.scs8hd_ebufn_2_TEB mem_right_ipin_0.LATCH_4_.latch/Q
++ vgnd vpwr scs8hd_diode_2
+XFILLER_24_178 vgnd vpwr scs8hd_decap_12
+XPHY_129 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_118 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_107 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XFILLER_2_80 vpwr vgnd scs8hd_fill_2
+XFILLER_15_123 vpwr vgnd scs8hd_fill_2
+XPHY_9 vgnd vpwr scs8hd_decap_3
+XFILLER_7_47 vgnd vpwr scs8hd_decap_3
+XFILLER_21_159 vgnd vpwr scs8hd_decap_12
+XFILLER_7_196 vgnd vpwr scs8hd_decap_12
+XFILLER_7_174 vgnd vpwr scs8hd_decap_8
+XANTENNA_mem_right_ipin_0.LATCH_5_.latch_SLEEPB _45_/Y vgnd vpwr scs8hd_diode_2
+XFILLER_4_26 vgnd vpwr scs8hd_fill_1
+XFILLER_4_166 vgnd vpwr scs8hd_decap_12
+XANTENNA_mux_left_ipin_1.mux_l2_in_0_.TGATE_1_.scs8hd_ebufn_2_A _60_/HI vgnd vpwr
++ scs8hd_diode_2
+XFILLER_13_79 vgnd vpwr scs8hd_decap_6
+XFILLER_13_57 vpwr vgnd scs8hd_fill_2
+XFILLER_1_136 vpwr vgnd scs8hd_fill_2
+XFILLER_1_114 vpwr vgnd scs8hd_fill_2
+XANTENNA_mux_right_ipin_0.INVTX1_4_.scs8hd_inv_1_A chany_bottom_in[6] vgnd vpwr scs8hd_diode_2
+XANTENNA_mux_right_ipin_2.mux_l2_in_0_.TGATE_0_.scs8hd_ebufn_2_TEB _34_/A vgnd vpwr
++ scs8hd_diode_2
+XFILLER_24_56 vgnd vpwr scs8hd_decap_12
+XFILLER_10_202 vgnd vpwr scs8hd_decap_8
+XFILLER_6_3 vgnd vpwr scs8hd_decap_3
+X_77_ chany_bottom_in[4] chany_top_out[4] vgnd vpwr scs8hd_buf_2
+XFILLER_27_110 vgnd vpwr scs8hd_decap_12
+XFILLER_10_36 vpwr vgnd scs8hd_fill_2
+XFILLER_18_154 vgnd vpwr scs8hd_decap_12
+XPHY_119 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_108 vgnd vpwr scs8hd_tapvpwrvgnd_1
+Xmux_right_ipin_0.INVTX1_1_.scs8hd_inv_1 chany_top_in[1] mux_right_ipin_0.INVTX1_1_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_inv_1
+XFILLER_30_105 vgnd vpwr scs8hd_decap_12
+XANTENNA_mux_right_ipin_2.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2_A mux_right_ipin_2.INVTX1_0_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_diode_2
+XFILLER_7_37 vgnd vpwr scs8hd_decap_4
+XFILLER_12_127 vgnd vpwr scs8hd_decap_12
+XFILLER_21_3 vgnd vpwr scs8hd_decap_12
+Xmux_left_ipin_0.INVTX1_0_.scs8hd_inv_1 chany_bottom_in[0] mux_left_ipin_0.INVTX1_0_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_inv_1
+XFILLER_11_182 vgnd vpwr scs8hd_fill_1
+XFILLER_17_208 vgnd vpwr scs8hd_decap_4
+XFILLER_31_211 vgnd vpwr scs8hd_fill_1
+XFILLER_4_112 vpwr vgnd scs8hd_fill_2
+XFILLER_4_123 vpwr vgnd scs8hd_fill_2
+XFILLER_4_178 vgnd vpwr scs8hd_decap_12
+Xmux_right_ipin_1.mux_l2_in_0_.TGATE_0_.scs8hd_ebufn_2 mux_right_ipin_1.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2/Z
++ _32_/A mux_right_ipin_1.tap_buf4_0_.scs8hd_inv_1/A vgnd vpwr scs8hd_ebufn_2
+XFILLER_22_211 vgnd vpwr scs8hd_fill_1
+XANTENNA_mem_left_ipin_0.LATCH_4_.latch_D data_in vgnd vpwr scs8hd_diode_2
+XFILLER_8_7 vpwr vgnd scs8hd_fill_2
+XFILLER_5_81 vpwr vgnd scs8hd_fill_2
+XFILLER_24_68 vgnd vpwr scs8hd_decap_12
+XFILLER_1_28 vpwr vgnd scs8hd_fill_2
+XFILLER_14_90 vpwr vgnd scs8hd_fill_2
+X_76_ chany_bottom_in[5] chany_top_out[5] vgnd vpwr scs8hd_buf_2
+XFILLER_27_199 vpwr vgnd scs8hd_fill_2
+XFILLER_18_166 vgnd vpwr scs8hd_decap_12
+XANTENNA__24__A address[2] vgnd vpwr scs8hd_diode_2
+XPHY_109 vgnd vpwr scs8hd_tapvpwrvgnd_1
+X_59_ _59_/HI _59_/LO vgnd vpwr scs8hd_conb_1
+XFILLER_2_60 vpwr vgnd scs8hd_fill_2
+XFILLER_2_93 vpwr vgnd scs8hd_fill_2
+Xmux_left_ipin_0.mux_l2_in_0_.TGATE_2_.scs8hd_ebufn_2 _59_/HI mem_left_ipin_0.LATCH_5_.latch/Q
++ mux_left_ipin_0.tap_buf4_0_.scs8hd_inv_1/A vgnd vpwr scs8hd_ebufn_2
+XFILLER_30_117 vgnd vpwr scs8hd_decap_12
+XFILLER_15_103 vgnd vpwr scs8hd_decap_12
+XANTENNA_mux_left_ipin_1.INVTX1_1_.scs8hd_inv_1_A chany_top_in[1] vgnd vpwr scs8hd_diode_2
+XFILLER_7_16 vpwr vgnd scs8hd_fill_2
+XFILLER_12_139 vgnd vpwr scs8hd_decap_12
+XANTENNA_mux_left_ipin_0.mux_l1_in_1_.TGATE_2_.scs8hd_ebufn_2_TEB mem_left_ipin_0.LATCH_2_.latch/Q
++ vgnd vpwr scs8hd_diode_2
+XFILLER_14_3 vgnd vpwr scs8hd_decap_3
+XFILLER_7_132 vgnd vpwr scs8hd_decap_4
+XFILLER_7_121 vgnd vpwr scs8hd_fill_1
+XFILLER_7_110 vpwr vgnd scs8hd_fill_2
+XFILLER_27_35 vgnd vpwr scs8hd_decap_3
+XFILLER_8_81 vpwr vgnd scs8hd_fill_2
+XANTENNA__32__A _32_/A vgnd vpwr scs8hd_diode_2
+XFILLER_13_15 vpwr vgnd scs8hd_fill_2
+Xmux_right_ipin_0.tap_buf4_0_.scs8hd_inv_1 mux_right_ipin_0.tap_buf4_0_.scs8hd_inv_1/A
++ left_grid_pin_1_ vgnd vpwr scs8hd_inv_1
+XANTENNA__27__A address[5] vgnd vpwr scs8hd_diode_2
+XANTENNA_mux_right_ipin_0.mux_l2_in_0_.TGATE_1_.scs8hd_ebufn_2_A mux_right_ipin_0.mux_l1_in_1_.TGATE_0_.scs8hd_ebufn_2/Z
++ vgnd vpwr scs8hd_diode_2
+XFILLER_0_171 vpwr vgnd scs8hd_fill_2
+XANTENNA_mux_right_ipin_0.mux_l1_in_0_.TGATE_2_.scs8hd_ebufn_2_TEB mem_right_ipin_0.LATCH_2_.latch/Q
++ vgnd vpwr scs8hd_diode_2
+X_75_ chany_bottom_in[6] chany_top_out[6] vgnd vpwr scs8hd_buf_2
+XFILLER_10_16 vpwr vgnd scs8hd_fill_2
+XFILLER_27_123 vgnd vpwr scs8hd_decap_12
+XANTENNA__40__A _40_/A vgnd vpwr scs8hd_diode_2
+XFILLER_2_211 vgnd vpwr scs8hd_fill_1
+XFILLER_18_178 vgnd vpwr scs8hd_decap_12
+XPHY_90 vgnd vpwr scs8hd_tapvpwrvgnd_1
+X_58_ address[4] _27_/Y _57_/C address[0] _58_/Y vgnd vpwr scs8hd_nor4_4
+XFILLER_30_129 vgnd vpwr scs8hd_decap_12
+XFILLER_21_59 vpwr vgnd scs8hd_fill_2
+XFILLER_21_15 vgnd vpwr scs8hd_decap_12
+XFILLER_15_115 vgnd vpwr scs8hd_decap_6
+XANTENNA__35__A _35_/A vgnd vpwr scs8hd_diode_2
+Xmux_right_ipin_0.mux_l2_in_0_.TGATE_0_.scs8hd_ebufn_2 mux_right_ipin_0.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2/Z
++ mem_right_ipin_0.LATCH_3_.latch/Q mux_right_ipin_0.tap_buf4_0_.scs8hd_inv_1/A vgnd
++ vpwr scs8hd_ebufn_2
+XFILLER_14_170 vgnd vpwr scs8hd_decap_12
+XFILLER_11_92 vpwr vgnd scs8hd_fill_2
+XFILLER_16_15 vpwr vgnd scs8hd_fill_2
+XFILLER_22_80 vgnd vpwr scs8hd_decap_12
+XFILLER_11_184 vgnd vpwr scs8hd_decap_12
+XANTENNA_mux_left_ipin_1.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2_TEB _31_/A vgnd vpwr
++ scs8hd_diode_2
+XFILLER_8_93 vpwr vgnd scs8hd_fill_2
+XFILLER_4_29 vpwr vgnd scs8hd_fill_2
+XANTENNA_mux_right_ipin_2.mux_l1_in_0_.TGATE_1_.scs8hd_ebufn_2_TEB _35_/Y vgnd vpwr
++ scs8hd_diode_2
+XFILLER_16_210 vpwr vgnd scs8hd_fill_2
+XFILLER_13_38 vpwr vgnd scs8hd_fill_2
+XFILLER_28_90 vpwr vgnd scs8hd_fill_2
+XANTENNA__43__A address[1] vgnd vpwr scs8hd_diode_2
+XFILLER_0_183 vgnd vpwr scs8hd_decap_3
+XFILLER_24_15 vgnd vpwr scs8hd_decap_12
+XANTENNA_mem_right_ipin_2.LATCH_1_.latch_SLEEPB _57_/Y vgnd vpwr scs8hd_diode_2
+XANTENNA__38__A address[1] vgnd vpwr scs8hd_diode_2
+XFILLER_30_80 vgnd vpwr scs8hd_decap_12
+X_74_ chany_bottom_in[7] chany_top_out[7] vgnd vpwr scs8hd_buf_2
+XFILLER_10_28 vgnd vpwr scs8hd_decap_3
+Xmux_right_ipin_0.mux_l1_in_1_.TGATE_1_.scs8hd_ebufn_2 mux_right_ipin_0.INVTX1_4_.scs8hd_inv_1/Y
++ mem_right_ipin_0.LATCH_1_.latch/Q mux_right_ipin_0.mux_l1_in_1_.TGATE_0_.scs8hd_ebufn_2/Z
++ vgnd vpwr scs8hd_ebufn_2
+XANTENNA_mux_right_ipin_0.mux_l1_in_1_.TGATE_1_.scs8hd_ebufn_2_TEB mem_right_ipin_0.LATCH_1_.latch/Q
++ vgnd vpwr scs8hd_diode_2
+XFILLER_27_135 vgnd vpwr scs8hd_decap_12
+XFILLER_19_59 vpwr vgnd scs8hd_fill_2
+XFILLER_19_15 vgnd vpwr scs8hd_decap_12
+XANTENNA__40__B address[2] vgnd vpwr scs8hd_diode_2
+XFILLER_4_3 vpwr vgnd scs8hd_fill_2
+XFILLER_26_190 vgnd vpwr scs8hd_decap_12
+XPHY_91 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XFILLER_2_84 vpwr vgnd scs8hd_fill_2
+XPHY_80 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XFILLER_24_105 vgnd vpwr scs8hd_decap_12
+XFILLER_21_27 vgnd vpwr scs8hd_decap_12
+XANTENNA_mux_right_ipin_0.mux_l1_in_1_.TGATE_1_.scs8hd_ebufn_2_A mux_right_ipin_0.INVTX1_4_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_diode_2
+X_57_ address[4] _27_/Y _57_/C _52_/A _57_/Y vgnd vpwr scs8hd_nor4_4
+XFILLER_23_171 vgnd vpwr scs8hd_decap_12
+XFILLER_15_127 vgnd vpwr scs8hd_decap_12
+XANTENNA__51__A address[4] vgnd vpwr scs8hd_diode_2
+XFILLER_29_208 vgnd vpwr scs8hd_decap_4
+XFILLER_20_141 vgnd vpwr scs8hd_decap_12
+XANTENNA_mux_left_ipin_0.INVTX1_5_.scs8hd_inv_1_A chany_top_in[8] vgnd vpwr scs8hd_diode_2
+XFILLER_14_182 vgnd vpwr scs8hd_decap_12
+XFILLER_11_196 vgnd vpwr scs8hd_decap_12
+XFILLER_11_130 vgnd vpwr scs8hd_decap_12
+XANTENNA_mem_left_ipin_0.LATCH_5_.latch_SLEEPB _38_/Y vgnd vpwr scs8hd_diode_2
+XANTENNA__46__A address[1] vgnd vpwr scs8hd_diode_2
+XANTENNA_mem_right_ipin_0.LATCH_2_.latch_SLEEPB _48_/Y vgnd vpwr scs8hd_diode_2
+XFILLER_27_15 vgnd vpwr scs8hd_decap_12
+XFILLER_4_104 vpwr vgnd scs8hd_fill_2
+Xmux_right_ipin_2.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2 mux_right_ipin_2.INVTX1_0_.scs8hd_inv_1/Y
++ _35_/A mux_right_ipin_2.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2/Z vgnd vpwr scs8hd_ebufn_2
+XFILLER_1_118 vpwr vgnd scs8hd_fill_2
+XANTENNA_mem_right_ipin_0.LATCH_0_.latch_D data_in vgnd vpwr scs8hd_diode_2
+XANTENNA__43__B address[2] vgnd vpwr scs8hd_diode_2
+XANTENNA_mux_right_ipin_1.mux_l2_in_0_.TGATE_1_.scs8hd_ebufn_2_A _62_/HI vgnd vpwr
++ scs8hd_diode_2
+XFILLER_24_27 vgnd vpwr scs8hd_decap_4
+XFILLER_5_73 vpwr vgnd scs8hd_fill_2
+XANTENNA__54__A _26_/Y vgnd vpwr scs8hd_diode_2
+XANTENNA__38__B _39_/B vgnd vpwr scs8hd_diode_2
+X_73_ chany_bottom_in[8] chany_top_out[8] vgnd vpwr scs8hd_buf_2
+XFILLER_27_147 vgnd vpwr scs8hd_decap_12
+XFILLER_19_27 vgnd vpwr scs8hd_decap_12
+XANTENNA__40__C _52_/A vgnd vpwr scs8hd_diode_2
+XPHY_92 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_70 vgnd vpwr scs8hd_tapvpwrvgnd_1
+Xmem_right_ipin_0.LATCH_1_.latch data_in mem_right_ipin_0.LATCH_1_.latch/Q _49_/Y
++ vgnd vpwr scs8hd_lpflow_inputisolatch_1
+XANTENNA__49__A address[1] vgnd vpwr scs8hd_diode_2
+XPHY_81 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XFILLER_24_117 vgnd vpwr scs8hd_decap_12
+XFILLER_21_39 vgnd vpwr scs8hd_decap_12
+X_56_ address[0] _56_/B _56_/Y vgnd vpwr scs8hd_nor2_4
+XFILLER_15_139 vgnd vpwr scs8hd_decap_12
+XANTENNA__51__B address[5] vgnd vpwr scs8hd_diode_2
+XFILLER_14_194 vgnd vpwr scs8hd_decap_12
+X_39_ address[1] _39_/B address[0] _43_/D _39_/Y vgnd vpwr scs8hd_nor4_4
+XANTENNA__46__B _39_/B vgnd vpwr scs8hd_diode_2
+XANTENNA_mux_right_ipin_1.INVTX1_1_.scs8hd_inv_1_A chany_top_in[3] vgnd vpwr scs8hd_diode_2
+XFILLER_22_93 vgnd vpwr scs8hd_decap_12
+XFILLER_11_142 vgnd vpwr scs8hd_decap_12
+XFILLER_11_120 vpwr vgnd scs8hd_fill_2
+XFILLER_27_27 vgnd vpwr scs8hd_decap_8
+Xmux_left_ipin_1.INVTX1_1_.scs8hd_inv_1 chany_top_in[1] mux_left_ipin_1.INVTX1_1_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_inv_1
+XFILLER_8_62 vpwr vgnd scs8hd_fill_2
+XFILLER_6_190 vgnd vpwr scs8hd_decap_12
+XFILLER_17_82 vgnd vpwr scs8hd_decap_12
+XFILLER_4_127 vpwr vgnd scs8hd_fill_2
+XANTENNA__57__A address[4] vgnd vpwr scs8hd_diode_2
+XFILLER_12_3 vgnd vpwr scs8hd_decap_3
+XFILLER_3_171 vgnd vpwr scs8hd_decap_12
+XANTENNA__43__C address[0] vgnd vpwr scs8hd_diode_2
+XFILLER_9_208 vgnd vpwr scs8hd_decap_4
+XFILLER_0_141 vpwr vgnd scs8hd_fill_2
+XFILLER_0_163 vgnd vpwr scs8hd_decap_4
+XFILLER_5_96 vpwr vgnd scs8hd_fill_2
+XANTENNA__38__C _52_/A vgnd vpwr scs8hd_diode_2
+XFILLER_30_93 vgnd vpwr scs8hd_decap_12
+XFILLER_14_61 vpwr vgnd scs8hd_fill_2
+XANTENNA__70__A chany_top_in[2] vgnd vpwr scs8hd_diode_2
+XANTENNA__54__B address[5] vgnd vpwr scs8hd_diode_2
+X_72_ chany_top_in[0] chany_bottom_out[0] vgnd vpwr scs8hd_buf_2
+XFILLER_27_159 vgnd vpwr scs8hd_decap_12
+XFILLER_19_39 vgnd vpwr scs8hd_decap_12
+XPHY_60 vgnd vpwr scs8hd_decap_3
+XANTENNA__65__A chany_top_in[7] vgnd vpwr scs8hd_diode_2
+XANTENNA_mux_left_ipin_0.INVTX1_0_.scs8hd_inv_1_A chany_bottom_in[0] vgnd vpwr scs8hd_diode_2
+XANTENNA__40__D _43_/D vgnd vpwr scs8hd_diode_2
+XPHY_93 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_71 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XANTENNA__49__B address[2] vgnd vpwr scs8hd_diode_2
+XPHY_82 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XFILLER_24_129 vgnd vpwr scs8hd_decap_12
+XFILLER_2_64 vgnd vpwr scs8hd_decap_3
+X_55_ _52_/A _56_/B _55_/Y vgnd vpwr scs8hd_nor2_4
+XFILLER_23_184 vgnd vpwr scs8hd_decap_12
+XFILLER_11_73 vpwr vgnd scs8hd_fill_2
+Xmux_right_ipin_1.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2 mux_right_ipin_1.INVTX1_0_.scs8hd_inv_1/Y
++ _33_/A mux_right_ipin_1.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2/Z vgnd vpwr scs8hd_ebufn_2
+XANTENNA__51__C _28_/Y vgnd vpwr scs8hd_diode_2
+XFILLER_28_210 vpwr vgnd scs8hd_fill_2
+XFILLER_20_154 vgnd vpwr scs8hd_decap_12
+XANTENNA__46__C address[0] vgnd vpwr scs8hd_diode_2
+X_38_ address[1] _39_/B _52_/A _43_/D _38_/Y vgnd vpwr scs8hd_nor4_4
+XFILLER_11_154 vgnd vpwr scs8hd_decap_12
+XFILLER_7_114 vgnd vpwr scs8hd_decap_4
+Xmem_left_ipin_0.LATCH_1_.latch data_in mem_left_ipin_0.LATCH_1_.latch/Q _42_/Y vgnd
++ vpwr scs8hd_lpflow_inputisolatch_1
+XFILLER_8_85 vpwr vgnd scs8hd_fill_2
+XFILLER_8_30 vgnd vpwr scs8hd_fill_1
+XANTENNA_mux_right_ipin_0.mux_l2_in_0_.TGATE_2_.scs8hd_ebufn_2_TEB mem_right_ipin_0.LATCH_5_.latch/Q
++ vgnd vpwr scs8hd_diode_2
+XFILLER_17_94 vgnd vpwr scs8hd_decap_12
+XFILLER_16_202 vgnd vpwr scs8hd_decap_8
+XANTENNA__73__A chany_bottom_in[8] vgnd vpwr scs8hd_diode_2
+XANTENNA__57__B _27_/Y vgnd vpwr scs8hd_diode_2
+XFILLER_13_19 vpwr vgnd scs8hd_fill_2
+XANTENNA__43__D _43_/D vgnd vpwr scs8hd_diode_2
+XFILLER_1_109 vgnd vpwr scs8hd_decap_3
+XFILLER_28_93 vgnd vpwr scs8hd_decap_12
+Xmux_left_ipin_0.mux_l1_in_0_.TGATE_2_.scs8hd_ebufn_2 mux_left_ipin_0.INVTX1_2_.scs8hd_inv_1/Y
++ mem_left_ipin_0.LATCH_2_.latch/Q mux_left_ipin_0.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2/Z
++ vgnd vpwr scs8hd_ebufn_2
+XANTENNA_mux_right_ipin_2.mux_l2_in_0_.TGATE_1_.scs8hd_ebufn_2_A _63_/HI vgnd vpwr
++ scs8hd_diode_2
+Xmux_right_ipin_2.mux_l2_in_0_.TGATE_1_.scs8hd_ebufn_2 _63_/HI _34_/Y mux_right_ipin_2.tap_buf4_0_.scs8hd_inv_1/A
++ vgnd vpwr scs8hd_ebufn_2
+XANTENNA__68__A chany_top_in[4] vgnd vpwr scs8hd_diode_2
+XFILLER_0_153 vpwr vgnd scs8hd_fill_2
+XFILLER_0_175 vgnd vpwr scs8hd_decap_8
+XFILLER_5_53 vpwr vgnd scs8hd_fill_2
+XANTENNA_mux_left_ipin_0.mux_l1_in_0_.TGATE_1_.scs8hd_ebufn_2_A mux_left_ipin_0.INVTX1_1_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_diode_2
+XANTENNA__38__D _43_/D vgnd vpwr scs8hd_diode_2
+Xmux_left_ipin_0.INVTX1_5_.scs8hd_inv_1 chany_top_in[8] mux_left_ipin_0.INVTX1_5_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_inv_1
+XFILLER_14_51 vgnd vpwr scs8hd_fill_1
+X_71_ chany_top_in[1] chany_bottom_out[1] vgnd vpwr scs8hd_buf_2
+XANTENNA__54__C _28_/Y vgnd vpwr scs8hd_diode_2
+XPHY_61 vgnd vpwr scs8hd_decap_3
+XPHY_50 vgnd vpwr scs8hd_decap_3
+XFILLER_18_105 vgnd vpwr scs8hd_decap_12
+XPHY_94 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XANTENNA__81__A chany_bottom_in[0] vgnd vpwr scs8hd_diode_2
+XPHY_72 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XANTENNA__49__C _52_/A vgnd vpwr scs8hd_diode_2
+XPHY_83 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XFILLER_17_171 vgnd vpwr scs8hd_decap_12
+XANTENNA_mux_left_ipin_1.mux_l2_in_0_.TGATE_0_.scs8hd_ebufn_2_TEB _30_/A vgnd vpwr
++ scs8hd_diode_2
+XFILLER_2_10 vgnd vpwr scs8hd_fill_1
+XFILLER_2_32 vgnd vpwr scs8hd_decap_4
+XFILLER_2_76 vpwr vgnd scs8hd_fill_2
+X_54_ _26_/Y address[5] _28_/Y _29_/Y _56_/B vgnd vpwr scs8hd_or4_4
+XFILLER_23_196 vgnd vpwr scs8hd_decap_12
+XANTENNA_mux_right_ipin_2.mux_l2_in_0_.TGATE_1_.scs8hd_ebufn_2_TEB _34_/Y vgnd vpwr
++ scs8hd_diode_2
+XANTENNA__51__D _29_/Y vgnd vpwr scs8hd_diode_2
+XFILLER_14_152 vgnd vpwr scs8hd_fill_1
+XFILLER_11_96 vpwr vgnd scs8hd_fill_2
+XFILLER_11_52 vpwr vgnd scs8hd_fill_2
+XANTENNA__76__A chany_bottom_in[5] vgnd vpwr scs8hd_diode_2
+XFILLER_20_166 vgnd vpwr scs8hd_decap_12
+X_37_ address[4] address[5] address[3] _29_/Y _43_/D vgnd vpwr scs8hd_or4_4
+XFILLER_11_166 vgnd vpwr scs8hd_decap_12
+XANTENNA__46__D _46_/D vgnd vpwr scs8hd_diode_2
+XFILLER_8_97 vpwr vgnd scs8hd_fill_2
+XFILLER_8_42 vgnd vpwr scs8hd_decap_3
+XANTENNA_mux_right_ipin_0.INVTX1_5_.scs8hd_inv_1_A chany_top_in[6] vgnd vpwr scs8hd_diode_2
+XFILLER_17_62 vgnd vpwr scs8hd_decap_12
+XANTENNA__57__C _57_/C vgnd vpwr scs8hd_diode_2
+XFILLER_3_184 vgnd vpwr scs8hd_decap_12
+XANTENNA_mux_left_ipin_1.tap_buf4_0_.scs8hd_inv_1_A mux_left_ipin_1.tap_buf4_0_.scs8hd_inv_1/A
++ vgnd vpwr scs8hd_diode_2
+XFILLER_8_210 vpwr vgnd scs8hd_fill_2
+XFILLER_0_187 vgnd vpwr scs8hd_decap_12
+Xmux_right_ipin_0.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2 mux_right_ipin_0.INVTX1_0_.scs8hd_inv_1/Y
++ mem_right_ipin_0.LATCH_0_.latch/Q mux_right_ipin_0.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2/Z
++ vgnd vpwr scs8hd_ebufn_2
+XFILLER_5_32 vpwr vgnd scs8hd_fill_2
+XFILLER_14_41 vpwr vgnd scs8hd_fill_2
+XANTENNA__79__A chany_bottom_in[2] vgnd vpwr scs8hd_diode_2
+XANTENNA__54__D _29_/Y vgnd vpwr scs8hd_diode_2
+X_70_ chany_top_in[2] chany_bottom_out[2] vgnd vpwr scs8hd_buf_2
+XFILLER_18_117 vgnd vpwr scs8hd_decap_12
+XANTENNA__49__D _46_/D vgnd vpwr scs8hd_diode_2
+XFILLER_2_205 vgnd vpwr scs8hd_decap_6
+XFILLER_4_7 vpwr vgnd scs8hd_fill_2
+XPHY_62 vgnd vpwr scs8hd_decap_3
+XPHY_51 vgnd vpwr scs8hd_decap_3
+XFILLER_25_62 vgnd vpwr scs8hd_decap_12
+XFILLER_25_51 vgnd vpwr scs8hd_decap_8
+XPHY_40 vgnd vpwr scs8hd_decap_3
+XPHY_95 vgnd vpwr scs8hd_tapvpwrvgnd_1
+X_53_ address[0] _52_/B _53_/Y vgnd vpwr scs8hd_nor2_4
+XPHY_73 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XFILLER_2_88 vpwr vgnd scs8hd_fill_2
+XPHY_84 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XANTENNA_mem_left_ipin_0.LATCH_2_.latch_SLEEPB _41_/Y vgnd vpwr scs8hd_diode_2
+XFILLER_28_3 vgnd vpwr scs8hd_decap_12
+XFILLER_20_178 vgnd vpwr scs8hd_decap_12
+XANTENNA_mem_right_ipin_0.LATCH_3_.latch_D data_in vgnd vpwr scs8hd_diode_2
+X_36_ address[3] _29_/Y _57_/C vgnd vpwr scs8hd_or2_4
+XFILLER_11_178 vgnd vpwr scs8hd_decap_4
+XFILLER_7_138 vgnd vpwr scs8hd_decap_12
+Xmux_right_ipin_1.mux_l2_in_0_.TGATE_1_.scs8hd_ebufn_2 _62_/HI _32_/Y mux_right_ipin_1.tap_buf4_0_.scs8hd_inv_1/A
++ vgnd vpwr scs8hd_ebufn_2
+XANTENNA_mem_right_ipin_1.LATCH_1_.latch_D data_in vgnd vpwr scs8hd_diode_2
+XFILLER_8_32 vpwr vgnd scs8hd_fill_2
+XFILLER_4_108 vpwr vgnd scs8hd_fill_2
+XANTENNA__57__D _52_/A vgnd vpwr scs8hd_diode_2
+XFILLER_17_74 vgnd vpwr scs8hd_fill_1
+XFILLER_3_196 vgnd vpwr scs8hd_decap_12
+XFILLER_0_133 vpwr vgnd scs8hd_fill_2
+XFILLER_0_199 vgnd vpwr scs8hd_decap_12
+XANTENNA_mem_left_ipin_0.LATCH_0_.latch_D data_in vgnd vpwr scs8hd_diode_2
+XANTENNA_mux_left_ipin_1.mux_l1_in_0_.TGATE_1_.scs8hd_ebufn_2_A mux_left_ipin_1.INVTX1_1_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_diode_2
+XFILLER_5_11 vpwr vgnd scs8hd_fill_2
+XFILLER_5_77 vpwr vgnd scs8hd_fill_2
+XPHY_63 vgnd vpwr scs8hd_decap_3
+XPHY_52 vgnd vpwr scs8hd_decap_3
+XFILLER_25_74 vgnd vpwr scs8hd_decap_12
+XPHY_41 vgnd vpwr scs8hd_decap_3
+XFILLER_18_129 vgnd vpwr scs8hd_decap_12
+XPHY_30 vgnd vpwr scs8hd_decap_3
+X_52_ _52_/A _52_/B _52_/Y vgnd vpwr scs8hd_nor2_4
+XPHY_96 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XFILLER_2_23 vpwr vgnd scs8hd_fill_2
+XFILLER_2_56 vpwr vgnd scs8hd_fill_2
+XPHY_74 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_85 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XFILLER_17_184 vgnd vpwr scs8hd_decap_12
+XFILLER_23_110 vgnd vpwr scs8hd_decap_12
+XANTENNA_mux_right_ipin_0.INVTX1_0_.scs8hd_inv_1_A chany_bottom_in[1] vgnd vpwr scs8hd_diode_2
+X_35_ _35_/A _35_/Y vgnd vpwr scs8hd_inv_8
+XFILLER_28_202 vgnd vpwr scs8hd_decap_8
+XFILLER_11_113 vgnd vpwr scs8hd_decap_4
+XFILLER_7_106 vpwr vgnd scs8hd_fill_2
+XFILLER_10_190 vgnd vpwr scs8hd_decap_12
+XFILLER_8_66 vpwr vgnd scs8hd_fill_2
+XFILLER_8_22 vpwr vgnd scs8hd_fill_2
+XFILLER_8_11 vpwr vgnd scs8hd_fill_2
+XFILLER_6_150 vgnd vpwr scs8hd_decap_3
+XFILLER_3_120 vpwr vgnd scs8hd_fill_2
+XFILLER_13_208 vgnd vpwr scs8hd_decap_4
+XFILLER_0_145 vgnd vpwr scs8hd_decap_8
+XFILLER_0_123 vgnd vpwr scs8hd_fill_1
+XFILLER_14_65 vpwr vgnd scs8hd_fill_2
+XFILLER_14_21 vpwr vgnd scs8hd_fill_2
+XFILLER_29_171 vgnd vpwr scs8hd_decap_12
+XANTENNA_mux_left_ipin_1.mux_l1_in_0_.TGATE_1_.scs8hd_ebufn_2_TEB _31_/Y vgnd vpwr
++ scs8hd_diode_2
+XANTENNA_mux_right_ipin_2.tap_buf4_0_.scs8hd_inv_1_A mux_right_ipin_2.tap_buf4_0_.scs8hd_inv_1/A
++ vgnd vpwr scs8hd_diode_2
+Xmux_right_ipin_0.mux_l2_in_0_.TGATE_1_.scs8hd_ebufn_2 mux_right_ipin_0.mux_l1_in_1_.TGATE_0_.scs8hd_ebufn_2/Z
++ mem_right_ipin_0.LATCH_4_.latch/Q mux_right_ipin_0.tap_buf4_0_.scs8hd_inv_1/A vgnd
++ vpwr scs8hd_ebufn_2
+XPHY_53 vgnd vpwr scs8hd_decap_3
+XFILLER_26_141 vgnd vpwr scs8hd_decap_12
+XFILLER_25_86 vgnd vpwr scs8hd_decap_12
+XPHY_42 vgnd vpwr scs8hd_decap_3
+XPHY_31 vgnd vpwr scs8hd_decap_3
+XPHY_97 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_20 vgnd vpwr scs8hd_decap_3
+XPHY_86 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_64 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_75 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XFILLER_17_196 vgnd vpwr scs8hd_decap_12
+XFILLER_2_13 vgnd vpwr scs8hd_fill_1
+X_51_ address[4] address[5] _28_/Y _29_/Y _52_/B vgnd vpwr scs8hd_or4_4
+XFILLER_11_77 vpwr vgnd scs8hd_fill_2
+XFILLER_11_11 vgnd vpwr scs8hd_fill_1
+XFILLER_2_6 vgnd vpwr scs8hd_decap_4
+X_34_ _34_/A _34_/Y vgnd vpwr scs8hd_inv_8
+XFILLER_22_32 vgnd vpwr scs8hd_decap_12
+XFILLER_7_118 vgnd vpwr scs8hd_fill_1
+XANTENNA_mux_right_ipin_0.mux_l1_in_1_.TGATE_2_.scs8hd_ebufn_2_TEB mem_right_ipin_0.LATCH_2_.latch/Q
++ vgnd vpwr scs8hd_diode_2
+XFILLER_0_3 vpwr vgnd scs8hd_fill_2
+XFILLER_8_89 vgnd vpwr scs8hd_decap_3
+Xmux_right_ipin_0.INVTX1_3_.scs8hd_inv_1 chany_top_in[2] mux_right_ipin_0.INVTX1_3_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_inv_1
+XFILLER_3_132 vpwr vgnd scs8hd_fill_2
+XFILLER_3_143 vpwr vgnd scs8hd_fill_2
+XFILLER_12_8 vpwr vgnd scs8hd_fill_2
+XFILLER_28_42 vgnd vpwr scs8hd_decap_12
+XFILLER_8_202 vgnd vpwr scs8hd_decap_8
+XFILLER_5_57 vpwr vgnd scs8hd_fill_2
+Xmux_left_ipin_0.INVTX1_2_.scs8hd_inv_1 chany_bottom_in[4] mux_left_ipin_0.INVTX1_2_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_inv_1
+XANTENNA_mem_right_ipin_1.LATCH_1_.latch_SLEEPB _55_/Y vgnd vpwr scs8hd_diode_2
+Xmux_right_ipin_0.mux_l1_in_1_.TGATE_2_.scs8hd_ebufn_2 mux_right_ipin_0.INVTX1_5_.scs8hd_inv_1/Y
++ mem_right_ipin_0.LATCH_2_.latch/Q mux_right_ipin_0.mux_l1_in_1_.TGATE_0_.scs8hd_ebufn_2/Z
++ vgnd vpwr scs8hd_ebufn_2
+XFILLER_30_32 vgnd vpwr scs8hd_decap_12
+XANTENNA_mux_right_ipin_0.mux_l1_in_0_.TGATE_1_.scs8hd_ebufn_2_A mux_right_ipin_0.INVTX1_1_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_diode_2
+XPHY_54 vgnd vpwr scs8hd_decap_3
+XFILLER_25_98 vgnd vpwr scs8hd_decap_12
+XPHY_43 vgnd vpwr scs8hd_decap_3
+XPHY_32 vgnd vpwr scs8hd_decap_3
+XPHY_21 vgnd vpwr scs8hd_decap_3
+XPHY_98 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_87 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_65 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_76 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_10 vgnd vpwr scs8hd_decap_3
+X_50_ address[1] address[2] address[0] _46_/D _50_/Y vgnd vpwr scs8hd_nor4_4
+XFILLER_23_123 vgnd vpwr scs8hd_decap_12
+XFILLER_11_56 vgnd vpwr scs8hd_decap_3
+X_33_ _33_/A _33_/Y vgnd vpwr scs8hd_inv_8
+XFILLER_3_90 vgnd vpwr scs8hd_decap_3
+XFILLER_22_44 vgnd vpwr scs8hd_decap_12
+XFILLER_11_126 vpwr vgnd scs8hd_fill_2
+Xmux_right_ipin_2.mux_l1_in_0_.TGATE_1_.scs8hd_ebufn_2 mux_right_ipin_2.INVTX1_1_.scs8hd_inv_1/Y
++ _35_/Y mux_right_ipin_2.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2/Z vgnd vpwr scs8hd_ebufn_2
+XFILLER_26_3 vgnd vpwr scs8hd_decap_12
+Xmem_right_ipin_0.LATCH_2_.latch data_in mem_right_ipin_0.LATCH_2_.latch/Q _48_/Y
++ vgnd vpwr scs8hd_lpflow_inputisolatch_1
+XANTENNA_mux_right_ipin_1.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2_TEB _33_/A vgnd vpwr
++ scs8hd_diode_2
+XFILLER_17_11 vgnd vpwr scs8hd_decap_12
+XFILLER_30_210 vpwr vgnd scs8hd_fill_2
+XFILLER_3_111 vgnd vpwr scs8hd_decap_3
+XFILLER_0_103 vpwr vgnd scs8hd_fill_2
+XFILLER_28_54 vgnd vpwr scs8hd_decap_12
+XFILLER_28_32 vgnd vpwr scs8hd_decap_6
+XFILLER_12_210 vpwr vgnd scs8hd_fill_2
+XFILLER_30_44 vgnd vpwr scs8hd_decap_12
+XFILLER_29_184 vgnd vpwr scs8hd_decap_12
+XFILLER_14_78 vgnd vpwr scs8hd_decap_12
+XFILLER_14_45 vgnd vpwr scs8hd_decap_6
+XPHY_55 vgnd vpwr scs8hd_decap_3
+XFILLER_26_154 vgnd vpwr scs8hd_decap_12
+XPHY_44 vgnd vpwr scs8hd_decap_3
+XPHY_33 vgnd vpwr scs8hd_decap_3
+XPHY_22 vgnd vpwr scs8hd_decap_3
+XPHY_99 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_66 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_77 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_11 vgnd vpwr scs8hd_decap_3
+XPHY_88 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XFILLER_23_135 vgnd vpwr scs8hd_decap_12
+XFILLER_11_35 vpwr vgnd scs8hd_fill_2
+XFILLER_22_190 vgnd vpwr scs8hd_decap_4
+XFILLER_14_124 vgnd vpwr scs8hd_decap_12
+XFILLER_14_113 vgnd vpwr scs8hd_decap_8
+XFILLER_14_102 vgnd vpwr scs8hd_decap_3
+XFILLER_20_105 vgnd vpwr scs8hd_decap_12
+XANTENNA_mux_left_ipin_0.mux_l2_in_0_.TGATE_2_.scs8hd_ebufn_2_A _59_/HI vgnd vpwr
++ scs8hd_diode_2
+X_32_ _32_/A _32_/Y vgnd vpwr scs8hd_inv_8
+XFILLER_22_56 vgnd vpwr scs8hd_decap_12
+XFILLER_25_208 vgnd vpwr scs8hd_decap_4
+XFILLER_19_3 vgnd vpwr scs8hd_decap_12
+XANTENNA_mem_left_ipin_0.LATCH_3_.latch_D data_in vgnd vpwr scs8hd_diode_2
+XFILLER_6_142 vgnd vpwr scs8hd_decap_8
+XFILLER_6_131 vgnd vpwr scs8hd_decap_8
+XFILLER_6_120 vgnd vpwr scs8hd_decap_3
+XFILLER_17_78 vpwr vgnd scs8hd_fill_2
+XFILLER_17_23 vgnd vpwr scs8hd_decap_12
+XANTENNA_mem_left_ipin_1.LATCH_1_.latch_D data_in vgnd vpwr scs8hd_diode_2
+XFILLER_28_66 vgnd vpwr scs8hd_decap_12
+XFILLER_0_115 vpwr vgnd scs8hd_fill_2
+XFILLER_0_159 vpwr vgnd scs8hd_fill_2
+XFILLER_5_15 vpwr vgnd scs8hd_fill_2
+XFILLER_30_56 vgnd vpwr scs8hd_decap_12
+XANTENNA_mux_left_ipin_0.INVTX1_1_.scs8hd_inv_1_A chany_top_in[0] vgnd vpwr scs8hd_diode_2
+Xmem_left_ipin_0.LATCH_2_.latch data_in mem_left_ipin_0.LATCH_2_.latch/Q _41_/Y vgnd
++ vpwr scs8hd_lpflow_inputisolatch_1
+XFILLER_29_196 vgnd vpwr scs8hd_decap_12
+XANTENNA_mux_right_ipin_1.mux_l1_in_0_.TGATE_1_.scs8hd_ebufn_2_A mux_right_ipin_1.INVTX1_1_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_diode_2
+XFILLER_6_91 vgnd vpwr scs8hd_fill_1
+Xmux_right_ipin_1.mux_l1_in_0_.TGATE_1_.scs8hd_ebufn_2 mux_right_ipin_1.INVTX1_1_.scs8hd_inv_1/Y
++ _33_/Y mux_right_ipin_1.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2/Z vgnd vpwr scs8hd_ebufn_2
+XPHY_12 vgnd vpwr scs8hd_decap_3
+XPHY_56 vgnd vpwr scs8hd_decap_3
+XFILLER_26_166 vgnd vpwr scs8hd_decap_12
+XPHY_45 vgnd vpwr scs8hd_decap_3
+XPHY_34 vgnd vpwr scs8hd_decap_3
+XPHY_23 vgnd vpwr scs8hd_decap_3
+XPHY_89 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_67 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XFILLER_2_27 vpwr vgnd scs8hd_fill_2
+XFILLER_2_38 vgnd vpwr scs8hd_fill_1
+XPHY_78 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XFILLER_23_147 vgnd vpwr scs8hd_decap_12
+XFILLER_31_180 vgnd vpwr scs8hd_decap_6
+XFILLER_14_158 vgnd vpwr scs8hd_decap_12
+XFILLER_14_136 vgnd vpwr scs8hd_decap_12
+XFILLER_11_14 vpwr vgnd scs8hd_fill_2
+Xmux_right_ipin_2.INVTX1_0_.scs8hd_inv_1 chany_bottom_in[4] mux_right_ipin_2.INVTX1_0_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_inv_1
+XFILLER_20_117 vgnd vpwr scs8hd_decap_12
+XFILLER_13_180 vgnd vpwr scs8hd_decap_3
+X_31_ _31_/A _31_/Y vgnd vpwr scs8hd_inv_8
+XFILLER_9_184 vgnd vpwr scs8hd_decap_12
+XFILLER_22_68 vgnd vpwr scs8hd_decap_12
+XFILLER_11_117 vgnd vpwr scs8hd_fill_1
+XFILLER_12_90 vpwr vgnd scs8hd_fill_2
+XFILLER_8_37 vgnd vpwr scs8hd_decap_3
+XFILLER_8_26 vpwr vgnd scs8hd_fill_2
+XFILLER_6_154 vgnd vpwr scs8hd_decap_12
+XFILLER_17_35 vgnd vpwr scs8hd_decap_12
+XANTENNA_mux_left_ipin_1.mux_l2_in_0_.TGATE_1_.scs8hd_ebufn_2_TEB _30_/Y vgnd vpwr
++ scs8hd_diode_2
+XFILLER_31_3 vgnd vpwr scs8hd_decap_12
+XFILLER_28_78 vgnd vpwr scs8hd_decap_12
+XANTENNA_mux_left_ipin_0.mux_l1_in_1_.TGATE_2_.scs8hd_ebufn_2_A mux_left_ipin_0.INVTX1_5_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_diode_2
+XANTENNA_mem_right_ipin_0.LATCH_4_.latch_SLEEPB _46_/Y vgnd vpwr scs8hd_diode_2
+XFILLER_30_68 vgnd vpwr scs8hd_decap_12
+XFILLER_14_25 vgnd vpwr scs8hd_decap_4
+XFILLER_5_208 vgnd vpwr scs8hd_decap_4
+XFILLER_29_131 vpwr vgnd scs8hd_fill_2
+XPHY_57 vgnd vpwr scs8hd_decap_3
+XFILLER_26_178 vgnd vpwr scs8hd_decap_12
+XPHY_46 vgnd vpwr scs8hd_decap_3
+XPHY_35 vgnd vpwr scs8hd_decap_3
+XPHY_24 vgnd vpwr scs8hd_decap_3
+XANTENNA__30__A _30_/A vgnd vpwr scs8hd_diode_2
+XPHY_13 vgnd vpwr scs8hd_decap_3
+XPHY_68 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_79 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XFILLER_17_123 vgnd vpwr scs8hd_decap_12
+XFILLER_23_159 vgnd vpwr scs8hd_decap_12
+XFILLER_14_148 vgnd vpwr scs8hd_decap_4
+XANTENNA__25__A address[0] vgnd vpwr scs8hd_diode_2
+XFILLER_20_129 vgnd vpwr scs8hd_decap_12
+X_30_ _30_/A _30_/Y vgnd vpwr scs8hd_inv_8
+XFILLER_9_196 vgnd vpwr scs8hd_decap_12
+XFILLER_12_80 vgnd vpwr scs8hd_fill_1
+XFILLER_6_166 vgnd vpwr scs8hd_decap_12
+Xmux_right_ipin_0.INVTX1_0_.scs8hd_inv_1 chany_bottom_in[1] mux_right_ipin_0.INVTX1_0_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_inv_1
+XFILLER_0_7 vgnd vpwr scs8hd_decap_3
+XANTENNA_mux_left_ipin_0.tap_buf4_0_.scs8hd_inv_1_A mux_left_ipin_0.tap_buf4_0_.scs8hd_inv_1/A
++ vgnd vpwr scs8hd_diode_2
+XFILLER_24_210 vpwr vgnd scs8hd_fill_2
+XFILLER_17_47 vgnd vpwr scs8hd_decap_12
+XFILLER_3_136 vpwr vgnd scs8hd_fill_2
+XFILLER_3_147 vgnd vpwr scs8hd_decap_12
+XFILLER_30_202 vgnd vpwr scs8hd_decap_8
+XFILLER_24_3 vgnd vpwr scs8hd_decap_12
+XANTENNA_mem_left_ipin_1.LATCH_1_.latch_SLEEPB _52_/Y vgnd vpwr scs8hd_diode_2
+XFILLER_9_81 vgnd vpwr scs8hd_fill_1
+Xmux_right_ipin_0.mux_l1_in_0_.TGATE_1_.scs8hd_ebufn_2 mux_right_ipin_0.INVTX1_1_.scs8hd_inv_1/Y
++ mem_right_ipin_0.LATCH_1_.latch/Q mux_right_ipin_0.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2/Z
++ vgnd vpwr scs8hd_ebufn_2
+XFILLER_12_202 vgnd vpwr scs8hd_decap_8
+XFILLER_5_28 vpwr vgnd scs8hd_fill_2
+XANTENNA__33__A _33_/A vgnd vpwr scs8hd_diode_2
+XFILLER_29_110 vgnd vpwr scs8hd_decap_12
+XANTENNA__28__A address[3] vgnd vpwr scs8hd_diode_2
+XANTENNA_mux_right_ipin_2.mux_l1_in_0_.TGATE_1_.scs8hd_ebufn_2_A mux_right_ipin_2.INVTX1_1_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_diode_2
+XFILLER_20_80 vgnd vpwr scs8hd_decap_12
+XFILLER_6_93 vgnd vpwr scs8hd_fill_1
+XPHY_58 vgnd vpwr scs8hd_decap_3
+XPHY_47 vgnd vpwr scs8hd_decap_3
+XPHY_36 vgnd vpwr scs8hd_decap_3
+XPHY_25 vgnd vpwr scs8hd_decap_3
+XPHY_69 vgnd vpwr scs8hd_tapvpwrvgnd_1
+XPHY_14 vgnd vpwr scs8hd_decap_3
+XFILLER_17_135 vgnd vpwr scs8hd_decap_12
+XANTENNA_mux_right_ipin_1.mux_l2_in_0_.TGATE_0_.scs8hd_ebufn_2_TEB _32_/A vgnd vpwr
++ scs8hd_diode_2
+XFILLER_16_190 vgnd vpwr scs8hd_decap_12
+XANTENNA__41__A _40_/A vgnd vpwr scs8hd_diode_2
+XFILLER_9_131 vgnd vpwr scs8hd_decap_12
+XFILLER_22_15 vgnd vpwr scs8hd_decap_12
+XFILLER_19_208 vgnd vpwr scs8hd_decap_4
+XFILLER_10_152 vgnd vpwr scs8hd_fill_1
+XANTENNA__36__A address[3] vgnd vpwr scs8hd_diode_2
+XFILLER_6_178 vgnd vpwr scs8hd_decap_12
+Xmem_right_ipin_2.LATCH_0_.latch data_in _35_/A _58_/Y vgnd vpwr scs8hd_lpflow_inputisolatch_1
+XFILLER_17_59 vpwr vgnd scs8hd_fill_2
+XFILLER_3_159 vgnd vpwr scs8hd_decap_12
+XFILLER_2_181 vgnd vpwr scs8hd_decap_12
+XFILLER_0_129 vpwr vgnd scs8hd_fill_2
+XFILLER_0_107 vpwr vgnd scs8hd_fill_2
+XFILLER_18_80 vgnd vpwr scs8hd_decap_12
+XFILLER_30_15 vgnd vpwr scs8hd_decap_12
+XANTENNA__44__A address[3] vgnd vpwr scs8hd_diode_2
+XFILLER_4_210 vpwr vgnd scs8hd_fill_2
+XPHY_59 vgnd vpwr scs8hd_decap_3
+XFILLER_25_59 vpwr vgnd scs8hd_fill_2
+XFILLER_25_15 vgnd vpwr scs8hd_decap_12
+XPHY_48 vgnd vpwr scs8hd_decap_3
+XPHY_37 vgnd vpwr scs8hd_decap_3
+XPHY_26 vgnd vpwr scs8hd_decap_3
+XPHY_15 vgnd vpwr scs8hd_decap_3
+XFILLER_6_83 vpwr vgnd scs8hd_fill_2
+XFILLER_17_147 vgnd vpwr scs8hd_decap_12
+XANTENNA_mux_right_ipin_0.INVTX1_1_.scs8hd_inv_1_A chany_top_in[1] vgnd vpwr scs8hd_diode_2
+XANTENNA__39__A address[1] vgnd vpwr scs8hd_diode_2
+XFILLER_11_39 vpwr vgnd scs8hd_fill_2
+XFILLER_22_194 vgnd vpwr scs8hd_fill_1
+XANTENNA__41__B address[2] vgnd vpwr scs8hd_diode_2
+XFILLER_26_80 vgnd vpwr scs8hd_decap_12
+XFILLER_9_143 vgnd vpwr scs8hd_decap_12
+XFILLER_3_40 vpwr vgnd scs8hd_fill_2
+XFILLER_3_73 vpwr vgnd scs8hd_fill_2
+XFILLER_3_95 vgnd vpwr scs8hd_decap_4
+XFILLER_22_27 vgnd vpwr scs8hd_decap_4
+XFILLER_11_109 vpwr vgnd scs8hd_fill_2
+XANTENNA__36__B _29_/Y vgnd vpwr scs8hd_diode_2
+XFILLER_12_93 vpwr vgnd scs8hd_fill_2
+XANTENNA__52__A _52_/A vgnd vpwr scs8hd_diode_2
+XANTENNA_mux_right_ipin_0.mux_l2_in_0_.TGATE_2_.scs8hd_ebufn_2_A _61_/HI vgnd vpwr
++ scs8hd_diode_2
+XANTENNA__47__A _40_/A vgnd vpwr scs8hd_diode_2
+XFILLER_3_116 vpwr vgnd scs8hd_fill_2
+XFILLER_0_85 vpwr vgnd scs8hd_fill_2
+XFILLER_0_74 vpwr vgnd scs8hd_fill_2
+XFILLER_2_193 vgnd vpwr scs8hd_decap_12
+XFILLER_28_15 vgnd vpwr scs8hd_decap_12
+XFILLER_0_119 vpwr vgnd scs8hd_fill_2
+XANTENNA_mux_right_ipin_1.tap_buf4_0_.scs8hd_inv_1_A mux_right_ipin_1.tap_buf4_0_.scs8hd_inv_1/A
++ vgnd vpwr scs8hd_diode_2
+XFILLER_30_27 vgnd vpwr scs8hd_decap_4
+XFILLER_29_123 vgnd vpwr scs8hd_decap_4
+XFILLER_14_17 vpwr vgnd scs8hd_fill_2
+Xmux_right_ipin_0.mux_l2_in_0_.TGATE_2_.scs8hd_ebufn_2 _61_/HI mem_right_ipin_0.LATCH_5_.latch/Q
++ mux_right_ipin_0.tap_buf4_0_.scs8hd_inv_1/A vgnd vpwr scs8hd_ebufn_2
+XFILLER_20_93 vgnd vpwr scs8hd_decap_12
+XANTENNA__44__B _29_/Y vgnd vpwr scs8hd_diode_2
+XFILLER_25_27 vgnd vpwr scs8hd_decap_12
+XPHY_49 vgnd vpwr scs8hd_decap_3
+XPHY_38 vgnd vpwr scs8hd_decap_3
+XPHY_27 vgnd vpwr scs8hd_decap_3
+XPHY_16 vgnd vpwr scs8hd_decap_3
+XFILLER_6_62 vpwr vgnd scs8hd_fill_2
+XFILLER_17_159 vgnd vpwr scs8hd_decap_12
+XFILLER_15_82 vpwr vgnd scs8hd_fill_2
+XFILLER_15_71 vgnd vpwr scs8hd_decap_6
+XANTENNA__55__A _52_/A vgnd vpwr scs8hd_diode_2
+XANTENNA__39__B _39_/B vgnd vpwr scs8hd_diode_2
+XANTENNA_mem_right_ipin_2.LATCH_0_.latch_SLEEPB _58_/Y vgnd vpwr scs8hd_diode_2
+XFILLER_14_107 vgnd vpwr scs8hd_decap_3
+Xmux_right_ipin_2.tap_buf4_0_.scs8hd_inv_1 mux_right_ipin_2.tap_buf4_0_.scs8hd_inv_1/A
++ left_grid_pin_9_ vgnd vpwr scs8hd_inv_1
+XANTENNA__41__C address[0] vgnd vpwr scs8hd_diode_2
+XFILLER_13_184 vgnd vpwr scs8hd_decap_12
+XFILLER_13_151 vgnd vpwr scs8hd_decap_3
+XFILLER_9_155 vgnd vpwr scs8hd_decap_12
+XFILLER_18_210 vpwr vgnd scs8hd_fill_2
+XFILLER_12_72 vgnd vpwr scs8hd_decap_8
+XFILLER_10_154 vgnd vpwr scs8hd_decap_12
+XFILLER_10_132 vgnd vpwr scs8hd_decap_12
+XFILLER_10_121 vgnd vpwr scs8hd_decap_8
+XANTENNA__52__B _52_/B vgnd vpwr scs8hd_diode_2
+XFILLER_6_125 vgnd vpwr scs8hd_decap_3
+XFILLER_6_103 vpwr vgnd scs8hd_fill_2
+XFILLER_24_202 vgnd vpwr scs8hd_decap_8
+XANTENNA__47__B address[2] vgnd vpwr scs8hd_diode_2
+XFILLER_9_84 vpwr vgnd scs8hd_fill_2
+XFILLER_9_73 vpwr vgnd scs8hd_fill_2
+XANTENNA_mem_left_ipin_0.LATCH_4_.latch_SLEEPB _39_/Y vgnd vpwr scs8hd_diode_2
+XFILLER_9_40 vpwr vgnd scs8hd_fill_2
+XFILLER_2_150 vgnd vpwr scs8hd_decap_3
+XFILLER_28_27 vgnd vpwr scs8hd_decap_4
+XANTENNA_mem_right_ipin_0.LATCH_1_.latch_SLEEPB _49_/Y vgnd vpwr scs8hd_diode_2
+XFILLER_18_93 vgnd vpwr scs8hd_decap_12
+XANTENNA__58__A address[4] vgnd vpwr scs8hd_diode_2
+XFILLER_22_3 vgnd vpwr scs8hd_decap_12
+XANTENNA_mux_left_ipin_0.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2_TEB mem_left_ipin_0.LATCH_0_.latch/Q
++ vgnd vpwr scs8hd_diode_2
+XANTENNA_mux_right_ipin_0.mux_l1_in_1_.TGATE_2_.scs8hd_ebufn_2_A mux_right_ipin_0.INVTX1_5_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_diode_2
+Xmem_right_ipin_0.LATCH_3_.latch data_in mem_right_ipin_0.LATCH_3_.latch/Q _47_/Y
++ vgnd vpwr scs8hd_lpflow_inputisolatch_1
+XFILLER_29_135 vgnd vpwr scs8hd_decap_12
+XFILLER_29_70 vpwr vgnd scs8hd_fill_2
+XANTENNA__44__C _26_/Y vgnd vpwr scs8hd_diode_2
+XANTENNA_mux_right_ipin_1.mux_l1_in_0_.TGATE_1_.scs8hd_ebufn_2_TEB _33_/Y vgnd vpwr
++ scs8hd_diode_2
+XFILLER_28_190 vgnd vpwr scs8hd_decap_12
+XFILLER_26_105 vgnd vpwr scs8hd_decap_12
+XPHY_28 vgnd vpwr scs8hd_decap_3
+XPHY_17 vgnd vpwr scs8hd_decap_3
+XFILLER_6_41 vpwr vgnd scs8hd_fill_2
+XFILLER_25_171 vgnd vpwr scs8hd_decap_12
+XFILLER_25_39 vgnd vpwr scs8hd_decap_12
+XPHY_39 vgnd vpwr scs8hd_decap_3
+XFILLER_9_7 vgnd vpwr scs8hd_decap_4
+XANTENNA__55__B _56_/B vgnd vpwr scs8hd_diode_2
+XANTENNA__39__C address[0] vgnd vpwr scs8hd_diode_2
+XANTENNA__71__A chany_top_in[1] vgnd vpwr scs8hd_diode_2
+XFILLER_22_141 vgnd vpwr scs8hd_decap_12
+XANTENNA__41__D _43_/D vgnd vpwr scs8hd_diode_2
+XFILLER_26_93 vgnd vpwr scs8hd_decap_12
+XFILLER_13_196 vgnd vpwr scs8hd_decap_12
+XFILLER_9_167 vgnd vpwr scs8hd_decap_12
+XFILLER_9_101 vpwr vgnd scs8hd_fill_2
+XANTENNA__66__A chany_top_in[6] vgnd vpwr scs8hd_diode_2
+Xmux_left_ipin_0.mux_l1_in_1_.TGATE_0_.scs8hd_ebufn_2 mux_left_ipin_0.INVTX1_3_.scs8hd_inv_1/Y
++ mem_left_ipin_0.LATCH_0_.latch/Q mux_left_ipin_0.mux_l1_in_1_.TGATE_0_.scs8hd_ebufn_2/Z
++ vgnd vpwr scs8hd_ebufn_2
+XFILLER_3_53 vpwr vgnd scs8hd_fill_2
+XFILLER_27_211 vgnd vpwr scs8hd_fill_1
+XFILLER_12_84 vgnd vpwr scs8hd_decap_4
+XFILLER_12_51 vpwr vgnd scs8hd_fill_2
+XFILLER_10_166 vgnd vpwr scs8hd_decap_12
+XFILLER_10_144 vgnd vpwr scs8hd_decap_8
+Xmux_right_ipin_1.INVTX1_1_.scs8hd_inv_1 chany_top_in[3] mux_right_ipin_1.INVTX1_1_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_inv_1
+X_69_ chany_top_in[3] chany_bottom_out[3] vgnd vpwr scs8hd_buf_2
+XANTENNA__47__C _52_/A vgnd vpwr scs8hd_diode_2
+XFILLER_0_54 vpwr vgnd scs8hd_fill_2
+XFILLER_0_32 vgnd vpwr scs8hd_decap_3
+XANTENNA__74__A chany_bottom_in[7] vgnd vpwr scs8hd_diode_2
+XANTENNA__58__B _27_/Y vgnd vpwr scs8hd_diode_2
+Xmux_left_ipin_1.INVTX1_0_.scs8hd_inv_1 chany_bottom_in[1] mux_left_ipin_1.INVTX1_0_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_inv_1
+XFILLER_29_147 vgnd vpwr scs8hd_decap_12
+XANTENNA__69__A chany_top_in[3] vgnd vpwr scs8hd_diode_2
+XANTENNA__44__D address[5] vgnd vpwr scs8hd_diode_2
+XFILLER_4_202 vgnd vpwr scs8hd_decap_8
+XFILLER_26_117 vgnd vpwr scs8hd_decap_12
+XFILLER_17_106 vgnd vpwr scs8hd_decap_12
+XPHY_29 vgnd vpwr scs8hd_decap_3
+XPHY_18 vgnd vpwr scs8hd_decap_3
+XANTENNA__39__D _43_/D vgnd vpwr scs8hd_diode_2
+XANTENNA_mem_right_ipin_0.LATCH_2_.latch_D data_in vgnd vpwr scs8hd_diode_2
+XFILLER_31_94 vgnd vpwr scs8hd_decap_12
+XANTENNA_mem_right_ipin_1.LATCH_0_.latch_D data_in vgnd vpwr scs8hd_diode_2
+Xmem_left_ipin_0.LATCH_3_.latch data_in mem_left_ipin_0.LATCH_3_.latch/Q _40_/Y vgnd
++ vpwr scs8hd_lpflow_inputisolatch_1
+XFILLER_9_179 vgnd vpwr scs8hd_decap_4
+XFILLER_8_190 vgnd vpwr scs8hd_decap_12
+XFILLER_10_178 vgnd vpwr scs8hd_decap_12
+XANTENNA__77__A chany_bottom_in[4] vgnd vpwr scs8hd_diode_2
+XFILLER_5_171 vgnd vpwr scs8hd_decap_12
+X_68_ chany_top_in[4] chany_bottom_out[4] vgnd vpwr scs8hd_buf_2
+XFILLER_23_62 vgnd vpwr scs8hd_decap_12
+XFILLER_23_51 vgnd vpwr scs8hd_decap_8
+XFILLER_17_7 vpwr vgnd scs8hd_fill_2
+XANTENNA__47__D _46_/D vgnd vpwr scs8hd_diode_2
+XFILLER_9_97 vpwr vgnd scs8hd_fill_2
+XFILLER_9_53 vpwr vgnd scs8hd_fill_2
+XANTENNA_mux_left_ipin_0.INVTX1_2_.scs8hd_inv_1_A chany_bottom_in[4] vgnd vpwr scs8hd_diode_2
+XANTENNA__58__C _57_/C vgnd vpwr scs8hd_diode_2
+XFILLER_29_159 vgnd vpwr scs8hd_decap_12
+Xmux_right_ipin_0.INVTX1_5_.scs8hd_inv_1 chany_top_in[6] mux_right_ipin_0.INVTX1_5_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_inv_1
+XFILLER_6_87 vpwr vgnd scs8hd_fill_2
+XFILLER_6_32 vpwr vgnd scs8hd_fill_2
+XFILLER_26_129 vgnd vpwr scs8hd_decap_12
+XPHY_19 vgnd vpwr scs8hd_decap_3
+XFILLER_25_184 vgnd vpwr scs8hd_decap_12
+XFILLER_17_118 vgnd vpwr scs8hd_decap_4
+XFILLER_15_41 vgnd vpwr scs8hd_decap_6
+XFILLER_31_187 vgnd vpwr scs8hd_decap_12
+XFILLER_16_151 vpwr vgnd scs8hd_fill_2
+Xmux_left_ipin_0.INVTX1_4_.scs8hd_inv_1 chany_bottom_in[8] mux_left_ipin_0.INVTX1_4_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_inv_1
+XFILLER_22_154 vgnd vpwr scs8hd_decap_12
+XFILLER_9_114 vpwr vgnd scs8hd_fill_2
+XFILLER_3_77 vpwr vgnd scs8hd_fill_2
+XFILLER_3_99 vgnd vpwr scs8hd_fill_1
+XFILLER_18_202 vgnd vpwr scs8hd_decap_8
+XFILLER_12_97 vgnd vpwr scs8hd_decap_4
+XFILLER_5_3 vgnd vpwr scs8hd_fill_1
+X_67_ chany_top_in[5] chany_bottom_out[5] vgnd vpwr scs8hd_buf_2
+XANTENNA_mux_left_ipin_0.mux_l1_in_0_.TGATE_2_.scs8hd_ebufn_2_A mux_left_ipin_0.INVTX1_2_.scs8hd_inv_1/Y
++ vgnd vpwr scs8hd_diode_2
+XFILLER_23_74 vgnd vpwr scs8hd_decap_12
+XFILLER_2_142 vgnd vpwr scs8hd_decap_8
+XFILLER_0_89 vpwr vgnd scs8hd_fill_2
+XFILLER_0_78 vpwr vgnd scs8hd_fill_2
+XFILLER_0_23 vpwr vgnd scs8hd_fill_2
+XANTENNA__58__D address[0] vgnd vpwr scs8hd_diode_2
+XANTENNA_mux_left_ipin_0.mux_l2_in_0_.TGATE_0_.scs8hd_ebufn_2_A mux_left_ipin_0.mux_l1_in_0_.TGATE_0_.scs8hd_ebufn_2/Z
++ vgnd vpwr scs8hd_diode_2
+XFILLER_29_62 vgnd vpwr scs8hd_decap_4
+XFILLER_19_171 vgnd vpwr scs8hd_decap_12
+XFILLER_20_3 vgnd vpwr scs8hd_decap_12
+XFILLER_6_66 vpwr vgnd scs8hd_fill_2
+XFILLER_31_63 vgnd vpwr scs8hd_decap_12
+XFILLER_25_196 vgnd vpwr scs8hd_decap_12
+XFILLER_15_86 vgnd vpwr scs8hd_decap_12
+XFILLER_15_53 vpwr vgnd scs8hd_fill_2
+XFILLER_31_199 vgnd vpwr scs8hd_decap_12
+.ends
+

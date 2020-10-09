@@ -10,7 +10,7 @@
 
 // ----- BEGIN Physical programmable logic block Verilog module: fle -----
 // ----- Verilog module for logical_tile_clb_mode_default__fle -----
-module logical_tile_clb_mode_default__fle(set,
+module ltile_clb_fle(set,
                                           reset,
                                           clk,
                                           fle_in,
@@ -61,7 +61,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_mode_n1_lut4__ble4_0_ble4_out;
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	logical_tile_clb_mode_default__fle_mode_n1_lut4__ble4 logical_tile_clb_mode_default__fle_mode_n1_lut4__ble4_0 (
+	ltile_clb_n1_lut4__ble4 ltile_clb_n1_lut4__ble4_0 (
 		.set(set[0]),
 		.reset(reset[0]),
 		.clk(clk[0]),

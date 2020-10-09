@@ -88,7 +88,7 @@ output [0:0] left_width_0_height_0__pin_11_;
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	logical_tile_clb_mode_clb_ logical_tile_clb_mode_clb__0 (
+	ltile_clb ltile_clb_0 (
 		.set(set[0]),
 		.reset(reset[0]),
 		.clk(clk[0]),

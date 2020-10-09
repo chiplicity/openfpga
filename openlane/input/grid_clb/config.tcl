@@ -18,9 +18,7 @@ set ::env(VERILOG_FILES) "$script_dir/../../../openfpga/run/SRC/lb/grid_clb.v \
                     $script_dir/../../../openfpga/run/SRC/lb/logical_tile_clb_mode_default__fle_mode_n1_lut4__ble4_mode_default__ff.v \
                     $script_dir/../../../openfpga/run/SRC/lb/logical_tile_clb_mode_default__fle_mode_n1_lut4__ble4_mode_default__lut4.v \
                     $script_dir/../../../openfpga/run/SRC/lb/logical_tile_clb_mode_default__fle_mode_n1_lut4__ble4.v \
-                    $script_dir/../../../openfpga/run/SRC/lb/logical_tile_io_mode_io_.v \
-                    $script_dir/../../../openfpga/run/SRC/lb/logical_tile_clb_mode_default__fle.v \
-                    $script_dir/../../../openfpga/run/SRC/lb/logical_tile_io_mode_physical__iopad.v "
+                    $script_dir/../../../openfpga/run/SRC/lb/logical_tile_clb_mode_default__fle.v "
 
 set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 
@@ -36,8 +34,8 @@ set ::env(CELL_PAD) 8
 set ::env(RUN_SIMPLE_CTS) 0
 
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 740 740"
-set ::env(PL_TARGET_DENSITY) 0.2
+set ::env(DIE_AREA) "0 0 250 250"
+set ::env(PL_TARGET_DENSITY) 0.4
 
 set ::env(SYNTH_MAX_FANOUT) 6
 

@@ -10,15 +10,15 @@
 
 // ----- BEGIN Physical programmable logic block Verilog module: clb -----
 // ----- Verilog module for logical_tile_clb_mode_clb_ -----
-module logical_tile_clb_mode_clb_(set,
-                                  reset,
-                                  clk,
-                                  clb_I,
-                                  clb_clk,
-                                  enable,
-                                  address,
-                                  data_in,
-                                  clb_O);
+module ltile_clb (set,
+				reset,
+				clk,
+				clb_I,
+				clb_clk,
+				enable,
+				address,
+				data_in,
+				clb_O);
 //----- GLOBAL PORTS -----
 input [0:0] set;
 //----- GLOBAL PORTS -----
@@ -112,7 +112,7 @@ wire [0:7] mux_2level_size14_9_sram_inv;
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	logical_tile_clb_mode_default__fle logical_tile_clb_mode_default__fle_0 (
+	ltile_clb_fle ltile_clb_fle_0 (
 		.set(set[0]),
 		.reset(reset[0]),
 		.clk(clk[0]),
@@ -123,7 +123,7 @@ wire [0:7] mux_2level_size14_9_sram_inv;
 		.data_in(data_in[0]),
 		.fle_out(logical_tile_clb_mode_default__fle_0_fle_out[0]));
 
-	logical_tile_clb_mode_default__fle logical_tile_clb_mode_default__fle_1 (
+	ltile_clb_fle ltile_clb_fle_1 (
 		.set(set[0]),
 		.reset(reset[0]),
 		.clk(clk[0]),
@@ -134,7 +134,7 @@ wire [0:7] mux_2level_size14_9_sram_inv;
 		.data_in(data_in[0]),
 		.fle_out(logical_tile_clb_mode_default__fle_1_fle_out[0]));
 
-	logical_tile_clb_mode_default__fle logical_tile_clb_mode_default__fle_2 (
+	ltile_clb_fle ltile_clb_fle_2 (
 		.set(set[0]),
 		.reset(reset[0]),
 		.clk(clk[0]),
@@ -145,7 +145,7 @@ wire [0:7] mux_2level_size14_9_sram_inv;
 		.data_in(data_in[0]),
 		.fle_out(logical_tile_clb_mode_default__fle_2_fle_out[0]));
 
-	logical_tile_clb_mode_default__fle logical_tile_clb_mode_default__fle_3 (
+	ltile_clb_fle ltile_clb_fle_3 (
 		.set(set[0]),
 		.reset(reset[0]),
 		.clk(clk[0]),

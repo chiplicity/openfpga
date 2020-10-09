@@ -28,8 +28,8 @@ set ::env(CELL_PAD) 8
 set ::env(RUN_SIMPLE_CTS) 0
 
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 120 120"
-set ::env(PL_TARGET_DENSITY) 0.4
+set ::env(DIE_AREA) "0 0 110 110"
+set ::env(PL_TARGET_DENSITY) 0.6
 
 set ::env(SYNTH_MAX_FANOUT) 6
 

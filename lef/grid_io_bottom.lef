@@ -1,0 +1,282 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO grid_io_bottom
+  CLASS BLOCK ;
+  FOREIGN grid_io_bottom ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 140.000 BY 140.000 ;
+  PIN address[0]
+    DIRECTION INPUT ;
+    PORT
+      LAYER met2 ;
+        RECT 7.450 137.600 7.730 140.000 ;
+    END
+  END address[0]
+  PIN address[1]
+    DIRECTION INPUT ;
+    PORT
+      LAYER met2 ;
+        RECT 22.630 137.600 22.910 140.000 ;
+    END
+  END address[1]
+  PIN address[2]
+    DIRECTION INPUT ;
+    PORT
+      LAYER met2 ;
+        RECT 17.570 0.000 17.850 2.400 ;
+    END
+  END address[2]
+  PIN address[3]
+    DIRECTION INPUT ;
+    PORT
+      LAYER met2 ;
+        RECT 52.530 0.000 52.810 2.400 ;
+    END
+  END address[3]
+  PIN data_in
+    DIRECTION INPUT ;
+    PORT
+      LAYER met3 ;
+        RECT 137.600 17.040 140.000 17.640 ;
+    END
+  END data_in
+  PIN enable
+    DIRECTION INPUT ;
+    PORT
+      LAYER met3 ;
+        RECT 137.600 5.480 140.000 6.080 ;
+    END
+  END enable
+  PIN gfpga_pad_GPIO_PAD[0]
+    DIRECTION INOUT ;
+    PORT
+      LAYER met2 ;
+        RECT 87.490 0.000 87.770 2.400 ;
+    END
+  END gfpga_pad_GPIO_PAD[0]
+  PIN gfpga_pad_GPIO_PAD[1]
+    DIRECTION INOUT ;
+    PORT
+      LAYER met3 ;
+        RECT 137.600 28.600 140.000 29.200 ;
+    END
+  END gfpga_pad_GPIO_PAD[1]
+  PIN gfpga_pad_GPIO_PAD[2]
+    DIRECTION INOUT ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 13.640 2.400 14.240 ;
+    END
+  END gfpga_pad_GPIO_PAD[2]
+  PIN gfpga_pad_GPIO_PAD[3]
+    DIRECTION INOUT ;
+    PORT
+      LAYER met2 ;
+        RECT 38.270 137.600 38.550 140.000 ;
+    END
+  END gfpga_pad_GPIO_PAD[3]
+  PIN gfpga_pad_GPIO_PAD[4]
+    DIRECTION INOUT ;
+    PORT
+      LAYER met2 ;
+        RECT 53.910 137.600 54.190 140.000 ;
+    END
+  END gfpga_pad_GPIO_PAD[4]
+  PIN gfpga_pad_GPIO_PAD[5]
+    DIRECTION INOUT ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 41.520 2.400 42.120 ;
+    END
+  END gfpga_pad_GPIO_PAD[5]
+  PIN gfpga_pad_GPIO_PAD[6]
+    DIRECTION INOUT ;
+    PORT
+      LAYER met3 ;
+        RECT 137.600 40.160 140.000 40.760 ;
+    END
+  END gfpga_pad_GPIO_PAD[6]
+  PIN gfpga_pad_GPIO_PAD[7]
+    DIRECTION INOUT ;
+    PORT
+      LAYER met3 ;
+        RECT 137.600 51.720 140.000 52.320 ;
+    END
+  END gfpga_pad_GPIO_PAD[7]
+  PIN top_width_0_height_0__pin_0_
+    DIRECTION INPUT ;
+    PORT
+      LAYER met2 ;
+        RECT 69.550 137.600 69.830 140.000 ;
+    END
+  END top_width_0_height_0__pin_0_
+  PIN top_width_0_height_0__pin_10_
+    DIRECTION INPUT ;
+    PORT
+      LAYER met2 ;
+        RECT 84.730 137.600 85.010 140.000 ;
+    END
+  END top_width_0_height_0__pin_10_
+  PIN top_width_0_height_0__pin_11_
+    DIRECTION OUTPUT TRISTATE ;
+    PORT
+      LAYER met3 ;
+        RECT 137.600 121.760 140.000 122.360 ;
+    END
+  END top_width_0_height_0__pin_11_
+  PIN top_width_0_height_0__pin_12_
+    DIRECTION INPUT ;
+    PORT
+      LAYER met2 ;
+        RECT 100.370 137.600 100.650 140.000 ;
+    END
+  END top_width_0_height_0__pin_12_
+  PIN top_width_0_height_0__pin_13_
+    DIRECTION OUTPUT TRISTATE ;
+    PORT
+      LAYER met2 ;
+        RECT 116.010 137.600 116.290 140.000 ;
+    END
+  END top_width_0_height_0__pin_13_
+  PIN top_width_0_height_0__pin_14_
+    DIRECTION INPUT ;
+    PORT
+      LAYER met2 ;
+        RECT 131.650 137.600 131.930 140.000 ;
+    END
+  END top_width_0_height_0__pin_14_
+  PIN top_width_0_height_0__pin_15_
+    DIRECTION OUTPUT TRISTATE ;
+    PORT
+      LAYER met3 ;
+        RECT 137.600 133.320 140.000 133.920 ;
+    END
+  END top_width_0_height_0__pin_15_
+  PIN top_width_0_height_0__pin_1_
+    DIRECTION OUTPUT TRISTATE ;
+    PORT
+      LAYER met3 ;
+        RECT 137.600 63.280 140.000 63.880 ;
+    END
+  END top_width_0_height_0__pin_1_
+  PIN top_width_0_height_0__pin_2_
+    DIRECTION INPUT ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 69.400 2.400 70.000 ;
+    END
+  END top_width_0_height_0__pin_2_
+  PIN top_width_0_height_0__pin_3_
+    DIRECTION OUTPUT TRISTATE ;
+    PORT
+      LAYER met3 ;
+        RECT 137.600 75.520 140.000 76.120 ;
+    END
+  END top_width_0_height_0__pin_3_
+  PIN top_width_0_height_0__pin_4_
+    DIRECTION INPUT ;
+    PORT
+      LAYER met2 ;
+        RECT 122.450 0.000 122.730 2.400 ;
+    END
+  END top_width_0_height_0__pin_4_
+  PIN top_width_0_height_0__pin_5_
+    DIRECTION OUTPUT TRISTATE ;
+    PORT
+      LAYER met3 ;
+        RECT 137.600 87.080 140.000 87.680 ;
+    END
+  END top_width_0_height_0__pin_5_
+  PIN top_width_0_height_0__pin_6_
+    DIRECTION INPUT ;
+    PORT
+      LAYER met3 ;
+        RECT 137.600 98.640 140.000 99.240 ;
+    END
+  END top_width_0_height_0__pin_6_
+  PIN top_width_0_height_0__pin_7_
+    DIRECTION OUTPUT TRISTATE ;
+    PORT
+      LAYER met3 ;
+        RECT 137.600 110.200 140.000 110.800 ;
+    END
+  END top_width_0_height_0__pin_7_
+  PIN top_width_0_height_0__pin_8_
+    DIRECTION INPUT ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 97.280 2.400 97.880 ;
+    END
+  END top_width_0_height_0__pin_8_
+  PIN top_width_0_height_0__pin_9_
+    DIRECTION OUTPUT TRISTATE ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 125.160 2.400 125.760 ;
+    END
+  END top_width_0_height_0__pin_9_
+  PIN vpwr
+    DIRECTION INPUT ;
+    PORT
+      LAYER met4 ;
+        RECT 28.055 10.640 29.655 128.080 ;
+    END
+  END vpwr
+  PIN vgnd
+    DIRECTION INPUT ;
+    PORT
+      LAYER met4 ;
+        RECT 51.385 10.640 52.985 128.080 ;
+    END
+  END vgnd
+  OBS
+      LAYER li1 ;
+        RECT 5.520 10.795 134.320 127.925 ;
+      LAYER met1 ;
+        RECT 5.520 10.640 134.320 137.660 ;
+      LAYER met2 ;
+        RECT 17.850 137.320 22.350 137.690 ;
+        RECT 23.190 137.320 37.990 137.690 ;
+        RECT 38.830 137.320 53.630 137.690 ;
+        RECT 54.470 137.320 69.270 137.690 ;
+        RECT 70.110 137.320 84.450 137.690 ;
+        RECT 85.290 137.320 100.090 137.690 ;
+        RECT 100.930 137.320 115.730 137.690 ;
+        RECT 116.570 137.320 122.925 137.690 ;
+        RECT 17.850 2.680 122.925 137.320 ;
+        RECT 18.130 0.270 52.250 2.680 ;
+        RECT 53.090 0.270 87.210 2.680 ;
+        RECT 88.050 0.270 122.170 2.680 ;
+      LAYER met3 ;
+        RECT 28.050 122.760 138.650 128.005 ;
+        RECT 28.050 121.360 137.200 122.760 ;
+        RECT 28.050 111.200 138.650 121.360 ;
+        RECT 28.050 109.800 137.200 111.200 ;
+        RECT 28.050 99.640 138.650 109.800 ;
+        RECT 28.050 98.240 137.200 99.640 ;
+        RECT 28.050 88.080 138.650 98.240 ;
+        RECT 28.050 86.680 137.200 88.080 ;
+        RECT 28.050 76.520 138.650 86.680 ;
+        RECT 28.050 75.120 137.200 76.520 ;
+        RECT 28.050 64.280 138.650 75.120 ;
+        RECT 28.050 62.880 137.200 64.280 ;
+        RECT 28.050 52.720 138.650 62.880 ;
+        RECT 28.050 51.320 137.200 52.720 ;
+        RECT 28.050 41.160 138.650 51.320 ;
+        RECT 28.050 39.760 137.200 41.160 ;
+        RECT 28.050 29.600 138.650 39.760 ;
+        RECT 28.050 28.200 137.200 29.600 ;
+        RECT 28.050 18.040 138.650 28.200 ;
+        RECT 28.050 16.640 137.200 18.040 ;
+        RECT 28.050 6.480 138.650 16.640 ;
+        RECT 28.050 6.295 137.200 6.480 ;
+      LAYER met4 ;
+        RECT 30.055 10.240 50.985 128.080 ;
+        RECT 53.385 10.240 138.625 128.080 ;
+        RECT 28.050 5.615 138.625 10.240 ;
+  END
+END grid_io_bottom
+END LIBRARY
+
