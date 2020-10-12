@@ -102,6 +102,13 @@ output [0:0] Y;
 //----- END wire-connection ports -----
 
 
+scs8hd_ebufn_1 buffer (
+    .Z(PAD),
+    .A(A),
+    .TEB(DIR)
+);
+
+assign Y = PAD;
 //----- BEGIN Registered ports -----
 //----- END Registered ports -----
 

@@ -15,30 +15,25 @@ set ::env(VERILOG_FILES) "$script_dir/../../../openfpga/run/SRC/lb/grid_io_right
                     $script_dir/../../../openfpga/run/SRC/sub_module/user_defined_templates.v \
                     $script_dir/../../../openfpga/run/SRC/sub_module/inv_buf_passgate.v \
                     $script_dir/../../../openfpga/run/SRC/sub_module/luts.v \
-                     $script_dir/../../../openfpga/run/SRC/lb/logical_tile_io_mode_io_.v "
+                    $script_dir/../../../openfpga/run/SRC/lb/logical_tile_io_mode_io_.v "
 
-set ::env(SYNTH_READ_BLACKBOX_LIB) 1
-
-# Fill this
 set ::env(CLOCK_PERIOD) "100000"
 set ::env(CLOCK_PORT) "w"
 set ::env(CLOCK_TREE_SYNTH) 0
 
-set ::env(SYNTH_BUFFERING) 0
-set ::env(SYNTH_SIZING) 0
-
-set ::env(CELL_PAD) 8
-set ::env(RUN_SIMPLE_CTS) 0
-
-set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 140 140"
-set ::env(PL_TARGET_DENSITY) 0.2
-
+# Synthesis
 set ::env(SYNTH_MAX_FANOUT) 6
+set ::env(SYNTH_READ_BLACKBOX_LIB) 1
+
+# Floorplan & Placement
+set ::env(FP_SIZING) absolute
+set ::env(DIE_AREA) "0 0 50 1665"
+set ::env(PL_TARGET_DENSITY) 0.2
+set ::env(CELL_PAD) 8
 
 set ::env(RUN_MAGIC) 1
 
-#Routing
+# Routing
 set ::env(ROUTING_STRATEGY) 0
 
 set ::env(PDN_CFG) $script_dir/pdn.tcl

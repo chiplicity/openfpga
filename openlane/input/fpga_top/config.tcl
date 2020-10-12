@@ -72,17 +72,13 @@ set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 
 # Fill this
 set ::env(CLOCK_PERIOD) "100000"
-set ::env(CLOCK_PORT) "w"
-set ::env(CLOCK_TREE_SYNTH) 0
+set ::env(CLOCK_PORT) "clk"
 
 set ::env(SYNTH_MAX_FANOUT)  7
-set ::env(SYNTH_SIZING) 0
-
 set ::env(CELL_PAD) 8
-set ::env(RUN_SIMPLE_CTS) 0
 
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 14440 14440"
+set ::env(DIE_AREA) "0 0 2320 1665"
 
 set ::env(PL_TARGET_DENSITY) 0.3
 

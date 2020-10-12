@@ -8,28 +8,23 @@ set ::env(STD_CELL_LIBRARY) "scs8hd"
 
 set ::env(VERILOG_FILES) "$script_dir/../../../openfpga/run/SRC/sub_module/arch_encoder.v "
 
-set ::env(SYNTH_READ_BLACKBOX_LIB) 1
-
-# Fill this
 set ::env(CLOCK_PERIOD) "100000"
 set ::env(CLOCK_PORT) "w"
 set ::env(CLOCK_TREE_SYNTH) 0
 
-set ::env(SYNTH_BUFFERING) 0
-set ::env(SYNTH_SIZING) 0
+# Synthesis
+set ::env(SYNTH_MAX_FANOUT) 6
+set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 
-set ::env(CELL_PAD) 8
-set ::env(RUN_SIMPLE_CTS) 0
-
+# Floorplan & Placement
 set ::env(FP_SIZING) absolute
 set ::env(DIE_AREA) "0 0 120 120"
 set ::env(PL_TARGET_DENSITY) 0.4
-
-set ::env(SYNTH_MAX_FANOUT) 6
+set ::env(CELL_PAD) 8
 
 set ::env(RUN_MAGIC) 1
 
-#Routing
+# Routing
 set ::env(ROUTING_STRATEGY) 0
 
 set ::env(PDN_CFG) $script_dir/pdn.tcl
