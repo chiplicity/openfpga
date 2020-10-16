@@ -9,163 +9,252 @@ puts "LEFS: $lefs"
 add_lefs -src $lefs
 
 run_synthesis
+
+exec tclsh $script_dir/openfpga_fp.tcl
+source $script_dir/openfpga_fp.tcl
+
+set ::env(DIE_AREA) "0 0 $floorplan_x $floorplan_y"
+
 init_floorplan_or
 place_io
 global_placement_or
-place_io
+
+# place_io
+
+# xbars
+for { set i 0}  {$i < $num_cbx_x} {incr i} {
+    for { set j 0}  {$j < $num_cbx_y} {incr j} {
+        set cbx_macro_name cbx_[expr {$i+1}]__$j\_
+        add_macro_placement $cbx_macro_name [expr {$xbar_x_x($i,$j)}] [expr {$xbar_x_y($i,$j) }] N
+    }
+}
+
+for { set i 0}  {$i < $num_cby_x} {incr i} {
+    for { set j 0}  {$j < $num_cby_y} {incr j} {
+        set cby_macro_name cby_$i\__[expr {$j+1}]_
+        add_macro_placement $cby_macro_name [expr {$xbar_y_x($i,$j) }] [expr {$xbar_y_y($i,$j) }] N
+    }
+}
+
+# Switches
+for { set i 0}  {$i < $num_switches_x} {incr i} {
+    for { set j 0}  {$j < $num_switches_y } {incr j} {
+        # switches
+        set sb_macro_name sb_$i\__$j\_
+        add_macro_placement $sb_macro_name [expr {$switches_x($j,$i) }] [expr {$switches_y($j,$i) }] N
+    }
+}
+
+# CLBs
+for { set i 0}  {$i < $num_clbs_x} {incr i} {
+    for { set j 0}  {$j < $num_clbs_y} {incr j} {
+        set macro_name grid_clb_[expr {$i+1}]__[expr {$j+1}]_
+        add_macro_placement $macro_name [expr { $clbs_x($j,$i) }] [expr {$clbs_y($j,$i) }] N
+    }
+}
+
+# IOs
+for {set i 0} { $i < $num_hor_io_blocks} {incr i} {
+    
+    set macro_name grid_io_top_[expr {$i + 1}]__[expr {$grid_y + 1}]_
+    add_macro_placement $macro_name [expr {$grid_io_top_x($i) }] [expr {$grid_io_top_y($i) }] N
+
+    set macro_name grid_io_bottom_[expr {$i + 1}]__0_
+    add_macro_placement $macro_name [expr {$grid_io_bottom_x($i) }] [expr {$grid_io_bottom_y($i) }] N
+}
+
+for {set i 0} { $i < $num_ver_io_blocks} {incr i} {
+    set macro_name grid_io_left_0__[expr {$i + 1}]_
+    add_macro_placement $macro_name [expr {$grid_io_left_x($i) }] [expr {$grid_io_left_y($i) }] N
+    
+    set macro_name grid_io_right_[expr {$grid_y + 1}]__[expr {$i + 1}]_
+    add_macro_placement $macro_name [expr {$grid_io_right_x($i) }] [expr {$grid_io_right_y($i) }] N
+}
+
+add_macro_placement decoder6to61_0_ [expr {$decoder_pos_x }] [expr {$decoder_pos_y }] N
+
+manual_macro_placement f
+detailed_placement
+
+global_routing_or
+detailed_routing
+
+exit
+
+# add_macro_placement cbx_1__0_ 205 30 N
+# add_macro_placement cbx_1__1_ 205 470 N
+# add_macro_placement cbx_1__2_ 205 940  N
+# add_macro_placement cbx_1__3_ 205 1410 N
+
+# add_macro_placement cbx_2__0_ 675 30 N
+# add_macro_placement cbx_2__1_ 675 470 N
+# add_macro_placement cbx_2__2_ 675 940  N
+# add_macro_placement cbx_2__3_ 675 1410 N
+
+# add_macro_placement cbx_3__0_ 1145 30 N
+# add_macro_placement cbx_3__1_ 1145 470 N
+# add_macro_placement cbx_3__2_ 1145 940  N
+# add_macro_placement cbx_3__3_ 1145 1410 N
+
+# add_macro_placement cby_0__1_ 30 205 N
+# add_macro_placement cby_0__2_ 30 660 N
+# add_macro_placement cby_0__3_ 30 1115 N
+
+# add_macro_placement cby_1__1_ 500 205 N
+# add_macro_placement cby_1__2_ 500 660 N
+# add_macro_placement cby_1__3_ 500 1115 N
+
+# add_macro_placement cby_2__1_ 970 205 N
+# add_macro_placement cby_2__2_ 970 660 N
+# add_macro_placement cby_2__3_ 970 1115 N
+
+# add_macro_placement cby_3__1_ 1440 205 N
+# add_macro_placement cby_3__2_ 1440 660 N
+# add_macro_placement cby_3__3_ 1440 1115 N
+
+# Switches
+# add_macro_placement sb_0__0_ 0 0 N
+# add_macro_placement sb_0__1_ 0 475 N
+# add_macro_placement sb_0__2_ 0 950 N
+# add_macro_placement sb_0__2_ 0 1425 N
+
+# add_macro_placement sb_1__0_ 470 0 N
+# add_macro_placement sb_1__1_ 470 475 N
+# add_macro_placement sb_1__2_ 470 950 N
+# add_macro_placement sb_1__3_ 470 1425 N
+
+# add_macro_placement sb_2__0_ 940 0 N
+# add_macro_placement sb_2__1_ 940 475 N
+# add_macro_placement sb_2__2_ 940 950 N
+# add_macro_placement sb_2__3_ 940 1425 N
+
+# add_macro_placement sb_3__0_ 1410 0 N
+# add_macro_placement sb_3__1_ 1410 475 N
+# add_macro_placement sb_3__2_ 1410 950 N
+# add_macro_placement sb_3__3_ 1410 1425 N
+
+# # Grid CLBs
+# add_macro_placement grid_clb_1__1_ 180 180 N
+# add_macro_placement grid_clb_1__2_ 180 730 N
+# add_macro_placement grid_clb_1__3_ 180 1280 N
+
+# add_macro_placement grid_clb_2__1_ 650 180 N
+# add_macro_placement grid_clb_2__2_ 650 730 N
+# add_macro_placement grid_clb_2__3_ 650 1280 N
+
+# add_macro_placement grid_clb_3__1_ 1120 180 N
+# add_macro_placement grid_clb_3__2_ 1120 730 N
+# add_macro_placement grid_clb_3__3_ 1120 1280 N
+
+# IOs
+# add_macro_placement grid_io_top_1__4_ 0 2000 N
+# add_macro_placement grid_io_top_2__4_ 610 2000 N
+# add_macro_placement grid_io_top_3__4_ 680 2000 N
+
+# add_macro_placement grid_io_bottom_1__0_ 0 0 N
+# add_macro_placement grid_io_bottom_2__0_ 610 0 N
+# add_macro_placement grid_io_bottom_3__0_ 680 0 N
+
+# add_macro_placement grid_io_left_0__1_ 2000 0 N
+# add_macro_placement grid_io_left_0__2_ 2000 615 N
+# add_macro_placement grid_io_left_0__3_ 0 685 N
+
+# add_macro_placement grid_io_right_4__1_ 2000 0 N
+# add_macro_placement grid_io_right_4__2_ 2000 615 N
+# add_macro_placement grid_io_right_4__3_ 2000 685 N
+
+# Decoder
+
 
 # global_placement_or
 
-# Cross bar
-add_macro_placement cbx_1__0_ 205 30 N
-add_macro_placement cbx_1__1_ 205 470 N
-add_macro_placement cbx_1__2_ 205 940  N
-add_macro_placement cbx_1__3_ 205 1410 N
 
-add_macro_placement cbx_2__0_ 675 30 N
-add_macro_placement cbx_2__1_ 675 470 N
-add_macro_placement cbx_2__2_ 675 940  N
-add_macro_placement cbx_2__3_ 675 1410 N
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_clb_1__1_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_clb_1__2_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_clb_1__3_" $::env(CURRENT_DEF)
 
-add_macro_placement cbx_3__0_ 1145 30 N
-add_macro_placement cbx_3__1_ 1145 470 N
-add_macro_placement cbx_3__2_ 1145 940  N
-add_macro_placement cbx_3__3_ 1145 1410 N
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_clb_2__1_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_clb_2__2_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_clb_2__3_" $::env(CURRENT_DEF)
 
-add_macro_placement cby_0__1_ 30 205 N
-add_macro_placement cby_0__2_ 30 660 N
-add_macro_placement cby_0__3_ 30 1115 N
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_clb_3__1_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_clb_3__2_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_clb_3__3_" $::env(CURRENT_DEF)
 
-add_macro_placement cby_1__1_ 500 205 N
-add_macro_placement cby_1__2_ 500 660 N
-add_macro_placement cby_1__3_ 500 1115 N
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "sb_1__0_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "sb_1__1_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "sb_1__2_" $::env(CURRENT_DEF)
 
-add_macro_placement cby_2__1_ 970 205 N
-add_macro_placement cby_2__2_ 970 660 N
-add_macro_placement cby_2__3_ 970 1115 N
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "sb_2__0_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "sb_2__1_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "sb_2__2_" $::env(CURRENT_DEF)
 
-add_macro_placement cby_3__1_ 1440 205 N
-add_macro_placement cby_3__2_ 1440 660 N
-add_macro_placement cby_3__3_ 1440 1115 N
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "sb_1__3_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "sb_2__3_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "sb_3__0_" $::env(CURRENT_DEF)
 
-# Switches
-add_macro_placement sb_0__0_ 0 0 N
-add_macro_placement sb_0__1_ 0 475 N
-add_macro_placement sb_0__2_ 0 950 N
-add_macro_placement sb_0__2_ 0 1425 N
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "sb_3__1_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "sb_3__2_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "sb_3__3_" $::env(CURRENT_DEF)
 
-add_macro_placement sb_1__0_ 470 0 N
-add_macro_placement sb_1__1_ 470 475 N
-add_macro_placement sb_1__2_ 470 950 N
-add_macro_placement sb_1__3_ 470 1425 N
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cbx_1__0_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cbx_2__0_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cbx_3__0_" $::env(CURRENT_DEF)
 
-add_macro_placement sb_2__0_ 940 0 N
-add_macro_placement sb_2__1_ 940 475 N
-add_macro_placement sb_2__2_ 940 950 N
-add_macro_placement sb_2__3_ 940 1425 N
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cbx_1__1_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cbx_1__2_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cbx_2__1_" $::env(CURRENT_DEF)
 
-add_macro_placement sb_3__0_ 1410 0 N
-add_macro_placement sb_3__1_ 1410 475 N
-add_macro_placement sb_3__2_ 1410 950 N
-add_macro_placement sb_3__3_ 1410 1425 N
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cbx_2__2_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cbx_3__1_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cbx_3__2_" $::env(CURRENT_DEF)
 
-# Grid CLBs
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cbx_2__3_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cbx_1__3_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cbx_3__3_" $::env(CURRENT_DEF)
 
-add_macro_placement grid_clb_1__1_ 180 180 N
-add_macro_placement grid_clb_1__2_ 180 730 N
-add_macro_placement grid_clb_1__3_ 180 1280 N
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cby_0__1_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cby_0__2_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cby_0__3_" $::env(CURRENT_DEF)
 
-add_macro_placement grid_clb_2__1_ 650 180 N
-add_macro_placement grid_clb_2__2_ 650 730 N
-add_macro_placement grid_clb_2__3_ 650 1280 N
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cby_1__1_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cby_1__2_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cby_1__3_" $::env(CURRENT_DEF)
 
-add_macro_placement grid_clb_3__1_ 1120 180 N
-add_macro_placement grid_clb_3__2_ 1120 730 N
-add_macro_placement grid_clb_3__3_ 1120 1280 N
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cby_2__1_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cby_2__2_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cby_2__3_" $::env(CURRENT_DEF)
 
-add_macro_placement decoder6to61_0_ 2200 0 N
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cby_3__1_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cby_3__2_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cby_3__3_" $::env(CURRENT_DEF)
 
-manual_macro_placement 
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "decoder6to61_0_" $::env(CURRENT_DEF)
 
-global_placement_or
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_io_top_1__4_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_io_top_2__4_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_io_top_3__4_" $::env(CURRENT_DEF)
 
-detailed_placement
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_io_bottom_1__0_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_io_bottom_2__0_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_io_bottom_3__0_" $::env(CURRENT_DEF)
 
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_clb_1__1_" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_clb_1__2_" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_clb_1__3_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_io_left_0__1_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_io_left_0__2_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_io_left_0__3_" $::env(CURRENT_DEF)
 
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_clb_2__1_" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_clb_2__2_" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_clb_2__3_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_io_right_4__1_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_io_right_4__2_" $::env(CURRENT_DEF)
+# try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_io_right_4__3_" $::env(CURRENT_DEF)
 
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_clb_3__1_" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_clb_3__2_" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_clb_3__3_" $::env(CURRENT_DEF)
+# global_placement_or 
 
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "sb_1__0_" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "sb_1__1_" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "sb_1__2_" $::env(CURRENT_DEF)
+# tap_decap_or
 
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "sb_2__0_" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "sb_2__1_" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "sb_2__2_" $::env(CURRENT_DEF)
+# detailed_placement
 
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "sb_1__3_" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "sb_2__3_" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "sb_3__0_" $::env(CURRENT_DEF)
-
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "sb_3__1_" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "sb_3__2_" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "sb_3__3_" $::env(CURRENT_DEF)
-
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cbx_1__0_" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cbx_2__0_" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cbx_3__0_" $::env(CURRENT_DEF)
-
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cbx_1__1_" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cbx_1__2_" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cbx_2__1_" $::env(CURRENT_DEF)
-
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cbx_2__2_" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cbx_3__1_" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cbx_3__2_" $::env(CURRENT_DEF)
-
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cbx_2__3_" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cbx_1__3_" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cbx_3__3_" $::env(CURRENT_DEF)
-
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cby_0__1_" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cby_0__2_" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cby_0__3_" $::env(CURRENT_DEF)
-
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cby_1__1_" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cby_1__2_" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cby_1__3_" $::env(CURRENT_DEF)
-
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cby_2__1_" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cby_2__2_" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cby_2__3_" $::env(CURRENT_DEF)
-
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cby_3__1_" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cby_3__2_" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "cby_3__3_" $::env(CURRENT_DEF)
-
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "decoder6to61_0_" $::env(CURRENT_DEF)
-
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_io_bottom" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_io_top" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_io_left" $::env(CURRENT_DEF)
-try_catch $::env(SCRIPTS_DIR)/mark_component_fixed.sh "grid_io_right" $::env(CURRENT_DEF)
-
-global_placement_or 
-
-tap_decap_or
-
-detailed_placement
-
-run_cts
-gen_pdn
+# run_cts
+# gen_pdn
 run_routing
 
 if { $::env(DIODE_INSERTION_STRATEGY) == 2 } {

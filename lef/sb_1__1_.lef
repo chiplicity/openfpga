@@ -10,624 +10,624 @@ MACRO sb_1__1_
   PIN address[0]
     DIRECTION INPUT ;
     PORT
-      LAYER met3 ;
-        RECT 137.600 2.760 140.000 3.360 ;
+      LAYER met2 ;
+        RECT 16.650 0.000 16.930 2.400 ;
     END
   END address[0]
   PIN address[1]
     DIRECTION INPUT ;
     PORT
       LAYER met2 ;
-        RECT 3.770 137.600 4.050 140.000 ;
+        RECT 21.250 0.000 21.530 2.400 ;
     END
   END address[1]
   PIN address[2]
     DIRECTION INPUT ;
     PORT
-      LAYER met3 ;
-        RECT 0.000 2.760 2.400 3.360 ;
+      LAYER met2 ;
+        RECT 26.310 0.000 26.590 2.400 ;
     END
   END address[2]
   PIN address[3]
     DIRECTION INPUT ;
     PORT
       LAYER met2 ;
-        RECT 11.130 137.600 11.410 140.000 ;
+        RECT 30.910 0.000 31.190 2.400 ;
     END
   END address[3]
   PIN address[4]
     DIRECTION INPUT ;
     PORT
       LAYER met2 ;
-        RECT 12.510 0.000 12.790 2.400 ;
+        RECT 35.970 0.000 36.250 2.400 ;
     END
   END address[4]
   PIN address[5]
     DIRECTION INPUT ;
     PORT
       LAYER met2 ;
-        RECT 18.490 137.600 18.770 140.000 ;
+        RECT 40.570 0.000 40.850 2.400 ;
     END
   END address[5]
   PIN address[6]
     DIRECTION INPUT ;
     PORT
-      LAYER met3 ;
-        RECT 0.000 8.880 2.400 9.480 ;
+      LAYER met2 ;
+        RECT 45.630 0.000 45.910 2.400 ;
     END
   END address[6]
   PIN bottom_left_grid_pin_13_
     DIRECTION INPUT ;
     PORT
       LAYER met2 ;
-        RECT 25.850 137.600 26.130 140.000 ;
+        RECT 2.390 0.000 2.670 2.400 ;
     END
   END bottom_left_grid_pin_13_
   PIN bottom_right_grid_pin_11_
     DIRECTION INPUT ;
     PORT
       LAYER met2 ;
-        RECT 17.570 0.000 17.850 2.400 ;
+        RECT 6.990 0.000 7.270 2.400 ;
     END
   END bottom_right_grid_pin_11_
   PIN chanx_left_in[0]
     DIRECTION INPUT ;
     PORT
-      LAYER met2 ;
-        RECT 23.090 0.000 23.370 2.400 ;
+      LAYER met3 ;
+        RECT 0.000 10.240 2.400 10.840 ;
     END
   END chanx_left_in[0]
   PIN chanx_left_in[1]
     DIRECTION INPUT ;
     PORT
       LAYER met3 ;
-        RECT 0.000 15.680 2.400 16.280 ;
+        RECT 0.000 17.040 2.400 17.640 ;
     END
   END chanx_left_in[1]
   PIN chanx_left_in[2]
     DIRECTION INPUT ;
     PORT
       LAYER met3 ;
-        RECT 137.600 8.880 140.000 9.480 ;
+        RECT 0.000 23.840 2.400 24.440 ;
     END
   END chanx_left_in[2]
   PIN chanx_left_in[3]
     DIRECTION INPUT ;
     PORT
       LAYER met3 ;
-        RECT 0.000 22.480 2.400 23.080 ;
+        RECT 0.000 31.320 2.400 31.920 ;
     END
   END chanx_left_in[3]
   PIN chanx_left_in[4]
     DIRECTION INPUT ;
     PORT
       LAYER met3 ;
-        RECT 0.000 29.280 2.400 29.880 ;
+        RECT 0.000 38.120 2.400 38.720 ;
     END
   END chanx_left_in[4]
   PIN chanx_left_in[5]
     DIRECTION INPUT ;
     PORT
-      LAYER met2 ;
-        RECT 28.150 0.000 28.430 2.400 ;
+      LAYER met3 ;
+        RECT 0.000 44.920 2.400 45.520 ;
     END
   END chanx_left_in[5]
   PIN chanx_left_in[6]
     DIRECTION INPUT ;
     PORT
-      LAYER met2 ;
-        RECT 33.210 0.000 33.490 2.400 ;
+      LAYER met3 ;
+        RECT 0.000 52.400 2.400 53.000 ;
     END
   END chanx_left_in[6]
   PIN chanx_left_in[7]
     DIRECTION INPUT ;
     PORT
       LAYER met3 ;
-        RECT 137.600 15.000 140.000 15.600 ;
+        RECT 0.000 59.200 2.400 59.800 ;
     END
   END chanx_left_in[7]
   PIN chanx_left_in[8]
     DIRECTION INPUT ;
     PORT
       LAYER met3 ;
-        RECT 137.600 21.800 140.000 22.400 ;
+        RECT 0.000 66.000 2.400 66.600 ;
     END
   END chanx_left_in[8]
   PIN chanx_left_out[0]
     DIRECTION OUTPUT TRISTATE ;
     PORT
-      LAYER met2 ;
-        RECT 38.270 0.000 38.550 2.400 ;
+      LAYER met3 ;
+        RECT 0.000 80.280 2.400 80.880 ;
     END
   END chanx_left_out[0]
   PIN chanx_left_out[1]
     DIRECTION OUTPUT TRISTATE ;
     PORT
       LAYER met3 ;
-        RECT 0.000 36.080 2.400 36.680 ;
+        RECT 0.000 87.080 2.400 87.680 ;
     END
   END chanx_left_out[1]
   PIN chanx_left_out[2]
     DIRECTION OUTPUT TRISTATE ;
     PORT
-      LAYER met2 ;
-        RECT 43.790 0.000 44.070 2.400 ;
+      LAYER met3 ;
+        RECT 0.000 93.880 2.400 94.480 ;
     END
   END chanx_left_out[2]
   PIN chanx_left_out[3]
     DIRECTION OUTPUT TRISTATE ;
     PORT
       LAYER met3 ;
-        RECT 137.600 27.920 140.000 28.520 ;
+        RECT 0.000 101.360 2.400 101.960 ;
     END
   END chanx_left_out[3]
   PIN chanx_left_out[4]
     DIRECTION OUTPUT TRISTATE ;
     PORT
       LAYER met3 ;
-        RECT 0.000 42.200 2.400 42.800 ;
+        RECT 0.000 108.160 2.400 108.760 ;
     END
   END chanx_left_out[4]
   PIN chanx_left_out[5]
     DIRECTION OUTPUT TRISTATE ;
     PORT
       LAYER met3 ;
-        RECT 0.000 49.000 2.400 49.600 ;
+        RECT 0.000 114.960 2.400 115.560 ;
     END
   END chanx_left_out[5]
   PIN chanx_left_out[6]
     DIRECTION OUTPUT TRISTATE ;
     PORT
       LAYER met3 ;
-        RECT 0.000 55.800 2.400 56.400 ;
+        RECT 0.000 122.440 2.400 123.040 ;
     END
   END chanx_left_out[6]
   PIN chanx_left_out[7]
     DIRECTION OUTPUT TRISTATE ;
     PORT
-      LAYER met2 ;
-        RECT 33.210 137.600 33.490 140.000 ;
+      LAYER met3 ;
+        RECT 0.000 129.240 2.400 129.840 ;
     END
   END chanx_left_out[7]
   PIN chanx_left_out[8]
     DIRECTION OUTPUT TRISTATE ;
     PORT
-      LAYER met2 ;
-        RECT 40.570 137.600 40.850 140.000 ;
+      LAYER met3 ;
+        RECT 0.000 136.040 2.400 136.640 ;
     END
   END chanx_left_out[8]
   PIN chanx_right_in[0]
     DIRECTION INPUT ;
     PORT
       LAYER met3 ;
-        RECT 137.600 34.040 140.000 34.640 ;
+        RECT 137.600 10.240 140.000 10.840 ;
     END
   END chanx_right_in[0]
   PIN chanx_right_in[1]
     DIRECTION INPUT ;
     PORT
-      LAYER met2 ;
-        RECT 48.850 0.000 49.130 2.400 ;
+      LAYER met3 ;
+        RECT 137.600 17.040 140.000 17.640 ;
     END
   END chanx_right_in[1]
   PIN chanx_right_in[2]
     DIRECTION INPUT ;
     PORT
-      LAYER met2 ;
-        RECT 53.910 0.000 54.190 2.400 ;
+      LAYER met3 ;
+        RECT 137.600 23.840 140.000 24.440 ;
     END
   END chanx_right_in[2]
   PIN chanx_right_in[3]
     DIRECTION INPUT ;
     PORT
-      LAYER met2 ;
-        RECT 58.970 0.000 59.250 2.400 ;
+      LAYER met3 ;
+        RECT 137.600 31.320 140.000 31.920 ;
     END
   END chanx_right_in[3]
   PIN chanx_right_in[4]
     DIRECTION INPUT ;
     PORT
-      LAYER met2 ;
-        RECT 64.490 0.000 64.770 2.400 ;
+      LAYER met3 ;
+        RECT 137.600 38.120 140.000 38.720 ;
     END
   END chanx_right_in[4]
   PIN chanx_right_in[5]
     DIRECTION INPUT ;
     PORT
       LAYER met3 ;
-        RECT 0.000 62.600 2.400 63.200 ;
+        RECT 137.600 44.920 140.000 45.520 ;
     END
   END chanx_right_in[5]
   PIN chanx_right_in[6]
     DIRECTION INPUT ;
     PORT
-      LAYER met2 ;
-        RECT 47.930 137.600 48.210 140.000 ;
+      LAYER met3 ;
+        RECT 137.600 52.400 140.000 53.000 ;
     END
   END chanx_right_in[6]
   PIN chanx_right_in[7]
     DIRECTION INPUT ;
     PORT
-      LAYER met2 ;
-        RECT 69.550 0.000 69.830 2.400 ;
+      LAYER met3 ;
+        RECT 137.600 59.200 140.000 59.800 ;
     END
   END chanx_right_in[7]
   PIN chanx_right_in[8]
     DIRECTION INPUT ;
     PORT
       LAYER met3 ;
-        RECT 137.600 40.840 140.000 41.440 ;
+        RECT 137.600 66.000 140.000 66.600 ;
     END
   END chanx_right_in[8]
   PIN chanx_right_out[0]
     DIRECTION OUTPUT TRISTATE ;
     PORT
-      LAYER met2 ;
-        RECT 55.290 137.600 55.570 140.000 ;
+      LAYER met3 ;
+        RECT 137.600 80.280 140.000 80.880 ;
     END
   END chanx_right_out[0]
   PIN chanx_right_out[1]
     DIRECTION OUTPUT TRISTATE ;
     PORT
-      LAYER met2 ;
-        RECT 74.610 0.000 74.890 2.400 ;
+      LAYER met3 ;
+        RECT 137.600 87.080 140.000 87.680 ;
     END
   END chanx_right_out[1]
   PIN chanx_right_out[2]
     DIRECTION OUTPUT TRISTATE ;
     PORT
       LAYER met3 ;
-        RECT 137.600 46.960 140.000 47.560 ;
+        RECT 137.600 93.880 140.000 94.480 ;
     END
   END chanx_right_out[2]
   PIN chanx_right_out[3]
     DIRECTION OUTPUT TRISTATE ;
     PORT
-      LAYER met2 ;
-        RECT 62.650 137.600 62.930 140.000 ;
+      LAYER met3 ;
+        RECT 137.600 101.360 140.000 101.960 ;
     END
   END chanx_right_out[3]
   PIN chanx_right_out[4]
     DIRECTION OUTPUT TRISTATE ;
     PORT
-      LAYER met2 ;
-        RECT 79.670 0.000 79.950 2.400 ;
+      LAYER met3 ;
+        RECT 137.600 108.160 140.000 108.760 ;
     END
   END chanx_right_out[4]
   PIN chanx_right_out[5]
     DIRECTION OUTPUT TRISTATE ;
     PORT
       LAYER met3 ;
-        RECT 137.600 53.080 140.000 53.680 ;
+        RECT 137.600 114.960 140.000 115.560 ;
     END
   END chanx_right_out[5]
   PIN chanx_right_out[6]
     DIRECTION OUTPUT TRISTATE ;
     PORT
       LAYER met3 ;
-        RECT 137.600 59.880 140.000 60.480 ;
+        RECT 137.600 122.440 140.000 123.040 ;
     END
   END chanx_right_out[6]
   PIN chanx_right_out[7]
     DIRECTION OUTPUT TRISTATE ;
     PORT
       LAYER met3 ;
-        RECT 0.000 69.400 2.400 70.000 ;
+        RECT 137.600 129.240 140.000 129.840 ;
     END
   END chanx_right_out[7]
   PIN chanx_right_out[8]
     DIRECTION OUTPUT TRISTATE ;
     PORT
       LAYER met3 ;
-        RECT 137.600 66.000 140.000 66.600 ;
+        RECT 137.600 136.040 140.000 136.640 ;
     END
   END chanx_right_out[8]
   PIN chany_bottom_in[0]
     DIRECTION INPUT ;
     PORT
       LAYER met2 ;
-        RECT 85.190 0.000 85.470 2.400 ;
+        RECT 55.290 0.000 55.570 2.400 ;
     END
   END chany_bottom_in[0]
   PIN chany_bottom_in[1]
     DIRECTION INPUT ;
     PORT
-      LAYER met3 ;
-        RECT 137.600 72.800 140.000 73.400 ;
+      LAYER met2 ;
+        RECT 59.890 0.000 60.170 2.400 ;
     END
   END chany_bottom_in[1]
   PIN chany_bottom_in[2]
     DIRECTION INPUT ;
     PORT
       LAYER met2 ;
-        RECT 90.250 0.000 90.530 2.400 ;
+        RECT 64.950 0.000 65.230 2.400 ;
     END
   END chany_bottom_in[2]
   PIN chany_bottom_in[3]
     DIRECTION INPUT ;
     PORT
       LAYER met2 ;
-        RECT 95.310 0.000 95.590 2.400 ;
+        RECT 69.550 0.000 69.830 2.400 ;
     END
   END chany_bottom_in[3]
   PIN chany_bottom_in[4]
     DIRECTION INPUT ;
     PORT
-      LAYER met3 ;
-        RECT 0.000 75.520 2.400 76.120 ;
+      LAYER met2 ;
+        RECT 74.610 0.000 74.890 2.400 ;
     END
   END chany_bottom_in[4]
   PIN chany_bottom_in[5]
     DIRECTION INPUT ;
     PORT
       LAYER met2 ;
-        RECT 70.010 137.600 70.290 140.000 ;
+        RECT 79.210 0.000 79.490 2.400 ;
     END
   END chany_bottom_in[5]
   PIN chany_bottom_in[6]
     DIRECTION INPUT ;
     PORT
-      LAYER met3 ;
-        RECT 137.600 78.920 140.000 79.520 ;
+      LAYER met2 ;
+        RECT 84.270 0.000 84.550 2.400 ;
     END
   END chany_bottom_in[6]
   PIN chany_bottom_in[7]
     DIRECTION INPUT ;
     PORT
       LAYER met2 ;
-        RECT 100.370 0.000 100.650 2.400 ;
+        RECT 88.870 0.000 89.150 2.400 ;
     END
   END chany_bottom_in[7]
   PIN chany_bottom_in[8]
     DIRECTION INPUT ;
     PORT
       LAYER met2 ;
-        RECT 77.370 137.600 77.650 140.000 ;
+        RECT 93.930 0.000 94.210 2.400 ;
     END
   END chany_bottom_in[8]
   PIN chany_bottom_out[0]
     DIRECTION OUTPUT TRISTATE ;
     PORT
-      LAYER met3 ;
-        RECT 137.600 85.040 140.000 85.640 ;
+      LAYER met2 ;
+        RECT 98.530 0.000 98.810 2.400 ;
     END
   END chany_bottom_out[0]
   PIN chany_bottom_out[1]
     DIRECTION OUTPUT TRISTATE ;
     PORT
-      LAYER met3 ;
-        RECT 137.600 91.840 140.000 92.440 ;
+      LAYER met2 ;
+        RECT 103.590 0.000 103.870 2.400 ;
     END
   END chany_bottom_out[1]
   PIN chany_bottom_out[2]
     DIRECTION OUTPUT TRISTATE ;
     PORT
-      LAYER met3 ;
-        RECT 0.000 82.320 2.400 82.920 ;
+      LAYER met2 ;
+        RECT 108.190 0.000 108.470 2.400 ;
     END
   END chany_bottom_out[2]
   PIN chany_bottom_out[3]
     DIRECTION OUTPUT TRISTATE ;
     PORT
       LAYER met2 ;
-        RECT 84.730 137.600 85.010 140.000 ;
+        RECT 113.250 0.000 113.530 2.400 ;
     END
   END chany_bottom_out[3]
   PIN chany_bottom_out[4]
     DIRECTION OUTPUT TRISTATE ;
     PORT
-      LAYER met3 ;
-        RECT 137.600 97.960 140.000 98.560 ;
+      LAYER met2 ;
+        RECT 117.850 0.000 118.130 2.400 ;
     END
   END chany_bottom_out[4]
   PIN chany_bottom_out[5]
     DIRECTION OUTPUT TRISTATE ;
     PORT
       LAYER met2 ;
-        RECT 105.890 0.000 106.170 2.400 ;
+        RECT 122.910 0.000 123.190 2.400 ;
     END
   END chany_bottom_out[5]
   PIN chany_bottom_out[6]
     DIRECTION OUTPUT TRISTATE ;
     PORT
-      LAYER met3 ;
-        RECT 0.000 89.120 2.400 89.720 ;
+      LAYER met2 ;
+        RECT 127.510 0.000 127.790 2.400 ;
     END
   END chany_bottom_out[6]
   PIN chany_bottom_out[7]
     DIRECTION OUTPUT TRISTATE ;
     PORT
-      LAYER met3 ;
-        RECT 0.000 95.920 2.400 96.520 ;
+      LAYER met2 ;
+        RECT 132.570 0.000 132.850 2.400 ;
     END
   END chany_bottom_out[7]
   PIN chany_bottom_out[8]
     DIRECTION OUTPUT TRISTATE ;
     PORT
       LAYER met2 ;
-        RECT 110.950 0.000 111.230 2.400 ;
+        RECT 137.170 0.000 137.450 2.400 ;
     END
   END chany_bottom_out[8]
   PIN chany_top_in[0]
     DIRECTION INPUT ;
     PORT
       LAYER met2 ;
-        RECT 116.010 0.000 116.290 2.400 ;
+        RECT 3.310 137.600 3.590 140.000 ;
     END
   END chany_top_in[0]
   PIN chany_top_in[1]
     DIRECTION INPUT ;
     PORT
       LAYER met2 ;
-        RECT 92.090 137.600 92.370 140.000 ;
+        RECT 10.210 137.600 10.490 140.000 ;
     END
   END chany_top_in[1]
   PIN chany_top_in[2]
     DIRECTION INPUT ;
     PORT
-      LAYER met3 ;
-        RECT 137.600 104.080 140.000 104.680 ;
+      LAYER met2 ;
+        RECT 17.110 137.600 17.390 140.000 ;
     END
   END chany_top_in[2]
   PIN chany_top_in[3]
     DIRECTION INPUT ;
     PORT
       LAYER met2 ;
-        RECT 99.450 137.600 99.730 140.000 ;
+        RECT 24.010 137.600 24.290 140.000 ;
     END
   END chany_top_in[3]
   PIN chany_top_in[4]
     DIRECTION INPUT ;
     PORT
       LAYER met2 ;
-        RECT 106.810 137.600 107.090 140.000 ;
+        RECT 30.910 137.600 31.190 140.000 ;
     END
   END chany_top_in[4]
   PIN chany_top_in[5]
     DIRECTION INPUT ;
     PORT
       LAYER met2 ;
-        RECT 114.170 137.600 114.450 140.000 ;
+        RECT 38.270 137.600 38.550 140.000 ;
     END
   END chany_top_in[5]
   PIN chany_top_in[6]
     DIRECTION INPUT ;
     PORT
-      LAYER met3 ;
-        RECT 137.600 110.880 140.000 111.480 ;
+      LAYER met2 ;
+        RECT 45.170 137.600 45.450 140.000 ;
     END
   END chany_top_in[6]
   PIN chany_top_in[7]
     DIRECTION INPUT ;
     PORT
-      LAYER met3 ;
-        RECT 137.600 117.000 140.000 117.600 ;
+      LAYER met2 ;
+        RECT 52.070 137.600 52.350 140.000 ;
     END
   END chany_top_in[7]
   PIN chany_top_in[8]
     DIRECTION INPUT ;
     PORT
-      LAYER met3 ;
-        RECT 137.600 123.120 140.000 123.720 ;
+      LAYER met2 ;
+        RECT 58.970 137.600 59.250 140.000 ;
     END
   END chany_top_in[8]
   PIN chany_top_out[0]
     DIRECTION OUTPUT TRISTATE ;
     PORT
-      LAYER met3 ;
-        RECT 0.000 102.720 2.400 103.320 ;
+      LAYER met2 ;
+        RECT 80.130 137.600 80.410 140.000 ;
     END
   END chany_top_out[0]
   PIN chany_top_out[1]
     DIRECTION OUTPUT TRISTATE ;
     PORT
       LAYER met2 ;
-        RECT 121.070 0.000 121.350 2.400 ;
+        RECT 87.030 137.600 87.310 140.000 ;
     END
   END chany_top_out[1]
   PIN chany_top_out[2]
     DIRECTION OUTPUT TRISTATE ;
     PORT
       LAYER met2 ;
-        RECT 126.590 0.000 126.870 2.400 ;
+        RECT 93.930 137.600 94.210 140.000 ;
     END
   END chany_top_out[2]
   PIN chany_top_out[3]
     DIRECTION OUTPUT TRISTATE ;
     PORT
       LAYER met2 ;
-        RECT 121.530 137.600 121.810 140.000 ;
+        RECT 100.830 137.600 101.110 140.000 ;
     END
   END chany_top_out[3]
   PIN chany_top_out[4]
     DIRECTION OUTPUT TRISTATE ;
     PORT
       LAYER met2 ;
-        RECT 128.890 137.600 129.170 140.000 ;
+        RECT 108.190 137.600 108.470 140.000 ;
     END
   END chany_top_out[4]
   PIN chany_top_out[5]
     DIRECTION OUTPUT TRISTATE ;
     PORT
-      LAYER met3 ;
-        RECT 0.000 108.840 2.400 109.440 ;
+      LAYER met2 ;
+        RECT 115.090 137.600 115.370 140.000 ;
     END
   END chany_top_out[5]
   PIN chany_top_out[6]
     DIRECTION OUTPUT TRISTATE ;
     PORT
       LAYER met2 ;
-        RECT 136.250 137.600 136.530 140.000 ;
+        RECT 121.990 137.600 122.270 140.000 ;
     END
   END chany_top_out[6]
   PIN chany_top_out[7]
     DIRECTION OUTPUT TRISTATE ;
     PORT
       LAYER met2 ;
-        RECT 131.650 0.000 131.930 2.400 ;
+        RECT 128.890 137.600 129.170 140.000 ;
     END
   END chany_top_out[7]
   PIN chany_top_out[8]
     DIRECTION OUTPUT TRISTATE ;
     PORT
-      LAYER met3 ;
-        RECT 137.600 129.920 140.000 130.520 ;
+      LAYER met2 ;
+        RECT 135.790 137.600 136.070 140.000 ;
     END
   END chany_top_out[8]
   PIN data_in
     DIRECTION INPUT ;
     PORT
       LAYER met2 ;
-        RECT 7.450 0.000 7.730 2.400 ;
+        RECT 50.230 0.000 50.510 2.400 ;
     END
   END data_in
   PIN enable
     DIRECTION INPUT ;
     PORT
       LAYER met2 ;
-        RECT 2.390 0.000 2.670 2.400 ;
+        RECT 11.590 0.000 11.870 2.400 ;
     END
   END enable
   PIN left_bottom_grid_pin_12_
     DIRECTION INPUT ;
     PORT
       LAYER met3 ;
-        RECT 0.000 115.640 2.400 116.240 ;
+        RECT 0.000 73.480 2.400 74.080 ;
     END
   END left_bottom_grid_pin_12_
   PIN left_top_grid_pin_10_
     DIRECTION INPUT ;
     PORT
       LAYER met3 ;
-        RECT 0.000 122.440 2.400 123.040 ;
+        RECT 0.000 3.440 2.400 4.040 ;
     END
   END left_top_grid_pin_10_
   PIN right_bottom_grid_pin_12_
     DIRECTION INPUT ;
     PORT
       LAYER met3 ;
-        RECT 0.000 129.240 2.400 129.840 ;
+        RECT 137.600 73.480 140.000 74.080 ;
     END
   END right_bottom_grid_pin_12_
   PIN right_top_grid_pin_10_
     DIRECTION INPUT ;
     PORT
-      LAYER met2 ;
-        RECT 136.710 0.000 136.990 2.400 ;
+      LAYER met3 ;
+        RECT 137.600 3.440 140.000 4.040 ;
     END
   END right_top_grid_pin_10_
   PIN top_left_grid_pin_13_
     DIRECTION INPUT ;
     PORT
-      LAYER met3 ;
-        RECT 137.600 136.040 140.000 136.640 ;
+      LAYER met2 ;
+        RECT 65.870 137.600 66.150 140.000 ;
     END
   END top_left_grid_pin_13_
   PIN top_right_grid_pin_11_
     DIRECTION INPUT ;
     PORT
-      LAYER met3 ;
-        RECT 0.000 136.040 2.400 136.640 ;
+      LAYER met2 ;
+        RECT 73.230 137.600 73.510 140.000 ;
     END
   END top_right_grid_pin_11_
   PIN vpwr
@@ -646,144 +646,107 @@ MACRO sb_1__1_
   END vgnd
   OBS
       LAYER li1 ;
-        RECT 5.520 10.795 134.320 127.925 ;
+        RECT 4.745 10.795 134.320 127.925 ;
       LAYER met1 ;
-        RECT 0.070 0.380 138.850 137.660 ;
+        RECT 0.530 0.380 138.850 137.660 ;
       LAYER met2 ;
-        RECT 0.100 137.320 3.490 137.770 ;
-        RECT 4.330 137.320 10.850 137.770 ;
-        RECT 11.690 137.320 18.210 137.770 ;
-        RECT 19.050 137.320 25.570 137.770 ;
-        RECT 26.410 137.320 32.930 137.770 ;
-        RECT 33.770 137.320 40.290 137.770 ;
-        RECT 41.130 137.320 47.650 137.770 ;
-        RECT 48.490 137.320 55.010 137.770 ;
-        RECT 55.850 137.320 62.370 137.770 ;
-        RECT 63.210 137.320 69.730 137.770 ;
-        RECT 70.570 137.320 77.090 137.770 ;
-        RECT 77.930 137.320 84.450 137.770 ;
-        RECT 85.290 137.320 91.810 137.770 ;
-        RECT 92.650 137.320 99.170 137.770 ;
-        RECT 100.010 137.320 106.530 137.770 ;
-        RECT 107.370 137.320 113.890 137.770 ;
-        RECT 114.730 137.320 121.250 137.770 ;
-        RECT 122.090 137.320 128.610 137.770 ;
-        RECT 129.450 137.320 135.970 137.770 ;
-        RECT 136.810 137.320 138.830 137.770 ;
-        RECT 0.100 2.680 138.830 137.320 ;
-        RECT 0.100 0.155 2.110 2.680 ;
-        RECT 2.950 0.155 7.170 2.680 ;
-        RECT 8.010 0.155 12.230 2.680 ;
-        RECT 13.070 0.155 17.290 2.680 ;
-        RECT 18.130 0.155 22.810 2.680 ;
-        RECT 23.650 0.155 27.870 2.680 ;
-        RECT 28.710 0.155 32.930 2.680 ;
-        RECT 33.770 0.155 37.990 2.680 ;
-        RECT 38.830 0.155 43.510 2.680 ;
-        RECT 44.350 0.155 48.570 2.680 ;
-        RECT 49.410 0.155 53.630 2.680 ;
-        RECT 54.470 0.155 58.690 2.680 ;
-        RECT 59.530 0.155 64.210 2.680 ;
-        RECT 65.050 0.155 69.270 2.680 ;
+        RECT 0.550 137.320 3.030 137.770 ;
+        RECT 3.870 137.320 9.930 137.770 ;
+        RECT 10.770 137.320 16.830 137.770 ;
+        RECT 17.670 137.320 23.730 137.770 ;
+        RECT 24.570 137.320 30.630 137.770 ;
+        RECT 31.470 137.320 37.990 137.770 ;
+        RECT 38.830 137.320 44.890 137.770 ;
+        RECT 45.730 137.320 51.790 137.770 ;
+        RECT 52.630 137.320 58.690 137.770 ;
+        RECT 59.530 137.320 65.590 137.770 ;
+        RECT 66.430 137.320 72.950 137.770 ;
+        RECT 73.790 137.320 79.850 137.770 ;
+        RECT 80.690 137.320 86.750 137.770 ;
+        RECT 87.590 137.320 93.650 137.770 ;
+        RECT 94.490 137.320 100.550 137.770 ;
+        RECT 101.390 137.320 107.910 137.770 ;
+        RECT 108.750 137.320 114.810 137.770 ;
+        RECT 115.650 137.320 121.710 137.770 ;
+        RECT 122.550 137.320 128.610 137.770 ;
+        RECT 129.450 137.320 135.510 137.770 ;
+        RECT 136.350 137.320 138.830 137.770 ;
+        RECT 0.550 2.680 138.830 137.320 ;
+        RECT 0.550 0.155 2.110 2.680 ;
+        RECT 2.950 0.155 6.710 2.680 ;
+        RECT 7.550 0.155 11.310 2.680 ;
+        RECT 12.150 0.155 16.370 2.680 ;
+        RECT 17.210 0.155 20.970 2.680 ;
+        RECT 21.810 0.155 26.030 2.680 ;
+        RECT 26.870 0.155 30.630 2.680 ;
+        RECT 31.470 0.155 35.690 2.680 ;
+        RECT 36.530 0.155 40.290 2.680 ;
+        RECT 41.130 0.155 45.350 2.680 ;
+        RECT 46.190 0.155 49.950 2.680 ;
+        RECT 50.790 0.155 55.010 2.680 ;
+        RECT 55.850 0.155 59.610 2.680 ;
+        RECT 60.450 0.155 64.670 2.680 ;
+        RECT 65.510 0.155 69.270 2.680 ;
         RECT 70.110 0.155 74.330 2.680 ;
-        RECT 75.170 0.155 79.390 2.680 ;
-        RECT 80.230 0.155 84.910 2.680 ;
-        RECT 85.750 0.155 89.970 2.680 ;
-        RECT 90.810 0.155 95.030 2.680 ;
-        RECT 95.870 0.155 100.090 2.680 ;
-        RECT 100.930 0.155 105.610 2.680 ;
-        RECT 106.450 0.155 110.670 2.680 ;
-        RECT 111.510 0.155 115.730 2.680 ;
-        RECT 116.570 0.155 120.790 2.680 ;
-        RECT 121.630 0.155 126.310 2.680 ;
-        RECT 127.150 0.155 131.370 2.680 ;
-        RECT 132.210 0.155 136.430 2.680 ;
-        RECT 137.270 0.155 138.830 2.680 ;
+        RECT 75.170 0.155 78.930 2.680 ;
+        RECT 79.770 0.155 83.990 2.680 ;
+        RECT 84.830 0.155 88.590 2.680 ;
+        RECT 89.430 0.155 93.650 2.680 ;
+        RECT 94.490 0.155 98.250 2.680 ;
+        RECT 99.090 0.155 103.310 2.680 ;
+        RECT 104.150 0.155 107.910 2.680 ;
+        RECT 108.750 0.155 112.970 2.680 ;
+        RECT 113.810 0.155 117.570 2.680 ;
+        RECT 118.410 0.155 122.630 2.680 ;
+        RECT 123.470 0.155 127.230 2.680 ;
+        RECT 128.070 0.155 132.290 2.680 ;
+        RECT 133.130 0.155 136.890 2.680 ;
+        RECT 137.730 0.155 138.830 2.680 ;
       LAYER met3 ;
         RECT 2.800 135.640 137.200 136.040 ;
-        RECT 0.270 130.920 138.650 135.640 ;
-        RECT 0.270 130.240 137.200 130.920 ;
-        RECT 2.800 129.520 137.200 130.240 ;
-        RECT 2.800 128.840 138.650 129.520 ;
-        RECT 0.270 124.120 138.650 128.840 ;
-        RECT 0.270 123.440 137.200 124.120 ;
-        RECT 2.800 122.720 137.200 123.440 ;
-        RECT 2.800 122.040 138.650 122.720 ;
-        RECT 0.270 118.000 138.650 122.040 ;
-        RECT 0.270 116.640 137.200 118.000 ;
-        RECT 2.800 116.600 137.200 116.640 ;
-        RECT 2.800 115.240 138.650 116.600 ;
-        RECT 0.270 111.880 138.650 115.240 ;
-        RECT 0.270 110.480 137.200 111.880 ;
-        RECT 0.270 109.840 138.650 110.480 ;
-        RECT 2.800 108.440 138.650 109.840 ;
-        RECT 0.270 105.080 138.650 108.440 ;
-        RECT 0.270 103.720 137.200 105.080 ;
-        RECT 2.800 103.680 137.200 103.720 ;
-        RECT 2.800 102.320 138.650 103.680 ;
-        RECT 0.270 98.960 138.650 102.320 ;
-        RECT 0.270 97.560 137.200 98.960 ;
-        RECT 0.270 96.920 138.650 97.560 ;
-        RECT 2.800 95.520 138.650 96.920 ;
-        RECT 0.270 92.840 138.650 95.520 ;
-        RECT 0.270 91.440 137.200 92.840 ;
-        RECT 0.270 90.120 138.650 91.440 ;
-        RECT 2.800 88.720 138.650 90.120 ;
-        RECT 0.270 86.040 138.650 88.720 ;
-        RECT 0.270 84.640 137.200 86.040 ;
-        RECT 0.270 83.320 138.650 84.640 ;
-        RECT 2.800 81.920 138.650 83.320 ;
-        RECT 0.270 79.920 138.650 81.920 ;
-        RECT 0.270 78.520 137.200 79.920 ;
-        RECT 0.270 76.520 138.650 78.520 ;
-        RECT 2.800 75.120 138.650 76.520 ;
-        RECT 0.270 73.800 138.650 75.120 ;
-        RECT 0.270 72.400 137.200 73.800 ;
-        RECT 0.270 70.400 138.650 72.400 ;
-        RECT 2.800 69.000 138.650 70.400 ;
-        RECT 0.270 67.000 138.650 69.000 ;
-        RECT 0.270 65.600 137.200 67.000 ;
-        RECT 0.270 63.600 138.650 65.600 ;
-        RECT 2.800 62.200 138.650 63.600 ;
-        RECT 0.270 60.880 138.650 62.200 ;
-        RECT 0.270 59.480 137.200 60.880 ;
-        RECT 0.270 56.800 138.650 59.480 ;
-        RECT 2.800 55.400 138.650 56.800 ;
-        RECT 0.270 54.080 138.650 55.400 ;
-        RECT 0.270 52.680 137.200 54.080 ;
-        RECT 0.270 50.000 138.650 52.680 ;
-        RECT 2.800 48.600 138.650 50.000 ;
-        RECT 0.270 47.960 138.650 48.600 ;
-        RECT 0.270 46.560 137.200 47.960 ;
-        RECT 0.270 43.200 138.650 46.560 ;
-        RECT 2.800 41.840 138.650 43.200 ;
-        RECT 2.800 41.800 137.200 41.840 ;
-        RECT 0.270 40.440 137.200 41.800 ;
-        RECT 0.270 37.080 138.650 40.440 ;
-        RECT 2.800 35.680 138.650 37.080 ;
-        RECT 0.270 35.040 138.650 35.680 ;
-        RECT 0.270 33.640 137.200 35.040 ;
-        RECT 0.270 30.280 138.650 33.640 ;
-        RECT 2.800 28.920 138.650 30.280 ;
-        RECT 2.800 28.880 137.200 28.920 ;
-        RECT 0.270 27.520 137.200 28.880 ;
-        RECT 0.270 23.480 138.650 27.520 ;
-        RECT 2.800 22.800 138.650 23.480 ;
-        RECT 2.800 22.080 137.200 22.800 ;
-        RECT 0.270 21.400 137.200 22.080 ;
-        RECT 0.270 16.680 138.650 21.400 ;
-        RECT 2.800 16.000 138.650 16.680 ;
-        RECT 2.800 15.280 137.200 16.000 ;
-        RECT 0.270 14.600 137.200 15.280 ;
-        RECT 0.270 9.880 138.650 14.600 ;
-        RECT 2.800 8.480 137.200 9.880 ;
-        RECT 0.270 3.760 138.650 8.480 ;
-        RECT 2.800 2.360 137.200 3.760 ;
-        RECT 0.270 0.175 138.650 2.360 ;
+        RECT 0.270 130.240 138.650 135.640 ;
+        RECT 2.800 128.840 137.200 130.240 ;
+        RECT 0.270 123.440 138.650 128.840 ;
+        RECT 2.800 122.040 137.200 123.440 ;
+        RECT 0.270 115.960 138.650 122.040 ;
+        RECT 2.800 114.560 137.200 115.960 ;
+        RECT 0.270 109.160 138.650 114.560 ;
+        RECT 2.800 107.760 137.200 109.160 ;
+        RECT 0.270 102.360 138.650 107.760 ;
+        RECT 2.800 100.960 137.200 102.360 ;
+        RECT 0.270 94.880 138.650 100.960 ;
+        RECT 2.800 93.480 137.200 94.880 ;
+        RECT 0.270 88.080 138.650 93.480 ;
+        RECT 2.800 86.680 137.200 88.080 ;
+        RECT 0.270 81.280 138.650 86.680 ;
+        RECT 2.800 79.880 137.200 81.280 ;
+        RECT 0.270 74.480 138.650 79.880 ;
+        RECT 2.800 73.080 137.200 74.480 ;
+        RECT 0.270 67.000 138.650 73.080 ;
+        RECT 2.800 65.600 137.200 67.000 ;
+        RECT 0.270 60.200 138.650 65.600 ;
+        RECT 2.800 58.800 137.200 60.200 ;
+        RECT 0.270 53.400 138.650 58.800 ;
+        RECT 2.800 52.000 137.200 53.400 ;
+        RECT 0.270 45.920 138.650 52.000 ;
+        RECT 2.800 44.520 137.200 45.920 ;
+        RECT 0.270 39.120 138.650 44.520 ;
+        RECT 2.800 37.720 137.200 39.120 ;
+        RECT 0.270 32.320 138.650 37.720 ;
+        RECT 2.800 30.920 137.200 32.320 ;
+        RECT 0.270 24.840 138.650 30.920 ;
+        RECT 2.800 23.440 137.200 24.840 ;
+        RECT 0.270 18.040 138.650 23.440 ;
+        RECT 2.800 16.640 137.200 18.040 ;
+        RECT 0.270 11.240 138.650 16.640 ;
+        RECT 2.800 9.840 137.200 11.240 ;
+        RECT 0.270 4.440 138.650 9.840 ;
+        RECT 2.800 3.040 137.200 4.440 ;
+        RECT 0.270 0.175 138.650 3.040 ;
       LAYER met4 ;
-        RECT 0.295 10.640 27.655 128.080 ;
-        RECT 30.055 10.640 50.985 128.080 ;
-        RECT 53.385 10.640 138.625 128.080 ;
+        RECT 0.295 10.375 27.655 128.080 ;
+        RECT 30.055 10.375 50.985 128.080 ;
+        RECT 53.385 10.375 138.625 128.080 ;
   END
 END sb_1__1_
 END LIBRARY

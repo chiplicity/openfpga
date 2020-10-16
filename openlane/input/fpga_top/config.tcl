@@ -35,6 +35,9 @@ set ::env(VERILOG_FILES_BLACKBOX) "$script_dir/../../../openfpga/run/SRC/lb/grid
 set ::env(EXTRA_LEFS) "$script_dir/../../../lef/cbx_1__0_.lef \
         $script_dir/../../../lef/cbx_1__1_.lef \
         $script_dir/../../../lef/cbx_1__3_.lef \
+        $script_dir/../../../lef/cby_0__1_.lef \
+        $script_dir/../../../lef/cby_1__1_.lef \
+        $script_dir/../../../lef/cby_3__1_.lef \
         $script_dir/../../../lef/sb_0__0_.lef \
         $script_dir/../../../lef/sb_0__1_.lef \
         $script_dir/../../../lef/sb_0__3_.lef \
@@ -48,7 +51,8 @@ set ::env(EXTRA_LEFS) "$script_dir/../../../lef/cbx_1__0_.lef \
         $script_dir/../../../lef/grid_io_top.lef \
         $script_dir/../../../lef/grid_io_left.lef \
         $script_dir/../../../lef/grid_io_right.lef \
-        $script_dir/../../../lef/decoder6to61.lef"
+        $script_dir/../../../lef/decoder6to61.lef \
+        $script_dir/../../../lef/grid_clb.lef"
 
 set ::env(EXTRA_GDS_FILES) "$script_dir/../../../gds/cbx_1__0_.gds \
         $script_dir/../../../gds/cbx_1__1_.gds \
@@ -66,7 +70,8 @@ set ::env(EXTRA_GDS_FILES) "$script_dir/../../../gds/cbx_1__0_.gds \
         $script_dir/../../../gds/grid_io_top.gds \
         $script_dir/../../../gds/grid_io_left.gds \
         $script_dir/../../../gds/grid_io_right.gds \
-        $script_dir/../../../gds/decoder6to61.gds "
+        $script_dir/../../../gds/decoder6to61.gds \
+        $script_dir/../../../gds/grid_clb.gds"
 
 set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 
@@ -78,9 +83,9 @@ set ::env(SYNTH_MAX_FANOUT)  7
 set ::env(CELL_PAD) 8
 
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 2320 1665"
+set ::env(DIE_AREA) "0 0 2420 2065"
 
-set ::env(PL_TARGET_DENSITY) 0.3
+set ::env(PL_TARGET_DENSITY) 0.2
 
 set ::env(RUN_MAGIC) 1
 set ::env(FILL_INSERTION) 0
@@ -89,6 +94,6 @@ set ::env(FILL_INSERTION) 0
 set ::env(ROUTING_STRATEGY) 0
 
 set ::env(PDN_CFG) $script_dir/pdn.tcl
-# set ::env(FP_PIN_ORDER_CFG) $script_dir/pin.cfg
+set ::env(FP_PIN_ORDER_CFG) $script_dir/pin.cfg
 
 set ::env(USE_ARC_ANTENNA_CHECK) 1

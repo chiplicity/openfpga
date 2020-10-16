@@ -15,7 +15,7 @@ set ::env(VERILOG_FILES) "$script_dir/../../../openfpga/run/SRC/lb/grid_io_top.v
                     $script_dir/../../../openfpga/run/SRC/sub_module/user_defined_templates.v \
                     $script_dir/../../../openfpga/run/SRC/sub_module/inv_buf_passgate.v \
                     $script_dir/../../../openfpga/run/SRC/sub_module/luts.v \
-                     $script_dir/../../../openfpga/run/SRC/lb/logical_tile_io_mode_io_.v "
+                    $script_dir/../../../openfpga/run/SRC/lb/logical_tile_io_mode_io_.v "
 
 set ::env(CLOCK_PERIOD) "100000"
 set ::env(CLOCK_PORT) "w"
@@ -27,8 +27,8 @@ set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 
 # Floorplan & Placement
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 2120 50"
-set ::env(PL_TARGET_DENSITY) 0.2
+set ::env(DIE_AREA) "0 0 540 70"
+set ::env(PL_TARGET_DENSITY) 0.05
 set ::env(CELL_PAD) 8
 
 set ::env(RUN_MAGIC) 1
