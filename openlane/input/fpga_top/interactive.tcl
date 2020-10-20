@@ -16,10 +16,8 @@ source $script_dir/openfpga_fp.tcl
 set ::env(DIE_AREA) "0 0 $floorplan_x $floorplan_y"
 
 init_floorplan_or
-place_io
+place_io_ol -cfg $::env(FP_PIN_ORDER_CFG)
 global_placement_or
-
-# place_io
 
 # xbars
 for { set i 0}  {$i < $num_cbx_x} {incr i} {
@@ -76,92 +74,41 @@ add_macro_placement decoder6to61_0_ [expr {$decoder_pos_x }] [expr {$decoder_pos
 manual_macro_placement f
 detailed_placement
 
+
+# global_placement_or 
+
+# tap_decap_or
+
+# detailed_placement
+
+# run_cts
+gen_pdn
+
 global_routing_or
 detailed_routing
 
+if { $::env(DIODE_INSERTION_STRATEGY) == 2 } {
+    run_magic_antenna_check; # produces a report of violators; extraction!
+    heal_antenna_violators; # modifies the routed DEF
+}
+
+run_magic    
+save_views       -lef_path $::env(magic_result_file_tag).lef \
+                 -def_path $::env(tritonRoute_result_file_tag).def \
+                 -gds_path $::env(magic_result_file_tag).gds \
+                 -mag_path $::env(magic_result_file_tag).mag \
+                 -save_path $save_path \
+                 -tag $::env(RUN_TAG)
+
+run_magic_drc
+
+run_magic_spice_export
+run_lvs
+
+run_antenna_check; # to verify the above and get a final report
+
 exit
 
-# add_macro_placement cbx_1__0_ 205 30 N
-# add_macro_placement cbx_1__1_ 205 470 N
-# add_macro_placement cbx_1__2_ 205 940  N
-# add_macro_placement cbx_1__3_ 205 1410 N
-
-# add_macro_placement cbx_2__0_ 675 30 N
-# add_macro_placement cbx_2__1_ 675 470 N
-# add_macro_placement cbx_2__2_ 675 940  N
-# add_macro_placement cbx_2__3_ 675 1410 N
-
-# add_macro_placement cbx_3__0_ 1145 30 N
-# add_macro_placement cbx_3__1_ 1145 470 N
-# add_macro_placement cbx_3__2_ 1145 940  N
-# add_macro_placement cbx_3__3_ 1145 1410 N
-
-# add_macro_placement cby_0__1_ 30 205 N
-# add_macro_placement cby_0__2_ 30 660 N
-# add_macro_placement cby_0__3_ 30 1115 N
-
-# add_macro_placement cby_1__1_ 500 205 N
-# add_macro_placement cby_1__2_ 500 660 N
-# add_macro_placement cby_1__3_ 500 1115 N
-
-# add_macro_placement cby_2__1_ 970 205 N
-# add_macro_placement cby_2__2_ 970 660 N
-# add_macro_placement cby_2__3_ 970 1115 N
-
-# add_macro_placement cby_3__1_ 1440 205 N
-# add_macro_placement cby_3__2_ 1440 660 N
-# add_macro_placement cby_3__3_ 1440 1115 N
-
-# Switches
-# add_macro_placement sb_0__0_ 0 0 N
-# add_macro_placement sb_0__1_ 0 475 N
-# add_macro_placement sb_0__2_ 0 950 N
-# add_macro_placement sb_0__2_ 0 1425 N
-
-# add_macro_placement sb_1__0_ 470 0 N
-# add_macro_placement sb_1__1_ 470 475 N
-# add_macro_placement sb_1__2_ 470 950 N
-# add_macro_placement sb_1__3_ 470 1425 N
-
-# add_macro_placement sb_2__0_ 940 0 N
-# add_macro_placement sb_2__1_ 940 475 N
-# add_macro_placement sb_2__2_ 940 950 N
-# add_macro_placement sb_2__3_ 940 1425 N
-
-# add_macro_placement sb_3__0_ 1410 0 N
-# add_macro_placement sb_3__1_ 1410 475 N
-# add_macro_placement sb_3__2_ 1410 950 N
-# add_macro_placement sb_3__3_ 1410 1425 N
-
-# # Grid CLBs
-# add_macro_placement grid_clb_1__1_ 180 180 N
-# add_macro_placement grid_clb_1__2_ 180 730 N
-# add_macro_placement grid_clb_1__3_ 180 1280 N
-
-# add_macro_placement grid_clb_2__1_ 650 180 N
-# add_macro_placement grid_clb_2__2_ 650 730 N
-# add_macro_placement grid_clb_2__3_ 650 1280 N
-
-# add_macro_placement grid_clb_3__1_ 1120 180 N
-# add_macro_placement grid_clb_3__2_ 1120 730 N
-# add_macro_placement grid_clb_3__3_ 1120 1280 N
-
-# IOs
-# add_macro_placement grid_io_top_1__4_ 0 2000 N
-# add_macro_placement grid_io_top_2__4_ 610 2000 N
-# add_macro_placement grid_io_top_3__4_ 680 2000 N
-
-# add_macro_placement grid_io_bottom_1__0_ 0 0 N
-# add_macro_placement grid_io_bottom_2__0_ 610 0 N
-# add_macro_placement grid_io_bottom_3__0_ 680 0 N
-
-# add_macro_placement grid_io_left_0__1_ 2000 0 N
-# add_macro_placement grid_io_left_0__2_ 2000 615 N
-# add_macro_placement grid_io_left_0__3_ 0 685 N
-
-# add_macro_placement grid_io_right_4__1_ 2000 0 N
-# add_macro_placement grid_io_right_4__2_ 2000 615 N
-# add_macro_placement grid_io_right_4__3_ 2000 685 N
 
 # Decoder
 

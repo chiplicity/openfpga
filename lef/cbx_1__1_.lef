@@ -358,6 +358,7 @@ MACRO cbx_1__1_
     END
   END top_grid_pin_6_
   PIN vpwr
+    USE POWER ;
     DIRECTION INPUT ;
     PORT
       LAYER met4 ;
@@ -365,6 +366,7 @@ MACRO cbx_1__1_
     END
   END vpwr
   PIN vgnd
+    USE GROUND ;
     DIRECTION INPUT ;
     PORT
       LAYER met4 ;

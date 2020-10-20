@@ -218,6 +218,7 @@ MACRO grid_clb
     END
   END top_width_0_height_0__pin_8_
   PIN vpwr
+    USE POWER ;
     DIRECTION INPUT ;
     PORT
       LAYER met4 ;
@@ -225,6 +226,7 @@ MACRO grid_clb
     END
   END vpwr
   PIN vgnd
+    USE GROUND ;
     DIRECTION INPUT ;
     PORT
       LAYER met4 ;

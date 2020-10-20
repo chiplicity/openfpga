@@ -14,7 +14,7 @@ set cbx_to_clb 70
 set clb_to_cbx 40
 
 set sb_to_cby_x 0
-set sb_to_cby_y 95
+set sb_to_cby_y 65
 
 set clb_to_cby 70
 set cby_to_clb $clb_to_cby
@@ -90,7 +90,7 @@ for { set i 0}  {$i < $num_switches_x} {incr i} {
 # ---------
 
 set cbx_offset_x [expr {$sb_offset_x + $sb_x + $sb_to_cbx}]
-set cbx_offset_y [expr {$sb_offset_y + $sb_y}]
+set cbx_offset_y [expr {$sb_offset_y + $sb_y / 2 - $cbx_y / 2 }]
 
 set num_cbx_x $grid_x
 set num_cbx_y [expr {$grid_y + 1}]
@@ -99,7 +99,7 @@ for { set i 0}  {$i < $num_cbx_x} {incr i} {
     for { set j 0}  {$j < $num_cbx_y} {incr j} {
         # xbars_x
         set xbar_x_x($i,$j) [expr {$cbx_offset_x + $i*[expr {$cbx_x+2*$sb_to_cbx+$sb_x}]} ]
-        set xbar_x_y($i,$j) [expr {$cbx_offset_y + $j*[expr {$cbx_y+$cbx_to_clb+$clb_y+$clb_to_cbx}]}]
+        set xbar_x_y($i,$j) [expr {$cbx_offset_y + $j*[expr {$cbx_y+$cbx_to_clb+$clb_y+$clb_to_cbx+ $sb_y / 2 - $cbx_y / 2 }]}]
     }
 }
 
@@ -131,7 +131,7 @@ for { set i 0}  {$i < $num_clbs_x} {incr i} {
     for { set j 0}  {$j < $num_clbs_y} {incr j} {
         # switches
         set clbs_x($i,$j)  [expr {$clb_offset_x + $j*[expr {$clb_x+2*$clb_to_cby+$cby_x}]}]
-        set clbs_y($i,$j)  [expr {$clb_offset_y + $i*[expr {$clb_y+2*$clb_to_cbx+$cbx_y}]}]
+        set clbs_y($i,$j)  [expr {$clb_offset_y + $i*[expr {$clb_y+2*$cbx_to_clb+$cbx_y}]}]
     }
 }
 

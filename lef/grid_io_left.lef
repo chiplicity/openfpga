@@ -218,6 +218,7 @@ MACRO grid_io_left
     END
   END right_width_0_height_0__pin_9_
   PIN vpwr
+    USE POWER ;
     DIRECTION INPUT ;
     PORT
       LAYER met4 ;
@@ -225,6 +226,7 @@ MACRO grid_io_left
     END
   END vpwr
   PIN vgnd
+    USE GROUND ;
     DIRECTION INPUT ;
     PORT
       LAYER met4 ;

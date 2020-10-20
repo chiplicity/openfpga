@@ -351,6 +351,7 @@ MACRO cby_1__1_
     END
   END right_grid_pin_7_
   PIN vpwr
+    USE POWER ;
     DIRECTION INPUT ;
     PORT
       LAYER met4 ;
@@ -358,6 +359,7 @@ MACRO cby_1__1_
     END
   END vpwr
   PIN vgnd
+    USE GROUND ;
     DIRECTION INPUT ;
     PORT
       LAYER met4 ;

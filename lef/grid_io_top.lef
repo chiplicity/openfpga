@@ -218,6 +218,7 @@ MACRO grid_io_top
     END
   END gfpga_pad_GPIO_PAD[7]
   PIN vpwr
+    USE POWER ;
     DIRECTION INPUT ;
     PORT
       LAYER met4 ;
@@ -225,6 +226,7 @@ MACRO grid_io_top
     END
   END vpwr
   PIN vgnd
+    USE GROUND ;
     DIRECTION INPUT ;
     PORT
       LAYER met4 ;

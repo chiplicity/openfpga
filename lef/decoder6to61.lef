@@ -484,6 +484,7 @@ MACRO decoder6to61
     END
   END enable
   PIN vpwr
+    USE POWER ;
     DIRECTION INPUT ;
     PORT
       LAYER met4 ;
@@ -491,6 +492,7 @@ MACRO decoder6to61
     END
   END vpwr
   PIN vgnd
+    USE GROUND ;
     DIRECTION INPUT ;
     PORT
       LAYER met4 ;

@@ -57,6 +57,9 @@ set ::env(EXTRA_LEFS) "$script_dir/../../../lef/cbx_1__0_.lef \
 set ::env(EXTRA_GDS_FILES) "$script_dir/../../../gds/cbx_1__0_.gds \
         $script_dir/../../../gds/cbx_1__1_.gds \
         $script_dir/../../../gds/cbx_1__3_.gds \
+        $script_dir/../../../gds/cby_0__1_.gds \
+        $script_dir/../../../gds/cby_1__1_.gds \
+        $script_dir/../../../gds/cby_3__1_.gds \
         $script_dir/../../../gds/sb_0__0_.gds \
         $script_dir/../../../gds/sb_0__1_.gds \
         $script_dir/../../../gds/sb_0__3_.gds \
@@ -66,7 +69,7 @@ set ::env(EXTRA_GDS_FILES) "$script_dir/../../../gds/cbx_1__0_.gds \
         $script_dir/../../../gds/sb_3__0_.gds \
         $script_dir/../../../gds/sb_3__1_.gds \
         $script_dir/../../../gds/sb_3__3_.gds \
-        $script_dir/../../../gds/grid_io_botoom.gds \
+        $script_dir/../../../gds/grid_io_bottom.gds \
         $script_dir/../../../gds/grid_io_top.gds \
         $script_dir/../../../gds/grid_io_left.gds \
         $script_dir/../../../gds/grid_io_right.gds \
