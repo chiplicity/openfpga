@@ -11,7 +11,6 @@ pdngen::specify_grid stdcell {
 	    met5 {width 20 spacing 5 core_offset 20}
     }
     straps {
-	    met4 {width 1.6 pitch $::env(FP_PDN_VPITCH) offset $::env(FP_PDN_VOFFSET)}
 	    met5 {width 1.6 pitch $::env(FP_PDN_HPITCH) offset $::env(FP_PDN_HOFFSET)}
     }
     connect {{met1 met4} {met4 met5}}
