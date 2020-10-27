@@ -42,29 +42,6 @@ set floorplan_y [expr {$tile_y*$grid_y + $sb_y + \
 
 puts "Floorplan size (x,y): ($floorplan_x, $floorplan_y)"
 
-# ---------
-# IO Blocks
-# ---------
-
-set num_hor_io_blocks $grid_x
-set num_ver_io_blocks $grid_y
-
-for {set i 0} { $i < $num_hor_io_blocks} {incr i} {
-    
-    set grid_io_bottom_x($i) [expr {$io_ver_x + $io_ver_to_sb + $i* [expr {$io_hor_x + $io_hor_spacing}]} + $margin_x]
-    set grid_io_bottom_y($i) $margin_y
-
-    set grid_io_top_x($i) [expr {$grid_io_bottom_x($i)}]
-    set grid_io_top_y($i) [expr {$grid_io_bottom_y($i) + $io_hor_y + 2*$io_hor_to_sb + $tile_y * $grid_y + $sb_y }]
-}
-
-for {set i 0} { $i < $num_ver_io_blocks} {incr i} {
-    set grid_io_left_x($i) $margin_x
-    set grid_io_left_y($i) [expr {$i * [expr {$io_ver_y + $io_ver_spacing}]} + $margin_y]
-
-    set grid_io_right_x($i) [expr { $margin_x + $io_ver_x + $io_ver_to_sb + $tile_x * $grid_x + $sb_x + $sb_to_dec + $decoder_x + $io_ver_to_dec}]
-    set grid_io_right_y($i) [expr {$grid_io_left_y($i)}]
-}
 
 
 # ---------
@@ -115,6 +92,35 @@ for { set i 0}  {$i < $num_cby_x} {incr i} {
         set xbar_y_x($i,$j) [expr { $cby_offset_x + $i*[expr {$cby_x + 2*$cby_to_clb + $clb_x}]}]
         set xbar_y_y($i,$j) [expr { $cby_offset_y + $j*[expr {$cby_y + 2*$cby_to_sb  + $sb_y}]}]
     }
+}
+
+# IO Spacings
+
+set io_hor_spacing [expr {$floorplan_x - $grid_x * $io_hor_x - 2*$margin_x - $io_ver_x - $io_ver_to_sb} / [expr {$grid_x - 1}]]
+set io_ver_spacing [expr {$floorplan_y - $grid_y * $io_hor_y - 2*$margin_y} / [expr {$grid_y - 1}]]
+
+# ---------
+# IO Blocks
+# ---------
+
+set num_hor_io_blocks $grid_x
+set num_ver_io_blocks $grid_y
+
+for {set i 0} { $i < $num_hor_io_blocks} {incr i} {
+    
+    set grid_io_bottom_x($i) $xbar_x_x($i,0)
+    set grid_io_bottom_y($i) $margin_y
+
+    set grid_io_top_x($i) $xbar_x_x($i,0)
+    set grid_io_top_y($i) [expr {$grid_io_bottom_y($i) + $io_hor_y + 2*$io_hor_to_sb + $tile_y * $grid_y + $sb_y }]
+}
+
+for {set i 0} { $i < $num_ver_io_blocks} {incr i} {
+    set grid_io_left_x($i) $margin_x
+    set grid_io_left_y($i) $xbar_y_y(0,$i)
+
+    set grid_io_right_x($i) [expr { $margin_x + $io_ver_x + $io_ver_to_sb + $tile_x * $grid_x + $sb_x + $sb_to_dec + $decoder_x + $io_ver_to_dec}]
+    set grid_io_right_y($i) $xbar_y_y(0,$i)
 }
 
 # ---------
