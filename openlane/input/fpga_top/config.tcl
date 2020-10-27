@@ -100,3 +100,7 @@ set ::env(PDN_CFG) $script_dir/pdn.tcl
 set ::env(FP_PIN_ORDER_CFG) $script_dir/pin.cfg
 
 set ::env(USE_ARC_ANTENNA_CHECK) 1
+
+# PDN
+set ::env(FP_PDN_HOFFSET) 65
+set ::env(FP_PDN_HPITCH) 153.18
