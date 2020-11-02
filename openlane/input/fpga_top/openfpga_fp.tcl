@@ -8,8 +8,6 @@ set sb_to_cby 65
 set cbx_to_sb $sb_to_cbx
 set cby_to_sb $sb_to_cby
 
-set sb_to_dec 65
-
 set cbx_to_clb 70
 set clb_to_cbx 40
 
@@ -33,7 +31,7 @@ set margin_x 50
 set margin_y 50
 
 set floorplan_x [expr {$tile_x*$grid_x + $sb_x + \
-                2*$io_ver_x + $io_ver_to_sb + $sb_to_dec + $decoder_x + $io_ver_to_dec + \
+                2*$io_ver_x + 2*$io_ver_to_sb + \
                 2*$margin_x }]
 
 set floorplan_y [expr {$tile_y*$grid_y + $sb_y + \
@@ -119,7 +117,7 @@ for {set i 0} { $i < $num_ver_io_blocks} {incr i} {
     set grid_io_left_x($i) $margin_x
     set grid_io_left_y($i) $xbar_y_y(0,$i)
 
-    set grid_io_right_x($i) [expr { $margin_x + $io_ver_x + $io_ver_to_sb + $tile_x * $grid_x + $sb_x + $sb_to_dec + $decoder_x + $io_ver_to_dec}]
+    set grid_io_right_x($i) [expr { $margin_x + $io_ver_x + $io_ver_to_sb + $tile_x * $grid_x + $sb_x + $io_ver_to_sb}]
     set grid_io_right_y($i) $xbar_y_y(0,$i)
 }
 
@@ -140,10 +138,3 @@ for { set i 0}  {$i < $num_clbs_x} {incr i} {
         set clbs_y($i,$j)  [expr {$clb_offset_y + $i*[expr {$clb_y+2*$cbx_to_clb+$cbx_y}]}]
     }
 }
-
-# ---------
-# Decoder
-# ---------
-
-set decoder_pos_x [expr { $switches_x($grid_x,$grid_y) + $sb_x + $sb_to_dec}]
-set decoder_pos_y [expr { $floorplan_y / 2 } + $margin_y]

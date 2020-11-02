@@ -191,43 +191,13 @@ VIAS 5 ;
  ;
 END VIAS
 
-COMPONENTS 1322 ;
-- _04_ scs8hd_buf_1 + PLACED ( 48300 21760 ) FS ;
-- _05_ scs8hd_and4_4 + PLACED ( 46460 78880 ) N ;
-- _06_ scs8hd_inv_8 + PLACED ( 39100 65280 ) FS ;
-- _07_ scs8hd_and4_4 + PLACED ( 48300 81600 ) FS ;
-- _08_ scs8hd_inv_8 + PLACED ( 48300 76160 ) FS ;
-- _09_ scs8hd_and4_4 + PLACED ( 48300 73440 ) N ;
-- _10_ scs8hd_and4_4 + PLACED ( 48760 84320 ) N ;
-- _11_ scs8hd_inv_8 + PLACED ( 40020 21760 ) FS ;
-- _12_ scs8hd_nor4_4 + PLACED ( 48300 59840 ) FS ;
-- _13_ scs8hd_nor4_4 + PLACED ( 48300 54400 ) FS ;
-- _14_ scs8hd_nor4_4 + PLACED ( 46000 24480 ) N ;
-- _15_ scs8hd_nor4_4 + PLACED ( 45540 19040 ) N ;
-- _16_ scs8hd_buf_2 + PLACED ( 62100 122400 ) N ;
-- _17_ scs8hd_buf_2 + PLACED ( 62100 149600 ) N ;
-- _18_ scs8hd_buf_2 + PLACED ( 62100 155040 ) N ;
-- _19_ scs8hd_buf_2 + PLACED ( 62100 13600 ) N ;
-- _20_ scs8hd_buf_2 + PLACED ( 62100 24480 ) N ;
-- _21_ scs8hd_buf_2 + PLACED ( 65320 48960 ) FS ;
-- _22_ scs8hd_buf_2 + PLACED ( 62100 73440 ) N ;
-- _23_ scs8hd_buf_2 + PLACED ( 62100 100640 ) N ;
-- logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer scs8hd_ebufn_1 + PLACED ( 63020 10880 ) FS ;
-- logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch scs8hd_lpflow_inputisolatch_1 + PLACED ( 55660 16320 ) FS ;
-- logical_tile_io_mode_io__1.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer scs8hd_ebufn_1 + PLACED ( 62100 19040 ) N ;
-- logical_tile_io_mode_io__1.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch scs8hd_lpflow_inputisolatch_1 + PLACED ( 56120 21760 ) FS ;
-- logical_tile_io_mode_io__2.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer scs8hd_ebufn_1 + PLACED ( 62100 46240 ) N ;
-- logical_tile_io_mode_io__2.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch scs8hd_lpflow_inputisolatch_1 + PLACED ( 56580 48960 ) FS ;
-- logical_tile_io_mode_io__3.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer scs8hd_ebufn_1 + PLACED ( 62100 68000 ) N ;
-- logical_tile_io_mode_io__3.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch scs8hd_lpflow_inputisolatch_1 + PLACED ( 57040 65280 ) FS ;
-- logical_tile_io_mode_io__4.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer scs8hd_ebufn_1 + PLACED ( 61640 92480 ) FS ;
-- logical_tile_io_mode_io__4.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch scs8hd_lpflow_inputisolatch_1 + PLACED ( 57500 87040 ) FS ;
-- logical_tile_io_mode_io__5.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer scs8hd_ebufn_1 + PLACED ( 62100 116960 ) N ;
-- logical_tile_io_mode_io__5.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch scs8hd_lpflow_inputisolatch_1 + PLACED ( 56120 108800 ) FS ;
-- logical_tile_io_mode_io__6.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer scs8hd_ebufn_1 + PLACED ( 62100 138720 ) N ;
-- logical_tile_io_mode_io__6.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch scs8hd_lpflow_inputisolatch_1 + PLACED ( 63480 125120 ) FS ;
-- logical_tile_io_mode_io__7.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer scs8hd_ebufn_1 + PLACED ( 61180 157760 ) FS ;
-- logical_tile_io_mode_io__7.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch scs8hd_lpflow_inputisolatch_1 + PLACED ( 54740 125120 ) FS ;
+COMPONENTS 1192 ;
+- _0_ scs8hd_buf_2 + PLACED ( 62100 84320 ) N ;
+- _1_ scs8hd_buf_2 + PLACED ( 25300 157760 ) FS ;
+- _2_ scs8hd_buf_2 + PLACED ( 61640 43520 ) FS ;
+- _3_ scs8hd_buf_2 + PLACED ( 61640 76160 ) FS ;
+- logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_0_.ie_oe_inv scs8hd_inv_1 + PLACED ( 15180 84320 ) N ;
+- logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_scs8hd_dfxbp_1_mem.scs8hd_dfxbp_1_0_ scs8hd_dfxbp_1 + PLACED ( 13340 95200 ) N ;
 - PHY_0 scs8hd_decap_3 + FIXED ( 5520 10880 ) FS ;
 - PHY_1 scs8hd_decap_3 + FIXED ( 72680 10880 ) S ;
 - PHY_2 scs8hd_decap_3 + FIXED ( 5520 13600 ) N ;
@@ -492,82 +462,13 @@ COMPONENTS 1322 ;
 - PHY_261 scs8hd_tapvpwrvgnd_1 + FIXED ( 34040 184960 ) FS ;
 - PHY_262 scs8hd_tapvpwrvgnd_1 + FIXED ( 48300 184960 ) FS ;
 - PHY_263 scs8hd_tapvpwrvgnd_1 + FIXED ( 62560 184960 ) FS ;
-- ANTENNA__15__A scs8hd_diode_2 + PLACED ( 44620 19040 ) N ;
-- ANTENNA__13__A scs8hd_diode_2 + PLACED ( 48300 51680 ) N ;
-- ANTENNA__09__A scs8hd_diode_2 + PLACED ( 47380 73440 ) N ;
-- ANTENNA__06__A scs8hd_diode_2 + PLACED ( 39100 62560 ) N ;
-- ANTENNA__05__C scs8hd_diode_2 + PLACED ( 45540 78880 ) N ;
-- ANTENNA__15__D scs8hd_diode_2 + PLACED ( 45540 16320 ) FS ;
-- ANTENNA__14__D scs8hd_diode_2 + PLACED ( 45080 24480 ) N ;
-- ANTENNA__08__A scs8hd_diode_2 + PLACED ( 45540 73440 ) N ;
-- ANTENNA__07__B scs8hd_diode_2 + PLACED ( 51520 78880 ) N ;
-- ANTENNA__05__B scs8hd_diode_2 + PLACED ( 46460 76160 ) FS ;
-- ANTENNA__10__C scs8hd_diode_2 + PLACED ( 47840 84320 ) N ;
-- ANTENNA__09__C scs8hd_diode_2 + PLACED ( 49220 70720 ) FS ;
-- ANTENNA__04__A scs8hd_diode_2 + PLACED ( 49220 16320 ) FS ;
-- ANTENNA_logical_tile_io_mode_io__7.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch_D scs8hd_diode_2 + PLACED ( 54740 122400 ) N ;
-- ANTENNA_logical_tile_io_mode_io__6.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch_D scs8hd_diode_2 + PLACED ( 64860 122400 ) N ;
-- ANTENNA_logical_tile_io_mode_io__5.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch_D scs8hd_diode_2 + PLACED ( 56120 106080 ) N ;
-- ANTENNA_logical_tile_io_mode_io__4.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch_D scs8hd_diode_2 + PLACED ( 57500 84320 ) N ;
-- ANTENNA_logical_tile_io_mode_io__3.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch_D scs8hd_diode_2 + PLACED ( 57040 62560 ) N ;
-- ANTENNA_logical_tile_io_mode_io__2.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch_D scs8hd_diode_2 + PLACED ( 56580 46240 ) N ;
-- ANTENNA_logical_tile_io_mode_io__1.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch_D scs8hd_diode_2 + PLACED ( 56120 19040 ) N ;
-- ANTENNA_logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch_D scs8hd_diode_2 + PLACED ( 55660 13600 ) N ;
-- ANTENNA__11__A scs8hd_diode_2 + PLACED ( 40020 19040 ) N ;
-- ANTENNA__10__B scs8hd_diode_2 + PLACED ( 46000 84320 ) N ;
-- ANTENNA__09__B scs8hd_diode_2 + PLACED ( 43700 73440 ) N ;
-- ANTENNA__07__D scs8hd_diode_2 + PLACED ( 43700 78880 ) N ;
-- ANTENNA__05__D scs8hd_diode_2 + PLACED ( 46460 81600 ) FS ;
-- ANTENNA__19__A scs8hd_diode_2 + PLACED ( 64860 13600 ) N ;
-- ANTENNA__20__A scs8hd_diode_2 + PLACED ( 64860 24480 ) N ;
-- ANTENNA__21__A scs8hd_diode_2 + PLACED ( 66700 46240 ) N ;
-- ANTENNA__22__A scs8hd_diode_2 + PLACED ( 64860 73440 ) N ;
-- ANTENNA__23__A scs8hd_diode_2 + PLACED ( 64860 100640 ) N ;
-- ANTENNA__16__A scs8hd_diode_2 + PLACED ( 60720 122400 ) N ;
-- ANTENNA__17__A scs8hd_diode_2 + PLACED ( 64860 149600 ) N ;
-- ANTENNA__18__A scs8hd_diode_2 + PLACED ( 64860 155040 ) N ;
-- ANTENNA_logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer_A scs8hd_diode_2 + PLACED ( 61640 10880 ) FS ;
-- ANTENNA_logical_tile_io_mode_io__5.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer_A scs8hd_diode_2 + PLACED ( 60720 116960 ) N ;
-- ANTENNA_logical_tile_io_mode_io__6.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer_A scs8hd_diode_2 + PLACED ( 60720 138720 ) N ;
-- ANTENNA_logical_tile_io_mode_io__7.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer_A scs8hd_diode_2 + PLACED ( 60720 155040 ) N ;
-- ANTENNA_logical_tile_io_mode_io__1.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer_A scs8hd_diode_2 + PLACED ( 60720 19040 ) N ;
-- ANTENNA_logical_tile_io_mode_io__2.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer_A scs8hd_diode_2 + PLACED ( 60720 46240 ) N ;
-- ANTENNA_logical_tile_io_mode_io__3.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer_A scs8hd_diode_2 + PLACED ( 60720 68000 ) N ;
-- ANTENNA_logical_tile_io_mode_io__4.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer_A scs8hd_diode_2 + PLACED ( 63020 89760 ) N ;
-- ANTENNA__15__C scs8hd_diode_2 + PLACED ( 45540 21760 ) FS ;
-- ANTENNA__14__C scs8hd_diode_2 + PLACED ( 46000 27200 ) FS ;
-- ANTENNA__13__C scs8hd_diode_2 + PLACED ( 50140 51680 ) N ;
-- ANTENNA__12__C scs8hd_diode_2 + PLACED ( 48300 57120 ) N ;
-- ANTENNA__07__A scs8hd_diode_2 + PLACED ( 53360 78880 ) N ;
-- ANTENNA__05__A scs8hd_diode_2 + PLACED ( 41860 78880 ) N ;
-- ANTENNA__14__A scs8hd_diode_2 + PLACED ( 43240 24480 ) N ;
-- ANTENNA__12__A scs8hd_diode_2 + PLACED ( 50140 57120 ) N ;
-- ANTENNA__10__A scs8hd_diode_2 + PLACED ( 49220 87040 ) FS ;
-- ANTENNA__07__C scs8hd_diode_2 + PLACED ( 55200 78880 ) N ;
-- ANTENNA__13__D scs8hd_diode_2 + PLACED ( 51980 51680 ) N ;
-- ANTENNA__12__D scs8hd_diode_2 + PLACED ( 51980 57120 ) N ;
-- ANTENNA__10__D scs8hd_diode_2 + PLACED ( 44160 84320 ) N ;
-- ANTENNA__09__D scs8hd_diode_2 + PLACED ( 53360 73440 ) N ;
-- ANTENNA__15__B scs8hd_diode_2 + PLACED ( 42780 19040 ) N ;
-- ANTENNA__14__B scs8hd_diode_2 + PLACED ( 41400 24480 ) N ;
-- ANTENNA__13__B scs8hd_diode_2 + PLACED ( 46460 51680 ) N ;
-- ANTENNA__12__B scs8hd_diode_2 + PLACED ( 46460 57120 ) N ;
-- ANTENNA_logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch_SLEEPB scs8hd_diode_2 + PLACED ( 57500 13600 ) N ;
-- ANTENNA_logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer_TEB scs8hd_diode_2 + PLACED ( 59800 10880 ) FS ;
-- ANTENNA_logical_tile_io_mode_io__1.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch_SLEEPB scs8hd_diode_2 + PLACED ( 57960 19040 ) N ;
-- ANTENNA_logical_tile_io_mode_io__1.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer_TEB scs8hd_diode_2 + PLACED ( 62100 16320 ) FS ;
-- ANTENNA_logical_tile_io_mode_io__2.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch_SLEEPB scs8hd_diode_2 + PLACED ( 58420 46240 ) N ;
-- ANTENNA_logical_tile_io_mode_io__2.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer_TEB scs8hd_diode_2 + PLACED ( 62100 43520 ) FS ;
-- ANTENNA_logical_tile_io_mode_io__3.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch_SLEEPB scs8hd_diode_2 + PLACED ( 58880 62560 ) N ;
-- ANTENNA_logical_tile_io_mode_io__3.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer_TEB scs8hd_diode_2 + PLACED ( 62100 70720 ) FS ;
-- ANTENNA_logical_tile_io_mode_io__4.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch_SLEEPB scs8hd_diode_2 + PLACED ( 59340 84320 ) N ;
-- ANTENNA_logical_tile_io_mode_io__4.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer_TEB scs8hd_diode_2 + PLACED ( 64860 89760 ) N ;
-- ANTENNA_logical_tile_io_mode_io__5.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch_SLEEPB scs8hd_diode_2 + PLACED ( 57960 106080 ) N ;
-- ANTENNA_logical_tile_io_mode_io__5.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer_TEB scs8hd_diode_2 + PLACED ( 62100 114240 ) FS ;
-- ANTENNA_logical_tile_io_mode_io__6.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch_SLEEPB scs8hd_diode_2 + PLACED ( 66700 122400 ) N ;
-- ANTENNA_logical_tile_io_mode_io__6.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer_TEB scs8hd_diode_2 + PLACED ( 62100 136000 ) FS ;
-- ANTENNA_logical_tile_io_mode_io__7.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch_SLEEPB scs8hd_diode_2 + PLACED ( 56580 122400 ) N ;
-- ANTENNA_logical_tile_io_mode_io__7.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer_TEB scs8hd_diode_2 + PLACED ( 58880 155040 ) N ;
+- ANTENNA_logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_scs8hd_dfxbp_1_mem.scs8hd_dfxbp_1_0__D scs8hd_diode_2 + PLACED ( 12420 95200 ) N ;
+- ANTENNA_logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_0_.ie_oe_inv_A scs8hd_diode_2 + PLACED ( 17480 84320 ) N ;
+- ANTENNA__1__A scs8hd_diode_2 + PLACED ( 25300 155040 ) N ;
+- ANTENNA__3__A scs8hd_diode_2 + PLACED ( 63020 73440 ) N ;
+- ANTENNA__2__A scs8hd_diode_2 + PLACED ( 63020 40800 ) N ;
+- ANTENNA_logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_scs8hd_dfxbp_1_mem.scs8hd_dfxbp_1_0__CLK scs8hd_diode_2 + PLACED ( 13340 92480 ) FS ;
+- ANTENNA__0__A scs8hd_diode_2 + PLACED ( 64860 84320 ) N ;
 - FILLER_0_3 scs8hd_decap_12 + PLACED ( 6900 10880 ) FS ;
 - FILLER_0_15 scs8hd_decap_12 + PLACED ( 12420 10880 ) FS ;
 - FILLER_0_27 scs8hd_decap_4 + PLACED ( 17940 10880 ) FS ;
@@ -579,8 +480,9 @@ COMPONENTS 1322 ;
 - FILLER_0_87 scs8hd_decap_6 + PLACED ( 45540 10880 ) FS ;
 - FILLER_0_94 scs8hd_decap_12 + PLACED ( 48760 10880 ) FS ;
 - FILLER_0_106 scs8hd_decap_12 + PLACED ( 54280 10880 ) FS ;
-- FILLER_0_120 scs8hd_fill_2 + PLACED ( 60720 10880 ) FS ;
-- FILLER_0_133 scs8hd_decap_12 + PLACED ( 66700 10880 ) FS ;
+- FILLER_0_118 scs8hd_decap_6 + PLACED ( 59800 10880 ) FS ;
+- FILLER_0_125 scs8hd_decap_12 + PLACED ( 63020 10880 ) FS ;
+- FILLER_0_137 scs8hd_decap_8 + PLACED ( 68540 10880 ) FS ;
 - FILLER_0_145 scs8hd_fill_1 + PLACED ( 72220 10880 ) FS ;
 - FILLER_1_3 scs8hd_decap_12 + PLACED ( 6900 13600 ) N ;
 - FILLER_1_15 scs8hd_decap_12 + PLACED ( 12420 13600 ) N ;
@@ -591,13 +493,10 @@ COMPONENTS 1322 ;
 - FILLER_1_62 scs8hd_decap_12 + PLACED ( 34040 13600 ) N ;
 - FILLER_1_74 scs8hd_decap_12 + PLACED ( 39560 13600 ) N ;
 - FILLER_1_86 scs8hd_decap_12 + PLACED ( 45080 13600 ) N ;
-- FILLER_1_98 scs8hd_decap_8 + PLACED ( 50600 13600 ) N ;
-- FILLER_1_106 scs8hd_decap_3 + PLACED ( 54280 13600 ) N ;
-- FILLER_1_111 scs8hd_fill_2 + PLACED ( 56580 13600 ) N ;
-- FILLER_1_115 scs8hd_decap_6 + PLACED ( 58420 13600 ) N ;
-- FILLER_1_121 scs8hd_fill_1 + PLACED ( 61180 13600 ) N ;
-- FILLER_1_127 scs8hd_fill_2 + PLACED ( 63940 13600 ) N ;
-- FILLER_1_131 scs8hd_decap_12 + PLACED ( 65780 13600 ) N ;
+- FILLER_1_98 scs8hd_decap_12 + PLACED ( 50600 13600 ) N ;
+- FILLER_1_110 scs8hd_decap_12 + PLACED ( 56120 13600 ) N ;
+- FILLER_1_123 scs8hd_decap_12 + PLACED ( 62100 13600 ) N ;
+- FILLER_1_135 scs8hd_decap_8 + PLACED ( 67620 13600 ) N ;
 - FILLER_1_143 scs8hd_decap_3 + PLACED ( 71300 13600 ) N ;
 - FILLER_2_3 scs8hd_decap_12 + PLACED ( 6900 16320 ) FS ;
 - FILLER_2_15 scs8hd_decap_12 + PLACED ( 12420 16320 ) FS ;
@@ -606,14 +505,12 @@ COMPONENTS 1322 ;
 - FILLER_2_44 scs8hd_decap_12 + PLACED ( 25760 16320 ) FS ;
 - FILLER_2_56 scs8hd_decap_12 + PLACED ( 31280 16320 ) FS ;
 - FILLER_2_68 scs8hd_decap_12 + PLACED ( 36800 16320 ) FS ;
-- FILLER_2_80 scs8hd_decap_6 + PLACED ( 42320 16320 ) FS ;
-- FILLER_2_86 scs8hd_fill_1 + PLACED ( 45080 16320 ) FS ;
-- FILLER_2_89 scs8hd_decap_3 + PLACED ( 46460 16320 ) FS ;
-- FILLER_2_93 scs8hd_fill_2 + PLACED ( 48300 16320 ) FS ;
-- FILLER_2_97 scs8hd_decap_12 + PLACED ( 50140 16320 ) FS ;
-- FILLER_2_120 scs8hd_decap_3 + PLACED ( 60720 16320 ) FS ;
-- FILLER_2_125 scs8hd_decap_12 + PLACED ( 63020 16320 ) FS ;
-- FILLER_2_137 scs8hd_decap_8 + PLACED ( 68540 16320 ) FS ;
+- FILLER_2_80 scs8hd_decap_12 + PLACED ( 42320 16320 ) FS ;
+- FILLER_2_93 scs8hd_decap_12 + PLACED ( 48300 16320 ) FS ;
+- FILLER_2_105 scs8hd_decap_12 + PLACED ( 53820 16320 ) FS ;
+- FILLER_2_117 scs8hd_decap_12 + PLACED ( 59340 16320 ) FS ;
+- FILLER_2_129 scs8hd_decap_12 + PLACED ( 64860 16320 ) FS ;
+- FILLER_2_141 scs8hd_decap_4 + PLACED ( 70380 16320 ) FS ;
 - FILLER_2_145 scs8hd_fill_1 + PLACED ( 72220 16320 ) FS ;
 - FILLER_3_3 scs8hd_decap_12 + PLACED ( 6900 19040 ) N ;
 - FILLER_3_15 scs8hd_decap_12 + PLACED ( 12420 19040 ) N ;
@@ -622,13 +519,12 @@ COMPONENTS 1322 ;
 - FILLER_3_51 scs8hd_decap_8 + PLACED ( 28980 19040 ) N ;
 - FILLER_3_59 scs8hd_fill_2 + PLACED ( 32660 19040 ) N ;
 - FILLER_3_62 scs8hd_decap_12 + PLACED ( 34040 19040 ) N ;
-- FILLER_3_74 scs8hd_fill_1 + PLACED ( 39560 19040 ) N ;
-- FILLER_3_77 scs8hd_decap_4 + PLACED ( 40940 19040 ) N ;
-- FILLER_3_83 scs8hd_fill_2 + PLACED ( 43700 19040 ) N ;
-- FILLER_3_104 scs8hd_decap_6 + PLACED ( 53360 19040 ) N ;
-- FILLER_3_112 scs8hd_fill_2 + PLACED ( 57040 19040 ) N ;
-- FILLER_3_116 scs8hd_decap_4 + PLACED ( 58880 19040 ) N ;
-- FILLER_3_131 scs8hd_decap_12 + PLACED ( 65780 19040 ) N ;
+- FILLER_3_74 scs8hd_decap_12 + PLACED ( 39560 19040 ) N ;
+- FILLER_3_86 scs8hd_decap_12 + PLACED ( 45080 19040 ) N ;
+- FILLER_3_98 scs8hd_decap_12 + PLACED ( 50600 19040 ) N ;
+- FILLER_3_110 scs8hd_decap_12 + PLACED ( 56120 19040 ) N ;
+- FILLER_3_123 scs8hd_decap_12 + PLACED ( 62100 19040 ) N ;
+- FILLER_3_135 scs8hd_decap_8 + PLACED ( 67620 19040 ) N ;
 - FILLER_3_143 scs8hd_decap_3 + PLACED ( 71300 19040 ) N ;
 - FILLER_4_3 scs8hd_decap_12 + PLACED ( 6900 21760 ) FS ;
 - FILLER_4_15 scs8hd_decap_12 + PLACED ( 12420 21760 ) FS ;
@@ -636,14 +532,13 @@ COMPONENTS 1322 ;
 - FILLER_4_32 scs8hd_decap_12 + PLACED ( 20240 21760 ) FS ;
 - FILLER_4_44 scs8hd_decap_12 + PLACED ( 25760 21760 ) FS ;
 - FILLER_4_56 scs8hd_decap_12 + PLACED ( 31280 21760 ) FS ;
-- FILLER_4_68 scs8hd_decap_6 + PLACED ( 36800 21760 ) FS ;
-- FILLER_4_74 scs8hd_fill_1 + PLACED ( 39560 21760 ) FS ;
-- FILLER_4_84 scs8hd_decap_3 + PLACED ( 44160 21760 ) FS ;
-- FILLER_4_89 scs8hd_decap_3 + PLACED ( 46460 21760 ) FS ;
-- FILLER_4_96 scs8hd_decap_12 + PLACED ( 49680 21760 ) FS ;
-- FILLER_4_108 scs8hd_fill_2 + PLACED ( 55200 21760 ) FS ;
-- FILLER_4_121 scs8hd_decap_12 + PLACED ( 61180 21760 ) FS ;
-- FILLER_4_133 scs8hd_decap_12 + PLACED ( 66700 21760 ) FS ;
+- FILLER_4_68 scs8hd_decap_12 + PLACED ( 36800 21760 ) FS ;
+- FILLER_4_80 scs8hd_decap_12 + PLACED ( 42320 21760 ) FS ;
+- FILLER_4_93 scs8hd_decap_12 + PLACED ( 48300 21760 ) FS ;
+- FILLER_4_105 scs8hd_decap_12 + PLACED ( 53820 21760 ) FS ;
+- FILLER_4_117 scs8hd_decap_12 + PLACED ( 59340 21760 ) FS ;
+- FILLER_4_129 scs8hd_decap_12 + PLACED ( 64860 21760 ) FS ;
+- FILLER_4_141 scs8hd_decap_4 + PLACED ( 70380 21760 ) FS ;
 - FILLER_4_145 scs8hd_fill_1 + PLACED ( 72220 21760 ) FS ;
 - FILLER_5_3 scs8hd_decap_12 + PLACED ( 6900 24480 ) N ;
 - FILLER_5_15 scs8hd_decap_12 + PLACED ( 12420 24480 ) N ;
@@ -652,14 +547,12 @@ COMPONENTS 1322 ;
 - FILLER_5_51 scs8hd_decap_8 + PLACED ( 28980 24480 ) N ;
 - FILLER_5_59 scs8hd_fill_2 + PLACED ( 32660 24480 ) N ;
 - FILLER_5_62 scs8hd_decap_12 + PLACED ( 34040 24480 ) N ;
-- FILLER_5_74 scs8hd_decap_4 + PLACED ( 39560 24480 ) N ;
-- FILLER_5_80 scs8hd_fill_2 + PLACED ( 42320 24480 ) N ;
-- FILLER_5_84 scs8hd_fill_2 + PLACED ( 44160 24480 ) N ;
-- FILLER_5_105 scs8hd_decap_12 + PLACED ( 53820 24480 ) N ;
-- FILLER_5_117 scs8hd_decap_4 + PLACED ( 59340 24480 ) N ;
-- FILLER_5_121 scs8hd_fill_1 + PLACED ( 61180 24480 ) N ;
-- FILLER_5_127 scs8hd_fill_2 + PLACED ( 63940 24480 ) N ;
-- FILLER_5_131 scs8hd_decap_12 + PLACED ( 65780 24480 ) N ;
+- FILLER_5_74 scs8hd_decap_12 + PLACED ( 39560 24480 ) N ;
+- FILLER_5_86 scs8hd_decap_12 + PLACED ( 45080 24480 ) N ;
+- FILLER_5_98 scs8hd_decap_12 + PLACED ( 50600 24480 ) N ;
+- FILLER_5_110 scs8hd_decap_12 + PLACED ( 56120 24480 ) N ;
+- FILLER_5_123 scs8hd_decap_12 + PLACED ( 62100 24480 ) N ;
+- FILLER_5_135 scs8hd_decap_8 + PLACED ( 67620 24480 ) N ;
 - FILLER_5_143 scs8hd_decap_3 + PLACED ( 71300 24480 ) N ;
 - FILLER_6_3 scs8hd_decap_12 + PLACED ( 6900 27200 ) FS ;
 - FILLER_6_15 scs8hd_decap_12 + PLACED ( 12420 27200 ) FS ;
@@ -668,8 +561,7 @@ COMPONENTS 1322 ;
 - FILLER_6_44 scs8hd_decap_12 + PLACED ( 25760 27200 ) FS ;
 - FILLER_6_56 scs8hd_decap_12 + PLACED ( 31280 27200 ) FS ;
 - FILLER_6_68 scs8hd_decap_12 + PLACED ( 36800 27200 ) FS ;
-- FILLER_6_80 scs8hd_decap_8 + PLACED ( 42320 27200 ) FS ;
-- FILLER_6_90 scs8hd_fill_2 + PLACED ( 46920 27200 ) FS ;
+- FILLER_6_80 scs8hd_decap_12 + PLACED ( 42320 27200 ) FS ;
 - FILLER_6_93 scs8hd_decap_12 + PLACED ( 48300 27200 ) FS ;
 - FILLER_6_105 scs8hd_decap_12 + PLACED ( 53820 27200 ) FS ;
 - FILLER_6_117 scs8hd_decap_12 + PLACED ( 59340 27200 ) FS ;
@@ -743,9 +635,10 @@ COMPONENTS 1322 ;
 - FILLER_11_86 scs8hd_decap_12 + PLACED ( 45080 40800 ) N ;
 - FILLER_11_98 scs8hd_decap_12 + PLACED ( 50600 40800 ) N ;
 - FILLER_11_110 scs8hd_decap_12 + PLACED ( 56120 40800 ) N ;
-- FILLER_11_123 scs8hd_decap_12 + PLACED ( 62100 40800 ) N ;
-- FILLER_11_135 scs8hd_decap_8 + PLACED ( 67620 40800 ) N ;
-- FILLER_11_143 scs8hd_decap_3 + PLACED ( 71300 40800 ) N ;
+- FILLER_11_123 scs8hd_fill_2 + PLACED ( 62100 40800 ) N ;
+- FILLER_11_127 scs8hd_decap_12 + PLACED ( 63940 40800 ) N ;
+- FILLER_11_139 scs8hd_decap_6 + PLACED ( 69460 40800 ) N ;
+- FILLER_11_145 scs8hd_fill_1 + PLACED ( 72220 40800 ) N ;
 - FILLER_12_3 scs8hd_decap_12 + PLACED ( 6900 43520 ) FS ;
 - FILLER_12_15 scs8hd_decap_12 + PLACED ( 12420 43520 ) FS ;
 - FILLER_12_27 scs8hd_decap_4 + PLACED ( 17940 43520 ) FS ;
@@ -756,10 +649,10 @@ COMPONENTS 1322 ;
 - FILLER_12_80 scs8hd_decap_12 + PLACED ( 42320 43520 ) FS ;
 - FILLER_12_93 scs8hd_decap_12 + PLACED ( 48300 43520 ) FS ;
 - FILLER_12_105 scs8hd_decap_12 + PLACED ( 53820 43520 ) FS ;
-- FILLER_12_117 scs8hd_decap_6 + PLACED ( 59340 43520 ) FS ;
-- FILLER_12_125 scs8hd_decap_12 + PLACED ( 63020 43520 ) FS ;
-- FILLER_12_137 scs8hd_decap_8 + PLACED ( 68540 43520 ) FS ;
-- FILLER_12_145 scs8hd_fill_1 + PLACED ( 72220 43520 ) FS ;
+- FILLER_12_117 scs8hd_decap_4 + PLACED ( 59340 43520 ) FS ;
+- FILLER_12_121 scs8hd_fill_1 + PLACED ( 61180 43520 ) FS ;
+- FILLER_12_126 scs8hd_decap_12 + PLACED ( 63480 43520 ) FS ;
+- FILLER_12_138 scs8hd_decap_8 + PLACED ( 69000 43520 ) FS ;
 - FILLER_13_3 scs8hd_decap_12 + PLACED ( 6900 46240 ) N ;
 - FILLER_13_15 scs8hd_decap_12 + PLACED ( 12420 46240 ) N ;
 - FILLER_13_27 scs8hd_decap_12 + PLACED ( 17940 46240 ) N ;
@@ -770,10 +663,8 @@ COMPONENTS 1322 ;
 - FILLER_13_74 scs8hd_decap_12 + PLACED ( 39560 46240 ) N ;
 - FILLER_13_86 scs8hd_decap_12 + PLACED ( 45080 46240 ) N ;
 - FILLER_13_98 scs8hd_decap_12 + PLACED ( 50600 46240 ) N ;
-- FILLER_13_110 scs8hd_fill_1 + PLACED ( 56120 46240 ) N ;
-- FILLER_13_113 scs8hd_fill_2 + PLACED ( 57500 46240 ) N ;
-- FILLER_13_117 scs8hd_decap_3 + PLACED ( 59340 46240 ) N ;
-- FILLER_13_131 scs8hd_fill_2 + PLACED ( 65780 46240 ) N ;
+- FILLER_13_110 scs8hd_decap_12 + PLACED ( 56120 46240 ) N ;
+- FILLER_13_123 scs8hd_decap_12 + PLACED ( 62100 46240 ) N ;
 - FILLER_13_135 scs8hd_decap_8 + PLACED ( 67620 46240 ) N ;
 - FILLER_13_143 scs8hd_decap_3 + PLACED ( 71300 46240 ) N ;
 - FILLER_14_3 scs8hd_decap_12 + PLACED ( 6900 48960 ) FS ;
@@ -785,9 +676,11 @@ COMPONENTS 1322 ;
 - FILLER_14_68 scs8hd_decap_12 + PLACED ( 36800 48960 ) FS ;
 - FILLER_14_80 scs8hd_decap_12 + PLACED ( 42320 48960 ) FS ;
 - FILLER_14_93 scs8hd_decap_12 + PLACED ( 48300 48960 ) FS ;
-- FILLER_14_105 scs8hd_decap_6 + PLACED ( 53820 48960 ) FS ;
-- FILLER_14_122 scs8hd_decap_8 + PLACED ( 61640 48960 ) FS ;
-- FILLER_14_134 scs8hd_decap_12 + PLACED ( 67160 48960 ) FS ;
+- FILLER_14_105 scs8hd_decap_12 + PLACED ( 53820 48960 ) FS ;
+- FILLER_14_117 scs8hd_decap_12 + PLACED ( 59340 48960 ) FS ;
+- FILLER_14_129 scs8hd_decap_12 + PLACED ( 64860 48960 ) FS ;
+- FILLER_14_141 scs8hd_decap_4 + PLACED ( 70380 48960 ) FS ;
+- FILLER_14_145 scs8hd_fill_1 + PLACED ( 72220 48960 ) FS ;
 - FILLER_15_3 scs8hd_decap_12 + PLACED ( 6900 51680 ) N ;
 - FILLER_15_15 scs8hd_decap_12 + PLACED ( 12420 51680 ) N ;
 - FILLER_15_27 scs8hd_decap_12 + PLACED ( 17940 51680 ) N ;
@@ -796,13 +689,9 @@ COMPONENTS 1322 ;
 - FILLER_15_59 scs8hd_fill_2 + PLACED ( 32660 51680 ) N ;
 - FILLER_15_62 scs8hd_decap_12 + PLACED ( 34040 51680 ) N ;
 - FILLER_15_74 scs8hd_decap_12 + PLACED ( 39560 51680 ) N ;
-- FILLER_15_86 scs8hd_decap_3 + PLACED ( 45080 51680 ) N ;
-- FILLER_15_91 scs8hd_fill_2 + PLACED ( 47380 51680 ) N ;
-- FILLER_15_95 scs8hd_fill_2 + PLACED ( 49220 51680 ) N ;
-- FILLER_15_99 scs8hd_fill_2 + PLACED ( 51060 51680 ) N ;
-- FILLER_15_103 scs8hd_decap_12 + PLACED ( 52900 51680 ) N ;
-- FILLER_15_115 scs8hd_decap_6 + PLACED ( 58420 51680 ) N ;
-- FILLER_15_121 scs8hd_fill_1 + PLACED ( 61180 51680 ) N ;
+- FILLER_15_86 scs8hd_decap_12 + PLACED ( 45080 51680 ) N ;
+- FILLER_15_98 scs8hd_decap_12 + PLACED ( 50600 51680 ) N ;
+- FILLER_15_110 scs8hd_decap_12 + PLACED ( 56120 51680 ) N ;
 - FILLER_15_123 scs8hd_decap_12 + PLACED ( 62100 51680 ) N ;
 - FILLER_15_135 scs8hd_decap_8 + PLACED ( 67620 51680 ) N ;
 - FILLER_15_143 scs8hd_decap_3 + PLACED ( 71300 51680 ) N ;
@@ -814,9 +703,12 @@ COMPONENTS 1322 ;
 - FILLER_16_56 scs8hd_decap_12 + PLACED ( 31280 54400 ) FS ;
 - FILLER_16_68 scs8hd_decap_12 + PLACED ( 36800 54400 ) FS ;
 - FILLER_16_80 scs8hd_decap_12 + PLACED ( 42320 54400 ) FS ;
-- FILLER_16_110 scs8hd_decap_12 + PLACED ( 56120 54400 ) FS ;
-- FILLER_16_122 scs8hd_decap_12 + PLACED ( 61640 54400 ) FS ;
-- FILLER_16_134 scs8hd_decap_12 + PLACED ( 67160 54400 ) FS ;
+- FILLER_16_93 scs8hd_decap_12 + PLACED ( 48300 54400 ) FS ;
+- FILLER_16_105 scs8hd_decap_12 + PLACED ( 53820 54400 ) FS ;
+- FILLER_16_117 scs8hd_decap_12 + PLACED ( 59340 54400 ) FS ;
+- FILLER_16_129 scs8hd_decap_12 + PLACED ( 64860 54400 ) FS ;
+- FILLER_16_141 scs8hd_decap_4 + PLACED ( 70380 54400 ) FS ;
+- FILLER_16_145 scs8hd_fill_1 + PLACED ( 72220 54400 ) FS ;
 - FILLER_17_3 scs8hd_decap_12 + PLACED ( 6900 57120 ) N ;
 - FILLER_17_15 scs8hd_decap_12 + PLACED ( 12420 57120 ) N ;
 - FILLER_17_27 scs8hd_decap_12 + PLACED ( 17940 57120 ) N ;
@@ -825,13 +717,9 @@ COMPONENTS 1322 ;
 - FILLER_17_59 scs8hd_fill_2 + PLACED ( 32660 57120 ) N ;
 - FILLER_17_62 scs8hd_decap_12 + PLACED ( 34040 57120 ) N ;
 - FILLER_17_74 scs8hd_decap_12 + PLACED ( 39560 57120 ) N ;
-- FILLER_17_86 scs8hd_decap_3 + PLACED ( 45080 57120 ) N ;
-- FILLER_17_91 scs8hd_fill_2 + PLACED ( 47380 57120 ) N ;
-- FILLER_17_95 scs8hd_fill_2 + PLACED ( 49220 57120 ) N ;
-- FILLER_17_99 scs8hd_fill_2 + PLACED ( 51060 57120 ) N ;
-- FILLER_17_103 scs8hd_decap_12 + PLACED ( 52900 57120 ) N ;
-- FILLER_17_115 scs8hd_decap_6 + PLACED ( 58420 57120 ) N ;
-- FILLER_17_121 scs8hd_fill_1 + PLACED ( 61180 57120 ) N ;
+- FILLER_17_86 scs8hd_decap_12 + PLACED ( 45080 57120 ) N ;
+- FILLER_17_98 scs8hd_decap_12 + PLACED ( 50600 57120 ) N ;
+- FILLER_17_110 scs8hd_decap_12 + PLACED ( 56120 57120 ) N ;
 - FILLER_17_123 scs8hd_decap_12 + PLACED ( 62100 57120 ) N ;
 - FILLER_17_135 scs8hd_decap_8 + PLACED ( 67620 57120 ) N ;
 - FILLER_17_143 scs8hd_decap_3 + PLACED ( 71300 57120 ) N ;
@@ -843,23 +731,23 @@ COMPONENTS 1322 ;
 - FILLER_18_56 scs8hd_decap_12 + PLACED ( 31280 59840 ) FS ;
 - FILLER_18_68 scs8hd_decap_12 + PLACED ( 36800 59840 ) FS ;
 - FILLER_18_80 scs8hd_decap_12 + PLACED ( 42320 59840 ) FS ;
-- FILLER_18_110 scs8hd_decap_12 + PLACED ( 56120 59840 ) FS ;
-- FILLER_18_122 scs8hd_decap_12 + PLACED ( 61640 59840 ) FS ;
-- FILLER_18_134 scs8hd_decap_12 + PLACED ( 67160 59840 ) FS ;
+- FILLER_18_93 scs8hd_decap_12 + PLACED ( 48300 59840 ) FS ;
+- FILLER_18_105 scs8hd_decap_12 + PLACED ( 53820 59840 ) FS ;
+- FILLER_18_117 scs8hd_decap_12 + PLACED ( 59340 59840 ) FS ;
+- FILLER_18_129 scs8hd_decap_12 + PLACED ( 64860 59840 ) FS ;
+- FILLER_18_141 scs8hd_decap_4 + PLACED ( 70380 59840 ) FS ;
+- FILLER_18_145 scs8hd_fill_1 + PLACED ( 72220 59840 ) FS ;
 - FILLER_19_3 scs8hd_decap_12 + PLACED ( 6900 62560 ) N ;
 - FILLER_19_15 scs8hd_decap_12 + PLACED ( 12420 62560 ) N ;
 - FILLER_19_27 scs8hd_decap_12 + PLACED ( 17940 62560 ) N ;
 - FILLER_19_39 scs8hd_decap_12 + PLACED ( 23460 62560 ) N ;
 - FILLER_19_51 scs8hd_decap_8 + PLACED ( 28980 62560 ) N ;
 - FILLER_19_59 scs8hd_fill_2 + PLACED ( 32660 62560 ) N ;
-- FILLER_19_62 scs8hd_decap_8 + PLACED ( 34040 62560 ) N ;
-- FILLER_19_70 scs8hd_decap_3 + PLACED ( 37720 62560 ) N ;
-- FILLER_19_75 scs8hd_decap_12 + PLACED ( 40020 62560 ) N ;
-- FILLER_19_87 scs8hd_decap_12 + PLACED ( 45540 62560 ) N ;
-- FILLER_19_99 scs8hd_decap_12 + PLACED ( 51060 62560 ) N ;
-- FILLER_19_111 scs8hd_fill_1 + PLACED ( 56580 62560 ) N ;
-- FILLER_19_114 scs8hd_fill_2 + PLACED ( 57960 62560 ) N ;
-- FILLER_19_118 scs8hd_decap_4 + PLACED ( 59800 62560 ) N ;
+- FILLER_19_62 scs8hd_decap_12 + PLACED ( 34040 62560 ) N ;
+- FILLER_19_74 scs8hd_decap_12 + PLACED ( 39560 62560 ) N ;
+- FILLER_19_86 scs8hd_decap_12 + PLACED ( 45080 62560 ) N ;
+- FILLER_19_98 scs8hd_decap_12 + PLACED ( 50600 62560 ) N ;
+- FILLER_19_110 scs8hd_decap_12 + PLACED ( 56120 62560 ) N ;
 - FILLER_19_123 scs8hd_decap_12 + PLACED ( 62100 62560 ) N ;
 - FILLER_19_135 scs8hd_decap_8 + PLACED ( 67620 62560 ) N ;
 - FILLER_19_143 scs8hd_decap_3 + PLACED ( 71300 62560 ) N ;
@@ -869,16 +757,14 @@ COMPONENTS 1322 ;
 - FILLER_20_32 scs8hd_decap_12 + PLACED ( 20240 65280 ) FS ;
 - FILLER_20_44 scs8hd_decap_12 + PLACED ( 25760 65280 ) FS ;
 - FILLER_20_56 scs8hd_decap_12 + PLACED ( 31280 65280 ) FS ;
-- FILLER_20_68 scs8hd_decap_4 + PLACED ( 36800 65280 ) FS ;
-- FILLER_20_72 scs8hd_fill_1 + PLACED ( 38640 65280 ) FS ;
-- FILLER_20_82 scs8hd_decap_8 + PLACED ( 43240 65280 ) FS ;
-- FILLER_20_90 scs8hd_fill_2 + PLACED ( 46920 65280 ) FS ;
+- FILLER_20_68 scs8hd_decap_12 + PLACED ( 36800 65280 ) FS ;
+- FILLER_20_80 scs8hd_decap_12 + PLACED ( 42320 65280 ) FS ;
 - FILLER_20_93 scs8hd_decap_12 + PLACED ( 48300 65280 ) FS ;
-- FILLER_20_105 scs8hd_decap_6 + PLACED ( 53820 65280 ) FS ;
-- FILLER_20_111 scs8hd_fill_1 + PLACED ( 56580 65280 ) FS ;
-- FILLER_20_123 scs8hd_decap_12 + PLACED ( 62100 65280 ) FS ;
-- FILLER_20_135 scs8hd_decap_8 + PLACED ( 67620 65280 ) FS ;
-- FILLER_20_143 scs8hd_decap_3 + PLACED ( 71300 65280 ) FS ;
+- FILLER_20_105 scs8hd_decap_12 + PLACED ( 53820 65280 ) FS ;
+- FILLER_20_117 scs8hd_decap_12 + PLACED ( 59340 65280 ) FS ;
+- FILLER_20_129 scs8hd_decap_12 + PLACED ( 64860 65280 ) FS ;
+- FILLER_20_141 scs8hd_decap_4 + PLACED ( 70380 65280 ) FS ;
+- FILLER_20_145 scs8hd_fill_1 + PLACED ( 72220 65280 ) FS ;
 - FILLER_21_3 scs8hd_decap_12 + PLACED ( 6900 68000 ) N ;
 - FILLER_21_15 scs8hd_decap_12 + PLACED ( 12420 68000 ) N ;
 - FILLER_21_27 scs8hd_decap_12 + PLACED ( 17940 68000 ) N ;
@@ -889,9 +775,9 @@ COMPONENTS 1322 ;
 - FILLER_21_74 scs8hd_decap_12 + PLACED ( 39560 68000 ) N ;
 - FILLER_21_86 scs8hd_decap_12 + PLACED ( 45080 68000 ) N ;
 - FILLER_21_98 scs8hd_decap_12 + PLACED ( 50600 68000 ) N ;
-- FILLER_21_110 scs8hd_decap_8 + PLACED ( 56120 68000 ) N ;
-- FILLER_21_118 scs8hd_fill_2 + PLACED ( 59800 68000 ) N ;
-- FILLER_21_131 scs8hd_decap_12 + PLACED ( 65780 68000 ) N ;
+- FILLER_21_110 scs8hd_decap_12 + PLACED ( 56120 68000 ) N ;
+- FILLER_21_123 scs8hd_decap_12 + PLACED ( 62100 68000 ) N ;
+- FILLER_21_135 scs8hd_decap_8 + PLACED ( 67620 68000 ) N ;
 - FILLER_21_143 scs8hd_decap_3 + PLACED ( 71300 68000 ) N ;
 - FILLER_22_3 scs8hd_decap_12 + PLACED ( 6900 70720 ) FS ;
 - FILLER_22_15 scs8hd_decap_12 + PLACED ( 12420 70720 ) FS ;
@@ -901,12 +787,11 @@ COMPONENTS 1322 ;
 - FILLER_22_56 scs8hd_decap_12 + PLACED ( 31280 70720 ) FS ;
 - FILLER_22_68 scs8hd_decap_12 + PLACED ( 36800 70720 ) FS ;
 - FILLER_22_80 scs8hd_decap_12 + PLACED ( 42320 70720 ) FS ;
-- FILLER_22_93 scs8hd_fill_2 + PLACED ( 48300 70720 ) FS ;
-- FILLER_22_97 scs8hd_decap_12 + PLACED ( 50140 70720 ) FS ;
-- FILLER_22_109 scs8hd_decap_12 + PLACED ( 55660 70720 ) FS ;
-- FILLER_22_121 scs8hd_fill_2 + PLACED ( 61180 70720 ) FS ;
-- FILLER_22_125 scs8hd_decap_12 + PLACED ( 63020 70720 ) FS ;
-- FILLER_22_137 scs8hd_decap_8 + PLACED ( 68540 70720 ) FS ;
+- FILLER_22_93 scs8hd_decap_12 + PLACED ( 48300 70720 ) FS ;
+- FILLER_22_105 scs8hd_decap_12 + PLACED ( 53820 70720 ) FS ;
+- FILLER_22_117 scs8hd_decap_12 + PLACED ( 59340 70720 ) FS ;
+- FILLER_22_129 scs8hd_decap_12 + PLACED ( 64860 70720 ) FS ;
+- FILLER_22_141 scs8hd_decap_4 + PLACED ( 70380 70720 ) FS ;
 - FILLER_22_145 scs8hd_fill_1 + PLACED ( 72220 70720 ) FS ;
 - FILLER_23_3 scs8hd_decap_12 + PLACED ( 6900 73440 ) N ;
 - FILLER_23_15 scs8hd_decap_12 + PLACED ( 12420 73440 ) N ;
@@ -915,16 +800,14 @@ COMPONENTS 1322 ;
 - FILLER_23_51 scs8hd_decap_8 + PLACED ( 28980 73440 ) N ;
 - FILLER_23_59 scs8hd_fill_2 + PLACED ( 32660 73440 ) N ;
 - FILLER_23_62 scs8hd_decap_12 + PLACED ( 34040 73440 ) N ;
-- FILLER_23_74 scs8hd_decap_8 + PLACED ( 39560 73440 ) N ;
-- FILLER_23_82 scs8hd_fill_1 + PLACED ( 43240 73440 ) N ;
-- FILLER_23_85 scs8hd_fill_2 + PLACED ( 44620 73440 ) N ;
-- FILLER_23_89 scs8hd_fill_2 + PLACED ( 46460 73440 ) N ;
-- FILLER_23_102 scs8hd_fill_2 + PLACED ( 52440 73440 ) N ;
-- FILLER_23_106 scs8hd_decap_12 + PLACED ( 54280 73440 ) N ;
-- FILLER_23_118 scs8hd_decap_4 + PLACED ( 59800 73440 ) N ;
-- FILLER_23_127 scs8hd_fill_2 + PLACED ( 63940 73440 ) N ;
-- FILLER_23_131 scs8hd_decap_12 + PLACED ( 65780 73440 ) N ;
-- FILLER_23_143 scs8hd_decap_3 + PLACED ( 71300 73440 ) N ;
+- FILLER_23_74 scs8hd_decap_12 + PLACED ( 39560 73440 ) N ;
+- FILLER_23_86 scs8hd_decap_12 + PLACED ( 45080 73440 ) N ;
+- FILLER_23_98 scs8hd_decap_12 + PLACED ( 50600 73440 ) N ;
+- FILLER_23_110 scs8hd_decap_12 + PLACED ( 56120 73440 ) N ;
+- FILLER_23_123 scs8hd_fill_2 + PLACED ( 62100 73440 ) N ;
+- FILLER_23_127 scs8hd_decap_12 + PLACED ( 63940 73440 ) N ;
+- FILLER_23_139 scs8hd_decap_6 + PLACED ( 69460 73440 ) N ;
+- FILLER_23_145 scs8hd_fill_1 + PLACED ( 72220 73440 ) N ;
 - FILLER_24_3 scs8hd_decap_12 + PLACED ( 6900 76160 ) FS ;
 - FILLER_24_15 scs8hd_decap_12 + PLACED ( 12420 76160 ) FS ;
 - FILLER_24_27 scs8hd_decap_4 + PLACED ( 17940 76160 ) FS ;
@@ -932,11 +815,11 @@ COMPONENTS 1322 ;
 - FILLER_24_44 scs8hd_decap_12 + PLACED ( 25760 76160 ) FS ;
 - FILLER_24_56 scs8hd_decap_12 + PLACED ( 31280 76160 ) FS ;
 - FILLER_24_68 scs8hd_decap_12 + PLACED ( 36800 76160 ) FS ;
-- FILLER_24_80 scs8hd_decap_8 + PLACED ( 42320 76160 ) FS ;
-- FILLER_24_88 scs8hd_fill_1 + PLACED ( 46000 76160 ) FS ;
-- FILLER_24_91 scs8hd_fill_1 + PLACED ( 47380 76160 ) FS ;
-- FILLER_24_102 scs8hd_decap_12 + PLACED ( 52440 76160 ) FS ;
-- FILLER_24_114 scs8hd_decap_12 + PLACED ( 57960 76160 ) FS ;
+- FILLER_24_80 scs8hd_decap_12 + PLACED ( 42320 76160 ) FS ;
+- FILLER_24_93 scs8hd_decap_12 + PLACED ( 48300 76160 ) FS ;
+- FILLER_24_105 scs8hd_decap_12 + PLACED ( 53820 76160 ) FS ;
+- FILLER_24_117 scs8hd_decap_4 + PLACED ( 59340 76160 ) FS ;
+- FILLER_24_121 scs8hd_fill_1 + PLACED ( 61180 76160 ) FS ;
 - FILLER_24_126 scs8hd_decap_12 + PLACED ( 63480 76160 ) FS ;
 - FILLER_24_138 scs8hd_decap_8 + PLACED ( 69000 76160 ) FS ;
 - FILLER_25_3 scs8hd_decap_12 + PLACED ( 6900 78880 ) N ;
@@ -946,13 +829,9 @@ COMPONENTS 1322 ;
 - FILLER_25_51 scs8hd_decap_8 + PLACED ( 28980 78880 ) N ;
 - FILLER_25_59 scs8hd_fill_2 + PLACED ( 32660 78880 ) N ;
 - FILLER_25_62 scs8hd_decap_12 + PLACED ( 34040 78880 ) N ;
-- FILLER_25_74 scs8hd_decap_4 + PLACED ( 39560 78880 ) N ;
-- FILLER_25_78 scs8hd_fill_1 + PLACED ( 41400 78880 ) N ;
-- FILLER_25_81 scs8hd_fill_2 + PLACED ( 42780 78880 ) N ;
-- FILLER_25_85 scs8hd_fill_2 + PLACED ( 44620 78880 ) N ;
-- FILLER_25_98 scs8hd_fill_2 + PLACED ( 50600 78880 ) N ;
-- FILLER_25_102 scs8hd_fill_2 + PLACED ( 52440 78880 ) N ;
-- FILLER_25_106 scs8hd_fill_2 + PLACED ( 54280 78880 ) N ;
+- FILLER_25_74 scs8hd_decap_12 + PLACED ( 39560 78880 ) N ;
+- FILLER_25_86 scs8hd_decap_12 + PLACED ( 45080 78880 ) N ;
+- FILLER_25_98 scs8hd_decap_12 + PLACED ( 50600 78880 ) N ;
 - FILLER_25_110 scs8hd_decap_12 + PLACED ( 56120 78880 ) N ;
 - FILLER_25_123 scs8hd_decap_12 + PLACED ( 62100 78880 ) N ;
 - FILLER_25_135 scs8hd_decap_8 + PLACED ( 67620 78880 ) N ;
@@ -964,30 +843,27 @@ COMPONENTS 1322 ;
 - FILLER_26_44 scs8hd_decap_12 + PLACED ( 25760 81600 ) FS ;
 - FILLER_26_56 scs8hd_decap_12 + PLACED ( 31280 81600 ) FS ;
 - FILLER_26_68 scs8hd_decap_12 + PLACED ( 36800 81600 ) FS ;
-- FILLER_26_80 scs8hd_decap_8 + PLACED ( 42320 81600 ) FS ;
-- FILLER_26_88 scs8hd_fill_1 + PLACED ( 46000 81600 ) FS ;
-- FILLER_26_91 scs8hd_fill_1 + PLACED ( 47380 81600 ) FS ;
-- FILLER_26_102 scs8hd_decap_12 + PLACED ( 52440 81600 ) FS ;
-- FILLER_26_114 scs8hd_decap_12 + PLACED ( 57960 81600 ) FS ;
-- FILLER_26_126 scs8hd_decap_12 + PLACED ( 63480 81600 ) FS ;
-- FILLER_26_138 scs8hd_decap_8 + PLACED ( 69000 81600 ) FS ;
+- FILLER_26_80 scs8hd_decap_12 + PLACED ( 42320 81600 ) FS ;
+- FILLER_26_93 scs8hd_decap_12 + PLACED ( 48300 81600 ) FS ;
+- FILLER_26_105 scs8hd_decap_12 + PLACED ( 53820 81600 ) FS ;
+- FILLER_26_117 scs8hd_decap_12 + PLACED ( 59340 81600 ) FS ;
+- FILLER_26_129 scs8hd_decap_12 + PLACED ( 64860 81600 ) FS ;
+- FILLER_26_141 scs8hd_decap_4 + PLACED ( 70380 81600 ) FS ;
+- FILLER_26_145 scs8hd_fill_1 + PLACED ( 72220 81600 ) FS ;
 - FILLER_27_3 scs8hd_decap_12 + PLACED ( 6900 84320 ) N ;
-- FILLER_27_15 scs8hd_decap_12 + PLACED ( 12420 84320 ) N ;
-- FILLER_27_27 scs8hd_decap_12 + PLACED ( 17940 84320 ) N ;
-- FILLER_27_39 scs8hd_decap_12 + PLACED ( 23460 84320 ) N ;
-- FILLER_27_51 scs8hd_decap_8 + PLACED ( 28980 84320 ) N ;
-- FILLER_27_59 scs8hd_fill_2 + PLACED ( 32660 84320 ) N ;
+- FILLER_27_15 scs8hd_decap_6 + PLACED ( 12420 84320 ) N ;
+- FILLER_27_24 scs8hd_fill_2 + PLACED ( 16560 84320 ) N ;
+- FILLER_27_28 scs8hd_decap_12 + PLACED ( 18400 84320 ) N ;
+- FILLER_27_40 scs8hd_decap_12 + PLACED ( 23920 84320 ) N ;
+- FILLER_27_52 scs8hd_decap_8 + PLACED ( 29440 84320 ) N ;
+- FILLER_27_60 scs8hd_fill_1 + PLACED ( 33120 84320 ) N ;
 - FILLER_27_62 scs8hd_decap_12 + PLACED ( 34040 84320 ) N ;
-- FILLER_27_74 scs8hd_decap_8 + PLACED ( 39560 84320 ) N ;
-- FILLER_27_82 scs8hd_fill_2 + PLACED ( 43240 84320 ) N ;
-- FILLER_27_86 scs8hd_fill_2 + PLACED ( 45080 84320 ) N ;
-- FILLER_27_90 scs8hd_fill_2 + PLACED ( 46920 84320 ) N ;
-- FILLER_27_103 scs8hd_decap_8 + PLACED ( 52900 84320 ) N ;
-- FILLER_27_111 scs8hd_fill_2 + PLACED ( 56580 84320 ) N ;
-- FILLER_27_115 scs8hd_fill_2 + PLACED ( 58420 84320 ) N ;
-- FILLER_27_119 scs8hd_decap_3 + PLACED ( 60260 84320 ) N ;
-- FILLER_27_123 scs8hd_decap_12 + PLACED ( 62100 84320 ) N ;
-- FILLER_27_135 scs8hd_decap_8 + PLACED ( 67620 84320 ) N ;
+- FILLER_27_74 scs8hd_decap_12 + PLACED ( 39560 84320 ) N ;
+- FILLER_27_86 scs8hd_decap_12 + PLACED ( 45080 84320 ) N ;
+- FILLER_27_98 scs8hd_decap_12 + PLACED ( 50600 84320 ) N ;
+- FILLER_27_110 scs8hd_decap_12 + PLACED ( 56120 84320 ) N ;
+- FILLER_27_127 scs8hd_fill_2 + PLACED ( 63940 84320 ) N ;
+- FILLER_27_131 scs8hd_decap_12 + PLACED ( 65780 84320 ) N ;
 - FILLER_27_143 scs8hd_decap_3 + PLACED ( 71300 84320 ) N ;
 - FILLER_28_3 scs8hd_decap_12 + PLACED ( 6900 87040 ) FS ;
 - FILLER_28_15 scs8hd_decap_12 + PLACED ( 12420 87040 ) FS ;
@@ -997,12 +873,12 @@ COMPONENTS 1322 ;
 - FILLER_28_56 scs8hd_decap_12 + PLACED ( 31280 87040 ) FS ;
 - FILLER_28_68 scs8hd_decap_12 + PLACED ( 36800 87040 ) FS ;
 - FILLER_28_80 scs8hd_decap_12 + PLACED ( 42320 87040 ) FS ;
-- FILLER_28_93 scs8hd_fill_2 + PLACED ( 48300 87040 ) FS ;
-- FILLER_28_97 scs8hd_decap_12 + PLACED ( 50140 87040 ) FS ;
-- FILLER_28_109 scs8hd_decap_4 + PLACED ( 55660 87040 ) FS ;
-- FILLER_28_124 scs8hd_decap_12 + PLACED ( 62560 87040 ) FS ;
-- FILLER_28_136 scs8hd_decap_8 + PLACED ( 68080 87040 ) FS ;
-- FILLER_28_144 scs8hd_fill_2 + PLACED ( 71760 87040 ) FS ;
+- FILLER_28_93 scs8hd_decap_12 + PLACED ( 48300 87040 ) FS ;
+- FILLER_28_105 scs8hd_decap_12 + PLACED ( 53820 87040 ) FS ;
+- FILLER_28_117 scs8hd_decap_12 + PLACED ( 59340 87040 ) FS ;
+- FILLER_28_129 scs8hd_decap_12 + PLACED ( 64860 87040 ) FS ;
+- FILLER_28_141 scs8hd_decap_4 + PLACED ( 70380 87040 ) FS ;
+- FILLER_28_145 scs8hd_fill_1 + PLACED ( 72220 87040 ) FS ;
 - FILLER_29_3 scs8hd_decap_12 + PLACED ( 6900 89760 ) N ;
 - FILLER_29_15 scs8hd_decap_12 + PLACED ( 12420 89760 ) N ;
 - FILLER_29_27 scs8hd_decap_12 + PLACED ( 17940 89760 ) N ;
@@ -1014,13 +890,12 @@ COMPONENTS 1322 ;
 - FILLER_29_86 scs8hd_decap_12 + PLACED ( 45080 89760 ) N ;
 - FILLER_29_98 scs8hd_decap_12 + PLACED ( 50600 89760 ) N ;
 - FILLER_29_110 scs8hd_decap_12 + PLACED ( 56120 89760 ) N ;
-- FILLER_29_123 scs8hd_fill_2 + PLACED ( 62100 89760 ) N ;
-- FILLER_29_127 scs8hd_fill_2 + PLACED ( 63940 89760 ) N ;
-- FILLER_29_131 scs8hd_decap_12 + PLACED ( 65780 89760 ) N ;
+- FILLER_29_123 scs8hd_decap_12 + PLACED ( 62100 89760 ) N ;
+- FILLER_29_135 scs8hd_decap_8 + PLACED ( 67620 89760 ) N ;
 - FILLER_29_143 scs8hd_decap_3 + PLACED ( 71300 89760 ) N ;
 - FILLER_30_3 scs8hd_decap_12 + PLACED ( 6900 92480 ) FS ;
-- FILLER_30_15 scs8hd_decap_12 + PLACED ( 12420 92480 ) FS ;
-- FILLER_30_27 scs8hd_decap_4 + PLACED ( 17940 92480 ) FS ;
+- FILLER_30_15 scs8hd_fill_2 + PLACED ( 12420 92480 ) FS ;
+- FILLER_30_19 scs8hd_decap_12 + PLACED ( 14260 92480 ) FS ;
 - FILLER_30_32 scs8hd_decap_12 + PLACED ( 20240 92480 ) FS ;
 - FILLER_30_44 scs8hd_decap_12 + PLACED ( 25760 92480 ) FS ;
 - FILLER_30_56 scs8hd_decap_12 + PLACED ( 31280 92480 ) FS ;
@@ -1028,16 +903,14 @@ COMPONENTS 1322 ;
 - FILLER_30_80 scs8hd_decap_12 + PLACED ( 42320 92480 ) FS ;
 - FILLER_30_93 scs8hd_decap_12 + PLACED ( 48300 92480 ) FS ;
 - FILLER_30_105 scs8hd_decap_12 + PLACED ( 53820 92480 ) FS ;
-- FILLER_30_117 scs8hd_decap_4 + PLACED ( 59340 92480 ) FS ;
-- FILLER_30_121 scs8hd_fill_1 + PLACED ( 61180 92480 ) FS ;
-- FILLER_30_130 scs8hd_decap_12 + PLACED ( 65320 92480 ) FS ;
-- FILLER_30_142 scs8hd_decap_4 + PLACED ( 70840 92480 ) FS ;
+- FILLER_30_117 scs8hd_decap_12 + PLACED ( 59340 92480 ) FS ;
+- FILLER_30_129 scs8hd_decap_12 + PLACED ( 64860 92480 ) FS ;
+- FILLER_30_141 scs8hd_decap_4 + PLACED ( 70380 92480 ) FS ;
+- FILLER_30_145 scs8hd_fill_1 + PLACED ( 72220 92480 ) FS ;
 - FILLER_31_3 scs8hd_decap_12 + PLACED ( 6900 95200 ) N ;
-- FILLER_31_15 scs8hd_decap_12 + PLACED ( 12420 95200 ) N ;
-- FILLER_31_27 scs8hd_decap_12 + PLACED ( 17940 95200 ) N ;
-- FILLER_31_39 scs8hd_decap_12 + PLACED ( 23460 95200 ) N ;
-- FILLER_31_51 scs8hd_decap_8 + PLACED ( 28980 95200 ) N ;
-- FILLER_31_59 scs8hd_fill_2 + PLACED ( 32660 95200 ) N ;
+- FILLER_31_36 scs8hd_decap_12 + PLACED ( 22080 95200 ) N ;
+- FILLER_31_48 scs8hd_decap_12 + PLACED ( 27600 95200 ) N ;
+- FILLER_31_60 scs8hd_fill_1 + PLACED ( 33120 95200 ) N ;
 - FILLER_31_62 scs8hd_decap_12 + PLACED ( 34040 95200 ) N ;
 - FILLER_31_74 scs8hd_decap_12 + PLACED ( 39560 95200 ) N ;
 - FILLER_31_86 scs8hd_decap_12 + PLACED ( 45080 95200 ) N ;
@@ -1071,8 +944,8 @@ COMPONENTS 1322 ;
 - FILLER_33_86 scs8hd_decap_12 + PLACED ( 45080 100640 ) N ;
 - FILLER_33_98 scs8hd_decap_12 + PLACED ( 50600 100640 ) N ;
 - FILLER_33_110 scs8hd_decap_12 + PLACED ( 56120 100640 ) N ;
-- FILLER_33_127 scs8hd_fill_2 + PLACED ( 63940 100640 ) N ;
-- FILLER_33_131 scs8hd_decap_12 + PLACED ( 65780 100640 ) N ;
+- FILLER_33_123 scs8hd_decap_12 + PLACED ( 62100 100640 ) N ;
+- FILLER_33_135 scs8hd_decap_8 + PLACED ( 67620 100640 ) N ;
 - FILLER_33_143 scs8hd_decap_3 + PLACED ( 71300 100640 ) N ;
 - FILLER_34_3 scs8hd_decap_12 + PLACED ( 6900 103360 ) FS ;
 - FILLER_34_15 scs8hd_decap_12 + PLACED ( 12420 103360 ) FS ;
@@ -1098,8 +971,7 @@ COMPONENTS 1322 ;
 - FILLER_35_74 scs8hd_decap_12 + PLACED ( 39560 106080 ) N ;
 - FILLER_35_86 scs8hd_decap_12 + PLACED ( 45080 106080 ) N ;
 - FILLER_35_98 scs8hd_decap_12 + PLACED ( 50600 106080 ) N ;
-- FILLER_35_112 scs8hd_fill_2 + PLACED ( 57040 106080 ) N ;
-- FILLER_35_116 scs8hd_decap_6 + PLACED ( 58880 106080 ) N ;
+- FILLER_35_110 scs8hd_decap_12 + PLACED ( 56120 106080 ) N ;
 - FILLER_35_123 scs8hd_decap_12 + PLACED ( 62100 106080 ) N ;
 - FILLER_35_135 scs8hd_decap_8 + PLACED ( 67620 106080 ) N ;
 - FILLER_35_143 scs8hd_decap_3 + PLACED ( 71300 106080 ) N ;
@@ -1112,10 +984,10 @@ COMPONENTS 1322 ;
 - FILLER_36_68 scs8hd_decap_12 + PLACED ( 36800 108800 ) FS ;
 - FILLER_36_80 scs8hd_decap_12 + PLACED ( 42320 108800 ) FS ;
 - FILLER_36_93 scs8hd_decap_12 + PLACED ( 48300 108800 ) FS ;
-- FILLER_36_105 scs8hd_decap_4 + PLACED ( 53820 108800 ) FS ;
-- FILLER_36_109 scs8hd_fill_1 + PLACED ( 55660 108800 ) FS ;
-- FILLER_36_121 scs8hd_decap_12 + PLACED ( 61180 108800 ) FS ;
-- FILLER_36_133 scs8hd_decap_12 + PLACED ( 66700 108800 ) FS ;
+- FILLER_36_105 scs8hd_decap_12 + PLACED ( 53820 108800 ) FS ;
+- FILLER_36_117 scs8hd_decap_12 + PLACED ( 59340 108800 ) FS ;
+- FILLER_36_129 scs8hd_decap_12 + PLACED ( 64860 108800 ) FS ;
+- FILLER_36_141 scs8hd_decap_4 + PLACED ( 70380 108800 ) FS ;
 - FILLER_36_145 scs8hd_fill_1 + PLACED ( 72220 108800 ) FS ;
 - FILLER_37_3 scs8hd_decap_12 + PLACED ( 6900 111520 ) N ;
 - FILLER_37_15 scs8hd_decap_12 + PLACED ( 12420 111520 ) N ;
@@ -1141,9 +1013,9 @@ COMPONENTS 1322 ;
 - FILLER_38_80 scs8hd_decap_12 + PLACED ( 42320 114240 ) FS ;
 - FILLER_38_93 scs8hd_decap_12 + PLACED ( 48300 114240 ) FS ;
 - FILLER_38_105 scs8hd_decap_12 + PLACED ( 53820 114240 ) FS ;
-- FILLER_38_117 scs8hd_decap_6 + PLACED ( 59340 114240 ) FS ;
-- FILLER_38_125 scs8hd_decap_12 + PLACED ( 63020 114240 ) FS ;
-- FILLER_38_137 scs8hd_decap_8 + PLACED ( 68540 114240 ) FS ;
+- FILLER_38_117 scs8hd_decap_12 + PLACED ( 59340 114240 ) FS ;
+- FILLER_38_129 scs8hd_decap_12 + PLACED ( 64860 114240 ) FS ;
+- FILLER_38_141 scs8hd_decap_4 + PLACED ( 70380 114240 ) FS ;
 - FILLER_38_145 scs8hd_fill_1 + PLACED ( 72220 114240 ) FS ;
 - FILLER_39_3 scs8hd_decap_12 + PLACED ( 6900 116960 ) N ;
 - FILLER_39_15 scs8hd_decap_12 + PLACED ( 12420 116960 ) N ;
@@ -1155,9 +1027,9 @@ COMPONENTS 1322 ;
 - FILLER_39_74 scs8hd_decap_12 + PLACED ( 39560 116960 ) N ;
 - FILLER_39_86 scs8hd_decap_12 + PLACED ( 45080 116960 ) N ;
 - FILLER_39_98 scs8hd_decap_12 + PLACED ( 50600 116960 ) N ;
-- FILLER_39_110 scs8hd_decap_8 + PLACED ( 56120 116960 ) N ;
-- FILLER_39_118 scs8hd_fill_2 + PLACED ( 59800 116960 ) N ;
-- FILLER_39_131 scs8hd_decap_12 + PLACED ( 65780 116960 ) N ;
+- FILLER_39_110 scs8hd_decap_12 + PLACED ( 56120 116960 ) N ;
+- FILLER_39_123 scs8hd_decap_12 + PLACED ( 62100 116960 ) N ;
+- FILLER_39_135 scs8hd_decap_8 + PLACED ( 67620 116960 ) N ;
 - FILLER_39_143 scs8hd_decap_3 + PLACED ( 71300 116960 ) N ;
 - FILLER_40_3 scs8hd_decap_12 + PLACED ( 6900 119680 ) FS ;
 - FILLER_40_15 scs8hd_decap_12 + PLACED ( 12420 119680 ) FS ;
@@ -1182,13 +1054,9 @@ COMPONENTS 1322 ;
 - FILLER_41_62 scs8hd_decap_12 + PLACED ( 34040 122400 ) N ;
 - FILLER_41_74 scs8hd_decap_12 + PLACED ( 39560 122400 ) N ;
 - FILLER_41_86 scs8hd_decap_12 + PLACED ( 45080 122400 ) N ;
-- FILLER_41_98 scs8hd_decap_8 + PLACED ( 50600 122400 ) N ;
-- FILLER_41_106 scs8hd_fill_1 + PLACED ( 54280 122400 ) N ;
-- FILLER_41_109 scs8hd_fill_2 + PLACED ( 55660 122400 ) N ;
-- FILLER_41_113 scs8hd_decap_6 + PLACED ( 57500 122400 ) N ;
-- FILLER_41_119 scs8hd_fill_1 + PLACED ( 60260 122400 ) N ;
-- FILLER_41_127 scs8hd_fill_2 + PLACED ( 63940 122400 ) N ;
-- FILLER_41_131 scs8hd_fill_2 + PLACED ( 65780 122400 ) N ;
+- FILLER_41_98 scs8hd_decap_12 + PLACED ( 50600 122400 ) N ;
+- FILLER_41_110 scs8hd_decap_12 + PLACED ( 56120 122400 ) N ;
+- FILLER_41_123 scs8hd_decap_12 + PLACED ( 62100 122400 ) N ;
 - FILLER_41_135 scs8hd_decap_8 + PLACED ( 67620 122400 ) N ;
 - FILLER_41_143 scs8hd_decap_3 + PLACED ( 71300 122400 ) N ;
 - FILLER_42_3 scs8hd_decap_12 + PLACED ( 6900 125120 ) FS ;
@@ -1200,9 +1068,10 @@ COMPONENTS 1322 ;
 - FILLER_42_68 scs8hd_decap_12 + PLACED ( 36800 125120 ) FS ;
 - FILLER_42_80 scs8hd_decap_12 + PLACED ( 42320 125120 ) FS ;
 - FILLER_42_93 scs8hd_decap_12 + PLACED ( 48300 125120 ) FS ;
-- FILLER_42_105 scs8hd_fill_2 + PLACED ( 53820 125120 ) FS ;
-- FILLER_42_118 scs8hd_decap_8 + PLACED ( 59800 125120 ) FS ;
-- FILLER_42_137 scs8hd_decap_8 + PLACED ( 68540 125120 ) FS ;
+- FILLER_42_105 scs8hd_decap_12 + PLACED ( 53820 125120 ) FS ;
+- FILLER_42_117 scs8hd_decap_12 + PLACED ( 59340 125120 ) FS ;
+- FILLER_42_129 scs8hd_decap_12 + PLACED ( 64860 125120 ) FS ;
+- FILLER_42_141 scs8hd_decap_4 + PLACED ( 70380 125120 ) FS ;
 - FILLER_42_145 scs8hd_fill_1 + PLACED ( 72220 125120 ) FS ;
 - FILLER_43_3 scs8hd_decap_12 + PLACED ( 6900 127840 ) N ;
 - FILLER_43_15 scs8hd_decap_12 + PLACED ( 12420 127840 ) N ;
@@ -1256,9 +1125,9 @@ COMPONENTS 1322 ;
 - FILLER_46_80 scs8hd_decap_12 + PLACED ( 42320 136000 ) FS ;
 - FILLER_46_93 scs8hd_decap_12 + PLACED ( 48300 136000 ) FS ;
 - FILLER_46_105 scs8hd_decap_12 + PLACED ( 53820 136000 ) FS ;
-- FILLER_46_117 scs8hd_decap_6 + PLACED ( 59340 136000 ) FS ;
-- FILLER_46_125 scs8hd_decap_12 + PLACED ( 63020 136000 ) FS ;
-- FILLER_46_137 scs8hd_decap_8 + PLACED ( 68540 136000 ) FS ;
+- FILLER_46_117 scs8hd_decap_12 + PLACED ( 59340 136000 ) FS ;
+- FILLER_46_129 scs8hd_decap_12 + PLACED ( 64860 136000 ) FS ;
+- FILLER_46_141 scs8hd_decap_4 + PLACED ( 70380 136000 ) FS ;
 - FILLER_46_145 scs8hd_fill_1 + PLACED ( 72220 136000 ) FS ;
 - FILLER_47_3 scs8hd_decap_12 + PLACED ( 6900 138720 ) N ;
 - FILLER_47_15 scs8hd_decap_12 + PLACED ( 12420 138720 ) N ;
@@ -1270,9 +1139,9 @@ COMPONENTS 1322 ;
 - FILLER_47_74 scs8hd_decap_12 + PLACED ( 39560 138720 ) N ;
 - FILLER_47_86 scs8hd_decap_12 + PLACED ( 45080 138720 ) N ;
 - FILLER_47_98 scs8hd_decap_12 + PLACED ( 50600 138720 ) N ;
-- FILLER_47_110 scs8hd_decap_8 + PLACED ( 56120 138720 ) N ;
-- FILLER_47_118 scs8hd_fill_2 + PLACED ( 59800 138720 ) N ;
-- FILLER_47_131 scs8hd_decap_12 + PLACED ( 65780 138720 ) N ;
+- FILLER_47_110 scs8hd_decap_12 + PLACED ( 56120 138720 ) N ;
+- FILLER_47_123 scs8hd_decap_12 + PLACED ( 62100 138720 ) N ;
+- FILLER_47_135 scs8hd_decap_8 + PLACED ( 67620 138720 ) N ;
 - FILLER_47_143 scs8hd_decap_3 + PLACED ( 71300 138720 ) N ;
 - FILLER_48_3 scs8hd_decap_12 + PLACED ( 6900 141440 ) FS ;
 - FILLER_48_15 scs8hd_decap_12 + PLACED ( 12420 141440 ) FS ;
@@ -1327,8 +1196,8 @@ COMPONENTS 1322 ;
 - FILLER_51_86 scs8hd_decap_12 + PLACED ( 45080 149600 ) N ;
 - FILLER_51_98 scs8hd_decap_12 + PLACED ( 50600 149600 ) N ;
 - FILLER_51_110 scs8hd_decap_12 + PLACED ( 56120 149600 ) N ;
-- FILLER_51_127 scs8hd_fill_2 + PLACED ( 63940 149600 ) N ;
-- FILLER_51_131 scs8hd_decap_12 + PLACED ( 65780 149600 ) N ;
+- FILLER_51_123 scs8hd_decap_12 + PLACED ( 62100 149600 ) N ;
+- FILLER_51_135 scs8hd_decap_8 + PLACED ( 67620 149600 ) N ;
 - FILLER_51_143 scs8hd_decap_3 + PLACED ( 71300 149600 ) N ;
 - FILLER_52_3 scs8hd_decap_12 + PLACED ( 6900 152320 ) FS ;
 - FILLER_52_15 scs8hd_decap_12 + PLACED ( 12420 152320 ) FS ;
@@ -1347,29 +1216,30 @@ COMPONENTS 1322 ;
 - FILLER_53_3 scs8hd_decap_12 + PLACED ( 6900 155040 ) N ;
 - FILLER_53_15 scs8hd_decap_12 + PLACED ( 12420 155040 ) N ;
 - FILLER_53_27 scs8hd_decap_12 + PLACED ( 17940 155040 ) N ;
-- FILLER_53_39 scs8hd_decap_12 + PLACED ( 23460 155040 ) N ;
-- FILLER_53_51 scs8hd_decap_8 + PLACED ( 28980 155040 ) N ;
-- FILLER_53_59 scs8hd_fill_2 + PLACED ( 32660 155040 ) N ;
+- FILLER_53_39 scs8hd_decap_4 + PLACED ( 23460 155040 ) N ;
+- FILLER_53_45 scs8hd_decap_12 + PLACED ( 26220 155040 ) N ;
+- FILLER_53_57 scs8hd_decap_4 + PLACED ( 31740 155040 ) N ;
 - FILLER_53_62 scs8hd_decap_12 + PLACED ( 34040 155040 ) N ;
 - FILLER_53_74 scs8hd_decap_12 + PLACED ( 39560 155040 ) N ;
 - FILLER_53_86 scs8hd_decap_12 + PLACED ( 45080 155040 ) N ;
 - FILLER_53_98 scs8hd_decap_12 + PLACED ( 50600 155040 ) N ;
-- FILLER_53_110 scs8hd_decap_6 + PLACED ( 56120 155040 ) N ;
-- FILLER_53_118 scs8hd_fill_2 + PLACED ( 59800 155040 ) N ;
-- FILLER_53_127 scs8hd_fill_2 + PLACED ( 63940 155040 ) N ;
-- FILLER_53_131 scs8hd_decap_12 + PLACED ( 65780 155040 ) N ;
+- FILLER_53_110 scs8hd_decap_12 + PLACED ( 56120 155040 ) N ;
+- FILLER_53_123 scs8hd_decap_12 + PLACED ( 62100 155040 ) N ;
+- FILLER_53_135 scs8hd_decap_8 + PLACED ( 67620 155040 ) N ;
 - FILLER_53_143 scs8hd_decap_3 + PLACED ( 71300 155040 ) N ;
 - FILLER_54_3 scs8hd_decap_12 + PLACED ( 6900 157760 ) FS ;
 - FILLER_54_15 scs8hd_decap_12 + PLACED ( 12420 157760 ) FS ;
 - FILLER_54_27 scs8hd_decap_4 + PLACED ( 17940 157760 ) FS ;
-- FILLER_54_32 scs8hd_decap_12 + PLACED ( 20240 157760 ) FS ;
-- FILLER_54_44 scs8hd_decap_12 + PLACED ( 25760 157760 ) FS ;
-- FILLER_54_56 scs8hd_decap_12 + PLACED ( 31280 157760 ) FS ;
-- FILLER_54_68 scs8hd_decap_12 + PLACED ( 36800 157760 ) FS ;
-- FILLER_54_80 scs8hd_decap_12 + PLACED ( 42320 157760 ) FS ;
+- FILLER_54_32 scs8hd_decap_8 + PLACED ( 20240 157760 ) FS ;
+- FILLER_54_40 scs8hd_decap_3 + PLACED ( 23920 157760 ) FS ;
+- FILLER_54_47 scs8hd_decap_12 + PLACED ( 27140 157760 ) FS ;
+- FILLER_54_59 scs8hd_decap_12 + PLACED ( 32660 157760 ) FS ;
+- FILLER_54_71 scs8hd_decap_12 + PLACED ( 38180 157760 ) FS ;
+- FILLER_54_83 scs8hd_decap_8 + PLACED ( 43700 157760 ) FS ;
+- FILLER_54_91 scs8hd_fill_1 + PLACED ( 47380 157760 ) FS ;
 - FILLER_54_93 scs8hd_decap_12 + PLACED ( 48300 157760 ) FS ;
 - FILLER_54_105 scs8hd_decap_12 + PLACED ( 53820 157760 ) FS ;
-- FILLER_54_117 scs8hd_decap_4 + PLACED ( 59340 157760 ) FS ;
+- FILLER_54_117 scs8hd_decap_12 + PLACED ( 59340 157760 ) FS ;
 - FILLER_54_129 scs8hd_decap_12 + PLACED ( 64860 157760 ) FS ;
 - FILLER_54_141 scs8hd_decap_4 + PLACED ( 70380 157760 ) FS ;
 - FILLER_54_145 scs8hd_fill_1 + PLACED ( 72220 157760 ) FS ;
@@ -1516,97 +1386,37 @@ COMPONENTS 1322 ;
 - FILLER_64_145 scs8hd_fill_1 + PLACED ( 72220 184960 ) FS ;
 END COMPONENTS
 
-PINS 32 ;
-- address[0] + NET address[0] + DIRECTION INPUT + USE SIGNAL 
+PINS 12 ;
+- ccff_head + NET ccff_head + DIRECTION INPUT + USE SIGNAL 
+  + LAYER met3 ( -1200 -300 ) ( 1200 300 )
+  + PLACED ( 78800 139740 ) N ;
+- ccff_tail + NET ccff_tail + DIRECTION OUTPUT + USE SIGNAL 
+  + LAYER met2 ( -140 -1200 ) ( 140 1200 )
+  + PLACED ( 20010 198800 ) N ;
+- gfpga_pad_GPIO_A + NET gfpga_pad_GPIO_A + DIRECTION OUTPUT + USE SIGNAL 
+  + LAYER met2 ( -140 -1200 ) ( 140 1200 )
+  + PLACED ( 60030 198800 ) N ;
+- gfpga_pad_GPIO_IE + NET gfpga_pad_GPIO_IE + DIRECTION OUTPUT + USE SIGNAL 
+  + LAYER met3 ( -1200 -300 ) ( 1200 300 )
+  + PLACED ( 78800 179860 ) N ;
+- gfpga_pad_GPIO_OE + NET gfpga_pad_GPIO_OE + DIRECTION OUTPUT + USE SIGNAL 
   + LAYER met2 ( -140 -1200 ) ( 140 1200 )
   + PLACED ( 20010 1200 ) N ;
-- address[1] + NET address[1] + DIRECTION INPUT + USE SIGNAL 
-  + LAYER met2 ( -140 -1200 ) ( 140 1200 )
-  + PLACED ( 33350 1200 ) N ;
-- address[2] + NET address[2] + DIRECTION INPUT + USE SIGNAL 
-  + LAYER met2 ( -140 -1200 ) ( 140 1200 )
-  + PLACED ( 46690 1200 ) N ;
-- address[3] + NET address[3] + DIRECTION INPUT + USE SIGNAL 
+- gfpga_pad_GPIO_Y + NET gfpga_pad_GPIO_Y + DIRECTION INOUT + USE SIGNAL 
   + LAYER met2 ( -140 -1200 ) ( 140 1200 )
   + PLACED ( 60030 1200 ) N ;
-- data_in + NET data_in + DIRECTION INPUT + USE SIGNAL 
-  + LAYER met2 ( -140 -1200 ) ( 140 1200 )
-  + PLACED ( 73370 1200 ) N ;
-- enable + NET enable + DIRECTION INPUT + USE SIGNAL 
-  + LAYER met2 ( -140 -1200 ) ( 140 1200 )
-  + PLACED ( 6670 1200 ) N ;
-- gfpga_pad_GPIO_PAD[0] + NET gfpga_pad_GPIO_PAD[0] + DIRECTION INOUT + USE SIGNAL 
+- prog_clk + NET prog_clk + DIRECTION INPUT + USE SIGNAL 
   + LAYER met3 ( -1200 -300 ) ( 1200 300 )
-  + PLACED ( 1200 12580 ) N ;
-- gfpga_pad_GPIO_PAD[1] + NET gfpga_pad_GPIO_PAD[1] + DIRECTION INOUT + USE SIGNAL 
-  + LAYER met3 ( -1200 -300 ) ( 1200 300 )
-  + PLACED ( 1200 37060 ) N ;
-- gfpga_pad_GPIO_PAD[2] + NET gfpga_pad_GPIO_PAD[2] + DIRECTION INOUT + USE SIGNAL 
-  + LAYER met3 ( -1200 -300 ) ( 1200 300 )
-  + PLACED ( 1200 62220 ) N ;
-- gfpga_pad_GPIO_PAD[3] + NET gfpga_pad_GPIO_PAD[3] + DIRECTION INOUT + USE SIGNAL 
-  + LAYER met3 ( -1200 -300 ) ( 1200 300 )
-  + PLACED ( 1200 87380 ) N ;
-- gfpga_pad_GPIO_PAD[4] + NET gfpga_pad_GPIO_PAD[4] + DIRECTION INOUT + USE SIGNAL 
-  + LAYER met3 ( -1200 -300 ) ( 1200 300 )
-  + PLACED ( 1200 112540 ) N ;
-- gfpga_pad_GPIO_PAD[5] + NET gfpga_pad_GPIO_PAD[5] + DIRECTION INOUT + USE SIGNAL 
-  + LAYER met3 ( -1200 -300 ) ( 1200 300 )
-  + PLACED ( 1200 137020 ) N ;
-- gfpga_pad_GPIO_PAD[6] + NET gfpga_pad_GPIO_PAD[6] + DIRECTION INOUT + USE SIGNAL 
-  + LAYER met3 ( -1200 -300 ) ( 1200 300 )
-  + PLACED ( 1200 162180 ) N ;
-- gfpga_pad_GPIO_PAD[7] + NET gfpga_pad_GPIO_PAD[7] + DIRECTION INOUT + USE SIGNAL 
-  + LAYER met3 ( -1200 -300 ) ( 1200 300 )
-  + PLACED ( 1200 187340 ) N ;
+  + PLACED ( 1200 100300 ) N ;
 - right_width_0_height_0__pin_0_ + NET right_width_0_height_0__pin_0_ + DIRECTION INPUT + USE SIGNAL 
   + LAYER met3 ( -1200 -300 ) ( 1200 300 )
-  + PLACED ( 78800 6460 ) N ;
-- right_width_0_height_0__pin_10_ + NET right_width_0_height_0__pin_10_ + DIRECTION INPUT + USE SIGNAL 
+  + PLACED ( 78800 20060 ) N ;
+- right_width_0_height_0__pin_1_lower + NET right_width_0_height_0__pin_1_lower + DIRECTION OUTPUT + USE SIGNAL 
   + LAYER met3 ( -1200 -300 ) ( 1200 300 )
-  + PLACED ( 78800 130900 ) N ;
-- right_width_0_height_0__pin_11_ + NET right_width_0_height_0__pin_11_ + DIRECTION OUTPUT + USE SIGNAL 
+  + PLACED ( 78800 59500 ) N ;
+- right_width_0_height_0__pin_1_upper + NET right_width_0_height_0__pin_1_upper + DIRECTION OUTPUT + USE SIGNAL 
   + LAYER met3 ( -1200 -300 ) ( 1200 300 )
-  + PLACED ( 78800 143820 ) N ;
-- right_width_0_height_0__pin_12_ + NET right_width_0_height_0__pin_12_ + DIRECTION INPUT + USE SIGNAL 
-  + LAYER met3 ( -1200 -300 ) ( 1200 300 )
-  + PLACED ( 78800 156060 ) N ;
-- right_width_0_height_0__pin_13_ + NET right_width_0_height_0__pin_13_ + DIRECTION OUTPUT + USE SIGNAL 
-  + LAYER met3 ( -1200 -300 ) ( 1200 300 )
-  + PLACED ( 78800 168300 ) N ;
-- right_width_0_height_0__pin_14_ + NET right_width_0_height_0__pin_14_ + DIRECTION INPUT + USE SIGNAL 
-  + LAYER met3 ( -1200 -300 ) ( 1200 300 )
-  + PLACED ( 78800 181220 ) N ;
-- right_width_0_height_0__pin_15_ + NET right_width_0_height_0__pin_15_ + DIRECTION OUTPUT + USE SIGNAL 
-  + LAYER met3 ( -1200 -300 ) ( 1200 300 )
-  + PLACED ( 78800 193460 ) N ;
-- right_width_0_height_0__pin_1_ + NET right_width_0_height_0__pin_1_ + DIRECTION OUTPUT + USE SIGNAL 
-  + LAYER met3 ( -1200 -300 ) ( 1200 300 )
-  + PLACED ( 78800 18700 ) N ;
-- right_width_0_height_0__pin_2_ + NET right_width_0_height_0__pin_2_ + DIRECTION INPUT + USE SIGNAL 
-  + LAYER met3 ( -1200 -300 ) ( 1200 300 )
-  + PLACED ( 78800 30940 ) N ;
-- right_width_0_height_0__pin_3_ + NET right_width_0_height_0__pin_3_ + DIRECTION OUTPUT + USE SIGNAL 
-  + LAYER met3 ( -1200 -300 ) ( 1200 300 )
-  + PLACED ( 78800 43860 ) N ;
-- right_width_0_height_0__pin_4_ + NET right_width_0_height_0__pin_4_ + DIRECTION INPUT + USE SIGNAL 
-  + LAYER met3 ( -1200 -300 ) ( 1200 300 )
-  + PLACED ( 78800 56100 ) N ;
-- right_width_0_height_0__pin_5_ + NET right_width_0_height_0__pin_5_ + DIRECTION OUTPUT + USE SIGNAL 
-  + LAYER met3 ( -1200 -300 ) ( 1200 300 )
-  + PLACED ( 78800 68340 ) N ;
-- right_width_0_height_0__pin_6_ + NET right_width_0_height_0__pin_6_ + DIRECTION INPUT + USE SIGNAL 
-  + LAYER met3 ( -1200 -300 ) ( 1200 300 )
-  + PLACED ( 78800 81260 ) N ;
-- right_width_0_height_0__pin_7_ + NET right_width_0_height_0__pin_7_ + DIRECTION OUTPUT + USE SIGNAL 
-  + LAYER met3 ( -1200 -300 ) ( 1200 300 )
-  + PLACED ( 78800 93500 ) N ;
-- right_width_0_height_0__pin_8_ + NET right_width_0_height_0__pin_8_ + DIRECTION INPUT + USE SIGNAL 
-  + LAYER met3 ( -1200 -300 ) ( 1200 300 )
-  + PLACED ( 78800 106420 ) N ;
-- right_width_0_height_0__pin_9_ + NET right_width_0_height_0__pin_9_ + DIRECTION OUTPUT + USE SIGNAL 
-  + LAYER met3 ( -1200 -300 ) ( 1200 300 )
-  + PLACED ( 78800 118660 ) N ;
+  + PLACED ( 78800 99620 ) N ;
 - vpwr + NET vpwr + DIRECTION INPUT + USE SIGNAL 
   + LAYER met4 ( -800 -88640 ) ( 800 88640 )
   + FIXED ( 18853 99280 ) N + SPECIAL ;
@@ -2188,1017 +1998,169 @@ SPECIALNETS 2 ;
   + USE GROUND ;
 END SPECIALNETS
 
-NETS 50 ;
-- address[0] ( PIN address[0] ) 
+NETS 11 ;
+- ccff_head ( PIN ccff_head ) ( ANTENNA_logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_scs8hd_dfxbp_1_mem.scs8hd_dfxbp_1_0__D DIODE ) ( logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_scs8hd_dfxbp_1_mem.scs8hd_dfxbp_1_0_ D ) 
+  + ROUTED met2 ( 14490 96050 ) ( 14490 96220 )
+    NEW met3 ( 14490 96220 ) ( 60030 96220 )
+    NEW met1 ( 14490 96050 ) ( 14795 96050 )
+    NEW met1 ( 13110 96050 ) ( 14490 96050 )
+    NEW met2 ( 60030 96220 ) ( 60030 139740 )
+    NEW met3 ( 60030 139740 ) ( 77740 139740 0 )
+    NEW li1 ( 13110 96050 ) L1M1_PR_MR
+    NEW met1 ( 14490 96050 ) M1M2_PR
+    NEW met2 ( 14490 96220 ) via2_FR
+    NEW met2 ( 60030 96220 ) via2_FR
+    NEW li1 ( 14795 96050 ) L1M1_PR_MR
+    NEW met2 ( 60030 139740 ) via2_FR
+    NEW met1 ( 14795 96050 ) RECT ( 0 -70 290 70 )
 + USE SIGNAL ;
-- address[1] ( PIN address[1] ) ( ANTENNA__05__C DIODE ) ( ANTENNA__06__A DIODE ) ( ANTENNA__09__A DIODE ) 
-( ANTENNA__13__A DIODE ) ( ANTENNA__15__A DIODE ) ( _15_ A ) ( _13_ A ) ( _09_ A ) 
-( _06_ A ) ( _05_ C ) 
-  + ROUTED met2 ( 33350 2380 0 ) ( 33350 17340 )
-    NEW met2 ( 44850 17340 ) ( 44850 19550 )
-    NEW met1 ( 45770 19550 ) ( 45770 20230 )
-    NEW met1 ( 44850 19550 ) ( 45770 19550 )
-    NEW met2 ( 44390 20740 ) ( 44850 20740 )
-    NEW met2 ( 44850 19550 ) ( 44850 20740 )
-    NEW met3 ( 33350 17340 ) ( 44850 17340 )
-    NEW met1 ( 44390 52530 ) ( 48530 52530 )
-    NEW met2 ( 48530 52530 ) ( 48530 55930 )
-    NEW met1 ( 39790 63070 ) ( 44390 63070 )
-    NEW met2 ( 44390 52530 ) ( 44390 63070 )
-    NEW met2 ( 41170 63070 ) ( 41170 66810 )
-    NEW met1 ( 44390 74290 ) ( 47610 74290 )
-    NEW met2 ( 44390 63070 ) ( 44390 74290 )
-    NEW met1 ( 47610 74290 ) ( 48530 74290 )
-    NEW met1 ( 44390 79390 ) ( 45770 79390 )
-    NEW met2 ( 44390 74290 ) ( 44390 79390 )
-    NEW met1 ( 47150 79730 ) ( 48070 79730 )
-    NEW met1 ( 47150 79390 ) ( 47150 79730 )
-    NEW met1 ( 45770 79390 ) ( 47150 79390 )
-    NEW met2 ( 44390 20740 ) ( 44390 52530 )
-    NEW met2 ( 33350 17340 ) via2_FR
-    NEW li1 ( 44850 19550 ) L1M1_PR_MR
-    NEW met1 ( 44850 19550 ) M1M2_PR
-    NEW met2 ( 44850 17340 ) via2_FR
-    NEW li1 ( 45770 20230 ) L1M1_PR_MR
-    NEW li1 ( 48530 52530 ) L1M1_PR_MR
-    NEW met1 ( 44390 52530 ) M1M2_PR
-    NEW li1 ( 48530 55930 ) L1M1_PR_MR
-    NEW met1 ( 48530 55930 ) M1M2_PR
-    NEW met1 ( 48530 52530 ) M1M2_PR
-    NEW li1 ( 39790 63070 ) L1M1_PR_MR
-    NEW met1 ( 44390 63070 ) M1M2_PR
-    NEW li1 ( 41170 66810 ) L1M1_PR_MR
-    NEW met1 ( 41170 66810 ) M1M2_PR
-    NEW met1 ( 41170 63070 ) M1M2_PR
-    NEW li1 ( 47610 74290 ) L1M1_PR_MR
-    NEW met1 ( 44390 74290 ) M1M2_PR
-    NEW li1 ( 48530 74290 ) L1M1_PR_MR
-    NEW li1 ( 45770 79390 ) L1M1_PR_MR
-    NEW met1 ( 44390 79390 ) M1M2_PR
-    NEW li1 ( 48070 79730 ) L1M1_PR_MR
-    NEW met1 ( 44850 19550 ) RECT ( -355 -70 0 70 )
-    NEW met1 ( 48530 55930 ) RECT ( -355 -70 0 70 )
-    NEW met1 ( 48530 52530 ) RECT ( -595 -70 0 70 )
-    NEW met1 ( 41170 66810 ) RECT ( -355 -70 0 70 )
-    NEW met1 ( 41170 63070 ) RECT ( -595 -70 0 70 )
+- ccff_tail ( PIN ccff_tail ) ( ANTENNA__1__A DIODE ) ( ANTENNA_logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_0_.ie_oe_inv_A DIODE ) ( logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_scs8hd_dfxbp_1_mem.scs8hd_dfxbp_1_0_ Q ) 
+( logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_0_.ie_oe_inv A ) ( _1_ A ) 
+  + ROUTED met1 ( 17710 95710 ) ( 20470 95710 )
+    NEW met2 ( 17710 95710 ) ( 17710 110330 )
+    NEW met1 ( 17710 110330 ) ( 20470 110330 )
+    NEW met2 ( 17710 86530 ) ( 17710 95710 )
+    NEW met1 ( 15745 85510 ) ( 17710 85510 )
+    NEW met2 ( 17710 85510 ) ( 17710 86530 )
+    NEW met2 ( 17710 197540 ) ( 20010 197540 )
+    NEW met2 ( 20010 197540 ) ( 20010 198220 0 )
+    NEW met2 ( 17710 148580 ) ( 20010 148580 )
+    NEW met2 ( 20010 110500 ) ( 20010 148580 )
+    NEW met2 ( 20010 110500 ) ( 20470 110500 )
+    NEW met1 ( 17710 158610 ) ( 25530 158610 )
+    NEW met2 ( 25530 157250 ) ( 25530 158610 )
+    NEW met2 ( 17710 148580 ) ( 17710 197540 )
+    NEW met2 ( 20470 110330 ) ( 20470 110500 )
+    NEW met2 ( 25530 158610 ) ( 25530 159290 )
+    NEW li1 ( 20470 95710 ) L1M1_PR_MR
+    NEW met1 ( 17710 95710 ) M1M2_PR
+    NEW met1 ( 17710 110330 ) M1M2_PR
+    NEW met1 ( 20470 110330 ) M1M2_PR
+    NEW li1 ( 17710 86530 ) L1M1_PR_MR
+    NEW met1 ( 17710 86530 ) M1M2_PR
+    NEW li1 ( 15745 85510 ) L1M1_PR_MR
+    NEW met1 ( 17710 85510 ) M1M2_PR
+    NEW li1 ( 25530 159290 ) L1M1_PR_MR
+    NEW met1 ( 25530 159290 ) M1M2_PR
+    NEW met1 ( 25530 158610 ) M1M2_PR
+    NEW met1 ( 17710 158610 ) M1M2_PR
+    NEW li1 ( 25530 157250 ) L1M1_PR_MR
+    NEW met1 ( 25530 157250 ) M1M2_PR
+    NEW met1 ( 17710 86530 ) RECT ( -355 -70 0 70 )
+    NEW met1 ( 25530 159290 ) RECT ( -355 -70 0 70 )
+    NEW met2 ( 17710 158610 ) RECT ( -70 -485 70 0 )
+    NEW met1 ( 25530 157250 ) RECT ( -355 -70 0 70 )
 + USE SIGNAL ;
-- address[2] ( PIN address[2] ) ( ANTENNA__05__B DIODE ) ( ANTENNA__07__B DIODE ) ( ANTENNA__08__A DIODE ) 
-( ANTENNA__14__D DIODE ) ( ANTENNA__15__D DIODE ) ( _15_ D ) ( _14_ D ) ( _08_ A ) 
-( _07_ B ) ( _05_ B ) 
-  + ROUTED met1 ( 46230 16830 ) ( 47150 16830 )
-    NEW met2 ( 47150 3060 ) ( 47150 16830 )
-    NEW met2 ( 46690 3060 ) ( 47150 3060 )
-    NEW met2 ( 46690 2380 0 ) ( 46690 3060 )
-    NEW met1 ( 51750 19890 ) ( 51750 20230 )
-    NEW met1 ( 47150 19890 ) ( 51750 19890 )
-    NEW met2 ( 47150 16830 ) ( 47150 19890 )
-    NEW met1 ( 45770 24990 ) ( 47150 24990 )
-    NEW met2 ( 47150 19890 ) ( 47150 24990 )
-    NEW met1 ( 52210 24990 ) ( 52210 25670 )
-    NEW met1 ( 47150 24990 ) ( 52210 24990 )
-    NEW met1 ( 46230 73950 ) ( 47150 73950 )
-    NEW met2 ( 47150 73950 ) ( 47150 76670 )
-    NEW met1 ( 47150 77690 ) ( 48990 77690 )
-    NEW met2 ( 47150 76670 ) ( 47150 77690 )
-    NEW met2 ( 47610 77860 ) ( 47610 79390 )
-    NEW met2 ( 47150 77860 ) ( 47610 77860 )
-    NEW met2 ( 47150 77690 ) ( 47150 77860 )
-    NEW met1 ( 47610 79390 ) ( 51750 79390 )
-    NEW met2 ( 47150 24990 ) ( 47150 73950 )
-    NEW met2 ( 49450 79390 ) ( 49450 83130 )
-    NEW li1 ( 46230 16830 ) L1M1_PR_MR
-    NEW met1 ( 47150 16830 ) M1M2_PR
-    NEW li1 ( 51750 20230 ) L1M1_PR_MR
-    NEW met1 ( 47150 19890 ) M1M2_PR
-    NEW li1 ( 45770 24990 ) L1M1_PR_MR
-    NEW met1 ( 47150 24990 ) M1M2_PR
-    NEW li1 ( 52210 25670 ) L1M1_PR_MR
-    NEW li1 ( 49450 83130 ) L1M1_PR_MR
-    NEW met1 ( 49450 83130 ) M1M2_PR
-    NEW li1 ( 46230 73950 ) L1M1_PR_MR
-    NEW met1 ( 47150 73950 ) M1M2_PR
-    NEW li1 ( 47150 76670 ) L1M1_PR_MR
-    NEW met1 ( 47150 76670 ) M1M2_PR
-    NEW li1 ( 48990 77690 ) L1M1_PR_MR
-    NEW met1 ( 47150 77690 ) M1M2_PR
-    NEW li1 ( 47610 79390 ) L1M1_PR_MR
-    NEW met1 ( 47610 79390 ) M1M2_PR
-    NEW li1 ( 51750 79390 ) L1M1_PR_MR
-    NEW met1 ( 49450 79390 ) M1M2_PR
-    NEW met1 ( 49450 83130 ) RECT ( -355 -70 0 70 )
-    NEW met1 ( 47150 76670 ) RECT ( -355 -70 0 70 )
-    NEW met1 ( 47610 79390 ) RECT ( 0 -70 355 70 )
-    NEW met1 ( 49450 79390 ) RECT ( -595 -70 0 70 )
+- gfpga_pad_GPIO_A ( PIN gfpga_pad_GPIO_A ) ( _0_ X ) 
+  + ROUTED met1 ( 60490 86530 ) ( 63250 86530 )
+    NEW met2 ( 60030 197540 ) ( 60490 197540 )
+    NEW met2 ( 60030 197540 ) ( 60030 198220 0 )
+    NEW met2 ( 60490 86530 ) ( 60490 197540 )
+    NEW li1 ( 63250 86530 ) L1M1_PR_MR
+    NEW met1 ( 60490 86530 ) M1M2_PR
 + USE SIGNAL ;
-- address[3] ( PIN address[3] ) ( ANTENNA__04__A DIODE ) ( ANTENNA__09__C DIODE ) ( ANTENNA__10__C DIODE ) 
-( _10_ C ) ( _09_ C ) ( _04_ A ) 
-  + ROUTED met2 ( 49910 16660 ) ( 49910 16830 )
-    NEW met3 ( 49910 16660 ) ( 60030 16660 )
-    NEW met2 ( 60030 2380 0 ) ( 60030 16660 )
-    NEW met1 ( 48530 23290 ) ( 49910 23290 )
-    NEW met2 ( 49910 16830 ) ( 49910 23290 )
-    NEW met1 ( 48530 85510 ) ( 50370 85510 )
-    NEW met1 ( 48990 71230 ) ( 49450 71230 )
-    NEW met1 ( 48990 74290 ) ( 49910 74290 )
-    NEW met2 ( 48990 71230 ) ( 48990 74290 )
-    NEW met2 ( 48990 23290 ) ( 48990 71230 )
-    NEW met2 ( 49910 74290 ) ( 49910 85510 )
-    NEW li1 ( 49910 16830 ) L1M1_PR_MR
-    NEW met1 ( 49910 16830 ) M1M2_PR
-    NEW met2 ( 49910 16660 ) via2_FR
-    NEW met2 ( 60030 16660 ) via2_FR
-    NEW li1 ( 48530 23290 ) L1M1_PR_MR
-    NEW met1 ( 49910 23290 ) M1M2_PR
-    NEW met1 ( 48990 23290 ) M1M2_PR
-    NEW li1 ( 50370 85510 ) L1M1_PR_MR
-    NEW li1 ( 48530 85510 ) L1M1_PR_MR
-    NEW met1 ( 49910 85510 ) M1M2_PR
-    NEW li1 ( 49450 71230 ) L1M1_PR_MR
-    NEW met1 ( 48990 71230 ) M1M2_PR
-    NEW li1 ( 49910 74290 ) L1M1_PR_MR
-    NEW met1 ( 48990 74290 ) M1M2_PR
-    NEW met1 ( 49910 74290 ) M1M2_PR
-    NEW met1 ( 49910 16830 ) RECT ( -355 -70 0 70 )
-    NEW met1 ( 48990 23290 ) RECT ( -595 -70 0 70 )
-    NEW met1 ( 49910 85510 ) RECT ( -595 -70 0 70 )
-    NEW met1 ( 49910 74290 ) RECT ( -595 -70 0 70 )
+- gfpga_pad_GPIO_IE ( PIN gfpga_pad_GPIO_IE ) ( _1_ X ) 
+  + ROUTED met3 ( 74060 179860 ) ( 74060 180540 )
+    NEW met3 ( 74060 179860 ) ( 77740 179860 0 )
+    NEW met2 ( 26450 159970 ) ( 26450 161500 )
+    NEW met3 ( 26450 161500 ) ( 55430 161500 )
+    NEW met2 ( 55430 161500 ) ( 55430 180540 )
+    NEW met3 ( 55430 180540 ) ( 74060 180540 )
+    NEW li1 ( 26450 159970 ) L1M1_PR_MR
+    NEW met1 ( 26450 159970 ) M1M2_PR
+    NEW met2 ( 26450 161500 ) via2_FR
+    NEW met2 ( 55430 161500 ) via2_FR
+    NEW met2 ( 55430 180540 ) via2_FR
+    NEW met1 ( 26450 159970 ) RECT ( -355 -70 0 70 )
 + USE SIGNAL ;
-- data_in ( PIN data_in ) ( ANTENNA_logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch_D DIODE ) ( ANTENNA_logical_tile_io_mode_io__1.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch_D DIODE ) ( ANTENNA_logical_tile_io_mode_io__2.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch_D DIODE ) 
-( ANTENNA_logical_tile_io_mode_io__3.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch_D DIODE ) ( ANTENNA_logical_tile_io_mode_io__4.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch_D DIODE ) ( ANTENNA_logical_tile_io_mode_io__5.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch_D DIODE ) ( ANTENNA_logical_tile_io_mode_io__6.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch_D DIODE ) ( ANTENNA_logical_tile_io_mode_io__7.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch_D DIODE ) 
-( logical_tile_io_mode_io__7.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch D ) ( logical_tile_io_mode_io__6.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch D ) ( logical_tile_io_mode_io__5.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch D ) ( logical_tile_io_mode_io__4.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch D ) ( logical_tile_io_mode_io__3.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch D ) 
-( logical_tile_io_mode_io__2.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch D ) ( logical_tile_io_mode_io__1.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch D ) ( logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch D ) 
-  + ROUTED met1 ( 56350 14110 ) ( 60950 14110 )
-    NEW met2 ( 60950 13940 ) ( 60950 14110 )
-    NEW met3 ( 60950 13940 ) ( 73370 13940 )
-    NEW met2 ( 73370 2380 0 ) ( 73370 13940 )
-    NEW met1 ( 57700 18190 ) ( 57730 18190 )
-    NEW met2 ( 57730 14110 ) ( 57730 18190 )
-    NEW met1 ( 56810 19550 ) ( 57730 19550 )
-    NEW met2 ( 57730 18190 ) ( 57730 19550 )
-    NEW met1 ( 57730 23630 ) ( 57955 23630 )
-    NEW met2 ( 57730 19550 ) ( 57730 23630 )
-    NEW met1 ( 58190 88910 ) ( 59335 88910 )
-    NEW met2 ( 58190 85340 ) ( 58190 88910 )
-    NEW met2 ( 57730 85340 ) ( 58190 85340 )
-    NEW met2 ( 57730 84830 ) ( 57730 85340 )
-    NEW met1 ( 56810 106590 ) ( 57730 106590 )
-    NEW met2 ( 57730 88740 ) ( 57730 106590 )
-    NEW met2 ( 57730 88740 ) ( 58190 88740 )
-    NEW met1 ( 57730 110670 ) ( 57955 110670 )
-    NEW met2 ( 57730 106590 ) ( 57730 110670 )
-    NEW met1 ( 55430 122910 ) ( 57730 122910 )
-    NEW met2 ( 57730 110670 ) ( 57730 122910 )
-    NEW met1 ( 56780 126990 ) ( 57730 126990 )
-    NEW met2 ( 57730 122910 ) ( 57730 126990 )
-    NEW met1 ( 57730 123930 ) ( 65090 123930 )
-    NEW met1 ( 65090 126990 ) ( 65315 126990 )
-    NEW met2 ( 65090 123930 ) ( 65090 126990 )
-    NEW met1 ( 57730 67150 ) ( 58875 67150 )
-    NEW met2 ( 57730 64770 ) ( 57730 67150 )
-    NEW met1 ( 57730 50830 ) ( 58415 50830 )
-    NEW met2 ( 57730 50830 ) ( 57730 64770 )
-    NEW met1 ( 57270 48110 ) ( 57730 48110 )
-    NEW met2 ( 57730 48110 ) ( 57730 50830 )
-    NEW met2 ( 57730 23630 ) ( 57730 48110 )
-    NEW met2 ( 57730 67150 ) ( 57730 84830 )
-    NEW li1 ( 56350 14110 ) L1M1_PR_MR
-    NEW met1 ( 60950 14110 ) M1M2_PR
-    NEW met2 ( 60950 13940 ) via2_FR
-    NEW met2 ( 73370 13940 ) via2_FR
-    NEW li1 ( 57700 18190 ) L1M1_PR_MR
-    NEW met1 ( 57730 18190 ) M1M2_PR
-    NEW met1 ( 57730 14110 ) M1M2_PR
-    NEW li1 ( 56810 19550 ) L1M1_PR_MR
-    NEW met1 ( 57730 19550 ) M1M2_PR
-    NEW li1 ( 57955 23630 ) L1M1_PR_MR
-    NEW met1 ( 57730 23630 ) M1M2_PR
-    NEW li1 ( 57730 84830 ) L1M1_PR_MR
-    NEW met1 ( 57730 84830 ) M1M2_PR
-    NEW li1 ( 59335 88910 ) L1M1_PR_MR
-    NEW met1 ( 58190 88910 ) M1M2_PR
-    NEW li1 ( 56810 106590 ) L1M1_PR_MR
-    NEW met1 ( 57730 106590 ) M1M2_PR
-    NEW li1 ( 57955 110670 ) L1M1_PR_MR
-    NEW met1 ( 57730 110670 ) M1M2_PR
-    NEW li1 ( 55430 122910 ) L1M1_PR_MR
-    NEW met1 ( 57730 122910 ) M1M2_PR
-    NEW li1 ( 56780 126990 ) L1M1_PR_MR
-    NEW met1 ( 57730 126990 ) M1M2_PR
-    NEW li1 ( 65090 123930 ) L1M1_PR_MR
-    NEW met1 ( 57730 123930 ) M1M2_PR
-    NEW li1 ( 65315 126990 ) L1M1_PR_MR
-    NEW met1 ( 65090 126990 ) M1M2_PR
-    NEW met1 ( 65090 123930 ) M1M2_PR
-    NEW li1 ( 58875 67150 ) L1M1_PR_MR
-    NEW met1 ( 57730 67150 ) M1M2_PR
-    NEW li1 ( 57730 64770 ) L1M1_PR_MR
-    NEW met1 ( 57730 64770 ) M1M2_PR
-    NEW li1 ( 58415 50830 ) L1M1_PR_MR
-    NEW met1 ( 57730 50830 ) M1M2_PR
-    NEW li1 ( 57270 48110 ) L1M1_PR_MR
-    NEW met1 ( 57730 48110 ) M1M2_PR
-    NEW met1 ( 57700 18190 ) RECT ( -325 -70 0 70 )
-    NEW met1 ( 57730 14110 ) RECT ( -595 -70 0 70 )
-    NEW met1 ( 57730 84830 ) RECT ( -355 -70 0 70 )
-    NEW met2 ( 57730 123930 ) RECT ( -70 -485 70 0 )
-    NEW met1 ( 65090 123930 ) RECT ( -595 -70 0 70 )
-    NEW met1 ( 57730 64770 ) RECT ( -355 -70 0 70 )
+- gfpga_pad_GPIO_OE ( PIN gfpga_pad_GPIO_OE ) ( logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_0_.ie_oe_inv Y ) 
+  + ROUTED met2 ( 20010 2380 0 ) ( 20010 17510 )
+    NEW met1 ( 16330 17510 ) ( 20010 17510 )
+    NEW met1 ( 16100 84830 ) ( 16330 84830 )
+    NEW met2 ( 16330 17510 ) ( 16330 84830 )
+    NEW met1 ( 20010 17510 ) M1M2_PR
+    NEW met1 ( 16330 17510 ) M1M2_PR
+    NEW met1 ( 16330 84830 ) M1M2_PR
+    NEW li1 ( 16100 84830 ) L1M1_PR_MR
 + USE SIGNAL ;
-- enable ( PIN enable ) ( ANTENNA__05__D DIODE ) ( ANTENNA__07__D DIODE ) ( ANTENNA__09__B DIODE ) 
-( ANTENNA__10__B DIODE ) ( ANTENNA__11__A DIODE ) ( _11_ A ) ( _10_ B ) ( _09_ B ) 
-( _07_ D ) ( _05_ D ) 
-  + ROUTED met2 ( 6670 2380 0 ) ( 6670 18020 )
-    NEW met2 ( 40250 18020 ) ( 40250 19550 )
-    NEW met2 ( 41630 19550 ) ( 41630 23290 )
-    NEW met1 ( 40250 19550 ) ( 41630 19550 )
-    NEW met3 ( 6670 18020 ) ( 40250 18020 )
-    NEW met1 ( 48990 83470 ) ( 50370 83470 )
-    NEW met1 ( 49450 84830 ) ( 49910 84830 )
-    NEW met2 ( 49450 84660 ) ( 49450 84830 )
-    NEW met2 ( 48990 84660 ) ( 49450 84660 )
-    NEW met2 ( 48990 83470 ) ( 48990 84660 )
-    NEW met1 ( 41630 73950 ) ( 43930 73950 )
-    NEW met2 ( 43930 73950 ) ( 43930 79390 )
-    NEW met1 ( 48530 79730 ) ( 48530 80070 )
-    NEW met1 ( 43930 80070 ) ( 48530 80070 )
-    NEW met1 ( 43930 79390 ) ( 43930 80070 )
-    NEW met1 ( 43930 74630 ) ( 49450 74630 )
-    NEW met1 ( 47150 82110 ) ( 47610 82110 )
-    NEW met2 ( 47610 80070 ) ( 47610 82110 )
-    NEW met1 ( 46690 82110 ) ( 47150 82110 )
-    NEW met1 ( 47610 82110 ) ( 48990 82110 )
-    NEW met2 ( 41630 23290 ) ( 41630 73950 )
-    NEW met2 ( 46690 82110 ) ( 46690 84830 )
-    NEW met2 ( 48990 82110 ) ( 48990 83470 )
-    NEW met2 ( 6670 18020 ) via2_FR
-    NEW li1 ( 40250 19550 ) L1M1_PR_MR
-    NEW met1 ( 40250 19550 ) M1M2_PR
-    NEW met2 ( 40250 18020 ) via2_FR
-    NEW li1 ( 41630 23290 ) L1M1_PR_MR
-    NEW met1 ( 41630 23290 ) M1M2_PR
-    NEW met1 ( 41630 19550 ) M1M2_PR
-    NEW li1 ( 46690 84830 ) L1M1_PR_MR
-    NEW met1 ( 46690 84830 ) M1M2_PR
-    NEW li1 ( 50370 83470 ) L1M1_PR_MR
-    NEW met1 ( 48990 83470 ) M1M2_PR
-    NEW li1 ( 49910 84830 ) L1M1_PR_MR
-    NEW met1 ( 49450 84830 ) M1M2_PR
-    NEW li1 ( 43930 73950 ) L1M1_PR_MR
-    NEW met1 ( 41630 73950 ) M1M2_PR
-    NEW li1 ( 43930 79390 ) L1M1_PR_MR
-    NEW met1 ( 43930 79390 ) M1M2_PR
-    NEW met1 ( 43930 73950 ) M1M2_PR
-    NEW li1 ( 48530 79730 ) L1M1_PR_MR
-    NEW li1 ( 49450 74630 ) L1M1_PR_MR
-    NEW met1 ( 43930 74630 ) M1M2_PR
-    NEW li1 ( 47150 82110 ) L1M1_PR_MR
-    NEW met1 ( 47610 82110 ) M1M2_PR
-    NEW met1 ( 47610 80070 ) M1M2_PR
-    NEW met1 ( 46690 82110 ) M1M2_PR
-    NEW met1 ( 48990 82110 ) M1M2_PR
-    NEW met1 ( 40250 19550 ) RECT ( -355 -70 0 70 )
-    NEW met1 ( 41630 23290 ) RECT ( -355 -70 0 70 )
-    NEW met1 ( 46690 84830 ) RECT ( -355 -70 0 70 )
-    NEW met1 ( 43930 79390 ) RECT ( -355 -70 0 70 )
-    NEW met1 ( 43930 73950 ) RECT ( -595 -70 0 70 )
-    NEW met2 ( 43930 74630 ) RECT ( -70 -485 70 0 )
-    NEW met1 ( 47610 80070 ) RECT ( -595 -70 0 70 )
+- gfpga_pad_GPIO_Y ( PIN gfpga_pad_GPIO_Y ) ( ANTENNA__2__A DIODE ) ( ANTENNA__3__A DIODE ) ( _3_ A ) 
+( _2_ A ) 
+  + ROUTED met1 ( 60030 41650 ) ( 63250 41650 )
+    NEW met2 ( 61870 41650 ) ( 61870 45050 )
+    NEW met1 ( 62330 73950 ) ( 63250 73950 )
+    NEW met2 ( 62330 73780 ) ( 62330 73950 )
+    NEW met2 ( 61410 45220 ) ( 61870 45220 )
+    NEW met2 ( 61870 45050 ) ( 61870 45220 )
+    NEW met2 ( 60030 2380 0 ) ( 60030 41650 )
+    NEW met2 ( 61870 73780 ) ( 61870 77690 )
+    NEW met2 ( 61410 45220 ) ( 61410 73780 )
+    NEW met2 ( 61410 73780 ) ( 62330 73780 )
+    NEW li1 ( 63250 41650 ) L1M1_PR_MR
+    NEW met1 ( 60030 41650 ) M1M2_PR
+    NEW li1 ( 61870 45050 ) L1M1_PR_MR
+    NEW met1 ( 61870 45050 ) M1M2_PR
+    NEW met1 ( 61870 41650 ) M1M2_PR
+    NEW li1 ( 63250 73950 ) L1M1_PR_MR
+    NEW met1 ( 62330 73950 ) M1M2_PR
+    NEW li1 ( 61870 77690 ) L1M1_PR_MR
+    NEW met1 ( 61870 77690 ) M1M2_PR
+    NEW met1 ( 61870 45050 ) RECT ( -355 -70 0 70 )
+    NEW met1 ( 61870 41650 ) RECT ( -595 -70 0 70 )
+    NEW met1 ( 61870 77690 ) RECT ( -355 -70 0 70 )
 + USE SIGNAL ;
-- gfpga_pad_GPIO_PAD[0] ( PIN gfpga_pad_GPIO_PAD[0] ) ( ANTENNA__19__A DIODE ) ( logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer Z ) ( _19_ A ) 
-  + ROUTED met3 ( 2300 12580 0 ) ( 3220 12580 )
-    NEW met3 ( 3220 11900 ) ( 3220 12580 )
-    NEW met2 ( 62330 11900 ) ( 62330 14790 )
-    NEW met1 ( 62330 14790 ) ( 65090 14790 )
-    NEW met1 ( 62330 11390 ) ( 65090 11390 )
-    NEW met2 ( 62330 11390 ) ( 62330 11900 )
-    NEW met3 ( 3220 11900 ) ( 62330 11900 )
-    NEW li1 ( 62330 14790 ) L1M1_PR_MR
-    NEW met1 ( 62330 14790 ) M1M2_PR
-    NEW met2 ( 62330 11900 ) via2_FR
-    NEW li1 ( 65090 14790 ) L1M1_PR_MR
-    NEW li1 ( 65090 11390 ) L1M1_PR_MR
-    NEW met1 ( 62330 11390 ) M1M2_PR
-    NEW met1 ( 62330 14790 ) RECT ( -355 -70 0 70 )
+- prog_clk ( PIN prog_clk ) ( ANTENNA_logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_scs8hd_dfxbp_1_mem.scs8hd_dfxbp_1_0__CLK DIODE ) ( logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_scs8hd_dfxbp_1_mem.scs8hd_dfxbp_1_0_ CLK ) 
+  + ROUTED met2 ( 14030 96390 ) ( 14030 100300 )
+    NEW met2 ( 14030 94690 ) ( 14030 96390 )
+    NEW met1 ( 13570 96390 ) ( 14030 96390 )
+    NEW met3 ( 2300 100300 0 ) ( 14030 100300 )
+    NEW li1 ( 13570 96390 ) L1M1_PR_MR
+    NEW met1 ( 14030 96390 ) M1M2_PR
+    NEW met2 ( 14030 100300 ) via2_FR
+    NEW li1 ( 14030 94690 ) L1M1_PR_MR
+    NEW met1 ( 14030 94690 ) M1M2_PR
+    NEW met1 ( 14030 94690 ) RECT ( 0 -70 355 70 )
 + USE SIGNAL ;
-- gfpga_pad_GPIO_PAD[1] ( PIN gfpga_pad_GPIO_PAD[1] ) ( ANTENNA__20__A DIODE ) ( logical_tile_io_mode_io__1.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer Z ) ( _20_ A ) 
-  + ROUTED met3 ( 2300 37060 0 ) ( 20470 37060 )
-    NEW met2 ( 20470 25500 ) ( 20470 37060 )
-    NEW met2 ( 62330 25500 ) ( 62330 25670 )
-    NEW met1 ( 62330 25670 ) ( 65090 25670 )
-    NEW met1 ( 62330 21250 ) ( 64170 21250 )
-    NEW met2 ( 62330 21250 ) ( 62330 25500 )
-    NEW met3 ( 20470 25500 ) ( 62330 25500 )
-    NEW met2 ( 20470 25500 ) via2_FR
-    NEW met2 ( 20470 37060 ) via2_FR
-    NEW li1 ( 62330 25670 ) L1M1_PR_MR
-    NEW met1 ( 62330 25670 ) M1M2_PR
-    NEW met2 ( 62330 25500 ) via2_FR
-    NEW li1 ( 65090 25670 ) L1M1_PR_MR
-    NEW li1 ( 64170 21250 ) L1M1_PR_MR
-    NEW met1 ( 62330 21250 ) M1M2_PR
-    NEW met1 ( 62330 25670 ) RECT ( -355 -70 0 70 )
+- right_width_0_height_0__pin_0_ ( PIN right_width_0_height_0__pin_0_ ) ( ANTENNA__0__A DIODE ) ( _0_ A ) 
+  + ROUTED met3 ( 61870 20060 ) ( 77740 20060 0 )
+    NEW met1 ( 62330 85510 ) ( 65090 85510 )
+    NEW met3 ( 61870 41140 ) ( 63710 41140 )
+    NEW met2 ( 63710 41140 ) ( 63710 79390 )
+    NEW met1 ( 62330 79390 ) ( 63710 79390 )
+    NEW met2 ( 61870 20060 ) ( 61870 41140 )
+    NEW met2 ( 62330 79390 ) ( 62330 85510 )
+    NEW met2 ( 61870 20060 ) via2_FR
+    NEW li1 ( 62330 85510 ) L1M1_PR_MR
+    NEW li1 ( 65090 85510 ) L1M1_PR_MR
+    NEW met1 ( 62330 85510 ) M1M2_PR
+    NEW met2 ( 61870 41140 ) via2_FR
+    NEW met2 ( 63710 41140 ) via2_FR
+    NEW met1 ( 63710 79390 ) M1M2_PR
+    NEW met1 ( 62330 79390 ) M1M2_PR
+    NEW met1 ( 62330 85510 ) RECT ( -595 -70 0 70 )
 + USE SIGNAL ;
-- gfpga_pad_GPIO_PAD[2] ( PIN gfpga_pad_GPIO_PAD[2] ) ( ANTENNA__21__A DIODE ) ( logical_tile_io_mode_io__2.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer Z ) ( _21_ A ) 
-  + ROUTED met3 ( 2300 62220 0 ) ( 17250 62220 )
-    NEW met3 ( 17250 62220 ) ( 17250 63580 )
-    NEW met2 ( 65550 50490 ) ( 65550 63580 )
-    NEW met2 ( 65550 48450 ) ( 65550 50490 )
-    NEW met1 ( 65550 48450 ) ( 66930 48450 )
-    NEW met3 ( 17250 63580 ) ( 65550 63580 )
-    NEW li1 ( 65550 50490 ) L1M1_PR_MR
-    NEW met1 ( 65550 50490 ) M1M2_PR
-    NEW met2 ( 65550 63580 ) via2_FR
-    NEW li1 ( 65550 48450 ) L1M1_PR_MR
-    NEW met1 ( 65550 48450 ) M1M2_PR
-    NEW li1 ( 66930 48450 ) L1M1_PR_MR
-    NEW met1 ( 65550 50490 ) RECT ( -355 -70 0 70 )
-    NEW met1 ( 65550 48450 ) RECT ( -355 -70 0 70 )
-+ USE SIGNAL ;
-- gfpga_pad_GPIO_PAD[3] ( PIN gfpga_pad_GPIO_PAD[3] ) ( ANTENNA__22__A DIODE ) ( logical_tile_io_mode_io__3.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer Z ) ( _22_ A ) 
-  + ROUTED met3 ( 2300 87380 0 ) ( 17250 87380 )
-    NEW met2 ( 17250 83300 ) ( 17250 87380 )
-    NEW met3 ( 17250 83300 ) ( 62790 83300 )
-    NEW met1 ( 62330 74630 ) ( 62790 74630 )
-    NEW met1 ( 62790 74630 ) ( 65090 74630 )
-    NEW met2 ( 64170 70210 ) ( 64170 74630 )
-    NEW met2 ( 62790 74630 ) ( 62790 83300 )
-    NEW met2 ( 17250 87380 ) via2_FR
-    NEW met2 ( 17250 83300 ) via2_FR
-    NEW met2 ( 62790 83300 ) via2_FR
-    NEW li1 ( 62330 74630 ) L1M1_PR_MR
-    NEW met1 ( 62790 74630 ) M1M2_PR
-    NEW li1 ( 65090 74630 ) L1M1_PR_MR
-    NEW li1 ( 64170 70210 ) L1M1_PR_MR
-    NEW met1 ( 64170 70210 ) M1M2_PR
-    NEW met1 ( 64170 74630 ) M1M2_PR
-    NEW met1 ( 64170 70210 ) RECT ( -355 -70 0 70 )
-    NEW met1 ( 64170 74630 ) RECT ( -595 -70 0 70 )
-+ USE SIGNAL ;
-- gfpga_pad_GPIO_PAD[4] ( PIN gfpga_pad_GPIO_PAD[4] ) ( ANTENNA__23__A DIODE ) ( logical_tile_io_mode_io__4.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer Z ) ( _23_ A ) 
-  + ROUTED met3 ( 2300 112540 0 ) ( 3220 112540 )
-    NEW met3 ( 3220 110500 ) ( 3220 112540 )
-    NEW met1 ( 62330 101830 ) ( 62790 101830 )
-    NEW met2 ( 62790 101830 ) ( 62790 110500 )
-    NEW met1 ( 62790 101830 ) ( 65090 101830 )
-    NEW met2 ( 65090 94690 ) ( 65090 101830 )
-    NEW met3 ( 3220 110500 ) ( 62790 110500 )
-    NEW li1 ( 62330 101830 ) L1M1_PR_MR
-    NEW met1 ( 62790 101830 ) M1M2_PR
-    NEW met2 ( 62790 110500 ) via2_FR
-    NEW li1 ( 65090 101830 ) L1M1_PR_MR
-    NEW li1 ( 65090 94690 ) L1M1_PR_MR
-    NEW met1 ( 65090 94690 ) M1M2_PR
-    NEW met1 ( 65090 101830 ) M1M2_PR
-    NEW met1 ( 65090 94690 ) RECT ( -355 -70 0 70 )
-    NEW met1 ( 65090 101830 ) RECT ( -595 -70 0 70 )
-+ USE SIGNAL ;
-- gfpga_pad_GPIO_PAD[5] ( PIN gfpga_pad_GPIO_PAD[5] ) ( ANTENNA__16__A DIODE ) ( logical_tile_io_mode_io__5.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer Z ) ( _16_ A ) 
-  + ROUTED met3 ( 2300 137020 0 ) ( 20470 137020 )
-    NEW met2 ( 20470 123420 ) ( 20470 137020 )
-    NEW met2 ( 60950 123250 ) ( 60950 123420 )
-    NEW met1 ( 62330 123250 ) ( 62330 123590 )
-    NEW met1 ( 60950 123250 ) ( 62330 123250 )
-    NEW met1 ( 60950 119170 ) ( 64170 119170 )
-    NEW met2 ( 60950 119170 ) ( 60950 123250 )
-    NEW met3 ( 20470 123420 ) ( 60950 123420 )
-    NEW met2 ( 20470 123420 ) via2_FR
-    NEW met2 ( 20470 137020 ) via2_FR
-    NEW li1 ( 60950 123250 ) L1M1_PR_MR
-    NEW met1 ( 60950 123250 ) M1M2_PR
-    NEW met2 ( 60950 123420 ) via2_FR
-    NEW li1 ( 62330 123590 ) L1M1_PR_MR
-    NEW li1 ( 64170 119170 ) L1M1_PR_MR
-    NEW met1 ( 60950 119170 ) M1M2_PR
-    NEW met1 ( 60950 123250 ) RECT ( -355 -70 0 70 )
-+ USE SIGNAL ;
-- gfpga_pad_GPIO_PAD[6] ( PIN gfpga_pad_GPIO_PAD[6] ) ( ANTENNA__17__A DIODE ) ( logical_tile_io_mode_io__6.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer Z ) ( _17_ A ) 
-  + ROUTED met3 ( 2300 162180 0 ) ( 3220 162180 )
-    NEW met3 ( 3220 158780 ) ( 3220 162180 )
-    NEW met1 ( 62330 150790 ) ( 62790 150790 )
-    NEW met2 ( 62790 150790 ) ( 62790 151980 )
-    NEW met2 ( 62330 151980 ) ( 62790 151980 )
-    NEW met2 ( 62330 151980 ) ( 62330 158780 )
-    NEW met1 ( 62790 150790 ) ( 65090 150790 )
-    NEW met1 ( 62790 140930 ) ( 64170 140930 )
-    NEW met2 ( 62790 140930 ) ( 62790 150790 )
-    NEW met3 ( 3220 158780 ) ( 62330 158780 )
-    NEW li1 ( 62330 150790 ) L1M1_PR_MR
-    NEW met1 ( 62790 150790 ) M1M2_PR
-    NEW met2 ( 62330 158780 ) via2_FR
-    NEW li1 ( 65090 150790 ) L1M1_PR_MR
-    NEW li1 ( 64170 140930 ) L1M1_PR_MR
-    NEW met1 ( 62790 140930 ) M1M2_PR
-+ USE SIGNAL ;
-- gfpga_pad_GPIO_PAD[7] ( PIN gfpga_pad_GPIO_PAD[7] ) ( ANTENNA__18__A DIODE ) ( logical_tile_io_mode_io__7.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer Z ) ( _18_ A ) 
-  + ROUTED met3 ( 2300 187340 0 ) ( 17250 187340 )
-    NEW met2 ( 17250 186490 ) ( 17250 187340 )
-    NEW met1 ( 17250 186490 ) ( 62790 186490 )
-    NEW met1 ( 62790 158610 ) ( 63250 158610 )
-    NEW met1 ( 62330 156230 ) ( 62790 156230 )
-    NEW met2 ( 62790 156230 ) ( 62790 158610 )
-    NEW met1 ( 62790 156230 ) ( 65090 156230 )
-    NEW met2 ( 62790 158610 ) ( 62790 186490 )
-    NEW met2 ( 17250 187340 ) via2_FR
-    NEW met1 ( 17250 186490 ) M1M2_PR
-    NEW met1 ( 62790 186490 ) M1M2_PR
-    NEW li1 ( 63250 158610 ) L1M1_PR_MR
-    NEW met1 ( 62790 158610 ) M1M2_PR
-    NEW li1 ( 62330 156230 ) L1M1_PR_MR
-    NEW met1 ( 62790 156230 ) M1M2_PR
-    NEW li1 ( 65090 156230 ) L1M1_PR_MR
-+ USE SIGNAL ;
-- right_width_0_height_0__pin_0_ ( PIN right_width_0_height_0__pin_0_ ) ( ANTENNA_logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer_A DIODE ) ( logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer A ) 
-  + ROUTED met2 ( 63250 6460 ) ( 63250 12070 )
-    NEW met3 ( 63250 6460 ) ( 77740 6460 0 )
-    NEW met1 ( 62330 12070 ) ( 63250 12070 )
-    NEW li1 ( 63250 12070 ) L1M1_PR_MR
-    NEW met1 ( 63250 12070 ) M1M2_PR
-    NEW met2 ( 63250 6460 ) via2_FR
-    NEW li1 ( 62330 12070 ) L1M1_PR_MR
-    NEW met1 ( 63250 12070 ) RECT ( -355 -70 0 70 )
-+ USE SIGNAL ;
-- right_width_0_height_0__pin_10_ ( PIN right_width_0_height_0__pin_10_ ) ( ANTENNA_logical_tile_io_mode_io__5.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer_A DIODE ) ( logical_tile_io_mode_io__5.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer A ) 
-  + ROUTED met1 ( 61870 118490 ) ( 62330 118490 )
-    NEW met2 ( 61870 118490 ) ( 61870 119340 )
-    NEW met2 ( 61410 119340 ) ( 61870 119340 )
-    NEW met2 ( 61410 119340 ) ( 61410 129540 )
-    NEW met3 ( 61410 129540 ) ( 74060 129540 )
-    NEW met3 ( 74060 129540 ) ( 74060 130900 )
-    NEW met3 ( 74060 130900 ) ( 77740 130900 0 )
-    NEW met1 ( 61410 118490 ) ( 61870 118490 )
-    NEW li1 ( 62330 118490 ) L1M1_PR_MR
-    NEW met1 ( 61870 118490 ) M1M2_PR
-    NEW met2 ( 61410 129540 ) via2_FR
-    NEW li1 ( 61410 118490 ) L1M1_PR_MR
-+ USE SIGNAL ;
-- right_width_0_height_0__pin_11_ ( PIN right_width_0_height_0__pin_11_ ) ( _16_ X ) 
-  + ROUTED met1 ( 62330 122910 ) ( 63250 122910 )
-    NEW met2 ( 62330 122910 ) ( 62330 123420 )
-    NEW met2 ( 61870 123420 ) ( 62330 123420 )
-    NEW met3 ( 61870 143820 ) ( 77740 143820 0 )
-    NEW met2 ( 61870 123420 ) ( 61870 143820 )
-    NEW li1 ( 63250 122910 ) L1M1_PR_MR
-    NEW met1 ( 62330 122910 ) M1M2_PR
-    NEW met2 ( 61870 143820 ) via2_FR
-+ USE SIGNAL ;
-- right_width_0_height_0__pin_12_ ( PIN right_width_0_height_0__pin_12_ ) ( ANTENNA_logical_tile_io_mode_io__6.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer_A DIODE ) ( logical_tile_io_mode_io__6.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer A ) 
-  + ROUTED met2 ( 61410 140250 ) ( 61410 156060 )
-    NEW met3 ( 61410 156060 ) ( 77740 156060 0 )
-    NEW met1 ( 61410 140250 ) ( 62330 140250 )
-    NEW li1 ( 61410 140250 ) L1M1_PR_MR
-    NEW met1 ( 61410 140250 ) M1M2_PR
-    NEW met2 ( 61410 156060 ) via2_FR
-    NEW li1 ( 62330 140250 ) L1M1_PR_MR
-    NEW met1 ( 61410 140250 ) RECT ( -355 -70 0 70 )
-+ USE SIGNAL ;
-- right_width_0_height_0__pin_13_ ( PIN right_width_0_height_0__pin_13_ ) ( _17_ X ) 
-  + ROUTED met1 ( 62330 151470 ) ( 63250 151470 )
-    NEW met2 ( 62330 151300 ) ( 62330 151470 )
-    NEW met2 ( 61870 151300 ) ( 62330 151300 )
-    NEW met2 ( 61870 151300 ) ( 61870 167620 )
-    NEW met3 ( 61870 167620 ) ( 74060 167620 )
-    NEW met3 ( 74060 167620 ) ( 74060 168300 )
-    NEW met3 ( 74060 168300 ) ( 77740 168300 0 )
-    NEW li1 ( 63250 151470 ) L1M1_PR_MR
-    NEW met1 ( 62330 151470 ) M1M2_PR
-    NEW met2 ( 61870 167620 ) via2_FR
-+ USE SIGNAL ;
-- right_width_0_height_0__pin_14_ ( PIN right_width_0_height_0__pin_14_ ) ( ANTENNA_logical_tile_io_mode_io__7.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer_A DIODE ) ( logical_tile_io_mode_io__7.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer A ) 
-  + ROUTED met3 ( 61410 181220 ) ( 77740 181220 0 )
-    NEW met2 ( 61410 157250 ) ( 61410 159290 )
-    NEW met2 ( 61410 159290 ) ( 61410 181220 )
-    NEW met2 ( 61410 181220 ) via2_FR
-    NEW li1 ( 61410 159290 ) L1M1_PR_MR
-    NEW met1 ( 61410 159290 ) M1M2_PR
-    NEW li1 ( 61410 157250 ) L1M1_PR_MR
-    NEW met1 ( 61410 157250 ) M1M2_PR
-    NEW met1 ( 61410 159290 ) RECT ( -355 -70 0 70 )
-    NEW met1 ( 61410 157250 ) RECT ( -355 -70 0 70 )
-+ USE SIGNAL ;
-- right_width_0_height_0__pin_15_ ( PIN right_width_0_height_0__pin_15_ ) ( _18_ X ) 
-  + ROUTED met3 ( 63250 193460 ) ( 77740 193460 0 )
-    NEW met2 ( 63250 157250 ) ( 63250 193460 )
-    NEW met2 ( 63250 193460 ) via2_FR
-    NEW li1 ( 63250 157250 ) L1M1_PR_MR
-    NEW met1 ( 63250 157250 ) M1M2_PR
-    NEW met1 ( 63250 157250 ) RECT ( -355 -70 0 70 )
-+ USE SIGNAL ;
-- right_width_0_height_0__pin_1_ ( PIN right_width_0_height_0__pin_1_ ) ( _19_ X ) 
-  + ROUTED met2 ( 63250 15810 ) ( 63250 18700 )
-    NEW met3 ( 63250 18700 ) ( 77740 18700 0 )
-    NEW li1 ( 63250 15810 ) L1M1_PR_MR
-    NEW met1 ( 63250 15810 ) M1M2_PR
-    NEW met2 ( 63250 18700 ) via2_FR
-    NEW met1 ( 63250 15810 ) RECT ( -355 -70 0 70 )
-+ USE SIGNAL ;
-- right_width_0_height_0__pin_2_ ( PIN right_width_0_height_0__pin_2_ ) ( ANTENNA_logical_tile_io_mode_io__1.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer_A DIODE ) ( logical_tile_io_mode_io__1.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer A ) 
-  + ROUTED met2 ( 61410 20570 ) ( 61410 30940 )
-    NEW met3 ( 61410 30940 ) ( 77740 30940 0 )
-    NEW met1 ( 61410 20230 ) ( 62330 20230 )
-    NEW met1 ( 61410 20230 ) ( 61410 20570 )
-    NEW li1 ( 61410 20570 ) L1M1_PR_MR
-    NEW met1 ( 61410 20570 ) M1M2_PR
-    NEW met2 ( 61410 30940 ) via2_FR
-    NEW li1 ( 62330 20230 ) L1M1_PR_MR
-    NEW met1 ( 61410 20570 ) RECT ( -355 -70 0 70 )
-+ USE SIGNAL ;
-- right_width_0_height_0__pin_3_ ( PIN right_width_0_height_0__pin_3_ ) ( _20_ X ) 
-  + ROUTED met1 ( 62330 26690 ) ( 63250 26690 )
-    NEW met2 ( 62330 26690 ) ( 62330 26860 )
-    NEW met2 ( 61870 26860 ) ( 62330 26860 )
-    NEW met3 ( 61870 42500 ) ( 74060 42500 )
-    NEW met3 ( 74060 42500 ) ( 74060 43860 )
-    NEW met3 ( 74060 43860 ) ( 77740 43860 0 )
-    NEW met2 ( 61870 26860 ) ( 61870 42500 )
-    NEW li1 ( 63250 26690 ) L1M1_PR_MR
-    NEW met1 ( 62330 26690 ) M1M2_PR
-    NEW met2 ( 61870 42500 ) via2_FR
-+ USE SIGNAL ;
-- right_width_0_height_0__pin_4_ ( PIN right_width_0_height_0__pin_4_ ) ( ANTENNA_logical_tile_io_mode_io__2.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer_A DIODE ) ( logical_tile_io_mode_io__2.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer A ) 
-  + ROUTED met2 ( 61410 47770 ) ( 61410 56100 )
-    NEW met3 ( 61410 56100 ) ( 77740 56100 0 )
-    NEW met1 ( 61410 47770 ) ( 62330 47770 )
-    NEW li1 ( 61410 47770 ) L1M1_PR_MR
-    NEW met1 ( 61410 47770 ) M1M2_PR
-    NEW met2 ( 61410 56100 ) via2_FR
-    NEW li1 ( 62330 47770 ) L1M1_PR_MR
-    NEW met1 ( 61410 47770 ) RECT ( -355 -70 0 70 )
-+ USE SIGNAL ;
-- right_width_0_height_0__pin_5_ ( PIN right_width_0_height_0__pin_5_ ) ( _21_ X ) 
-  + ROUTED met1 ( 62330 51170 ) ( 66470 51170 )
-    NEW met2 ( 62330 51170 ) ( 62330 51340 )
-    NEW met2 ( 61870 51340 ) ( 62330 51340 )
-    NEW met2 ( 61870 51340 ) ( 61870 68340 )
-    NEW met3 ( 61870 68340 ) ( 77740 68340 0 )
-    NEW li1 ( 66470 51170 ) L1M1_PR_MR
-    NEW met1 ( 62330 51170 ) M1M2_PR
-    NEW met2 ( 61870 68340 ) via2_FR
-+ USE SIGNAL ;
-- right_width_0_height_0__pin_6_ ( PIN right_width_0_height_0__pin_6_ ) ( ANTENNA_logical_tile_io_mode_io__3.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer_A DIODE ) ( logical_tile_io_mode_io__3.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer A ) 
-  + ROUTED met2 ( 61410 70210 ) ( 61410 80580 )
-    NEW met3 ( 61410 80580 ) ( 74060 80580 )
-    NEW met3 ( 74060 80580 ) ( 74060 81260 )
-    NEW met3 ( 74060 81260 ) ( 77740 81260 0 )
-    NEW met1 ( 61870 69190 ) ( 62330 69190 )
-    NEW met2 ( 61870 69190 ) ( 61870 70380 )
-    NEW met2 ( 61410 70380 ) ( 61870 70380 )
-    NEW li1 ( 61410 70210 ) L1M1_PR_MR
-    NEW met1 ( 61410 70210 ) M1M2_PR
-    NEW met2 ( 61410 80580 ) via2_FR
-    NEW li1 ( 62330 69190 ) L1M1_PR_MR
-    NEW met1 ( 61870 69190 ) M1M2_PR
-    NEW met1 ( 61410 70210 ) RECT ( -355 -70 0 70 )
-+ USE SIGNAL ;
-- right_width_0_height_0__pin_7_ ( PIN right_width_0_height_0__pin_7_ ) ( _22_ X ) 
-  + ROUTED met3 ( 61870 93500 ) ( 77740 93500 0 )
-    NEW met1 ( 62330 75650 ) ( 63250 75650 )
-    NEW met2 ( 62330 75650 ) ( 62330 75820 )
-    NEW met2 ( 61870 75820 ) ( 62330 75820 )
-    NEW met2 ( 61870 75820 ) ( 61870 93500 )
-    NEW met2 ( 61870 93500 ) via2_FR
-    NEW li1 ( 63250 75650 ) L1M1_PR_MR
-    NEW met1 ( 62330 75650 ) M1M2_PR
-+ USE SIGNAL ;
-- right_width_0_height_0__pin_8_ ( PIN right_width_0_height_0__pin_8_ ) ( ANTENNA_logical_tile_io_mode_io__4.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer_A DIODE ) ( logical_tile_io_mode_io__4.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer A ) 
-  + ROUTED met1 ( 60950 94010 ) ( 61870 94010 )
-    NEW met2 ( 60950 94010 ) ( 60950 106420 )
-    NEW met3 ( 60950 106420 ) ( 77740 106420 0 )
-    NEW met1 ( 60950 91630 ) ( 63250 91630 )
-    NEW met2 ( 60950 91630 ) ( 60950 94010 )
-    NEW li1 ( 61870 94010 ) L1M1_PR_MR
-    NEW met1 ( 60950 94010 ) M1M2_PR
-    NEW met2 ( 60950 106420 ) via2_FR
-    NEW li1 ( 63250 91630 ) L1M1_PR_MR
-    NEW met1 ( 60950 91630 ) M1M2_PR
-+ USE SIGNAL ;
-- right_width_0_height_0__pin_9_ ( PIN right_width_0_height_0__pin_9_ ) ( _23_ X ) 
-  + ROUTED met1 ( 62330 102850 ) ( 63250 102850 )
-    NEW met2 ( 62330 102850 ) ( 62330 103020 )
-    NEW met2 ( 61410 103020 ) ( 62330 103020 )
-    NEW met2 ( 61410 103020 ) ( 61410 118660 )
-    NEW met3 ( 61410 118660 ) ( 77740 118660 0 )
-    NEW li1 ( 63250 102850 ) L1M1_PR_MR
-    NEW met1 ( 62330 102850 ) M1M2_PR
-    NEW met2 ( 61410 118660 ) via2_FR
-+ USE SIGNAL ;
-- _00_ ( ANTENNA__05__A DIODE ) ( ANTENNA__07__A DIODE ) ( ANTENNA__12__C DIODE ) ( ANTENNA__13__C DIODE ) 
-( ANTENNA__14__C DIODE ) ( ANTENNA__15__C DIODE ) ( _15_ C ) ( _14_ C ) ( _13_ C ) 
-( _12_ C ) ( _07_ A ) ( _05_ A ) ( _04_ X ) 
-  + ROUTED met1 ( 46690 29410 ) ( 50370 29410 )
-    NEW met2 ( 50370 25670 ) ( 50370 29410 )
-    NEW met1 ( 49450 23970 ) ( 50370 23970 )
-    NEW met2 ( 50370 23970 ) ( 50370 25670 )
-    NEW met1 ( 46230 23970 ) ( 49450 23970 )
-    NEW met2 ( 50370 20230 ) ( 50370 23970 )
-    NEW met1 ( 53130 55250 ) ( 53130 55930 )
-    NEW met1 ( 50370 55250 ) ( 53130 55250 )
-    NEW met2 ( 50370 52190 ) ( 50370 55250 )
-    NEW met1 ( 48990 57630 ) ( 49910 57630 )
-    NEW met2 ( 49910 57460 ) ( 49910 57630 )
-    NEW met2 ( 49910 57460 ) ( 50370 57460 )
-    NEW met2 ( 50370 55250 ) ( 50370 57460 )
-    NEW met2 ( 53130 55930 ) ( 53130 61370 )
-    NEW met2 ( 53590 64940 ) ( 53590 79390 )
-    NEW met2 ( 53130 64940 ) ( 53590 64940 )
-    NEW met2 ( 53130 61370 ) ( 53130 64940 )
-    NEW met1 ( 46690 80410 ) ( 49450 80410 )
-    NEW met1 ( 49450 80070 ) ( 49450 80410 )
-    NEW met1 ( 49450 80070 ) ( 53590 80070 )
-    NEW met1 ( 53590 79390 ) ( 53590 80070 )
-    NEW met2 ( 48530 80410 ) ( 48530 82790 )
-    NEW met1 ( 42550 80410 ) ( 46690 80410 )
-    NEW met2 ( 50370 29410 ) ( 50370 52190 )
-    NEW li1 ( 46690 29410 ) L1M1_PR_MR
-    NEW met1 ( 50370 29410 ) M1M2_PR
-    NEW li1 ( 50370 25670 ) L1M1_PR_MR
-    NEW met1 ( 50370 25670 ) M1M2_PR
-    NEW li1 ( 49450 23970 ) L1M1_PR_MR
-    NEW met1 ( 50370 23970 ) M1M2_PR
-    NEW li1 ( 46230 23970 ) L1M1_PR_MR
-    NEW li1 ( 50370 20230 ) L1M1_PR_MR
-    NEW met1 ( 50370 20230 ) M1M2_PR
-    NEW li1 ( 50370 52190 ) L1M1_PR_MR
-    NEW met1 ( 50370 52190 ) M1M2_PR
-    NEW li1 ( 53130 55930 ) L1M1_PR_MR
-    NEW met1 ( 50370 55250 ) M1M2_PR
-    NEW li1 ( 48990 57630 ) L1M1_PR_MR
-    NEW met1 ( 49910 57630 ) M1M2_PR
-    NEW li1 ( 53130 61370 ) L1M1_PR_MR
-    NEW met1 ( 53130 61370 ) M1M2_PR
-    NEW met1 ( 53130 55930 ) M1M2_PR
-    NEW li1 ( 53590 79390 ) L1M1_PR_MR
-    NEW met1 ( 53590 79390 ) M1M2_PR
-    NEW li1 ( 46690 80410 ) L1M1_PR_MR
-    NEW li1 ( 48530 82790 ) L1M1_PR_MR
-    NEW met1 ( 48530 82790 ) M1M2_PR
-    NEW met1 ( 48530 80410 ) M1M2_PR
-    NEW li1 ( 42550 80410 ) L1M1_PR_MR
-    NEW met1 ( 50370 25670 ) RECT ( -355 -70 0 70 )
-    NEW met1 ( 50370 20230 ) RECT ( -355 -70 0 70 )
-    NEW met1 ( 50370 52190 ) RECT ( -355 -70 0 70 )
-    NEW met1 ( 53130 61370 ) RECT ( -355 -70 0 70 )
-    NEW met1 ( 53130 55930 ) RECT ( 0 -70 595 70 )
-    NEW met1 ( 53590 79390 ) RECT ( -355 -70 0 70 )
-    NEW met1 ( 48530 82790 ) RECT ( -355 -70 0 70 )
-    NEW met1 ( 48530 80410 ) RECT ( -595 -70 0 70 )
-+ USE SIGNAL ;
-- _01_ ( ANTENNA__07__C DIODE ) ( ANTENNA__10__A DIODE ) ( ANTENNA__12__A DIODE ) ( ANTENNA__14__A DIODE ) 
-( _14_ A ) ( _12_ A ) ( _10_ A ) ( _07_ C ) ( _06_ Y ) 
-  + ROUTED met1 ( 43930 25670 ) ( 46230 25670 )
-    NEW met2 ( 43930 25670 ) ( 43930 26690 )
-    NEW met2 ( 48990 85170 ) ( 48990 87550 )
-    NEW met1 ( 48990 87550 ) ( 49450 87550 )
-    NEW met1 ( 48530 83810 ) ( 49910 83810 )
-    NEW met2 ( 48530 83810 ) ( 48530 85340 )
-    NEW met2 ( 48530 85340 ) ( 48990 85340 )
-    NEW met1 ( 49910 83810 ) ( 50830 83810 )
-    NEW met1 ( 50830 83810 ) ( 54970 83810 )
-    NEW met1 ( 43930 57970 ) ( 50370 57970 )
-    NEW met2 ( 49450 57970 ) ( 49450 61370 )
-    NEW met1 ( 43010 66470 ) ( 43930 66470 )
-    NEW met2 ( 43930 57970 ) ( 43930 66470 )
-    NEW met2 ( 49450 61540 ) ( 50830 61540 )
-    NEW met2 ( 49450 61370 ) ( 49450 61540 )
-    NEW met1 ( 54970 81090 ) ( 55430 81090 )
-    NEW met2 ( 43930 26690 ) ( 43930 57970 )
-    NEW met2 ( 50830 61540 ) ( 50830 83810 )
-    NEW met2 ( 54970 81090 ) ( 54970 83810 )
-    NEW li1 ( 43930 26690 ) L1M1_PR_MR
-    NEW met1 ( 43930 26690 ) M1M2_PR
-    NEW li1 ( 46230 25670 ) L1M1_PR_MR
-    NEW met1 ( 43930 25670 ) M1M2_PR
-    NEW li1 ( 48990 85170 ) L1M1_PR_MR
-    NEW met1 ( 48990 85170 ) M1M2_PR
-    NEW met1 ( 48990 87550 ) M1M2_PR
-    NEW li1 ( 49450 87550 ) L1M1_PR_MR
-    NEW li1 ( 49910 83810 ) L1M1_PR_MR
-    NEW met1 ( 48530 83810 ) M1M2_PR
-    NEW met1 ( 50830 83810 ) M1M2_PR
-    NEW met1 ( 54970 83810 ) M1M2_PR
-    NEW li1 ( 50370 57970 ) L1M1_PR_MR
-    NEW met1 ( 43930 57970 ) M1M2_PR
-    NEW li1 ( 49450 61370 ) L1M1_PR_MR
-    NEW met1 ( 49450 61370 ) M1M2_PR
-    NEW met1 ( 49450 57970 ) M1M2_PR
-    NEW li1 ( 43010 66470 ) L1M1_PR_MR
-    NEW met1 ( 43930 66470 ) M1M2_PR
-    NEW met1 ( 54970 81090 ) M1M2_PR
-    NEW li1 ( 55430 81090 ) L1M1_PR_MR
-    NEW met1 ( 43930 26690 ) RECT ( -355 -70 0 70 )
-    NEW met1 ( 48990 85170 ) RECT ( -355 -70 0 70 )
-    NEW met1 ( 49450 61370 ) RECT ( -355 -70 0 70 )
-    NEW met1 ( 49450 57970 ) RECT ( -595 -70 0 70 )
-+ USE SIGNAL ;
-- _02_ ( ANTENNA__09__D DIODE ) ( ANTENNA__10__D DIODE ) ( ANTENNA__12__D DIODE ) ( ANTENNA__13__D DIODE ) 
-( _13_ D ) ( _12_ D ) ( _10_ D ) ( _09_ D ) ( _08_ Y ) 
-  + ROUTED met1 ( 50830 85170 ) ( 50830 85850 )
-    NEW met1 ( 44850 85850 ) ( 50830 85850 )
-    NEW met1 ( 50830 85170 ) ( 51290 85170 )
-    NEW met1 ( 50830 78370 ) ( 51290 78370 )
-    NEW met1 ( 50370 74290 ) ( 51290 74290 )
-    NEW met2 ( 51290 74290 ) ( 51290 78370 )
-    NEW met1 ( 51290 74290 ) ( 53590 74290 )
-    NEW met2 ( 54510 61370 ) ( 54510 74290 )
-    NEW met1 ( 53590 74290 ) ( 54510 74290 )
-    NEW met1 ( 52670 59330 ) ( 54510 59330 )
-    NEW met2 ( 54510 59330 ) ( 54510 61370 )
-    NEW met2 ( 54510 55930 ) ( 54510 59330 )
-    NEW met1 ( 52670 53890 ) ( 54510 53890 )
-    NEW met2 ( 54510 53890 ) ( 54510 55930 )
-    NEW met2 ( 51290 78370 ) ( 51290 85170 )
-    NEW li1 ( 50830 85170 ) L1M1_PR_MR
-    NEW li1 ( 44850 85850 ) L1M1_PR_MR
-    NEW met1 ( 51290 85170 ) M1M2_PR
-    NEW li1 ( 50830 78370 ) L1M1_PR_MR
-    NEW met1 ( 51290 78370 ) M1M2_PR
-    NEW li1 ( 50370 74290 ) L1M1_PR_MR
-    NEW met1 ( 51290 74290 ) M1M2_PR
-    NEW li1 ( 53590 74290 ) L1M1_PR_MR
-    NEW li1 ( 54510 61370 ) L1M1_PR_MR
-    NEW met1 ( 54510 61370 ) M1M2_PR
-    NEW met1 ( 54510 74290 ) M1M2_PR
-    NEW li1 ( 52670 59330 ) L1M1_PR_MR
-    NEW met1 ( 54510 59330 ) M1M2_PR
-    NEW li1 ( 54510 55930 ) L1M1_PR_MR
-    NEW met1 ( 54510 55930 ) M1M2_PR
-    NEW li1 ( 52670 53890 ) L1M1_PR_MR
-    NEW met1 ( 54510 53890 ) M1M2_PR
-    NEW met1 ( 54510 61370 ) RECT ( -355 -70 0 70 )
-    NEW met1 ( 54510 55930 ) RECT ( -355 -70 0 70 )
-+ USE SIGNAL ;
-- _03_ ( ANTENNA__12__B DIODE ) ( ANTENNA__13__B DIODE ) ( ANTENNA__14__B DIODE ) ( ANTENNA__15__B DIODE ) 
-( _15_ B ) ( _14_ B ) ( _13_ B ) ( _12_ B ) ( _11_ Y ) 
-  + ROUTED met1 ( 48070 25670 ) ( 48530 25670 )
-    NEW met2 ( 48070 20230 ) ( 48070 25670 )
-    NEW met1 ( 43930 23630 ) ( 48070 23630 )
-    NEW met1 ( 43470 20570 ) ( 48070 20570 )
-    NEW met1 ( 48070 20230 ) ( 48070 20570 )
-    NEW met2 ( 42090 23630 ) ( 42090 24990 )
-    NEW met1 ( 42090 23630 ) ( 43930 23630 )
-    NEW met1 ( 47150 52190 ) ( 48070 52190 )
-    NEW met1 ( 47150 57630 ) ( 48070 57630 )
-    NEW met2 ( 48070 52190 ) ( 48070 57630 )
-    NEW met1 ( 50830 55590 ) ( 50830 55930 )
-    NEW met1 ( 48070 55590 ) ( 50830 55590 )
-    NEW met1 ( 50830 61030 ) ( 50830 61370 )
-    NEW met1 ( 48070 61030 ) ( 50830 61030 )
-    NEW met2 ( 48070 57630 ) ( 48070 61030 )
-    NEW met2 ( 48070 25670 ) ( 48070 52190 )
-    NEW li1 ( 48530 25670 ) L1M1_PR_MR
-    NEW met1 ( 48070 25670 ) M1M2_PR
-    NEW li1 ( 48070 20230 ) L1M1_PR_MR
-    NEW met1 ( 48070 20230 ) M1M2_PR
-    NEW li1 ( 43930 23630 ) L1M1_PR_MR
-    NEW met1 ( 48070 23630 ) M1M2_PR
-    NEW li1 ( 43470 20570 ) L1M1_PR_MR
-    NEW li1 ( 42090 24990 ) L1M1_PR_MR
-    NEW met1 ( 42090 24990 ) M1M2_PR
-    NEW met1 ( 42090 23630 ) M1M2_PR
-    NEW li1 ( 47150 52190 ) L1M1_PR_MR
-    NEW met1 ( 48070 52190 ) M1M2_PR
-    NEW li1 ( 47150 57630 ) L1M1_PR_MR
-    NEW met1 ( 48070 57630 ) M1M2_PR
-    NEW li1 ( 50830 55930 ) L1M1_PR_MR
-    NEW met1 ( 48070 55590 ) M1M2_PR
-    NEW li1 ( 50830 61370 ) L1M1_PR_MR
-    NEW met1 ( 48070 61030 ) M1M2_PR
-    NEW met1 ( 48070 20230 ) RECT ( -355 -70 0 70 )
-    NEW met2 ( 48070 23630 ) RECT ( -70 -485 70 0 )
-    NEW met1 ( 42090 24990 ) RECT ( -355 -70 0 70 )
-    NEW met2 ( 48070 55590 ) RECT ( -70 -485 70 0 )
-+ USE SIGNAL ;
-- logical_tile_io_mode_io__0.enable ( ANTENNA_logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch_SLEEPB DIODE ) ( logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch SLEEPB ) ( _15_ Y ) 
-  + ROUTED met1 ( 53130 17850 ) ( 55890 17850 )
-    NEW met2 ( 53130 17850 ) ( 53130 19890 )
-    NEW met1 ( 56810 15810 ) ( 57730 15810 )
-    NEW met2 ( 56810 15810 ) ( 56810 17850 )
-    NEW met1 ( 55890 17850 ) ( 56810 17850 )
-    NEW li1 ( 55890 17850 ) L1M1_PR_MR
-    NEW met1 ( 53130 17850 ) M1M2_PR
-    NEW li1 ( 53130 19890 ) L1M1_PR_MR
-    NEW met1 ( 53130 19890 ) M1M2_PR
-    NEW li1 ( 57730 15810 ) L1M1_PR_MR
-    NEW met1 ( 56810 15810 ) M1M2_PR
-    NEW met1 ( 56810 17850 ) M1M2_PR
-    NEW met1 ( 53130 19890 ) RECT ( -355 -70 0 70 )
-+ USE SIGNAL ;
-- logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_0_.DIR ( ANTENNA_logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer_TEB DIODE ) ( logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch Q ) ( logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer TEB ) 
-  + ROUTED met2 ( 60490 13090 ) ( 60490 16830 )
-    NEW met1 ( 64170 12410 ) ( 64170 13090 )
-    NEW met1 ( 60490 13090 ) ( 64170 13090 )
-    NEW li1 ( 60490 13090 ) L1M1_PR_MR
-    NEW met1 ( 60490 13090 ) M1M2_PR
-    NEW li1 ( 60490 16830 ) L1M1_PR_MR
-    NEW met1 ( 60490 16830 ) M1M2_PR
-    NEW li1 ( 64170 12410 ) L1M1_PR_MR
-    NEW met1 ( 60490 13090 ) RECT ( -355 -70 0 70 )
-    NEW met1 ( 60490 16830 ) RECT ( -355 -70 0 70 )
-+ USE SIGNAL ;
-- logical_tile_io_mode_io__1.enable ( ANTENNA_logical_tile_io_mode_io__1.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch_SLEEPB DIODE ) ( logical_tile_io_mode_io__1.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch SLEEPB ) ( _14_ Y ) 
-  + ROUTED met1 ( 53590 23290 ) ( 56350 23290 )
-    NEW met2 ( 53590 23290 ) ( 53590 25330 )
-    NEW met1 ( 57270 21250 ) ( 58190 21250 )
-    NEW met2 ( 57270 21250 ) ( 57270 23290 )
-    NEW met1 ( 56350 23290 ) ( 57270 23290 )
-    NEW li1 ( 56350 23290 ) L1M1_PR_MR
-    NEW met1 ( 53590 23290 ) M1M2_PR
-    NEW li1 ( 53590 25330 ) L1M1_PR_MR
-    NEW met1 ( 53590 25330 ) M1M2_PR
-    NEW li1 ( 58190 21250 ) L1M1_PR_MR
-    NEW met1 ( 57270 21250 ) M1M2_PR
-    NEW met1 ( 57270 23290 ) M1M2_PR
-    NEW met1 ( 53590 25330 ) RECT ( -355 -70 0 70 )
-+ USE SIGNAL ;
-- logical_tile_io_mode_io__1.logical_tile_io_mode_physical__iopad_0.GPIO_0_.DIR ( ANTENNA_logical_tile_io_mode_io__1.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer_TEB DIODE ) ( logical_tile_io_mode_io__1.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch Q ) ( logical_tile_io_mode_io__1.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer TEB ) 
-  + ROUTED met1 ( 61870 20570 ) ( 63250 20570 )
-    NEW met1 ( 61870 20570 ) ( 61870 20910 )
-    NEW met1 ( 60950 20910 ) ( 61870 20910 )
-    NEW met2 ( 60950 20910 ) ( 60950 22270 )
-    NEW met2 ( 62790 18530 ) ( 62790 20570 )
-    NEW li1 ( 63250 20570 ) L1M1_PR_MR
-    NEW met1 ( 60950 20910 ) M1M2_PR
-    NEW li1 ( 60950 22270 ) L1M1_PR_MR
-    NEW met1 ( 60950 22270 ) M1M2_PR
-    NEW li1 ( 62790 18530 ) L1M1_PR_MR
-    NEW met1 ( 62790 18530 ) M1M2_PR
-    NEW met1 ( 62790 20570 ) M1M2_PR
-    NEW met1 ( 60950 22270 ) RECT ( -355 -70 0 70 )
-    NEW met1 ( 62790 18530 ) RECT ( -355 -70 0 70 )
-    NEW met1 ( 62790 20570 ) RECT ( -595 -70 0 70 )
-+ USE SIGNAL ;
-- logical_tile_io_mode_io__2.enable ( ANTENNA_logical_tile_io_mode_io__2.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch_SLEEPB DIODE ) ( logical_tile_io_mode_io__2.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch SLEEPB ) ( _13_ Y ) 
-  + ROUTED met1 ( 55890 50490 ) ( 56810 50490 )
-    NEW met2 ( 55890 50490 ) ( 55890 55590 )
-    NEW met1 ( 55890 48450 ) ( 58650 48450 )
-    NEW met2 ( 55890 48450 ) ( 55890 50490 )
-    NEW li1 ( 56810 50490 ) L1M1_PR_MR
-    NEW met1 ( 55890 50490 ) M1M2_PR
-    NEW li1 ( 55890 55590 ) L1M1_PR_MR
-    NEW met1 ( 55890 55590 ) M1M2_PR
-    NEW li1 ( 58650 48450 ) L1M1_PR_MR
-    NEW met1 ( 55890 48450 ) M1M2_PR
-    NEW met1 ( 55890 55590 ) RECT ( -355 -70 0 70 )
-+ USE SIGNAL ;
-- logical_tile_io_mode_io__2.logical_tile_io_mode_physical__iopad_0.GPIO_0_.DIR ( ANTENNA_logical_tile_io_mode_io__2.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer_TEB DIODE ) ( logical_tile_io_mode_io__2.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch Q ) ( logical_tile_io_mode_io__2.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer TEB ) 
-  + ROUTED met1 ( 62790 47770 ) ( 63250 47770 )
-    NEW met2 ( 62790 47770 ) ( 62790 49470 )
-    NEW met1 ( 61410 49470 ) ( 62790 49470 )
-    NEW met2 ( 62790 45730 ) ( 62790 47770 )
-    NEW li1 ( 63250 47770 ) L1M1_PR_MR
-    NEW met1 ( 62790 47770 ) M1M2_PR
-    NEW met1 ( 62790 49470 ) M1M2_PR
-    NEW li1 ( 61410 49470 ) L1M1_PR_MR
+- right_width_0_height_0__pin_1_lower ( PIN right_width_0_height_0__pin_1_lower ) ( _2_ X ) 
+  + ROUTED met1 ( 62330 45730 ) ( 62790 45730 )
+    NEW met2 ( 62330 45730 ) ( 62330 45900 )
+    NEW met2 ( 61870 45900 ) ( 62330 45900 )
+    NEW met2 ( 61870 45900 ) ( 61870 58820 )
+    NEW met3 ( 61870 58820 ) ( 74060 58820 )
+    NEW met3 ( 74060 58820 ) ( 74060 59500 )
+    NEW met3 ( 74060 59500 ) ( 77740 59500 0 )
     NEW li1 ( 62790 45730 ) L1M1_PR_MR
-    NEW met1 ( 62790 45730 ) M1M2_PR
-    NEW met1 ( 62790 45730 ) RECT ( -355 -70 0 70 )
+    NEW met1 ( 62330 45730 ) M1M2_PR
+    NEW met2 ( 61870 58820 ) via2_FR
 + USE SIGNAL ;
-- logical_tile_io_mode_io__3.enable ( ANTENNA_logical_tile_io_mode_io__3.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch_SLEEPB DIODE ) ( logical_tile_io_mode_io__3.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch SLEEPB ) ( _12_ Y ) 
-  + ROUTED met1 ( 55890 63410 ) ( 59110 63410 )
-    NEW met2 ( 55890 61710 ) ( 55890 63410 )
-    NEW met1 ( 55890 66470 ) ( 57270 66470 )
-    NEW met2 ( 55890 63410 ) ( 55890 66470 )
-    NEW li1 ( 59110 63410 ) L1M1_PR_MR
-    NEW met1 ( 55890 63410 ) M1M2_PR
-    NEW li1 ( 55890 61710 ) L1M1_PR_MR
-    NEW met1 ( 55890 61710 ) M1M2_PR
-    NEW li1 ( 57270 66470 ) L1M1_PR_MR
-    NEW met1 ( 55890 66470 ) M1M2_PR
-    NEW met1 ( 55890 61710 ) RECT ( -355 -70 0 70 )
+- right_width_0_height_0__pin_1_upper ( PIN right_width_0_height_0__pin_1_upper ) ( _3_ X ) 
+  + ROUTED met1 ( 62330 78370 ) ( 62790 78370 )
+    NEW met2 ( 62330 78370 ) ( 62330 78540 )
+    NEW met2 ( 61870 78540 ) ( 61870 99620 )
+    NEW met2 ( 61870 78540 ) ( 62330 78540 )
+    NEW met3 ( 61870 99620 ) ( 77740 99620 0 )
+    NEW li1 ( 62790 78370 ) L1M1_PR_MR
+    NEW met1 ( 62330 78370 ) M1M2_PR
+    NEW met2 ( 61870 99620 ) via2_FR
 + USE SIGNAL ;
-- logical_tile_io_mode_io__3.logical_tile_io_mode_physical__iopad_0.GPIO_0_.DIR ( ANTENNA_logical_tile_io_mode_io__3.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer_TEB DIODE ) ( logical_tile_io_mode_io__3.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch Q ) ( logical_tile_io_mode_io__3.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer TEB ) 
-  + ROUTED met1 ( 62790 69530 ) ( 63250 69530 )
-    NEW met2 ( 62790 69530 ) ( 62790 71230 )
-    NEW met1 ( 61410 67490 ) ( 61870 67490 )
-    NEW met2 ( 61410 67490 ) ( 61410 69530 )
-    NEW met1 ( 61410 69530 ) ( 62790 69530 )
-    NEW li1 ( 63250 69530 ) L1M1_PR_MR
-    NEW met1 ( 62790 69530 ) M1M2_PR
-    NEW li1 ( 62790 71230 ) L1M1_PR_MR
-    NEW met1 ( 62790 71230 ) M1M2_PR
-    NEW li1 ( 61870 67490 ) L1M1_PR_MR
-    NEW met1 ( 61410 67490 ) M1M2_PR
-    NEW met1 ( 61410 69530 ) M1M2_PR
-    NEW met1 ( 62790 71230 ) RECT ( -355 -70 0 70 )
-+ USE SIGNAL ;
-- logical_tile_io_mode_io__4.enable ( ANTENNA_logical_tile_io_mode_io__4.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch_SLEEPB DIODE ) ( logical_tile_io_mode_io__4.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch SLEEPB ) ( _10_ X ) 
-  + ROUTED met1 ( 52670 85850 ) ( 59570 85850 )
-    NEW met2 ( 57730 85850 ) ( 57730 88230 )
-    NEW li1 ( 59570 85850 ) L1M1_PR_MR
-    NEW li1 ( 52670 85850 ) L1M1_PR_MR
-    NEW li1 ( 57730 88230 ) L1M1_PR_MR
-    NEW met1 ( 57730 88230 ) M1M2_PR
-    NEW met1 ( 57730 85850 ) M1M2_PR
-    NEW met1 ( 57730 88230 ) RECT ( -355 -70 0 70 )
-    NEW met1 ( 57730 85850 ) RECT ( -595 -70 0 70 )
-+ USE SIGNAL ;
-- logical_tile_io_mode_io__4.logical_tile_io_mode_physical__iopad_0.GPIO_0_.DIR ( ANTENNA_logical_tile_io_mode_io__4.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer_TEB DIODE ) ( logical_tile_io_mode_io__4.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch Q ) ( logical_tile_io_mode_io__4.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer TEB ) 
-  + ROUTED met1 ( 62790 91970 ) ( 65090 91970 )
-    NEW met2 ( 62790 91970 ) ( 62790 93670 )
-    NEW met1 ( 62330 89250 ) ( 62790 89250 )
-    NEW met2 ( 62790 89250 ) ( 62790 91970 )
-    NEW li1 ( 65090 91970 ) L1M1_PR_MR
-    NEW met1 ( 62790 91970 ) M1M2_PR
-    NEW li1 ( 62790 93670 ) L1M1_PR_MR
-    NEW met1 ( 62790 93670 ) M1M2_PR
-    NEW li1 ( 62330 89250 ) L1M1_PR_MR
-    NEW met1 ( 62790 89250 ) M1M2_PR
-    NEW met1 ( 62790 93670 ) RECT ( -355 -70 0 70 )
-+ USE SIGNAL ;
-- logical_tile_io_mode_io__5.enable ( ANTENNA_logical_tile_io_mode_io__5.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch_SLEEPB DIODE ) ( logical_tile_io_mode_io__5.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch SLEEPB ) ( _09_ X ) 
-  + ROUTED met1 ( 53130 106930 ) ( 58190 106930 )
-    NEW met1 ( 55890 109990 ) ( 56350 109990 )
-    NEW met2 ( 55890 106930 ) ( 55890 109990 )
-    NEW met1 ( 52210 74970 ) ( 53130 74970 )
-    NEW met2 ( 53130 74970 ) ( 53130 106930 )
-    NEW li1 ( 58190 106930 ) L1M1_PR_MR
-    NEW met1 ( 53130 106930 ) M1M2_PR
-    NEW li1 ( 56350 109990 ) L1M1_PR_MR
-    NEW met1 ( 55890 109990 ) M1M2_PR
-    NEW met1 ( 55890 106930 ) M1M2_PR
-    NEW li1 ( 52210 74970 ) L1M1_PR_MR
-    NEW met1 ( 53130 74970 ) M1M2_PR
-    NEW met1 ( 55890 106930 ) RECT ( -595 -70 0 70 )
-+ USE SIGNAL ;
-- logical_tile_io_mode_io__5.logical_tile_io_mode_physical__iopad_0.GPIO_0_.DIR ( ANTENNA_logical_tile_io_mode_io__5.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer_TEB DIODE ) ( logical_tile_io_mode_io__5.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch Q ) ( logical_tile_io_mode_io__5.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer TEB ) 
-  + ROUTED met2 ( 62330 113900 ) ( 62330 114750 )
-    NEW met2 ( 61870 113900 ) ( 62330 113900 )
-    NEW met2 ( 61870 110330 ) ( 61870 113900 )
-    NEW met1 ( 60950 110330 ) ( 61870 110330 )
-    NEW met1 ( 62790 118150 ) ( 63250 118150 )
-    NEW met2 ( 62790 117980 ) ( 62790 118150 )
-    NEW met2 ( 62330 117980 ) ( 62790 117980 )
-    NEW met2 ( 62330 114750 ) ( 62330 117980 )
-    NEW li1 ( 62330 114750 ) L1M1_PR_MR
-    NEW met1 ( 62330 114750 ) M1M2_PR
-    NEW met1 ( 61870 110330 ) M1M2_PR
-    NEW li1 ( 60950 110330 ) L1M1_PR_MR
-    NEW li1 ( 63250 118150 ) L1M1_PR_MR
-    NEW met1 ( 62790 118150 ) M1M2_PR
-    NEW met1 ( 62330 114750 ) RECT ( -355 -70 0 70 )
-+ USE SIGNAL ;
-- logical_tile_io_mode_io__6.enable ( ANTENNA_logical_tile_io_mode_io__6.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch_SLEEPB DIODE ) ( logical_tile_io_mode_io__6.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch SLEEPB ) ( _07_ X ) 
-  + ROUTED met2 ( 66930 115940 ) ( 66930 122910 )
-    NEW met3 ( 52210 115940 ) ( 66930 115940 )
-    NEW met1 ( 63710 126310 ) ( 66930 126310 )
-    NEW met2 ( 66930 122910 ) ( 66930 126310 )
-    NEW met2 ( 52210 82790 ) ( 52210 115940 )
-    NEW li1 ( 66930 122910 ) L1M1_PR_MR
-    NEW met1 ( 66930 122910 ) M1M2_PR
-    NEW met2 ( 66930 115940 ) via2_FR
-    NEW met2 ( 52210 115940 ) via2_FR
-    NEW li1 ( 63710 126310 ) L1M1_PR_MR
-    NEW met1 ( 66930 126310 ) M1M2_PR
-    NEW li1 ( 52210 82790 ) L1M1_PR_MR
-    NEW met1 ( 52210 82790 ) M1M2_PR
-    NEW met1 ( 66930 122910 ) RECT ( -355 -70 0 70 )
-    NEW met1 ( 52210 82790 ) RECT ( -355 -70 0 70 )
-+ USE SIGNAL ;
-- logical_tile_io_mode_io__6.logical_tile_io_mode_physical__iopad_0.GPIO_0_.DIR ( ANTENNA_logical_tile_io_mode_io__6.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer_TEB DIODE ) ( logical_tile_io_mode_io__6.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch Q ) ( logical_tile_io_mode_io__6.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer TEB ) 
-  + ROUTED met1 ( 62790 136510 ) ( 68310 136510 )
-    NEW met2 ( 63250 136510 ) ( 63250 139910 )
-    NEW met2 ( 68310 127330 ) ( 68310 136510 )
-    NEW li1 ( 68310 127330 ) L1M1_PR_MR
-    NEW met1 ( 68310 127330 ) M1M2_PR
-    NEW li1 ( 62790 136510 ) L1M1_PR_MR
-    NEW met1 ( 68310 136510 ) M1M2_PR
-    NEW li1 ( 63250 139910 ) L1M1_PR_MR
-    NEW met1 ( 63250 139910 ) M1M2_PR
-    NEW met1 ( 63250 136510 ) M1M2_PR
-    NEW met1 ( 68310 127330 ) RECT ( -355 -70 0 70 )
-    NEW met1 ( 63250 139910 ) RECT ( -355 -70 0 70 )
-    NEW met1 ( 63250 136510 ) RECT ( -595 -70 0 70 )
-+ USE SIGNAL ;
-- logical_tile_io_mode_io__7.enable ( ANTENNA_logical_tile_io_mode_io__7.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch_SLEEPB DIODE ) ( logical_tile_io_mode_io__7.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch SLEEPB ) ( _05_ X ) 
-  + ROUTED met1 ( 54970 123930 ) ( 56810 123930 )
-    NEW met1 ( 54970 123930 ) ( 54970 124270 )
-    NEW met1 ( 50370 124270 ) ( 54970 124270 )
-    NEW met2 ( 54970 124270 ) ( 54970 126310 )
-    NEW met2 ( 50370 80410 ) ( 50370 124270 )
-    NEW li1 ( 56810 123930 ) L1M1_PR_MR
-    NEW met1 ( 50370 124270 ) M1M2_PR
-    NEW li1 ( 54970 126310 ) L1M1_PR_MR
-    NEW met1 ( 54970 126310 ) M1M2_PR
-    NEW met1 ( 54970 124270 ) M1M2_PR
-    NEW li1 ( 50370 80410 ) L1M1_PR_MR
-    NEW met1 ( 50370 80410 ) M1M2_PR
-    NEW met1 ( 54970 126310 ) RECT ( -355 -70 0 70 )
-    NEW met1 ( 54970 124270 ) RECT ( -595 -70 0 70 )
-    NEW met1 ( 50370 80410 ) RECT ( -355 -70 0 70 )
-+ USE SIGNAL ;
-- logical_tile_io_mode_io__7.logical_tile_io_mode_physical__iopad_0.GPIO_0_.DIR ( ANTENNA_logical_tile_io_mode_io__7.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer_TEB DIODE ) ( logical_tile_io_mode_io__7.logical_tile_io_mode_physical__iopad_0.GPIO_LATCH_mem.LATCH_0_.latch Q ) ( logical_tile_io_mode_io__7.logical_tile_io_mode_physical__iopad_0.GPIO_0_.buffer TEB ) 
-  + ROUTED met1 ( 59570 127330 ) ( 60030 127330 )
-    NEW met1 ( 59570 155550 ) ( 60030 155550 )
-    NEW met1 ( 61870 158950 ) ( 62330 158950 )
-    NEW met1 ( 61870 158610 ) ( 61870 158950 )
-    NEW met1 ( 60030 158610 ) ( 61870 158610 )
-    NEW met2 ( 60030 155550 ) ( 60030 158610 )
-    NEW met2 ( 60030 127330 ) ( 60030 155550 )
-    NEW li1 ( 59570 127330 ) L1M1_PR_MR
-    NEW met1 ( 60030 127330 ) M1M2_PR
-    NEW li1 ( 59570 155550 ) L1M1_PR_MR
-    NEW met1 ( 60030 155550 ) M1M2_PR
-    NEW li1 ( 62330 158950 ) L1M1_PR_MR
-    NEW met1 ( 60030 158610 ) M1M2_PR
+- logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_scs8hd_dfxbp_1_mem.mem_outb ( logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_scs8hd_dfxbp_1_mem.scs8hd_dfxbp_1_0_ QN ) 
 + USE SIGNAL ;
 END NETS
 END DESIGN

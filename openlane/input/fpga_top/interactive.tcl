@@ -69,8 +69,6 @@ for {set i 0} { $i < $num_ver_io_blocks} {incr i} {
     add_macro_placement $macro_name [expr {$grid_io_right_x($i) }] [expr {$grid_io_right_y($i) }] N
 }
 
-add_macro_placement decoder6to61_0_ [expr {$decoder_pos_x }] [expr {$decoder_pos_y }] N
-
 manual_macro_placement f
 detailed_placement
 

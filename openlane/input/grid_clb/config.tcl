@@ -11,14 +11,14 @@ set ::env(VERILOG_FILES) "$script_dir/../../../openfpga/run/SRC/lb/grid_clb.v \
                     $script_dir/../../../openfpga/run/SRC/sub_module/muxes.v \
                     $script_dir/../../../openfpga/run/SRC/sub_module/memories.v \
                     $script_dir/../../../openfpga/run/SRC/sub_module/wires.v \
-                    $script_dir/../../../openfpga/run/SRC/sub_module/user_defined_templates.v \
                     $script_dir/../../../openfpga/run/SRC/sub_module/inv_buf_passgate.v \
                     $script_dir/../../../openfpga/run/SRC/sub_module/luts.v \
                     $script_dir/../../../openfpga/run/SRC/lb/logical_tile_clb_mode_clb_.v \ 
-                    $script_dir/../../../openfpga/run/SRC/lb/logical_tile_clb_mode_default__fle_mode_n1_lut4__ble4_mode_default__ff.v \
-                    $script_dir/../../../openfpga/run/SRC/lb/logical_tile_clb_mode_default__fle_mode_n1_lut4__ble4_mode_default__lut4.v \
-                    $script_dir/../../../openfpga/run/SRC/lb/logical_tile_clb_mode_default__fle_mode_n1_lut4__ble4.v \
-                    $script_dir/../../../openfpga/run/SRC/lb/logical_tile_clb_mode_default__fle.v "
+                    $script_dir/../../../openfpga/run/SRC/lb/ltile_clb_md_fle_mp_fab_md_ff.v \
+                    $script_dir/../../../openfpga/run/SRC/lb/ltile_clb_md_fle_mp_fab_md_flogic_md_frac_lut4.v \
+                    $script_dir/../../../openfpga/run/SRC/lb/ltile_clb_md_fle_mp_fabric_md_frac_logic.v \
+                    $script_dir/../../../openfpga/run/SRC/lb/ltile_clb_md_fle_mp_fabric.v \
+                    $script_dir/../../../openfpga/run/SRC/lb/logical_tile_clb_mode_default__fle.v"
 
 # Fill this
 set ::env(CLOCK_PERIOD) "100000"

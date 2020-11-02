@@ -9,7 +9,6 @@ set ::env(STD_CELL_LIBRARY) "scs8hd"
 set ::env(VERILOG_FILES) "$script_dir/../../../openfpga/run/SRC/routing/cby_1__1_.v \
                           $script_dir/../../../openfpga/run/SRC/sub_module/muxes.v \
                           $script_dir/../../../openfpga/run/SRC/sub_module/memories.v \
-                          $script_dir/../../../openfpga/run/SRC/sub_module/user_defined_templates.v \
                           $script_dir/../../../openfpga/run/SRC/sub_module/inv_buf_passgate.v \
                           $script_dir/../../../openfpga/run/SRC/sub_module/local_encoder.v \ 
                           $script_dir/../../../openfpga/run/SRC/sub_module/arch_encoder.v"
@@ -25,7 +24,7 @@ set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 # Floorplan & Placement
 set ::env(FP_SIZING) absolute
 set ::env(DIE_AREA) "0 0 80 200"
-set ::env(PL_TARGET_DENSITY) 0.6
+set ::env(PL_TARGET_DENSITY) 0.4
 set ::env(CELL_PAD) 8
 
 set ::env(RUN_MAGIC) 1

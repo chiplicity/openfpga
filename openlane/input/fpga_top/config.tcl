@@ -6,7 +6,9 @@ set ::env(DESIGN_NAME) fpga_top
 set ::env(PDK) "EFS8A"
 set ::env(STD_CELL_LIBRARY) "scs8hd"
 
-set ::env(VERILOG_FILES) "$script_dir/../../../openfpga/run/SRC/fabric_netlists.v"
+set ::env(SYNTH_READ_BLACKBOX_LIB) 1
+
+set ::env(VERILOG_FILES) "$script_dir/../../../openfpga/run/SRC/fpga_top.v"
 
 set ::env(VERILOG_FILES_BLACKBOX) "$script_dir/../../../openfpga/run/SRC/lb/grid_io_bottom.v \
         $script_dir/../../../openfpga/run/SRC/lb/grid_io_top.v \
@@ -14,69 +16,63 @@ set ::env(VERILOG_FILES_BLACKBOX) "$script_dir/../../../openfpga/run/SRC/lb/grid
         $script_dir/../../../openfpga/run/SRC/lb/grid_io_right.v \
         $script_dir/../../../openfpga/run/SRC/lb/grid_io_right.v \
         $script_dir/../../../openfpga/run/SRC/routing/cbx_1__0_.v \
-        $script_dir/../../../openfpga/run/SRC/routing/cbx_1__0_.v \
         $script_dir/../../../openfpga/run/SRC/routing/cbx_1__1_.v \
-        $script_dir/../../../openfpga/run/SRC/routing/cbx_1__3_.v \
+        $script_dir/../../../openfpga/run/SRC/routing/cbx_1__2_.v \
         $script_dir/../../../openfpga/run/SRC/routing/cby_0__1_.v \
-        $script_dir/../../../openfpga/run/SRC/routing/cby_3__1_.v \
-        $script_dir/../../../openfpga/run/SRC/routing/sb_0__1_.v \
         $script_dir/../../../openfpga/run/SRC/routing/cby_1__1_.v \
-        $script_dir/../../../openfpga/run/SRC/routing/sb_0__3_.v \
-        $script_dir/../../../openfpga/run/SRC/routing/sb_0__0_.v \ 
+        $script_dir/../../../openfpga/run/SRC/routing/sb_0__0_.v \
+        $script_dir/../../../openfpga/run/SRC/routing/sb_0__1_.v \
+        $script_dir/../../../openfpga/run/SRC/routing/sb_0__2_.v \
         $script_dir/../../../openfpga/run/SRC/routing/sb_1__0_.v \
         $script_dir/../../../openfpga/run/SRC/routing/sb_1__1_.v \
-        $script_dir/../../../openfpga/run/SRC/routing/sb_1__3_.v \
-        $script_dir/../../../openfpga/run/SRC/routing/sb_3__0_.v \
-        $script_dir/../../../openfpga/run/SRC/routing/sb_3__1_.v \
+        $script_dir/../../../openfpga/run/SRC/routing/sb_1__2_.v \
+        $script_dir/../../../openfpga/run/SRC/routing/sb_2__0_.v \
+        $script_dir/../../../openfpga/run/SRC/routing/sb_2__1_.v \
+        $script_dir/../../../openfpga/run/SRC/routing/sb_2__2_.v \
         $script_dir/../../../openfpga/run/SRC/lb/grid_clb.v \
-        $script_dir/../../../openfpga/run/SRC/routing/sb_3__3_.v \
-        $script_dir/../../../openfpga/run/SRC/sub_module/arch_encoder.v "
+        $script_dir/../../../openfpga/run/SRC/fpga_defines.v  \
+        $script_dir/../../../openfpga/run/SRC/sub_module/wires.v  "
+
 
 set ::env(EXTRA_LEFS) "$script_dir/../../../lef/cbx_1__0_.lef \
         $script_dir/../../../lef/cbx_1__1_.lef \
-        $script_dir/../../../lef/cbx_1__3_.lef \
+        $script_dir/../../../lef/cbx_1__2_.lef \
         $script_dir/../../../lef/cby_0__1_.lef \
         $script_dir/../../../lef/cby_1__1_.lef \
-        $script_dir/../../../lef/cby_3__1_.lef \
         $script_dir/../../../lef/sb_0__0_.lef \
         $script_dir/../../../lef/sb_0__1_.lef \
-        $script_dir/../../../lef/sb_0__3_.lef \
+        $script_dir/../../../lef/sb_0__2_.lef \
         $script_dir/../../../lef/sb_1__0_.lef \
         $script_dir/../../../lef/sb_1__1_.lef \
-        $script_dir/../../../lef/sb_1__3_.lef \
-        $script_dir/../../../lef/sb_3__0_.lef \
-        $script_dir/../../../lef/sb_3__1_.lef \
-        $script_dir/../../../lef/sb_3__3_.lef \
+        $script_dir/../../../lef/sb_1__2_.lef \
+        $script_dir/../../../lef/sb_2__0_.lef \
+        $script_dir/../../../lef/sb_2__1_.lef \
+        $script_dir/../../../lef/sb_2__2_.lef \
         $script_dir/../../../lef/grid_io_bottom.lef \
         $script_dir/../../../lef/grid_io_top.lef \
         $script_dir/../../../lef/grid_io_left.lef \
         $script_dir/../../../lef/grid_io_right.lef \
-        $script_dir/../../../lef/decoder6to61.lef \
         $script_dir/../../../lef/grid_clb.lef"
 
 set ::env(EXTRA_GDS_FILES) "$script_dir/../../../gds/cbx_1__0_.gds \
         $script_dir/../../../gds/cbx_1__1_.gds \
-        $script_dir/../../../gds/cbx_1__3_.gds \
+        $script_dir/../../../gds/cbx_1__2_.gds \
         $script_dir/../../../gds/cby_0__1_.gds \
         $script_dir/../../../gds/cby_1__1_.gds \
-        $script_dir/../../../gds/cby_3__1_.gds \
         $script_dir/../../../gds/sb_0__0_.gds \
         $script_dir/../../../gds/sb_0__1_.gds \
-        $script_dir/../../../gds/sb_0__3_.gds \
+        $script_dir/../../../gds/sb_0__2_.gds \
         $script_dir/../../../gds/sb_1__0_.gds \
         $script_dir/../../../gds/sb_1__1_.gds \
-        $script_dir/../../../gds/sb_1__3_.gds \
-        $script_dir/../../../gds/sb_3__0_.gds \
-        $script_dir/../../../gds/sb_3__1_.gds \
-        $script_dir/../../../gds/sb_3__3_.gds \
+        $script_dir/../../../gds/sb_1__2_.gds \
+        $script_dir/../../../gds/sb_2__0_.gds \
+        $script_dir/../../../gds/sb_2__1_.gds \
+        $script_dir/../../../gds/sb_2__2_.gds \
         $script_dir/../../../gds/grid_io_bottom.gds \
         $script_dir/../../../gds/grid_io_top.gds \
         $script_dir/../../../gds/grid_io_left.gds \
         $script_dir/../../../gds/grid_io_right.gds \
-        $script_dir/../../../gds/decoder6to61.gds \
         $script_dir/../../../gds/grid_clb.gds"
-
-set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 
 # Fill this
 set ::env(CLOCK_PERIOD) "100000"

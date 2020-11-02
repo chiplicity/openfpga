@@ -12,10 +12,10 @@ set ::env(VERILOG_FILES) "$script_dir/../../../openfpga/run/SRC/lb/grid_io_top.v
                     $script_dir/../../../openfpga/run/SRC/sub_module/wires.v \
                     $script_dir/../../../openfpga/run/SRC/sub_module/muxes.v \
                     $script_dir/../../../openfpga/run/SRC/sub_module/memories.v \
-                    $script_dir/../../../openfpga/run/SRC/sub_module/user_defined_templates.v \
                     $script_dir/../../../openfpga/run/SRC/sub_module/inv_buf_passgate.v \
                     $script_dir/../../../openfpga/run/SRC/sub_module/luts.v \
-                    $script_dir/../../../openfpga/run/SRC/lb/logical_tile_io_mode_io_.v "
+                    $script_dir/../../../openfpga/run/SRC/lb/logical_tile_io_mode_io_.v \
+                    $script_dir/../../../openfpga/run/SRC/sub_module/std_cell_extract.v "
 
 set ::env(CLOCK_PERIOD) "100000"
 set ::env(CLOCK_PORT) "w"

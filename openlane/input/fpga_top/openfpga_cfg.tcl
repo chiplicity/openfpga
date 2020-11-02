@@ -3,8 +3,8 @@
 # and Macro Sizes
 #####################
 
-set grid_x 3
-set grid_y 3
+set grid_x 2
+set grid_y 2
 
 # grid clb
 set clb_x 250
@@ -32,7 +32,3 @@ set io_ver_to_sb 65
 set io_hor_to_sb 65
 
 set io_ver_to_dec $io_ver_to_sb
-
-# Decoder
-set decoder_x 120
-set decoder_y 120

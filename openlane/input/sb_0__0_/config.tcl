@@ -9,7 +9,6 @@ set ::env(STD_CELL_LIBRARY) "scs8hd"
 set ::env(VERILOG_FILES) "$script_dir/../../../openfpga/run/SRC/routing/sb_0__0_.v \
                           $script_dir/../../../openfpga/run/SRC/sub_module/muxes.v \
                           $script_dir/../../../openfpga/run/SRC/sub_module/memories.v \
-                          $script_dir/../../../openfpga/run/SRC/sub_module/user_defined_templates.v \
                           $script_dir/../../../openfpga/run/SRC/sub_module/inv_buf_passgate.v \
                           $script_dir/../../../openfpga/run/SRC/sub_module/local_encoder.v \ 
                           $script_dir/../../../openfpga/run/SRC/sub_module/arch_encoder.v"
