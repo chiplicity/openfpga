@@ -1,90 +1,107 @@
-//-------------------------------------------
-//	FPGA Synthesizable Verilog Netlist
-//	Description: Look-Up Tables
-//	Author: Xifan TANG
-//	Organization: University of Utah
-//	Date: Wed Oct  7 01:24:55 2020
-//-------------------------------------------
-//----- Time scale -----
+//
+//
+//
+//
+//
+//
+//
+//
 `timescale 1ns / 1ps
 
-// ----- Verilog module for lut4 -----
-module lut4(in,
-            sram,
-            sram_inv,
-            out);
-//----- INPUT PORTS -----
+//
+module frac_lut4(in,
+                 sram,
+                 sram_inv,
+                 mode,
+                 mode_inv,
+                 lut3_out,
+                 lut4_out);
+//
 input [0:3] in;
-//----- INPUT PORTS -----
+//
 input [0:15] sram;
-//----- INPUT PORTS -----
+//
 input [0:15] sram_inv;
-//----- OUTPUT PORTS -----
-output [0:0] out;
+//
+input [0:0] mode;
+//
+input [0:0] mode_inv;
+//
+output [0:1] lut3_out;
+//
+output [0:0] lut4_out;
 
-//----- BEGIN wire-connection ports -----
+//
 wire [0:3] in;
-wire [0:0] out;
-//----- END wire-connection ports -----
+wire [0:1] lut3_out;
+wire [0:0] lut4_out;
+//
 
 
-//----- BEGIN Registered ports -----
-//----- END Registered ports -----
+//
+//
 
 
-wire [0:0] INVTX1_0_out;
-wire [0:0] INVTX1_1_out;
-wire [0:0] INVTX1_2_out;
-wire [0:0] INVTX1_3_out;
-wire [0:0] buf4_0_out;
-wire [0:0] buf4_1_out;
-wire [0:0] buf4_2_out;
-wire [0:0] buf4_3_out;
+wire [0:0] scs8hd_buf_2_0_X;
+wire [0:0] scs8hd_buf_2_1_X;
+wire [0:0] scs8hd_buf_2_2_X;
+wire [0:0] scs8hd_buf_2_3_X;
+wire [0:0] scs8hd_inv_1_0_Y;
+wire [0:0] scs8hd_inv_1_1_Y;
+wire [0:0] scs8hd_inv_1_2_Y;
+wire [0:0] scs8hd_inv_1_3_Y;
+wire [0:0] scs8hd_or2_1_0_X;
 
-// ----- BEGIN Local short connections -----
-// ----- END Local short connections -----
-// ----- BEGIN Local output short connections -----
-// ----- END Local output short connections -----
+//
+//
+//
+//
 
-	INVTX1 INVTX1_0_ (
-		.in(in[0]),
-		.out(INVTX1_0_out[0]));
+	scs8hd_or2_1 scs8hd_or2_1_0_ (
+		.A(mode[0]),
+		.B(in[3]),
+		.X(scs8hd_or2_1_0_X[0]));
 
-	INVTX1 INVTX1_1_ (
-		.in(in[1]),
-		.out(INVTX1_1_out[0]));
+	scs8hd_inv_1 scs8hd_inv_1_0_ (
+		.A(in[0]),
+		.Y(scs8hd_inv_1_0_Y[0]));
 
-	INVTX1 INVTX1_2_ (
-		.in(in[2]),
-		.out(INVTX1_2_out[0]));
+	scs8hd_inv_1 scs8hd_inv_1_1_ (
+		.A(in[1]),
+		.Y(scs8hd_inv_1_1_Y[0]));
 
-	INVTX1 INVTX1_3_ (
-		.in(in[3]),
-		.out(INVTX1_3_out[0]));
+	scs8hd_inv_1 scs8hd_inv_1_2_ (
+		.A(in[2]),
+		.Y(scs8hd_inv_1_2_Y[0]));
 
-	buf4 buf4_0_ (
-		.in(in[0]),
-		.out(buf4_0_out[0]));
+	scs8hd_inv_1 scs8hd_inv_1_3_ (
+		.A(scs8hd_or2_1_0_X[0]),
+		.Y(scs8hd_inv_1_3_Y[0]));
 
-	buf4 buf4_1_ (
-		.in(in[1]),
-		.out(buf4_1_out[0]));
+	scs8hd_buf_2 scs8hd_buf_2_0_ (
+		.A(in[0]),
+		.X(scs8hd_buf_2_0_X[0]));
 
-	buf4 buf4_2_ (
-		.in(in[2]),
-		.out(buf4_2_out[0]));
+	scs8hd_buf_2 scs8hd_buf_2_1_ (
+		.A(in[1]),
+		.X(scs8hd_buf_2_1_X[0]));
 
-	buf4 buf4_3_ (
-		.in(in[3]),
-		.out(buf4_3_out[0]));
+	scs8hd_buf_2 scs8hd_buf_2_2_ (
+		.A(in[2]),
+		.X(scs8hd_buf_2_2_X[0]));
 
-	lut4_mux lut4_mux_0_ (
+	scs8hd_buf_2 scs8hd_buf_2_3_ (
+		.A(scs8hd_or2_1_0_X[0]),
+		.X(scs8hd_buf_2_3_X[0]));
+
+	frac_lut4_mux frac_lut4_mux_0_ (
 		.in(sram[0:15]),
-		.sram({buf4_0_out[0], buf4_1_out[0], buf4_2_out[0], buf4_3_out[0]}),
-		.sram_inv({INVTX1_0_out[0], INVTX1_1_out[0], INVTX1_2_out[0], INVTX1_3_out[0]}),
-		.out(out[0]));
+		.sram({scs8hd_buf_2_0_X[0], scs8hd_buf_2_1_X[0], scs8hd_buf_2_2_X[0], scs8hd_buf_2_3_X[0]}),
+		.sram_inv({scs8hd_inv_1_0_Y[0], scs8hd_inv_1_1_Y[0], scs8hd_inv_1_2_Y[0], scs8hd_inv_1_3_Y[0]}),
+		.lut3_out(lut3_out[0:1]),
+		.lut4_out(lut4_out[0]));
 
 endmodule
-// ----- END Verilog module for lut4 -----
+//
 
 

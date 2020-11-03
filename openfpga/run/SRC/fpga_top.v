@@ -1,1803 +1,1340 @@
-//-------------------------------------------
-//	FPGA Synthesizable Verilog Netlist
-//	Description: Top-level Verilog module for FPGA
-//	Author: Xifan TANG
-//	Organization: University of Utah
-//	Date: Wed Oct  7 01:24:55 2020
-//-------------------------------------------
-//----- Time scale -----
+//
+//
+//
+//
+//
+//
+//
+//
 `timescale 1ns / 1ps
 
-// ----- Verilog module for fpga_top -----
-module fpga_top(set,
-                reset,
-                clk,
-                gfpga_pad_GPIO_PAD,
-                enable,
-                address,
-                data_in);
-//----- GLOBAL PORTS -----
-input [0:0] set;
-//----- GLOBAL PORTS -----
-input [0:0] reset;
-//----- GLOBAL PORTS -----
+//
+module fpga_top(prog_clk, Test_en, clk, gfpga_pad_GPIO_A, gfpga_pad_GPIO_IE, gfpga_pad_GPIO_OE, gfpga_pad_GPIO_Y, ccff_head, ccff_tail);
+              
+//
+input [0:0] prog_clk;
+//
+input [0:0] Test_en;
+//
 input [0:0] clk;
-//----- GPIO PORTS -----
-inout [0:95] gfpga_pad_GPIO_PAD;
-//----- INPUT PORTS -----
-input [0:0] enable;
-//----- INPUT PORTS -----
-input [0:15] address;
-//----- INPUT PORTS -----
-input [0:0] data_in;
+//
+output [0:7] gfpga_pad_GPIO_A;
+//
+output [0:7] gfpga_pad_GPIO_IE;
+//
+output [0:7] gfpga_pad_GPIO_OE;
+//
+inout [0:7] gfpga_pad_GPIO_Y;
+//
+input [0:0] ccff_head;
+//
+output [0:0] ccff_tail;
 
-//----- BEGIN wire-connection ports -----
-//----- END wire-connection ports -----
+//
+//
 
 
-//----- BEGIN Registered ports -----
-//----- END Registered ports -----
+//
+//
 
 
 wire [0:0] cbx_1__0__0_bottom_grid_pin_0_;
-wire [0:0] cbx_1__0__0_bottom_grid_pin_10_;
-wire [0:0] cbx_1__0__0_bottom_grid_pin_12_;
-wire [0:0] cbx_1__0__0_bottom_grid_pin_14_;
-wire [0:0] cbx_1__0__0_bottom_grid_pin_2_;
-wire [0:0] cbx_1__0__0_bottom_grid_pin_4_;
-wire [0:0] cbx_1__0__0_bottom_grid_pin_6_;
-wire [0:0] cbx_1__0__0_bottom_grid_pin_8_;
-wire [0:8] cbx_1__0__0_chanx_left_out;
-wire [0:8] cbx_1__0__0_chanx_right_out;
-wire [0:0] cbx_1__0__0_top_grid_pin_14_;
-wire [0:0] cbx_1__0__0_top_grid_pin_2_;
-wire [0:0] cbx_1__0__0_top_grid_pin_6_;
+wire [0:0] cbx_1__0__0_ccff_tail;
+wire [0:19] cbx_1__0__0_chanx_left_out;
+wire [0:19] cbx_1__0__0_chanx_right_out;
+wire [0:0] cbx_1__0__0_top_grid_pin_16_;
+wire [0:0] cbx_1__0__0_top_grid_pin_17_;
+wire [0:0] cbx_1__0__0_top_grid_pin_18_;
+wire [0:0] cbx_1__0__0_top_grid_pin_19_;
+wire [0:0] cbx_1__0__0_top_grid_pin_20_;
+wire [0:0] cbx_1__0__0_top_grid_pin_21_;
+wire [0:0] cbx_1__0__0_top_grid_pin_22_;
+wire [0:0] cbx_1__0__0_top_grid_pin_23_;
+wire [0:0] cbx_1__0__0_top_grid_pin_24_;
+wire [0:0] cbx_1__0__0_top_grid_pin_25_;
+wire [0:0] cbx_1__0__0_top_grid_pin_26_;
+wire [0:0] cbx_1__0__0_top_grid_pin_27_;
+wire [0:0] cbx_1__0__0_top_grid_pin_28_;
+wire [0:0] cbx_1__0__0_top_grid_pin_29_;
+wire [0:0] cbx_1__0__0_top_grid_pin_30_;
+wire [0:0] cbx_1__0__0_top_grid_pin_31_;
 wire [0:0] cbx_1__0__1_bottom_grid_pin_0_;
-wire [0:0] cbx_1__0__1_bottom_grid_pin_10_;
-wire [0:0] cbx_1__0__1_bottom_grid_pin_12_;
-wire [0:0] cbx_1__0__1_bottom_grid_pin_14_;
-wire [0:0] cbx_1__0__1_bottom_grid_pin_2_;
-wire [0:0] cbx_1__0__1_bottom_grid_pin_4_;
-wire [0:0] cbx_1__0__1_bottom_grid_pin_6_;
-wire [0:0] cbx_1__0__1_bottom_grid_pin_8_;
-wire [0:8] cbx_1__0__1_chanx_left_out;
-wire [0:8] cbx_1__0__1_chanx_right_out;
-wire [0:0] cbx_1__0__1_top_grid_pin_14_;
-wire [0:0] cbx_1__0__1_top_grid_pin_2_;
-wire [0:0] cbx_1__0__1_top_grid_pin_6_;
-wire [0:0] cbx_1__0__2_bottom_grid_pin_0_;
-wire [0:0] cbx_1__0__2_bottom_grid_pin_10_;
-wire [0:0] cbx_1__0__2_bottom_grid_pin_12_;
-wire [0:0] cbx_1__0__2_bottom_grid_pin_14_;
-wire [0:0] cbx_1__0__2_bottom_grid_pin_2_;
-wire [0:0] cbx_1__0__2_bottom_grid_pin_4_;
-wire [0:0] cbx_1__0__2_bottom_grid_pin_6_;
-wire [0:0] cbx_1__0__2_bottom_grid_pin_8_;
-wire [0:8] cbx_1__0__2_chanx_left_out;
-wire [0:8] cbx_1__0__2_chanx_right_out;
-wire [0:0] cbx_1__0__2_top_grid_pin_14_;
-wire [0:0] cbx_1__0__2_top_grid_pin_2_;
-wire [0:0] cbx_1__0__2_top_grid_pin_6_;
-wire [0:0] cbx_1__1__0_bottom_grid_pin_0_;
-wire [0:0] cbx_1__1__0_bottom_grid_pin_4_;
-wire [0:0] cbx_1__1__0_bottom_grid_pin_8_;
-wire [0:8] cbx_1__1__0_chanx_left_out;
-wire [0:8] cbx_1__1__0_chanx_right_out;
-wire [0:0] cbx_1__1__0_top_grid_pin_14_;
-wire [0:0] cbx_1__1__0_top_grid_pin_2_;
-wire [0:0] cbx_1__1__0_top_grid_pin_6_;
-wire [0:0] cbx_1__1__1_bottom_grid_pin_0_;
-wire [0:0] cbx_1__1__1_bottom_grid_pin_4_;
-wire [0:0] cbx_1__1__1_bottom_grid_pin_8_;
-wire [0:8] cbx_1__1__1_chanx_left_out;
-wire [0:8] cbx_1__1__1_chanx_right_out;
-wire [0:0] cbx_1__1__1_top_grid_pin_14_;
-wire [0:0] cbx_1__1__1_top_grid_pin_2_;
-wire [0:0] cbx_1__1__1_top_grid_pin_6_;
-wire [0:0] cbx_1__1__2_bottom_grid_pin_0_;
-wire [0:0] cbx_1__1__2_bottom_grid_pin_4_;
-wire [0:0] cbx_1__1__2_bottom_grid_pin_8_;
-wire [0:8] cbx_1__1__2_chanx_left_out;
-wire [0:8] cbx_1__1__2_chanx_right_out;
-wire [0:0] cbx_1__1__2_top_grid_pin_14_;
-wire [0:0] cbx_1__1__2_top_grid_pin_2_;
-wire [0:0] cbx_1__1__2_top_grid_pin_6_;
-wire [0:0] cbx_1__1__3_bottom_grid_pin_0_;
-wire [0:0] cbx_1__1__3_bottom_grid_pin_4_;
-wire [0:0] cbx_1__1__3_bottom_grid_pin_8_;
-wire [0:8] cbx_1__1__3_chanx_left_out;
-wire [0:8] cbx_1__1__3_chanx_right_out;
-wire [0:0] cbx_1__1__3_top_grid_pin_14_;
-wire [0:0] cbx_1__1__3_top_grid_pin_2_;
-wire [0:0] cbx_1__1__3_top_grid_pin_6_;
-wire [0:0] cbx_1__1__4_bottom_grid_pin_0_;
-wire [0:0] cbx_1__1__4_bottom_grid_pin_4_;
-wire [0:0] cbx_1__1__4_bottom_grid_pin_8_;
-wire [0:8] cbx_1__1__4_chanx_left_out;
-wire [0:8] cbx_1__1__4_chanx_right_out;
-wire [0:0] cbx_1__1__4_top_grid_pin_14_;
-wire [0:0] cbx_1__1__4_top_grid_pin_2_;
-wire [0:0] cbx_1__1__4_top_grid_pin_6_;
-wire [0:0] cbx_1__1__5_bottom_grid_pin_0_;
-wire [0:0] cbx_1__1__5_bottom_grid_pin_4_;
-wire [0:0] cbx_1__1__5_bottom_grid_pin_8_;
-wire [0:8] cbx_1__1__5_chanx_left_out;
-wire [0:8] cbx_1__1__5_chanx_right_out;
-wire [0:0] cbx_1__1__5_top_grid_pin_14_;
-wire [0:0] cbx_1__1__5_top_grid_pin_2_;
-wire [0:0] cbx_1__1__5_top_grid_pin_6_;
-wire [0:0] cbx_1__3__0_bottom_grid_pin_0_;
-wire [0:0] cbx_1__3__0_bottom_grid_pin_4_;
-wire [0:0] cbx_1__3__0_bottom_grid_pin_8_;
-wire [0:8] cbx_1__3__0_chanx_left_out;
-wire [0:8] cbx_1__3__0_chanx_right_out;
-wire [0:0] cbx_1__3__0_top_grid_pin_0_;
-wire [0:0] cbx_1__3__0_top_grid_pin_10_;
-wire [0:0] cbx_1__3__0_top_grid_pin_12_;
-wire [0:0] cbx_1__3__0_top_grid_pin_14_;
-wire [0:0] cbx_1__3__0_top_grid_pin_2_;
-wire [0:0] cbx_1__3__0_top_grid_pin_4_;
-wire [0:0] cbx_1__3__0_top_grid_pin_6_;
-wire [0:0] cbx_1__3__0_top_grid_pin_8_;
-wire [0:0] cbx_1__3__1_bottom_grid_pin_0_;
-wire [0:0] cbx_1__3__1_bottom_grid_pin_4_;
-wire [0:0] cbx_1__3__1_bottom_grid_pin_8_;
-wire [0:8] cbx_1__3__1_chanx_left_out;
-wire [0:8] cbx_1__3__1_chanx_right_out;
-wire [0:0] cbx_1__3__1_top_grid_pin_0_;
-wire [0:0] cbx_1__3__1_top_grid_pin_10_;
-wire [0:0] cbx_1__3__1_top_grid_pin_12_;
-wire [0:0] cbx_1__3__1_top_grid_pin_14_;
-wire [0:0] cbx_1__3__1_top_grid_pin_2_;
-wire [0:0] cbx_1__3__1_top_grid_pin_4_;
-wire [0:0] cbx_1__3__1_top_grid_pin_6_;
-wire [0:0] cbx_1__3__1_top_grid_pin_8_;
-wire [0:0] cbx_1__3__2_bottom_grid_pin_0_;
-wire [0:0] cbx_1__3__2_bottom_grid_pin_4_;
-wire [0:0] cbx_1__3__2_bottom_grid_pin_8_;
-wire [0:8] cbx_1__3__2_chanx_left_out;
-wire [0:8] cbx_1__3__2_chanx_right_out;
-wire [0:0] cbx_1__3__2_top_grid_pin_0_;
-wire [0:0] cbx_1__3__2_top_grid_pin_10_;
-wire [0:0] cbx_1__3__2_top_grid_pin_12_;
-wire [0:0] cbx_1__3__2_top_grid_pin_14_;
-wire [0:0] cbx_1__3__2_top_grid_pin_2_;
-wire [0:0] cbx_1__3__2_top_grid_pin_4_;
-wire [0:0] cbx_1__3__2_top_grid_pin_6_;
-wire [0:0] cbx_1__3__2_top_grid_pin_8_;
-wire [0:8] cby_0__1__0_chany_bottom_out;
-wire [0:8] cby_0__1__0_chany_top_out;
+wire [0:0] cbx_1__0__1_ccff_tail;
+wire [0:19] cbx_1__0__1_chanx_left_out;
+wire [0:19] cbx_1__0__1_chanx_right_out;
+wire [0:0] cbx_1__0__1_top_grid_pin_16_;
+wire [0:0] cbx_1__0__1_top_grid_pin_17_;
+wire [0:0] cbx_1__0__1_top_grid_pin_18_;
+wire [0:0] cbx_1__0__1_top_grid_pin_19_;
+wire [0:0] cbx_1__0__1_top_grid_pin_20_;
+wire [0:0] cbx_1__0__1_top_grid_pin_21_;
+wire [0:0] cbx_1__0__1_top_grid_pin_22_;
+wire [0:0] cbx_1__0__1_top_grid_pin_23_;
+wire [0:0] cbx_1__0__1_top_grid_pin_24_;
+wire [0:0] cbx_1__0__1_top_grid_pin_25_;
+wire [0:0] cbx_1__0__1_top_grid_pin_26_;
+wire [0:0] cbx_1__0__1_top_grid_pin_27_;
+wire [0:0] cbx_1__0__1_top_grid_pin_28_;
+wire [0:0] cbx_1__0__1_top_grid_pin_29_;
+wire [0:0] cbx_1__0__1_top_grid_pin_30_;
+wire [0:0] cbx_1__0__1_top_grid_pin_31_;
+wire [0:0] cbx_1__1__0_ccff_tail;
+wire [0:19] cbx_1__1__0_chanx_left_out;
+wire [0:19] cbx_1__1__0_chanx_right_out;
+wire [0:0] cbx_1__1__0_top_grid_pin_16_;
+wire [0:0] cbx_1__1__0_top_grid_pin_17_;
+wire [0:0] cbx_1__1__0_top_grid_pin_18_;
+wire [0:0] cbx_1__1__0_top_grid_pin_19_;
+wire [0:0] cbx_1__1__0_top_grid_pin_20_;
+wire [0:0] cbx_1__1__0_top_grid_pin_21_;
+wire [0:0] cbx_1__1__0_top_grid_pin_22_;
+wire [0:0] cbx_1__1__0_top_grid_pin_23_;
+wire [0:0] cbx_1__1__0_top_grid_pin_24_;
+wire [0:0] cbx_1__1__0_top_grid_pin_25_;
+wire [0:0] cbx_1__1__0_top_grid_pin_26_;
+wire [0:0] cbx_1__1__0_top_grid_pin_27_;
+wire [0:0] cbx_1__1__0_top_grid_pin_28_;
+wire [0:0] cbx_1__1__0_top_grid_pin_29_;
+wire [0:0] cbx_1__1__0_top_grid_pin_30_;
+wire [0:0] cbx_1__1__0_top_grid_pin_31_;
+wire [0:0] cbx_1__1__1_ccff_tail;
+wire [0:19] cbx_1__1__1_chanx_left_out;
+wire [0:19] cbx_1__1__1_chanx_right_out;
+wire [0:0] cbx_1__1__1_top_grid_pin_16_;
+wire [0:0] cbx_1__1__1_top_grid_pin_17_;
+wire [0:0] cbx_1__1__1_top_grid_pin_18_;
+wire [0:0] cbx_1__1__1_top_grid_pin_19_;
+wire [0:0] cbx_1__1__1_top_grid_pin_20_;
+wire [0:0] cbx_1__1__1_top_grid_pin_21_;
+wire [0:0] cbx_1__1__1_top_grid_pin_22_;
+wire [0:0] cbx_1__1__1_top_grid_pin_23_;
+wire [0:0] cbx_1__1__1_top_grid_pin_24_;
+wire [0:0] cbx_1__1__1_top_grid_pin_25_;
+wire [0:0] cbx_1__1__1_top_grid_pin_26_;
+wire [0:0] cbx_1__1__1_top_grid_pin_27_;
+wire [0:0] cbx_1__1__1_top_grid_pin_28_;
+wire [0:0] cbx_1__1__1_top_grid_pin_29_;
+wire [0:0] cbx_1__1__1_top_grid_pin_30_;
+wire [0:0] cbx_1__1__1_top_grid_pin_31_;
+wire [0:0] cbx_1__2__0_ccff_tail;
+wire [0:19] cbx_1__2__0_chanx_left_out;
+wire [0:19] cbx_1__2__0_chanx_right_out;
+wire [0:0] cbx_1__2__0_top_grid_pin_0_;
+wire [0:0] cbx_1__2__1_ccff_tail;
+wire [0:19] cbx_1__2__1_chanx_left_out;
+wire [0:19] cbx_1__2__1_chanx_right_out;
+wire [0:0] cbx_1__2__1_top_grid_pin_0_;
+wire [0:0] cby_0__1__0_ccff_tail;
+wire [0:19] cby_0__1__0_chany_bottom_out;
+wire [0:19] cby_0__1__0_chany_top_out;
 wire [0:0] cby_0__1__0_left_grid_pin_0_;
-wire [0:0] cby_0__1__0_left_grid_pin_10_;
-wire [0:0] cby_0__1__0_left_grid_pin_12_;
-wire [0:0] cby_0__1__0_left_grid_pin_14_;
-wire [0:0] cby_0__1__0_left_grid_pin_2_;
-wire [0:0] cby_0__1__0_left_grid_pin_4_;
-wire [0:0] cby_0__1__0_left_grid_pin_6_;
-wire [0:0] cby_0__1__0_left_grid_pin_8_;
-wire [0:0] cby_0__1__0_right_grid_pin_3_;
-wire [0:0] cby_0__1__0_right_grid_pin_7_;
-wire [0:8] cby_0__1__1_chany_bottom_out;
-wire [0:8] cby_0__1__1_chany_top_out;
+wire [0:0] cby_0__1__0_right_grid_pin_52_;
+wire [0:0] cby_0__1__1_ccff_tail;
+wire [0:19] cby_0__1__1_chany_bottom_out;
+wire [0:19] cby_0__1__1_chany_top_out;
 wire [0:0] cby_0__1__1_left_grid_pin_0_;
-wire [0:0] cby_0__1__1_left_grid_pin_10_;
-wire [0:0] cby_0__1__1_left_grid_pin_12_;
-wire [0:0] cby_0__1__1_left_grid_pin_14_;
-wire [0:0] cby_0__1__1_left_grid_pin_2_;
-wire [0:0] cby_0__1__1_left_grid_pin_4_;
-wire [0:0] cby_0__1__1_left_grid_pin_6_;
-wire [0:0] cby_0__1__1_left_grid_pin_8_;
-wire [0:0] cby_0__1__1_right_grid_pin_3_;
-wire [0:0] cby_0__1__1_right_grid_pin_7_;
-wire [0:8] cby_0__1__2_chany_bottom_out;
-wire [0:8] cby_0__1__2_chany_top_out;
-wire [0:0] cby_0__1__2_left_grid_pin_0_;
-wire [0:0] cby_0__1__2_left_grid_pin_10_;
-wire [0:0] cby_0__1__2_left_grid_pin_12_;
-wire [0:0] cby_0__1__2_left_grid_pin_14_;
-wire [0:0] cby_0__1__2_left_grid_pin_2_;
-wire [0:0] cby_0__1__2_left_grid_pin_4_;
-wire [0:0] cby_0__1__2_left_grid_pin_6_;
-wire [0:0] cby_0__1__2_left_grid_pin_8_;
-wire [0:0] cby_0__1__2_right_grid_pin_3_;
-wire [0:0] cby_0__1__2_right_grid_pin_7_;
-wire [0:8] cby_1__1__0_chany_bottom_out;
-wire [0:8] cby_1__1__0_chany_top_out;
+wire [0:0] cby_0__1__1_right_grid_pin_52_;
+wire [0:0] cby_1__1__0_ccff_tail;
+wire [0:19] cby_1__1__0_chany_bottom_out;
+wire [0:19] cby_1__1__0_chany_top_out;
+wire [0:0] cby_1__1__0_left_grid_pin_0_;
+wire [0:0] cby_1__1__0_left_grid_pin_10_;
+wire [0:0] cby_1__1__0_left_grid_pin_11_;
+wire [0:0] cby_1__1__0_left_grid_pin_12_;
+wire [0:0] cby_1__1__0_left_grid_pin_13_;
+wire [0:0] cby_1__1__0_left_grid_pin_14_;
+wire [0:0] cby_1__1__0_left_grid_pin_15_;
 wire [0:0] cby_1__1__0_left_grid_pin_1_;
+wire [0:0] cby_1__1__0_left_grid_pin_2_;
+wire [0:0] cby_1__1__0_left_grid_pin_3_;
+wire [0:0] cby_1__1__0_left_grid_pin_4_;
 wire [0:0] cby_1__1__0_left_grid_pin_5_;
+wire [0:0] cby_1__1__0_left_grid_pin_6_;
+wire [0:0] cby_1__1__0_left_grid_pin_7_;
+wire [0:0] cby_1__1__0_left_grid_pin_8_;
 wire [0:0] cby_1__1__0_left_grid_pin_9_;
-wire [0:0] cby_1__1__0_right_grid_pin_3_;
-wire [0:0] cby_1__1__0_right_grid_pin_7_;
-wire [0:8] cby_1__1__1_chany_bottom_out;
-wire [0:8] cby_1__1__1_chany_top_out;
+wire [0:0] cby_1__1__0_right_grid_pin_52_;
+wire [0:0] cby_1__1__1_ccff_tail;
+wire [0:19] cby_1__1__1_chany_bottom_out;
+wire [0:19] cby_1__1__1_chany_top_out;
+wire [0:0] cby_1__1__1_left_grid_pin_0_;
+wire [0:0] cby_1__1__1_left_grid_pin_10_;
+wire [0:0] cby_1__1__1_left_grid_pin_11_;
+wire [0:0] cby_1__1__1_left_grid_pin_12_;
+wire [0:0] cby_1__1__1_left_grid_pin_13_;
+wire [0:0] cby_1__1__1_left_grid_pin_14_;
+wire [0:0] cby_1__1__1_left_grid_pin_15_;
 wire [0:0] cby_1__1__1_left_grid_pin_1_;
+wire [0:0] cby_1__1__1_left_grid_pin_2_;
+wire [0:0] cby_1__1__1_left_grid_pin_3_;
+wire [0:0] cby_1__1__1_left_grid_pin_4_;
 wire [0:0] cby_1__1__1_left_grid_pin_5_;
+wire [0:0] cby_1__1__1_left_grid_pin_6_;
+wire [0:0] cby_1__1__1_left_grid_pin_7_;
+wire [0:0] cby_1__1__1_left_grid_pin_8_;
 wire [0:0] cby_1__1__1_left_grid_pin_9_;
-wire [0:0] cby_1__1__1_right_grid_pin_3_;
-wire [0:0] cby_1__1__1_right_grid_pin_7_;
-wire [0:8] cby_1__1__2_chany_bottom_out;
-wire [0:8] cby_1__1__2_chany_top_out;
+wire [0:0] cby_1__1__1_right_grid_pin_52_;
+wire [0:0] cby_1__1__2_ccff_tail;
+wire [0:19] cby_1__1__2_chany_bottom_out;
+wire [0:19] cby_1__1__2_chany_top_out;
+wire [0:0] cby_1__1__2_left_grid_pin_0_;
+wire [0:0] cby_1__1__2_left_grid_pin_10_;
+wire [0:0] cby_1__1__2_left_grid_pin_11_;
+wire [0:0] cby_1__1__2_left_grid_pin_12_;
+wire [0:0] cby_1__1__2_left_grid_pin_13_;
+wire [0:0] cby_1__1__2_left_grid_pin_14_;
+wire [0:0] cby_1__1__2_left_grid_pin_15_;
 wire [0:0] cby_1__1__2_left_grid_pin_1_;
+wire [0:0] cby_1__1__2_left_grid_pin_2_;
+wire [0:0] cby_1__1__2_left_grid_pin_3_;
+wire [0:0] cby_1__1__2_left_grid_pin_4_;
 wire [0:0] cby_1__1__2_left_grid_pin_5_;
+wire [0:0] cby_1__1__2_left_grid_pin_6_;
+wire [0:0] cby_1__1__2_left_grid_pin_7_;
+wire [0:0] cby_1__1__2_left_grid_pin_8_;
 wire [0:0] cby_1__1__2_left_grid_pin_9_;
-wire [0:0] cby_1__1__2_right_grid_pin_3_;
-wire [0:0] cby_1__1__2_right_grid_pin_7_;
-wire [0:8] cby_1__1__3_chany_bottom_out;
-wire [0:8] cby_1__1__3_chany_top_out;
+wire [0:0] cby_1__1__2_right_grid_pin_52_;
+wire [0:0] cby_1__1__3_ccff_tail;
+wire [0:19] cby_1__1__3_chany_bottom_out;
+wire [0:19] cby_1__1__3_chany_top_out;
+wire [0:0] cby_1__1__3_left_grid_pin_0_;
+wire [0:0] cby_1__1__3_left_grid_pin_10_;
+wire [0:0] cby_1__1__3_left_grid_pin_11_;
+wire [0:0] cby_1__1__3_left_grid_pin_12_;
+wire [0:0] cby_1__1__3_left_grid_pin_13_;
+wire [0:0] cby_1__1__3_left_grid_pin_14_;
+wire [0:0] cby_1__1__3_left_grid_pin_15_;
 wire [0:0] cby_1__1__3_left_grid_pin_1_;
+wire [0:0] cby_1__1__3_left_grid_pin_2_;
+wire [0:0] cby_1__1__3_left_grid_pin_3_;
+wire [0:0] cby_1__1__3_left_grid_pin_4_;
 wire [0:0] cby_1__1__3_left_grid_pin_5_;
+wire [0:0] cby_1__1__3_left_grid_pin_6_;
+wire [0:0] cby_1__1__3_left_grid_pin_7_;
+wire [0:0] cby_1__1__3_left_grid_pin_8_;
 wire [0:0] cby_1__1__3_left_grid_pin_9_;
-wire [0:0] cby_1__1__3_right_grid_pin_3_;
-wire [0:0] cby_1__1__3_right_grid_pin_7_;
-wire [0:8] cby_1__1__4_chany_bottom_out;
-wire [0:8] cby_1__1__4_chany_top_out;
-wire [0:0] cby_1__1__4_left_grid_pin_1_;
-wire [0:0] cby_1__1__4_left_grid_pin_5_;
-wire [0:0] cby_1__1__4_left_grid_pin_9_;
-wire [0:0] cby_1__1__4_right_grid_pin_3_;
-wire [0:0] cby_1__1__4_right_grid_pin_7_;
-wire [0:8] cby_1__1__5_chany_bottom_out;
-wire [0:8] cby_1__1__5_chany_top_out;
-wire [0:0] cby_1__1__5_left_grid_pin_1_;
-wire [0:0] cby_1__1__5_left_grid_pin_5_;
-wire [0:0] cby_1__1__5_left_grid_pin_9_;
-wire [0:0] cby_1__1__5_right_grid_pin_3_;
-wire [0:0] cby_1__1__5_right_grid_pin_7_;
-wire [0:8] cby_3__1__0_chany_bottom_out;
-wire [0:8] cby_3__1__0_chany_top_out;
-wire [0:0] cby_3__1__0_left_grid_pin_1_;
-wire [0:0] cby_3__1__0_left_grid_pin_5_;
-wire [0:0] cby_3__1__0_left_grid_pin_9_;
-wire [0:0] cby_3__1__0_right_grid_pin_0_;
-wire [0:0] cby_3__1__0_right_grid_pin_10_;
-wire [0:0] cby_3__1__0_right_grid_pin_12_;
-wire [0:0] cby_3__1__0_right_grid_pin_14_;
-wire [0:0] cby_3__1__0_right_grid_pin_2_;
-wire [0:0] cby_3__1__0_right_grid_pin_4_;
-wire [0:0] cby_3__1__0_right_grid_pin_6_;
-wire [0:0] cby_3__1__0_right_grid_pin_8_;
-wire [0:8] cby_3__1__1_chany_bottom_out;
-wire [0:8] cby_3__1__1_chany_top_out;
-wire [0:0] cby_3__1__1_left_grid_pin_1_;
-wire [0:0] cby_3__1__1_left_grid_pin_5_;
-wire [0:0] cby_3__1__1_left_grid_pin_9_;
-wire [0:0] cby_3__1__1_right_grid_pin_0_;
-wire [0:0] cby_3__1__1_right_grid_pin_10_;
-wire [0:0] cby_3__1__1_right_grid_pin_12_;
-wire [0:0] cby_3__1__1_right_grid_pin_14_;
-wire [0:0] cby_3__1__1_right_grid_pin_2_;
-wire [0:0] cby_3__1__1_right_grid_pin_4_;
-wire [0:0] cby_3__1__1_right_grid_pin_6_;
-wire [0:0] cby_3__1__1_right_grid_pin_8_;
-wire [0:8] cby_3__1__2_chany_bottom_out;
-wire [0:8] cby_3__1__2_chany_top_out;
-wire [0:0] cby_3__1__2_left_grid_pin_1_;
-wire [0:0] cby_3__1__2_left_grid_pin_5_;
-wire [0:0] cby_3__1__2_left_grid_pin_9_;
-wire [0:0] cby_3__1__2_right_grid_pin_0_;
-wire [0:0] cby_3__1__2_right_grid_pin_10_;
-wire [0:0] cby_3__1__2_right_grid_pin_12_;
-wire [0:0] cby_3__1__2_right_grid_pin_14_;
-wire [0:0] cby_3__1__2_right_grid_pin_2_;
-wire [0:0] cby_3__1__2_right_grid_pin_4_;
-wire [0:0] cby_3__1__2_right_grid_pin_6_;
-wire [0:0] cby_3__1__2_right_grid_pin_8_;
-wire [0:60] decoder6to61_0_data_out;
-wire [0:0] grid_clb_0_bottom_width_0_height_0__pin_10_;
-wire [0:0] grid_clb_0_left_width_0_height_0__pin_11_;
-wire [0:0] grid_clb_0_right_width_0_height_0__pin_13_;
-wire [0:0] grid_clb_0_top_width_0_height_0__pin_12_;
-wire [0:0] grid_clb_1_bottom_width_0_height_0__pin_10_;
-wire [0:0] grid_clb_1_left_width_0_height_0__pin_11_;
-wire [0:0] grid_clb_1_right_width_0_height_0__pin_13_;
-wire [0:0] grid_clb_1_top_width_0_height_0__pin_12_;
-wire [0:0] grid_clb_2_bottom_width_0_height_0__pin_10_;
-wire [0:0] grid_clb_2_left_width_0_height_0__pin_11_;
-wire [0:0] grid_clb_2_right_width_0_height_0__pin_13_;
-wire [0:0] grid_clb_2_top_width_0_height_0__pin_12_;
-wire [0:0] grid_clb_3_bottom_width_0_height_0__pin_10_;
-wire [0:0] grid_clb_3_left_width_0_height_0__pin_11_;
-wire [0:0] grid_clb_3_right_width_0_height_0__pin_13_;
-wire [0:0] grid_clb_3_top_width_0_height_0__pin_12_;
-wire [0:0] grid_clb_4_bottom_width_0_height_0__pin_10_;
-wire [0:0] grid_clb_4_left_width_0_height_0__pin_11_;
-wire [0:0] grid_clb_4_right_width_0_height_0__pin_13_;
-wire [0:0] grid_clb_4_top_width_0_height_0__pin_12_;
-wire [0:0] grid_clb_5_bottom_width_0_height_0__pin_10_;
-wire [0:0] grid_clb_5_left_width_0_height_0__pin_11_;
-wire [0:0] grid_clb_5_right_width_0_height_0__pin_13_;
-wire [0:0] grid_clb_5_top_width_0_height_0__pin_12_;
-wire [0:0] grid_clb_6_bottom_width_0_height_0__pin_10_;
-wire [0:0] grid_clb_6_left_width_0_height_0__pin_11_;
-wire [0:0] grid_clb_6_right_width_0_height_0__pin_13_;
-wire [0:0] grid_clb_6_top_width_0_height_0__pin_12_;
-wire [0:0] grid_clb_7_bottom_width_0_height_0__pin_10_;
-wire [0:0] grid_clb_7_left_width_0_height_0__pin_11_;
-wire [0:0] grid_clb_7_right_width_0_height_0__pin_13_;
-wire [0:0] grid_clb_7_top_width_0_height_0__pin_12_;
-wire [0:0] grid_clb_8_bottom_width_0_height_0__pin_10_;
-wire [0:0] grid_clb_8_left_width_0_height_0__pin_11_;
-wire [0:0] grid_clb_8_right_width_0_height_0__pin_13_;
-wire [0:0] grid_clb_8_top_width_0_height_0__pin_12_;
-wire [0:0] grid_io_bottom_0_top_width_0_height_0__pin_11_;
-wire [0:0] grid_io_bottom_0_top_width_0_height_0__pin_13_;
-wire [0:0] grid_io_bottom_0_top_width_0_height_0__pin_15_;
-wire [0:0] grid_io_bottom_0_top_width_0_height_0__pin_1_;
-wire [0:0] grid_io_bottom_0_top_width_0_height_0__pin_3_;
-wire [0:0] grid_io_bottom_0_top_width_0_height_0__pin_5_;
-wire [0:0] grid_io_bottom_0_top_width_0_height_0__pin_7_;
-wire [0:0] grid_io_bottom_0_top_width_0_height_0__pin_9_;
-wire [0:0] grid_io_bottom_1_top_width_0_height_0__pin_11_;
-wire [0:0] grid_io_bottom_1_top_width_0_height_0__pin_13_;
-wire [0:0] grid_io_bottom_1_top_width_0_height_0__pin_15_;
-wire [0:0] grid_io_bottom_1_top_width_0_height_0__pin_1_;
-wire [0:0] grid_io_bottom_1_top_width_0_height_0__pin_3_;
-wire [0:0] grid_io_bottom_1_top_width_0_height_0__pin_5_;
-wire [0:0] grid_io_bottom_1_top_width_0_height_0__pin_7_;
-wire [0:0] grid_io_bottom_1_top_width_0_height_0__pin_9_;
-wire [0:0] grid_io_bottom_2_top_width_0_height_0__pin_11_;
-wire [0:0] grid_io_bottom_2_top_width_0_height_0__pin_13_;
-wire [0:0] grid_io_bottom_2_top_width_0_height_0__pin_15_;
-wire [0:0] grid_io_bottom_2_top_width_0_height_0__pin_1_;
-wire [0:0] grid_io_bottom_2_top_width_0_height_0__pin_3_;
-wire [0:0] grid_io_bottom_2_top_width_0_height_0__pin_5_;
-wire [0:0] grid_io_bottom_2_top_width_0_height_0__pin_7_;
-wire [0:0] grid_io_bottom_2_top_width_0_height_0__pin_9_;
-wire [0:0] grid_io_left_0_right_width_0_height_0__pin_11_;
-wire [0:0] grid_io_left_0_right_width_0_height_0__pin_13_;
-wire [0:0] grid_io_left_0_right_width_0_height_0__pin_15_;
-wire [0:0] grid_io_left_0_right_width_0_height_0__pin_1_;
-wire [0:0] grid_io_left_0_right_width_0_height_0__pin_3_;
-wire [0:0] grid_io_left_0_right_width_0_height_0__pin_5_;
-wire [0:0] grid_io_left_0_right_width_0_height_0__pin_7_;
-wire [0:0] grid_io_left_0_right_width_0_height_0__pin_9_;
-wire [0:0] grid_io_left_1_right_width_0_height_0__pin_11_;
-wire [0:0] grid_io_left_1_right_width_0_height_0__pin_13_;
-wire [0:0] grid_io_left_1_right_width_0_height_0__pin_15_;
-wire [0:0] grid_io_left_1_right_width_0_height_0__pin_1_;
-wire [0:0] grid_io_left_1_right_width_0_height_0__pin_3_;
-wire [0:0] grid_io_left_1_right_width_0_height_0__pin_5_;
-wire [0:0] grid_io_left_1_right_width_0_height_0__pin_7_;
-wire [0:0] grid_io_left_1_right_width_0_height_0__pin_9_;
-wire [0:0] grid_io_left_2_right_width_0_height_0__pin_11_;
-wire [0:0] grid_io_left_2_right_width_0_height_0__pin_13_;
-wire [0:0] grid_io_left_2_right_width_0_height_0__pin_15_;
-wire [0:0] grid_io_left_2_right_width_0_height_0__pin_1_;
-wire [0:0] grid_io_left_2_right_width_0_height_0__pin_3_;
-wire [0:0] grid_io_left_2_right_width_0_height_0__pin_5_;
-wire [0:0] grid_io_left_2_right_width_0_height_0__pin_7_;
-wire [0:0] grid_io_left_2_right_width_0_height_0__pin_9_;
-wire [0:0] grid_io_right_0_left_width_0_height_0__pin_11_;
-wire [0:0] grid_io_right_0_left_width_0_height_0__pin_13_;
-wire [0:0] grid_io_right_0_left_width_0_height_0__pin_15_;
-wire [0:0] grid_io_right_0_left_width_0_height_0__pin_1_;
-wire [0:0] grid_io_right_0_left_width_0_height_0__pin_3_;
-wire [0:0] grid_io_right_0_left_width_0_height_0__pin_5_;
-wire [0:0] grid_io_right_0_left_width_0_height_0__pin_7_;
-wire [0:0] grid_io_right_0_left_width_0_height_0__pin_9_;
-wire [0:0] grid_io_right_1_left_width_0_height_0__pin_11_;
-wire [0:0] grid_io_right_1_left_width_0_height_0__pin_13_;
-wire [0:0] grid_io_right_1_left_width_0_height_0__pin_15_;
-wire [0:0] grid_io_right_1_left_width_0_height_0__pin_1_;
-wire [0:0] grid_io_right_1_left_width_0_height_0__pin_3_;
-wire [0:0] grid_io_right_1_left_width_0_height_0__pin_5_;
-wire [0:0] grid_io_right_1_left_width_0_height_0__pin_7_;
-wire [0:0] grid_io_right_1_left_width_0_height_0__pin_9_;
-wire [0:0] grid_io_right_2_left_width_0_height_0__pin_11_;
-wire [0:0] grid_io_right_2_left_width_0_height_0__pin_13_;
-wire [0:0] grid_io_right_2_left_width_0_height_0__pin_15_;
-wire [0:0] grid_io_right_2_left_width_0_height_0__pin_1_;
-wire [0:0] grid_io_right_2_left_width_0_height_0__pin_3_;
-wire [0:0] grid_io_right_2_left_width_0_height_0__pin_5_;
-wire [0:0] grid_io_right_2_left_width_0_height_0__pin_7_;
-wire [0:0] grid_io_right_2_left_width_0_height_0__pin_9_;
-wire [0:0] grid_io_top_0_bottom_width_0_height_0__pin_11_;
-wire [0:0] grid_io_top_0_bottom_width_0_height_0__pin_13_;
-wire [0:0] grid_io_top_0_bottom_width_0_height_0__pin_15_;
-wire [0:0] grid_io_top_0_bottom_width_0_height_0__pin_1_;
-wire [0:0] grid_io_top_0_bottom_width_0_height_0__pin_3_;
-wire [0:0] grid_io_top_0_bottom_width_0_height_0__pin_5_;
-wire [0:0] grid_io_top_0_bottom_width_0_height_0__pin_7_;
-wire [0:0] grid_io_top_0_bottom_width_0_height_0__pin_9_;
-wire [0:0] grid_io_top_1_bottom_width_0_height_0__pin_11_;
-wire [0:0] grid_io_top_1_bottom_width_0_height_0__pin_13_;
-wire [0:0] grid_io_top_1_bottom_width_0_height_0__pin_15_;
-wire [0:0] grid_io_top_1_bottom_width_0_height_0__pin_1_;
-wire [0:0] grid_io_top_1_bottom_width_0_height_0__pin_3_;
-wire [0:0] grid_io_top_1_bottom_width_0_height_0__pin_5_;
-wire [0:0] grid_io_top_1_bottom_width_0_height_0__pin_7_;
-wire [0:0] grid_io_top_1_bottom_width_0_height_0__pin_9_;
-wire [0:0] grid_io_top_2_bottom_width_0_height_0__pin_11_;
-wire [0:0] grid_io_top_2_bottom_width_0_height_0__pin_13_;
-wire [0:0] grid_io_top_2_bottom_width_0_height_0__pin_15_;
-wire [0:0] grid_io_top_2_bottom_width_0_height_0__pin_1_;
-wire [0:0] grid_io_top_2_bottom_width_0_height_0__pin_3_;
-wire [0:0] grid_io_top_2_bottom_width_0_height_0__pin_5_;
-wire [0:0] grid_io_top_2_bottom_width_0_height_0__pin_7_;
-wire [0:0] grid_io_top_2_bottom_width_0_height_0__pin_9_;
-wire [0:8] sb_0__0__0_chanx_right_out;
-wire [0:8] sb_0__0__0_chany_top_out;
-wire [0:8] sb_0__1__0_chanx_right_out;
-wire [0:8] sb_0__1__0_chany_bottom_out;
-wire [0:8] sb_0__1__0_chany_top_out;
-wire [0:8] sb_0__1__1_chanx_right_out;
-wire [0:8] sb_0__1__1_chany_bottom_out;
-wire [0:8] sb_0__1__1_chany_top_out;
-wire [0:8] sb_0__3__0_chanx_right_out;
-wire [0:8] sb_0__3__0_chany_bottom_out;
-wire [0:8] sb_1__0__0_chanx_left_out;
-wire [0:8] sb_1__0__0_chanx_right_out;
-wire [0:8] sb_1__0__0_chany_top_out;
-wire [0:8] sb_1__0__1_chanx_left_out;
-wire [0:8] sb_1__0__1_chanx_right_out;
-wire [0:8] sb_1__0__1_chany_top_out;
-wire [0:8] sb_1__1__0_chanx_left_out;
-wire [0:8] sb_1__1__0_chanx_right_out;
-wire [0:8] sb_1__1__0_chany_bottom_out;
-wire [0:8] sb_1__1__0_chany_top_out;
-wire [0:8] sb_1__1__1_chanx_left_out;
-wire [0:8] sb_1__1__1_chanx_right_out;
-wire [0:8] sb_1__1__1_chany_bottom_out;
-wire [0:8] sb_1__1__1_chany_top_out;
-wire [0:8] sb_1__1__2_chanx_left_out;
-wire [0:8] sb_1__1__2_chanx_right_out;
-wire [0:8] sb_1__1__2_chany_bottom_out;
-wire [0:8] sb_1__1__2_chany_top_out;
-wire [0:8] sb_1__1__3_chanx_left_out;
-wire [0:8] sb_1__1__3_chanx_right_out;
-wire [0:8] sb_1__1__3_chany_bottom_out;
-wire [0:8] sb_1__1__3_chany_top_out;
-wire [0:8] sb_1__3__0_chanx_left_out;
-wire [0:8] sb_1__3__0_chanx_right_out;
-wire [0:8] sb_1__3__0_chany_bottom_out;
-wire [0:8] sb_1__3__1_chanx_left_out;
-wire [0:8] sb_1__3__1_chanx_right_out;
-wire [0:8] sb_1__3__1_chany_bottom_out;
-wire [0:8] sb_3__0__0_chanx_left_out;
-wire [0:8] sb_3__0__0_chany_top_out;
-wire [0:8] sb_3__1__0_chanx_left_out;
-wire [0:8] sb_3__1__0_chany_bottom_out;
-wire [0:8] sb_3__1__0_chany_top_out;
-wire [0:8] sb_3__1__1_chanx_left_out;
-wire [0:8] sb_3__1__1_chany_bottom_out;
-wire [0:8] sb_3__1__1_chany_top_out;
-wire [0:8] sb_3__3__0_chanx_left_out;
-wire [0:8] sb_3__3__0_chany_bottom_out;
+wire [0:0] cby_1__1__3_right_grid_pin_52_;
+wire [0:0] direct_interc_0_out;
+wire [0:0] direct_interc_1_out;
+wire [0:0] direct_interc_2_out;
+wire [0:0] direct_interc_3_out;
+wire [0:0] direct_interc_4_out;
+wire [0:0] direct_interc_5_out;
+wire [0:0] grid_clb_0_bottom_width_0_height_0__pin_42_lower;
+wire [0:0] grid_clb_0_bottom_width_0_height_0__pin_42_upper;
+wire [0:0] grid_clb_0_bottom_width_0_height_0__pin_43_lower;
+wire [0:0] grid_clb_0_bottom_width_0_height_0__pin_43_upper;
+wire [0:0] grid_clb_0_bottom_width_0_height_0__pin_44_lower;
+wire [0:0] grid_clb_0_bottom_width_0_height_0__pin_44_upper;
+wire [0:0] grid_clb_0_bottom_width_0_height_0__pin_45_lower;
+wire [0:0] grid_clb_0_bottom_width_0_height_0__pin_45_upper;
+wire [0:0] grid_clb_0_bottom_width_0_height_0__pin_46_lower;
+wire [0:0] grid_clb_0_bottom_width_0_height_0__pin_46_upper;
+wire [0:0] grid_clb_0_bottom_width_0_height_0__pin_47_lower;
+wire [0:0] grid_clb_0_bottom_width_0_height_0__pin_47_upper;
+wire [0:0] grid_clb_0_bottom_width_0_height_0__pin_48_lower;
+wire [0:0] grid_clb_0_bottom_width_0_height_0__pin_48_upper;
+wire [0:0] grid_clb_0_bottom_width_0_height_0__pin_49_lower;
+wire [0:0] grid_clb_0_bottom_width_0_height_0__pin_49_upper;
+wire [0:0] grid_clb_0_bottom_width_0_height_0__pin_50_;
+wire [0:0] grid_clb_0_bottom_width_0_height_0__pin_51_;
+wire [0:0] grid_clb_0_ccff_tail;
+wire [0:0] grid_clb_0_right_width_0_height_0__pin_34_lower;
+wire [0:0] grid_clb_0_right_width_0_height_0__pin_34_upper;
+wire [0:0] grid_clb_0_right_width_0_height_0__pin_35_lower;
+wire [0:0] grid_clb_0_right_width_0_height_0__pin_35_upper;
+wire [0:0] grid_clb_0_right_width_0_height_0__pin_36_lower;
+wire [0:0] grid_clb_0_right_width_0_height_0__pin_36_upper;
+wire [0:0] grid_clb_0_right_width_0_height_0__pin_37_lower;
+wire [0:0] grid_clb_0_right_width_0_height_0__pin_37_upper;
+wire [0:0] grid_clb_0_right_width_0_height_0__pin_38_lower;
+wire [0:0] grid_clb_0_right_width_0_height_0__pin_38_upper;
+wire [0:0] grid_clb_0_right_width_0_height_0__pin_39_lower;
+wire [0:0] grid_clb_0_right_width_0_height_0__pin_39_upper;
+wire [0:0] grid_clb_0_right_width_0_height_0__pin_40_lower;
+wire [0:0] grid_clb_0_right_width_0_height_0__pin_40_upper;
+wire [0:0] grid_clb_0_right_width_0_height_0__pin_41_lower;
+wire [0:0] grid_clb_0_right_width_0_height_0__pin_41_upper;
+wire [0:0] grid_clb_1__2__undriven_top_width_0_height_0__pin_32_;
+wire [0:0] grid_clb_1__2__undriven_top_width_0_height_0__pin_33_;
+wire [0:0] grid_clb_1_bottom_width_0_height_0__pin_42_lower;
+wire [0:0] grid_clb_1_bottom_width_0_height_0__pin_42_upper;
+wire [0:0] grid_clb_1_bottom_width_0_height_0__pin_43_lower;
+wire [0:0] grid_clb_1_bottom_width_0_height_0__pin_43_upper;
+wire [0:0] grid_clb_1_bottom_width_0_height_0__pin_44_lower;
+wire [0:0] grid_clb_1_bottom_width_0_height_0__pin_44_upper;
+wire [0:0] grid_clb_1_bottom_width_0_height_0__pin_45_lower;
+wire [0:0] grid_clb_1_bottom_width_0_height_0__pin_45_upper;
+wire [0:0] grid_clb_1_bottom_width_0_height_0__pin_46_lower;
+wire [0:0] grid_clb_1_bottom_width_0_height_0__pin_46_upper;
+wire [0:0] grid_clb_1_bottom_width_0_height_0__pin_47_lower;
+wire [0:0] grid_clb_1_bottom_width_0_height_0__pin_47_upper;
+wire [0:0] grid_clb_1_bottom_width_0_height_0__pin_48_lower;
+wire [0:0] grid_clb_1_bottom_width_0_height_0__pin_48_upper;
+wire [0:0] grid_clb_1_bottom_width_0_height_0__pin_49_lower;
+wire [0:0] grid_clb_1_bottom_width_0_height_0__pin_49_upper;
+wire [0:0] grid_clb_1_bottom_width_0_height_0__pin_50_;
+wire [0:0] grid_clb_1_bottom_width_0_height_0__pin_51_;
+wire [0:0] grid_clb_1_ccff_tail;
+wire [0:0] grid_clb_1_right_width_0_height_0__pin_34_lower;
+wire [0:0] grid_clb_1_right_width_0_height_0__pin_34_upper;
+wire [0:0] grid_clb_1_right_width_0_height_0__pin_35_lower;
+wire [0:0] grid_clb_1_right_width_0_height_0__pin_35_upper;
+wire [0:0] grid_clb_1_right_width_0_height_0__pin_36_lower;
+wire [0:0] grid_clb_1_right_width_0_height_0__pin_36_upper;
+wire [0:0] grid_clb_1_right_width_0_height_0__pin_37_lower;
+wire [0:0] grid_clb_1_right_width_0_height_0__pin_37_upper;
+wire [0:0] grid_clb_1_right_width_0_height_0__pin_38_lower;
+wire [0:0] grid_clb_1_right_width_0_height_0__pin_38_upper;
+wire [0:0] grid_clb_1_right_width_0_height_0__pin_39_lower;
+wire [0:0] grid_clb_1_right_width_0_height_0__pin_39_upper;
+wire [0:0] grid_clb_1_right_width_0_height_0__pin_40_lower;
+wire [0:0] grid_clb_1_right_width_0_height_0__pin_40_upper;
+wire [0:0] grid_clb_1_right_width_0_height_0__pin_41_lower;
+wire [0:0] grid_clb_1_right_width_0_height_0__pin_41_upper;
+wire [0:0] grid_clb_2__1__undriven_bottom_width_0_height_0__pin_50_;
+wire [0:0] grid_clb_2__1__undriven_bottom_width_0_height_0__pin_51_;
+wire [0:0] grid_clb_2_bottom_width_0_height_0__pin_42_lower;
+wire [0:0] grid_clb_2_bottom_width_0_height_0__pin_42_upper;
+wire [0:0] grid_clb_2_bottom_width_0_height_0__pin_43_lower;
+wire [0:0] grid_clb_2_bottom_width_0_height_0__pin_43_upper;
+wire [0:0] grid_clb_2_bottom_width_0_height_0__pin_44_lower;
+wire [0:0] grid_clb_2_bottom_width_0_height_0__pin_44_upper;
+wire [0:0] grid_clb_2_bottom_width_0_height_0__pin_45_lower;
+wire [0:0] grid_clb_2_bottom_width_0_height_0__pin_45_upper;
+wire [0:0] grid_clb_2_bottom_width_0_height_0__pin_46_lower;
+wire [0:0] grid_clb_2_bottom_width_0_height_0__pin_46_upper;
+wire [0:0] grid_clb_2_bottom_width_0_height_0__pin_47_lower;
+wire [0:0] grid_clb_2_bottom_width_0_height_0__pin_47_upper;
+wire [0:0] grid_clb_2_bottom_width_0_height_0__pin_48_lower;
+wire [0:0] grid_clb_2_bottom_width_0_height_0__pin_48_upper;
+wire [0:0] grid_clb_2_bottom_width_0_height_0__pin_49_lower;
+wire [0:0] grid_clb_2_bottom_width_0_height_0__pin_49_upper;
+wire [0:0] grid_clb_2_ccff_tail;
+wire [0:0] grid_clb_2_right_width_0_height_0__pin_34_lower;
+wire [0:0] grid_clb_2_right_width_0_height_0__pin_34_upper;
+wire [0:0] grid_clb_2_right_width_0_height_0__pin_35_lower;
+wire [0:0] grid_clb_2_right_width_0_height_0__pin_35_upper;
+wire [0:0] grid_clb_2_right_width_0_height_0__pin_36_lower;
+wire [0:0] grid_clb_2_right_width_0_height_0__pin_36_upper;
+wire [0:0] grid_clb_2_right_width_0_height_0__pin_37_lower;
+wire [0:0] grid_clb_2_right_width_0_height_0__pin_37_upper;
+wire [0:0] grid_clb_2_right_width_0_height_0__pin_38_lower;
+wire [0:0] grid_clb_2_right_width_0_height_0__pin_38_upper;
+wire [0:0] grid_clb_2_right_width_0_height_0__pin_39_lower;
+wire [0:0] grid_clb_2_right_width_0_height_0__pin_39_upper;
+wire [0:0] grid_clb_2_right_width_0_height_0__pin_40_lower;
+wire [0:0] grid_clb_2_right_width_0_height_0__pin_40_upper;
+wire [0:0] grid_clb_2_right_width_0_height_0__pin_41_lower;
+wire [0:0] grid_clb_2_right_width_0_height_0__pin_41_upper;
+wire [0:0] grid_clb_3_bottom_width_0_height_0__pin_42_lower;
+wire [0:0] grid_clb_3_bottom_width_0_height_0__pin_42_upper;
+wire [0:0] grid_clb_3_bottom_width_0_height_0__pin_43_lower;
+wire [0:0] grid_clb_3_bottom_width_0_height_0__pin_43_upper;
+wire [0:0] grid_clb_3_bottom_width_0_height_0__pin_44_lower;
+wire [0:0] grid_clb_3_bottom_width_0_height_0__pin_44_upper;
+wire [0:0] grid_clb_3_bottom_width_0_height_0__pin_45_lower;
+wire [0:0] grid_clb_3_bottom_width_0_height_0__pin_45_upper;
+wire [0:0] grid_clb_3_bottom_width_0_height_0__pin_46_lower;
+wire [0:0] grid_clb_3_bottom_width_0_height_0__pin_46_upper;
+wire [0:0] grid_clb_3_bottom_width_0_height_0__pin_47_lower;
+wire [0:0] grid_clb_3_bottom_width_0_height_0__pin_47_upper;
+wire [0:0] grid_clb_3_bottom_width_0_height_0__pin_48_lower;
+wire [0:0] grid_clb_3_bottom_width_0_height_0__pin_48_upper;
+wire [0:0] grid_clb_3_bottom_width_0_height_0__pin_49_lower;
+wire [0:0] grid_clb_3_bottom_width_0_height_0__pin_49_upper;
+wire [0:0] grid_clb_3_bottom_width_0_height_0__pin_50_;
+wire [0:0] grid_clb_3_bottom_width_0_height_0__pin_51_;
+wire [0:0] grid_clb_3_ccff_tail;
+wire [0:0] grid_clb_3_right_width_0_height_0__pin_34_lower;
+wire [0:0] grid_clb_3_right_width_0_height_0__pin_34_upper;
+wire [0:0] grid_clb_3_right_width_0_height_0__pin_35_lower;
+wire [0:0] grid_clb_3_right_width_0_height_0__pin_35_upper;
+wire [0:0] grid_clb_3_right_width_0_height_0__pin_36_lower;
+wire [0:0] grid_clb_3_right_width_0_height_0__pin_36_upper;
+wire [0:0] grid_clb_3_right_width_0_height_0__pin_37_lower;
+wire [0:0] grid_clb_3_right_width_0_height_0__pin_37_upper;
+wire [0:0] grid_clb_3_right_width_0_height_0__pin_38_lower;
+wire [0:0] grid_clb_3_right_width_0_height_0__pin_38_upper;
+wire [0:0] grid_clb_3_right_width_0_height_0__pin_39_lower;
+wire [0:0] grid_clb_3_right_width_0_height_0__pin_39_upper;
+wire [0:0] grid_clb_3_right_width_0_height_0__pin_40_lower;
+wire [0:0] grid_clb_3_right_width_0_height_0__pin_40_upper;
+wire [0:0] grid_clb_3_right_width_0_height_0__pin_41_lower;
+wire [0:0] grid_clb_3_right_width_0_height_0__pin_41_upper;
+wire [0:0] grid_io_bottom_0_ccff_tail;
+wire [0:0] grid_io_bottom_0_top_width_0_height_0__pin_1_lower;
+wire [0:0] grid_io_bottom_0_top_width_0_height_0__pin_1_upper;
+wire [0:0] grid_io_bottom_1_ccff_tail;
+wire [0:0] grid_io_bottom_1_top_width_0_height_0__pin_1_lower;
+wire [0:0] grid_io_bottom_1_top_width_0_height_0__pin_1_upper;
+wire [0:0] grid_io_left_0_ccff_tail;
+wire [0:0] grid_io_left_0_right_width_0_height_0__pin_1_lower;
+wire [0:0] grid_io_left_0_right_width_0_height_0__pin_1_upper;
+wire [0:0] grid_io_left_1_ccff_tail;
+wire [0:0] grid_io_left_1_right_width_0_height_0__pin_1_lower;
+wire [0:0] grid_io_left_1_right_width_0_height_0__pin_1_upper;
+wire [0:0] grid_io_right_0_ccff_tail;
+wire [0:0] grid_io_right_0_left_width_0_height_0__pin_1_lower;
+wire [0:0] grid_io_right_0_left_width_0_height_0__pin_1_upper;
+wire [0:0] grid_io_right_1_ccff_tail;
+wire [0:0] grid_io_right_1_left_width_0_height_0__pin_1_lower;
+wire [0:0] grid_io_right_1_left_width_0_height_0__pin_1_upper;
+wire [0:0] grid_io_top_0_bottom_width_0_height_0__pin_1_lower;
+wire [0:0] grid_io_top_0_bottom_width_0_height_0__pin_1_upper;
+wire [0:0] grid_io_top_0_ccff_tail;
+wire [0:0] grid_io_top_1_bottom_width_0_height_0__pin_1_lower;
+wire [0:0] grid_io_top_1_bottom_width_0_height_0__pin_1_upper;
+wire [0:0] grid_io_top_1_ccff_tail;
+wire [0:19] sb_0__0__0_chanx_right_out;
+wire [0:19] sb_0__0__0_chany_top_out;
+wire [0:0] sb_0__1__0_ccff_tail;
+wire [0:19] sb_0__1__0_chanx_right_out;
+wire [0:19] sb_0__1__0_chany_bottom_out;
+wire [0:19] sb_0__1__0_chany_top_out;
+wire [0:0] sb_0__2__0_ccff_tail;
+wire [0:19] sb_0__2__0_chanx_right_out;
+wire [0:19] sb_0__2__0_chany_bottom_out;
+wire [0:0] sb_1__0__0_ccff_tail;
+wire [0:19] sb_1__0__0_chanx_left_out;
+wire [0:19] sb_1__0__0_chanx_right_out;
+wire [0:19] sb_1__0__0_chany_top_out;
+wire [0:0] sb_1__1__0_ccff_tail;
+wire [0:19] sb_1__1__0_chanx_left_out;
+wire [0:19] sb_1__1__0_chanx_right_out;
+wire [0:19] sb_1__1__0_chany_bottom_out;
+wire [0:19] sb_1__1__0_chany_top_out;
+wire [0:0] sb_1__2__0_ccff_tail;
+wire [0:19] sb_1__2__0_chanx_left_out;
+wire [0:19] sb_1__2__0_chanx_right_out;
+wire [0:19] sb_1__2__0_chany_bottom_out;
+wire [0:0] sb_2__0__0_ccff_tail;
+wire [0:19] sb_2__0__0_chanx_left_out;
+wire [0:19] sb_2__0__0_chany_top_out;
+wire [0:0] sb_2__1__0_ccff_tail;
+wire [0:19] sb_2__1__0_chanx_left_out;
+wire [0:19] sb_2__1__0_chany_bottom_out;
+wire [0:19] sb_2__1__0_chany_top_out;
+wire [0:0] sb_2__2__0_ccff_tail;
+wire [0:19] sb_2__2__0_chanx_left_out;
+wire [0:19] sb_2__2__0_chany_bottom_out;
 
-// ----- BEGIN Local short connections -----
-// ----- END Local short connections -----
-// ----- BEGIN Local output short connections -----
-// ----- END Local output short connections -----
+//
+//
+//
+//
 
 	grid_clb grid_clb_1__1_ (
-		.set(set[0]),
-		.reset(reset[0]),
+		.prog_clk(prog_clk[0]),
+		.Test_en(Test_en[0]),
 		.clk(clk[0]),
-		.top_width_0_height_0__pin_0_(cbx_1__1__0_bottom_grid_pin_0_[0]),
-		.top_width_0_height_0__pin_4_(cbx_1__1__0_bottom_grid_pin_4_[0]),
-		.top_width_0_height_0__pin_8_(cbx_1__1__0_bottom_grid_pin_8_[0]),
+		.top_width_0_height_0__pin_32_(direct_interc_0_out[0]),
+		.top_width_0_height_0__pin_33_(direct_interc_3_out[0]),
+		.right_width_0_height_0__pin_0_(cby_1__1__0_left_grid_pin_0_[0]),
 		.right_width_0_height_0__pin_1_(cby_1__1__0_left_grid_pin_1_[0]),
+		.right_width_0_height_0__pin_2_(cby_1__1__0_left_grid_pin_2_[0]),
+		.right_width_0_height_0__pin_3_(cby_1__1__0_left_grid_pin_3_[0]),
+		.right_width_0_height_0__pin_4_(cby_1__1__0_left_grid_pin_4_[0]),
 		.right_width_0_height_0__pin_5_(cby_1__1__0_left_grid_pin_5_[0]),
+		.right_width_0_height_0__pin_6_(cby_1__1__0_left_grid_pin_6_[0]),
+		.right_width_0_height_0__pin_7_(cby_1__1__0_left_grid_pin_7_[0]),
+		.right_width_0_height_0__pin_8_(cby_1__1__0_left_grid_pin_8_[0]),
 		.right_width_0_height_0__pin_9_(cby_1__1__0_left_grid_pin_9_[0]),
-		.bottom_width_0_height_0__pin_2_(cbx_1__0__0_top_grid_pin_2_[0]),
-		.bottom_width_0_height_0__pin_6_(cbx_1__0__0_top_grid_pin_6_[0]),
-		.bottom_width_0_height_0__pin_14_(cbx_1__0__0_top_grid_pin_14_[0]),
-		.left_width_0_height_0__pin_3_(cby_0__1__0_right_grid_pin_3_[0]),
-		.left_width_0_height_0__pin_7_(cby_0__1__0_right_grid_pin_7_[0]),
-		.enable(decoder6to61_0_data_out[28]),
-		.address(address[0:9]),
-		.data_in(data_in[0]),
-		.top_width_0_height_0__pin_12_(grid_clb_0_top_width_0_height_0__pin_12_[0]),
-		.right_width_0_height_0__pin_13_(grid_clb_0_right_width_0_height_0__pin_13_[0]),
-		.bottom_width_0_height_0__pin_10_(grid_clb_0_bottom_width_0_height_0__pin_10_[0]),
-		.left_width_0_height_0__pin_11_(grid_clb_0_left_width_0_height_0__pin_11_[0]));
+		.right_width_0_height_0__pin_10_(cby_1__1__0_left_grid_pin_10_[0]),
+		.right_width_0_height_0__pin_11_(cby_1__1__0_left_grid_pin_11_[0]),
+		.right_width_0_height_0__pin_12_(cby_1__1__0_left_grid_pin_12_[0]),
+		.right_width_0_height_0__pin_13_(cby_1__1__0_left_grid_pin_13_[0]),
+		.right_width_0_height_0__pin_14_(cby_1__1__0_left_grid_pin_14_[0]),
+		.right_width_0_height_0__pin_15_(cby_1__1__0_left_grid_pin_15_[0]),
+		.bottom_width_0_height_0__pin_16_(cbx_1__0__0_top_grid_pin_16_[0]),
+		.bottom_width_0_height_0__pin_17_(cbx_1__0__0_top_grid_pin_17_[0]),
+		.bottom_width_0_height_0__pin_18_(cbx_1__0__0_top_grid_pin_18_[0]),
+		.bottom_width_0_height_0__pin_19_(cbx_1__0__0_top_grid_pin_19_[0]),
+		.bottom_width_0_height_0__pin_20_(cbx_1__0__0_top_grid_pin_20_[0]),
+		.bottom_width_0_height_0__pin_21_(cbx_1__0__0_top_grid_pin_21_[0]),
+		.bottom_width_0_height_0__pin_22_(cbx_1__0__0_top_grid_pin_22_[0]),
+		.bottom_width_0_height_0__pin_23_(cbx_1__0__0_top_grid_pin_23_[0]),
+		.bottom_width_0_height_0__pin_24_(cbx_1__0__0_top_grid_pin_24_[0]),
+		.bottom_width_0_height_0__pin_25_(cbx_1__0__0_top_grid_pin_25_[0]),
+		.bottom_width_0_height_0__pin_26_(cbx_1__0__0_top_grid_pin_26_[0]),
+		.bottom_width_0_height_0__pin_27_(cbx_1__0__0_top_grid_pin_27_[0]),
+		.bottom_width_0_height_0__pin_28_(cbx_1__0__0_top_grid_pin_28_[0]),
+		.bottom_width_0_height_0__pin_29_(cbx_1__0__0_top_grid_pin_29_[0]),
+		.bottom_width_0_height_0__pin_30_(cbx_1__0__0_top_grid_pin_30_[0]),
+		.bottom_width_0_height_0__pin_31_(cbx_1__0__0_top_grid_pin_31_[0]),
+		.left_width_0_height_0__pin_52_(cby_0__1__0_right_grid_pin_52_[0]),
+		.ccff_head(grid_io_left_0_ccff_tail[0]),
+		.right_width_0_height_0__pin_34_upper(grid_clb_0_right_width_0_height_0__pin_34_upper[0]),
+		.right_width_0_height_0__pin_34_lower(grid_clb_0_right_width_0_height_0__pin_34_lower[0]),
+		.right_width_0_height_0__pin_35_upper(grid_clb_0_right_width_0_height_0__pin_35_upper[0]),
+		.right_width_0_height_0__pin_35_lower(grid_clb_0_right_width_0_height_0__pin_35_lower[0]),
+		.right_width_0_height_0__pin_36_upper(grid_clb_0_right_width_0_height_0__pin_36_upper[0]),
+		.right_width_0_height_0__pin_36_lower(grid_clb_0_right_width_0_height_0__pin_36_lower[0]),
+		.right_width_0_height_0__pin_37_upper(grid_clb_0_right_width_0_height_0__pin_37_upper[0]),
+		.right_width_0_height_0__pin_37_lower(grid_clb_0_right_width_0_height_0__pin_37_lower[0]),
+		.right_width_0_height_0__pin_38_upper(grid_clb_0_right_width_0_height_0__pin_38_upper[0]),
+		.right_width_0_height_0__pin_38_lower(grid_clb_0_right_width_0_height_0__pin_38_lower[0]),
+		.right_width_0_height_0__pin_39_upper(grid_clb_0_right_width_0_height_0__pin_39_upper[0]),
+		.right_width_0_height_0__pin_39_lower(grid_clb_0_right_width_0_height_0__pin_39_lower[0]),
+		.right_width_0_height_0__pin_40_upper(grid_clb_0_right_width_0_height_0__pin_40_upper[0]),
+		.right_width_0_height_0__pin_40_lower(grid_clb_0_right_width_0_height_0__pin_40_lower[0]),
+		.right_width_0_height_0__pin_41_upper(grid_clb_0_right_width_0_height_0__pin_41_upper[0]),
+		.right_width_0_height_0__pin_41_lower(grid_clb_0_right_width_0_height_0__pin_41_lower[0]),
+		.bottom_width_0_height_0__pin_42_upper(grid_clb_0_bottom_width_0_height_0__pin_42_upper[0]),
+		.bottom_width_0_height_0__pin_42_lower(grid_clb_0_bottom_width_0_height_0__pin_42_lower[0]),
+		.bottom_width_0_height_0__pin_43_upper(grid_clb_0_bottom_width_0_height_0__pin_43_upper[0]),
+		.bottom_width_0_height_0__pin_43_lower(grid_clb_0_bottom_width_0_height_0__pin_43_lower[0]),
+		.bottom_width_0_height_0__pin_44_upper(grid_clb_0_bottom_width_0_height_0__pin_44_upper[0]),
+		.bottom_width_0_height_0__pin_44_lower(grid_clb_0_bottom_width_0_height_0__pin_44_lower[0]),
+		.bottom_width_0_height_0__pin_45_upper(grid_clb_0_bottom_width_0_height_0__pin_45_upper[0]),
+		.bottom_width_0_height_0__pin_45_lower(grid_clb_0_bottom_width_0_height_0__pin_45_lower[0]),
+		.bottom_width_0_height_0__pin_46_upper(grid_clb_0_bottom_width_0_height_0__pin_46_upper[0]),
+		.bottom_width_0_height_0__pin_46_lower(grid_clb_0_bottom_width_0_height_0__pin_46_lower[0]),
+		.bottom_width_0_height_0__pin_47_upper(grid_clb_0_bottom_width_0_height_0__pin_47_upper[0]),
+		.bottom_width_0_height_0__pin_47_lower(grid_clb_0_bottom_width_0_height_0__pin_47_lower[0]),
+		.bottom_width_0_height_0__pin_48_upper(grid_clb_0_bottom_width_0_height_0__pin_48_upper[0]),
+		.bottom_width_0_height_0__pin_48_lower(grid_clb_0_bottom_width_0_height_0__pin_48_lower[0]),
+		.bottom_width_0_height_0__pin_49_upper(grid_clb_0_bottom_width_0_height_0__pin_49_upper[0]),
+		.bottom_width_0_height_0__pin_49_lower(grid_clb_0_bottom_width_0_height_0__pin_49_lower[0]),
+		.bottom_width_0_height_0__pin_50_(grid_clb_0_bottom_width_0_height_0__pin_50_[0]),
+		.bottom_width_0_height_0__pin_51_(grid_clb_0_bottom_width_0_height_0__pin_51_[0]),
+		.ccff_tail(grid_clb_0_ccff_tail[0]));
 
 	grid_clb grid_clb_1__2_ (
-		.set(set[0]),
-		.reset(reset[0]),
+		.prog_clk(prog_clk[0]),
+		.Test_en(Test_en[0]),
 		.clk(clk[0]),
-		.top_width_0_height_0__pin_0_(cbx_1__1__1_bottom_grid_pin_0_[0]),
-		.top_width_0_height_0__pin_4_(cbx_1__1__1_bottom_grid_pin_4_[0]),
-		.top_width_0_height_0__pin_8_(cbx_1__1__1_bottom_grid_pin_8_[0]),
+		.top_width_0_height_0__pin_32_(grid_clb_1__2__undriven_top_width_0_height_0__pin_32_[0]),
+		.top_width_0_height_0__pin_33_(grid_clb_1__2__undriven_top_width_0_height_0__pin_33_[0]),
+		.right_width_0_height_0__pin_0_(cby_1__1__1_left_grid_pin_0_[0]),
 		.right_width_0_height_0__pin_1_(cby_1__1__1_left_grid_pin_1_[0]),
+		.right_width_0_height_0__pin_2_(cby_1__1__1_left_grid_pin_2_[0]),
+		.right_width_0_height_0__pin_3_(cby_1__1__1_left_grid_pin_3_[0]),
+		.right_width_0_height_0__pin_4_(cby_1__1__1_left_grid_pin_4_[0]),
 		.right_width_0_height_0__pin_5_(cby_1__1__1_left_grid_pin_5_[0]),
+		.right_width_0_height_0__pin_6_(cby_1__1__1_left_grid_pin_6_[0]),
+		.right_width_0_height_0__pin_7_(cby_1__1__1_left_grid_pin_7_[0]),
+		.right_width_0_height_0__pin_8_(cby_1__1__1_left_grid_pin_8_[0]),
 		.right_width_0_height_0__pin_9_(cby_1__1__1_left_grid_pin_9_[0]),
-		.bottom_width_0_height_0__pin_2_(cbx_1__1__0_top_grid_pin_2_[0]),
-		.bottom_width_0_height_0__pin_6_(cbx_1__1__0_top_grid_pin_6_[0]),
-		.bottom_width_0_height_0__pin_14_(cbx_1__1__0_top_grid_pin_14_[0]),
-		.left_width_0_height_0__pin_3_(cby_0__1__1_right_grid_pin_3_[0]),
-		.left_width_0_height_0__pin_7_(cby_0__1__1_right_grid_pin_7_[0]),
-		.enable(decoder6to61_0_data_out[48]),
-		.address(address[0:9]),
-		.data_in(data_in[0]),
-		.top_width_0_height_0__pin_12_(grid_clb_1_top_width_0_height_0__pin_12_[0]),
-		.right_width_0_height_0__pin_13_(grid_clb_1_right_width_0_height_0__pin_13_[0]),
-		.bottom_width_0_height_0__pin_10_(grid_clb_1_bottom_width_0_height_0__pin_10_[0]),
-		.left_width_0_height_0__pin_11_(grid_clb_1_left_width_0_height_0__pin_11_[0]));
-
-	grid_clb grid_clb_1__3_ (
-		.set(set[0]),
-		.reset(reset[0]),
-		.clk(clk[0]),
-		.top_width_0_height_0__pin_0_(cbx_1__3__0_bottom_grid_pin_0_[0]),
-		.top_width_0_height_0__pin_4_(cbx_1__3__0_bottom_grid_pin_4_[0]),
-		.top_width_0_height_0__pin_8_(cbx_1__3__0_bottom_grid_pin_8_[0]),
-		.right_width_0_height_0__pin_1_(cby_1__1__2_left_grid_pin_1_[0]),
-		.right_width_0_height_0__pin_5_(cby_1__1__2_left_grid_pin_5_[0]),
-		.right_width_0_height_0__pin_9_(cby_1__1__2_left_grid_pin_9_[0]),
-		.bottom_width_0_height_0__pin_2_(cbx_1__1__1_top_grid_pin_2_[0]),
-		.bottom_width_0_height_0__pin_6_(cbx_1__1__1_top_grid_pin_6_[0]),
-		.bottom_width_0_height_0__pin_14_(cbx_1__1__1_top_grid_pin_14_[0]),
-		.left_width_0_height_0__pin_3_(cby_0__1__2_right_grid_pin_3_[0]),
-		.left_width_0_height_0__pin_7_(cby_0__1__2_right_grid_pin_7_[0]),
-		.enable(decoder6to61_0_data_out[52]),
-		.address(address[0:9]),
-		.data_in(data_in[0]),
-		.top_width_0_height_0__pin_12_(grid_clb_2_top_width_0_height_0__pin_12_[0]),
-		.right_width_0_height_0__pin_13_(grid_clb_2_right_width_0_height_0__pin_13_[0]),
-		.bottom_width_0_height_0__pin_10_(grid_clb_2_bottom_width_0_height_0__pin_10_[0]),
-		.left_width_0_height_0__pin_11_(grid_clb_2_left_width_0_height_0__pin_11_[0]));
+		.right_width_0_height_0__pin_10_(cby_1__1__1_left_grid_pin_10_[0]),
+		.right_width_0_height_0__pin_11_(cby_1__1__1_left_grid_pin_11_[0]),
+		.right_width_0_height_0__pin_12_(cby_1__1__1_left_grid_pin_12_[0]),
+		.right_width_0_height_0__pin_13_(cby_1__1__1_left_grid_pin_13_[0]),
+		.right_width_0_height_0__pin_14_(cby_1__1__1_left_grid_pin_14_[0]),
+		.right_width_0_height_0__pin_15_(cby_1__1__1_left_grid_pin_15_[0]),
+		.bottom_width_0_height_0__pin_16_(cbx_1__1__0_top_grid_pin_16_[0]),
+		.bottom_width_0_height_0__pin_17_(cbx_1__1__0_top_grid_pin_17_[0]),
+		.bottom_width_0_height_0__pin_18_(cbx_1__1__0_top_grid_pin_18_[0]),
+		.bottom_width_0_height_0__pin_19_(cbx_1__1__0_top_grid_pin_19_[0]),
+		.bottom_width_0_height_0__pin_20_(cbx_1__1__0_top_grid_pin_20_[0]),
+		.bottom_width_0_height_0__pin_21_(cbx_1__1__0_top_grid_pin_21_[0]),
+		.bottom_width_0_height_0__pin_22_(cbx_1__1__0_top_grid_pin_22_[0]),
+		.bottom_width_0_height_0__pin_23_(cbx_1__1__0_top_grid_pin_23_[0]),
+		.bottom_width_0_height_0__pin_24_(cbx_1__1__0_top_grid_pin_24_[0]),
+		.bottom_width_0_height_0__pin_25_(cbx_1__1__0_top_grid_pin_25_[0]),
+		.bottom_width_0_height_0__pin_26_(cbx_1__1__0_top_grid_pin_26_[0]),
+		.bottom_width_0_height_0__pin_27_(cbx_1__1__0_top_grid_pin_27_[0]),
+		.bottom_width_0_height_0__pin_28_(cbx_1__1__0_top_grid_pin_28_[0]),
+		.bottom_width_0_height_0__pin_29_(cbx_1__1__0_top_grid_pin_29_[0]),
+		.bottom_width_0_height_0__pin_30_(cbx_1__1__0_top_grid_pin_30_[0]),
+		.bottom_width_0_height_0__pin_31_(cbx_1__1__0_top_grid_pin_31_[0]),
+		.left_width_0_height_0__pin_52_(cby_0__1__1_right_grid_pin_52_[0]),
+		.ccff_head(grid_io_left_1_ccff_tail[0]),
+		.right_width_0_height_0__pin_34_upper(grid_clb_1_right_width_0_height_0__pin_34_upper[0]),
+		.right_width_0_height_0__pin_34_lower(grid_clb_1_right_width_0_height_0__pin_34_lower[0]),
+		.right_width_0_height_0__pin_35_upper(grid_clb_1_right_width_0_height_0__pin_35_upper[0]),
+		.right_width_0_height_0__pin_35_lower(grid_clb_1_right_width_0_height_0__pin_35_lower[0]),
+		.right_width_0_height_0__pin_36_upper(grid_clb_1_right_width_0_height_0__pin_36_upper[0]),
+		.right_width_0_height_0__pin_36_lower(grid_clb_1_right_width_0_height_0__pin_36_lower[0]),
+		.right_width_0_height_0__pin_37_upper(grid_clb_1_right_width_0_height_0__pin_37_upper[0]),
+		.right_width_0_height_0__pin_37_lower(grid_clb_1_right_width_0_height_0__pin_37_lower[0]),
+		.right_width_0_height_0__pin_38_upper(grid_clb_1_right_width_0_height_0__pin_38_upper[0]),
+		.right_width_0_height_0__pin_38_lower(grid_clb_1_right_width_0_height_0__pin_38_lower[0]),
+		.right_width_0_height_0__pin_39_upper(grid_clb_1_right_width_0_height_0__pin_39_upper[0]),
+		.right_width_0_height_0__pin_39_lower(grid_clb_1_right_width_0_height_0__pin_39_lower[0]),
+		.right_width_0_height_0__pin_40_upper(grid_clb_1_right_width_0_height_0__pin_40_upper[0]),
+		.right_width_0_height_0__pin_40_lower(grid_clb_1_right_width_0_height_0__pin_40_lower[0]),
+		.right_width_0_height_0__pin_41_upper(grid_clb_1_right_width_0_height_0__pin_41_upper[0]),
+		.right_width_0_height_0__pin_41_lower(grid_clb_1_right_width_0_height_0__pin_41_lower[0]),
+		.bottom_width_0_height_0__pin_42_upper(grid_clb_1_bottom_width_0_height_0__pin_42_upper[0]),
+		.bottom_width_0_height_0__pin_42_lower(grid_clb_1_bottom_width_0_height_0__pin_42_lower[0]),
+		.bottom_width_0_height_0__pin_43_upper(grid_clb_1_bottom_width_0_height_0__pin_43_upper[0]),
+		.bottom_width_0_height_0__pin_43_lower(grid_clb_1_bottom_width_0_height_0__pin_43_lower[0]),
+		.bottom_width_0_height_0__pin_44_upper(grid_clb_1_bottom_width_0_height_0__pin_44_upper[0]),
+		.bottom_width_0_height_0__pin_44_lower(grid_clb_1_bottom_width_0_height_0__pin_44_lower[0]),
+		.bottom_width_0_height_0__pin_45_upper(grid_clb_1_bottom_width_0_height_0__pin_45_upper[0]),
+		.bottom_width_0_height_0__pin_45_lower(grid_clb_1_bottom_width_0_height_0__pin_45_lower[0]),
+		.bottom_width_0_height_0__pin_46_upper(grid_clb_1_bottom_width_0_height_0__pin_46_upper[0]),
+		.bottom_width_0_height_0__pin_46_lower(grid_clb_1_bottom_width_0_height_0__pin_46_lower[0]),
+		.bottom_width_0_height_0__pin_47_upper(grid_clb_1_bottom_width_0_height_0__pin_47_upper[0]),
+		.bottom_width_0_height_0__pin_47_lower(grid_clb_1_bottom_width_0_height_0__pin_47_lower[0]),
+		.bottom_width_0_height_0__pin_48_upper(grid_clb_1_bottom_width_0_height_0__pin_48_upper[0]),
+		.bottom_width_0_height_0__pin_48_lower(grid_clb_1_bottom_width_0_height_0__pin_48_lower[0]),
+		.bottom_width_0_height_0__pin_49_upper(grid_clb_1_bottom_width_0_height_0__pin_49_upper[0]),
+		.bottom_width_0_height_0__pin_49_lower(grid_clb_1_bottom_width_0_height_0__pin_49_lower[0]),
+		.bottom_width_0_height_0__pin_50_(grid_clb_1_bottom_width_0_height_0__pin_50_[0]),
+		.bottom_width_0_height_0__pin_51_(grid_clb_1_bottom_width_0_height_0__pin_51_[0]),
+		.ccff_tail(grid_clb_1_ccff_tail[0]));
 
 	grid_clb grid_clb_2__1_ (
-		.set(set[0]),
-		.reset(reset[0]),
+		.prog_clk(prog_clk[0]),
+		.Test_en(Test_en[0]),
 		.clk(clk[0]),
-		.top_width_0_height_0__pin_0_(cbx_1__1__2_bottom_grid_pin_0_[0]),
-		.top_width_0_height_0__pin_4_(cbx_1__1__2_bottom_grid_pin_4_[0]),
-		.top_width_0_height_0__pin_8_(cbx_1__1__2_bottom_grid_pin_8_[0]),
-		.right_width_0_height_0__pin_1_(cby_1__1__3_left_grid_pin_1_[0]),
-		.right_width_0_height_0__pin_5_(cby_1__1__3_left_grid_pin_5_[0]),
-		.right_width_0_height_0__pin_9_(cby_1__1__3_left_grid_pin_9_[0]),
-		.bottom_width_0_height_0__pin_2_(cbx_1__0__1_top_grid_pin_2_[0]),
-		.bottom_width_0_height_0__pin_6_(cbx_1__0__1_top_grid_pin_6_[0]),
-		.bottom_width_0_height_0__pin_14_(cbx_1__0__1_top_grid_pin_14_[0]),
-		.left_width_0_height_0__pin_3_(cby_1__1__0_right_grid_pin_3_[0]),
-		.left_width_0_height_0__pin_7_(cby_1__1__0_right_grid_pin_7_[0]),
-		.enable(decoder6to61_0_data_out[32]),
-		.address(address[0:9]),
-		.data_in(data_in[0]),
-		.top_width_0_height_0__pin_12_(grid_clb_3_top_width_0_height_0__pin_12_[0]),
-		.right_width_0_height_0__pin_13_(grid_clb_3_right_width_0_height_0__pin_13_[0]),
-		.bottom_width_0_height_0__pin_10_(grid_clb_3_bottom_width_0_height_0__pin_10_[0]),
-		.left_width_0_height_0__pin_11_(grid_clb_3_left_width_0_height_0__pin_11_[0]));
+		.top_width_0_height_0__pin_32_(direct_interc_1_out[0]),
+		.top_width_0_height_0__pin_33_(direct_interc_4_out[0]),
+		.right_width_0_height_0__pin_0_(cby_1__1__2_left_grid_pin_0_[0]),
+		.right_width_0_height_0__pin_1_(cby_1__1__2_left_grid_pin_1_[0]),
+		.right_width_0_height_0__pin_2_(cby_1__1__2_left_grid_pin_2_[0]),
+		.right_width_0_height_0__pin_3_(cby_1__1__2_left_grid_pin_3_[0]),
+		.right_width_0_height_0__pin_4_(cby_1__1__2_left_grid_pin_4_[0]),
+		.right_width_0_height_0__pin_5_(cby_1__1__2_left_grid_pin_5_[0]),
+		.right_width_0_height_0__pin_6_(cby_1__1__2_left_grid_pin_6_[0]),
+		.right_width_0_height_0__pin_7_(cby_1__1__2_left_grid_pin_7_[0]),
+		.right_width_0_height_0__pin_8_(cby_1__1__2_left_grid_pin_8_[0]),
+		.right_width_0_height_0__pin_9_(cby_1__1__2_left_grid_pin_9_[0]),
+		.right_width_0_height_0__pin_10_(cby_1__1__2_left_grid_pin_10_[0]),
+		.right_width_0_height_0__pin_11_(cby_1__1__2_left_grid_pin_11_[0]),
+		.right_width_0_height_0__pin_12_(cby_1__1__2_left_grid_pin_12_[0]),
+		.right_width_0_height_0__pin_13_(cby_1__1__2_left_grid_pin_13_[0]),
+		.right_width_0_height_0__pin_14_(cby_1__1__2_left_grid_pin_14_[0]),
+		.right_width_0_height_0__pin_15_(cby_1__1__2_left_grid_pin_15_[0]),
+		.bottom_width_0_height_0__pin_16_(cbx_1__0__1_top_grid_pin_16_[0]),
+		.bottom_width_0_height_0__pin_17_(cbx_1__0__1_top_grid_pin_17_[0]),
+		.bottom_width_0_height_0__pin_18_(cbx_1__0__1_top_grid_pin_18_[0]),
+		.bottom_width_0_height_0__pin_19_(cbx_1__0__1_top_grid_pin_19_[0]),
+		.bottom_width_0_height_0__pin_20_(cbx_1__0__1_top_grid_pin_20_[0]),
+		.bottom_width_0_height_0__pin_21_(cbx_1__0__1_top_grid_pin_21_[0]),
+		.bottom_width_0_height_0__pin_22_(cbx_1__0__1_top_grid_pin_22_[0]),
+		.bottom_width_0_height_0__pin_23_(cbx_1__0__1_top_grid_pin_23_[0]),
+		.bottom_width_0_height_0__pin_24_(cbx_1__0__1_top_grid_pin_24_[0]),
+		.bottom_width_0_height_0__pin_25_(cbx_1__0__1_top_grid_pin_25_[0]),
+		.bottom_width_0_height_0__pin_26_(cbx_1__0__1_top_grid_pin_26_[0]),
+		.bottom_width_0_height_0__pin_27_(cbx_1__0__1_top_grid_pin_27_[0]),
+		.bottom_width_0_height_0__pin_28_(cbx_1__0__1_top_grid_pin_28_[0]),
+		.bottom_width_0_height_0__pin_29_(cbx_1__0__1_top_grid_pin_29_[0]),
+		.bottom_width_0_height_0__pin_30_(cbx_1__0__1_top_grid_pin_30_[0]),
+		.bottom_width_0_height_0__pin_31_(cbx_1__0__1_top_grid_pin_31_[0]),
+		.left_width_0_height_0__pin_52_(cby_1__1__0_right_grid_pin_52_[0]),
+		.ccff_head(cby_1__1__0_ccff_tail[0]),
+		.right_width_0_height_0__pin_34_upper(grid_clb_2_right_width_0_height_0__pin_34_upper[0]),
+		.right_width_0_height_0__pin_34_lower(grid_clb_2_right_width_0_height_0__pin_34_lower[0]),
+		.right_width_0_height_0__pin_35_upper(grid_clb_2_right_width_0_height_0__pin_35_upper[0]),
+		.right_width_0_height_0__pin_35_lower(grid_clb_2_right_width_0_height_0__pin_35_lower[0]),
+		.right_width_0_height_0__pin_36_upper(grid_clb_2_right_width_0_height_0__pin_36_upper[0]),
+		.right_width_0_height_0__pin_36_lower(grid_clb_2_right_width_0_height_0__pin_36_lower[0]),
+		.right_width_0_height_0__pin_37_upper(grid_clb_2_right_width_0_height_0__pin_37_upper[0]),
+		.right_width_0_height_0__pin_37_lower(grid_clb_2_right_width_0_height_0__pin_37_lower[0]),
+		.right_width_0_height_0__pin_38_upper(grid_clb_2_right_width_0_height_0__pin_38_upper[0]),
+		.right_width_0_height_0__pin_38_lower(grid_clb_2_right_width_0_height_0__pin_38_lower[0]),
+		.right_width_0_height_0__pin_39_upper(grid_clb_2_right_width_0_height_0__pin_39_upper[0]),
+		.right_width_0_height_0__pin_39_lower(grid_clb_2_right_width_0_height_0__pin_39_lower[0]),
+		.right_width_0_height_0__pin_40_upper(grid_clb_2_right_width_0_height_0__pin_40_upper[0]),
+		.right_width_0_height_0__pin_40_lower(grid_clb_2_right_width_0_height_0__pin_40_lower[0]),
+		.right_width_0_height_0__pin_41_upper(grid_clb_2_right_width_0_height_0__pin_41_upper[0]),
+		.right_width_0_height_0__pin_41_lower(grid_clb_2_right_width_0_height_0__pin_41_lower[0]),
+		.bottom_width_0_height_0__pin_42_upper(grid_clb_2_bottom_width_0_height_0__pin_42_upper[0]),
+		.bottom_width_0_height_0__pin_42_lower(grid_clb_2_bottom_width_0_height_0__pin_42_lower[0]),
+		.bottom_width_0_height_0__pin_43_upper(grid_clb_2_bottom_width_0_height_0__pin_43_upper[0]),
+		.bottom_width_0_height_0__pin_43_lower(grid_clb_2_bottom_width_0_height_0__pin_43_lower[0]),
+		.bottom_width_0_height_0__pin_44_upper(grid_clb_2_bottom_width_0_height_0__pin_44_upper[0]),
+		.bottom_width_0_height_0__pin_44_lower(grid_clb_2_bottom_width_0_height_0__pin_44_lower[0]),
+		.bottom_width_0_height_0__pin_45_upper(grid_clb_2_bottom_width_0_height_0__pin_45_upper[0]),
+		.bottom_width_0_height_0__pin_45_lower(grid_clb_2_bottom_width_0_height_0__pin_45_lower[0]),
+		.bottom_width_0_height_0__pin_46_upper(grid_clb_2_bottom_width_0_height_0__pin_46_upper[0]),
+		.bottom_width_0_height_0__pin_46_lower(grid_clb_2_bottom_width_0_height_0__pin_46_lower[0]),
+		.bottom_width_0_height_0__pin_47_upper(grid_clb_2_bottom_width_0_height_0__pin_47_upper[0]),
+		.bottom_width_0_height_0__pin_47_lower(grid_clb_2_bottom_width_0_height_0__pin_47_lower[0]),
+		.bottom_width_0_height_0__pin_48_upper(grid_clb_2_bottom_width_0_height_0__pin_48_upper[0]),
+		.bottom_width_0_height_0__pin_48_lower(grid_clb_2_bottom_width_0_height_0__pin_48_lower[0]),
+		.bottom_width_0_height_0__pin_49_upper(grid_clb_2_bottom_width_0_height_0__pin_49_upper[0]),
+		.bottom_width_0_height_0__pin_49_lower(grid_clb_2_bottom_width_0_height_0__pin_49_lower[0]),
+		.bottom_width_0_height_0__pin_50_(grid_clb_2__1__undriven_bottom_width_0_height_0__pin_50_[0]),
+		.bottom_width_0_height_0__pin_51_(grid_clb_2__1__undriven_bottom_width_0_height_0__pin_51_[0]),
+		.ccff_tail(grid_clb_2_ccff_tail[0]));
 
 	grid_clb grid_clb_2__2_ (
-		.set(set[0]),
-		.reset(reset[0]),
+		.prog_clk(prog_clk[0]),
+		.Test_en(Test_en[0]),
 		.clk(clk[0]),
-		.top_width_0_height_0__pin_0_(cbx_1__1__3_bottom_grid_pin_0_[0]),
-		.top_width_0_height_0__pin_4_(cbx_1__1__3_bottom_grid_pin_4_[0]),
-		.top_width_0_height_0__pin_8_(cbx_1__1__3_bottom_grid_pin_8_[0]),
-		.right_width_0_height_0__pin_1_(cby_1__1__4_left_grid_pin_1_[0]),
-		.right_width_0_height_0__pin_5_(cby_1__1__4_left_grid_pin_5_[0]),
-		.right_width_0_height_0__pin_9_(cby_1__1__4_left_grid_pin_9_[0]),
-		.bottom_width_0_height_0__pin_2_(cbx_1__1__2_top_grid_pin_2_[0]),
-		.bottom_width_0_height_0__pin_6_(cbx_1__1__2_top_grid_pin_6_[0]),
-		.bottom_width_0_height_0__pin_14_(cbx_1__1__2_top_grid_pin_14_[0]),
-		.left_width_0_height_0__pin_3_(cby_1__1__1_right_grid_pin_3_[0]),
-		.left_width_0_height_0__pin_7_(cby_1__1__1_right_grid_pin_7_[0]),
-		.enable(decoder6to61_0_data_out[44]),
-		.address(address[0:9]),
-		.data_in(data_in[0]),
-		.top_width_0_height_0__pin_12_(grid_clb_4_top_width_0_height_0__pin_12_[0]),
-		.right_width_0_height_0__pin_13_(grid_clb_4_right_width_0_height_0__pin_13_[0]),
-		.bottom_width_0_height_0__pin_10_(grid_clb_4_bottom_width_0_height_0__pin_10_[0]),
-		.left_width_0_height_0__pin_11_(grid_clb_4_left_width_0_height_0__pin_11_[0]));
+		.top_width_0_height_0__pin_32_(direct_interc_2_out[0]),
+		.top_width_0_height_0__pin_33_(direct_interc_5_out[0]),
+		.right_width_0_height_0__pin_0_(cby_1__1__3_left_grid_pin_0_[0]),
+		.right_width_0_height_0__pin_1_(cby_1__1__3_left_grid_pin_1_[0]),
+		.right_width_0_height_0__pin_2_(cby_1__1__3_left_grid_pin_2_[0]),
+		.right_width_0_height_0__pin_3_(cby_1__1__3_left_grid_pin_3_[0]),
+		.right_width_0_height_0__pin_4_(cby_1__1__3_left_grid_pin_4_[0]),
+		.right_width_0_height_0__pin_5_(cby_1__1__3_left_grid_pin_5_[0]),
+		.right_width_0_height_0__pin_6_(cby_1__1__3_left_grid_pin_6_[0]),
+		.right_width_0_height_0__pin_7_(cby_1__1__3_left_grid_pin_7_[0]),
+		.right_width_0_height_0__pin_8_(cby_1__1__3_left_grid_pin_8_[0]),
+		.right_width_0_height_0__pin_9_(cby_1__1__3_left_grid_pin_9_[0]),
+		.right_width_0_height_0__pin_10_(cby_1__1__3_left_grid_pin_10_[0]),
+		.right_width_0_height_0__pin_11_(cby_1__1__3_left_grid_pin_11_[0]),
+		.right_width_0_height_0__pin_12_(cby_1__1__3_left_grid_pin_12_[0]),
+		.right_width_0_height_0__pin_13_(cby_1__1__3_left_grid_pin_13_[0]),
+		.right_width_0_height_0__pin_14_(cby_1__1__3_left_grid_pin_14_[0]),
+		.right_width_0_height_0__pin_15_(cby_1__1__3_left_grid_pin_15_[0]),
+		.bottom_width_0_height_0__pin_16_(cbx_1__1__1_top_grid_pin_16_[0]),
+		.bottom_width_0_height_0__pin_17_(cbx_1__1__1_top_grid_pin_17_[0]),
+		.bottom_width_0_height_0__pin_18_(cbx_1__1__1_top_grid_pin_18_[0]),
+		.bottom_width_0_height_0__pin_19_(cbx_1__1__1_top_grid_pin_19_[0]),
+		.bottom_width_0_height_0__pin_20_(cbx_1__1__1_top_grid_pin_20_[0]),
+		.bottom_width_0_height_0__pin_21_(cbx_1__1__1_top_grid_pin_21_[0]),
+		.bottom_width_0_height_0__pin_22_(cbx_1__1__1_top_grid_pin_22_[0]),
+		.bottom_width_0_height_0__pin_23_(cbx_1__1__1_top_grid_pin_23_[0]),
+		.bottom_width_0_height_0__pin_24_(cbx_1__1__1_top_grid_pin_24_[0]),
+		.bottom_width_0_height_0__pin_25_(cbx_1__1__1_top_grid_pin_25_[0]),
+		.bottom_width_0_height_0__pin_26_(cbx_1__1__1_top_grid_pin_26_[0]),
+		.bottom_width_0_height_0__pin_27_(cbx_1__1__1_top_grid_pin_27_[0]),
+		.bottom_width_0_height_0__pin_28_(cbx_1__1__1_top_grid_pin_28_[0]),
+		.bottom_width_0_height_0__pin_29_(cbx_1__1__1_top_grid_pin_29_[0]),
+		.bottom_width_0_height_0__pin_30_(cbx_1__1__1_top_grid_pin_30_[0]),
+		.bottom_width_0_height_0__pin_31_(cbx_1__1__1_top_grid_pin_31_[0]),
+		.left_width_0_height_0__pin_52_(cby_1__1__1_right_grid_pin_52_[0]),
+		.ccff_head(cby_1__1__1_ccff_tail[0]),
+		.right_width_0_height_0__pin_34_upper(grid_clb_3_right_width_0_height_0__pin_34_upper[0]),
+		.right_width_0_height_0__pin_34_lower(grid_clb_3_right_width_0_height_0__pin_34_lower[0]),
+		.right_width_0_height_0__pin_35_upper(grid_clb_3_right_width_0_height_0__pin_35_upper[0]),
+		.right_width_0_height_0__pin_35_lower(grid_clb_3_right_width_0_height_0__pin_35_lower[0]),
+		.right_width_0_height_0__pin_36_upper(grid_clb_3_right_width_0_height_0__pin_36_upper[0]),
+		.right_width_0_height_0__pin_36_lower(grid_clb_3_right_width_0_height_0__pin_36_lower[0]),
+		.right_width_0_height_0__pin_37_upper(grid_clb_3_right_width_0_height_0__pin_37_upper[0]),
+		.right_width_0_height_0__pin_37_lower(grid_clb_3_right_width_0_height_0__pin_37_lower[0]),
+		.right_width_0_height_0__pin_38_upper(grid_clb_3_right_width_0_height_0__pin_38_upper[0]),
+		.right_width_0_height_0__pin_38_lower(grid_clb_3_right_width_0_height_0__pin_38_lower[0]),
+		.right_width_0_height_0__pin_39_upper(grid_clb_3_right_width_0_height_0__pin_39_upper[0]),
+		.right_width_0_height_0__pin_39_lower(grid_clb_3_right_width_0_height_0__pin_39_lower[0]),
+		.right_width_0_height_0__pin_40_upper(grid_clb_3_right_width_0_height_0__pin_40_upper[0]),
+		.right_width_0_height_0__pin_40_lower(grid_clb_3_right_width_0_height_0__pin_40_lower[0]),
+		.right_width_0_height_0__pin_41_upper(grid_clb_3_right_width_0_height_0__pin_41_upper[0]),
+		.right_width_0_height_0__pin_41_lower(grid_clb_3_right_width_0_height_0__pin_41_lower[0]),
+		.bottom_width_0_height_0__pin_42_upper(grid_clb_3_bottom_width_0_height_0__pin_42_upper[0]),
+		.bottom_width_0_height_0__pin_42_lower(grid_clb_3_bottom_width_0_height_0__pin_42_lower[0]),
+		.bottom_width_0_height_0__pin_43_upper(grid_clb_3_bottom_width_0_height_0__pin_43_upper[0]),
+		.bottom_width_0_height_0__pin_43_lower(grid_clb_3_bottom_width_0_height_0__pin_43_lower[0]),
+		.bottom_width_0_height_0__pin_44_upper(grid_clb_3_bottom_width_0_height_0__pin_44_upper[0]),
+		.bottom_width_0_height_0__pin_44_lower(grid_clb_3_bottom_width_0_height_0__pin_44_lower[0]),
+		.bottom_width_0_height_0__pin_45_upper(grid_clb_3_bottom_width_0_height_0__pin_45_upper[0]),
+		.bottom_width_0_height_0__pin_45_lower(grid_clb_3_bottom_width_0_height_0__pin_45_lower[0]),
+		.bottom_width_0_height_0__pin_46_upper(grid_clb_3_bottom_width_0_height_0__pin_46_upper[0]),
+		.bottom_width_0_height_0__pin_46_lower(grid_clb_3_bottom_width_0_height_0__pin_46_lower[0]),
+		.bottom_width_0_height_0__pin_47_upper(grid_clb_3_bottom_width_0_height_0__pin_47_upper[0]),
+		.bottom_width_0_height_0__pin_47_lower(grid_clb_3_bottom_width_0_height_0__pin_47_lower[0]),
+		.bottom_width_0_height_0__pin_48_upper(grid_clb_3_bottom_width_0_height_0__pin_48_upper[0]),
+		.bottom_width_0_height_0__pin_48_lower(grid_clb_3_bottom_width_0_height_0__pin_48_lower[0]),
+		.bottom_width_0_height_0__pin_49_upper(grid_clb_3_bottom_width_0_height_0__pin_49_upper[0]),
+		.bottom_width_0_height_0__pin_49_lower(grid_clb_3_bottom_width_0_height_0__pin_49_lower[0]),
+		.bottom_width_0_height_0__pin_50_(grid_clb_3_bottom_width_0_height_0__pin_50_[0]),
+		.bottom_width_0_height_0__pin_51_(grid_clb_3_bottom_width_0_height_0__pin_51_[0]),
+		.ccff_tail(grid_clb_3_ccff_tail[0]));
 
-	grid_clb grid_clb_2__3_ (
-		.set(set[0]),
-		.reset(reset[0]),
-		.clk(clk[0]),
-		.top_width_0_height_0__pin_0_(cbx_1__3__1_bottom_grid_pin_0_[0]),
-		.top_width_0_height_0__pin_4_(cbx_1__3__1_bottom_grid_pin_4_[0]),
-		.top_width_0_height_0__pin_8_(cbx_1__3__1_bottom_grid_pin_8_[0]),
-		.right_width_0_height_0__pin_1_(cby_1__1__5_left_grid_pin_1_[0]),
-		.right_width_0_height_0__pin_5_(cby_1__1__5_left_grid_pin_5_[0]),
-		.right_width_0_height_0__pin_9_(cby_1__1__5_left_grid_pin_9_[0]),
-		.bottom_width_0_height_0__pin_2_(cbx_1__1__3_top_grid_pin_2_[0]),
-		.bottom_width_0_height_0__pin_6_(cbx_1__1__3_top_grid_pin_6_[0]),
-		.bottom_width_0_height_0__pin_14_(cbx_1__1__3_top_grid_pin_14_[0]),
-		.left_width_0_height_0__pin_3_(cby_1__1__2_right_grid_pin_3_[0]),
-		.left_width_0_height_0__pin_7_(cby_1__1__2_right_grid_pin_7_[0]),
-		.enable(decoder6to61_0_data_out[56]),
-		.address(address[0:9]),
-		.data_in(data_in[0]),
-		.top_width_0_height_0__pin_12_(grid_clb_5_top_width_0_height_0__pin_12_[0]),
-		.right_width_0_height_0__pin_13_(grid_clb_5_right_width_0_height_0__pin_13_[0]),
-		.bottom_width_0_height_0__pin_10_(grid_clb_5_bottom_width_0_height_0__pin_10_[0]),
-		.left_width_0_height_0__pin_11_(grid_clb_5_left_width_0_height_0__pin_11_[0]));
+	grid_io_top grid_io_top_1__3_ (
+		.prog_clk(prog_clk[0]),
+		.gfpga_pad_GPIO_A(gfpga_pad_GPIO_A[0]),
+		.gfpga_pad_GPIO_IE(gfpga_pad_GPIO_IE[0]),
+		.gfpga_pad_GPIO_OE(gfpga_pad_GPIO_OE[0]),
+		.gfpga_pad_GPIO_Y(gfpga_pad_GPIO_Y[0]),
+		.bottom_width_0_height_0__pin_0_(cbx_1__2__0_top_grid_pin_0_[0]),
+		.ccff_head(cbx_1__2__0_ccff_tail[0]),
+		.bottom_width_0_height_0__pin_1_upper(grid_io_top_0_bottom_width_0_height_0__pin_1_upper[0]),
+		.bottom_width_0_height_0__pin_1_lower(grid_io_top_0_bottom_width_0_height_0__pin_1_lower[0]),
+		.ccff_tail(grid_io_top_0_ccff_tail[0]));
 
-	grid_clb grid_clb_3__1_ (
-		.set(set[0]),
-		.reset(reset[0]),
-		.clk(clk[0]),
-		.top_width_0_height_0__pin_0_(cbx_1__1__4_bottom_grid_pin_0_[0]),
-		.top_width_0_height_0__pin_4_(cbx_1__1__4_bottom_grid_pin_4_[0]),
-		.top_width_0_height_0__pin_8_(cbx_1__1__4_bottom_grid_pin_8_[0]),
-		.right_width_0_height_0__pin_1_(cby_3__1__0_left_grid_pin_1_[0]),
-		.right_width_0_height_0__pin_5_(cby_3__1__0_left_grid_pin_5_[0]),
-		.right_width_0_height_0__pin_9_(cby_3__1__0_left_grid_pin_9_[0]),
-		.bottom_width_0_height_0__pin_2_(cbx_1__0__2_top_grid_pin_2_[0]),
-		.bottom_width_0_height_0__pin_6_(cbx_1__0__2_top_grid_pin_6_[0]),
-		.bottom_width_0_height_0__pin_14_(cbx_1__0__2_top_grid_pin_14_[0]),
-		.left_width_0_height_0__pin_3_(cby_1__1__3_right_grid_pin_3_[0]),
-		.left_width_0_height_0__pin_7_(cby_1__1__3_right_grid_pin_7_[0]),
-		.enable(decoder6to61_0_data_out[36]),
-		.address(address[0:9]),
-		.data_in(data_in[0]),
-		.top_width_0_height_0__pin_12_(grid_clb_6_top_width_0_height_0__pin_12_[0]),
-		.right_width_0_height_0__pin_13_(grid_clb_6_right_width_0_height_0__pin_13_[0]),
-		.bottom_width_0_height_0__pin_10_(grid_clb_6_bottom_width_0_height_0__pin_10_[0]),
-		.left_width_0_height_0__pin_11_(grid_clb_6_left_width_0_height_0__pin_11_[0]));
+	grid_io_top grid_io_top_2__3_ (
+		.prog_clk(prog_clk[0]),
+		.gfpga_pad_GPIO_A(gfpga_pad_GPIO_A[1]),
+		.gfpga_pad_GPIO_IE(gfpga_pad_GPIO_IE[1]),
+		.gfpga_pad_GPIO_OE(gfpga_pad_GPIO_OE[1]),
+		.gfpga_pad_GPIO_Y(gfpga_pad_GPIO_Y[1]),
+		.bottom_width_0_height_0__pin_0_(cbx_1__2__1_top_grid_pin_0_[0]),
+		.ccff_head(cbx_1__2__1_ccff_tail[0]),
+		.bottom_width_0_height_0__pin_1_upper(grid_io_top_1_bottom_width_0_height_0__pin_1_upper[0]),
+		.bottom_width_0_height_0__pin_1_lower(grid_io_top_1_bottom_width_0_height_0__pin_1_lower[0]),
+		.ccff_tail(grid_io_top_1_ccff_tail[0]));
 
-	grid_clb grid_clb_3__2_ (
-		.set(set[0]),
-		.reset(reset[0]),
-		.clk(clk[0]),
-		.top_width_0_height_0__pin_0_(cbx_1__1__5_bottom_grid_pin_0_[0]),
-		.top_width_0_height_0__pin_4_(cbx_1__1__5_bottom_grid_pin_4_[0]),
-		.top_width_0_height_0__pin_8_(cbx_1__1__5_bottom_grid_pin_8_[0]),
-		.right_width_0_height_0__pin_1_(cby_3__1__1_left_grid_pin_1_[0]),
-		.right_width_0_height_0__pin_5_(cby_3__1__1_left_grid_pin_5_[0]),
-		.right_width_0_height_0__pin_9_(cby_3__1__1_left_grid_pin_9_[0]),
-		.bottom_width_0_height_0__pin_2_(cbx_1__1__4_top_grid_pin_2_[0]),
-		.bottom_width_0_height_0__pin_6_(cbx_1__1__4_top_grid_pin_6_[0]),
-		.bottom_width_0_height_0__pin_14_(cbx_1__1__4_top_grid_pin_14_[0]),
-		.left_width_0_height_0__pin_3_(cby_1__1__4_right_grid_pin_3_[0]),
-		.left_width_0_height_0__pin_7_(cby_1__1__4_right_grid_pin_7_[0]),
-		.enable(decoder6to61_0_data_out[40]),
-		.address(address[0:9]),
-		.data_in(data_in[0]),
-		.top_width_0_height_0__pin_12_(grid_clb_7_top_width_0_height_0__pin_12_[0]),
-		.right_width_0_height_0__pin_13_(grid_clb_7_right_width_0_height_0__pin_13_[0]),
-		.bottom_width_0_height_0__pin_10_(grid_clb_7_bottom_width_0_height_0__pin_10_[0]),
-		.left_width_0_height_0__pin_11_(grid_clb_7_left_width_0_height_0__pin_11_[0]));
+	grid_io_right grid_io_right_3__1_ (
+		.prog_clk(prog_clk[0]),
+		.gfpga_pad_GPIO_A(gfpga_pad_GPIO_A[2]),
+		.gfpga_pad_GPIO_IE(gfpga_pad_GPIO_IE[2]),
+		.gfpga_pad_GPIO_OE(gfpga_pad_GPIO_OE[2]),
+		.gfpga_pad_GPIO_Y(gfpga_pad_GPIO_Y[2]),
+		.left_width_0_height_0__pin_0_(cby_1__1__2_right_grid_pin_52_[0]),
+		.ccff_head(cby_1__1__2_ccff_tail[0]),
+		.left_width_0_height_0__pin_1_upper(grid_io_right_0_left_width_0_height_0__pin_1_upper[0]),
+		.left_width_0_height_0__pin_1_lower(grid_io_right_0_left_width_0_height_0__pin_1_lower[0]),
+		.ccff_tail(grid_io_right_0_ccff_tail[0]));
 
-	grid_clb grid_clb_3__3_ (
-		.set(set[0]),
-		.reset(reset[0]),
-		.clk(clk[0]),
-		.top_width_0_height_0__pin_0_(cbx_1__3__2_bottom_grid_pin_0_[0]),
-		.top_width_0_height_0__pin_4_(cbx_1__3__2_bottom_grid_pin_4_[0]),
-		.top_width_0_height_0__pin_8_(cbx_1__3__2_bottom_grid_pin_8_[0]),
-		.right_width_0_height_0__pin_1_(cby_3__1__2_left_grid_pin_1_[0]),
-		.right_width_0_height_0__pin_5_(cby_3__1__2_left_grid_pin_5_[0]),
-		.right_width_0_height_0__pin_9_(cby_3__1__2_left_grid_pin_9_[0]),
-		.bottom_width_0_height_0__pin_2_(cbx_1__1__5_top_grid_pin_2_[0]),
-		.bottom_width_0_height_0__pin_6_(cbx_1__1__5_top_grid_pin_6_[0]),
-		.bottom_width_0_height_0__pin_14_(cbx_1__1__5_top_grid_pin_14_[0]),
-		.left_width_0_height_0__pin_3_(cby_1__1__5_right_grid_pin_3_[0]),
-		.left_width_0_height_0__pin_7_(cby_1__1__5_right_grid_pin_7_[0]),
-		.enable(decoder6to61_0_data_out[60]),
-		.address(address[0:9]),
-		.data_in(data_in[0]),
-		.top_width_0_height_0__pin_12_(grid_clb_8_top_width_0_height_0__pin_12_[0]),
-		.right_width_0_height_0__pin_13_(grid_clb_8_right_width_0_height_0__pin_13_[0]),
-		.bottom_width_0_height_0__pin_10_(grid_clb_8_bottom_width_0_height_0__pin_10_[0]),
-		.left_width_0_height_0__pin_11_(grid_clb_8_left_width_0_height_0__pin_11_[0]));
-
-	grid_io_top grid_io_top_1__4_ (
-		.gfpga_pad_GPIO_PAD(gfpga_pad_GPIO_PAD[0:7]),
-		.bottom_width_0_height_0__pin_0_(cbx_1__3__0_top_grid_pin_0_[0]),
-		.bottom_width_0_height_0__pin_2_(cbx_1__3__0_top_grid_pin_2_[0]),
-		.bottom_width_0_height_0__pin_4_(cbx_1__3__0_top_grid_pin_4_[0]),
-		.bottom_width_0_height_0__pin_6_(cbx_1__3__0_top_grid_pin_6_[0]),
-		.bottom_width_0_height_0__pin_8_(cbx_1__3__0_top_grid_pin_8_[0]),
-		.bottom_width_0_height_0__pin_10_(cbx_1__3__0_top_grid_pin_10_[0]),
-		.bottom_width_0_height_0__pin_12_(cbx_1__3__0_top_grid_pin_12_[0]),
-		.bottom_width_0_height_0__pin_14_(cbx_1__3__0_top_grid_pin_14_[0]),
-		.enable(decoder6to61_0_data_out[14]),
-		.address(address[0:3]),
-		.data_in(data_in[0]),
-		.bottom_width_0_height_0__pin_1_(grid_io_top_0_bottom_width_0_height_0__pin_1_[0]),
-		.bottom_width_0_height_0__pin_3_(grid_io_top_0_bottom_width_0_height_0__pin_3_[0]),
-		.bottom_width_0_height_0__pin_5_(grid_io_top_0_bottom_width_0_height_0__pin_5_[0]),
-		.bottom_width_0_height_0__pin_7_(grid_io_top_0_bottom_width_0_height_0__pin_7_[0]),
-		.bottom_width_0_height_0__pin_9_(grid_io_top_0_bottom_width_0_height_0__pin_9_[0]),
-		.bottom_width_0_height_0__pin_11_(grid_io_top_0_bottom_width_0_height_0__pin_11_[0]),
-		.bottom_width_0_height_0__pin_13_(grid_io_top_0_bottom_width_0_height_0__pin_13_[0]),
-		.bottom_width_0_height_0__pin_15_(grid_io_top_0_bottom_width_0_height_0__pin_15_[0]));
-
-	grid_io_top grid_io_top_2__4_ (
-		.gfpga_pad_GPIO_PAD(gfpga_pad_GPIO_PAD[8:15]),
-		.bottom_width_0_height_0__pin_0_(cbx_1__3__1_top_grid_pin_0_[0]),
-		.bottom_width_0_height_0__pin_2_(cbx_1__3__1_top_grid_pin_2_[0]),
-		.bottom_width_0_height_0__pin_4_(cbx_1__3__1_top_grid_pin_4_[0]),
-		.bottom_width_0_height_0__pin_6_(cbx_1__3__1_top_grid_pin_6_[0]),
-		.bottom_width_0_height_0__pin_8_(cbx_1__3__1_top_grid_pin_8_[0]),
-		.bottom_width_0_height_0__pin_10_(cbx_1__3__1_top_grid_pin_10_[0]),
-		.bottom_width_0_height_0__pin_12_(cbx_1__3__1_top_grid_pin_12_[0]),
-		.bottom_width_0_height_0__pin_14_(cbx_1__3__1_top_grid_pin_14_[0]),
-		.enable(decoder6to61_0_data_out[11]),
-		.address(address[0:3]),
-		.data_in(data_in[0]),
-		.bottom_width_0_height_0__pin_1_(grid_io_top_1_bottom_width_0_height_0__pin_1_[0]),
-		.bottom_width_0_height_0__pin_3_(grid_io_top_1_bottom_width_0_height_0__pin_3_[0]),
-		.bottom_width_0_height_0__pin_5_(grid_io_top_1_bottom_width_0_height_0__pin_5_[0]),
-		.bottom_width_0_height_0__pin_7_(grid_io_top_1_bottom_width_0_height_0__pin_7_[0]),
-		.bottom_width_0_height_0__pin_9_(grid_io_top_1_bottom_width_0_height_0__pin_9_[0]),
-		.bottom_width_0_height_0__pin_11_(grid_io_top_1_bottom_width_0_height_0__pin_11_[0]),
-		.bottom_width_0_height_0__pin_13_(grid_io_top_1_bottom_width_0_height_0__pin_13_[0]),
-		.bottom_width_0_height_0__pin_15_(grid_io_top_1_bottom_width_0_height_0__pin_15_[0]));
-
-	grid_io_top grid_io_top_3__4_ (
-		.gfpga_pad_GPIO_PAD(gfpga_pad_GPIO_PAD[16:23]),
-		.bottom_width_0_height_0__pin_0_(cbx_1__3__2_top_grid_pin_0_[0]),
-		.bottom_width_0_height_0__pin_2_(cbx_1__3__2_top_grid_pin_2_[0]),
-		.bottom_width_0_height_0__pin_4_(cbx_1__3__2_top_grid_pin_4_[0]),
-		.bottom_width_0_height_0__pin_6_(cbx_1__3__2_top_grid_pin_6_[0]),
-		.bottom_width_0_height_0__pin_8_(cbx_1__3__2_top_grid_pin_8_[0]),
-		.bottom_width_0_height_0__pin_10_(cbx_1__3__2_top_grid_pin_10_[0]),
-		.bottom_width_0_height_0__pin_12_(cbx_1__3__2_top_grid_pin_12_[0]),
-		.bottom_width_0_height_0__pin_14_(cbx_1__3__2_top_grid_pin_14_[0]),
-		.enable(decoder6to61_0_data_out[8]),
-		.address(address[0:3]),
-		.data_in(data_in[0]),
-		.bottom_width_0_height_0__pin_1_(grid_io_top_2_bottom_width_0_height_0__pin_1_[0]),
-		.bottom_width_0_height_0__pin_3_(grid_io_top_2_bottom_width_0_height_0__pin_3_[0]),
-		.bottom_width_0_height_0__pin_5_(grid_io_top_2_bottom_width_0_height_0__pin_5_[0]),
-		.bottom_width_0_height_0__pin_7_(grid_io_top_2_bottom_width_0_height_0__pin_7_[0]),
-		.bottom_width_0_height_0__pin_9_(grid_io_top_2_bottom_width_0_height_0__pin_9_[0]),
-		.bottom_width_0_height_0__pin_11_(grid_io_top_2_bottom_width_0_height_0__pin_11_[0]),
-		.bottom_width_0_height_0__pin_13_(grid_io_top_2_bottom_width_0_height_0__pin_13_[0]),
-		.bottom_width_0_height_0__pin_15_(grid_io_top_2_bottom_width_0_height_0__pin_15_[0]));
-
-	grid_io_right grid_io_right_4__1_ (
-		.gfpga_pad_GPIO_PAD(gfpga_pad_GPIO_PAD[24:31]),
-		.left_width_0_height_0__pin_0_(cby_3__1__0_right_grid_pin_0_[0]),
-		.left_width_0_height_0__pin_2_(cby_3__1__0_right_grid_pin_2_[0]),
-		.left_width_0_height_0__pin_4_(cby_3__1__0_right_grid_pin_4_[0]),
-		.left_width_0_height_0__pin_6_(cby_3__1__0_right_grid_pin_6_[0]),
-		.left_width_0_height_0__pin_8_(cby_3__1__0_right_grid_pin_8_[0]),
-		.left_width_0_height_0__pin_10_(cby_3__1__0_right_grid_pin_10_[0]),
-		.left_width_0_height_0__pin_12_(cby_3__1__0_right_grid_pin_12_[0]),
-		.left_width_0_height_0__pin_14_(cby_3__1__0_right_grid_pin_14_[0]),
-		.enable(decoder6to61_0_data_out[3]),
-		.address(address[0:3]),
-		.data_in(data_in[0]),
-		.left_width_0_height_0__pin_1_(grid_io_right_0_left_width_0_height_0__pin_1_[0]),
-		.left_width_0_height_0__pin_3_(grid_io_right_0_left_width_0_height_0__pin_3_[0]),
-		.left_width_0_height_0__pin_5_(grid_io_right_0_left_width_0_height_0__pin_5_[0]),
-		.left_width_0_height_0__pin_7_(grid_io_right_0_left_width_0_height_0__pin_7_[0]),
-		.left_width_0_height_0__pin_9_(grid_io_right_0_left_width_0_height_0__pin_9_[0]),
-		.left_width_0_height_0__pin_11_(grid_io_right_0_left_width_0_height_0__pin_11_[0]),
-		.left_width_0_height_0__pin_13_(grid_io_right_0_left_width_0_height_0__pin_13_[0]),
-		.left_width_0_height_0__pin_15_(grid_io_right_0_left_width_0_height_0__pin_15_[0]));
-
-	grid_io_right grid_io_right_4__2_ (
-		.gfpga_pad_GPIO_PAD(gfpga_pad_GPIO_PAD[32:39]),
-		.left_width_0_height_0__pin_0_(cby_3__1__1_right_grid_pin_0_[0]),
-		.left_width_0_height_0__pin_2_(cby_3__1__1_right_grid_pin_2_[0]),
-		.left_width_0_height_0__pin_4_(cby_3__1__1_right_grid_pin_4_[0]),
-		.left_width_0_height_0__pin_6_(cby_3__1__1_right_grid_pin_6_[0]),
-		.left_width_0_height_0__pin_8_(cby_3__1__1_right_grid_pin_8_[0]),
-		.left_width_0_height_0__pin_10_(cby_3__1__1_right_grid_pin_10_[0]),
-		.left_width_0_height_0__pin_12_(cby_3__1__1_right_grid_pin_12_[0]),
-		.left_width_0_height_0__pin_14_(cby_3__1__1_right_grid_pin_14_[0]),
-		.enable(decoder6to61_0_data_out[4]),
-		.address(address[0:3]),
-		.data_in(data_in[0]),
-		.left_width_0_height_0__pin_1_(grid_io_right_1_left_width_0_height_0__pin_1_[0]),
-		.left_width_0_height_0__pin_3_(grid_io_right_1_left_width_0_height_0__pin_3_[0]),
-		.left_width_0_height_0__pin_5_(grid_io_right_1_left_width_0_height_0__pin_5_[0]),
-		.left_width_0_height_0__pin_7_(grid_io_right_1_left_width_0_height_0__pin_7_[0]),
-		.left_width_0_height_0__pin_9_(grid_io_right_1_left_width_0_height_0__pin_9_[0]),
-		.left_width_0_height_0__pin_11_(grid_io_right_1_left_width_0_height_0__pin_11_[0]),
-		.left_width_0_height_0__pin_13_(grid_io_right_1_left_width_0_height_0__pin_13_[0]),
-		.left_width_0_height_0__pin_15_(grid_io_right_1_left_width_0_height_0__pin_15_[0]));
-
-	grid_io_right grid_io_right_4__3_ (
-		.gfpga_pad_GPIO_PAD(gfpga_pad_GPIO_PAD[40:47]),
-		.left_width_0_height_0__pin_0_(cby_3__1__2_right_grid_pin_0_[0]),
-		.left_width_0_height_0__pin_2_(cby_3__1__2_right_grid_pin_2_[0]),
-		.left_width_0_height_0__pin_4_(cby_3__1__2_right_grid_pin_4_[0]),
-		.left_width_0_height_0__pin_6_(cby_3__1__2_right_grid_pin_6_[0]),
-		.left_width_0_height_0__pin_8_(cby_3__1__2_right_grid_pin_8_[0]),
-		.left_width_0_height_0__pin_10_(cby_3__1__2_right_grid_pin_10_[0]),
-		.left_width_0_height_0__pin_12_(cby_3__1__2_right_grid_pin_12_[0]),
-		.left_width_0_height_0__pin_14_(cby_3__1__2_right_grid_pin_14_[0]),
-		.enable(decoder6to61_0_data_out[5]),
-		.address(address[0:3]),
-		.data_in(data_in[0]),
-		.left_width_0_height_0__pin_1_(grid_io_right_2_left_width_0_height_0__pin_1_[0]),
-		.left_width_0_height_0__pin_3_(grid_io_right_2_left_width_0_height_0__pin_3_[0]),
-		.left_width_0_height_0__pin_5_(grid_io_right_2_left_width_0_height_0__pin_5_[0]),
-		.left_width_0_height_0__pin_7_(grid_io_right_2_left_width_0_height_0__pin_7_[0]),
-		.left_width_0_height_0__pin_9_(grid_io_right_2_left_width_0_height_0__pin_9_[0]),
-		.left_width_0_height_0__pin_11_(grid_io_right_2_left_width_0_height_0__pin_11_[0]),
-		.left_width_0_height_0__pin_13_(grid_io_right_2_left_width_0_height_0__pin_13_[0]),
-		.left_width_0_height_0__pin_15_(grid_io_right_2_left_width_0_height_0__pin_15_[0]));
+	grid_io_right grid_io_right_3__2_ (
+		.prog_clk(prog_clk[0]),
+		.gfpga_pad_GPIO_A(gfpga_pad_GPIO_A[3]),
+		.gfpga_pad_GPIO_IE(gfpga_pad_GPIO_IE[3]),
+		.gfpga_pad_GPIO_OE(gfpga_pad_GPIO_OE[3]),
+		.gfpga_pad_GPIO_Y(gfpga_pad_GPIO_Y[3]),
+		.left_width_0_height_0__pin_0_(cby_1__1__3_right_grid_pin_52_[0]),
+		.ccff_head(cby_1__1__3_ccff_tail[0]),
+		.left_width_0_height_0__pin_1_upper(grid_io_right_1_left_width_0_height_0__pin_1_upper[0]),
+		.left_width_0_height_0__pin_1_lower(grid_io_right_1_left_width_0_height_0__pin_1_lower[0]),
+		.ccff_tail(grid_io_right_1_ccff_tail[0]));
 
 	grid_io_bottom grid_io_bottom_1__0_ (
-		.gfpga_pad_GPIO_PAD(gfpga_pad_GPIO_PAD[48:55]),
+		.prog_clk(prog_clk[0]),
+		.gfpga_pad_GPIO_A(gfpga_pad_GPIO_A[4]),
+		.gfpga_pad_GPIO_IE(gfpga_pad_GPIO_IE[4]),
+		.gfpga_pad_GPIO_OE(gfpga_pad_GPIO_OE[4]),
+		.gfpga_pad_GPIO_Y(gfpga_pad_GPIO_Y[4]),
 		.top_width_0_height_0__pin_0_(cbx_1__0__0_bottom_grid_pin_0_[0]),
-		.top_width_0_height_0__pin_2_(cbx_1__0__0_bottom_grid_pin_2_[0]),
-		.top_width_0_height_0__pin_4_(cbx_1__0__0_bottom_grid_pin_4_[0]),
-		.top_width_0_height_0__pin_6_(cbx_1__0__0_bottom_grid_pin_6_[0]),
-		.top_width_0_height_0__pin_8_(cbx_1__0__0_bottom_grid_pin_8_[0]),
-		.top_width_0_height_0__pin_10_(cbx_1__0__0_bottom_grid_pin_10_[0]),
-		.top_width_0_height_0__pin_12_(cbx_1__0__0_bottom_grid_pin_12_[0]),
-		.top_width_0_height_0__pin_14_(cbx_1__0__0_bottom_grid_pin_14_[0]),
-		.enable(decoder6to61_0_data_out[0]),
-		.address(address[0:3]),
-		.data_in(data_in[0]),
-		.top_width_0_height_0__pin_1_(grid_io_bottom_0_top_width_0_height_0__pin_1_[0]),
-		.top_width_0_height_0__pin_3_(grid_io_bottom_0_top_width_0_height_0__pin_3_[0]),
-		.top_width_0_height_0__pin_5_(grid_io_bottom_0_top_width_0_height_0__pin_5_[0]),
-		.top_width_0_height_0__pin_7_(grid_io_bottom_0_top_width_0_height_0__pin_7_[0]),
-		.top_width_0_height_0__pin_9_(grid_io_bottom_0_top_width_0_height_0__pin_9_[0]),
-		.top_width_0_height_0__pin_11_(grid_io_bottom_0_top_width_0_height_0__pin_11_[0]),
-		.top_width_0_height_0__pin_13_(grid_io_bottom_0_top_width_0_height_0__pin_13_[0]),
-		.top_width_0_height_0__pin_15_(grid_io_bottom_0_top_width_0_height_0__pin_15_[0]));
+		.ccff_head(cbx_1__0__0_ccff_tail[0]),
+		.top_width_0_height_0__pin_1_upper(grid_io_bottom_0_top_width_0_height_0__pin_1_upper[0]),
+		.top_width_0_height_0__pin_1_lower(grid_io_bottom_0_top_width_0_height_0__pin_1_lower[0]),
+		.ccff_tail(grid_io_bottom_0_ccff_tail[0]));
 
 	grid_io_bottom grid_io_bottom_2__0_ (
-		.gfpga_pad_GPIO_PAD(gfpga_pad_GPIO_PAD[56:63]),
+		.prog_clk(prog_clk[0]),
+		.gfpga_pad_GPIO_A(gfpga_pad_GPIO_A[5]),
+		.gfpga_pad_GPIO_IE(gfpga_pad_GPIO_IE[5]),
+		.gfpga_pad_GPIO_OE(gfpga_pad_GPIO_OE[5]),
+		.gfpga_pad_GPIO_Y(gfpga_pad_GPIO_Y[5]),
 		.top_width_0_height_0__pin_0_(cbx_1__0__1_bottom_grid_pin_0_[0]),
-		.top_width_0_height_0__pin_2_(cbx_1__0__1_bottom_grid_pin_2_[0]),
-		.top_width_0_height_0__pin_4_(cbx_1__0__1_bottom_grid_pin_4_[0]),
-		.top_width_0_height_0__pin_6_(cbx_1__0__1_bottom_grid_pin_6_[0]),
-		.top_width_0_height_0__pin_8_(cbx_1__0__1_bottom_grid_pin_8_[0]),
-		.top_width_0_height_0__pin_10_(cbx_1__0__1_bottom_grid_pin_10_[0]),
-		.top_width_0_height_0__pin_12_(cbx_1__0__1_bottom_grid_pin_12_[0]),
-		.top_width_0_height_0__pin_14_(cbx_1__0__1_bottom_grid_pin_14_[0]),
-		.enable(decoder6to61_0_data_out[1]),
-		.address(address[0:3]),
-		.data_in(data_in[0]),
-		.top_width_0_height_0__pin_1_(grid_io_bottom_1_top_width_0_height_0__pin_1_[0]),
-		.top_width_0_height_0__pin_3_(grid_io_bottom_1_top_width_0_height_0__pin_3_[0]),
-		.top_width_0_height_0__pin_5_(grid_io_bottom_1_top_width_0_height_0__pin_5_[0]),
-		.top_width_0_height_0__pin_7_(grid_io_bottom_1_top_width_0_height_0__pin_7_[0]),
-		.top_width_0_height_0__pin_9_(grid_io_bottom_1_top_width_0_height_0__pin_9_[0]),
-		.top_width_0_height_0__pin_11_(grid_io_bottom_1_top_width_0_height_0__pin_11_[0]),
-		.top_width_0_height_0__pin_13_(grid_io_bottom_1_top_width_0_height_0__pin_13_[0]),
-		.top_width_0_height_0__pin_15_(grid_io_bottom_1_top_width_0_height_0__pin_15_[0]));
-
-	grid_io_bottom grid_io_bottom_3__0_ (
-		.gfpga_pad_GPIO_PAD(gfpga_pad_GPIO_PAD[64:71]),
-		.top_width_0_height_0__pin_0_(cbx_1__0__2_bottom_grid_pin_0_[0]),
-		.top_width_0_height_0__pin_2_(cbx_1__0__2_bottom_grid_pin_2_[0]),
-		.top_width_0_height_0__pin_4_(cbx_1__0__2_bottom_grid_pin_4_[0]),
-		.top_width_0_height_0__pin_6_(cbx_1__0__2_bottom_grid_pin_6_[0]),
-		.top_width_0_height_0__pin_8_(cbx_1__0__2_bottom_grid_pin_8_[0]),
-		.top_width_0_height_0__pin_10_(cbx_1__0__2_bottom_grid_pin_10_[0]),
-		.top_width_0_height_0__pin_12_(cbx_1__0__2_bottom_grid_pin_12_[0]),
-		.top_width_0_height_0__pin_14_(cbx_1__0__2_bottom_grid_pin_14_[0]),
-		.enable(decoder6to61_0_data_out[2]),
-		.address(address[0:3]),
-		.data_in(data_in[0]),
-		.top_width_0_height_0__pin_1_(grid_io_bottom_2_top_width_0_height_0__pin_1_[0]),
-		.top_width_0_height_0__pin_3_(grid_io_bottom_2_top_width_0_height_0__pin_3_[0]),
-		.top_width_0_height_0__pin_5_(grid_io_bottom_2_top_width_0_height_0__pin_5_[0]),
-		.top_width_0_height_0__pin_7_(grid_io_bottom_2_top_width_0_height_0__pin_7_[0]),
-		.top_width_0_height_0__pin_9_(grid_io_bottom_2_top_width_0_height_0__pin_9_[0]),
-		.top_width_0_height_0__pin_11_(grid_io_bottom_2_top_width_0_height_0__pin_11_[0]),
-		.top_width_0_height_0__pin_13_(grid_io_bottom_2_top_width_0_height_0__pin_13_[0]),
-		.top_width_0_height_0__pin_15_(grid_io_bottom_2_top_width_0_height_0__pin_15_[0]));
+		.ccff_head(cbx_1__0__1_ccff_tail[0]),
+		.top_width_0_height_0__pin_1_upper(grid_io_bottom_1_top_width_0_height_0__pin_1_upper[0]),
+		.top_width_0_height_0__pin_1_lower(grid_io_bottom_1_top_width_0_height_0__pin_1_lower[0]),
+		.ccff_tail(grid_io_bottom_1_ccff_tail[0]));
 
 	grid_io_left grid_io_left_0__1_ (
-		.gfpga_pad_GPIO_PAD(gfpga_pad_GPIO_PAD[72:79]),
+		.prog_clk(prog_clk[0]),
+		.gfpga_pad_GPIO_A(gfpga_pad_GPIO_A[6]),
+		.gfpga_pad_GPIO_IE(gfpga_pad_GPIO_IE[6]),
+		.gfpga_pad_GPIO_OE(gfpga_pad_GPIO_OE[6]),
+		.gfpga_pad_GPIO_Y(gfpga_pad_GPIO_Y[6]),
 		.right_width_0_height_0__pin_0_(cby_0__1__0_left_grid_pin_0_[0]),
-		.right_width_0_height_0__pin_2_(cby_0__1__0_left_grid_pin_2_[0]),
-		.right_width_0_height_0__pin_4_(cby_0__1__0_left_grid_pin_4_[0]),
-		.right_width_0_height_0__pin_6_(cby_0__1__0_left_grid_pin_6_[0]),
-		.right_width_0_height_0__pin_8_(cby_0__1__0_left_grid_pin_8_[0]),
-		.right_width_0_height_0__pin_10_(cby_0__1__0_left_grid_pin_10_[0]),
-		.right_width_0_height_0__pin_12_(cby_0__1__0_left_grid_pin_12_[0]),
-		.right_width_0_height_0__pin_14_(cby_0__1__0_left_grid_pin_14_[0]),
-		.enable(decoder6to61_0_data_out[24]),
-		.address(address[0:3]),
-		.data_in(data_in[0]),
-		.right_width_0_height_0__pin_1_(grid_io_left_0_right_width_0_height_0__pin_1_[0]),
-		.right_width_0_height_0__pin_3_(grid_io_left_0_right_width_0_height_0__pin_3_[0]),
-		.right_width_0_height_0__pin_5_(grid_io_left_0_right_width_0_height_0__pin_5_[0]),
-		.right_width_0_height_0__pin_7_(grid_io_left_0_right_width_0_height_0__pin_7_[0]),
-		.right_width_0_height_0__pin_9_(grid_io_left_0_right_width_0_height_0__pin_9_[0]),
-		.right_width_0_height_0__pin_11_(grid_io_left_0_right_width_0_height_0__pin_11_[0]),
-		.right_width_0_height_0__pin_13_(grid_io_left_0_right_width_0_height_0__pin_13_[0]),
-		.right_width_0_height_0__pin_15_(grid_io_left_0_right_width_0_height_0__pin_15_[0]));
+		.ccff_head(cby_0__1__0_ccff_tail[0]),
+		.right_width_0_height_0__pin_1_upper(grid_io_left_0_right_width_0_height_0__pin_1_upper[0]),
+		.right_width_0_height_0__pin_1_lower(grid_io_left_0_right_width_0_height_0__pin_1_lower[0]),
+		.ccff_tail(grid_io_left_0_ccff_tail[0]));
 
 	grid_io_left grid_io_left_0__2_ (
-		.gfpga_pad_GPIO_PAD(gfpga_pad_GPIO_PAD[80:87]),
+		.prog_clk(prog_clk[0]),
+		.gfpga_pad_GPIO_A(gfpga_pad_GPIO_A[7]),
+		.gfpga_pad_GPIO_IE(gfpga_pad_GPIO_IE[7]),
+		.gfpga_pad_GPIO_OE(gfpga_pad_GPIO_OE[7]),
+		.gfpga_pad_GPIO_Y(gfpga_pad_GPIO_Y[7]),
 		.right_width_0_height_0__pin_0_(cby_0__1__1_left_grid_pin_0_[0]),
-		.right_width_0_height_0__pin_2_(cby_0__1__1_left_grid_pin_2_[0]),
-		.right_width_0_height_0__pin_4_(cby_0__1__1_left_grid_pin_4_[0]),
-		.right_width_0_height_0__pin_6_(cby_0__1__1_left_grid_pin_6_[0]),
-		.right_width_0_height_0__pin_8_(cby_0__1__1_left_grid_pin_8_[0]),
-		.right_width_0_height_0__pin_10_(cby_0__1__1_left_grid_pin_10_[0]),
-		.right_width_0_height_0__pin_12_(cby_0__1__1_left_grid_pin_12_[0]),
-		.right_width_0_height_0__pin_14_(cby_0__1__1_left_grid_pin_14_[0]),
-		.enable(decoder6to61_0_data_out[21]),
-		.address(address[0:3]),
-		.data_in(data_in[0]),
-		.right_width_0_height_0__pin_1_(grid_io_left_1_right_width_0_height_0__pin_1_[0]),
-		.right_width_0_height_0__pin_3_(grid_io_left_1_right_width_0_height_0__pin_3_[0]),
-		.right_width_0_height_0__pin_5_(grid_io_left_1_right_width_0_height_0__pin_5_[0]),
-		.right_width_0_height_0__pin_7_(grid_io_left_1_right_width_0_height_0__pin_7_[0]),
-		.right_width_0_height_0__pin_9_(grid_io_left_1_right_width_0_height_0__pin_9_[0]),
-		.right_width_0_height_0__pin_11_(grid_io_left_1_right_width_0_height_0__pin_11_[0]),
-		.right_width_0_height_0__pin_13_(grid_io_left_1_right_width_0_height_0__pin_13_[0]),
-		.right_width_0_height_0__pin_15_(grid_io_left_1_right_width_0_height_0__pin_15_[0]));
-
-	grid_io_left grid_io_left_0__3_ (
-		.gfpga_pad_GPIO_PAD(gfpga_pad_GPIO_PAD[88:95]),
-		.right_width_0_height_0__pin_0_(cby_0__1__2_left_grid_pin_0_[0]),
-		.right_width_0_height_0__pin_2_(cby_0__1__2_left_grid_pin_2_[0]),
-		.right_width_0_height_0__pin_4_(cby_0__1__2_left_grid_pin_4_[0]),
-		.right_width_0_height_0__pin_6_(cby_0__1__2_left_grid_pin_6_[0]),
-		.right_width_0_height_0__pin_8_(cby_0__1__2_left_grid_pin_8_[0]),
-		.right_width_0_height_0__pin_10_(cby_0__1__2_left_grid_pin_10_[0]),
-		.right_width_0_height_0__pin_12_(cby_0__1__2_left_grid_pin_12_[0]),
-		.right_width_0_height_0__pin_14_(cby_0__1__2_left_grid_pin_14_[0]),
-		.enable(decoder6to61_0_data_out[18]),
-		.address(address[0:3]),
-		.data_in(data_in[0]),
-		.right_width_0_height_0__pin_1_(grid_io_left_2_right_width_0_height_0__pin_1_[0]),
-		.right_width_0_height_0__pin_3_(grid_io_left_2_right_width_0_height_0__pin_3_[0]),
-		.right_width_0_height_0__pin_5_(grid_io_left_2_right_width_0_height_0__pin_5_[0]),
-		.right_width_0_height_0__pin_7_(grid_io_left_2_right_width_0_height_0__pin_7_[0]),
-		.right_width_0_height_0__pin_9_(grid_io_left_2_right_width_0_height_0__pin_9_[0]),
-		.right_width_0_height_0__pin_11_(grid_io_left_2_right_width_0_height_0__pin_11_[0]),
-		.right_width_0_height_0__pin_13_(grid_io_left_2_right_width_0_height_0__pin_13_[0]),
-		.right_width_0_height_0__pin_15_(grid_io_left_2_right_width_0_height_0__pin_15_[0]));
+		.ccff_head(cby_0__1__1_ccff_tail[0]),
+		.right_width_0_height_0__pin_1_upper(grid_io_left_1_right_width_0_height_0__pin_1_upper[0]),
+		.right_width_0_height_0__pin_1_lower(grid_io_left_1_right_width_0_height_0__pin_1_lower[0]),
+		.ccff_tail(grid_io_left_1_ccff_tail[0]));
 
 	sb_0__0_ sb_0__0_ (
-		.chany_top_in(cby_0__1__0_chany_bottom_out[0:8]),
-		.top_left_grid_pin_1_(grid_io_left_0_right_width_0_height_0__pin_1_[0]),
-		.top_left_grid_pin_3_(grid_io_left_0_right_width_0_height_0__pin_3_[0]),
-		.top_left_grid_pin_5_(grid_io_left_0_right_width_0_height_0__pin_5_[0]),
-		.top_left_grid_pin_7_(grid_io_left_0_right_width_0_height_0__pin_7_[0]),
-		.top_left_grid_pin_9_(grid_io_left_0_right_width_0_height_0__pin_9_[0]),
-		.top_left_grid_pin_11_(grid_io_left_0_right_width_0_height_0__pin_11_[0]),
-		.top_left_grid_pin_13_(grid_io_left_0_right_width_0_height_0__pin_13_[0]),
-		.top_left_grid_pin_15_(grid_io_left_0_right_width_0_height_0__pin_15_[0]),
-		.top_right_grid_pin_11_(grid_clb_0_left_width_0_height_0__pin_11_[0]),
-		.chanx_right_in(cbx_1__0__0_chanx_left_out[0:8]),
-		.right_top_grid_pin_10_(grid_clb_0_bottom_width_0_height_0__pin_10_[0]),
-		.right_bottom_grid_pin_1_(grid_io_bottom_0_top_width_0_height_0__pin_1_[0]),
-		.right_bottom_grid_pin_3_(grid_io_bottom_0_top_width_0_height_0__pin_3_[0]),
-		.right_bottom_grid_pin_5_(grid_io_bottom_0_top_width_0_height_0__pin_5_[0]),
-		.right_bottom_grid_pin_7_(grid_io_bottom_0_top_width_0_height_0__pin_7_[0]),
-		.right_bottom_grid_pin_9_(grid_io_bottom_0_top_width_0_height_0__pin_9_[0]),
-		.right_bottom_grid_pin_11_(grid_io_bottom_0_top_width_0_height_0__pin_11_[0]),
-		.right_bottom_grid_pin_13_(grid_io_bottom_0_top_width_0_height_0__pin_13_[0]),
-		.right_bottom_grid_pin_15_(grid_io_bottom_0_top_width_0_height_0__pin_15_[0]),
-		.enable(decoder6to61_0_data_out[22]),
-		.address(address[0:5]),
-		.data_in(data_in[0]),
-		.chany_top_out(sb_0__0__0_chany_top_out[0:8]),
-		.chanx_right_out(sb_0__0__0_chanx_right_out[0:8]));
+		.prog_clk(prog_clk[0]),
+		.chany_top_in(cby_0__1__0_chany_bottom_out[0:19]),
+		.top_left_grid_pin_1_(grid_io_left_0_right_width_0_height_0__pin_1_lower[0]),
+		.chanx_right_in(cbx_1__0__0_chanx_left_out[0:19]),
+		.right_top_grid_pin_42_(grid_clb_0_bottom_width_0_height_0__pin_42_upper[0]),
+		.right_top_grid_pin_43_(grid_clb_0_bottom_width_0_height_0__pin_43_upper[0]),
+		.right_top_grid_pin_44_(grid_clb_0_bottom_width_0_height_0__pin_44_upper[0]),
+		.right_top_grid_pin_45_(grid_clb_0_bottom_width_0_height_0__pin_45_upper[0]),
+		.right_top_grid_pin_46_(grid_clb_0_bottom_width_0_height_0__pin_46_upper[0]),
+		.right_top_grid_pin_47_(grid_clb_0_bottom_width_0_height_0__pin_47_upper[0]),
+		.right_top_grid_pin_48_(grid_clb_0_bottom_width_0_height_0__pin_48_upper[0]),
+		.right_top_grid_pin_49_(grid_clb_0_bottom_width_0_height_0__pin_49_upper[0]),
+		.right_bottom_grid_pin_1_(grid_io_bottom_0_top_width_0_height_0__pin_1_upper[0]),
+		.ccff_head(grid_io_bottom_0_ccff_tail[0]),
+		.chany_top_out(sb_0__0__0_chany_top_out[0:19]),
+		.chanx_right_out(sb_0__0__0_chanx_right_out[0:19]),
+		.ccff_tail(ccff_tail[0]));
 
 	sb_0__1_ sb_0__1_ (
-		.chany_top_in(cby_0__1__1_chany_bottom_out[0:8]),
-		.top_left_grid_pin_1_(grid_io_left_1_right_width_0_height_0__pin_1_[0]),
-		.top_left_grid_pin_3_(grid_io_left_1_right_width_0_height_0__pin_3_[0]),
-		.top_left_grid_pin_5_(grid_io_left_1_right_width_0_height_0__pin_5_[0]),
-		.top_left_grid_pin_7_(grid_io_left_1_right_width_0_height_0__pin_7_[0]),
-		.top_left_grid_pin_9_(grid_io_left_1_right_width_0_height_0__pin_9_[0]),
-		.top_left_grid_pin_11_(grid_io_left_1_right_width_0_height_0__pin_11_[0]),
-		.top_left_grid_pin_13_(grid_io_left_1_right_width_0_height_0__pin_13_[0]),
-		.top_left_grid_pin_15_(grid_io_left_1_right_width_0_height_0__pin_15_[0]),
-		.top_right_grid_pin_11_(grid_clb_1_left_width_0_height_0__pin_11_[0]),
-		.chanx_right_in(cbx_1__1__0_chanx_left_out[0:8]),
-		.right_top_grid_pin_10_(grid_clb_1_bottom_width_0_height_0__pin_10_[0]),
-		.right_bottom_grid_pin_12_(grid_clb_0_top_width_0_height_0__pin_12_[0]),
-		.chany_bottom_in(cby_0__1__0_chany_top_out[0:8]),
-		.bottom_right_grid_pin_11_(grid_clb_0_left_width_0_height_0__pin_11_[0]),
-		.bottom_left_grid_pin_1_(grid_io_left_0_right_width_0_height_0__pin_1_[0]),
-		.bottom_left_grid_pin_3_(grid_io_left_0_right_width_0_height_0__pin_3_[0]),
-		.bottom_left_grid_pin_5_(grid_io_left_0_right_width_0_height_0__pin_5_[0]),
-		.bottom_left_grid_pin_7_(grid_io_left_0_right_width_0_height_0__pin_7_[0]),
-		.bottom_left_grid_pin_9_(grid_io_left_0_right_width_0_height_0__pin_9_[0]),
-		.bottom_left_grid_pin_11_(grid_io_left_0_right_width_0_height_0__pin_11_[0]),
-		.bottom_left_grid_pin_13_(grid_io_left_0_right_width_0_height_0__pin_13_[0]),
-		.bottom_left_grid_pin_15_(grid_io_left_0_right_width_0_height_0__pin_15_[0]),
-		.enable(decoder6to61_0_data_out[19]),
-		.address(address[0:6]),
-		.data_in(data_in[0]),
-		.chany_top_out(sb_0__1__0_chany_top_out[0:8]),
-		.chanx_right_out(sb_0__1__0_chanx_right_out[0:8]),
-		.chany_bottom_out(sb_0__1__0_chany_bottom_out[0:8]));
+		.prog_clk(prog_clk[0]),
+		.chany_top_in(cby_0__1__1_chany_bottom_out[0:19]),
+		.top_left_grid_pin_1_(grid_io_left_1_right_width_0_height_0__pin_1_lower[0]),
+		.chanx_right_in(cbx_1__1__0_chanx_left_out[0:19]),
+		.right_top_grid_pin_42_(grid_clb_1_bottom_width_0_height_0__pin_42_upper[0]),
+		.right_top_grid_pin_43_(grid_clb_1_bottom_width_0_height_0__pin_43_upper[0]),
+		.right_top_grid_pin_44_(grid_clb_1_bottom_width_0_height_0__pin_44_upper[0]),
+		.right_top_grid_pin_45_(grid_clb_1_bottom_width_0_height_0__pin_45_upper[0]),
+		.right_top_grid_pin_46_(grid_clb_1_bottom_width_0_height_0__pin_46_upper[0]),
+		.right_top_grid_pin_47_(grid_clb_1_bottom_width_0_height_0__pin_47_upper[0]),
+		.right_top_grid_pin_48_(grid_clb_1_bottom_width_0_height_0__pin_48_upper[0]),
+		.right_top_grid_pin_49_(grid_clb_1_bottom_width_0_height_0__pin_49_upper[0]),
+		.chany_bottom_in(cby_0__1__0_chany_top_out[0:19]),
+		.bottom_left_grid_pin_1_(grid_io_left_0_right_width_0_height_0__pin_1_upper[0]),
+		.ccff_head(cbx_1__1__0_ccff_tail[0]),
+		.chany_top_out(sb_0__1__0_chany_top_out[0:19]),
+		.chanx_right_out(sb_0__1__0_chanx_right_out[0:19]),
+		.chany_bottom_out(sb_0__1__0_chany_bottom_out[0:19]),
+		.ccff_tail(sb_0__1__0_ccff_tail[0]));
 
-	sb_0__1_ sb_0__2_ (
-		.chany_top_in(cby_0__1__2_chany_bottom_out[0:8]),
-		.top_left_grid_pin_1_(grid_io_left_2_right_width_0_height_0__pin_1_[0]),
-		.top_left_grid_pin_3_(grid_io_left_2_right_width_0_height_0__pin_3_[0]),
-		.top_left_grid_pin_5_(grid_io_left_2_right_width_0_height_0__pin_5_[0]),
-		.top_left_grid_pin_7_(grid_io_left_2_right_width_0_height_0__pin_7_[0]),
-		.top_left_grid_pin_9_(grid_io_left_2_right_width_0_height_0__pin_9_[0]),
-		.top_left_grid_pin_11_(grid_io_left_2_right_width_0_height_0__pin_11_[0]),
-		.top_left_grid_pin_13_(grid_io_left_2_right_width_0_height_0__pin_13_[0]),
-		.top_left_grid_pin_15_(grid_io_left_2_right_width_0_height_0__pin_15_[0]),
-		.top_right_grid_pin_11_(grid_clb_2_left_width_0_height_0__pin_11_[0]),
-		.chanx_right_in(cbx_1__1__1_chanx_left_out[0:8]),
-		.right_top_grid_pin_10_(grid_clb_2_bottom_width_0_height_0__pin_10_[0]),
-		.right_bottom_grid_pin_12_(grid_clb_1_top_width_0_height_0__pin_12_[0]),
-		.chany_bottom_in(cby_0__1__1_chany_top_out[0:8]),
-		.bottom_right_grid_pin_11_(grid_clb_1_left_width_0_height_0__pin_11_[0]),
-		.bottom_left_grid_pin_1_(grid_io_left_1_right_width_0_height_0__pin_1_[0]),
-		.bottom_left_grid_pin_3_(grid_io_left_1_right_width_0_height_0__pin_3_[0]),
-		.bottom_left_grid_pin_5_(grid_io_left_1_right_width_0_height_0__pin_5_[0]),
-		.bottom_left_grid_pin_7_(grid_io_left_1_right_width_0_height_0__pin_7_[0]),
-		.bottom_left_grid_pin_9_(grid_io_left_1_right_width_0_height_0__pin_9_[0]),
-		.bottom_left_grid_pin_11_(grid_io_left_1_right_width_0_height_0__pin_11_[0]),
-		.bottom_left_grid_pin_13_(grid_io_left_1_right_width_0_height_0__pin_13_[0]),
-		.bottom_left_grid_pin_15_(grid_io_left_1_right_width_0_height_0__pin_15_[0]),
-		.enable(decoder6to61_0_data_out[16]),
-		.address(address[0:6]),
-		.data_in(data_in[0]),
-		.chany_top_out(sb_0__1__1_chany_top_out[0:8]),
-		.chanx_right_out(sb_0__1__1_chanx_right_out[0:8]),
-		.chany_bottom_out(sb_0__1__1_chany_bottom_out[0:8]));
-
-	sb_0__3_ sb_0__3_ (
-		.chanx_right_in(cbx_1__3__0_chanx_left_out[0:8]),
-		.right_top_grid_pin_1_(grid_io_top_0_bottom_width_0_height_0__pin_1_[0]),
-		.right_top_grid_pin_3_(grid_io_top_0_bottom_width_0_height_0__pin_3_[0]),
-		.right_top_grid_pin_5_(grid_io_top_0_bottom_width_0_height_0__pin_5_[0]),
-		.right_top_grid_pin_7_(grid_io_top_0_bottom_width_0_height_0__pin_7_[0]),
-		.right_top_grid_pin_9_(grid_io_top_0_bottom_width_0_height_0__pin_9_[0]),
-		.right_top_grid_pin_11_(grid_io_top_0_bottom_width_0_height_0__pin_11_[0]),
-		.right_top_grid_pin_13_(grid_io_top_0_bottom_width_0_height_0__pin_13_[0]),
-		.right_top_grid_pin_15_(grid_io_top_0_bottom_width_0_height_0__pin_15_[0]),
-		.right_bottom_grid_pin_12_(grid_clb_2_top_width_0_height_0__pin_12_[0]),
-		.chany_bottom_in(cby_0__1__2_chany_top_out[0:8]),
-		.bottom_right_grid_pin_11_(grid_clb_2_left_width_0_height_0__pin_11_[0]),
-		.bottom_left_grid_pin_1_(grid_io_left_2_right_width_0_height_0__pin_1_[0]),
-		.bottom_left_grid_pin_3_(grid_io_left_2_right_width_0_height_0__pin_3_[0]),
-		.bottom_left_grid_pin_5_(grid_io_left_2_right_width_0_height_0__pin_5_[0]),
-		.bottom_left_grid_pin_7_(grid_io_left_2_right_width_0_height_0__pin_7_[0]),
-		.bottom_left_grid_pin_9_(grid_io_left_2_right_width_0_height_0__pin_9_[0]),
-		.bottom_left_grid_pin_11_(grid_io_left_2_right_width_0_height_0__pin_11_[0]),
-		.bottom_left_grid_pin_13_(grid_io_left_2_right_width_0_height_0__pin_13_[0]),
-		.bottom_left_grid_pin_15_(grid_io_left_2_right_width_0_height_0__pin_15_[0]),
-		.enable(decoder6to61_0_data_out[15]),
-		.address(address[0:5]),
-		.data_in(data_in[0]),
-		.chanx_right_out(sb_0__3__0_chanx_right_out[0:8]),
-		.chany_bottom_out(sb_0__3__0_chany_bottom_out[0:8]));
+	sb_0__2_ sb_0__2_ (
+		.prog_clk(prog_clk[0]),
+		.chanx_right_in(cbx_1__2__0_chanx_left_out[0:19]),
+		.right_top_grid_pin_1_(grid_io_top_0_bottom_width_0_height_0__pin_1_upper[0]),
+		.chany_bottom_in(cby_0__1__1_chany_top_out[0:19]),
+		.bottom_left_grid_pin_1_(grid_io_left_1_right_width_0_height_0__pin_1_upper[0]),
+		.ccff_head(grid_io_top_0_ccff_tail[0]),
+		.chanx_right_out(sb_0__2__0_chanx_right_out[0:19]),
+		.chany_bottom_out(sb_0__2__0_chany_bottom_out[0:19]),
+		.ccff_tail(sb_0__2__0_ccff_tail[0]));
 
 	sb_1__0_ sb_1__0_ (
-		.chany_top_in(cby_1__1__0_chany_bottom_out[0:8]),
-		.top_left_grid_pin_13_(grid_clb_0_right_width_0_height_0__pin_13_[0]),
-		.top_right_grid_pin_11_(grid_clb_3_left_width_0_height_0__pin_11_[0]),
-		.chanx_right_in(cbx_1__0__1_chanx_left_out[0:8]),
-		.right_top_grid_pin_10_(grid_clb_3_bottom_width_0_height_0__pin_10_[0]),
-		.right_bottom_grid_pin_1_(grid_io_bottom_1_top_width_0_height_0__pin_1_[0]),
-		.right_bottom_grid_pin_3_(grid_io_bottom_1_top_width_0_height_0__pin_3_[0]),
-		.right_bottom_grid_pin_5_(grid_io_bottom_1_top_width_0_height_0__pin_5_[0]),
-		.right_bottom_grid_pin_7_(grid_io_bottom_1_top_width_0_height_0__pin_7_[0]),
-		.right_bottom_grid_pin_9_(grid_io_bottom_1_top_width_0_height_0__pin_9_[0]),
-		.right_bottom_grid_pin_11_(grid_io_bottom_1_top_width_0_height_0__pin_11_[0]),
-		.right_bottom_grid_pin_13_(grid_io_bottom_1_top_width_0_height_0__pin_13_[0]),
-		.right_bottom_grid_pin_15_(grid_io_bottom_1_top_width_0_height_0__pin_15_[0]),
-		.chanx_left_in(cbx_1__0__0_chanx_right_out[0:8]),
-		.left_top_grid_pin_10_(grid_clb_0_bottom_width_0_height_0__pin_10_[0]),
-		.left_bottom_grid_pin_1_(grid_io_bottom_0_top_width_0_height_0__pin_1_[0]),
-		.left_bottom_grid_pin_3_(grid_io_bottom_0_top_width_0_height_0__pin_3_[0]),
-		.left_bottom_grid_pin_5_(grid_io_bottom_0_top_width_0_height_0__pin_5_[0]),
-		.left_bottom_grid_pin_7_(grid_io_bottom_0_top_width_0_height_0__pin_7_[0]),
-		.left_bottom_grid_pin_9_(grid_io_bottom_0_top_width_0_height_0__pin_9_[0]),
-		.left_bottom_grid_pin_11_(grid_io_bottom_0_top_width_0_height_0__pin_11_[0]),
-		.left_bottom_grid_pin_13_(grid_io_bottom_0_top_width_0_height_0__pin_13_[0]),
-		.left_bottom_grid_pin_15_(grid_io_bottom_0_top_width_0_height_0__pin_15_[0]),
-		.enable(decoder6to61_0_data_out[25]),
-		.address(address[0:6]),
-		.data_in(data_in[0]),
-		.chany_top_out(sb_1__0__0_chany_top_out[0:8]),
-		.chanx_right_out(sb_1__0__0_chanx_right_out[0:8]),
-		.chanx_left_out(sb_1__0__0_chanx_left_out[0:8]));
-
-	sb_1__0_ sb_2__0_ (
-		.chany_top_in(cby_1__1__3_chany_bottom_out[0:8]),
-		.top_left_grid_pin_13_(grid_clb_3_right_width_0_height_0__pin_13_[0]),
-		.top_right_grid_pin_11_(grid_clb_6_left_width_0_height_0__pin_11_[0]),
-		.chanx_right_in(cbx_1__0__2_chanx_left_out[0:8]),
-		.right_top_grid_pin_10_(grid_clb_6_bottom_width_0_height_0__pin_10_[0]),
-		.right_bottom_grid_pin_1_(grid_io_bottom_2_top_width_0_height_0__pin_1_[0]),
-		.right_bottom_grid_pin_3_(grid_io_bottom_2_top_width_0_height_0__pin_3_[0]),
-		.right_bottom_grid_pin_5_(grid_io_bottom_2_top_width_0_height_0__pin_5_[0]),
-		.right_bottom_grid_pin_7_(grid_io_bottom_2_top_width_0_height_0__pin_7_[0]),
-		.right_bottom_grid_pin_9_(grid_io_bottom_2_top_width_0_height_0__pin_9_[0]),
-		.right_bottom_grid_pin_11_(grid_io_bottom_2_top_width_0_height_0__pin_11_[0]),
-		.right_bottom_grid_pin_13_(grid_io_bottom_2_top_width_0_height_0__pin_13_[0]),
-		.right_bottom_grid_pin_15_(grid_io_bottom_2_top_width_0_height_0__pin_15_[0]),
-		.chanx_left_in(cbx_1__0__1_chanx_right_out[0:8]),
-		.left_top_grid_pin_10_(grid_clb_3_bottom_width_0_height_0__pin_10_[0]),
-		.left_bottom_grid_pin_1_(grid_io_bottom_1_top_width_0_height_0__pin_1_[0]),
-		.left_bottom_grid_pin_3_(grid_io_bottom_1_top_width_0_height_0__pin_3_[0]),
-		.left_bottom_grid_pin_5_(grid_io_bottom_1_top_width_0_height_0__pin_5_[0]),
-		.left_bottom_grid_pin_7_(grid_io_bottom_1_top_width_0_height_0__pin_7_[0]),
-		.left_bottom_grid_pin_9_(grid_io_bottom_1_top_width_0_height_0__pin_9_[0]),
-		.left_bottom_grid_pin_11_(grid_io_bottom_1_top_width_0_height_0__pin_11_[0]),
-		.left_bottom_grid_pin_13_(grid_io_bottom_1_top_width_0_height_0__pin_13_[0]),
-		.left_bottom_grid_pin_15_(grid_io_bottom_1_top_width_0_height_0__pin_15_[0]),
-		.enable(decoder6to61_0_data_out[29]),
-		.address(address[0:6]),
-		.data_in(data_in[0]),
-		.chany_top_out(sb_1__0__1_chany_top_out[0:8]),
-		.chanx_right_out(sb_1__0__1_chanx_right_out[0:8]),
-		.chanx_left_out(sb_1__0__1_chanx_left_out[0:8]));
+		.prog_clk(prog_clk[0]),
+		.chany_top_in(cby_1__1__0_chany_bottom_out[0:19]),
+		.top_left_grid_pin_34_(grid_clb_0_right_width_0_height_0__pin_34_lower[0]),
+		.top_left_grid_pin_35_(grid_clb_0_right_width_0_height_0__pin_35_lower[0]),
+		.top_left_grid_pin_36_(grid_clb_0_right_width_0_height_0__pin_36_lower[0]),
+		.top_left_grid_pin_37_(grid_clb_0_right_width_0_height_0__pin_37_lower[0]),
+		.top_left_grid_pin_38_(grid_clb_0_right_width_0_height_0__pin_38_lower[0]),
+		.top_left_grid_pin_39_(grid_clb_0_right_width_0_height_0__pin_39_lower[0]),
+		.top_left_grid_pin_40_(grid_clb_0_right_width_0_height_0__pin_40_lower[0]),
+		.top_left_grid_pin_41_(grid_clb_0_right_width_0_height_0__pin_41_lower[0]),
+		.chanx_right_in(cbx_1__0__1_chanx_left_out[0:19]),
+		.right_top_grid_pin_42_(grid_clb_2_bottom_width_0_height_0__pin_42_upper[0]),
+		.right_top_grid_pin_43_(grid_clb_2_bottom_width_0_height_0__pin_43_upper[0]),
+		.right_top_grid_pin_44_(grid_clb_2_bottom_width_0_height_0__pin_44_upper[0]),
+		.right_top_grid_pin_45_(grid_clb_2_bottom_width_0_height_0__pin_45_upper[0]),
+		.right_top_grid_pin_46_(grid_clb_2_bottom_width_0_height_0__pin_46_upper[0]),
+		.right_top_grid_pin_47_(grid_clb_2_bottom_width_0_height_0__pin_47_upper[0]),
+		.right_top_grid_pin_48_(grid_clb_2_bottom_width_0_height_0__pin_48_upper[0]),
+		.right_top_grid_pin_49_(grid_clb_2_bottom_width_0_height_0__pin_49_upper[0]),
+		.right_bottom_grid_pin_1_(grid_io_bottom_1_top_width_0_height_0__pin_1_upper[0]),
+		.chanx_left_in(cbx_1__0__0_chanx_right_out[0:19]),
+		.left_top_grid_pin_42_(grid_clb_0_bottom_width_0_height_0__pin_42_lower[0]),
+		.left_top_grid_pin_43_(grid_clb_0_bottom_width_0_height_0__pin_43_lower[0]),
+		.left_top_grid_pin_44_(grid_clb_0_bottom_width_0_height_0__pin_44_lower[0]),
+		.left_top_grid_pin_45_(grid_clb_0_bottom_width_0_height_0__pin_45_lower[0]),
+		.left_top_grid_pin_46_(grid_clb_0_bottom_width_0_height_0__pin_46_lower[0]),
+		.left_top_grid_pin_47_(grid_clb_0_bottom_width_0_height_0__pin_47_lower[0]),
+		.left_top_grid_pin_48_(grid_clb_0_bottom_width_0_height_0__pin_48_lower[0]),
+		.left_top_grid_pin_49_(grid_clb_0_bottom_width_0_height_0__pin_49_lower[0]),
+		.left_bottom_grid_pin_1_(grid_io_bottom_0_top_width_0_height_0__pin_1_lower[0]),
+		.ccff_head(grid_io_bottom_1_ccff_tail[0]),
+		.chany_top_out(sb_1__0__0_chany_top_out[0:19]),
+		.chanx_right_out(sb_1__0__0_chanx_right_out[0:19]),
+		.chanx_left_out(sb_1__0__0_chanx_left_out[0:19]),
+		.ccff_tail(sb_1__0__0_ccff_tail[0]));
 
 	sb_1__1_ sb_1__1_ (
-		.chany_top_in(cby_1__1__1_chany_bottom_out[0:8]),
-		.top_left_grid_pin_13_(grid_clb_1_right_width_0_height_0__pin_13_[0]),
-		.top_right_grid_pin_11_(grid_clb_4_left_width_0_height_0__pin_11_[0]),
-		.chanx_right_in(cbx_1__1__2_chanx_left_out[0:8]),
-		.right_top_grid_pin_10_(grid_clb_4_bottom_width_0_height_0__pin_10_[0]),
-		.right_bottom_grid_pin_12_(grid_clb_3_top_width_0_height_0__pin_12_[0]),
-		.chany_bottom_in(cby_1__1__0_chany_top_out[0:8]),
-		.bottom_right_grid_pin_11_(grid_clb_3_left_width_0_height_0__pin_11_[0]),
-		.bottom_left_grid_pin_13_(grid_clb_0_right_width_0_height_0__pin_13_[0]),
-		.chanx_left_in(cbx_1__1__0_chanx_right_out[0:8]),
-		.left_top_grid_pin_10_(grid_clb_1_bottom_width_0_height_0__pin_10_[0]),
-		.left_bottom_grid_pin_12_(grid_clb_0_top_width_0_height_0__pin_12_[0]),
-		.enable(decoder6to61_0_data_out[45]),
-		.address(address[0:6]),
-		.data_in(data_in[0]),
-		.chany_top_out(sb_1__1__0_chany_top_out[0:8]),
-		.chanx_right_out(sb_1__1__0_chanx_right_out[0:8]),
-		.chany_bottom_out(sb_1__1__0_chany_bottom_out[0:8]),
-		.chanx_left_out(sb_1__1__0_chanx_left_out[0:8]));
+		.prog_clk(prog_clk[0]),
+		.chany_top_in(cby_1__1__1_chany_bottom_out[0:19]),
+		.top_left_grid_pin_34_(grid_clb_1_right_width_0_height_0__pin_34_lower[0]),
+		.top_left_grid_pin_35_(grid_clb_1_right_width_0_height_0__pin_35_lower[0]),
+		.top_left_grid_pin_36_(grid_clb_1_right_width_0_height_0__pin_36_lower[0]),
+		.top_left_grid_pin_37_(grid_clb_1_right_width_0_height_0__pin_37_lower[0]),
+		.top_left_grid_pin_38_(grid_clb_1_right_width_0_height_0__pin_38_lower[0]),
+		.top_left_grid_pin_39_(grid_clb_1_right_width_0_height_0__pin_39_lower[0]),
+		.top_left_grid_pin_40_(grid_clb_1_right_width_0_height_0__pin_40_lower[0]),
+		.top_left_grid_pin_41_(grid_clb_1_right_width_0_height_0__pin_41_lower[0]),
+		.chanx_right_in(cbx_1__1__1_chanx_left_out[0:19]),
+		.right_top_grid_pin_42_(grid_clb_3_bottom_width_0_height_0__pin_42_upper[0]),
+		.right_top_grid_pin_43_(grid_clb_3_bottom_width_0_height_0__pin_43_upper[0]),
+		.right_top_grid_pin_44_(grid_clb_3_bottom_width_0_height_0__pin_44_upper[0]),
+		.right_top_grid_pin_45_(grid_clb_3_bottom_width_0_height_0__pin_45_upper[0]),
+		.right_top_grid_pin_46_(grid_clb_3_bottom_width_0_height_0__pin_46_upper[0]),
+		.right_top_grid_pin_47_(grid_clb_3_bottom_width_0_height_0__pin_47_upper[0]),
+		.right_top_grid_pin_48_(grid_clb_3_bottom_width_0_height_0__pin_48_upper[0]),
+		.right_top_grid_pin_49_(grid_clb_3_bottom_width_0_height_0__pin_49_upper[0]),
+		.chany_bottom_in(cby_1__1__0_chany_top_out[0:19]),
+		.bottom_left_grid_pin_34_(grid_clb_0_right_width_0_height_0__pin_34_upper[0]),
+		.bottom_left_grid_pin_35_(grid_clb_0_right_width_0_height_0__pin_35_upper[0]),
+		.bottom_left_grid_pin_36_(grid_clb_0_right_width_0_height_0__pin_36_upper[0]),
+		.bottom_left_grid_pin_37_(grid_clb_0_right_width_0_height_0__pin_37_upper[0]),
+		.bottom_left_grid_pin_38_(grid_clb_0_right_width_0_height_0__pin_38_upper[0]),
+		.bottom_left_grid_pin_39_(grid_clb_0_right_width_0_height_0__pin_39_upper[0]),
+		.bottom_left_grid_pin_40_(grid_clb_0_right_width_0_height_0__pin_40_upper[0]),
+		.bottom_left_grid_pin_41_(grid_clb_0_right_width_0_height_0__pin_41_upper[0]),
+		.chanx_left_in(cbx_1__1__0_chanx_right_out[0:19]),
+		.left_top_grid_pin_42_(grid_clb_1_bottom_width_0_height_0__pin_42_lower[0]),
+		.left_top_grid_pin_43_(grid_clb_1_bottom_width_0_height_0__pin_43_lower[0]),
+		.left_top_grid_pin_44_(grid_clb_1_bottom_width_0_height_0__pin_44_lower[0]),
+		.left_top_grid_pin_45_(grid_clb_1_bottom_width_0_height_0__pin_45_lower[0]),
+		.left_top_grid_pin_46_(grid_clb_1_bottom_width_0_height_0__pin_46_lower[0]),
+		.left_top_grid_pin_47_(grid_clb_1_bottom_width_0_height_0__pin_47_lower[0]),
+		.left_top_grid_pin_48_(grid_clb_1_bottom_width_0_height_0__pin_48_lower[0]),
+		.left_top_grid_pin_49_(grid_clb_1_bottom_width_0_height_0__pin_49_lower[0]),
+		.ccff_head(cbx_1__1__1_ccff_tail[0]),
+		.chany_top_out(sb_1__1__0_chany_top_out[0:19]),
+		.chanx_right_out(sb_1__1__0_chanx_right_out[0:19]),
+		.chany_bottom_out(sb_1__1__0_chany_bottom_out[0:19]),
+		.chanx_left_out(sb_1__1__0_chanx_left_out[0:19]),
+		.ccff_tail(sb_1__1__0_ccff_tail[0]));
 
-	sb_1__1_ sb_1__2_ (
-		.chany_top_in(cby_1__1__2_chany_bottom_out[0:8]),
-		.top_left_grid_pin_13_(grid_clb_2_right_width_0_height_0__pin_13_[0]),
-		.top_right_grid_pin_11_(grid_clb_5_left_width_0_height_0__pin_11_[0]),
-		.chanx_right_in(cbx_1__1__3_chanx_left_out[0:8]),
-		.right_top_grid_pin_10_(grid_clb_5_bottom_width_0_height_0__pin_10_[0]),
-		.right_bottom_grid_pin_12_(grid_clb_4_top_width_0_height_0__pin_12_[0]),
-		.chany_bottom_in(cby_1__1__1_chany_top_out[0:8]),
-		.bottom_right_grid_pin_11_(grid_clb_4_left_width_0_height_0__pin_11_[0]),
-		.bottom_left_grid_pin_13_(grid_clb_1_right_width_0_height_0__pin_13_[0]),
-		.chanx_left_in(cbx_1__1__1_chanx_right_out[0:8]),
-		.left_top_grid_pin_10_(grid_clb_2_bottom_width_0_height_0__pin_10_[0]),
-		.left_bottom_grid_pin_12_(grid_clb_1_top_width_0_height_0__pin_12_[0]),
-		.enable(decoder6to61_0_data_out[49]),
-		.address(address[0:6]),
-		.data_in(data_in[0]),
-		.chany_top_out(sb_1__1__1_chany_top_out[0:8]),
-		.chanx_right_out(sb_1__1__1_chanx_right_out[0:8]),
-		.chany_bottom_out(sb_1__1__1_chany_bottom_out[0:8]),
-		.chanx_left_out(sb_1__1__1_chanx_left_out[0:8]));
+	sb_1__2_ sb_1__2_ (
+		.prog_clk(prog_clk[0]),
+		.chanx_right_in(cbx_1__2__1_chanx_left_out[0:19]),
+		.right_top_grid_pin_1_(grid_io_top_1_bottom_width_0_height_0__pin_1_upper[0]),
+		.chany_bottom_in(cby_1__1__1_chany_top_out[0:19]),
+		.bottom_left_grid_pin_34_(grid_clb_1_right_width_0_height_0__pin_34_upper[0]),
+		.bottom_left_grid_pin_35_(grid_clb_1_right_width_0_height_0__pin_35_upper[0]),
+		.bottom_left_grid_pin_36_(grid_clb_1_right_width_0_height_0__pin_36_upper[0]),
+		.bottom_left_grid_pin_37_(grid_clb_1_right_width_0_height_0__pin_37_upper[0]),
+		.bottom_left_grid_pin_38_(grid_clb_1_right_width_0_height_0__pin_38_upper[0]),
+		.bottom_left_grid_pin_39_(grid_clb_1_right_width_0_height_0__pin_39_upper[0]),
+		.bottom_left_grid_pin_40_(grid_clb_1_right_width_0_height_0__pin_40_upper[0]),
+		.bottom_left_grid_pin_41_(grid_clb_1_right_width_0_height_0__pin_41_upper[0]),
+		.chanx_left_in(cbx_1__2__0_chanx_right_out[0:19]),
+		.left_top_grid_pin_1_(grid_io_top_0_bottom_width_0_height_0__pin_1_lower[0]),
+		.ccff_head(grid_io_top_1_ccff_tail[0]),
+		.chanx_right_out(sb_1__2__0_chanx_right_out[0:19]),
+		.chany_bottom_out(sb_1__2__0_chany_bottom_out[0:19]),
+		.chanx_left_out(sb_1__2__0_chanx_left_out[0:19]),
+		.ccff_tail(sb_1__2__0_ccff_tail[0]));
 
-	sb_1__1_ sb_2__1_ (
-		.chany_top_in(cby_1__1__4_chany_bottom_out[0:8]),
-		.top_left_grid_pin_13_(grid_clb_4_right_width_0_height_0__pin_13_[0]),
-		.top_right_grid_pin_11_(grid_clb_7_left_width_0_height_0__pin_11_[0]),
-		.chanx_right_in(cbx_1__1__4_chanx_left_out[0:8]),
-		.right_top_grid_pin_10_(grid_clb_7_bottom_width_0_height_0__pin_10_[0]),
-		.right_bottom_grid_pin_12_(grid_clb_6_top_width_0_height_0__pin_12_[0]),
-		.chany_bottom_in(cby_1__1__3_chany_top_out[0:8]),
-		.bottom_right_grid_pin_11_(grid_clb_6_left_width_0_height_0__pin_11_[0]),
-		.bottom_left_grid_pin_13_(grid_clb_3_right_width_0_height_0__pin_13_[0]),
-		.chanx_left_in(cbx_1__1__2_chanx_right_out[0:8]),
-		.left_top_grid_pin_10_(grid_clb_4_bottom_width_0_height_0__pin_10_[0]),
-		.left_bottom_grid_pin_12_(grid_clb_3_top_width_0_height_0__pin_12_[0]),
-		.enable(decoder6to61_0_data_out[41]),
-		.address(address[0:6]),
-		.data_in(data_in[0]),
-		.chany_top_out(sb_1__1__2_chany_top_out[0:8]),
-		.chanx_right_out(sb_1__1__2_chanx_right_out[0:8]),
-		.chany_bottom_out(sb_1__1__2_chany_bottom_out[0:8]),
-		.chanx_left_out(sb_1__1__2_chanx_left_out[0:8]));
+	sb_2__0_ sb_2__0_ (
+		.prog_clk(prog_clk[0]),
+		.chany_top_in(cby_1__1__2_chany_bottom_out[0:19]),
+		.top_left_grid_pin_34_(grid_clb_2_right_width_0_height_0__pin_34_lower[0]),
+		.top_left_grid_pin_35_(grid_clb_2_right_width_0_height_0__pin_35_lower[0]),
+		.top_left_grid_pin_36_(grid_clb_2_right_width_0_height_0__pin_36_lower[0]),
+		.top_left_grid_pin_37_(grid_clb_2_right_width_0_height_0__pin_37_lower[0]),
+		.top_left_grid_pin_38_(grid_clb_2_right_width_0_height_0__pin_38_lower[0]),
+		.top_left_grid_pin_39_(grid_clb_2_right_width_0_height_0__pin_39_lower[0]),
+		.top_left_grid_pin_40_(grid_clb_2_right_width_0_height_0__pin_40_lower[0]),
+		.top_left_grid_pin_41_(grid_clb_2_right_width_0_height_0__pin_41_lower[0]),
+		.top_right_grid_pin_1_(grid_io_right_0_left_width_0_height_0__pin_1_lower[0]),
+		.chanx_left_in(cbx_1__0__1_chanx_right_out[0:19]),
+		.left_top_grid_pin_42_(grid_clb_2_bottom_width_0_height_0__pin_42_lower[0]),
+		.left_top_grid_pin_43_(grid_clb_2_bottom_width_0_height_0__pin_43_lower[0]),
+		.left_top_grid_pin_44_(grid_clb_2_bottom_width_0_height_0__pin_44_lower[0]),
+		.left_top_grid_pin_45_(grid_clb_2_bottom_width_0_height_0__pin_45_lower[0]),
+		.left_top_grid_pin_46_(grid_clb_2_bottom_width_0_height_0__pin_46_lower[0]),
+		.left_top_grid_pin_47_(grid_clb_2_bottom_width_0_height_0__pin_47_lower[0]),
+		.left_top_grid_pin_48_(grid_clb_2_bottom_width_0_height_0__pin_48_lower[0]),
+		.left_top_grid_pin_49_(grid_clb_2_bottom_width_0_height_0__pin_49_lower[0]),
+		.left_bottom_grid_pin_1_(grid_io_bottom_1_top_width_0_height_0__pin_1_lower[0]),
+		.ccff_head(grid_io_right_0_ccff_tail[0]),
+		.chany_top_out(sb_2__0__0_chany_top_out[0:19]),
+		.chanx_left_out(sb_2__0__0_chanx_left_out[0:19]),
+		.ccff_tail(sb_2__0__0_ccff_tail[0]));
 
-	sb_1__1_ sb_2__2_ (
-		.chany_top_in(cby_1__1__5_chany_bottom_out[0:8]),
-		.top_left_grid_pin_13_(grid_clb_5_right_width_0_height_0__pin_13_[0]),
-		.top_right_grid_pin_11_(grid_clb_8_left_width_0_height_0__pin_11_[0]),
-		.chanx_right_in(cbx_1__1__5_chanx_left_out[0:8]),
-		.right_top_grid_pin_10_(grid_clb_8_bottom_width_0_height_0__pin_10_[0]),
-		.right_bottom_grid_pin_12_(grid_clb_7_top_width_0_height_0__pin_12_[0]),
-		.chany_bottom_in(cby_1__1__4_chany_top_out[0:8]),
-		.bottom_right_grid_pin_11_(grid_clb_7_left_width_0_height_0__pin_11_[0]),
-		.bottom_left_grid_pin_13_(grid_clb_4_right_width_0_height_0__pin_13_[0]),
-		.chanx_left_in(cbx_1__1__3_chanx_right_out[0:8]),
-		.left_top_grid_pin_10_(grid_clb_5_bottom_width_0_height_0__pin_10_[0]),
-		.left_bottom_grid_pin_12_(grid_clb_4_top_width_0_height_0__pin_12_[0]),
-		.enable(decoder6to61_0_data_out[53]),
-		.address(address[0:6]),
-		.data_in(data_in[0]),
-		.chany_top_out(sb_1__1__3_chany_top_out[0:8]),
-		.chanx_right_out(sb_1__1__3_chanx_right_out[0:8]),
-		.chany_bottom_out(sb_1__1__3_chany_bottom_out[0:8]),
-		.chanx_left_out(sb_1__1__3_chanx_left_out[0:8]));
+	sb_2__1_ sb_2__1_ (
+		.prog_clk(prog_clk[0]),
+		.chany_top_in(cby_1__1__3_chany_bottom_out[0:19]),
+		.top_left_grid_pin_34_(grid_clb_3_right_width_0_height_0__pin_34_lower[0]),
+		.top_left_grid_pin_35_(grid_clb_3_right_width_0_height_0__pin_35_lower[0]),
+		.top_left_grid_pin_36_(grid_clb_3_right_width_0_height_0__pin_36_lower[0]),
+		.top_left_grid_pin_37_(grid_clb_3_right_width_0_height_0__pin_37_lower[0]),
+		.top_left_grid_pin_38_(grid_clb_3_right_width_0_height_0__pin_38_lower[0]),
+		.top_left_grid_pin_39_(grid_clb_3_right_width_0_height_0__pin_39_lower[0]),
+		.top_left_grid_pin_40_(grid_clb_3_right_width_0_height_0__pin_40_lower[0]),
+		.top_left_grid_pin_41_(grid_clb_3_right_width_0_height_0__pin_41_lower[0]),
+		.top_right_grid_pin_1_(grid_io_right_1_left_width_0_height_0__pin_1_lower[0]),
+		.chany_bottom_in(cby_1__1__2_chany_top_out[0:19]),
+		.bottom_right_grid_pin_1_(grid_io_right_0_left_width_0_height_0__pin_1_upper[0]),
+		.bottom_left_grid_pin_34_(grid_clb_2_right_width_0_height_0__pin_34_upper[0]),
+		.bottom_left_grid_pin_35_(grid_clb_2_right_width_0_height_0__pin_35_upper[0]),
+		.bottom_left_grid_pin_36_(grid_clb_2_right_width_0_height_0__pin_36_upper[0]),
+		.bottom_left_grid_pin_37_(grid_clb_2_right_width_0_height_0__pin_37_upper[0]),
+		.bottom_left_grid_pin_38_(grid_clb_2_right_width_0_height_0__pin_38_upper[0]),
+		.bottom_left_grid_pin_39_(grid_clb_2_right_width_0_height_0__pin_39_upper[0]),
+		.bottom_left_grid_pin_40_(grid_clb_2_right_width_0_height_0__pin_40_upper[0]),
+		.bottom_left_grid_pin_41_(grid_clb_2_right_width_0_height_0__pin_41_upper[0]),
+		.chanx_left_in(cbx_1__1__1_chanx_right_out[0:19]),
+		.left_top_grid_pin_42_(grid_clb_3_bottom_width_0_height_0__pin_42_lower[0]),
+		.left_top_grid_pin_43_(grid_clb_3_bottom_width_0_height_0__pin_43_lower[0]),
+		.left_top_grid_pin_44_(grid_clb_3_bottom_width_0_height_0__pin_44_lower[0]),
+		.left_top_grid_pin_45_(grid_clb_3_bottom_width_0_height_0__pin_45_lower[0]),
+		.left_top_grid_pin_46_(grid_clb_3_bottom_width_0_height_0__pin_46_lower[0]),
+		.left_top_grid_pin_47_(grid_clb_3_bottom_width_0_height_0__pin_47_lower[0]),
+		.left_top_grid_pin_48_(grid_clb_3_bottom_width_0_height_0__pin_48_lower[0]),
+		.left_top_grid_pin_49_(grid_clb_3_bottom_width_0_height_0__pin_49_lower[0]),
+		.ccff_head(grid_io_right_1_ccff_tail[0]),
+		.chany_top_out(sb_2__1__0_chany_top_out[0:19]),
+		.chany_bottom_out(sb_2__1__0_chany_bottom_out[0:19]),
+		.chanx_left_out(sb_2__1__0_chanx_left_out[0:19]),
+		.ccff_tail(sb_2__1__0_ccff_tail[0]));
 
-	sb_1__3_ sb_1__3_ (
-		.chanx_right_in(cbx_1__3__1_chanx_left_out[0:8]),
-		.right_top_grid_pin_1_(grid_io_top_1_bottom_width_0_height_0__pin_1_[0]),
-		.right_top_grid_pin_3_(grid_io_top_1_bottom_width_0_height_0__pin_3_[0]),
-		.right_top_grid_pin_5_(grid_io_top_1_bottom_width_0_height_0__pin_5_[0]),
-		.right_top_grid_pin_7_(grid_io_top_1_bottom_width_0_height_0__pin_7_[0]),
-		.right_top_grid_pin_9_(grid_io_top_1_bottom_width_0_height_0__pin_9_[0]),
-		.right_top_grid_pin_11_(grid_io_top_1_bottom_width_0_height_0__pin_11_[0]),
-		.right_top_grid_pin_13_(grid_io_top_1_bottom_width_0_height_0__pin_13_[0]),
-		.right_top_grid_pin_15_(grid_io_top_1_bottom_width_0_height_0__pin_15_[0]),
-		.right_bottom_grid_pin_12_(grid_clb_5_top_width_0_height_0__pin_12_[0]),
-		.chany_bottom_in(cby_1__1__2_chany_top_out[0:8]),
-		.bottom_right_grid_pin_11_(grid_clb_5_left_width_0_height_0__pin_11_[0]),
-		.bottom_left_grid_pin_13_(grid_clb_2_right_width_0_height_0__pin_13_[0]),
-		.chanx_left_in(cbx_1__3__0_chanx_right_out[0:8]),
-		.left_top_grid_pin_1_(grid_io_top_0_bottom_width_0_height_0__pin_1_[0]),
-		.left_top_grid_pin_3_(grid_io_top_0_bottom_width_0_height_0__pin_3_[0]),
-		.left_top_grid_pin_5_(grid_io_top_0_bottom_width_0_height_0__pin_5_[0]),
-		.left_top_grid_pin_7_(grid_io_top_0_bottom_width_0_height_0__pin_7_[0]),
-		.left_top_grid_pin_9_(grid_io_top_0_bottom_width_0_height_0__pin_9_[0]),
-		.left_top_grid_pin_11_(grid_io_top_0_bottom_width_0_height_0__pin_11_[0]),
-		.left_top_grid_pin_13_(grid_io_top_0_bottom_width_0_height_0__pin_13_[0]),
-		.left_top_grid_pin_15_(grid_io_top_0_bottom_width_0_height_0__pin_15_[0]),
-		.left_bottom_grid_pin_12_(grid_clb_2_top_width_0_height_0__pin_12_[0]),
-		.enable(decoder6to61_0_data_out[12]),
-		.address(address[0:6]),
-		.data_in(data_in[0]),
-		.chanx_right_out(sb_1__3__0_chanx_right_out[0:8]),
-		.chany_bottom_out(sb_1__3__0_chany_bottom_out[0:8]),
-		.chanx_left_out(sb_1__3__0_chanx_left_out[0:8]));
-
-	sb_1__3_ sb_2__3_ (
-		.chanx_right_in(cbx_1__3__2_chanx_left_out[0:8]),
-		.right_top_grid_pin_1_(grid_io_top_2_bottom_width_0_height_0__pin_1_[0]),
-		.right_top_grid_pin_3_(grid_io_top_2_bottom_width_0_height_0__pin_3_[0]),
-		.right_top_grid_pin_5_(grid_io_top_2_bottom_width_0_height_0__pin_5_[0]),
-		.right_top_grid_pin_7_(grid_io_top_2_bottom_width_0_height_0__pin_7_[0]),
-		.right_top_grid_pin_9_(grid_io_top_2_bottom_width_0_height_0__pin_9_[0]),
-		.right_top_grid_pin_11_(grid_io_top_2_bottom_width_0_height_0__pin_11_[0]),
-		.right_top_grid_pin_13_(grid_io_top_2_bottom_width_0_height_0__pin_13_[0]),
-		.right_top_grid_pin_15_(grid_io_top_2_bottom_width_0_height_0__pin_15_[0]),
-		.right_bottom_grid_pin_12_(grid_clb_8_top_width_0_height_0__pin_12_[0]),
-		.chany_bottom_in(cby_1__1__5_chany_top_out[0:8]),
-		.bottom_right_grid_pin_11_(grid_clb_8_left_width_0_height_0__pin_11_[0]),
-		.bottom_left_grid_pin_13_(grid_clb_5_right_width_0_height_0__pin_13_[0]),
-		.chanx_left_in(cbx_1__3__1_chanx_right_out[0:8]),
-		.left_top_grid_pin_1_(grid_io_top_1_bottom_width_0_height_0__pin_1_[0]),
-		.left_top_grid_pin_3_(grid_io_top_1_bottom_width_0_height_0__pin_3_[0]),
-		.left_top_grid_pin_5_(grid_io_top_1_bottom_width_0_height_0__pin_5_[0]),
-		.left_top_grid_pin_7_(grid_io_top_1_bottom_width_0_height_0__pin_7_[0]),
-		.left_top_grid_pin_9_(grid_io_top_1_bottom_width_0_height_0__pin_9_[0]),
-		.left_top_grid_pin_11_(grid_io_top_1_bottom_width_0_height_0__pin_11_[0]),
-		.left_top_grid_pin_13_(grid_io_top_1_bottom_width_0_height_0__pin_13_[0]),
-		.left_top_grid_pin_15_(grid_io_top_1_bottom_width_0_height_0__pin_15_[0]),
-		.left_bottom_grid_pin_12_(grid_clb_5_top_width_0_height_0__pin_12_[0]),
-		.enable(decoder6to61_0_data_out[9]),
-		.address(address[0:6]),
-		.data_in(data_in[0]),
-		.chanx_right_out(sb_1__3__1_chanx_right_out[0:8]),
-		.chany_bottom_out(sb_1__3__1_chany_bottom_out[0:8]),
-		.chanx_left_out(sb_1__3__1_chanx_left_out[0:8]));
-
-	sb_3__0_ sb_3__0_ (
-		.chany_top_in(cby_3__1__0_chany_bottom_out[0:8]),
-		.top_left_grid_pin_13_(grid_clb_6_right_width_0_height_0__pin_13_[0]),
-		.top_right_grid_pin_1_(grid_io_right_0_left_width_0_height_0__pin_1_[0]),
-		.top_right_grid_pin_3_(grid_io_right_0_left_width_0_height_0__pin_3_[0]),
-		.top_right_grid_pin_5_(grid_io_right_0_left_width_0_height_0__pin_5_[0]),
-		.top_right_grid_pin_7_(grid_io_right_0_left_width_0_height_0__pin_7_[0]),
-		.top_right_grid_pin_9_(grid_io_right_0_left_width_0_height_0__pin_9_[0]),
-		.top_right_grid_pin_11_(grid_io_right_0_left_width_0_height_0__pin_11_[0]),
-		.top_right_grid_pin_13_(grid_io_right_0_left_width_0_height_0__pin_13_[0]),
-		.top_right_grid_pin_15_(grid_io_right_0_left_width_0_height_0__pin_15_[0]),
-		.chanx_left_in(cbx_1__0__2_chanx_right_out[0:8]),
-		.left_top_grid_pin_10_(grid_clb_6_bottom_width_0_height_0__pin_10_[0]),
-		.left_bottom_grid_pin_1_(grid_io_bottom_2_top_width_0_height_0__pin_1_[0]),
-		.left_bottom_grid_pin_3_(grid_io_bottom_2_top_width_0_height_0__pin_3_[0]),
-		.left_bottom_grid_pin_5_(grid_io_bottom_2_top_width_0_height_0__pin_5_[0]),
-		.left_bottom_grid_pin_7_(grid_io_bottom_2_top_width_0_height_0__pin_7_[0]),
-		.left_bottom_grid_pin_9_(grid_io_bottom_2_top_width_0_height_0__pin_9_[0]),
-		.left_bottom_grid_pin_11_(grid_io_bottom_2_top_width_0_height_0__pin_11_[0]),
-		.left_bottom_grid_pin_13_(grid_io_bottom_2_top_width_0_height_0__pin_13_[0]),
-		.left_bottom_grid_pin_15_(grid_io_bottom_2_top_width_0_height_0__pin_15_[0]),
-		.enable(decoder6to61_0_data_out[33]),
-		.address(address[0:5]),
-		.data_in(data_in[0]),
-		.chany_top_out(sb_3__0__0_chany_top_out[0:8]),
-		.chanx_left_out(sb_3__0__0_chanx_left_out[0:8]));
-
-	sb_3__1_ sb_3__1_ (
-		.chany_top_in(cby_3__1__1_chany_bottom_out[0:8]),
-		.top_left_grid_pin_13_(grid_clb_7_right_width_0_height_0__pin_13_[0]),
-		.top_right_grid_pin_1_(grid_io_right_1_left_width_0_height_0__pin_1_[0]),
-		.top_right_grid_pin_3_(grid_io_right_1_left_width_0_height_0__pin_3_[0]),
-		.top_right_grid_pin_5_(grid_io_right_1_left_width_0_height_0__pin_5_[0]),
-		.top_right_grid_pin_7_(grid_io_right_1_left_width_0_height_0__pin_7_[0]),
-		.top_right_grid_pin_9_(grid_io_right_1_left_width_0_height_0__pin_9_[0]),
-		.top_right_grid_pin_11_(grid_io_right_1_left_width_0_height_0__pin_11_[0]),
-		.top_right_grid_pin_13_(grid_io_right_1_left_width_0_height_0__pin_13_[0]),
-		.top_right_grid_pin_15_(grid_io_right_1_left_width_0_height_0__pin_15_[0]),
-		.chany_bottom_in(cby_3__1__0_chany_top_out[0:8]),
-		.bottom_right_grid_pin_1_(grid_io_right_0_left_width_0_height_0__pin_1_[0]),
-		.bottom_right_grid_pin_3_(grid_io_right_0_left_width_0_height_0__pin_3_[0]),
-		.bottom_right_grid_pin_5_(grid_io_right_0_left_width_0_height_0__pin_5_[0]),
-		.bottom_right_grid_pin_7_(grid_io_right_0_left_width_0_height_0__pin_7_[0]),
-		.bottom_right_grid_pin_9_(grid_io_right_0_left_width_0_height_0__pin_9_[0]),
-		.bottom_right_grid_pin_11_(grid_io_right_0_left_width_0_height_0__pin_11_[0]),
-		.bottom_right_grid_pin_13_(grid_io_right_0_left_width_0_height_0__pin_13_[0]),
-		.bottom_right_grid_pin_15_(grid_io_right_0_left_width_0_height_0__pin_15_[0]),
-		.bottom_left_grid_pin_13_(grid_clb_6_right_width_0_height_0__pin_13_[0]),
-		.chanx_left_in(cbx_1__1__4_chanx_right_out[0:8]),
-		.left_top_grid_pin_10_(grid_clb_7_bottom_width_0_height_0__pin_10_[0]),
-		.left_bottom_grid_pin_12_(grid_clb_6_top_width_0_height_0__pin_12_[0]),
-		.enable(decoder6to61_0_data_out[37]),
-		.address(address[0:6]),
-		.data_in(data_in[0]),
-		.chany_top_out(sb_3__1__0_chany_top_out[0:8]),
-		.chany_bottom_out(sb_3__1__0_chany_bottom_out[0:8]),
-		.chanx_left_out(sb_3__1__0_chanx_left_out[0:8]));
-
-	sb_3__1_ sb_3__2_ (
-		.chany_top_in(cby_3__1__2_chany_bottom_out[0:8]),
-		.top_left_grid_pin_13_(grid_clb_8_right_width_0_height_0__pin_13_[0]),
-		.top_right_grid_pin_1_(grid_io_right_2_left_width_0_height_0__pin_1_[0]),
-		.top_right_grid_pin_3_(grid_io_right_2_left_width_0_height_0__pin_3_[0]),
-		.top_right_grid_pin_5_(grid_io_right_2_left_width_0_height_0__pin_5_[0]),
-		.top_right_grid_pin_7_(grid_io_right_2_left_width_0_height_0__pin_7_[0]),
-		.top_right_grid_pin_9_(grid_io_right_2_left_width_0_height_0__pin_9_[0]),
-		.top_right_grid_pin_11_(grid_io_right_2_left_width_0_height_0__pin_11_[0]),
-		.top_right_grid_pin_13_(grid_io_right_2_left_width_0_height_0__pin_13_[0]),
-		.top_right_grid_pin_15_(grid_io_right_2_left_width_0_height_0__pin_15_[0]),
-		.chany_bottom_in(cby_3__1__1_chany_top_out[0:8]),
-		.bottom_right_grid_pin_1_(grid_io_right_1_left_width_0_height_0__pin_1_[0]),
-		.bottom_right_grid_pin_3_(grid_io_right_1_left_width_0_height_0__pin_3_[0]),
-		.bottom_right_grid_pin_5_(grid_io_right_1_left_width_0_height_0__pin_5_[0]),
-		.bottom_right_grid_pin_7_(grid_io_right_1_left_width_0_height_0__pin_7_[0]),
-		.bottom_right_grid_pin_9_(grid_io_right_1_left_width_0_height_0__pin_9_[0]),
-		.bottom_right_grid_pin_11_(grid_io_right_1_left_width_0_height_0__pin_11_[0]),
-		.bottom_right_grid_pin_13_(grid_io_right_1_left_width_0_height_0__pin_13_[0]),
-		.bottom_right_grid_pin_15_(grid_io_right_1_left_width_0_height_0__pin_15_[0]),
-		.bottom_left_grid_pin_13_(grid_clb_7_right_width_0_height_0__pin_13_[0]),
-		.chanx_left_in(cbx_1__1__5_chanx_right_out[0:8]),
-		.left_top_grid_pin_10_(grid_clb_8_bottom_width_0_height_0__pin_10_[0]),
-		.left_bottom_grid_pin_12_(grid_clb_7_top_width_0_height_0__pin_12_[0]),
-		.enable(decoder6to61_0_data_out[57]),
-		.address(address[0:6]),
-		.data_in(data_in[0]),
-		.chany_top_out(sb_3__1__1_chany_top_out[0:8]),
-		.chany_bottom_out(sb_3__1__1_chany_bottom_out[0:8]),
-		.chanx_left_out(sb_3__1__1_chanx_left_out[0:8]));
-
-	sb_3__3_ sb_3__3_ (
-		.chany_bottom_in(cby_3__1__2_chany_top_out[0:8]),
-		.bottom_right_grid_pin_1_(grid_io_right_2_left_width_0_height_0__pin_1_[0]),
-		.bottom_right_grid_pin_3_(grid_io_right_2_left_width_0_height_0__pin_3_[0]),
-		.bottom_right_grid_pin_5_(grid_io_right_2_left_width_0_height_0__pin_5_[0]),
-		.bottom_right_grid_pin_7_(grid_io_right_2_left_width_0_height_0__pin_7_[0]),
-		.bottom_right_grid_pin_9_(grid_io_right_2_left_width_0_height_0__pin_9_[0]),
-		.bottom_right_grid_pin_11_(grid_io_right_2_left_width_0_height_0__pin_11_[0]),
-		.bottom_right_grid_pin_13_(grid_io_right_2_left_width_0_height_0__pin_13_[0]),
-		.bottom_right_grid_pin_15_(grid_io_right_2_left_width_0_height_0__pin_15_[0]),
-		.bottom_left_grid_pin_13_(grid_clb_8_right_width_0_height_0__pin_13_[0]),
-		.chanx_left_in(cbx_1__3__2_chanx_right_out[0:8]),
-		.left_top_grid_pin_1_(grid_io_top_2_bottom_width_0_height_0__pin_1_[0]),
-		.left_top_grid_pin_3_(grid_io_top_2_bottom_width_0_height_0__pin_3_[0]),
-		.left_top_grid_pin_5_(grid_io_top_2_bottom_width_0_height_0__pin_5_[0]),
-		.left_top_grid_pin_7_(grid_io_top_2_bottom_width_0_height_0__pin_7_[0]),
-		.left_top_grid_pin_9_(grid_io_top_2_bottom_width_0_height_0__pin_9_[0]),
-		.left_top_grid_pin_11_(grid_io_top_2_bottom_width_0_height_0__pin_11_[0]),
-		.left_top_grid_pin_13_(grid_io_top_2_bottom_width_0_height_0__pin_13_[0]),
-		.left_top_grid_pin_15_(grid_io_top_2_bottom_width_0_height_0__pin_15_[0]),
-		.left_bottom_grid_pin_12_(grid_clb_8_top_width_0_height_0__pin_12_[0]),
-		.enable(decoder6to61_0_data_out[6]),
-		.address(address[0:5]),
-		.data_in(data_in[0]),
-		.chany_bottom_out(sb_3__3__0_chany_bottom_out[0:8]),
-		.chanx_left_out(sb_3__3__0_chanx_left_out[0:8]));
+	sb_2__2_ sb_2__2_ (
+		.prog_clk(prog_clk[0]),
+		.chany_bottom_in(cby_1__1__3_chany_top_out[0:19]),
+		.bottom_right_grid_pin_1_(grid_io_right_1_left_width_0_height_0__pin_1_upper[0]),
+		.bottom_left_grid_pin_34_(grid_clb_3_right_width_0_height_0__pin_34_upper[0]),
+		.bottom_left_grid_pin_35_(grid_clb_3_right_width_0_height_0__pin_35_upper[0]),
+		.bottom_left_grid_pin_36_(grid_clb_3_right_width_0_height_0__pin_36_upper[0]),
+		.bottom_left_grid_pin_37_(grid_clb_3_right_width_0_height_0__pin_37_upper[0]),
+		.bottom_left_grid_pin_38_(grid_clb_3_right_width_0_height_0__pin_38_upper[0]),
+		.bottom_left_grid_pin_39_(grid_clb_3_right_width_0_height_0__pin_39_upper[0]),
+		.bottom_left_grid_pin_40_(grid_clb_3_right_width_0_height_0__pin_40_upper[0]),
+		.bottom_left_grid_pin_41_(grid_clb_3_right_width_0_height_0__pin_41_upper[0]),
+		.chanx_left_in(cbx_1__2__1_chanx_right_out[0:19]),
+		.left_top_grid_pin_1_(grid_io_top_1_bottom_width_0_height_0__pin_1_lower[0]),
+		.ccff_head(ccff_head[0]),
+		.chany_bottom_out(sb_2__2__0_chany_bottom_out[0:19]),
+		.chanx_left_out(sb_2__2__0_chanx_left_out[0:19]),
+		.ccff_tail(sb_2__2__0_ccff_tail[0]));
 
 	cbx_1__0_ cbx_1__0_ (
-		.chanx_left_in(sb_0__0__0_chanx_right_out[0:8]),
-		.chanx_right_in(sb_1__0__0_chanx_left_out[0:8]),
-		.enable(decoder6to61_0_data_out[26]),
-		.address(address[0:6]),
-		.data_in(data_in[0]),
-		.chanx_left_out(cbx_1__0__0_chanx_left_out[0:8]),
-		.chanx_right_out(cbx_1__0__0_chanx_right_out[0:8]),
-		.top_grid_pin_2_(cbx_1__0__0_top_grid_pin_2_[0]),
-		.top_grid_pin_6_(cbx_1__0__0_top_grid_pin_6_[0]),
-		.top_grid_pin_14_(cbx_1__0__0_top_grid_pin_14_[0]),
+		.prog_clk(prog_clk[0]),
+		.chanx_left_in(sb_0__0__0_chanx_right_out[0:19]),
+		.chanx_right_in(sb_1__0__0_chanx_left_out[0:19]),
+		.ccff_head(sb_1__0__0_ccff_tail[0]),
+		.chanx_left_out(cbx_1__0__0_chanx_left_out[0:19]),
+		.chanx_right_out(cbx_1__0__0_chanx_right_out[0:19]),
+		.top_grid_pin_16_(cbx_1__0__0_top_grid_pin_16_[0]),
+		.top_grid_pin_17_(cbx_1__0__0_top_grid_pin_17_[0]),
+		.top_grid_pin_18_(cbx_1__0__0_top_grid_pin_18_[0]),
+		.top_grid_pin_19_(cbx_1__0__0_top_grid_pin_19_[0]),
+		.top_grid_pin_20_(cbx_1__0__0_top_grid_pin_20_[0]),
+		.top_grid_pin_21_(cbx_1__0__0_top_grid_pin_21_[0]),
+		.top_grid_pin_22_(cbx_1__0__0_top_grid_pin_22_[0]),
+		.top_grid_pin_23_(cbx_1__0__0_top_grid_pin_23_[0]),
+		.top_grid_pin_24_(cbx_1__0__0_top_grid_pin_24_[0]),
+		.top_grid_pin_25_(cbx_1__0__0_top_grid_pin_25_[0]),
+		.top_grid_pin_26_(cbx_1__0__0_top_grid_pin_26_[0]),
+		.top_grid_pin_27_(cbx_1__0__0_top_grid_pin_27_[0]),
+		.top_grid_pin_28_(cbx_1__0__0_top_grid_pin_28_[0]),
+		.top_grid_pin_29_(cbx_1__0__0_top_grid_pin_29_[0]),
+		.top_grid_pin_30_(cbx_1__0__0_top_grid_pin_30_[0]),
+		.top_grid_pin_31_(cbx_1__0__0_top_grid_pin_31_[0]),
 		.bottom_grid_pin_0_(cbx_1__0__0_bottom_grid_pin_0_[0]),
-		.bottom_grid_pin_2_(cbx_1__0__0_bottom_grid_pin_2_[0]),
-		.bottom_grid_pin_4_(cbx_1__0__0_bottom_grid_pin_4_[0]),
-		.bottom_grid_pin_6_(cbx_1__0__0_bottom_grid_pin_6_[0]),
-		.bottom_grid_pin_8_(cbx_1__0__0_bottom_grid_pin_8_[0]),
-		.bottom_grid_pin_10_(cbx_1__0__0_bottom_grid_pin_10_[0]),
-		.bottom_grid_pin_12_(cbx_1__0__0_bottom_grid_pin_12_[0]),
-		.bottom_grid_pin_14_(cbx_1__0__0_bottom_grid_pin_14_[0]));
+		.ccff_tail(cbx_1__0__0_ccff_tail[0]));
 
 	cbx_1__0_ cbx_2__0_ (
-		.chanx_left_in(sb_1__0__0_chanx_right_out[0:8]),
-		.chanx_right_in(sb_1__0__1_chanx_left_out[0:8]),
-		.enable(decoder6to61_0_data_out[30]),
-		.address(address[0:6]),
-		.data_in(data_in[0]),
-		.chanx_left_out(cbx_1__0__1_chanx_left_out[0:8]),
-		.chanx_right_out(cbx_1__0__1_chanx_right_out[0:8]),
-		.top_grid_pin_2_(cbx_1__0__1_top_grid_pin_2_[0]),
-		.top_grid_pin_6_(cbx_1__0__1_top_grid_pin_6_[0]),
-		.top_grid_pin_14_(cbx_1__0__1_top_grid_pin_14_[0]),
+		.prog_clk(prog_clk[0]),
+		.chanx_left_in(sb_1__0__0_chanx_right_out[0:19]),
+		.chanx_right_in(sb_2__0__0_chanx_left_out[0:19]),
+		.ccff_head(sb_2__0__0_ccff_tail[0]),
+		.chanx_left_out(cbx_1__0__1_chanx_left_out[0:19]),
+		.chanx_right_out(cbx_1__0__1_chanx_right_out[0:19]),
+		.top_grid_pin_16_(cbx_1__0__1_top_grid_pin_16_[0]),
+		.top_grid_pin_17_(cbx_1__0__1_top_grid_pin_17_[0]),
+		.top_grid_pin_18_(cbx_1__0__1_top_grid_pin_18_[0]),
+		.top_grid_pin_19_(cbx_1__0__1_top_grid_pin_19_[0]),
+		.top_grid_pin_20_(cbx_1__0__1_top_grid_pin_20_[0]),
+		.top_grid_pin_21_(cbx_1__0__1_top_grid_pin_21_[0]),
+		.top_grid_pin_22_(cbx_1__0__1_top_grid_pin_22_[0]),
+		.top_grid_pin_23_(cbx_1__0__1_top_grid_pin_23_[0]),
+		.top_grid_pin_24_(cbx_1__0__1_top_grid_pin_24_[0]),
+		.top_grid_pin_25_(cbx_1__0__1_top_grid_pin_25_[0]),
+		.top_grid_pin_26_(cbx_1__0__1_top_grid_pin_26_[0]),
+		.top_grid_pin_27_(cbx_1__0__1_top_grid_pin_27_[0]),
+		.top_grid_pin_28_(cbx_1__0__1_top_grid_pin_28_[0]),
+		.top_grid_pin_29_(cbx_1__0__1_top_grid_pin_29_[0]),
+		.top_grid_pin_30_(cbx_1__0__1_top_grid_pin_30_[0]),
+		.top_grid_pin_31_(cbx_1__0__1_top_grid_pin_31_[0]),
 		.bottom_grid_pin_0_(cbx_1__0__1_bottom_grid_pin_0_[0]),
-		.bottom_grid_pin_2_(cbx_1__0__1_bottom_grid_pin_2_[0]),
-		.bottom_grid_pin_4_(cbx_1__0__1_bottom_grid_pin_4_[0]),
-		.bottom_grid_pin_6_(cbx_1__0__1_bottom_grid_pin_6_[0]),
-		.bottom_grid_pin_8_(cbx_1__0__1_bottom_grid_pin_8_[0]),
-		.bottom_grid_pin_10_(cbx_1__0__1_bottom_grid_pin_10_[0]),
-		.bottom_grid_pin_12_(cbx_1__0__1_bottom_grid_pin_12_[0]),
-		.bottom_grid_pin_14_(cbx_1__0__1_bottom_grid_pin_14_[0]));
-
-	cbx_1__0_ cbx_3__0_ (
-		.chanx_left_in(sb_1__0__1_chanx_right_out[0:8]),
-		.chanx_right_in(sb_3__0__0_chanx_left_out[0:8]),
-		.enable(decoder6to61_0_data_out[34]),
-		.address(address[0:6]),
-		.data_in(data_in[0]),
-		.chanx_left_out(cbx_1__0__2_chanx_left_out[0:8]),
-		.chanx_right_out(cbx_1__0__2_chanx_right_out[0:8]),
-		.top_grid_pin_2_(cbx_1__0__2_top_grid_pin_2_[0]),
-		.top_grid_pin_6_(cbx_1__0__2_top_grid_pin_6_[0]),
-		.top_grid_pin_14_(cbx_1__0__2_top_grid_pin_14_[0]),
-		.bottom_grid_pin_0_(cbx_1__0__2_bottom_grid_pin_0_[0]),
-		.bottom_grid_pin_2_(cbx_1__0__2_bottom_grid_pin_2_[0]),
-		.bottom_grid_pin_4_(cbx_1__0__2_bottom_grid_pin_4_[0]),
-		.bottom_grid_pin_6_(cbx_1__0__2_bottom_grid_pin_6_[0]),
-		.bottom_grid_pin_8_(cbx_1__0__2_bottom_grid_pin_8_[0]),
-		.bottom_grid_pin_10_(cbx_1__0__2_bottom_grid_pin_10_[0]),
-		.bottom_grid_pin_12_(cbx_1__0__2_bottom_grid_pin_12_[0]),
-		.bottom_grid_pin_14_(cbx_1__0__2_bottom_grid_pin_14_[0]));
+		.ccff_tail(cbx_1__0__1_ccff_tail[0]));
 
 	cbx_1__1_ cbx_1__1_ (
-		.chanx_left_in(sb_0__1__0_chanx_right_out[0:8]),
-		.chanx_right_in(sb_1__1__0_chanx_left_out[0:8]),
-		.enable(decoder6to61_0_data_out[46]),
-		.address(address[0:5]),
-		.data_in(data_in[0]),
-		.chanx_left_out(cbx_1__1__0_chanx_left_out[0:8]),
-		.chanx_right_out(cbx_1__1__0_chanx_right_out[0:8]),
-		.top_grid_pin_2_(cbx_1__1__0_top_grid_pin_2_[0]),
-		.top_grid_pin_6_(cbx_1__1__0_top_grid_pin_6_[0]),
-		.top_grid_pin_14_(cbx_1__1__0_top_grid_pin_14_[0]),
-		.bottom_grid_pin_0_(cbx_1__1__0_bottom_grid_pin_0_[0]),
-		.bottom_grid_pin_4_(cbx_1__1__0_bottom_grid_pin_4_[0]),
-		.bottom_grid_pin_8_(cbx_1__1__0_bottom_grid_pin_8_[0]));
-
-	cbx_1__1_ cbx_1__2_ (
-		.chanx_left_in(sb_0__1__1_chanx_right_out[0:8]),
-		.chanx_right_in(sb_1__1__1_chanx_left_out[0:8]),
-		.enable(decoder6to61_0_data_out[50]),
-		.address(address[0:5]),
-		.data_in(data_in[0]),
-		.chanx_left_out(cbx_1__1__1_chanx_left_out[0:8]),
-		.chanx_right_out(cbx_1__1__1_chanx_right_out[0:8]),
-		.top_grid_pin_2_(cbx_1__1__1_top_grid_pin_2_[0]),
-		.top_grid_pin_6_(cbx_1__1__1_top_grid_pin_6_[0]),
-		.top_grid_pin_14_(cbx_1__1__1_top_grid_pin_14_[0]),
-		.bottom_grid_pin_0_(cbx_1__1__1_bottom_grid_pin_0_[0]),
-		.bottom_grid_pin_4_(cbx_1__1__1_bottom_grid_pin_4_[0]),
-		.bottom_grid_pin_8_(cbx_1__1__1_bottom_grid_pin_8_[0]));
+		.prog_clk(prog_clk[0]),
+		.chanx_left_in(sb_0__1__0_chanx_right_out[0:19]),
+		.chanx_right_in(sb_1__1__0_chanx_left_out[0:19]),
+		.ccff_head(sb_1__1__0_ccff_tail[0]),
+		.chanx_left_out(cbx_1__1__0_chanx_left_out[0:19]),
+		.chanx_right_out(cbx_1__1__0_chanx_right_out[0:19]),
+		.top_grid_pin_16_(cbx_1__1__0_top_grid_pin_16_[0]),
+		.top_grid_pin_17_(cbx_1__1__0_top_grid_pin_17_[0]),
+		.top_grid_pin_18_(cbx_1__1__0_top_grid_pin_18_[0]),
+		.top_grid_pin_19_(cbx_1__1__0_top_grid_pin_19_[0]),
+		.top_grid_pin_20_(cbx_1__1__0_top_grid_pin_20_[0]),
+		.top_grid_pin_21_(cbx_1__1__0_top_grid_pin_21_[0]),
+		.top_grid_pin_22_(cbx_1__1__0_top_grid_pin_22_[0]),
+		.top_grid_pin_23_(cbx_1__1__0_top_grid_pin_23_[0]),
+		.top_grid_pin_24_(cbx_1__1__0_top_grid_pin_24_[0]),
+		.top_grid_pin_25_(cbx_1__1__0_top_grid_pin_25_[0]),
+		.top_grid_pin_26_(cbx_1__1__0_top_grid_pin_26_[0]),
+		.top_grid_pin_27_(cbx_1__1__0_top_grid_pin_27_[0]),
+		.top_grid_pin_28_(cbx_1__1__0_top_grid_pin_28_[0]),
+		.top_grid_pin_29_(cbx_1__1__0_top_grid_pin_29_[0]),
+		.top_grid_pin_30_(cbx_1__1__0_top_grid_pin_30_[0]),
+		.top_grid_pin_31_(cbx_1__1__0_top_grid_pin_31_[0]),
+		.ccff_tail(cbx_1__1__0_ccff_tail[0]));
 
 	cbx_1__1_ cbx_2__1_ (
-		.chanx_left_in(sb_1__1__0_chanx_right_out[0:8]),
-		.chanx_right_in(sb_1__1__2_chanx_left_out[0:8]),
-		.enable(decoder6to61_0_data_out[42]),
-		.address(address[0:5]),
-		.data_in(data_in[0]),
-		.chanx_left_out(cbx_1__1__2_chanx_left_out[0:8]),
-		.chanx_right_out(cbx_1__1__2_chanx_right_out[0:8]),
-		.top_grid_pin_2_(cbx_1__1__2_top_grid_pin_2_[0]),
-		.top_grid_pin_6_(cbx_1__1__2_top_grid_pin_6_[0]),
-		.top_grid_pin_14_(cbx_1__1__2_top_grid_pin_14_[0]),
-		.bottom_grid_pin_0_(cbx_1__1__2_bottom_grid_pin_0_[0]),
-		.bottom_grid_pin_4_(cbx_1__1__2_bottom_grid_pin_4_[0]),
-		.bottom_grid_pin_8_(cbx_1__1__2_bottom_grid_pin_8_[0]));
+		.prog_clk(prog_clk[0]),
+		.chanx_left_in(sb_1__1__0_chanx_right_out[0:19]),
+		.chanx_right_in(sb_2__1__0_chanx_left_out[0:19]),
+		.ccff_head(sb_2__1__0_ccff_tail[0]),
+		.chanx_left_out(cbx_1__1__1_chanx_left_out[0:19]),
+		.chanx_right_out(cbx_1__1__1_chanx_right_out[0:19]),
+		.top_grid_pin_16_(cbx_1__1__1_top_grid_pin_16_[0]),
+		.top_grid_pin_17_(cbx_1__1__1_top_grid_pin_17_[0]),
+		.top_grid_pin_18_(cbx_1__1__1_top_grid_pin_18_[0]),
+		.top_grid_pin_19_(cbx_1__1__1_top_grid_pin_19_[0]),
+		.top_grid_pin_20_(cbx_1__1__1_top_grid_pin_20_[0]),
+		.top_grid_pin_21_(cbx_1__1__1_top_grid_pin_21_[0]),
+		.top_grid_pin_22_(cbx_1__1__1_top_grid_pin_22_[0]),
+		.top_grid_pin_23_(cbx_1__1__1_top_grid_pin_23_[0]),
+		.top_grid_pin_24_(cbx_1__1__1_top_grid_pin_24_[0]),
+		.top_grid_pin_25_(cbx_1__1__1_top_grid_pin_25_[0]),
+		.top_grid_pin_26_(cbx_1__1__1_top_grid_pin_26_[0]),
+		.top_grid_pin_27_(cbx_1__1__1_top_grid_pin_27_[0]),
+		.top_grid_pin_28_(cbx_1__1__1_top_grid_pin_28_[0]),
+		.top_grid_pin_29_(cbx_1__1__1_top_grid_pin_29_[0]),
+		.top_grid_pin_30_(cbx_1__1__1_top_grid_pin_30_[0]),
+		.top_grid_pin_31_(cbx_1__1__1_top_grid_pin_31_[0]),
+		.ccff_tail(cbx_1__1__1_ccff_tail[0]));
 
-	cbx_1__1_ cbx_2__2_ (
-		.chanx_left_in(sb_1__1__1_chanx_right_out[0:8]),
-		.chanx_right_in(sb_1__1__3_chanx_left_out[0:8]),
-		.enable(decoder6to61_0_data_out[54]),
-		.address(address[0:5]),
-		.data_in(data_in[0]),
-		.chanx_left_out(cbx_1__1__3_chanx_left_out[0:8]),
-		.chanx_right_out(cbx_1__1__3_chanx_right_out[0:8]),
-		.top_grid_pin_2_(cbx_1__1__3_top_grid_pin_2_[0]),
-		.top_grid_pin_6_(cbx_1__1__3_top_grid_pin_6_[0]),
-		.top_grid_pin_14_(cbx_1__1__3_top_grid_pin_14_[0]),
-		.bottom_grid_pin_0_(cbx_1__1__3_bottom_grid_pin_0_[0]),
-		.bottom_grid_pin_4_(cbx_1__1__3_bottom_grid_pin_4_[0]),
-		.bottom_grid_pin_8_(cbx_1__1__3_bottom_grid_pin_8_[0]));
+	cbx_1__2_ cbx_1__2_ (
+		.prog_clk(prog_clk[0]),
+		.chanx_left_in(sb_0__2__0_chanx_right_out[0:19]),
+		.chanx_right_in(sb_1__2__0_chanx_left_out[0:19]),
+		.ccff_head(sb_1__2__0_ccff_tail[0]),
+		.chanx_left_out(cbx_1__2__0_chanx_left_out[0:19]),
+		.chanx_right_out(cbx_1__2__0_chanx_right_out[0:19]),
+		.top_grid_pin_0_(cbx_1__2__0_top_grid_pin_0_[0]),
+		.ccff_tail(cbx_1__2__0_ccff_tail[0]));
 
-	cbx_1__1_ cbx_3__1_ (
-		.chanx_left_in(sb_1__1__2_chanx_right_out[0:8]),
-		.chanx_right_in(sb_3__1__0_chanx_left_out[0:8]),
-		.enable(decoder6to61_0_data_out[38]),
-		.address(address[0:5]),
-		.data_in(data_in[0]),
-		.chanx_left_out(cbx_1__1__4_chanx_left_out[0:8]),
-		.chanx_right_out(cbx_1__1__4_chanx_right_out[0:8]),
-		.top_grid_pin_2_(cbx_1__1__4_top_grid_pin_2_[0]),
-		.top_grid_pin_6_(cbx_1__1__4_top_grid_pin_6_[0]),
-		.top_grid_pin_14_(cbx_1__1__4_top_grid_pin_14_[0]),
-		.bottom_grid_pin_0_(cbx_1__1__4_bottom_grid_pin_0_[0]),
-		.bottom_grid_pin_4_(cbx_1__1__4_bottom_grid_pin_4_[0]),
-		.bottom_grid_pin_8_(cbx_1__1__4_bottom_grid_pin_8_[0]));
-
-	cbx_1__1_ cbx_3__2_ (
-		.chanx_left_in(sb_1__1__3_chanx_right_out[0:8]),
-		.chanx_right_in(sb_3__1__1_chanx_left_out[0:8]),
-		.enable(decoder6to61_0_data_out[58]),
-		.address(address[0:5]),
-		.data_in(data_in[0]),
-		.chanx_left_out(cbx_1__1__5_chanx_left_out[0:8]),
-		.chanx_right_out(cbx_1__1__5_chanx_right_out[0:8]),
-		.top_grid_pin_2_(cbx_1__1__5_top_grid_pin_2_[0]),
-		.top_grid_pin_6_(cbx_1__1__5_top_grid_pin_6_[0]),
-		.top_grid_pin_14_(cbx_1__1__5_top_grid_pin_14_[0]),
-		.bottom_grid_pin_0_(cbx_1__1__5_bottom_grid_pin_0_[0]),
-		.bottom_grid_pin_4_(cbx_1__1__5_bottom_grid_pin_4_[0]),
-		.bottom_grid_pin_8_(cbx_1__1__5_bottom_grid_pin_8_[0]));
-
-	cbx_1__3_ cbx_1__3_ (
-		.chanx_left_in(sb_0__3__0_chanx_right_out[0:8]),
-		.chanx_right_in(sb_1__3__0_chanx_left_out[0:8]),
-		.enable(decoder6to61_0_data_out[13]),
-		.address(address[0:6]),
-		.data_in(data_in[0]),
-		.chanx_left_out(cbx_1__3__0_chanx_left_out[0:8]),
-		.chanx_right_out(cbx_1__3__0_chanx_right_out[0:8]),
-		.top_grid_pin_0_(cbx_1__3__0_top_grid_pin_0_[0]),
-		.top_grid_pin_2_(cbx_1__3__0_top_grid_pin_2_[0]),
-		.top_grid_pin_4_(cbx_1__3__0_top_grid_pin_4_[0]),
-		.top_grid_pin_6_(cbx_1__3__0_top_grid_pin_6_[0]),
-		.top_grid_pin_8_(cbx_1__3__0_top_grid_pin_8_[0]),
-		.top_grid_pin_10_(cbx_1__3__0_top_grid_pin_10_[0]),
-		.top_grid_pin_12_(cbx_1__3__0_top_grid_pin_12_[0]),
-		.top_grid_pin_14_(cbx_1__3__0_top_grid_pin_14_[0]),
-		.bottom_grid_pin_0_(cbx_1__3__0_bottom_grid_pin_0_[0]),
-		.bottom_grid_pin_4_(cbx_1__3__0_bottom_grid_pin_4_[0]),
-		.bottom_grid_pin_8_(cbx_1__3__0_bottom_grid_pin_8_[0]));
-
-	cbx_1__3_ cbx_2__3_ (
-		.chanx_left_in(sb_1__3__0_chanx_right_out[0:8]),
-		.chanx_right_in(sb_1__3__1_chanx_left_out[0:8]),
-		.enable(decoder6to61_0_data_out[10]),
-		.address(address[0:6]),
-		.data_in(data_in[0]),
-		.chanx_left_out(cbx_1__3__1_chanx_left_out[0:8]),
-		.chanx_right_out(cbx_1__3__1_chanx_right_out[0:8]),
-		.top_grid_pin_0_(cbx_1__3__1_top_grid_pin_0_[0]),
-		.top_grid_pin_2_(cbx_1__3__1_top_grid_pin_2_[0]),
-		.top_grid_pin_4_(cbx_1__3__1_top_grid_pin_4_[0]),
-		.top_grid_pin_6_(cbx_1__3__1_top_grid_pin_6_[0]),
-		.top_grid_pin_8_(cbx_1__3__1_top_grid_pin_8_[0]),
-		.top_grid_pin_10_(cbx_1__3__1_top_grid_pin_10_[0]),
-		.top_grid_pin_12_(cbx_1__3__1_top_grid_pin_12_[0]),
-		.top_grid_pin_14_(cbx_1__3__1_top_grid_pin_14_[0]),
-		.bottom_grid_pin_0_(cbx_1__3__1_bottom_grid_pin_0_[0]),
-		.bottom_grid_pin_4_(cbx_1__3__1_bottom_grid_pin_4_[0]),
-		.bottom_grid_pin_8_(cbx_1__3__1_bottom_grid_pin_8_[0]));
-
-	cbx_1__3_ cbx_3__3_ (
-		.chanx_left_in(sb_1__3__1_chanx_right_out[0:8]),
-		.chanx_right_in(sb_3__3__0_chanx_left_out[0:8]),
-		.enable(decoder6to61_0_data_out[7]),
-		.address(address[0:6]),
-		.data_in(data_in[0]),
-		.chanx_left_out(cbx_1__3__2_chanx_left_out[0:8]),
-		.chanx_right_out(cbx_1__3__2_chanx_right_out[0:8]),
-		.top_grid_pin_0_(cbx_1__3__2_top_grid_pin_0_[0]),
-		.top_grid_pin_2_(cbx_1__3__2_top_grid_pin_2_[0]),
-		.top_grid_pin_4_(cbx_1__3__2_top_grid_pin_4_[0]),
-		.top_grid_pin_6_(cbx_1__3__2_top_grid_pin_6_[0]),
-		.top_grid_pin_8_(cbx_1__3__2_top_grid_pin_8_[0]),
-		.top_grid_pin_10_(cbx_1__3__2_top_grid_pin_10_[0]),
-		.top_grid_pin_12_(cbx_1__3__2_top_grid_pin_12_[0]),
-		.top_grid_pin_14_(cbx_1__3__2_top_grid_pin_14_[0]),
-		.bottom_grid_pin_0_(cbx_1__3__2_bottom_grid_pin_0_[0]),
-		.bottom_grid_pin_4_(cbx_1__3__2_bottom_grid_pin_4_[0]),
-		.bottom_grid_pin_8_(cbx_1__3__2_bottom_grid_pin_8_[0]));
+	cbx_1__2_ cbx_2__2_ (
+		.prog_clk(prog_clk[0]),
+		.chanx_left_in(sb_1__2__0_chanx_right_out[0:19]),
+		.chanx_right_in(sb_2__2__0_chanx_left_out[0:19]),
+		.ccff_head(sb_2__2__0_ccff_tail[0]),
+		.chanx_left_out(cbx_1__2__1_chanx_left_out[0:19]),
+		.chanx_right_out(cbx_1__2__1_chanx_right_out[0:19]),
+		.top_grid_pin_0_(cbx_1__2__1_top_grid_pin_0_[0]),
+		.ccff_tail(cbx_1__2__1_ccff_tail[0]));
 
 	cby_0__1_ cby_0__1_ (
-		.chany_bottom_in(sb_0__0__0_chany_top_out[0:8]),
-		.chany_top_in(sb_0__1__0_chany_bottom_out[0:8]),
-		.enable(decoder6to61_0_data_out[23]),
-		.address(address[0:6]),
-		.data_in(data_in[0]),
-		.chany_bottom_out(cby_0__1__0_chany_bottom_out[0:8]),
-		.chany_top_out(cby_0__1__0_chany_top_out[0:8]),
-		.right_grid_pin_3_(cby_0__1__0_right_grid_pin_3_[0]),
-		.right_grid_pin_7_(cby_0__1__0_right_grid_pin_7_[0]),
+		.prog_clk(prog_clk[0]),
+		.chany_bottom_in(sb_0__0__0_chany_top_out[0:19]),
+		.chany_top_in(sb_0__1__0_chany_bottom_out[0:19]),
+		.ccff_head(sb_0__1__0_ccff_tail[0]),
+		.chany_bottom_out(cby_0__1__0_chany_bottom_out[0:19]),
+		.chany_top_out(cby_0__1__0_chany_top_out[0:19]),
+		.right_grid_pin_52_(cby_0__1__0_right_grid_pin_52_[0]),
 		.left_grid_pin_0_(cby_0__1__0_left_grid_pin_0_[0]),
-		.left_grid_pin_2_(cby_0__1__0_left_grid_pin_2_[0]),
-		.left_grid_pin_4_(cby_0__1__0_left_grid_pin_4_[0]),
-		.left_grid_pin_6_(cby_0__1__0_left_grid_pin_6_[0]),
-		.left_grid_pin_8_(cby_0__1__0_left_grid_pin_8_[0]),
-		.left_grid_pin_10_(cby_0__1__0_left_grid_pin_10_[0]),
-		.left_grid_pin_12_(cby_0__1__0_left_grid_pin_12_[0]),
-		.left_grid_pin_14_(cby_0__1__0_left_grid_pin_14_[0]));
+		.ccff_tail(cby_0__1__0_ccff_tail[0]));
 
 	cby_0__1_ cby_0__2_ (
-		.chany_bottom_in(sb_0__1__0_chany_top_out[0:8]),
-		.chany_top_in(sb_0__1__1_chany_bottom_out[0:8]),
-		.enable(decoder6to61_0_data_out[20]),
-		.address(address[0:6]),
-		.data_in(data_in[0]),
-		.chany_bottom_out(cby_0__1__1_chany_bottom_out[0:8]),
-		.chany_top_out(cby_0__1__1_chany_top_out[0:8]),
-		.right_grid_pin_3_(cby_0__1__1_right_grid_pin_3_[0]),
-		.right_grid_pin_7_(cby_0__1__1_right_grid_pin_7_[0]),
+		.prog_clk(prog_clk[0]),
+		.chany_bottom_in(sb_0__1__0_chany_top_out[0:19]),
+		.chany_top_in(sb_0__2__0_chany_bottom_out[0:19]),
+		.ccff_head(sb_0__2__0_ccff_tail[0]),
+		.chany_bottom_out(cby_0__1__1_chany_bottom_out[0:19]),
+		.chany_top_out(cby_0__1__1_chany_top_out[0:19]),
+		.right_grid_pin_52_(cby_0__1__1_right_grid_pin_52_[0]),
 		.left_grid_pin_0_(cby_0__1__1_left_grid_pin_0_[0]),
-		.left_grid_pin_2_(cby_0__1__1_left_grid_pin_2_[0]),
-		.left_grid_pin_4_(cby_0__1__1_left_grid_pin_4_[0]),
-		.left_grid_pin_6_(cby_0__1__1_left_grid_pin_6_[0]),
-		.left_grid_pin_8_(cby_0__1__1_left_grid_pin_8_[0]),
-		.left_grid_pin_10_(cby_0__1__1_left_grid_pin_10_[0]),
-		.left_grid_pin_12_(cby_0__1__1_left_grid_pin_12_[0]),
-		.left_grid_pin_14_(cby_0__1__1_left_grid_pin_14_[0]));
-
-	cby_0__1_ cby_0__3_ (
-		.chany_bottom_in(sb_0__1__1_chany_top_out[0:8]),
-		.chany_top_in(sb_0__3__0_chany_bottom_out[0:8]),
-		.enable(decoder6to61_0_data_out[17]),
-		.address(address[0:6]),
-		.data_in(data_in[0]),
-		.chany_bottom_out(cby_0__1__2_chany_bottom_out[0:8]),
-		.chany_top_out(cby_0__1__2_chany_top_out[0:8]),
-		.right_grid_pin_3_(cby_0__1__2_right_grid_pin_3_[0]),
-		.right_grid_pin_7_(cby_0__1__2_right_grid_pin_7_[0]),
-		.left_grid_pin_0_(cby_0__1__2_left_grid_pin_0_[0]),
-		.left_grid_pin_2_(cby_0__1__2_left_grid_pin_2_[0]),
-		.left_grid_pin_4_(cby_0__1__2_left_grid_pin_4_[0]),
-		.left_grid_pin_6_(cby_0__1__2_left_grid_pin_6_[0]),
-		.left_grid_pin_8_(cby_0__1__2_left_grid_pin_8_[0]),
-		.left_grid_pin_10_(cby_0__1__2_left_grid_pin_10_[0]),
-		.left_grid_pin_12_(cby_0__1__2_left_grid_pin_12_[0]),
-		.left_grid_pin_14_(cby_0__1__2_left_grid_pin_14_[0]));
+		.ccff_tail(cby_0__1__1_ccff_tail[0]));
 
 	cby_1__1_ cby_1__1_ (
-		.chany_bottom_in(sb_1__0__0_chany_top_out[0:8]),
-		.chany_top_in(sb_1__1__0_chany_bottom_out[0:8]),
-		.enable(decoder6to61_0_data_out[27]),
-		.address(address[0:5]),
-		.data_in(data_in[0]),
-		.chany_bottom_out(cby_1__1__0_chany_bottom_out[0:8]),
-		.chany_top_out(cby_1__1__0_chany_top_out[0:8]),
-		.right_grid_pin_3_(cby_1__1__0_right_grid_pin_3_[0]),
-		.right_grid_pin_7_(cby_1__1__0_right_grid_pin_7_[0]),
+		.prog_clk(prog_clk[0]),
+		.chany_bottom_in(sb_1__0__0_chany_top_out[0:19]),
+		.chany_top_in(sb_1__1__0_chany_bottom_out[0:19]),
+		.ccff_head(grid_clb_0_ccff_tail[0]),
+		.chany_bottom_out(cby_1__1__0_chany_bottom_out[0:19]),
+		.chany_top_out(cby_1__1__0_chany_top_out[0:19]),
+		.right_grid_pin_52_(cby_1__1__0_right_grid_pin_52_[0]),
+		.left_grid_pin_0_(cby_1__1__0_left_grid_pin_0_[0]),
 		.left_grid_pin_1_(cby_1__1__0_left_grid_pin_1_[0]),
+		.left_grid_pin_2_(cby_1__1__0_left_grid_pin_2_[0]),
+		.left_grid_pin_3_(cby_1__1__0_left_grid_pin_3_[0]),
+		.left_grid_pin_4_(cby_1__1__0_left_grid_pin_4_[0]),
 		.left_grid_pin_5_(cby_1__1__0_left_grid_pin_5_[0]),
-		.left_grid_pin_9_(cby_1__1__0_left_grid_pin_9_[0]));
+		.left_grid_pin_6_(cby_1__1__0_left_grid_pin_6_[0]),
+		.left_grid_pin_7_(cby_1__1__0_left_grid_pin_7_[0]),
+		.left_grid_pin_8_(cby_1__1__0_left_grid_pin_8_[0]),
+		.left_grid_pin_9_(cby_1__1__0_left_grid_pin_9_[0]),
+		.left_grid_pin_10_(cby_1__1__0_left_grid_pin_10_[0]),
+		.left_grid_pin_11_(cby_1__1__0_left_grid_pin_11_[0]),
+		.left_grid_pin_12_(cby_1__1__0_left_grid_pin_12_[0]),
+		.left_grid_pin_13_(cby_1__1__0_left_grid_pin_13_[0]),
+		.left_grid_pin_14_(cby_1__1__0_left_grid_pin_14_[0]),
+		.left_grid_pin_15_(cby_1__1__0_left_grid_pin_15_[0]),
+		.ccff_tail(cby_1__1__0_ccff_tail[0]));
 
 	cby_1__1_ cby_1__2_ (
-		.chany_bottom_in(sb_1__1__0_chany_top_out[0:8]),
-		.chany_top_in(sb_1__1__1_chany_bottom_out[0:8]),
-		.enable(decoder6to61_0_data_out[47]),
-		.address(address[0:5]),
-		.data_in(data_in[0]),
-		.chany_bottom_out(cby_1__1__1_chany_bottom_out[0:8]),
-		.chany_top_out(cby_1__1__1_chany_top_out[0:8]),
-		.right_grid_pin_3_(cby_1__1__1_right_grid_pin_3_[0]),
-		.right_grid_pin_7_(cby_1__1__1_right_grid_pin_7_[0]),
+		.prog_clk(prog_clk[0]),
+		.chany_bottom_in(sb_1__1__0_chany_top_out[0:19]),
+		.chany_top_in(sb_1__2__0_chany_bottom_out[0:19]),
+		.ccff_head(grid_clb_1_ccff_tail[0]),
+		.chany_bottom_out(cby_1__1__1_chany_bottom_out[0:19]),
+		.chany_top_out(cby_1__1__1_chany_top_out[0:19]),
+		.right_grid_pin_52_(cby_1__1__1_right_grid_pin_52_[0]),
+		.left_grid_pin_0_(cby_1__1__1_left_grid_pin_0_[0]),
 		.left_grid_pin_1_(cby_1__1__1_left_grid_pin_1_[0]),
+		.left_grid_pin_2_(cby_1__1__1_left_grid_pin_2_[0]),
+		.left_grid_pin_3_(cby_1__1__1_left_grid_pin_3_[0]),
+		.left_grid_pin_4_(cby_1__1__1_left_grid_pin_4_[0]),
 		.left_grid_pin_5_(cby_1__1__1_left_grid_pin_5_[0]),
-		.left_grid_pin_9_(cby_1__1__1_left_grid_pin_9_[0]));
-
-	cby_1__1_ cby_1__3_ (
-		.chany_bottom_in(sb_1__1__1_chany_top_out[0:8]),
-		.chany_top_in(sb_1__3__0_chany_bottom_out[0:8]),
-		.enable(decoder6to61_0_data_out[51]),
-		.address(address[0:5]),
-		.data_in(data_in[0]),
-		.chany_bottom_out(cby_1__1__2_chany_bottom_out[0:8]),
-		.chany_top_out(cby_1__1__2_chany_top_out[0:8]),
-		.right_grid_pin_3_(cby_1__1__2_right_grid_pin_3_[0]),
-		.right_grid_pin_7_(cby_1__1__2_right_grid_pin_7_[0]),
-		.left_grid_pin_1_(cby_1__1__2_left_grid_pin_1_[0]),
-		.left_grid_pin_5_(cby_1__1__2_left_grid_pin_5_[0]),
-		.left_grid_pin_9_(cby_1__1__2_left_grid_pin_9_[0]));
+		.left_grid_pin_6_(cby_1__1__1_left_grid_pin_6_[0]),
+		.left_grid_pin_7_(cby_1__1__1_left_grid_pin_7_[0]),
+		.left_grid_pin_8_(cby_1__1__1_left_grid_pin_8_[0]),
+		.left_grid_pin_9_(cby_1__1__1_left_grid_pin_9_[0]),
+		.left_grid_pin_10_(cby_1__1__1_left_grid_pin_10_[0]),
+		.left_grid_pin_11_(cby_1__1__1_left_grid_pin_11_[0]),
+		.left_grid_pin_12_(cby_1__1__1_left_grid_pin_12_[0]),
+		.left_grid_pin_13_(cby_1__1__1_left_grid_pin_13_[0]),
+		.left_grid_pin_14_(cby_1__1__1_left_grid_pin_14_[0]),
+		.left_grid_pin_15_(cby_1__1__1_left_grid_pin_15_[0]),
+		.ccff_tail(cby_1__1__1_ccff_tail[0]));
 
 	cby_1__1_ cby_2__1_ (
-		.chany_bottom_in(sb_1__0__1_chany_top_out[0:8]),
-		.chany_top_in(sb_1__1__2_chany_bottom_out[0:8]),
-		.enable(decoder6to61_0_data_out[31]),
-		.address(address[0:5]),
-		.data_in(data_in[0]),
-		.chany_bottom_out(cby_1__1__3_chany_bottom_out[0:8]),
-		.chany_top_out(cby_1__1__3_chany_top_out[0:8]),
-		.right_grid_pin_3_(cby_1__1__3_right_grid_pin_3_[0]),
-		.right_grid_pin_7_(cby_1__1__3_right_grid_pin_7_[0]),
-		.left_grid_pin_1_(cby_1__1__3_left_grid_pin_1_[0]),
-		.left_grid_pin_5_(cby_1__1__3_left_grid_pin_5_[0]),
-		.left_grid_pin_9_(cby_1__1__3_left_grid_pin_9_[0]));
+		.prog_clk(prog_clk[0]),
+		.chany_bottom_in(sb_2__0__0_chany_top_out[0:19]),
+		.chany_top_in(sb_2__1__0_chany_bottom_out[0:19]),
+		.ccff_head(grid_clb_2_ccff_tail[0]),
+		.chany_bottom_out(cby_1__1__2_chany_bottom_out[0:19]),
+		.chany_top_out(cby_1__1__2_chany_top_out[0:19]),
+		.right_grid_pin_52_(cby_1__1__2_right_grid_pin_52_[0]),
+		.left_grid_pin_0_(cby_1__1__2_left_grid_pin_0_[0]),
+		.left_grid_pin_1_(cby_1__1__2_left_grid_pin_1_[0]),
+		.left_grid_pin_2_(cby_1__1__2_left_grid_pin_2_[0]),
+		.left_grid_pin_3_(cby_1__1__2_left_grid_pin_3_[0]),
+		.left_grid_pin_4_(cby_1__1__2_left_grid_pin_4_[0]),
+		.left_grid_pin_5_(cby_1__1__2_left_grid_pin_5_[0]),
+		.left_grid_pin_6_(cby_1__1__2_left_grid_pin_6_[0]),
+		.left_grid_pin_7_(cby_1__1__2_left_grid_pin_7_[0]),
+		.left_grid_pin_8_(cby_1__1__2_left_grid_pin_8_[0]),
+		.left_grid_pin_9_(cby_1__1__2_left_grid_pin_9_[0]),
+		.left_grid_pin_10_(cby_1__1__2_left_grid_pin_10_[0]),
+		.left_grid_pin_11_(cby_1__1__2_left_grid_pin_11_[0]),
+		.left_grid_pin_12_(cby_1__1__2_left_grid_pin_12_[0]),
+		.left_grid_pin_13_(cby_1__1__2_left_grid_pin_13_[0]),
+		.left_grid_pin_14_(cby_1__1__2_left_grid_pin_14_[0]),
+		.left_grid_pin_15_(cby_1__1__2_left_grid_pin_15_[0]),
+		.ccff_tail(cby_1__1__2_ccff_tail[0]));
 
 	cby_1__1_ cby_2__2_ (
-		.chany_bottom_in(sb_1__1__2_chany_top_out[0:8]),
-		.chany_top_in(sb_1__1__3_chany_bottom_out[0:8]),
-		.enable(decoder6to61_0_data_out[43]),
-		.address(address[0:5]),
-		.data_in(data_in[0]),
-		.chany_bottom_out(cby_1__1__4_chany_bottom_out[0:8]),
-		.chany_top_out(cby_1__1__4_chany_top_out[0:8]),
-		.right_grid_pin_3_(cby_1__1__4_right_grid_pin_3_[0]),
-		.right_grid_pin_7_(cby_1__1__4_right_grid_pin_7_[0]),
-		.left_grid_pin_1_(cby_1__1__4_left_grid_pin_1_[0]),
-		.left_grid_pin_5_(cby_1__1__4_left_grid_pin_5_[0]),
-		.left_grid_pin_9_(cby_1__1__4_left_grid_pin_9_[0]));
+		.prog_clk(prog_clk[0]),
+		.chany_bottom_in(sb_2__1__0_chany_top_out[0:19]),
+		.chany_top_in(sb_2__2__0_chany_bottom_out[0:19]),
+		.ccff_head(grid_clb_3_ccff_tail[0]),
+		.chany_bottom_out(cby_1__1__3_chany_bottom_out[0:19]),
+		.chany_top_out(cby_1__1__3_chany_top_out[0:19]),
+		.right_grid_pin_52_(cby_1__1__3_right_grid_pin_52_[0]),
+		.left_grid_pin_0_(cby_1__1__3_left_grid_pin_0_[0]),
+		.left_grid_pin_1_(cby_1__1__3_left_grid_pin_1_[0]),
+		.left_grid_pin_2_(cby_1__1__3_left_grid_pin_2_[0]),
+		.left_grid_pin_3_(cby_1__1__3_left_grid_pin_3_[0]),
+		.left_grid_pin_4_(cby_1__1__3_left_grid_pin_4_[0]),
+		.left_grid_pin_5_(cby_1__1__3_left_grid_pin_5_[0]),
+		.left_grid_pin_6_(cby_1__1__3_left_grid_pin_6_[0]),
+		.left_grid_pin_7_(cby_1__1__3_left_grid_pin_7_[0]),
+		.left_grid_pin_8_(cby_1__1__3_left_grid_pin_8_[0]),
+		.left_grid_pin_9_(cby_1__1__3_left_grid_pin_9_[0]),
+		.left_grid_pin_10_(cby_1__1__3_left_grid_pin_10_[0]),
+		.left_grid_pin_11_(cby_1__1__3_left_grid_pin_11_[0]),
+		.left_grid_pin_12_(cby_1__1__3_left_grid_pin_12_[0]),
+		.left_grid_pin_13_(cby_1__1__3_left_grid_pin_13_[0]),
+		.left_grid_pin_14_(cby_1__1__3_left_grid_pin_14_[0]),
+		.left_grid_pin_15_(cby_1__1__3_left_grid_pin_15_[0]),
+		.ccff_tail(cby_1__1__3_ccff_tail[0]));
 
-	cby_1__1_ cby_2__3_ (
-		.chany_bottom_in(sb_1__1__3_chany_top_out[0:8]),
-		.chany_top_in(sb_1__3__1_chany_bottom_out[0:8]),
-		.enable(decoder6to61_0_data_out[55]),
-		.address(address[0:5]),
-		.data_in(data_in[0]),
-		.chany_bottom_out(cby_1__1__5_chany_bottom_out[0:8]),
-		.chany_top_out(cby_1__1__5_chany_top_out[0:8]),
-		.right_grid_pin_3_(cby_1__1__5_right_grid_pin_3_[0]),
-		.right_grid_pin_7_(cby_1__1__5_right_grid_pin_7_[0]),
-		.left_grid_pin_1_(cby_1__1__5_left_grid_pin_1_[0]),
-		.left_grid_pin_5_(cby_1__1__5_left_grid_pin_5_[0]),
-		.left_grid_pin_9_(cby_1__1__5_left_grid_pin_9_[0]));
+	direct_interc direct_interc_0_ (
+		.in(grid_clb_1_bottom_width_0_height_0__pin_50_[0]),
+		.out(direct_interc_0_out[0]));
 
-	cby_3__1_ cby_3__1_ (
-		.chany_bottom_in(sb_3__0__0_chany_top_out[0:8]),
-		.chany_top_in(sb_3__1__0_chany_bottom_out[0:8]),
-		.enable(decoder6to61_0_data_out[35]),
-		.address(address[0:6]),
-		.data_in(data_in[0]),
-		.chany_bottom_out(cby_3__1__0_chany_bottom_out[0:8]),
-		.chany_top_out(cby_3__1__0_chany_top_out[0:8]),
-		.right_grid_pin_0_(cby_3__1__0_right_grid_pin_0_[0]),
-		.right_grid_pin_2_(cby_3__1__0_right_grid_pin_2_[0]),
-		.right_grid_pin_4_(cby_3__1__0_right_grid_pin_4_[0]),
-		.right_grid_pin_6_(cby_3__1__0_right_grid_pin_6_[0]),
-		.right_grid_pin_8_(cby_3__1__0_right_grid_pin_8_[0]),
-		.right_grid_pin_10_(cby_3__1__0_right_grid_pin_10_[0]),
-		.right_grid_pin_12_(cby_3__1__0_right_grid_pin_12_[0]),
-		.right_grid_pin_14_(cby_3__1__0_right_grid_pin_14_[0]),
-		.left_grid_pin_1_(cby_3__1__0_left_grid_pin_1_[0]),
-		.left_grid_pin_5_(cby_3__1__0_left_grid_pin_5_[0]),
-		.left_grid_pin_9_(cby_3__1__0_left_grid_pin_9_[0]));
+	direct_interc direct_interc_1_ (
+		.in(grid_clb_3_bottom_width_0_height_0__pin_50_[0]),
+		.out(direct_interc_1_out[0]));
 
-	cby_3__1_ cby_3__2_ (
-		.chany_bottom_in(sb_3__1__0_chany_top_out[0:8]),
-		.chany_top_in(sb_3__1__1_chany_bottom_out[0:8]),
-		.enable(decoder6to61_0_data_out[39]),
-		.address(address[0:6]),
-		.data_in(data_in[0]),
-		.chany_bottom_out(cby_3__1__1_chany_bottom_out[0:8]),
-		.chany_top_out(cby_3__1__1_chany_top_out[0:8]),
-		.right_grid_pin_0_(cby_3__1__1_right_grid_pin_0_[0]),
-		.right_grid_pin_2_(cby_3__1__1_right_grid_pin_2_[0]),
-		.right_grid_pin_4_(cby_3__1__1_right_grid_pin_4_[0]),
-		.right_grid_pin_6_(cby_3__1__1_right_grid_pin_6_[0]),
-		.right_grid_pin_8_(cby_3__1__1_right_grid_pin_8_[0]),
-		.right_grid_pin_10_(cby_3__1__1_right_grid_pin_10_[0]),
-		.right_grid_pin_12_(cby_3__1__1_right_grid_pin_12_[0]),
-		.right_grid_pin_14_(cby_3__1__1_right_grid_pin_14_[0]),
-		.left_grid_pin_1_(cby_3__1__1_left_grid_pin_1_[0]),
-		.left_grid_pin_5_(cby_3__1__1_left_grid_pin_5_[0]),
-		.left_grid_pin_9_(cby_3__1__1_left_grid_pin_9_[0]));
+	direct_interc direct_interc_2_ (
+		.in(grid_clb_0_bottom_width_0_height_0__pin_50_[0]),
+		.out(direct_interc_2_out[0]));
 
-	cby_3__1_ cby_3__3_ (
-		.chany_bottom_in(sb_3__1__1_chany_top_out[0:8]),
-		.chany_top_in(sb_3__3__0_chany_bottom_out[0:8]),
-		.enable(decoder6to61_0_data_out[59]),
-		.address(address[0:6]),
-		.data_in(data_in[0]),
-		.chany_bottom_out(cby_3__1__2_chany_bottom_out[0:8]),
-		.chany_top_out(cby_3__1__2_chany_top_out[0:8]),
-		.right_grid_pin_0_(cby_3__1__2_right_grid_pin_0_[0]),
-		.right_grid_pin_2_(cby_3__1__2_right_grid_pin_2_[0]),
-		.right_grid_pin_4_(cby_3__1__2_right_grid_pin_4_[0]),
-		.right_grid_pin_6_(cby_3__1__2_right_grid_pin_6_[0]),
-		.right_grid_pin_8_(cby_3__1__2_right_grid_pin_8_[0]),
-		.right_grid_pin_10_(cby_3__1__2_right_grid_pin_10_[0]),
-		.right_grid_pin_12_(cby_3__1__2_right_grid_pin_12_[0]),
-		.right_grid_pin_14_(cby_3__1__2_right_grid_pin_14_[0]),
-		.left_grid_pin_1_(cby_3__1__2_left_grid_pin_1_[0]),
-		.left_grid_pin_5_(cby_3__1__2_left_grid_pin_5_[0]),
-		.left_grid_pin_9_(cby_3__1__2_left_grid_pin_9_[0]));
+	direct_interc direct_interc_3_ (
+		.in(grid_clb_1_bottom_width_0_height_0__pin_51_[0]),
+		.out(direct_interc_3_out[0]));
 
-	decoder6to61 decoder6to61_0_ (
-		.enable(enable[0]),
-		.address(address[10:15]),
-		.data_out(decoder6to61_0_data_out[0:60]));
+	direct_interc direct_interc_4_ (
+		.in(grid_clb_3_bottom_width_0_height_0__pin_51_[0]),
+		.out(direct_interc_4_out[0]));
+
+	direct_interc direct_interc_5_ (
+		.in(grid_clb_0_bottom_width_0_height_0__pin_51_[0]),
+		.out(direct_interc_5_out[0]));
 
 endmodule
-// ----- END Verilog module for fpga_top -----
+//
 
 
 

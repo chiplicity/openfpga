@@ -10,7 +10,7 @@
 
 //
 //
-module ltile_clb_md_fle_mp_fabric_md_frac_logic(prog_clk,
+module ltile_clb_frac_logic(prog_clk,
                                                                                          frac_logic_in,
                                                                                          ccff_head,
                                                                                          frac_logic_out,

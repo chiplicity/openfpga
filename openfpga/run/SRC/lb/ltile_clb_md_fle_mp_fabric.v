@@ -73,8 +73,8 @@ wire [0:0] direct_interc_8_out;
 wire [0:0] direct_interc_9_out;
 wire [0:0] ltile_clb_md_fle_mp_fab_md_ff_0_ff_Q;
 wire [0:0] ltile_clb_md_fle_mp_fab_md_ff_1_ff_Q;
-wire [0:0] ltile_clb_md_fle_mp_fabric_md_frac_logic_0_ccff_tail;
-wire [0:1] ltile_clb_md_fle_mp_fabric_md_frac_logic_0_frac_logic_out;
+wire [0:0] ltile_clb_frac_logic_0_ccff_tail;
+wire [0:1] ltile_clb_frac_logic_0_frac_logic_out;
 wire [0:1] mux_tree_size2_0_sram;
 wire [0:1] mux_tree_size2_0_sram_inv;
 wire [0:1] mux_tree_size2_1_sram;
@@ -90,12 +90,12 @@ wire [0:0] mux_tree_size2_mem_1_ccff_tail;
 //
 //
 
-	ltile_clb_md_fle_mp_fabric_md_frac_logic ltile_clb_md_fle_mp_fabric_md_frac_logic_0 (
+	ltile_clb_frac_logic ltile_clb_frac_logic_0 (
 		.prog_clk(prog_clk[0]),
 		.frac_logic_in({direct_interc_2_out[0], direct_interc_3_out[0], direct_interc_4_out[0], direct_interc_5_out[0]}),
 		.ccff_head(ccff_head[0]),
-		.frac_logic_out(ltile_clb_md_fle_mp_fabric_md_frac_logic_0_frac_logic_out[0:1]),
-		.ccff_tail(ltile_clb_md_fle_mp_fabric_md_frac_logic_0_ccff_tail[0]));
+		.frac_logic_out(ltile_clb_frac_logic_0_frac_logic_out[0:1]),
+		.ccff_tail(ltile_clb_frac_logic_0_ccff_tail[0]));
 
 	ltile_clb_md_fle_mp_fab_md_ff ltile_clb_md_fle_mp_fab_md_ff_0 (
 		.Test_en(Test_en[0]),
@@ -114,26 +114,26 @@ wire [0:0] mux_tree_size2_mem_1_ccff_tail;
 		.ff_clk(direct_interc_10_out[0]));
 
 	mux_tree_size2 mux_fabric_out_0 (
-		.in({ltile_clb_md_fle_mp_fab_md_ff_0_ff_Q[0], ltile_clb_md_fle_mp_fabric_md_frac_logic_0_frac_logic_out[0]}),
+		.in({ltile_clb_md_fle_mp_fab_md_ff_0_ff_Q[0], ltile_clb_frac_logic_0_frac_logic_out[0]}),
 		.sram(mux_tree_size2_0_sram[0:1]),
 		.sram_inv(mux_tree_size2_0_sram_inv[0:1]),
 		.out(fabric_out[0]));
 
 	mux_tree_size2 mux_fabric_out_1 (
-		.in({ltile_clb_md_fle_mp_fab_md_ff_1_ff_Q[0], ltile_clb_md_fle_mp_fabric_md_frac_logic_0_frac_logic_out[1]}),
+		.in({ltile_clb_md_fle_mp_fab_md_ff_1_ff_Q[0], ltile_clb_frac_logic_0_frac_logic_out[1]}),
 		.sram(mux_tree_size2_1_sram[0:1]),
 		.sram_inv(mux_tree_size2_1_sram_inv[0:1]),
 		.out(fabric_out[1]));
 
 	mux_tree_size2 mux_ff_0_D_0 (
-		.in({ltile_clb_md_fle_mp_fabric_md_frac_logic_0_frac_logic_out[0], fabric_regin[0]}),
+		.in({ltile_clb_frac_logic_0_frac_logic_out[0], fabric_regin[0]}),
 		.sram(mux_tree_size2_2_sram[0:1]),
 		.sram_inv(mux_tree_size2_2_sram_inv[0:1]),
 		.out(mux_tree_size2_2_out[0]));
 
 	mux_tree_size2_mem mem_fabric_out_0 (
 		.prog_clk(prog_clk[0]),
-		.ccff_head(ltile_clb_md_fle_mp_fabric_md_frac_logic_0_ccff_tail[0]),
+		.ccff_head(ltile_clb_frac_logic_0_ccff_tail[0]),
 		.ccff_tail(mux_tree_size2_mem_0_ccff_tail[0]),
 		.mem_out(mux_tree_size2_0_sram[0:1]),
 		.mem_outb(mux_tree_size2_0_sram_inv[0:1]));
@@ -185,7 +185,7 @@ wire [0:0] mux_tree_size2_mem_1_ccff_tail;
 		.out(direct_interc_7_out[0]));
 
 	direct_interc direct_interc_8_ (
-		.in(ltile_clb_md_fle_mp_fabric_md_frac_logic_0_frac_logic_out[1]),
+		.in(ltile_clb_frac_logic_0_frac_logic_out[1]),
 		.out(direct_interc_8_out[0]));
 
 	direct_interc direct_interc_9_ (

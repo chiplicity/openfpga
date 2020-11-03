@@ -1,408 +1,598 @@
-//-------------------------------------------
-//	FPGA Synthesizable Verilog Netlist
-//	Description: Verilog modules for pb_type: clb
-//	Author: Xifan TANG
-//	Organization: University of Utah
-//	Date: Wed Oct  7 01:24:55 2020
-//-------------------------------------------
-//----- Time scale -----
+//
+//
+//
+//
+//
+//
+//
+//
 `timescale 1ns / 1ps
 
-// ----- BEGIN Physical programmable logic block Verilog module: clb -----
-// ----- Verilog module for logical_tile_clb_mode_clb_ -----
-module ltile_clb (set,
-				reset,
-				clk,
-				clb_I,
-				clb_clk,
-				enable,
-				address,
-				data_in,
-				clb_O);
-//----- GLOBAL PORTS -----
-input [0:0] set;
-//----- GLOBAL PORTS -----
-input [0:0] reset;
-//----- GLOBAL PORTS -----
+//
+//
+module ltile_clb_mode(prog_clk,
+                                  Test_en,
+                                  clk,
+                                  clb_I0,
+                                  clb_I1,
+                                  clb_I2,
+                                  clb_I3,
+                                  clb_I4,
+                                  clb_I5,
+                                  clb_I6,
+                                  clb_I7,
+                                  clb_regin,
+                                  clb_scin,
+                                  clb_clk,
+                                  ccff_head,
+                                  clb_O,
+                                  clb_regout,
+                                  clb_scout,
+                                  ccff_tail);
+//
+input [0:0] prog_clk;
+//
+input [0:0] Test_en;
+//
 input [0:0] clk;
-//----- INPUT PORTS -----
-input [0:9] clb_I;
-//----- INPUT PORTS -----
+//
+input [0:3] clb_I0;
+//
+input [0:3] clb_I1;
+//
+input [0:3] clb_I2;
+//
+input [0:3] clb_I3;
+//
+input [0:3] clb_I4;
+//
+input [0:3] clb_I5;
+//
+input [0:3] clb_I6;
+//
+input [0:3] clb_I7;
+//
+input [0:0] clb_regin;
+//
+input [0:0] clb_scin;
+//
 input [0:0] clb_clk;
-//----- INPUT PORTS -----
-input [0:0] enable;
-//----- INPUT PORTS -----
-input [0:9] address;
-//----- INPUT PORTS -----
-input [0:0] data_in;
-//----- OUTPUT PORTS -----
-output [0:3] clb_O;
+//
+input [0:0] ccff_head;
+//
+output [0:15] clb_O;
+//
+output [0:0] clb_regout;
+//
+output [0:0] clb_scout;
+//
+output [0:0] ccff_tail;
 
-//----- BEGIN wire-connection ports -----
-wire [0:9] clb_I;
+//
+wire [0:3] clb_I0;
+wire [0:3] clb_I1;
+wire [0:3] clb_I2;
+wire [0:3] clb_I3;
+wire [0:3] clb_I4;
+wire [0:3] clb_I5;
+wire [0:3] clb_I6;
+wire [0:3] clb_I7;
+wire [0:0] clb_regin;
+wire [0:0] clb_scin;
 wire [0:0] clb_clk;
-wire [0:3] clb_O;
-//----- END wire-connection ports -----
+wire [0:15] clb_O;
+wire [0:0] clb_regout;
+wire [0:0] clb_scout;
+//
 
 
-//----- BEGIN Registered ports -----
-//----- END Registered ports -----
+//
+//
 
 
-wire [0:19] decoder5to20_0_data_out;
-wire [0:0] direct_interc_4_out;
-wire [0:0] direct_interc_5_out;
-wire [0:0] direct_interc_6_out;
-wire [0:0] direct_interc_7_out;
-wire [0:0] logical_tile_clb_mode_default__fle_0_fle_out;
-wire [0:0] logical_tile_clb_mode_default__fle_1_fle_out;
-wire [0:0] logical_tile_clb_mode_default__fle_2_fle_out;
-wire [0:0] logical_tile_clb_mode_default__fle_3_fle_out;
-wire [0:0] mux_2level_size14_0_out;
-wire [0:7] mux_2level_size14_0_sram;
-wire [0:7] mux_2level_size14_0_sram_inv;
-wire [0:0] mux_2level_size14_10_out;
-wire [0:7] mux_2level_size14_10_sram;
-wire [0:7] mux_2level_size14_10_sram_inv;
-wire [0:0] mux_2level_size14_11_out;
-wire [0:7] mux_2level_size14_11_sram;
-wire [0:7] mux_2level_size14_11_sram_inv;
-wire [0:0] mux_2level_size14_12_out;
-wire [0:7] mux_2level_size14_12_sram;
-wire [0:7] mux_2level_size14_12_sram_inv;
-wire [0:0] mux_2level_size14_13_out;
-wire [0:7] mux_2level_size14_13_sram;
-wire [0:7] mux_2level_size14_13_sram_inv;
-wire [0:0] mux_2level_size14_14_out;
-wire [0:7] mux_2level_size14_14_sram;
-wire [0:7] mux_2level_size14_14_sram_inv;
-wire [0:0] mux_2level_size14_15_out;
-wire [0:7] mux_2level_size14_15_sram;
-wire [0:7] mux_2level_size14_15_sram_inv;
-wire [0:0] mux_2level_size14_1_out;
-wire [0:7] mux_2level_size14_1_sram;
-wire [0:7] mux_2level_size14_1_sram_inv;
-wire [0:0] mux_2level_size14_2_out;
-wire [0:7] mux_2level_size14_2_sram;
-wire [0:7] mux_2level_size14_2_sram_inv;
-wire [0:0] mux_2level_size14_3_out;
-wire [0:7] mux_2level_size14_3_sram;
-wire [0:7] mux_2level_size14_3_sram_inv;
-wire [0:0] mux_2level_size14_4_out;
-wire [0:7] mux_2level_size14_4_sram;
-wire [0:7] mux_2level_size14_4_sram_inv;
-wire [0:0] mux_2level_size14_5_out;
-wire [0:7] mux_2level_size14_5_sram;
-wire [0:7] mux_2level_size14_5_sram_inv;
-wire [0:0] mux_2level_size14_6_out;
-wire [0:7] mux_2level_size14_6_sram;
-wire [0:7] mux_2level_size14_6_sram_inv;
-wire [0:0] mux_2level_size14_7_out;
-wire [0:7] mux_2level_size14_7_sram;
-wire [0:7] mux_2level_size14_7_sram_inv;
-wire [0:0] mux_2level_size14_8_out;
-wire [0:7] mux_2level_size14_8_sram;
-wire [0:7] mux_2level_size14_8_sram_inv;
-wire [0:0] mux_2level_size14_9_out;
-wire [0:7] mux_2level_size14_9_sram;
-wire [0:7] mux_2level_size14_9_sram_inv;
+wire [0:0] direct_interc_18_out;
+wire [0:0] direct_interc_19_out;
+wire [0:0] direct_interc_20_out;
+wire [0:0] direct_interc_21_out;
+wire [0:0] direct_interc_22_out;
+wire [0:0] direct_interc_23_out;
+wire [0:0] direct_interc_24_out;
+wire [0:0] direct_interc_25_out;
+wire [0:0] direct_interc_26_out;
+wire [0:0] direct_interc_27_out;
+wire [0:0] direct_interc_28_out;
+wire [0:0] direct_interc_29_out;
+wire [0:0] direct_interc_30_out;
+wire [0:0] direct_interc_31_out;
+wire [0:0] direct_interc_32_out;
+wire [0:0] direct_interc_33_out;
+wire [0:0] direct_interc_34_out;
+wire [0:0] direct_interc_35_out;
+wire [0:0] direct_interc_36_out;
+wire [0:0] direct_interc_37_out;
+wire [0:0] direct_interc_38_out;
+wire [0:0] direct_interc_39_out;
+wire [0:0] direct_interc_40_out;
+wire [0:0] direct_interc_41_out;
+wire [0:0] direct_interc_42_out;
+wire [0:0] direct_interc_43_out;
+wire [0:0] direct_interc_44_out;
+wire [0:0] direct_interc_45_out;
+wire [0:0] direct_interc_46_out;
+wire [0:0] direct_interc_47_out;
+wire [0:0] direct_interc_48_out;
+wire [0:0] direct_interc_49_out;
+wire [0:0] direct_interc_50_out;
+wire [0:0] direct_interc_51_out;
+wire [0:0] direct_interc_52_out;
+wire [0:0] direct_interc_53_out;
+wire [0:0] direct_interc_54_out;
+wire [0:0] direct_interc_55_out;
+wire [0:0] direct_interc_56_out;
+wire [0:0] direct_interc_57_out;
+wire [0:0] direct_interc_58_out;
+wire [0:0] direct_interc_59_out;
+wire [0:0] direct_interc_60_out;
+wire [0:0] direct_interc_61_out;
+wire [0:0] direct_interc_62_out;
+wire [0:0] direct_interc_63_out;
+wire [0:0] direct_interc_64_out;
+wire [0:0] direct_interc_65_out;
+wire [0:0] direct_interc_66_out;
+wire [0:0] direct_interc_67_out;
+wire [0:0] direct_interc_68_out;
+wire [0:0] direct_interc_69_out;
+wire [0:0] direct_interc_70_out;
+wire [0:0] direct_interc_71_out;
+wire [0:0] direct_interc_72_out;
+wire [0:0] direct_interc_73_out;
+wire [0:0] ltile_clb_fle_0_ccff_tail;
+wire [0:1] ltile_clb_fle_0_fle_out;
+wire [0:0] ltile_clb_fle_0_fle_regout;
+wire [0:0] ltile_clb_fle_0_fle_scout;
+wire [0:0] ltile_clb_fle_1_ccff_tail;
+wire [0:1] ltile_clb_fle_1_fle_out;
+wire [0:0] ltile_clb_fle_1_fle_regout;
+wire [0:0] ltile_clb_fle_1_fle_scout;
+wire [0:0] ltile_clb_fle_2_ccff_tail;
+wire [0:1] ltile_clb_fle_2_fle_out;
+wire [0:0] ltile_clb_fle_2_fle_regout;
+wire [0:0] ltile_clb_fle_2_fle_scout;
+wire [0:0] ltile_clb_fle_3_ccff_tail;
+wire [0:1] ltile_clb_fle_3_fle_out;
+wire [0:0] ltile_clb_fle_3_fle_regout;
+wire [0:0] ltile_clb_fle_3_fle_scout;
+wire [0:0] ltile_clb_fle_4_ccff_tail;
+wire [0:1] ltile_clb_fle_4_fle_out;
+wire [0:0] ltile_clb_fle_4_fle_regout;
+wire [0:0] ltile_clb_fle_4_fle_scout;
+wire [0:0] ltile_clb_fle_5_ccff_tail;
+wire [0:1] ltile_clb_fle_5_fle_out;
+wire [0:0] ltile_clb_fle_5_fle_regout;
+wire [0:0] ltile_clb_fle_5_fle_scout;
+wire [0:0] ltile_clb_fle_6_ccff_tail;
+wire [0:1] ltile_clb_fle_6_fle_out;
+wire [0:0] ltile_clb_fle_6_fle_regout;
+wire [0:0] ltile_clb_fle_6_fle_scout;
+wire [0:1] ltile_clb_fle_7_fle_out;
+wire [0:0] ltile_clb_fle_7_fle_regout;
+wire [0:0] ltile_clb_fle_7_fle_scout;
 
-// ----- BEGIN Local short connections -----
-// ----- END Local short connections -----
-// ----- BEGIN Local output short connections -----
-// ----- END Local output short connections -----
+//
+//
+//
+//
 
-	ltile_clb_fle ltile_clb_fle_0 (
-		.set(set[0]),
-		.reset(reset[0]),
+	ltile_clb_mode_default__fle ltile_clb_fle_0 (
+		.prog_clk(prog_clk[0]),
+		.Test_en(Test_en[0]),
 		.clk(clk[0]),
-		.fle_in({mux_2level_size14_0_out[0], mux_2level_size14_1_out[0], mux_2level_size14_2_out[0], mux_2level_size14_3_out[0]}),
-		.fle_clk(direct_interc_4_out[0]),
-		.enable(decoder5to20_0_data_out[0]),
-		.address(address[0:4]),
-		.data_in(data_in[0]),
-		.fle_out(logical_tile_clb_mode_default__fle_0_fle_out[0]));
+		.fle_in({direct_interc_18_out[0], direct_interc_19_out[0], direct_interc_20_out[0], direct_interc_21_out[0]}),
+		.fle_regin(direct_interc_22_out[0]),
+		.fle_scin(direct_interc_23_out[0]),
+		.fle_clk(direct_interc_24_out[0]),
+		.ccff_head(ccff_head[0]),
+		.fle_out(ltile_clb_fle_0_fle_out[0:1]),
+		.fle_regout(ltile_clb_fle_0_fle_regout[0]),
+		.fle_scout(ltile_clb_fle_0_fle_scout[0]),
+		.ccff_tail(ltile_clb_fle_0_ccff_tail[0]));
 
-	ltile_clb_fle ltile_clb_fle_1 (
-		.set(set[0]),
-		.reset(reset[0]),
+	ltile_clb_mode_default__fle ltile_clb_fle_1 (
+		.prog_clk(prog_clk[0]),
+		.Test_en(Test_en[0]),
 		.clk(clk[0]),
-		.fle_in({mux_2level_size14_4_out[0], mux_2level_size14_5_out[0], mux_2level_size14_6_out[0], mux_2level_size14_7_out[0]}),
-		.fle_clk(direct_interc_5_out[0]),
-		.enable(decoder5to20_0_data_out[1]),
-		.address(address[0:4]),
-		.data_in(data_in[0]),
-		.fle_out(logical_tile_clb_mode_default__fle_1_fle_out[0]));
+		.fle_in({direct_interc_25_out[0], direct_interc_26_out[0], direct_interc_27_out[0], direct_interc_28_out[0]}),
+		.fle_regin(direct_interc_29_out[0]),
+		.fle_scin(direct_interc_30_out[0]),
+		.fle_clk(direct_interc_31_out[0]),
+		.ccff_head(ltile_clb_fle_0_ccff_tail[0]),
+		.fle_out(ltile_clb_fle_1_fle_out[0:1]),
+		.fle_regout(ltile_clb_fle_1_fle_regout[0]),
+		.fle_scout(ltile_clb_fle_1_fle_scout[0]),
+		.ccff_tail(ltile_clb_fle_1_ccff_tail[0]));
 
-	ltile_clb_fle ltile_clb_fle_2 (
-		.set(set[0]),
-		.reset(reset[0]),
+	ltile_clb_mode_default__fle ltile_clb_fle_2 (
+		.prog_clk(prog_clk[0]),
+		.Test_en(Test_en[0]),
 		.clk(clk[0]),
-		.fle_in({mux_2level_size14_8_out[0], mux_2level_size14_9_out[0], mux_2level_size14_10_out[0], mux_2level_size14_11_out[0]}),
-		.fle_clk(direct_interc_6_out[0]),
-		.enable(decoder5to20_0_data_out[2]),
-		.address(address[0:4]),
-		.data_in(data_in[0]),
-		.fle_out(logical_tile_clb_mode_default__fle_2_fle_out[0]));
+		.fle_in({direct_interc_32_out[0], direct_interc_33_out[0], direct_interc_34_out[0], direct_interc_35_out[0]}),
+		.fle_regin(direct_interc_36_out[0]),
+		.fle_scin(direct_interc_37_out[0]),
+		.fle_clk(direct_interc_38_out[0]),
+		.ccff_head(ltile_clb_fle_1_ccff_tail[0]),
+		.fle_out(ltile_clb_fle_2_fle_out[0:1]),
+		.fle_regout(ltile_clb_fle_2_fle_regout[0]),
+		.fle_scout(ltile_clb_fle_2_fle_scout[0]),
+		.ccff_tail(ltile_clb_fle_2_ccff_tail[0]));
 
-	ltile_clb_fle ltile_clb_fle_3 (
-		.set(set[0]),
-		.reset(reset[0]),
+	ltile_clb_mode_default__fle ltile_clb_fle_3 (
+		.prog_clk(prog_clk[0]),
+		.Test_en(Test_en[0]),
 		.clk(clk[0]),
-		.fle_in({mux_2level_size14_12_out[0], mux_2level_size14_13_out[0], mux_2level_size14_14_out[0], mux_2level_size14_15_out[0]}),
-		.fle_clk(direct_interc_7_out[0]),
-		.enable(decoder5to20_0_data_out[3]),
-		.address(address[0:4]),
-		.data_in(data_in[0]),
-		.fle_out(logical_tile_clb_mode_default__fle_3_fle_out[0]));
+		.fle_in({direct_interc_39_out[0], direct_interc_40_out[0], direct_interc_41_out[0], direct_interc_42_out[0]}),
+		.fle_regin(direct_interc_43_out[0]),
+		.fle_scin(direct_interc_44_out[0]),
+		.fle_clk(direct_interc_45_out[0]),
+		.ccff_head(ltile_clb_fle_2_ccff_tail[0]),
+		.fle_out(ltile_clb_fle_3_fle_out[0:1]),
+		.fle_regout(ltile_clb_fle_3_fle_regout[0]),
+		.fle_scout(ltile_clb_fle_3_fle_scout[0]),
+		.ccff_tail(ltile_clb_fle_3_ccff_tail[0]));
+
+	ltile_clb_mode_default__fle ltile_clb_fle_4 (
+		.prog_clk(prog_clk[0]),
+		.Test_en(Test_en[0]),
+		.clk(clk[0]),
+		.fle_in({direct_interc_46_out[0], direct_interc_47_out[0], direct_interc_48_out[0], direct_interc_49_out[0]}),
+		.fle_regin(direct_interc_50_out[0]),
+		.fle_scin(direct_interc_51_out[0]),
+		.fle_clk(direct_interc_52_out[0]),
+		.ccff_head(ltile_clb_fle_3_ccff_tail[0]),
+		.fle_out(ltile_clb_fle_4_fle_out[0:1]),
+		.fle_regout(ltile_clb_fle_4_fle_regout[0]),
+		.fle_scout(ltile_clb_fle_4_fle_scout[0]),
+		.ccff_tail(ltile_clb_fle_4_ccff_tail[0]));
+
+	ltile_clb_mode_default__fle ltile_clb_fle_5 (
+		.prog_clk(prog_clk[0]),
+		.Test_en(Test_en[0]),
+		.clk(clk[0]),
+		.fle_in({direct_interc_53_out[0], direct_interc_54_out[0], direct_interc_55_out[0], direct_interc_56_out[0]}),
+		.fle_regin(direct_interc_57_out[0]),
+		.fle_scin(direct_interc_58_out[0]),
+		.fle_clk(direct_interc_59_out[0]),
+		.ccff_head(ltile_clb_fle_4_ccff_tail[0]),
+		.fle_out(ltile_clb_fle_5_fle_out[0:1]),
+		.fle_regout(ltile_clb_fle_5_fle_regout[0]),
+		.fle_scout(ltile_clb_fle_5_fle_scout[0]),
+		.ccff_tail(ltile_clb_fle_5_ccff_tail[0]));
+
+	ltile_clb_mode_default__fle ltile_clb_fle_6 (
+		.prog_clk(prog_clk[0]),
+		.Test_en(Test_en[0]),
+		.clk(clk[0]),
+		.fle_in({direct_interc_60_out[0], direct_interc_61_out[0], direct_interc_62_out[0], direct_interc_63_out[0]}),
+		.fle_regin(direct_interc_64_out[0]),
+		.fle_scin(direct_interc_65_out[0]),
+		.fle_clk(direct_interc_66_out[0]),
+		.ccff_head(ltile_clb_fle_5_ccff_tail[0]),
+		.fle_out(ltile_clb_fle_6_fle_out[0:1]),
+		.fle_regout(ltile_clb_fle_6_fle_regout[0]),
+		.fle_scout(ltile_clb_fle_6_fle_scout[0]),
+		.ccff_tail(ltile_clb_fle_6_ccff_tail[0]));
+
+	ltile_clb_mode_default__fle ltile_clb_fle_7 (
+		.prog_clk(prog_clk[0]),
+		.Test_en(Test_en[0]),
+		.clk(clk[0]),
+		.fle_in({direct_interc_67_out[0], direct_interc_68_out[0], direct_interc_69_out[0], direct_interc_70_out[0]}),
+		.fle_regin(direct_interc_71_out[0]),
+		.fle_scin(direct_interc_72_out[0]),
+		.fle_clk(direct_interc_73_out[0]),
+		.ccff_head(ltile_clb_fle_6_ccff_tail[0]),
+		.fle_out(ltile_clb_fle_7_fle_out[0:1]),
+		.fle_regout(ltile_clb_fle_7_fle_regout[0]),
+		.fle_scout(ltile_clb_fle_7_fle_scout[0]),
+		.ccff_tail(ccff_tail[0]));
 
 	direct_interc direct_interc_0_ (
-		.in(logical_tile_clb_mode_default__fle_0_fle_out[0]),
+		.in(ltile_clb_fle_0_fle_out[1]),
 		.out(clb_O[0]));
 
 	direct_interc direct_interc_1_ (
-		.in(logical_tile_clb_mode_default__fle_1_fle_out[0]),
+		.in(ltile_clb_fle_0_fle_out[0]),
 		.out(clb_O[1]));
 
 	direct_interc direct_interc_2_ (
-		.in(logical_tile_clb_mode_default__fle_2_fle_out[0]),
+		.in(ltile_clb_fle_1_fle_out[1]),
 		.out(clb_O[2]));
 
 	direct_interc direct_interc_3_ (
-		.in(logical_tile_clb_mode_default__fle_3_fle_out[0]),
+		.in(ltile_clb_fle_1_fle_out[0]),
 		.out(clb_O[3]));
 
 	direct_interc direct_interc_4_ (
-		.in(clb_clk[0]),
-		.out(direct_interc_4_out[0]));
+		.in(ltile_clb_fle_2_fle_out[1]),
+		.out(clb_O[4]));
 
 	direct_interc direct_interc_5_ (
-		.in(clb_clk[0]),
-		.out(direct_interc_5_out[0]));
+		.in(ltile_clb_fle_2_fle_out[0]),
+		.out(clb_O[5]));
 
 	direct_interc direct_interc_6_ (
-		.in(clb_clk[0]),
-		.out(direct_interc_6_out[0]));
+		.in(ltile_clb_fle_3_fle_out[1]),
+		.out(clb_O[6]));
 
 	direct_interc direct_interc_7_ (
+		.in(ltile_clb_fle_3_fle_out[0]),
+		.out(clb_O[7]));
+
+	direct_interc direct_interc_8_ (
+		.in(ltile_clb_fle_4_fle_out[1]),
+		.out(clb_O[8]));
+
+	direct_interc direct_interc_9_ (
+		.in(ltile_clb_fle_4_fle_out[0]),
+		.out(clb_O[9]));
+
+	direct_interc direct_interc_10_ (
+		.in(ltile_clb_fle_5_fle_out[1]),
+		.out(clb_O[10]));
+
+	direct_interc direct_interc_11_ (
+		.in(ltile_clb_fle_5_fle_out[0]),
+		.out(clb_O[11]));
+
+	direct_interc direct_interc_12_ (
+		.in(ltile_clb_fle_6_fle_out[1]),
+		.out(clb_O[12]));
+
+	direct_interc direct_interc_13_ (
+		.in(ltile_clb_fle_6_fle_out[0]),
+		.out(clb_O[13]));
+
+	direct_interc direct_interc_14_ (
+		.in(ltile_clb_fle_7_fle_out[1]),
+		.out(clb_O[14]));
+
+	direct_interc direct_interc_15_ (
+		.in(ltile_clb_fle_7_fle_out[0]),
+		.out(clb_O[15]));
+
+	direct_interc direct_interc_16_ (
+		.in(ltile_clb_fle_7_fle_regout[0]),
+		.out(clb_regout[0]));
+
+	direct_interc direct_interc_17_ (
+		.in(ltile_clb_fle_7_fle_scout[0]),
+		.out(clb_scout[0]));
+
+	direct_interc direct_interc_18_ (
+		.in(clb_I0[0]),
+		.out(direct_interc_18_out[0]));
+
+	direct_interc direct_interc_19_ (
+		.in(clb_I0[1]),
+		.out(direct_interc_19_out[0]));
+
+	direct_interc direct_interc_20_ (
+		.in(clb_I0[2]),
+		.out(direct_interc_20_out[0]));
+
+	direct_interc direct_interc_21_ (
+		.in(clb_I0[3]),
+		.out(direct_interc_21_out[0]));
+
+	direct_interc direct_interc_22_ (
+		.in(clb_regin[0]),
+		.out(direct_interc_22_out[0]));
+
+	direct_interc direct_interc_23_ (
+		.in(clb_scin[0]),
+		.out(direct_interc_23_out[0]));
+
+	direct_interc direct_interc_24_ (
 		.in(clb_clk[0]),
-		.out(direct_interc_7_out[0]));
+		.out(direct_interc_24_out[0]));
 
-	mux_2level_size14 mux_fle_0_in_0 (
-		.in({clb_I[0:9], logical_tile_clb_mode_default__fle_0_fle_out[0], logical_tile_clb_mode_default__fle_1_fle_out[0], logical_tile_clb_mode_default__fle_2_fle_out[0], logical_tile_clb_mode_default__fle_3_fle_out[0]}),
-		.sram(mux_2level_size14_0_sram[0:7]),
-		.sram_inv(mux_2level_size14_0_sram_inv[0:7]),
-		.out(mux_2level_size14_0_out[0]));
+	direct_interc direct_interc_25_ (
+		.in(clb_I1[0]),
+		.out(direct_interc_25_out[0]));
 
-	mux_2level_size14 mux_fle_0_in_1 (
-		.in({clb_I[0:9], logical_tile_clb_mode_default__fle_0_fle_out[0], logical_tile_clb_mode_default__fle_1_fle_out[0], logical_tile_clb_mode_default__fle_2_fle_out[0], logical_tile_clb_mode_default__fle_3_fle_out[0]}),
-		.sram(mux_2level_size14_1_sram[0:7]),
-		.sram_inv(mux_2level_size14_1_sram_inv[0:7]),
-		.out(mux_2level_size14_1_out[0]));
+	direct_interc direct_interc_26_ (
+		.in(clb_I1[1]),
+		.out(direct_interc_26_out[0]));
 
-	mux_2level_size14 mux_fle_0_in_2 (
-		.in({clb_I[0:9], logical_tile_clb_mode_default__fle_0_fle_out[0], logical_tile_clb_mode_default__fle_1_fle_out[0], logical_tile_clb_mode_default__fle_2_fle_out[0], logical_tile_clb_mode_default__fle_3_fle_out[0]}),
-		.sram(mux_2level_size14_2_sram[0:7]),
-		.sram_inv(mux_2level_size14_2_sram_inv[0:7]),
-		.out(mux_2level_size14_2_out[0]));
+	direct_interc direct_interc_27_ (
+		.in(clb_I1[2]),
+		.out(direct_interc_27_out[0]));
 
-	mux_2level_size14 mux_fle_0_in_3 (
-		.in({clb_I[0:9], logical_tile_clb_mode_default__fle_0_fle_out[0], logical_tile_clb_mode_default__fle_1_fle_out[0], logical_tile_clb_mode_default__fle_2_fle_out[0], logical_tile_clb_mode_default__fle_3_fle_out[0]}),
-		.sram(mux_2level_size14_3_sram[0:7]),
-		.sram_inv(mux_2level_size14_3_sram_inv[0:7]),
-		.out(mux_2level_size14_3_out[0]));
+	direct_interc direct_interc_28_ (
+		.in(clb_I1[3]),
+		.out(direct_interc_28_out[0]));
 
-	mux_2level_size14 mux_fle_1_in_0 (
-		.in({clb_I[0:9], logical_tile_clb_mode_default__fle_0_fle_out[0], logical_tile_clb_mode_default__fle_1_fle_out[0], logical_tile_clb_mode_default__fle_2_fle_out[0], logical_tile_clb_mode_default__fle_3_fle_out[0]}),
-		.sram(mux_2level_size14_4_sram[0:7]),
-		.sram_inv(mux_2level_size14_4_sram_inv[0:7]),
-		.out(mux_2level_size14_4_out[0]));
+	direct_interc direct_interc_29_ (
+		.in(ltile_clb_fle_0_fle_regout[0]),
+		.out(direct_interc_29_out[0]));
 
-	mux_2level_size14 mux_fle_1_in_1 (
-		.in({clb_I[0:9], logical_tile_clb_mode_default__fle_0_fle_out[0], logical_tile_clb_mode_default__fle_1_fle_out[0], logical_tile_clb_mode_default__fle_2_fle_out[0], logical_tile_clb_mode_default__fle_3_fle_out[0]}),
-		.sram(mux_2level_size14_5_sram[0:7]),
-		.sram_inv(mux_2level_size14_5_sram_inv[0:7]),
-		.out(mux_2level_size14_5_out[0]));
+	direct_interc direct_interc_30_ (
+		.in(ltile_clb_fle_0_fle_scout[0]),
+		.out(direct_interc_30_out[0]));
 
-	mux_2level_size14 mux_fle_1_in_2 (
-		.in({clb_I[0:9], logical_tile_clb_mode_default__fle_0_fle_out[0], logical_tile_clb_mode_default__fle_1_fle_out[0], logical_tile_clb_mode_default__fle_2_fle_out[0], logical_tile_clb_mode_default__fle_3_fle_out[0]}),
-		.sram(mux_2level_size14_6_sram[0:7]),
-		.sram_inv(mux_2level_size14_6_sram_inv[0:7]),
-		.out(mux_2level_size14_6_out[0]));
+	direct_interc direct_interc_31_ (
+		.in(clb_clk[0]),
+		.out(direct_interc_31_out[0]));
 
-	mux_2level_size14 mux_fle_1_in_3 (
-		.in({clb_I[0:9], logical_tile_clb_mode_default__fle_0_fle_out[0], logical_tile_clb_mode_default__fle_1_fle_out[0], logical_tile_clb_mode_default__fle_2_fle_out[0], logical_tile_clb_mode_default__fle_3_fle_out[0]}),
-		.sram(mux_2level_size14_7_sram[0:7]),
-		.sram_inv(mux_2level_size14_7_sram_inv[0:7]),
-		.out(mux_2level_size14_7_out[0]));
+	direct_interc direct_interc_32_ (
+		.in(clb_I2[0]),
+		.out(direct_interc_32_out[0]));
 
-	mux_2level_size14 mux_fle_2_in_0 (
-		.in({clb_I[0:9], logical_tile_clb_mode_default__fle_0_fle_out[0], logical_tile_clb_mode_default__fle_1_fle_out[0], logical_tile_clb_mode_default__fle_2_fle_out[0], logical_tile_clb_mode_default__fle_3_fle_out[0]}),
-		.sram(mux_2level_size14_8_sram[0:7]),
-		.sram_inv(mux_2level_size14_8_sram_inv[0:7]),
-		.out(mux_2level_size14_8_out[0]));
+	direct_interc direct_interc_33_ (
+		.in(clb_I2[1]),
+		.out(direct_interc_33_out[0]));
 
-	mux_2level_size14 mux_fle_2_in_1 (
-		.in({clb_I[0:9], logical_tile_clb_mode_default__fle_0_fle_out[0], logical_tile_clb_mode_default__fle_1_fle_out[0], logical_tile_clb_mode_default__fle_2_fle_out[0], logical_tile_clb_mode_default__fle_3_fle_out[0]}),
-		.sram(mux_2level_size14_9_sram[0:7]),
-		.sram_inv(mux_2level_size14_9_sram_inv[0:7]),
-		.out(mux_2level_size14_9_out[0]));
+	direct_interc direct_interc_34_ (
+		.in(clb_I2[2]),
+		.out(direct_interc_34_out[0]));
 
-	mux_2level_size14 mux_fle_2_in_2 (
-		.in({clb_I[0:9], logical_tile_clb_mode_default__fle_0_fle_out[0], logical_tile_clb_mode_default__fle_1_fle_out[0], logical_tile_clb_mode_default__fle_2_fle_out[0], logical_tile_clb_mode_default__fle_3_fle_out[0]}),
-		.sram(mux_2level_size14_10_sram[0:7]),
-		.sram_inv(mux_2level_size14_10_sram_inv[0:7]),
-		.out(mux_2level_size14_10_out[0]));
+	direct_interc direct_interc_35_ (
+		.in(clb_I2[3]),
+		.out(direct_interc_35_out[0]));
 
-	mux_2level_size14 mux_fle_2_in_3 (
-		.in({clb_I[0:9], logical_tile_clb_mode_default__fle_0_fle_out[0], logical_tile_clb_mode_default__fle_1_fle_out[0], logical_tile_clb_mode_default__fle_2_fle_out[0], logical_tile_clb_mode_default__fle_3_fle_out[0]}),
-		.sram(mux_2level_size14_11_sram[0:7]),
-		.sram_inv(mux_2level_size14_11_sram_inv[0:7]),
-		.out(mux_2level_size14_11_out[0]));
+	direct_interc direct_interc_36_ (
+		.in(ltile_clb_fle_1_fle_regout[0]),
+		.out(direct_interc_36_out[0]));
 
-	mux_2level_size14 mux_fle_3_in_0 (
-		.in({clb_I[0:9], logical_tile_clb_mode_default__fle_0_fle_out[0], logical_tile_clb_mode_default__fle_1_fle_out[0], logical_tile_clb_mode_default__fle_2_fle_out[0], logical_tile_clb_mode_default__fle_3_fle_out[0]}),
-		.sram(mux_2level_size14_12_sram[0:7]),
-		.sram_inv(mux_2level_size14_12_sram_inv[0:7]),
-		.out(mux_2level_size14_12_out[0]));
+	direct_interc direct_interc_37_ (
+		.in(ltile_clb_fle_1_fle_scout[0]),
+		.out(direct_interc_37_out[0]));
 
-	mux_2level_size14 mux_fle_3_in_1 (
-		.in({clb_I[0:9], logical_tile_clb_mode_default__fle_0_fle_out[0], logical_tile_clb_mode_default__fle_1_fle_out[0], logical_tile_clb_mode_default__fle_2_fle_out[0], logical_tile_clb_mode_default__fle_3_fle_out[0]}),
-		.sram(mux_2level_size14_13_sram[0:7]),
-		.sram_inv(mux_2level_size14_13_sram_inv[0:7]),
-		.out(mux_2level_size14_13_out[0]));
+	direct_interc direct_interc_38_ (
+		.in(clb_clk[0]),
+		.out(direct_interc_38_out[0]));
 
-	mux_2level_size14 mux_fle_3_in_2 (
-		.in({clb_I[0:9], logical_tile_clb_mode_default__fle_0_fle_out[0], logical_tile_clb_mode_default__fle_1_fle_out[0], logical_tile_clb_mode_default__fle_2_fle_out[0], logical_tile_clb_mode_default__fle_3_fle_out[0]}),
-		.sram(mux_2level_size14_14_sram[0:7]),
-		.sram_inv(mux_2level_size14_14_sram_inv[0:7]),
-		.out(mux_2level_size14_14_out[0]));
+	direct_interc direct_interc_39_ (
+		.in(clb_I3[0]),
+		.out(direct_interc_39_out[0]));
 
-	mux_2level_size14 mux_fle_3_in_3 (
-		.in({clb_I[0:9], logical_tile_clb_mode_default__fle_0_fle_out[0], logical_tile_clb_mode_default__fle_1_fle_out[0], logical_tile_clb_mode_default__fle_2_fle_out[0], logical_tile_clb_mode_default__fle_3_fle_out[0]}),
-		.sram(mux_2level_size14_15_sram[0:7]),
-		.sram_inv(mux_2level_size14_15_sram_inv[0:7]),
-		.out(mux_2level_size14_15_out[0]));
+	direct_interc direct_interc_40_ (
+		.in(clb_I3[1]),
+		.out(direct_interc_40_out[0]));
 
-	mux_2level_size14_mem mem_fle_0_in_0 (
-		.enable(decoder5to20_0_data_out[4]),
-		.address(address[0:2]),
-		.data_in(data_in[0]),
-		.mem_out(mux_2level_size14_0_sram[0:7]),
-		.mem_outb(mux_2level_size14_0_sram_inv[0:7]));
+	direct_interc direct_interc_41_ (
+		.in(clb_I3[2]),
+		.out(direct_interc_41_out[0]));
 
-	mux_2level_size14_mem mem_fle_0_in_1 (
-		.enable(decoder5to20_0_data_out[5]),
-		.address(address[0:2]),
-		.data_in(data_in[0]),
-		.mem_out(mux_2level_size14_1_sram[0:7]),
-		.mem_outb(mux_2level_size14_1_sram_inv[0:7]));
+	direct_interc direct_interc_42_ (
+		.in(clb_I3[3]),
+		.out(direct_interc_42_out[0]));
 
-	mux_2level_size14_mem mem_fle_0_in_2 (
-		.enable(decoder5to20_0_data_out[6]),
-		.address(address[0:2]),
-		.data_in(data_in[0]),
-		.mem_out(mux_2level_size14_2_sram[0:7]),
-		.mem_outb(mux_2level_size14_2_sram_inv[0:7]));
+	direct_interc direct_interc_43_ (
+		.in(ltile_clb_fle_2_fle_regout[0]),
+		.out(direct_interc_43_out[0]));
 
-	mux_2level_size14_mem mem_fle_0_in_3 (
-		.enable(decoder5to20_0_data_out[7]),
-		.address(address[0:2]),
-		.data_in(data_in[0]),
-		.mem_out(mux_2level_size14_3_sram[0:7]),
-		.mem_outb(mux_2level_size14_3_sram_inv[0:7]));
+	direct_interc direct_interc_44_ (
+		.in(ltile_clb_fle_2_fle_scout[0]),
+		.out(direct_interc_44_out[0]));
 
-	mux_2level_size14_mem mem_fle_1_in_0 (
-		.enable(decoder5to20_0_data_out[8]),
-		.address(address[0:2]),
-		.data_in(data_in[0]),
-		.mem_out(mux_2level_size14_4_sram[0:7]),
-		.mem_outb(mux_2level_size14_4_sram_inv[0:7]));
+	direct_interc direct_interc_45_ (
+		.in(clb_clk[0]),
+		.out(direct_interc_45_out[0]));
 
-	mux_2level_size14_mem mem_fle_1_in_1 (
-		.enable(decoder5to20_0_data_out[9]),
-		.address(address[0:2]),
-		.data_in(data_in[0]),
-		.mem_out(mux_2level_size14_5_sram[0:7]),
-		.mem_outb(mux_2level_size14_5_sram_inv[0:7]));
+	direct_interc direct_interc_46_ (
+		.in(clb_I4[0]),
+		.out(direct_interc_46_out[0]));
 
-	mux_2level_size14_mem mem_fle_1_in_2 (
-		.enable(decoder5to20_0_data_out[10]),
-		.address(address[0:2]),
-		.data_in(data_in[0]),
-		.mem_out(mux_2level_size14_6_sram[0:7]),
-		.mem_outb(mux_2level_size14_6_sram_inv[0:7]));
+	direct_interc direct_interc_47_ (
+		.in(clb_I4[1]),
+		.out(direct_interc_47_out[0]));
 
-	mux_2level_size14_mem mem_fle_1_in_3 (
-		.enable(decoder5to20_0_data_out[11]),
-		.address(address[0:2]),
-		.data_in(data_in[0]),
-		.mem_out(mux_2level_size14_7_sram[0:7]),
-		.mem_outb(mux_2level_size14_7_sram_inv[0:7]));
+	direct_interc direct_interc_48_ (
+		.in(clb_I4[2]),
+		.out(direct_interc_48_out[0]));
 
-	mux_2level_size14_mem mem_fle_2_in_0 (
-		.enable(decoder5to20_0_data_out[12]),
-		.address(address[0:2]),
-		.data_in(data_in[0]),
-		.mem_out(mux_2level_size14_8_sram[0:7]),
-		.mem_outb(mux_2level_size14_8_sram_inv[0:7]));
+	direct_interc direct_interc_49_ (
+		.in(clb_I4[3]),
+		.out(direct_interc_49_out[0]));
 
-	mux_2level_size14_mem mem_fle_2_in_1 (
-		.enable(decoder5to20_0_data_out[13]),
-		.address(address[0:2]),
-		.data_in(data_in[0]),
-		.mem_out(mux_2level_size14_9_sram[0:7]),
-		.mem_outb(mux_2level_size14_9_sram_inv[0:7]));
+	direct_interc direct_interc_50_ (
+		.in(ltile_clb_fle_3_fle_regout[0]),
+		.out(direct_interc_50_out[0]));
 
-	mux_2level_size14_mem mem_fle_2_in_2 (
-		.enable(decoder5to20_0_data_out[14]),
-		.address(address[0:2]),
-		.data_in(data_in[0]),
-		.mem_out(mux_2level_size14_10_sram[0:7]),
-		.mem_outb(mux_2level_size14_10_sram_inv[0:7]));
+	direct_interc direct_interc_51_ (
+		.in(ltile_clb_fle_3_fle_scout[0]),
+		.out(direct_interc_51_out[0]));
 
-	mux_2level_size14_mem mem_fle_2_in_3 (
-		.enable(decoder5to20_0_data_out[15]),
-		.address(address[0:2]),
-		.data_in(data_in[0]),
-		.mem_out(mux_2level_size14_11_sram[0:7]),
-		.mem_outb(mux_2level_size14_11_sram_inv[0:7]));
+	direct_interc direct_interc_52_ (
+		.in(clb_clk[0]),
+		.out(direct_interc_52_out[0]));
 
-	mux_2level_size14_mem mem_fle_3_in_0 (
-		.enable(decoder5to20_0_data_out[16]),
-		.address(address[0:2]),
-		.data_in(data_in[0]),
-		.mem_out(mux_2level_size14_12_sram[0:7]),
-		.mem_outb(mux_2level_size14_12_sram_inv[0:7]));
+	direct_interc direct_interc_53_ (
+		.in(clb_I5[0]),
+		.out(direct_interc_53_out[0]));
 
-	mux_2level_size14_mem mem_fle_3_in_1 (
-		.enable(decoder5to20_0_data_out[17]),
-		.address(address[0:2]),
-		.data_in(data_in[0]),
-		.mem_out(mux_2level_size14_13_sram[0:7]),
-		.mem_outb(mux_2level_size14_13_sram_inv[0:7]));
+	direct_interc direct_interc_54_ (
+		.in(clb_I5[1]),
+		.out(direct_interc_54_out[0]));
 
-	mux_2level_size14_mem mem_fle_3_in_2 (
-		.enable(decoder5to20_0_data_out[18]),
-		.address(address[0:2]),
-		.data_in(data_in[0]),
-		.mem_out(mux_2level_size14_14_sram[0:7]),
-		.mem_outb(mux_2level_size14_14_sram_inv[0:7]));
+	direct_interc direct_interc_55_ (
+		.in(clb_I5[2]),
+		.out(direct_interc_55_out[0]));
 
-	mux_2level_size14_mem mem_fle_3_in_3 (
-		.enable(decoder5to20_0_data_out[19]),
-		.address(address[0:2]),
-		.data_in(data_in[0]),
-		.mem_out(mux_2level_size14_15_sram[0:7]),
-		.mem_outb(mux_2level_size14_15_sram_inv[0:7]));
+	direct_interc direct_interc_56_ (
+		.in(clb_I5[3]),
+		.out(direct_interc_56_out[0]));
 
-	decoder5to20 decoder5to20_0_ (
-		.enable(enable[0]),
-		.address(address[5:9]),
-		.data_out(decoder5to20_0_data_out[0:19]));
+	direct_interc direct_interc_57_ (
+		.in(ltile_clb_fle_4_fle_regout[0]),
+		.out(direct_interc_57_out[0]));
+
+	direct_interc direct_interc_58_ (
+		.in(ltile_clb_fle_4_fle_scout[0]),
+		.out(direct_interc_58_out[0]));
+
+	direct_interc direct_interc_59_ (
+		.in(clb_clk[0]),
+		.out(direct_interc_59_out[0]));
+
+	direct_interc direct_interc_60_ (
+		.in(clb_I6[0]),
+		.out(direct_interc_60_out[0]));
+
+	direct_interc direct_interc_61_ (
+		.in(clb_I6[1]),
+		.out(direct_interc_61_out[0]));
+
+	direct_interc direct_interc_62_ (
+		.in(clb_I6[2]),
+		.out(direct_interc_62_out[0]));
+
+	direct_interc direct_interc_63_ (
+		.in(clb_I6[3]),
+		.out(direct_interc_63_out[0]));
+
+	direct_interc direct_interc_64_ (
+		.in(ltile_clb_fle_5_fle_regout[0]),
+		.out(direct_interc_64_out[0]));
+
+	direct_interc direct_interc_65_ (
+		.in(ltile_clb_fle_5_fle_scout[0]),
+		.out(direct_interc_65_out[0]));
+
+	direct_interc direct_interc_66_ (
+		.in(clb_clk[0]),
+		.out(direct_interc_66_out[0]));
+
+	direct_interc direct_interc_67_ (
+		.in(clb_I7[0]),
+		.out(direct_interc_67_out[0]));
+
+	direct_interc direct_interc_68_ (
+		.in(clb_I7[1]),
+		.out(direct_interc_68_out[0]));
+
+	direct_interc direct_interc_69_ (
+		.in(clb_I7[2]),
+		.out(direct_interc_69_out[0]));
+
+	direct_interc direct_interc_70_ (
+		.in(clb_I7[3]),
+		.out(direct_interc_70_out[0]));
+
+	direct_interc direct_interc_71_ (
+		.in(ltile_clb_fle_6_fle_regout[0]),
+		.out(direct_interc_71_out[0]));
+
+	direct_interc direct_interc_72_ (
+		.in(ltile_clb_fle_6_fle_scout[0]),
+		.out(direct_interc_72_out[0]));
+
+	direct_interc direct_interc_73_ (
+		.in(clb_clk[0]),
+		.out(direct_interc_73_out[0]));
 
 endmodule
-// ----- END Verilog module for logical_tile_clb_mode_clb_ -----
+//
 
 
-// ----- END Physical programmable logic block Verilog module: clb -----
+//

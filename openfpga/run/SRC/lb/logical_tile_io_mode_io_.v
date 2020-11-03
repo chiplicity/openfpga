@@ -1,59 +1,71 @@
-//-------------------------------------------
-//	FPGA Synthesizable Verilog Netlist
-//	Description: Verilog modules for pb_type: io
-//	Author: Xifan TANG
-//	Organization: University of Utah
-//	Date: Wed Oct  7 01:24:55 2020
-//-------------------------------------------
-//----- Time scale -----
+//
+//
+//
+//
+//
+//
+//
+//
 `timescale 1ns / 1ps
 
-// ----- BEGIN Physical programmable logic block Verilog module: io -----
-// ----- Verilog module for logical_tile_io_mode_io_ -----
-module logical_tile_io_mode_io_(gfpga_pad_GPIO_PAD,
+//
+//
+module logical_tile_io_mode_io_(prog_clk,
+                                gfpga_pad_GPIO_A,
+                                gfpga_pad_GPIO_IE,
+                                gfpga_pad_GPIO_OE,
+                                gfpga_pad_GPIO_Y,
                                 io_outpad,
-                                enable,
-                                address,
-                                data_in,
-                                io_inpad);
-//----- GPIO PORTS -----
-inout [0:0] gfpga_pad_GPIO_PAD;
-//----- INPUT PORTS -----
+                                ccff_head,
+                                io_inpad,
+                                ccff_tail);
+//
+input [0:0] prog_clk;
+//
+output [0:0] gfpga_pad_GPIO_A;
+//
+output [0:0] gfpga_pad_GPIO_IE;
+//
+output [0:0] gfpga_pad_GPIO_OE;
+//
+inout [0:0] gfpga_pad_GPIO_Y;
+//
 input [0:0] io_outpad;
-//----- INPUT PORTS -----
-input [0:0] enable;
-//----- INPUT PORTS -----
-input [0:0] address;
-//----- INPUT PORTS -----
-input [0:0] data_in;
-//----- OUTPUT PORTS -----
+//
+input [0:0] ccff_head;
+//
 output [0:0] io_inpad;
+//
+output [0:0] ccff_tail;
 
-//----- BEGIN wire-connection ports -----
+//
 wire [0:0] io_outpad;
 wire [0:0] io_inpad;
-//----- END wire-connection ports -----
+//
 
 
-//----- BEGIN Registered ports -----
-//----- END Registered ports -----
+//
+//
 
 
 wire [0:0] direct_interc_1_out;
 wire [0:0] logical_tile_io_mode_physical__iopad_0_iopad_inpad;
 
-// ----- BEGIN Local short connections -----
-// ----- END Local short connections -----
-// ----- BEGIN Local output short connections -----
-// ----- END Local output short connections -----
+//
+//
+//
+//
 
 	logical_tile_io_mode_physical__iopad logical_tile_io_mode_physical__iopad_0 (
-		.gfpga_pad_GPIO_PAD(gfpga_pad_GPIO_PAD[0]),
+		.prog_clk(prog_clk[0]),
+		.gfpga_pad_GPIO_A(gfpga_pad_GPIO_A[0]),
+		.gfpga_pad_GPIO_IE(gfpga_pad_GPIO_IE[0]),
+		.gfpga_pad_GPIO_OE(gfpga_pad_GPIO_OE[0]),
+		.gfpga_pad_GPIO_Y(gfpga_pad_GPIO_Y[0]),
 		.iopad_outpad(direct_interc_1_out[0]),
-		.enable(enable[0]),
-		.address(address[0]),
-		.data_in(data_in[0]),
-		.iopad_inpad(logical_tile_io_mode_physical__iopad_0_iopad_inpad[0]));
+		.ccff_head(ccff_head[0]),
+		.iopad_inpad(logical_tile_io_mode_physical__iopad_0_iopad_inpad[0]),
+		.ccff_tail(ccff_tail[0]));
 
 	direct_interc direct_interc_0_ (
 		.in(logical_tile_io_mode_physical__iopad_0_iopad_inpad[0]),
@@ -64,7 +76,7 @@ wire [0:0] logical_tile_io_mode_physical__iopad_0_iopad_inpad;
 		.out(direct_interc_1_out[0]));
 
 endmodule
-// ----- END Verilog module for logical_tile_io_mode_io_ -----
+//
 
 
-// ----- END Physical programmable logic block Verilog module: io -----
+//
