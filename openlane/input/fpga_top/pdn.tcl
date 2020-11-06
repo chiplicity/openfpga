@@ -13,13 +13,13 @@ pdngen::specify_grid stdcell {
     straps {
 	    met5 {width 1.6 pitch $::env(FP_PDN_HPITCH) offset $::env(FP_PDN_HOFFSET)}
     }
-    connect {{met1 met4} {met4 met5}}
+    connect {{met4 met5}}
 }
 
 pdngen::specify_grid macro {
     orient {R0 R180 MX MY R90 R270 MXR90 MYR90}
-    power_pins "vpwr"
-    ground_pins "vgnd"
+    power_pins "VPWR"
+    ground_pins "VGND"
     blockages "li1 met1 met2 met3 met4"
     straps { 
     } 
@@ -27,9 +27,6 @@ pdngen::specify_grid macro {
 }
 
 set ::halo 5
-
-# Metal layer for rails on every row
-set ::rails_mlayer "met1" ;
 
 # POWER or GROUND #Std. cell rails starting with power or ground rails at the bottom of the core area
 set ::rails_start_with "POWER" ;

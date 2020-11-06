@@ -525,25 +525,27 @@ MACRO grid_clb
         RECT 149.590 197.600 149.870 200.000 ;
     END
   END top_width_0_height_0__pin_33_
-  PIN vpwr
+  PIN VPWR
     DIRECTION INPUT ;
+    USE POWER ;
     PORT
       LAYER met4 ;
         RECT 21.040 10.640 22.640 187.920 ;
     END
-  END vpwr
-  PIN vgnd
+  END VPWR
+  PIN VGND
     DIRECTION INPUT ;
+    USE GROUND ;
     PORT
       LAYER met4 ;
         RECT 97.840 10.640 99.440 187.920 ;
     END
-  END vgnd
+  END VGND
   OBS
       LAYER li1 ;
         RECT 5.520 10.795 194.120 187.765 ;
       LAYER met1 ;
-        RECT 2.830 2.760 194.120 187.920 ;
+        RECT 2.830 10.640 194.120 187.920 ;
       LAYER met2 ;
         RECT 2.860 197.320 49.490 197.600 ;
         RECT 50.330 197.320 149.310 197.600 ;
@@ -657,10 +659,12 @@ MACRO grid_clb
         RECT 2.400 3.760 197.600 7.800 ;
         RECT 2.400 2.895 197.200 3.760 ;
       LAYER met4 ;
-        RECT 64.270 10.640 97.440 187.920 ;
-        RECT 99.840 10.640 176.240 187.920 ;
+        RECT 9.990 10.240 20.640 187.920 ;
+        RECT 23.040 10.240 97.440 187.920 ;
+        RECT 99.840 10.240 176.240 187.920 ;
+        RECT 9.990 9.695 176.240 10.240 ;
       LAYER met5 ;
-        RECT 64.060 14.500 145.700 16.100 ;
+        RECT 9.780 14.500 145.700 19.500 ;
   END
 END grid_clb
 END LIBRARY

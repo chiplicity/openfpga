@@ -266,20 +266,22 @@ MACRO fpga_top
         RECT 1137.080 1174.320 1139.480 1174.920 ;
     END
   END prog_clk
-  PIN vpwr
+  PIN VPWR
     DIRECTION INPUT ;
+    USE POWER ;
     PORT
       LAYER met5 ;
         RECT 25.000 25.000 1163.700 45.000 ;
     END
-  END vpwr
-  PIN vgnd
+  END VPWR
+  PIN VGND
     DIRECTION INPUT ;
+    USE GROUND ;
     PORT
       LAYER met5 ;
         RECT 0.000 0.000 1188.700 20.000 ;
     END
-  END vgnd
+  END VGND
   OBS
       LAYER li1 ;
         RECT 75.000 74.915 1114.235 1203.005 ;

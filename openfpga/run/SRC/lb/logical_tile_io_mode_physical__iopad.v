@@ -48,7 +48,7 @@ wire [0:0] iopad_inpad;
 
 
 wire [0:0] GPIO_0_en;
-wire [0:0] GPIO_scs8hd_dfxbp_1_mem_undriven_mem_outb;
+wire [0:0] GPIO_sky130_fd_sc_hd__dfxbp_1_mem_undriven_mem_outb;
 
 //
 //
@@ -64,12 +64,12 @@ wire [0:0] GPIO_scs8hd_dfxbp_1_mem_undriven_mem_outb;
 		.mem_out(GPIO_0_en[0]),
 		.out(iopad_inpad[0]));
 
-	GPIO_scs8hd_dfxbp_1_mem GPIO_scs8hd_dfxbp_1_mem (
+	GPIO_sky130_fd_sc_hd__dfxbp_1_mem GPIO_sky130_fd_sc_hd__dfxbp_1_mem (
 		.prog_clk(prog_clk[0]),
 		.ccff_head(ccff_head[0]),
 		.ccff_tail(ccff_tail[0]),
 		.mem_out(GPIO_0_en[0]),
-		.mem_outb(GPIO_scs8hd_dfxbp_1_mem_undriven_mem_outb[0]));
+		.mem_outb(GPIO_sky130_fd_sc_hd__dfxbp_1_mem_undriven_mem_outb[0]));
 
 endmodule
 //

@@ -31,16 +31,16 @@ output [0:0] out;
 
 
 wire [0:0] const1_0_const1;
-wire [0:0] scs8hd_mux2_1_0_X;
-wire [0:0] scs8hd_mux2_1_1_X;
-wire [0:0] scs8hd_mux2_1_2_X;
-wire [0:0] scs8hd_mux2_1_3_X;
-wire [0:0] scs8hd_mux2_1_4_X;
-wire [0:0] scs8hd_mux2_1_5_X;
-wire [0:0] scs8hd_mux2_1_6_X;
-wire [0:0] scs8hd_mux2_1_7_X;
-wire [0:0] scs8hd_mux2_1_8_X;
-wire [0:0] scs8hd_mux2_1_9_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_0_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_1_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_2_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_3_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_4_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_5_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_6_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_7_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_8_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_9_X;
 
 //
 //
@@ -50,69 +50,69 @@ wire [0:0] scs8hd_mux2_1_9_X;
 	const1 const1_0_ (
 		.const1(const1_0_const1[0]));
 
-	scs8hd_buf_1 scs8hd_buf_4_0_ (
-		.A(scs8hd_mux2_1_9_X[0]),
+	sky130_fd_sc_hd__buf_1 sky130_fd_sc_hd__buf_4_0_ (
+		.A(sky130_fd_sc_hd__mux2_1_9_X[0]),
 		.X(out[0]));
 
-	scs8hd_mux2_1   mux_l1_in_0_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_0_ (
 		.A1(in[0]),
 		.A0(in[1]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_0_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_0_X[0]));
 
-	scs8hd_mux2_1   mux_l1_in_1_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_1_ (
 		.A1(in[2]),
 		.A0(in[3]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_1_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_1_X[0]));
 
-	scs8hd_mux2_1   mux_l1_in_2_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_2_ (
 		.A1(in[4]),
 		.A0(in[5]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_2_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_2_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_0_ (
-		.A1(scs8hd_mux2_1_0_X[0]),
-		.A0(scs8hd_mux2_1_1_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_0_ (
+		.A1(sky130_fd_sc_hd__mux2_1_0_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_1_X[0]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_3_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_3_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_1_ (
-		.A1(scs8hd_mux2_1_2_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_1_ (
+		.A1(sky130_fd_sc_hd__mux2_1_2_X[0]),
 		.A0(in[6]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_4_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_4_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_2_ (
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_2_ (
 		.A1(in[7]),
 		.A0(in[8]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_5_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_5_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_3_ (
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_3_ (
 		.A1(in[9]),
 		.A0(const1_0_const1[0]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_6_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_6_X[0]));
 
-	scs8hd_mux2_1   mux_l3_in_0_ (
-		.A1(scs8hd_mux2_1_3_X[0]),
-		.A0(scs8hd_mux2_1_4_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l3_in_0_ (
+		.A1(sky130_fd_sc_hd__mux2_1_3_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_4_X[0]),
 		.S(sram[2]),
-		.X(scs8hd_mux2_1_7_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_7_X[0]));
 
-	scs8hd_mux2_1   mux_l3_in_1_ (
-		.A1(scs8hd_mux2_1_5_X[0]),
-		.A0(scs8hd_mux2_1_6_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l3_in_1_ (
+		.A1(sky130_fd_sc_hd__mux2_1_5_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_6_X[0]),
 		.S(sram[2]),
-		.X(scs8hd_mux2_1_8_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_8_X[0]));
 
-	scs8hd_mux2_1   mux_l4_in_0_ (
-		.A1(scs8hd_mux2_1_7_X[0]),
-		.A0(scs8hd_mux2_1_8_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l4_in_0_ (
+		.A1(sky130_fd_sc_hd__mux2_1_7_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_8_X[0]),
 		.S(sram[3]),
-		.X(scs8hd_mux2_1_9_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_9_X[0]));
 
 endmodule
 //
@@ -142,14 +142,14 @@ output [0:0] out;
 
 
 wire [0:0] const1_0_const1;
-wire [0:0] scs8hd_mux2_1_0_X;
-wire [0:0] scs8hd_mux2_1_1_X;
-wire [0:0] scs8hd_mux2_1_2_X;
-wire [0:0] scs8hd_mux2_1_3_X;
-wire [0:0] scs8hd_mux2_1_4_X;
-wire [0:0] scs8hd_mux2_1_5_X;
-wire [0:0] scs8hd_mux2_1_6_X;
-wire [0:0] scs8hd_mux2_1_7_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_0_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_1_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_2_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_3_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_4_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_5_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_6_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_7_X;
 
 //
 //
@@ -159,57 +159,57 @@ wire [0:0] scs8hd_mux2_1_7_X;
 	const1 const1_0_ (
 		.const1(const1_0_const1[0]));
 
-	scs8hd_buf_1 scs8hd_buf_4_0_ (
-		.A(scs8hd_mux2_1_7_X[0]),
+	sky130_fd_sc_hd__buf_1 sky130_fd_sc_hd__buf_4_0_ (
+		.A(sky130_fd_sc_hd__mux2_1_7_X[0]),
 		.X(out[0]));
 
-	scs8hd_mux2_1   mux_l1_in_0_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_0_ (
 		.A1(in[0]),
 		.A0(in[1]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_0_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_0_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_0_ (
-		.A1(scs8hd_mux2_1_0_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_0_ (
+		.A1(sky130_fd_sc_hd__mux2_1_0_X[0]),
 		.A0(in[2]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_1_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_1_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_1_ (
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_1_ (
 		.A1(in[3]),
 		.A0(in[4]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_2_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_2_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_2_ (
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_2_ (
 		.A1(in[5]),
 		.A0(in[6]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_3_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_3_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_3_ (
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_3_ (
 		.A1(in[7]),
 		.A0(const1_0_const1[0]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_4_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_4_X[0]));
 
-	scs8hd_mux2_1   mux_l3_in_0_ (
-		.A1(scs8hd_mux2_1_1_X[0]),
-		.A0(scs8hd_mux2_1_2_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l3_in_0_ (
+		.A1(sky130_fd_sc_hd__mux2_1_1_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_2_X[0]),
 		.S(sram[2]),
-		.X(scs8hd_mux2_1_5_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_5_X[0]));
 
-	scs8hd_mux2_1   mux_l3_in_1_ (
-		.A1(scs8hd_mux2_1_3_X[0]),
-		.A0(scs8hd_mux2_1_4_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l3_in_1_ (
+		.A1(sky130_fd_sc_hd__mux2_1_3_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_4_X[0]),
 		.S(sram[2]),
-		.X(scs8hd_mux2_1_6_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_6_X[0]));
 
-	scs8hd_mux2_1   mux_l4_in_0_ (
-		.A1(scs8hd_mux2_1_5_X[0]),
-		.A0(scs8hd_mux2_1_6_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l4_in_0_ (
+		.A1(sky130_fd_sc_hd__mux2_1_5_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_6_X[0]),
 		.S(sram[3]),
-		.X(scs8hd_mux2_1_7_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_7_X[0]));
 
 endmodule
 //
@@ -239,12 +239,12 @@ output [0:0] out;
 
 
 wire [0:0] const1_0_const1;
-wire [0:0] scs8hd_mux2_1_0_X;
-wire [0:0] scs8hd_mux2_1_1_X;
-wire [0:0] scs8hd_mux2_1_2_X;
-wire [0:0] scs8hd_mux2_1_3_X;
-wire [0:0] scs8hd_mux2_1_4_X;
-wire [0:0] scs8hd_mux2_1_5_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_0_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_1_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_2_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_3_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_4_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_5_X;
 
 //
 //
@@ -254,45 +254,45 @@ wire [0:0] scs8hd_mux2_1_5_X;
 	const1 const1_0_ (
 		.const1(const1_0_const1[0]));
 
-	scs8hd_buf_1 scs8hd_buf_4_0_ (
-		.A(scs8hd_mux2_1_5_X[0]),
+	sky130_fd_sc_hd__buf_1 sky130_fd_sc_hd__buf_4_0_ (
+		.A(sky130_fd_sc_hd__mux2_1_5_X[0]),
 		.X(out[0]));
 
-	scs8hd_mux2_1   mux_l1_in_0_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_0_ (
 		.A1(in[0]),
 		.A0(in[1]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_0_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_0_X[0]));
 
-	scs8hd_mux2_1   mux_l1_in_1_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_1_ (
 		.A1(in[2]),
 		.A0(in[3]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_1_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_1_X[0]));
 
-	scs8hd_mux2_1   mux_l1_in_2_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_2_ (
 		.A1(in[4]),
 		.A0(in[5]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_2_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_2_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_0_ (
-		.A1(scs8hd_mux2_1_0_X[0]),
-		.A0(scs8hd_mux2_1_1_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_0_ (
+		.A1(sky130_fd_sc_hd__mux2_1_0_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_1_X[0]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_3_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_3_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_1_ (
-		.A1(scs8hd_mux2_1_2_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_1_ (
+		.A1(sky130_fd_sc_hd__mux2_1_2_X[0]),
 		.A0(const1_0_const1[0]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_4_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_4_X[0]));
 
-	scs8hd_mux2_1   mux_l3_in_0_ (
-		.A1(scs8hd_mux2_1_3_X[0]),
-		.A0(scs8hd_mux2_1_4_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l3_in_0_ (
+		.A1(sky130_fd_sc_hd__mux2_1_3_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_4_X[0]),
 		.S(sram[2]),
-		.X(scs8hd_mux2_1_5_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_5_X[0]));
 
 endmodule
 //
@@ -322,11 +322,11 @@ output [0:0] out;
 
 
 wire [0:0] const1_0_const1;
-wire [0:0] scs8hd_mux2_1_0_X;
-wire [0:0] scs8hd_mux2_1_1_X;
-wire [0:0] scs8hd_mux2_1_2_X;
-wire [0:0] scs8hd_mux2_1_3_X;
-wire [0:0] scs8hd_mux2_1_4_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_0_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_1_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_2_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_3_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_4_X;
 
 //
 //
@@ -336,39 +336,39 @@ wire [0:0] scs8hd_mux2_1_4_X;
 	const1 const1_0_ (
 		.const1(const1_0_const1[0]));
 
-	scs8hd_buf_1 scs8hd_buf_4_0_ (
-		.A(scs8hd_mux2_1_4_X[0]),
+	sky130_fd_sc_hd__buf_1 sky130_fd_sc_hd__buf_4_0_ (
+		.A(sky130_fd_sc_hd__mux2_1_4_X[0]),
 		.X(out[0]));
 
-	scs8hd_mux2_1   mux_l1_in_0_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_0_ (
 		.A1(in[0]),
 		.A0(in[1]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_0_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_0_X[0]));
 
-	scs8hd_mux2_1   mux_l1_in_1_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_1_ (
 		.A1(in[2]),
 		.A0(in[3]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_1_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_1_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_0_ (
-		.A1(scs8hd_mux2_1_0_X[0]),
-		.A0(scs8hd_mux2_1_1_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_0_ (
+		.A1(sky130_fd_sc_hd__mux2_1_0_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_1_X[0]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_2_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_2_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_1_ (
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_1_ (
 		.A1(in[4]),
 		.A0(const1_0_const1[0]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_3_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_3_X[0]));
 
-	scs8hd_mux2_1   mux_l3_in_0_ (
-		.A1(scs8hd_mux2_1_2_X[0]),
-		.A0(scs8hd_mux2_1_3_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l3_in_0_ (
+		.A1(sky130_fd_sc_hd__mux2_1_2_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_3_X[0]),
 		.S(sram[2]),
-		.X(scs8hd_mux2_1_4_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_4_X[0]));
 
 endmodule
 //
@@ -398,20 +398,20 @@ output [0:0] out;
 
 
 wire [0:0] const1_0_const1;
-wire [0:0] scs8hd_mux2_1_0_X;
-wire [0:0] scs8hd_mux2_1_10_X;
-wire [0:0] scs8hd_mux2_1_11_X;
-wire [0:0] scs8hd_mux2_1_12_X;
-wire [0:0] scs8hd_mux2_1_13_X;
-wire [0:0] scs8hd_mux2_1_1_X;
-wire [0:0] scs8hd_mux2_1_2_X;
-wire [0:0] scs8hd_mux2_1_3_X;
-wire [0:0] scs8hd_mux2_1_4_X;
-wire [0:0] scs8hd_mux2_1_5_X;
-wire [0:0] scs8hd_mux2_1_6_X;
-wire [0:0] scs8hd_mux2_1_7_X;
-wire [0:0] scs8hd_mux2_1_8_X;
-wire [0:0] scs8hd_mux2_1_9_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_0_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_10_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_11_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_12_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_13_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_1_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_2_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_3_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_4_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_5_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_6_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_7_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_8_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_9_X;
 
 //
 //
@@ -421,93 +421,93 @@ wire [0:0] scs8hd_mux2_1_9_X;
 	const1 const1_0_ (
 		.const1(const1_0_const1[0]));
 
-	scs8hd_buf_1 scs8hd_buf_4_0_ (
-		.A(scs8hd_mux2_1_13_X[0]),
+	sky130_fd_sc_hd__buf_1 sky130_fd_sc_hd__buf_4_0_ (
+		.A(sky130_fd_sc_hd__mux2_1_13_X[0]),
 		.X(out[0]));
 
-	scs8hd_mux2_1   mux_l1_in_0_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_0_ (
 		.A1(in[0]),
 		.A0(in[1]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_0_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_0_X[0]));
 
-	scs8hd_mux2_1   mux_l1_in_1_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_1_ (
 		.A1(in[2]),
 		.A0(in[3]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_1_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_1_X[0]));
 
-	scs8hd_mux2_1   mux_l1_in_2_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_2_ (
 		.A1(in[4]),
 		.A0(in[5]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_2_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_2_X[0]));
 
-	scs8hd_mux2_1   mux_l1_in_3_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_3_ (
 		.A1(in[6]),
 		.A0(in[7]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_3_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_3_X[0]));
 
-	scs8hd_mux2_1   mux_l1_in_4_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_4_ (
 		.A1(in[8]),
 		.A0(in[9]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_4_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_4_X[0]));
 
-	scs8hd_mux2_1   mux_l1_in_5_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_5_ (
 		.A1(in[10]),
 		.A0(in[11]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_5_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_5_X[0]));
 
-	scs8hd_mux2_1   mux_l1_in_6_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_6_ (
 		.A1(in[12]),
 		.A0(in[13]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_6_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_6_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_0_ (
-		.A1(scs8hd_mux2_1_0_X[0]),
-		.A0(scs8hd_mux2_1_1_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_0_ (
+		.A1(sky130_fd_sc_hd__mux2_1_0_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_1_X[0]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_7_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_7_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_1_ (
-		.A1(scs8hd_mux2_1_2_X[0]),
-		.A0(scs8hd_mux2_1_3_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_1_ (
+		.A1(sky130_fd_sc_hd__mux2_1_2_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_3_X[0]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_8_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_8_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_2_ (
-		.A1(scs8hd_mux2_1_4_X[0]),
-		.A0(scs8hd_mux2_1_5_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_2_ (
+		.A1(sky130_fd_sc_hd__mux2_1_4_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_5_X[0]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_9_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_9_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_3_ (
-		.A1(scs8hd_mux2_1_6_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_3_ (
+		.A1(sky130_fd_sc_hd__mux2_1_6_X[0]),
 		.A0(const1_0_const1[0]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_10_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_10_X[0]));
 
-	scs8hd_mux2_1   mux_l3_in_0_ (
-		.A1(scs8hd_mux2_1_7_X[0]),
-		.A0(scs8hd_mux2_1_8_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l3_in_0_ (
+		.A1(sky130_fd_sc_hd__mux2_1_7_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_8_X[0]),
 		.S(sram[2]),
-		.X(scs8hd_mux2_1_11_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_11_X[0]));
 
-	scs8hd_mux2_1   mux_l3_in_1_ (
-		.A1(scs8hd_mux2_1_9_X[0]),
-		.A0(scs8hd_mux2_1_10_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l3_in_1_ (
+		.A1(sky130_fd_sc_hd__mux2_1_9_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_10_X[0]),
 		.S(sram[2]),
-		.X(scs8hd_mux2_1_12_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_12_X[0]));
 
-	scs8hd_mux2_1   mux_l4_in_0_ (
-		.A1(scs8hd_mux2_1_11_X[0]),
-		.A0(scs8hd_mux2_1_12_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l4_in_0_ (
+		.A1(sky130_fd_sc_hd__mux2_1_11_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_12_X[0]),
 		.S(sram[3]),
-		.X(scs8hd_mux2_1_13_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_13_X[0]));
 
 endmodule
 //
@@ -537,9 +537,9 @@ output [0:0] out;
 
 
 wire [0:0] const1_0_const1;
-wire [0:0] scs8hd_mux2_1_0_X;
-wire [0:0] scs8hd_mux2_1_1_X;
-wire [0:0] scs8hd_mux2_1_2_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_0_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_1_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_2_X;
 
 //
 //
@@ -549,27 +549,27 @@ wire [0:0] scs8hd_mux2_1_2_X;
 	const1 const1_0_ (
 		.const1(const1_0_const1[0]));
 
-	scs8hd_buf_1 scs8hd_buf_4_0_ (
-		.A(scs8hd_mux2_1_2_X[0]),
+	sky130_fd_sc_hd__buf_1 sky130_fd_sc_hd__buf_4_0_ (
+		.A(sky130_fd_sc_hd__mux2_1_2_X[0]),
 		.X(out[0]));
 
-	scs8hd_mux2_1   mux_l1_in_0_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_0_ (
 		.A1(in[0]),
 		.A0(in[1]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_0_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_0_X[0]));
 
-	scs8hd_mux2_1   mux_l1_in_1_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_1_ (
 		.A1(in[2]),
 		.A0(const1_0_const1[0]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_1_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_1_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_0_ (
-		.A1(scs8hd_mux2_1_0_X[0]),
-		.A0(scs8hd_mux2_1_1_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_0_ (
+		.A1(sky130_fd_sc_hd__mux2_1_0_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_1_X[0]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_2_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_2_X[0]));
 
 endmodule
 //
@@ -599,8 +599,8 @@ output [0:0] out;
 
 
 wire [0:0] const1_0_const1;
-wire [0:0] scs8hd_mux2_1_0_X;
-wire [0:0] scs8hd_mux2_1_1_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_0_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_1_X;
 
 //
 //
@@ -610,21 +610,21 @@ wire [0:0] scs8hd_mux2_1_1_X;
 	const1 const1_0_ (
 		.const1(const1_0_const1[0]));
 
-	scs8hd_buf_1 scs8hd_buf_4_0_ (
-		.A(scs8hd_mux2_1_1_X[0]),
+	sky130_fd_sc_hd__buf_1 sky130_fd_sc_hd__buf_4_0_ (
+		.A(sky130_fd_sc_hd__mux2_1_1_X[0]),
 		.X(out[0]));
 
-	scs8hd_mux2_1   mux_l1_in_0_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_0_ (
 		.A1(in[0]),
 		.A0(in[1]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_0_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_0_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_0_ (
-		.A1(scs8hd_mux2_1_0_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_0_ (
+		.A1(sky130_fd_sc_hd__mux2_1_0_X[0]),
 		.A0(const1_0_const1[0]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_1_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_1_X[0]));
 
 endmodule
 //
@@ -654,13 +654,13 @@ output [0:0] out;
 
 
 wire [0:0] const1_0_const1;
-wire [0:0] scs8hd_mux2_1_0_X;
-wire [0:0] scs8hd_mux2_1_1_X;
-wire [0:0] scs8hd_mux2_1_2_X;
-wire [0:0] scs8hd_mux2_1_3_X;
-wire [0:0] scs8hd_mux2_1_4_X;
-wire [0:0] scs8hd_mux2_1_5_X;
-wire [0:0] scs8hd_mux2_1_6_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_0_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_1_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_2_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_3_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_4_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_5_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_6_X;
 
 //
 //
@@ -670,51 +670,51 @@ wire [0:0] scs8hd_mux2_1_6_X;
 	const1 const1_0_ (
 		.const1(const1_0_const1[0]));
 
-	scs8hd_buf_1 scs8hd_buf_4_0_ (
-		.A(scs8hd_mux2_1_6_X[0]),
+	sky130_fd_sc_hd__buf_1 sky130_fd_sc_hd__buf_4_0_ (
+		.A(sky130_fd_sc_hd__mux2_1_6_X[0]),
 		.X(out[0]));
 
-	scs8hd_mux2_1   mux_l1_in_0_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_0_ (
 		.A1(in[0]),
 		.A0(in[1]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_0_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_0_X[0]));
 
-	scs8hd_mux2_1   mux_l1_in_1_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_1_ (
 		.A1(in[2]),
 		.A0(in[3]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_1_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_1_X[0]));
 
-	scs8hd_mux2_1   mux_l1_in_2_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_2_ (
 		.A1(in[4]),
 		.A0(in[5]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_2_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_2_X[0]));
 
-	scs8hd_mux2_1   mux_l1_in_3_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_3_ (
 		.A1(in[6]),
 		.A0(const1_0_const1[0]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_3_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_3_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_0_ (
-		.A1(scs8hd_mux2_1_0_X[0]),
-		.A0(scs8hd_mux2_1_1_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_0_ (
+		.A1(sky130_fd_sc_hd__mux2_1_0_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_1_X[0]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_4_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_4_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_1_ (
-		.A1(scs8hd_mux2_1_2_X[0]),
-		.A0(scs8hd_mux2_1_3_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_1_ (
+		.A1(sky130_fd_sc_hd__mux2_1_2_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_3_X[0]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_5_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_5_X[0]));
 
-	scs8hd_mux2_1   mux_l3_in_0_ (
-		.A1(scs8hd_mux2_1_4_X[0]),
-		.A0(scs8hd_mux2_1_5_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l3_in_0_ (
+		.A1(sky130_fd_sc_hd__mux2_1_4_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_5_X[0]),
 		.S(sram[2]),
-		.X(scs8hd_mux2_1_6_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_6_X[0]));
 
 endmodule
 //
@@ -744,15 +744,15 @@ output [0:0] out;
 
 
 wire [0:0] const1_0_const1;
-wire [0:0] scs8hd_mux2_1_0_X;
-wire [0:0] scs8hd_mux2_1_1_X;
-wire [0:0] scs8hd_mux2_1_2_X;
-wire [0:0] scs8hd_mux2_1_3_X;
-wire [0:0] scs8hd_mux2_1_4_X;
-wire [0:0] scs8hd_mux2_1_5_X;
-wire [0:0] scs8hd_mux2_1_6_X;
-wire [0:0] scs8hd_mux2_1_7_X;
-wire [0:0] scs8hd_mux2_1_8_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_0_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_1_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_2_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_3_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_4_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_5_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_6_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_7_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_8_X;
 
 //
 //
@@ -762,63 +762,63 @@ wire [0:0] scs8hd_mux2_1_8_X;
 	const1 const1_0_ (
 		.const1(const1_0_const1[0]));
 
-	scs8hd_buf_1 scs8hd_buf_4_0_ (
-		.A(scs8hd_mux2_1_8_X[0]),
+	sky130_fd_sc_hd__buf_1 sky130_fd_sc_hd__buf_4_0_ (
+		.A(sky130_fd_sc_hd__mux2_1_8_X[0]),
 		.X(out[0]));
 
-	scs8hd_mux2_1   mux_l1_in_0_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_0_ (
 		.A1(in[0]),
 		.A0(in[1]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_0_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_0_X[0]));
 
-	scs8hd_mux2_1   mux_l1_in_1_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_1_ (
 		.A1(in[2]),
 		.A0(in[3]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_1_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_1_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_0_ (
-		.A1(scs8hd_mux2_1_0_X[0]),
-		.A0(scs8hd_mux2_1_1_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_0_ (
+		.A1(sky130_fd_sc_hd__mux2_1_0_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_1_X[0]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_2_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_2_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_1_ (
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_1_ (
 		.A1(in[4]),
 		.A0(in[5]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_3_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_3_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_2_ (
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_2_ (
 		.A1(in[6]),
 		.A0(in[7]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_4_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_4_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_3_ (
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_3_ (
 		.A1(in[8]),
 		.A0(const1_0_const1[0]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_5_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_5_X[0]));
 
-	scs8hd_mux2_1   mux_l3_in_0_ (
-		.A1(scs8hd_mux2_1_2_X[0]),
-		.A0(scs8hd_mux2_1_3_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l3_in_0_ (
+		.A1(sky130_fd_sc_hd__mux2_1_2_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_3_X[0]),
 		.S(sram[2]),
-		.X(scs8hd_mux2_1_6_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_6_X[0]));
 
-	scs8hd_mux2_1   mux_l3_in_1_ (
-		.A1(scs8hd_mux2_1_4_X[0]),
-		.A0(scs8hd_mux2_1_5_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l3_in_1_ (
+		.A1(sky130_fd_sc_hd__mux2_1_4_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_5_X[0]),
 		.S(sram[2]),
-		.X(scs8hd_mux2_1_7_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_7_X[0]));
 
-	scs8hd_mux2_1   mux_l4_in_0_ (
-		.A1(scs8hd_mux2_1_6_X[0]),
-		.A0(scs8hd_mux2_1_7_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l4_in_0_ (
+		.A1(sky130_fd_sc_hd__mux2_1_6_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_7_X[0]),
 		.S(sram[3]),
-		.X(scs8hd_mux2_1_8_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_8_X[0]));
 
 endmodule
 //
@@ -848,18 +848,18 @@ output [0:0] out;
 
 
 wire [0:0] const1_0_const1;
-wire [0:0] scs8hd_mux2_1_0_X;
-wire [0:0] scs8hd_mux2_1_10_X;
-wire [0:0] scs8hd_mux2_1_11_X;
-wire [0:0] scs8hd_mux2_1_1_X;
-wire [0:0] scs8hd_mux2_1_2_X;
-wire [0:0] scs8hd_mux2_1_3_X;
-wire [0:0] scs8hd_mux2_1_4_X;
-wire [0:0] scs8hd_mux2_1_5_X;
-wire [0:0] scs8hd_mux2_1_6_X;
-wire [0:0] scs8hd_mux2_1_7_X;
-wire [0:0] scs8hd_mux2_1_8_X;
-wire [0:0] scs8hd_mux2_1_9_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_0_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_10_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_11_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_1_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_2_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_3_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_4_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_5_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_6_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_7_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_8_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_9_X;
 
 //
 //
@@ -869,81 +869,81 @@ wire [0:0] scs8hd_mux2_1_9_X;
 	const1 const1_0_ (
 		.const1(const1_0_const1[0]));
 
-	scs8hd_buf_1 scs8hd_buf_4_0_ (
-		.A(scs8hd_mux2_1_11_X[0]),
+	sky130_fd_sc_hd__buf_1 sky130_fd_sc_hd__buf_4_0_ (
+		.A(sky130_fd_sc_hd__mux2_1_11_X[0]),
 		.X(out[0]));
 
-	scs8hd_mux2_1   mux_l1_in_0_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_0_ (
 		.A1(in[0]),
 		.A0(in[1]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_0_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_0_X[0]));
 
-	scs8hd_mux2_1   mux_l1_in_1_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_1_ (
 		.A1(in[2]),
 		.A0(in[3]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_1_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_1_X[0]));
 
-	scs8hd_mux2_1   mux_l1_in_2_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_2_ (
 		.A1(in[4]),
 		.A0(in[5]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_2_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_2_X[0]));
 
-	scs8hd_mux2_1   mux_l1_in_3_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_3_ (
 		.A1(in[6]),
 		.A0(in[7]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_3_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_3_X[0]));
 
-	scs8hd_mux2_1   mux_l1_in_4_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_4_ (
 		.A1(in[8]),
 		.A0(in[9]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_4_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_4_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_0_ (
-		.A1(scs8hd_mux2_1_0_X[0]),
-		.A0(scs8hd_mux2_1_1_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_0_ (
+		.A1(sky130_fd_sc_hd__mux2_1_0_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_1_X[0]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_5_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_5_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_1_ (
-		.A1(scs8hd_mux2_1_2_X[0]),
-		.A0(scs8hd_mux2_1_3_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_1_ (
+		.A1(sky130_fd_sc_hd__mux2_1_2_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_3_X[0]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_6_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_6_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_2_ (
-		.A1(scs8hd_mux2_1_4_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_2_ (
+		.A1(sky130_fd_sc_hd__mux2_1_4_X[0]),
 		.A0(in[10]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_7_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_7_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_3_ (
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_3_ (
 		.A1(in[11]),
 		.A0(const1_0_const1[0]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_8_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_8_X[0]));
 
-	scs8hd_mux2_1   mux_l3_in_0_ (
-		.A1(scs8hd_mux2_1_5_X[0]),
-		.A0(scs8hd_mux2_1_6_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l3_in_0_ (
+		.A1(sky130_fd_sc_hd__mux2_1_5_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_6_X[0]),
 		.S(sram[2]),
-		.X(scs8hd_mux2_1_9_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_9_X[0]));
 
-	scs8hd_mux2_1   mux_l3_in_1_ (
-		.A1(scs8hd_mux2_1_7_X[0]),
-		.A0(scs8hd_mux2_1_8_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l3_in_1_ (
+		.A1(sky130_fd_sc_hd__mux2_1_7_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_8_X[0]),
 		.S(sram[2]),
-		.X(scs8hd_mux2_1_10_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_10_X[0]));
 
-	scs8hd_mux2_1   mux_l4_in_0_ (
-		.A1(scs8hd_mux2_1_9_X[0]),
-		.A0(scs8hd_mux2_1_10_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l4_in_0_ (
+		.A1(sky130_fd_sc_hd__mux2_1_9_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_10_X[0]),
 		.S(sram[3]),
-		.X(scs8hd_mux2_1_11_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_11_X[0]));
 
 endmodule
 //
@@ -973,22 +973,22 @@ output [0:0] out;
 
 
 wire [0:0] const1_0_const1;
-wire [0:0] scs8hd_mux2_1_0_X;
-wire [0:0] scs8hd_mux2_1_10_X;
-wire [0:0] scs8hd_mux2_1_11_X;
-wire [0:0] scs8hd_mux2_1_12_X;
-wire [0:0] scs8hd_mux2_1_13_X;
-wire [0:0] scs8hd_mux2_1_14_X;
-wire [0:0] scs8hd_mux2_1_15_X;
-wire [0:0] scs8hd_mux2_1_1_X;
-wire [0:0] scs8hd_mux2_1_2_X;
-wire [0:0] scs8hd_mux2_1_3_X;
-wire [0:0] scs8hd_mux2_1_4_X;
-wire [0:0] scs8hd_mux2_1_5_X;
-wire [0:0] scs8hd_mux2_1_6_X;
-wire [0:0] scs8hd_mux2_1_7_X;
-wire [0:0] scs8hd_mux2_1_8_X;
-wire [0:0] scs8hd_mux2_1_9_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_0_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_10_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_11_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_12_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_13_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_14_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_15_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_1_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_2_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_3_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_4_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_5_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_6_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_7_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_8_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_9_X;
 
 //
 //
@@ -998,105 +998,105 @@ wire [0:0] scs8hd_mux2_1_9_X;
 	const1 const1_0_ (
 		.const1(const1_0_const1[0]));
 
-	scs8hd_buf_1 scs8hd_buf_4_0_ (
-		.A(scs8hd_mux2_1_15_X[0]),
+	sky130_fd_sc_hd__buf_1 sky130_fd_sc_hd__buf_4_0_ (
+		.A(sky130_fd_sc_hd__mux2_1_15_X[0]),
 		.X(out[0]));
 
-	scs8hd_mux2_1   mux_l1_in_0_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_0_ (
 		.A1(in[0]),
 		.A0(in[1]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_0_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_0_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_0_ (
-		.A1(scs8hd_mux2_1_0_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_0_ (
+		.A1(sky130_fd_sc_hd__mux2_1_0_X[0]),
 		.A0(in[2]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_1_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_1_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_1_ (
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_1_ (
 		.A1(in[3]),
 		.A0(in[4]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_2_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_2_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_2_ (
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_2_ (
 		.A1(in[5]),
 		.A0(in[6]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_3_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_3_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_3_ (
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_3_ (
 		.A1(in[7]),
 		.A0(in[8]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_4_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_4_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_4_ (
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_4_ (
 		.A1(in[9]),
 		.A0(in[10]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_5_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_5_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_5_ (
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_5_ (
 		.A1(in[11]),
 		.A0(in[12]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_6_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_6_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_6_ (
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_6_ (
 		.A1(in[13]),
 		.A0(in[14]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_7_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_7_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_7_ (
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_7_ (
 		.A1(in[15]),
 		.A0(const1_0_const1[0]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_8_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_8_X[0]));
 
-	scs8hd_mux2_1   mux_l3_in_0_ (
-		.A1(scs8hd_mux2_1_1_X[0]),
-		.A0(scs8hd_mux2_1_2_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l3_in_0_ (
+		.A1(sky130_fd_sc_hd__mux2_1_1_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_2_X[0]),
 		.S(sram[2]),
-		.X(scs8hd_mux2_1_9_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_9_X[0]));
 
-	scs8hd_mux2_1   mux_l3_in_1_ (
-		.A1(scs8hd_mux2_1_3_X[0]),
-		.A0(scs8hd_mux2_1_4_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l3_in_1_ (
+		.A1(sky130_fd_sc_hd__mux2_1_3_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_4_X[0]),
 		.S(sram[2]),
-		.X(scs8hd_mux2_1_10_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_10_X[0]));
 
-	scs8hd_mux2_1   mux_l3_in_2_ (
-		.A1(scs8hd_mux2_1_5_X[0]),
-		.A0(scs8hd_mux2_1_6_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l3_in_2_ (
+		.A1(sky130_fd_sc_hd__mux2_1_5_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_6_X[0]),
 		.S(sram[2]),
-		.X(scs8hd_mux2_1_11_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_11_X[0]));
 
-	scs8hd_mux2_1   mux_l3_in_3_ (
-		.A1(scs8hd_mux2_1_7_X[0]),
-		.A0(scs8hd_mux2_1_8_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l3_in_3_ (
+		.A1(sky130_fd_sc_hd__mux2_1_7_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_8_X[0]),
 		.S(sram[2]),
-		.X(scs8hd_mux2_1_12_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_12_X[0]));
 
-	scs8hd_mux2_1   mux_l4_in_0_ (
-		.A1(scs8hd_mux2_1_9_X[0]),
-		.A0(scs8hd_mux2_1_10_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l4_in_0_ (
+		.A1(sky130_fd_sc_hd__mux2_1_9_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_10_X[0]),
 		.S(sram[3]),
-		.X(scs8hd_mux2_1_13_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_13_X[0]));
 
-	scs8hd_mux2_1   mux_l4_in_1_ (
-		.A1(scs8hd_mux2_1_11_X[0]),
-		.A0(scs8hd_mux2_1_12_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l4_in_1_ (
+		.A1(sky130_fd_sc_hd__mux2_1_11_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_12_X[0]),
 		.S(sram[3]),
-		.X(scs8hd_mux2_1_14_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_14_X[0]));
 
-	scs8hd_mux2_1   mux_l5_in_0_ (
-		.A1(scs8hd_mux2_1_13_X[0]),
-		.A0(scs8hd_mux2_1_14_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l5_in_0_ (
+		.A1(sky130_fd_sc_hd__mux2_1_13_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_14_X[0]),
 		.S(sram[4]),
-		.X(scs8hd_mux2_1_15_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_15_X[0]));
 
 endmodule
 //
@@ -1126,10 +1126,10 @@ output [0:0] out;
 
 
 wire [0:0] const1_0_const1;
-wire [0:0] scs8hd_mux2_1_0_X;
-wire [0:0] scs8hd_mux2_1_1_X;
-wire [0:0] scs8hd_mux2_1_2_X;
-wire [0:0] scs8hd_mux2_1_3_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_0_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_1_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_2_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_3_X;
 
 //
 //
@@ -1139,33 +1139,33 @@ wire [0:0] scs8hd_mux2_1_3_X;
 	const1 const1_0_ (
 		.const1(const1_0_const1[0]));
 
-	scs8hd_buf_1 scs8hd_buf_4_0_ (
-		.A(scs8hd_mux2_1_3_X[0]),
+	sky130_fd_sc_hd__buf_1 sky130_fd_sc_hd__buf_4_0_ (
+		.A(sky130_fd_sc_hd__mux2_1_3_X[0]),
 		.X(out[0]));
 
-	scs8hd_mux2_1   mux_l1_in_0_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_0_ (
 		.A1(in[0]),
 		.A0(in[1]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_0_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_0_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_0_ (
-		.A1(scs8hd_mux2_1_0_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_0_ (
+		.A1(sky130_fd_sc_hd__mux2_1_0_X[0]),
 		.A0(in[2]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_1_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_1_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_1_ (
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_1_ (
 		.A1(in[3]),
 		.A0(const1_0_const1[0]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_2_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_2_X[0]));
 
-	scs8hd_mux2_1   mux_l3_in_0_ (
-		.A1(scs8hd_mux2_1_1_X[0]),
-		.A0(scs8hd_mux2_1_2_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l3_in_0_ (
+		.A1(sky130_fd_sc_hd__mux2_1_1_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_2_X[0]),
 		.S(sram[2]),
-		.X(scs8hd_mux2_1_3_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_3_X[0]));
 
 endmodule
 //
@@ -1195,7 +1195,7 @@ output [0:0] out;
 
 
 wire [0:0] const1_0_const1;
-wire [0:0] scs8hd_mux2_1_0_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_0_X;
 
 //
 //
@@ -1205,14 +1205,14 @@ wire [0:0] scs8hd_mux2_1_0_X;
 	const1 const1_0_ (
 		.const1(const1_0_const1[0]));
 
-	scs8hd_mux2_1   mux_l1_in_0_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_0_ (
 		.A1(in[0]),
 		.A0(in[1]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_0_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_0_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_0_ (
-		.A1(scs8hd_mux2_1_0_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_0_ (
+		.A1(sky130_fd_sc_hd__mux2_1_0_X[0]),
 		.A0(const1_0_const1[0]),
 		.S(sram[1]),
 		.X(out[0]));
@@ -1247,148 +1247,148 @@ output [0:0] lut4_out;
 //
 
 
-wire [0:0] scs8hd_buf_2_3_X;
-wire [0:0] scs8hd_buf_2_4_X;
-wire [0:0] scs8hd_buf_2_5_X;
-wire [0:0] scs8hd_buf_2_6_X;
-wire [0:0] scs8hd_mux2_1_0_X;
-wire [0:0] scs8hd_mux2_1_10_X;
-wire [0:0] scs8hd_mux2_1_11_X;
-wire [0:0] scs8hd_mux2_1_12_X;
-wire [0:0] scs8hd_mux2_1_13_X;
-wire [0:0] scs8hd_mux2_1_14_X;
-wire [0:0] scs8hd_mux2_1_1_X;
-wire [0:0] scs8hd_mux2_1_2_X;
-wire [0:0] scs8hd_mux2_1_3_X;
-wire [0:0] scs8hd_mux2_1_4_X;
-wire [0:0] scs8hd_mux2_1_5_X;
-wire [0:0] scs8hd_mux2_1_6_X;
-wire [0:0] scs8hd_mux2_1_7_X;
-wire [0:0] scs8hd_mux2_1_8_X;
-wire [0:0] scs8hd_mux2_1_9_X;
+wire [0:0] sky130_fd_sc_hd__buf_2_3_X;
+wire [0:0] sky130_fd_sc_hd__buf_2_4_X;
+wire [0:0] sky130_fd_sc_hd__buf_2_5_X;
+wire [0:0] sky130_fd_sc_hd__buf_2_6_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_0_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_10_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_11_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_12_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_13_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_14_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_1_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_2_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_3_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_4_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_5_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_6_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_7_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_8_X;
+wire [0:0] sky130_fd_sc_hd__mux2_1_9_X;
 
 //
 //
 //
 //
 
-	scs8hd_buf_2 scs8hd_buf_2_0_ (
-		.A(scs8hd_mux2_1_12_X[0]),
+	sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_2_0_ (
+		.A(sky130_fd_sc_hd__mux2_1_12_X[0]),
 		.X(lut3_out[0]));
 
-	scs8hd_buf_2 scs8hd_buf_2_1_ (
-		.A(scs8hd_mux2_1_13_X[0]),
+	sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_2_1_ (
+		.A(sky130_fd_sc_hd__mux2_1_13_X[0]),
 		.X(lut3_out[1]));
 
-	scs8hd_buf_2 scs8hd_buf_2_2_ (
-		.A(scs8hd_mux2_1_14_X[0]),
+	sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_2_2_ (
+		.A(sky130_fd_sc_hd__mux2_1_14_X[0]),
 		.X(lut4_out[0]));
 
-	scs8hd_buf_2 scs8hd_buf_2_3_ (
-		.A(scs8hd_mux2_1_8_X[0]),
-		.X(scs8hd_buf_2_3_X[0]));
+	sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_2_3_ (
+		.A(sky130_fd_sc_hd__mux2_1_8_X[0]),
+		.X(sky130_fd_sc_hd__buf_2_3_X[0]));
 
-	scs8hd_buf_2 scs8hd_buf_2_4_ (
-		.A(scs8hd_mux2_1_9_X[0]),
-		.X(scs8hd_buf_2_4_X[0]));
+	sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_2_4_ (
+		.A(sky130_fd_sc_hd__mux2_1_9_X[0]),
+		.X(sky130_fd_sc_hd__buf_2_4_X[0]));
 
-	scs8hd_buf_2 scs8hd_buf_2_5_ (
-		.A(scs8hd_mux2_1_10_X[0]),
-		.X(scs8hd_buf_2_5_X[0]));
+	sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_2_5_ (
+		.A(sky130_fd_sc_hd__mux2_1_10_X[0]),
+		.X(sky130_fd_sc_hd__buf_2_5_X[0]));
 
-	scs8hd_buf_2 scs8hd_buf_2_6_ (
-		.A(scs8hd_mux2_1_11_X[0]),
-		.X(scs8hd_buf_2_6_X[0]));
+	sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_2_6_ (
+		.A(sky130_fd_sc_hd__mux2_1_11_X[0]),
+		.X(sky130_fd_sc_hd__buf_2_6_X[0]));
 
-	scs8hd_mux2_1   mux_l1_in_0_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_0_ (
 		.A1(in[0]),
 		.A0(in[1]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_0_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_0_X[0]));
 
-	scs8hd_mux2_1   mux_l1_in_1_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_1_ (
 		.A1(in[2]),
 		.A0(in[3]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_1_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_1_X[0]));
 
-	scs8hd_mux2_1   mux_l1_in_2_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_2_ (
 		.A1(in[4]),
 		.A0(in[5]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_2_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_2_X[0]));
 
-	scs8hd_mux2_1   mux_l1_in_3_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_3_ (
 		.A1(in[6]),
 		.A0(in[7]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_3_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_3_X[0]));
 
-	scs8hd_mux2_1   mux_l1_in_4_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_4_ (
 		.A1(in[8]),
 		.A0(in[9]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_4_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_4_X[0]));
 
-	scs8hd_mux2_1   mux_l1_in_5_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_5_ (
 		.A1(in[10]),
 		.A0(in[11]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_5_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_5_X[0]));
 
-	scs8hd_mux2_1   mux_l1_in_6_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_6_ (
 		.A1(in[12]),
 		.A0(in[13]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_6_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_6_X[0]));
 
-	scs8hd_mux2_1   mux_l1_in_7_ (
+	sky130_fd_sc_hd__mux2_1   mux_l1_in_7_ (
 		.A1(in[14]),
 		.A0(in[15]),
 		.S(sram[0]),
-		.X(scs8hd_mux2_1_7_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_7_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_0_ (
-		.A1(scs8hd_mux2_1_0_X[0]),
-		.A0(scs8hd_mux2_1_1_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_0_ (
+		.A1(sky130_fd_sc_hd__mux2_1_0_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_1_X[0]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_8_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_8_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_1_ (
-		.A1(scs8hd_mux2_1_2_X[0]),
-		.A0(scs8hd_mux2_1_3_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_1_ (
+		.A1(sky130_fd_sc_hd__mux2_1_2_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_3_X[0]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_9_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_9_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_2_ (
-		.A1(scs8hd_mux2_1_4_X[0]),
-		.A0(scs8hd_mux2_1_5_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_2_ (
+		.A1(sky130_fd_sc_hd__mux2_1_4_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_5_X[0]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_10_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_10_X[0]));
 
-	scs8hd_mux2_1   mux_l2_in_3_ (
-		.A1(scs8hd_mux2_1_6_X[0]),
-		.A0(scs8hd_mux2_1_7_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l2_in_3_ (
+		.A1(sky130_fd_sc_hd__mux2_1_6_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_7_X[0]),
 		.S(sram[1]),
-		.X(scs8hd_mux2_1_11_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_11_X[0]));
 
-	scs8hd_mux2_1   mux_l3_in_0_ (
-		.A1(scs8hd_buf_2_3_X[0]),
-		.A0(scs8hd_buf_2_4_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l3_in_0_ (
+		.A1(sky130_fd_sc_hd__buf_2_3_X[0]),
+		.A0(sky130_fd_sc_hd__buf_2_4_X[0]),
 		.S(sram[2]),
-		.X(scs8hd_mux2_1_12_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_12_X[0]));
 
-	scs8hd_mux2_1   mux_l3_in_1_ (
-		.A1(scs8hd_buf_2_5_X[0]),
-		.A0(scs8hd_buf_2_6_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l3_in_1_ (
+		.A1(sky130_fd_sc_hd__buf_2_5_X[0]),
+		.A0(sky130_fd_sc_hd__buf_2_6_X[0]),
 		.S(sram[2]),
-		.X(scs8hd_mux2_1_13_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_13_X[0]));
 
-	scs8hd_mux2_1   mux_l4_in_0_ (
-		.A1(scs8hd_mux2_1_12_X[0]),
-		.A0(scs8hd_mux2_1_13_X[0]),
+	sky130_fd_sc_hd__mux2_1   mux_l4_in_0_ (
+		.A1(sky130_fd_sc_hd__mux2_1_12_X[0]),
+		.A0(sky130_fd_sc_hd__mux2_1_13_X[0]),
 		.S(sram[3]),
-		.X(scs8hd_mux2_1_14_X[0]));
+		.X(sky130_fd_sc_hd__mux2_1_14_X[0]));
 
 endmodule
 //

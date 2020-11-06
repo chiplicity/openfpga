@@ -3,8 +3,8 @@ set script_dir [file dirname [file normalize [info script]]]
 
 set ::env(DESIGN_NAME) fpga_top
 
-set ::env(PDK) "EFS8A"
-set ::env(STD_CELL_LIBRARY) "scs8hd"
+set ::env(PDK) "sky130A"
+set ::env(STD_CELL_LIBRARY) "sky130_fd_sc_hd"
 
 set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 

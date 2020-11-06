@@ -9,7 +9,7 @@
 `timescale 1ns / 1ps
 
 //
-module ltile_clb_md_fle_mp_fab_md_flogic_md_frac_lut4(prog_clk,
+module ltile_clb_frac_lut4(prog_clk,
                                                                                                                  frac_lut4_in,
                                                                                                                  ccff_head,
                                                                                                                  frac_lut4_lut3_out,
@@ -58,7 +58,7 @@ wire [0:15] frac_lut4_0_sram_inv;
 		.lut3_out(frac_lut4_lut3_out[0:1]),
 		.lut4_out(frac_lut4_lut4_out[0]));
 
-	frac_lut4_scs8hd_dfxbp_1_mem frac_lut4_sky130_fd_sc_hd__dfxbp_1_mem (
+	frac_lut4_sky130_fd_sc_hd__dfxbp_1_mem frac_lut4_sky130_fd_sc_hd__dfxbp_1_mem (
 		.prog_clk(prog_clk[0]),
 		.ccff_head(ccff_head[0]),
 		.ccff_tail(ccff_tail[0]),

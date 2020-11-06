@@ -255,8 +255,6 @@ wire [0:0] grid_clb_0_right_width_0_height_0__pin_40_lower;
 wire [0:0] grid_clb_0_right_width_0_height_0__pin_40_upper;
 wire [0:0] grid_clb_0_right_width_0_height_0__pin_41_lower;
 wire [0:0] grid_clb_0_right_width_0_height_0__pin_41_upper;
-wire [0:0] grid_clb_1__2__undriven_top_width_0_height_0__pin_32_;
-wire [0:0] grid_clb_1__2__undriven_top_width_0_height_0__pin_33_;
 wire [0:0] grid_clb_1_bottom_width_0_height_0__pin_42_lower;
 wire [0:0] grid_clb_1_bottom_width_0_height_0__pin_42_upper;
 wire [0:0] grid_clb_1_bottom_width_0_height_0__pin_43_lower;
@@ -292,8 +290,6 @@ wire [0:0] grid_clb_1_right_width_0_height_0__pin_40_lower;
 wire [0:0] grid_clb_1_right_width_0_height_0__pin_40_upper;
 wire [0:0] grid_clb_1_right_width_0_height_0__pin_41_lower;
 wire [0:0] grid_clb_1_right_width_0_height_0__pin_41_upper;
-wire [0:0] grid_clb_2__1__undriven_bottom_width_0_height_0__pin_50_;
-wire [0:0] grid_clb_2__1__undriven_bottom_width_0_height_0__pin_51_;
 wire [0:0] grid_clb_2_bottom_width_0_height_0__pin_42_lower;
 wire [0:0] grid_clb_2_bottom_width_0_height_0__pin_42_upper;
 wire [0:0] grid_clb_2_bottom_width_0_height_0__pin_43_lower;
@@ -504,8 +500,8 @@ wire [0:19] sb_2__2__0_chany_bottom_out;
 		.prog_clk(prog_clk[0]),
 		.Test_en(Test_en[0]),
 		.clk(clk[0]),
-		.top_width_0_height_0__pin_32_(grid_clb_1__2__undriven_top_width_0_height_0__pin_32_[0]),
-		.top_width_0_height_0__pin_33_(grid_clb_1__2__undriven_top_width_0_height_0__pin_33_[0]),
+		.top_width_0_height_0__pin_32_(),
+		.top_width_0_height_0__pin_33_(),
 		.right_width_0_height_0__pin_0_(cby_1__1__1_left_grid_pin_0_[0]),
 		.right_width_0_height_0__pin_1_(cby_1__1__1_left_grid_pin_1_[0]),
 		.right_width_0_height_0__pin_2_(cby_1__1__1_left_grid_pin_2_[0]),
@@ -648,8 +644,8 @@ wire [0:19] sb_2__2__0_chany_bottom_out;
 		.bottom_width_0_height_0__pin_48_lower(grid_clb_2_bottom_width_0_height_0__pin_48_lower[0]),
 		.bottom_width_0_height_0__pin_49_upper(grid_clb_2_bottom_width_0_height_0__pin_49_upper[0]),
 		.bottom_width_0_height_0__pin_49_lower(grid_clb_2_bottom_width_0_height_0__pin_49_lower[0]),
-		.bottom_width_0_height_0__pin_50_(grid_clb_2__1__undriven_bottom_width_0_height_0__pin_50_[0]),
-		.bottom_width_0_height_0__pin_51_(grid_clb_2__1__undriven_bottom_width_0_height_0__pin_51_[0]),
+		.bottom_width_0_height_0__pin_50_(),
+		.bottom_width_0_height_0__pin_51_(),
 		.ccff_tail(grid_clb_2_ccff_tail[0]));
 
 	grid_clb grid_clb_2__2_ (

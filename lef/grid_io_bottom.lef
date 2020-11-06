@@ -77,22 +77,22 @@ MACRO grid_io_bottom
         RECT 24.930 117.600 25.210 120.000 ;
     END
   END top_width_0_height_0__pin_1_upper
-  PIN vpwr
-      USE POWER ; 
+  PIN VPWR
     DIRECTION INPUT ;
+    USE POWER ;
     PORT
       LAYER met4 ;
         RECT 29.720 10.640 31.320 109.040 ;
     END
-  END vpwr
-  PIN vgnd
-    USE GROUND ;
+  END VPWR
+  PIN VGND
     DIRECTION INPUT ;
+    USE GROUND ;
     PORT
       LAYER met4 ;
         RECT 54.720 10.640 56.320 109.040 ;
     END
-  END vgnd
+  END VGND
   OBS
       LAYER li1 ;
         RECT 5.520 10.795 144.440 108.885 ;

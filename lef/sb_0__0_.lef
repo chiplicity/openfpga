@@ -658,27 +658,27 @@ MACRO sb_0__0_
         RECT 1.470 136.200 1.750 138.600 ;
     END
   END top_left_grid_pin_1_
-  PIN vpwr
-    USE POWER ; 
+  PIN VPWR
     DIRECTION INPUT ;
+    USE POWER ;
     PORT
       LAYER met4 ;
         RECT 28.055 9.240 29.655 126.680 ;
     END
-  END vpwr
-  PIN vgnd
-    USE GROUND ; 
+  END VPWR
+  PIN VGND
     DIRECTION INPUT ;
+    USE GROUND ;
     PORT
       LAYER met4 ;
         RECT 51.385 9.240 52.985 126.680 ;
     END
-  END vgnd
+  END VGND
   OBS
       LAYER li1 ;
         RECT 5.520 9.395 134.320 126.525 ;
       LAYER met1 ;
-        RECT 5.520 9.240 137.930 131.500 ;
+        RECT 5.520 9.240 137.930 132.180 ;
       LAYER met2 ;
         RECT 2.030 135.920 4.410 137.165 ;
         RECT 5.250 135.920 7.630 137.165 ;
@@ -827,7 +827,7 @@ MACRO sb_0__0_
         RECT 30.055 9.240 50.985 126.680 ;
         RECT 53.385 9.240 122.985 126.680 ;
       LAYER met5 ;
-        RECT 30.020 101.500 120.860 106.500 ;
+        RECT 30.020 104.900 106.140 106.500 ;
   END
 END sb_0__0_
 END LIBRARY

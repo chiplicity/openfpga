@@ -3,8 +3,8 @@ set script_dir [file dirname [file normalize [info script]]]
 
 set ::env(DESIGN_NAME) sb_0__0_
 
-set ::env(PDK) "EFS8A"
-set ::env(STD_CELL_LIBRARY) "scs8hd"
+set ::env(PDK) "sky130A"
+set ::env(STD_CELL_LIBRARY) "sky130_fd_sc_hd"
 
 set ::env(VERILOG_FILES) "$script_dir/../../../openfpga/run/SRC/routing/sb_0__0_.v \
                           $script_dir/../../../openfpga/run/SRC/sub_module/muxes.v \

@@ -23,7 +23,7 @@ module GPIO (A, IE, OE, Y, in, out, mem_out);
     assign A = in;
     assign out = Y;
     assign IE = mem_out;
-    scs8hd_inv_1 ie_oe_inv (
+    sky130_fd_sc_hd__inv_1 ie_oe_inv (
         .A	(mem_out),
         .Y	(OE) );
 endmodule
