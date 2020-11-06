@@ -939,6 +939,7 @@ MACRO sb_1__2_
     END
   END right_top_grid_pin_1_
   PIN vpwr
+    USE POWER ; 
     DIRECTION INPUT ;
     PORT
       LAYER met4 ;
@@ -946,6 +947,7 @@ MACRO sb_1__2_
     END
   END vpwr
   PIN vgnd
+    USE GROUND ; 
     DIRECTION INPUT ;
     PORT
       LAYER met4 ;

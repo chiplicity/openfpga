@@ -23,7 +23,7 @@ set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 
 # Floorplan & Placement
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 200 80"
+set ::env(DIE_AREA) "0 0 150 120"
 set ::env(PL_TARGET_DENSITY) 0.05
 set ::env(CELL_PAD) 8
 

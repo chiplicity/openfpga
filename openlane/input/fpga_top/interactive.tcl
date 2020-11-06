@@ -47,7 +47,7 @@ for { set i 0}  {$i < $num_switches_x} {incr i} {
 for { set i 0}  {$i < $num_clbs_x} {incr i} {
     for { set j 0}  {$j < $num_clbs_y} {incr j} {
         set macro_name grid_clb_[expr {$i+1}]__[expr {$j+1}]_
-        add_macro_placement $macro_name [expr { $clbs_x($j,$i) }] [expr {$clbs_y($j,$i) }] N
+        add_macro_placement $macro_name [expr { $clbs_x($i,$j) }] [expr {$clbs_y($i,$j) }] N
     }
 }
 

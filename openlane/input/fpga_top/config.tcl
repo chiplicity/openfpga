@@ -8,7 +8,8 @@ set ::env(STD_CELL_LIBRARY) "scs8hd"
 
 set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 
-set ::env(VERILOG_FILES) "$script_dir/../../../openfpga/run/SRC/fpga_top.v"
+set ::env(VERILOG_FILES) "$script_dir/../../../openfpga/run/SRC/fpga_top.v \
+                          $script_dir/../../../openfpga/run/SRC/sub_module/wires.v "
 
 set ::env(VERILOG_FILES_BLACKBOX) "$script_dir/../../../openfpga/run/SRC/lb/grid_io_bottom.v \
         $script_dir/../../../openfpga/run/SRC/lb/grid_io_top.v \
@@ -30,8 +31,7 @@ set ::env(VERILOG_FILES_BLACKBOX) "$script_dir/../../../openfpga/run/SRC/lb/grid
         $script_dir/../../../openfpga/run/SRC/routing/sb_2__1_.v \
         $script_dir/../../../openfpga/run/SRC/routing/sb_2__2_.v \
         $script_dir/../../../openfpga/run/SRC/lb/grid_clb.v \
-        $script_dir/../../../openfpga/run/SRC/fpga_defines.v  \
-        $script_dir/../../../openfpga/run/SRC/sub_module/wires.v  "
+        $script_dir/../../../openfpga/run/SRC/fpga_defines.v "
 
 
 set ::env(EXTRA_LEFS) "$script_dir/../../../lef/cbx_1__0_.lef \
@@ -79,6 +79,7 @@ set ::env(CLOCK_PERIOD) "100000"
 set ::env(CLOCK_PORT) "clk"
 
 set ::env(SYNTH_MAX_FANOUT)  7
+set ::env(SYNTH_FLAT_TOP) 1
 set ::env(CELL_PAD) 8
 
 set ::env(FP_SIZING) absolute
@@ -98,5 +99,5 @@ set ::env(FP_PIN_ORDER_CFG) $script_dir/pin.cfg
 set ::env(USE_ARC_ANTENNA_CHECK) 1
 
 # PDN
-set ::env(FP_PDN_HOFFSET) 65
-set ::env(FP_PDN_HPITCH) 153.18
+set ::env(FP_PDN_HOFFSET) 25
+set ::env(FP_PDN_HPITCH) 112

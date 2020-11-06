@@ -2,20 +2,20 @@ set script_dir [file dirname [file normalize [info script]]]
 source $script_dir/openfpga_cfg.tcl
 
 # Calculate Spacings
-set sb_to_cbx 65
-set sb_to_cby 65
+set sb_to_cbx 35
+set sb_to_cby 15
 
 set cbx_to_sb $sb_to_cbx
 set cby_to_sb $sb_to_cby
 
-set cbx_to_clb 70
-set clb_to_cbx 40
+# set cbx_to_clb 70
+# set clb_to_cbx 40
 
 set sb_to_cby_x 0
-set sb_to_cby_y 65
+set sb_to_cby_y 15
 
-set clb_to_cby 70
-set cby_to_clb $clb_to_cby
+# set clb_to_cby 70
+# set cby_to_clb $clb_to_cby
 
 # tile calculations
 set tile_x [expr {$sb_x + $sb_to_cbx + \
@@ -27,8 +27,8 @@ set tile_y [expr {$sb_y + $sb_to_cby +\
 puts "Tile size (x,y): ($tile_x, $tile_y)"
 
 # floorplan
-set margin_x 50
-set margin_y 50
+set margin_x 20
+set margin_y 20
 
 set floorplan_x [expr {$tile_x*$grid_x + $sb_x + \
                 2*$io_ver_x + 2*$io_ver_to_sb + \
@@ -39,8 +39,6 @@ set floorplan_y [expr {$tile_y*$grid_y + $sb_y + \
                  2*$margin_y]
 
 puts "Floorplan size (x,y): ($floorplan_x, $floorplan_y)"
-
-
 
 # ---------
 # Switches
@@ -65,29 +63,33 @@ for { set i 0}  {$i < $num_switches_x} {incr i} {
 # ---------
 
 set cbx_offset_x [expr {$sb_offset_x + $sb_x + $sb_to_cbx}]
-set cbx_offset_y [expr {$sb_offset_y + $sb_y / 2 - $cbx_y / 2 }]
+set cbx_offset_y [expr {$sb_offset_y }]
 
 set num_cbx_x $grid_x
 set num_cbx_y [expr {$grid_y + 1}]
+
+set sb_cbx_diff [expr {$sb_y - $cbx_y}]
 
 for { set i 0}  {$i < $num_cbx_x} {incr i} {
     for { set j 0}  {$j < $num_cbx_y} {incr j} {
         # xbars_x
         set xbar_x_x($i,$j) [expr {$cbx_offset_x + $i*[expr {$cbx_x+2*$sb_to_cbx+$sb_x}]} ]
-        set xbar_x_y($i,$j) [expr {$cbx_offset_y + $j*[expr {$cbx_y+$cbx_to_clb+$clb_y+$clb_to_cbx+ $sb_y / 2 - $cbx_y / 2 }]}]
+        set xbar_x_y($i,$j) [expr {$switches_y($j,$i) + [expr $sb_cbx_diff / 2]}]
     }
 }
 
 set num_cby_x [expr {$grid_x + 1}]
 set num_cby_y $grid_y
 
-set cby_offset_x [expr {$sb_offset_x + $sb_x / 2 - $cby_x / 2}]
+set cby_offset_x [expr {$sb_offset_x}]
 set cby_offset_y [expr {$sb_offset_y + $sb_y + $sb_to_cby_y}]
+
+set sb_cby_diff [expr {$sb_x - $cby_x}]
 
 for { set i 0}  {$i < $num_cby_x} {incr i} {
     for { set j 0}  {$j < $num_cby_y} {incr j} {
 
-        set xbar_y_x($i,$j) [expr { $cby_offset_x + $i*[expr {$cby_x + 2*$cby_to_clb + $clb_x}]}]
+        set xbar_y_x($i,$j) [expr { $switches_x($j,$i) + [expr {$sb_cby_diff / 2}]}]
         set xbar_y_y($i,$j) [expr { $cby_offset_y + $j*[expr {$cby_y + 2*$cby_to_sb  + $sb_y}]}]
     }
 }
@@ -104,12 +106,13 @@ set io_ver_spacing [expr {$floorplan_y - $grid_y * $io_hor_y - 2*$margin_y} / [e
 set num_hor_io_blocks $grid_x
 set num_ver_io_blocks $grid_y
 
+set io_btm_clbx_diff [expr { $io_hor_x - $cbx_x}]
+
 for {set i 0} { $i < $num_hor_io_blocks} {incr i} {
-    
-    set grid_io_bottom_x($i) $xbar_x_x($i,0)
+    set grid_io_bottom_x($i) [expr {$xbar_x_x($i,0) - [expr {$io_btm_clbx_diff / 4}]}]
     set grid_io_bottom_y($i) $margin_y
 
-    set grid_io_top_x($i) $xbar_x_x($i,0)
+    set grid_io_top_x($i) [expr {$xbar_x_x($i,0) - [expr {$io_btm_clbx_diff / 4}]}]
     set grid_io_top_y($i) [expr {$grid_io_bottom_y($i) + $io_hor_y + 2*$io_hor_to_sb + $tile_y * $grid_y + $sb_y }]
 }
 
@@ -128,13 +131,15 @@ for {set i 0} { $i < $num_ver_io_blocks} {incr i} {
 set num_clbs_x $grid_x
 set num_clbs_y $grid_y
 
-set clb_offset_x [expr {$cby_offset_x + $cby_x + $cby_to_clb}]
-set clb_offset_y [expr {$cbx_offset_y + $cbx_y + $cbx_to_clb}]
+# set clb_offset_x [expr {$cby_offset_x + $cby_x + $cby_to_clb}]
+# set clb_offset_y [expr {$cbx_offset_y + $cbx_y + $cbx_to_clb}]
+
+set clb_cbx_diff [expr {$clb_x - $cbx_x}]
 
 for { set i 0}  {$i < $num_clbs_x} {incr i} {
     for { set j 0}  {$j < $num_clbs_y} {incr j} {
         # switches
-        set clbs_x($i,$j)  [expr {$clb_offset_x + $j*[expr {$clb_x+2*$clb_to_cby+$cby_x}]}]
-        set clbs_y($i,$j)  [expr {$clb_offset_y + $i*[expr {$clb_y+2*$cbx_to_clb+$cbx_y}]}]
+        set clbs_x($i,$j)  [expr {$xbar_x_x($i,$j) - [expr {$clb_cbx_diff / 4}]}]
+        set clbs_y($i,$j)  $xbar_y_y($i,$j)
     }
 }
