@@ -196,8 +196,8 @@ COMPONENTS 1186 ;
 - _1_ sky130_fd_sc_hd__buf_2 + PLACED ( 61640 59840 ) FS ;
 - _2_ sky130_fd_sc_hd__buf_2 + PLACED ( 6900 146880 ) FS ;
 - _3_ sky130_fd_sc_hd__buf_2 + PLACED ( 6900 152320 ) FS ;
-- logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_0_.ie_oe_inv sky130_fd_sc_hd__inv_1 + PLACED ( 62100 68000 ) N ;
-- logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0_ sky130_fd_sc_hd__dfxbp_1 + PLACED ( 35880 10880 ) FS ;
+- ltile_mode_io__0.ltile_physical_iopad_0.GPIO_0_.ie_oe_inv sky130_fd_sc_hd__inv_1 + PLACED ( 62100 68000 ) N ;
+- ltile_mode_io__0.ltile_physical_iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0_ sky130_fd_sc_hd__dfxbp_1 + PLACED ( 35880 10880 ) FS ;
 - PHY_0 sky130_fd_sc_hd__decap_3 + FIXED ( 5520 10880 ) FS ;
 - PHY_1 sky130_fd_sc_hd__decap_3 + FIXED ( 72680 10880 ) S ;
 - PHY_2 sky130_fd_sc_hd__decap_3 + FIXED ( 5520 13600 ) N ;
@@ -462,13 +462,13 @@ COMPONENTS 1186 ;
 - PHY_261 sky130_fd_sc_hd__tapvpwrvgnd_1 + FIXED ( 34040 184960 ) FS ;
 - PHY_262 sky130_fd_sc_hd__tapvpwrvgnd_1 + FIXED ( 48300 184960 ) FS ;
 - PHY_263 sky130_fd_sc_hd__tapvpwrvgnd_1 + FIXED ( 62560 184960 ) FS ;
-- ANTENNA_logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0__D sky130_fd_sc_hd__diode_2 + PLACED ( 33120 10880 ) FS ;
-- ANTENNA_logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_0_.ie_oe_inv_A sky130_fd_sc_hd__diode_2 + PLACED ( 64400 68000 ) N ;
+- ANTENNA_ltile_mode_io__0.ltile_physical_iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0__D sky130_fd_sc_hd__diode_2 + PLACED ( 33120 10880 ) FS ;
+- ANTENNA_ltile_mode_io__0.ltile_physical_iopad_0.GPIO_0_.ie_oe_inv_A sky130_fd_sc_hd__diode_2 + PLACED ( 64400 68000 ) N ;
 - ANTENNA__1__A sky130_fd_sc_hd__diode_2 + PLACED ( 63020 57120 ) N ;
 - ANTENNA__3__A sky130_fd_sc_hd__diode_2 + PLACED ( 7820 149600 ) N ;
 - ANTENNA__2__A sky130_fd_sc_hd__diode_2 + PLACED ( 7820 144160 ) N ;
 - ANTENNA__0__A sky130_fd_sc_hd__diode_2 + PLACED ( 7820 73440 ) N ;
-- ANTENNA_logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0__CLK sky130_fd_sc_hd__diode_2 + PLACED ( 31280 10880 ) FS ;
+- ANTENNA_ltile_mode_io__0.ltile_physical_iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0__CLK sky130_fd_sc_hd__diode_2 + PLACED ( 31280 10880 ) FS ;
 - FILLER_0_3 sky130_fd_sc_hd__decap_12 + PLACED ( 6900 10880 ) FS ;
 - FILLER_0_15 sky130_fd_sc_hd__decap_12 + PLACED ( 12420 10880 ) FS ;
 - FILLER_0_27 sky130_fd_sc_hd__decap_4 + PLACED ( 17940 10880 ) FS ;
@@ -1993,7 +1993,7 @@ SPECIALNETS 2 ;
 END SPECIALNETS
 
 NETS 11 ;
-- ccff_head ( PIN ccff_head ) ( ANTENNA_logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0__D DIODE ) ( logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0_ D ) 
+- ccff_head ( PIN ccff_head ) ( ANTENNA_ltile_mode_io__0.ltile_physical_iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0__D DIODE ) ( ltile_mode_io__0.ltile_physical_iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0_ D ) 
   + ROUTED met1 ( 37445 12410 ) ( 40250 12410 )
     NEW met2 ( 40250 2380 0 ) ( 40250 12410 )
     NEW met1 ( 33810 12410 ) ( 37445 12410 )
@@ -2001,8 +2001,8 @@ NETS 11 ;
     NEW li1 ( 37445 12410 ) L1M1_PR_MR
     NEW met1 ( 40250 12410 ) M1M2_PR
 + USE SIGNAL ;
-- ccff_tail ( PIN ccff_tail ) ( ANTENNA__1__A DIODE ) ( ANTENNA_logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_0_.ie_oe_inv_A DIODE ) ( logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0_ Q ) 
-( logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_0_.ie_oe_inv A ) ( _1_ A ) 
+- ccff_tail ( PIN ccff_tail ) ( ANTENNA__1__A DIODE ) ( ANTENNA_ltile_mode_io__0.ltile_physical_iopad_0.GPIO_0_.ie_oe_inv_A DIODE ) ( ltile_mode_io__0.ltile_physical_iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0_ Q ) 
+( ltile_mode_io__0.ltile_physical_iopad_0.GPIO_0_.ie_oe_inv A ) ( _1_ A ) 
   + ROUTED met2 ( 66930 2380 0 ) ( 66930 13260 )
     NEW met3 ( 63250 13260 ) ( 66930 13260 )
     NEW met2 ( 43010 12580 ) ( 43010 13090 )
@@ -2050,7 +2050,7 @@ NETS 11 ;
     NEW met1 ( 62330 62050 ) M1M2_PR
     NEW met2 ( 61870 74460 ) via2_FR
 + USE SIGNAL ;
-- gfpga_pad_GPIO_OE ( PIN gfpga_pad_GPIO_OE ) ( logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_0_.ie_oe_inv Y ) 
+- gfpga_pad_GPIO_OE ( PIN gfpga_pad_GPIO_OE ) ( ltile_mode_io__0.ltile_physical_iopad_0.GPIO_0_.ie_oe_inv Y ) 
   + ROUTED met3 ( 61410 89420 ) ( 62330 89420 )
     NEW met2 ( 61410 89420 ) ( 61410 126140 )
     NEW met3 ( 61410 126140 ) ( 74060 126140 )
@@ -2115,7 +2115,7 @@ NETS 11 ;
     NEW met2 ( 8050 166940 ) via2_FR
     NEW met1 ( 8050 154530 ) RECT ( -355 -70 0 70 )
 + USE SIGNAL ;
-- prog_clk ( PIN prog_clk ) ( ANTENNA_logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0__CLK DIODE ) ( logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0_ CLK ) 
+- prog_clk ( PIN prog_clk ) ( ANTENNA_ltile_mode_io__0.ltile_physical_iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0__CLK DIODE ) ( ltile_mode_io__0.ltile_physical_iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0_ CLK ) 
   + ROUTED met2 ( 31970 9860 ) ( 31970 11390 )
     NEW met3 ( 13570 9860 ) ( 31970 9860 )
     NEW met2 ( 13570 2380 0 ) ( 13570 9860 )
@@ -2128,7 +2128,7 @@ NETS 11 ;
     NEW li1 ( 36110 12070 ) L1M1_PR_MR
     NEW met1 ( 31970 11390 ) RECT ( 0 -70 355 70 )
 + USE SIGNAL ;
-- logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.mem_outb ( logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0_ Q_N ) 
+- ltile_mode_io__0.ltile_physical_iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.mem_outb ( ltile_mode_io__0.ltile_physical_iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0_ Q_N ) 
 + USE SIGNAL ;
 END NETS
 END DESIGN

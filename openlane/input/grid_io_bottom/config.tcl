@@ -8,13 +8,13 @@ set ::env(STD_CELL_LIBRARY) "sky130_fd_sc_hd"
 
 set ::env(VERILOG_FILES) "$script_dir/../../../openfpga/run/SRC/lb/grid_io_bottom.v \
                     $script_dir/../../../openfpga/run/SRC/sub_module/arch_encoder.v \
-                    $script_dir/../../../openfpga/run/SRC/lb/logical_tile_io_mode_physical__iopad.v \
+                    $script_dir/../../../openfpga/run/SRC/lb/ltile_physical_iopad.v \
                     $script_dir/../../../openfpga/run/SRC/sub_module/wires.v \
                     $script_dir/../../../openfpga/run/SRC/sub_module/muxes.v \
                     $script_dir/../../../openfpga/run/SRC/sub_module/memories.v \
                     $script_dir/../../../openfpga/run/SRC/sub_module/inv_buf_passgate.v \
                     $script_dir/../../../openfpga/run/SRC/sub_module/luts.v \
-                    $script_dir/../../../openfpga/run/SRC/lb/logical_tile_io_mode_io_.v \
+                    $script_dir/../../../openfpga/run/SRC/lb/ltile_mode_io_.v \
                     $script_dir/../../../openfpga/run/SRC/sub_module/std_cell_extract.v "
 
 set ::env(CLOCK_PERIOD) "100000"

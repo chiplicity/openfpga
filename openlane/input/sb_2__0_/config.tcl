@@ -13,9 +13,9 @@ set ::env(VERILOG_FILES) "$script_dir/../../../openfpga/run/SRC/routing/sb_2__0_
                           $script_dir/../../../openfpga/run/SRC/sub_module/local_encoder.v \ 
                           $script_dir/../../../openfpga/run/SRC/sub_module/arch_encoder.v"
 
-set ::env(CLOCK_PERIOD) "100000"
-set ::env(CLOCK_PORT) "w"
-set ::env(CLOCK_TREE_SYNTH) 0
+set ::env(CLOCK_PERIOD) "10"
+set ::env(CLOCK_PORT) "prog_clk"
+set ::env(CLOCK_NET) "prog_clk"
 
 # Synthesis
 set ::env(SYNTH_MAX_FANOUT) 6

@@ -30,3 +30,5 @@ set io_ver_y $io_hor_x
 
 set io_ver_to_sb 15
 set io_hor_to_sb 15
+
+set EMBED_IOS 1

@@ -2,8 +2,8 @@ set script_dir [file dirname [file normalize [info script]]]
 source $script_dir/openfpga_cfg.tcl
 
 # Calculate Spacings
-set sb_to_cbx 35
-set sb_to_cby 15
+set sb_to_cbx 65
+set sb_to_cby 65
 
 set cbx_to_sb $sb_to_cbx
 set cby_to_sb $sb_to_cby
@@ -12,7 +12,7 @@ set cby_to_sb $sb_to_cby
 # set clb_to_cbx 40
 
 set sb_to_cby_x 0
-set sb_to_cby_y 15
+set sb_to_cby_y 65
 
 # set clb_to_cby 70
 # set cby_to_clb $clb_to_cby
@@ -27,26 +27,32 @@ set tile_y [expr {$sb_y + $sb_to_cby +\
 puts "Tile size (x,y): ($tile_x, $tile_y)"
 
 # floorplan
-set margin_x 20
-set margin_y 20
+set margin_x 50
+set margin_y 50
 
-set floorplan_x [expr {$tile_x*$grid_x + $sb_x + \
+if {$EMBED_IOS == 1} {
+
+    set floorplan_x [expr {$tile_x*$grid_x + $sb_x + 2*$margin_x }]
+    set floorplan_y [expr {$tile_y*$grid_y + $sb_y + 2*$margin_y}]
+    set sb_offset_x $margin_x
+    set sb_offset_y $margin_y
+} else {
+    set floorplan_x [expr {$tile_x*$grid_x + $sb_x + \
                 2*$io_ver_x + 2*$io_ver_to_sb + \
                 2*$margin_x }]
 
-set floorplan_y [expr {$tile_y*$grid_y + $sb_y + \
+    set floorplan_y [expr {$tile_y*$grid_y + $sb_y + \
                  2*[expr {$io_hor_y + $io_hor_to_sb}]} + \
                  2*$margin_y]
+    set sb_offset_x [expr {$io_ver_x + $io_ver_to_sb + $margin_x}]
+    set sb_offset_y [expr {$io_hor_y + $io_hor_to_sb + $margin_y}]
+}
 
 puts "Floorplan size (x,y): ($floorplan_x, $floorplan_y)"
 
 # ---------
 # Switches
 # ---------
-
-set sb_offset_x [expr {$io_ver_x + $io_ver_to_sb + $margin_x}]
-set sb_offset_y [expr {$io_hor_y + $io_hor_to_sb + $margin_y}]
-
 set num_switches_x [expr {$grid_x + 1}]
 set num_switches_y [expr {$grid_y + 1}]
 
@@ -94,36 +100,37 @@ for { set i 0}  {$i < $num_cby_x} {incr i} {
     }
 }
 
-# IO Spacings
 
-set io_hor_spacing [expr {$floorplan_x - $grid_x * $io_hor_x - 2*$margin_x - $io_ver_x - $io_ver_to_sb} / [expr {$grid_x - 1}]]
-set io_ver_spacing [expr {$floorplan_y - $grid_y * $io_hor_y - 2*$margin_y} / [expr {$grid_y - 1}]]
+if {$EMBED_IOS == 0} {
+    # IO Spacings
+    set io_hor_spacing [expr {$floorplan_x - $grid_x * $io_hor_x - 2*$margin_x - $io_ver_x - $io_ver_to_sb} / [expr {$grid_x - 1}]]
+    set io_ver_spacing [expr {$floorplan_y - $grid_y * $io_hor_y - 2*$margin_y} / [expr {$grid_y - 1}]]
 
-# ---------
-# IO Blocks
-# ---------
+    # ---------
+    # IO Blocks
+    # ---------
 
-set num_hor_io_blocks $grid_x
-set num_ver_io_blocks $grid_y
+    set num_hor_io_blocks $grid_x
+    set num_ver_io_blocks $grid_y
 
-set io_btm_clbx_diff [expr { $io_hor_x - $cbx_x}]
+    set io_btm_clbx_diff [expr { $io_hor_x - $cbx_x}]
 
-for {set i 0} { $i < $num_hor_io_blocks} {incr i} {
-    set grid_io_bottom_x($i) [expr {$xbar_x_x($i,0) - [expr {$io_btm_clbx_diff / 4}]}]
-    set grid_io_bottom_y($i) $margin_y
+    for {set i 0} { $i < $num_hor_io_blocks} {incr i} {
+        set grid_io_bottom_x($i) [expr {$xbar_x_x($i,0) - [expr {$io_btm_clbx_diff / 4}]}]
+        set grid_io_bottom_y($i) $margin_y
 
-    set grid_io_top_x($i) [expr {$xbar_x_x($i,0) - [expr {$io_btm_clbx_diff / 4}]}]
-    set grid_io_top_y($i) [expr {$grid_io_bottom_y($i) + $io_hor_y + 2*$io_hor_to_sb + $tile_y * $grid_y + $sb_y }]
+        set grid_io_top_x($i) [expr {$xbar_x_x($i,0) - [expr {$io_btm_clbx_diff / 4}]}]
+        set grid_io_top_y($i) [expr {$grid_io_bottom_y($i) + $io_hor_y + 2*$io_hor_to_sb + $tile_y * $grid_y + $sb_y }]
+    }
+
+    for {set i 0} { $i < $num_ver_io_blocks} {incr i} {
+        set grid_io_left_x($i) $margin_x
+        set grid_io_left_y($i) $xbar_y_y(0,$i)
+
+        set grid_io_right_x($i) [expr { $margin_x + $io_ver_x + $io_ver_to_sb + $tile_x * $grid_x + $sb_x + $io_ver_to_sb}]
+        set grid_io_right_y($i) $xbar_y_y(0,$i)
+    }
 }
-
-for {set i 0} { $i < $num_ver_io_blocks} {incr i} {
-    set grid_io_left_x($i) $margin_x
-    set grid_io_left_y($i) $xbar_y_y(0,$i)
-
-    set grid_io_right_x($i) [expr { $margin_x + $io_ver_x + $io_ver_to_sb + $tile_x * $grid_x + $sb_x + $io_ver_to_sb}]
-    set grid_io_right_y($i) $xbar_y_y(0,$i)
-}
-
 # ---------
 # Grid CLBs
 # ---------

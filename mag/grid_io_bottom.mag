@@ -6980,11 +6980,11 @@ use sky130_fd_sc_hd__decap_12  FILLER_1_98
 timestamp 1604666999
 transform 1 0 10120 0 1 2720
 box -38 -48 1142 592
-use sky130_fd_sc_hd__inv_1  logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_0_.ie_oe_inv tech/SW/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__inv_1  ltile_mode_io__0.ltile_physical_iopad_0.GPIO_0_.ie_oe_inv tech/SW/sky130A/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1604666999
 transform 1 0 10488 0 -1 2720
 box -38 -48 314 592
-use sky130_fd_sc_hd__diode_2  ANTENNA_logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_0_.ie_oe_inv_A
+use sky130_fd_sc_hd__diode_2  ANTENNA_ltile_mode_io__0.ltile_physical_iopad_0.GPIO_0_.ie_oe_inv_A
 timestamp 1604666999
 transform 1 0 10948 0 -1 2720
 box -38 -48 222 592
@@ -8356,11 +8356,11 @@ use sky130_fd_sc_hd__decap_3  PHY_22
 timestamp 1604666999
 transform 1 0 1104 0 1 8160
 box -38 -48 314 592
-use sky130_fd_sc_hd__diode_2  ANTENNA_logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0__D
+use sky130_fd_sc_hd__diode_2  ANTENNA_ltile_mode_io__0.ltile_physical_iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0__D
 timestamp 1604666999
 transform 1 0 1564 0 1 8160
 box -38 -48 222 592
-use sky130_fd_sc_hd__diode_2  ANTENNA_logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0__CLK
+use sky130_fd_sc_hd__diode_2  ANTENNA_ltile_mode_io__0.ltile_physical_iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0__CLK
 timestamp 1604666999
 transform 1 0 1932 0 1 8160
 box -38 -48 222 592
@@ -8492,7 +8492,7 @@ use sky130_fd_sc_hd__decap_3  PHY_23
 timestamp 1604666999
 transform -1 0 28888 0 1 8160
 box -38 -48 314 592
-use sky130_fd_sc_hd__dfxbp_1  logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0_ tech/SW/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__dfxbp_1  ltile_mode_io__0.ltile_physical_iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0_ tech/SW/sky130A/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1604666999
 transform 1 0 1380 0 -1 9248
 box -38 -48 1786 592

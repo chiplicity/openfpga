@@ -51,24 +51,24 @@ for { set i 0}  {$i < $num_clbs_x} {incr i} {
     }
 }
 
-# IOs
-for {set i 0} { $i < $num_hor_io_blocks} {incr i} {
-    
-    set macro_name grid_io_top_[expr {$i + 1}]__[expr {$grid_y + 1}]_
-    add_macro_placement $macro_name [expr {$grid_io_top_x($i) }] [expr {$grid_io_top_y($i) }] N
+# IOS
+if {$EMBED_IOS == 0} {
+    for {set i 0} { $i < $num_hor_io_blocks} {incr i} {
+        
+        set macro_name grid_io_top_[expr {$i + 1}]__[expr {$grid_y + 1}]_
+        add_macro_placement $macro_name [expr {$grid_io_top_x($i) }] [expr {$grid_io_top_y($i) }] N
 
-    set macro_name grid_io_bottom_[expr {$i + 1}]__0_
-    add_macro_placement $macro_name [expr {$grid_io_bottom_x($i) }] [expr {$grid_io_bottom_y($i) }] N
+        set macro_name grid_io_bottom_[expr {$i + 1}]__0_
+        add_macro_placement $macro_name [expr {$grid_io_bottom_x($i) }] [expr {$grid_io_bottom_y($i) }] N
+    }
+    for {set i 0} { $i < $num_ver_io_blocks} {incr i} {
+        set macro_name grid_io_left_0__[expr {$i + 1}]_
+        add_macro_placement $macro_name [expr {$grid_io_left_x($i) }] [expr {$grid_io_left_y($i) }] N
+        
+        set macro_name grid_io_right_[expr {$grid_y + 1}]__[expr {$i + 1}]_
+        add_macro_placement $macro_name [expr {$grid_io_right_x($i) }] [expr {$grid_io_right_y($i) }] N
+    }
 }
-
-for {set i 0} { $i < $num_ver_io_blocks} {incr i} {
-    set macro_name grid_io_left_0__[expr {$i + 1}]_
-    add_macro_placement $macro_name [expr {$grid_io_left_x($i) }] [expr {$grid_io_left_y($i) }] N
-    
-    set macro_name grid_io_right_[expr {$grid_y + 1}]__[expr {$i + 1}]_
-    add_macro_placement $macro_name [expr {$grid_io_right_x($i) }] [expr {$grid_io_right_y($i) }] N
-}
-
 manual_macro_placement f
 detailed_placement
 

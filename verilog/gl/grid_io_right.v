@@ -12,7 +12,7 @@ module grid_io_right(ccff_head, ccff_tail, gfpga_pad_GPIO_A, gfpga_pad_GPIO_IE, 
   input left_width_0_height_0__pin_0_;
   output left_width_0_height_0__pin_1_lower;
   output left_width_0_height_0__pin_1_upper;
-  wire \logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.mem_outb ;
+  wire \ltile_mode_io__0.ltile_physical_iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.mem_outb ;
   input prog_clk;
   sky130_fd_sc_hd__diode_2 ANTENNA__0__A (
     .DIODE(left_width_0_height_0__pin_0_),
@@ -42,21 +42,21 @@ module grid_io_right(ccff_head, ccff_tail, gfpga_pad_GPIO_A, gfpga_pad_GPIO_IE, 
     .VPB(VPWR),
     .VPWR(VPWR)
   );
-  sky130_fd_sc_hd__diode_2 \ANTENNA_logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_0_.ie_oe_inv_A  (
+  sky130_fd_sc_hd__diode_2 \ANTENNA_ltile_mode_io__0.ltile_physical_iopad_0.GPIO_0_.ie_oe_inv_A  (
     .DIODE(ccff_tail),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR)
   );
-  sky130_fd_sc_hd__diode_2 \ANTENNA_logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0__CLK  (
+  sky130_fd_sc_hd__diode_2 \ANTENNA_ltile_mode_io__0.ltile_physical_iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0__CLK  (
     .DIODE(prog_clk),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),
     .VPWR(VPWR)
   );
-  sky130_fd_sc_hd__diode_2 \ANTENNA_logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0__D  (
+  sky130_fd_sc_hd__diode_2 \ANTENNA_ltile_mode_io__0.ltile_physical_iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0__D  (
     .DIODE(ccff_head),
     .VGND(VGND),
     .VNB(VGND),
@@ -6865,7 +6865,7 @@ module grid_io_right(ccff_head, ccff_tail, gfpga_pad_GPIO_A, gfpga_pad_GPIO_IE, 
     .VPWR(VPWR),
     .X(left_width_0_height_0__pin_1_upper)
   );
-  sky130_fd_sc_hd__inv_1 \logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_0_.ie_oe_inv  (
+  sky130_fd_sc_hd__inv_1 \ltile_mode_io__0.ltile_physical_iopad_0.GPIO_0_.ie_oe_inv  (
     .A(ccff_tail),
     .VGND(VGND),
     .VNB(VGND),
@@ -6873,11 +6873,11 @@ module grid_io_right(ccff_head, ccff_tail, gfpga_pad_GPIO_A, gfpga_pad_GPIO_IE, 
     .VPWR(VPWR),
     .Y(gfpga_pad_GPIO_OE)
   );
-  sky130_fd_sc_hd__dfxbp_1 \logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0_  (
+  sky130_fd_sc_hd__dfxbp_1 \ltile_mode_io__0.ltile_physical_iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0_  (
     .CLK(prog_clk),
     .D(ccff_head),
     .Q(ccff_tail),
-    .Q_N(\logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.mem_outb ),
+    .Q_N(\ltile_mode_io__0.ltile_physical_iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.mem_outb ),
     .VGND(VGND),
     .VNB(VGND),
     .VPB(VPWR),

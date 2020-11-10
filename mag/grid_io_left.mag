@@ -11856,7 +11856,7 @@ use sky130_fd_sc_hd__decap_12  FILLER_1_15
 timestamp 1604666999
 transform 1 0 2484 0 1 2720
 box -38 -48 1142 592
-use sky130_fd_sc_hd__dfxbp_1  logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0_ tech/SW/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__dfxbp_1  ltile_mode_io__0.ltile_physical_iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0_ tech/SW/sky130A/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1604666999
 transform 1 0 4324 0 -1 2720
 box -38 -48 1786 592
@@ -11864,11 +11864,11 @@ use sky130_fd_sc_hd__tapvpwrvgnd_1  PHY_130 tech/SW/sky130A/libs.ref/sky130_fd_s
 timestamp 1604666999
 transform 1 0 3956 0 -1 2720
 box -38 -48 130 592
-use sky130_fd_sc_hd__diode_2  ANTENNA_logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0__D tech/SW/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__diode_2  ANTENNA_ltile_mode_io__0.ltile_physical_iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0__D tech/SW/sky130A/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1604666999
 transform 1 0 3772 0 -1 2720
 box -38 -48 222 592
-use sky130_fd_sc_hd__diode_2  ANTENNA_logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0__CLK
+use sky130_fd_sc_hd__diode_2  ANTENNA_ltile_mode_io__0.ltile_physical_iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0__CLK
 timestamp 1604666999
 transform 1 0 3404 0 -1 2720
 box -38 -48 222 592
@@ -13372,7 +13372,7 @@ use sky130_fd_sc_hd__fill_1  FILLER_20_145
 timestamp 1604666999
 transform 1 0 14444 0 -1 13600
 box -38 -48 130 592
-use sky130_fd_sc_hd__inv_1  logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_0_.ie_oe_inv tech/SW/sky130A/libs.ref/sky130_fd_sc_hd/mag
+use sky130_fd_sc_hd__inv_1  ltile_mode_io__0.ltile_physical_iopad_0.GPIO_0_.ie_oe_inv tech/SW/sky130A/libs.ref/sky130_fd_sc_hd/mag
 timestamp 1604666999
 transform 1 0 1380 0 1 13600
 box -38 -48 314 592
@@ -13380,7 +13380,7 @@ use sky130_fd_sc_hd__decap_3  PHY_42
 timestamp 1604666999
 transform 1 0 1104 0 1 13600
 box -38 -48 314 592
-use sky130_fd_sc_hd__diode_2  ANTENNA_logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_0_.ie_oe_inv_A
+use sky130_fd_sc_hd__diode_2  ANTENNA_ltile_mode_io__0.ltile_physical_iopad_0.GPIO_0_.ie_oe_inv_A
 timestamp 1604666999
 transform 1 0 1840 0 1 13600
 box -38 -48 222 592

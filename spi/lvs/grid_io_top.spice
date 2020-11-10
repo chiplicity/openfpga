@@ -364,7 +364,7 @@ XPHY_3 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
 XFILLER_7_74 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_12
 XFILLER_29_220 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_12
 XFILLER_32_93 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_12
-XANTENNA_logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0__CLK
+XANTENNA_ltile_mode_io__0.ltile_physical_iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0__CLK
 + prog_clk VGND VGND VPWR VPWR sky130_fd_sc_hd__diode_2
 XFILLER_32_215 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_12
 XFILLER_17_245 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_12
@@ -473,8 +473,8 @@ XFILLER_22_251 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_12
 XANTENNA__0__A gfpga_pad_GPIO_Y VGND VGND VPWR VPWR sky130_fd_sc_hd__diode_2
 XFILLER_13_98 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_12
 XFILLER_8_3 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_12
-Xlogical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0_
-+ ccff_head ccff_tail logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0_/Q_N
+Xltile_mode_io__0.ltile_physical_iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0_
++ ccff_head ccff_tail ltile_mode_io__0.ltile_physical_iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0_/Q_N
 + prog_clk VGND VGND VPWR VPWR sky130_fd_sc_hd__dfxbp_1
 XFILLER_10_276 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_12
 XFILLER_28_129 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_12
@@ -649,7 +649,7 @@ XFILLER_22_80 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_12
 XFILLER_11_184 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_12
 XFILLER_34_276 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_12
 XFILLER_8_93 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_12
-XANTENNA_logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_0_.ie_oe_inv_A
+XANTENNA_ltile_mode_io__0.ltile_physical_iopad_0.GPIO_0_.ie_oe_inv_A
 + ccff_tail VGND VGND VPWR VPWR sky130_fd_sc_hd__diode_2
 XFILLER_25_232 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_12
 XFILLER_31_257 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_12
@@ -1166,7 +1166,7 @@ XFILLER_12_227 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_12
 XFILLER_18_93 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_12
 XFILLER_11_293 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
 XFILLER_7_220 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_12
-Xlogical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_0_.ie_oe_inv
+Xltile_mode_io__0.ltile_physical_iopad_0.GPIO_0_.ie_oe_inv
 + ccff_tail gfpga_pad_GPIO_OE VGND VGND VPWR VPWR sky130_fd_sc_hd__inv_1
 XFILLER_22_3 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_12
 XFILLER_29_135 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_8
@@ -1224,7 +1224,7 @@ XFILLER_20_251 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_12
 XFILLER_35_118 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_6
 XFILLER_6_32 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_12
 XFILLER_26_129 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_12
-XANTENNA_logical_tile_io_mode_io__0.logical_tile_io_mode_physical__iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0__D
+XANTENNA_ltile_mode_io__0.ltile_physical_iopad_0.GPIO_sky130_fd_sc_hd__dfxbp_1_mem.sky130_fd_sc_hd__dfxbp_1_0__D
 + ccff_head VGND VGND VPWR VPWR sky130_fd_sc_hd__diode_2
 XPHY_19 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_3
 XFILLER_31_62 VGND VGND VPWR VPWR sky130_fd_sc_hd__decap_12

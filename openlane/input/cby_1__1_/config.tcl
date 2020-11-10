@@ -7,15 +7,12 @@ set ::env(PDK) "sky130A"
 set ::env(STD_CELL_LIBRARY) "sky130_fd_sc_hd"
 
 set ::env(VERILOG_FILES) "$script_dir/../../../openfpga/run/SRC/routing/cby_1__1_.v \
-                          $script_dir/../../../openfpga/run/SRC/sub_module/muxes.v \
-                          $script_dir/../../../openfpga/run/SRC/sub_module/memories.v \
-                          $script_dir/../../../openfpga/run/SRC/sub_module/inv_buf_passgate.v \
-                          $script_dir/../../../openfpga/run/SRC/sub_module/local_encoder.v \ 
-                          $script_dir/../../../openfpga/run/SRC/sub_module/arch_encoder.v"
+                          $script_dir/../../../openfpga/run/SRC/sub_module/*.v \
+                          $script_dir/../../../openfpga/run/SRC/lb/*.v"
 
-set ::env(CLOCK_PERIOD) "100000"
-set ::env(CLOCK_PORT) "w"
-set ::env(CLOCK_TREE_SYNTH) 0
+set ::env(CLOCK_PERIOD) "10"
+set ::env(CLOCK_PORT) "prog_clk"
+set ::env(CLOCK_NET) "prog_clk"
 
 # Synthesis
 set ::env(SYNTH_MAX_FANOUT) 6
