@@ -69,7 +69,7 @@ set ::env(CLOCK_PERIOD) "10"
 set ::env(CLOCK_PORT) "clk"
 
 set ::env(SYNTH_MAX_FANOUT)  7
-set ::env(SYNTH_FLAT_TOP) 1
+set ::env(SYNTH_FLAT_TOP) 0
 set ::env(CELL_PAD) 8
 
 set ::env(FP_SIZING) absolute
