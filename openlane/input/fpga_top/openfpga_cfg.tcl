@@ -3,8 +3,8 @@
 # and Macro Sizes
 #####################
 
-set grid_x 2
-set grid_y 2
+set grid_x 12
+set grid_y 12
 
 # grid clb
 set clb_x 250

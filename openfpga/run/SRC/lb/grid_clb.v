@@ -100,8 +100,8 @@ module grid_clb
   assign SC_IN_TOP = SC_IN_BOT;
   assign SC_OUT_TOP = SC_OUT_BOT;
 
-  logical_tile_clb_mode_clb_
-  ltile_clb_0
+  ltile_clb_mode
+  ltile_clb_mode_0
   (
     .prog_clk(prog_clk[0]),
     .Test_en(Test_en[0]),

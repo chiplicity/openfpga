@@ -9,7 +9,7 @@
 `timescale 1ns / 1ps
 
 //
-module ltile_clb_m_default_ff(Test_en,
+module ltile_clb__ff(Test_en,
                                                                                  clk,
                                                                                  ff_D,
                                                                                  ff_DI,
