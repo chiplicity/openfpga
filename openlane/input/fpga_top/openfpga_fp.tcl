@@ -1,5 +1,5 @@
 set script_dir [file dirname [file normalize [info script]]]
-source $script_dir/openfpga_cfg.tcl
+source $script_dir/../sizes.tcl
 
 # Calculate Spacings
 set sb_to_cbx 65

@@ -1,5 +1,6 @@
 
 set script_dir [file dirname [file normalize [info script]]]
+source $script_dir/../sizes.tcl
 
 set ::env(DESIGN_NAME) cbx_1__2_
 
@@ -21,7 +22,7 @@ set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 
 # Floorplan & Placement
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 150 120"
+set ::env(DIE_AREA) "0 0 $cbx_x $cbx_y"
 set ::env(PL_TARGET_DENSITY) 0.3
 set ::env(CELL_PAD) 8
 

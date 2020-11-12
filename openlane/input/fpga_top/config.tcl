@@ -47,29 +47,28 @@ set ::env(EXTRA_LEFS) "$script_dir/../../../lef/cbx_1__0_.lef \
         $script_dir/../../../lef/sb_2__2_.lef \
         $script_dir/../../../lef/grid_clb.lef"
 
-set ::env(EXTRA_GDS_FILES) "$script_dir/../../../gds/cbx_1__0_.gds \
-        $script_dir/../../../gds/cbx_1__1_.gds \
-        $script_dir/../../../gds/cbx_1__2_.gds \
-        $script_dir/../../../gds/cby_0__1_.gds \
-        $script_dir/../../../gds/cby_1__1_.gds \
-        $script_dir/../../../gds/cby_2__1_.gds \
-        $script_dir/../../../gds/sb_0__0_.gds \
-        $script_dir/../../../gds/sb_0__1_.gds \
-        $script_dir/../../../gds/sb_0__2_.gds \
-        $script_dir/../../../gds/sb_1__0_.gds \
-        $script_dir/../../../gds/sb_1__1_.gds \
-        $script_dir/../../../gds/sb_1__2_.gds \
-        $script_dir/../../../gds/sb_2__0_.gds \
-        $script_dir/../../../gds/sb_2__1_.gds \
-        $script_dir/../../../gds/sb_2__2_.gds \
-        $script_dir/../../../gds/grid_clb.gds"
+# set ::env(EXTRA_GDS_FILES) "$script_dir/../../../gds/cbx_1__0_.gds \
+#         $script_dir/../../../gds/cbx_1__1_.gds \
+#         $script_dir/../../../gds/cbx_1__2_.gds \
+#         $script_dir/../../../gds/cby_0__1_.gds \
+#         $script_dir/../../../gds/cby_1__1_.gds \
+#         $script_dir/../../../gds/cby_2__1_.gds \
+#         $script_dir/../../../gds/sb_0__0_.gds \
+#         $script_dir/../../../gds/sb_0__1_.gds \
+#         $script_dir/../../../gds/sb_0__2_.gds \
+#         $script_dir/../../../gds/sb_1__0_.gds \
+#         $script_dir/../../../gds/sb_1__1_.gds \
+#         $script_dir/../../../gds/sb_1__2_.gds \
+#         $script_dir/../../../gds/sb_2__0_.gds \
+#         $script_dir/../../../gds/sb_2__1_.gds \
+#         $script_dir/../../../gds/sb_2__2_.gds \
+#         $script_dir/../../../gds/grid_clb.gds"
 
 # Fill this
 set ::env(CLOCK_PERIOD) "10"
 set ::env(CLOCK_PORT) "clk"
 
 set ::env(SYNTH_MAX_FANOUT)  7
-set ::env(SYNTH_FLAT_TOP) 0
 set ::env(CELL_PAD) 8
 
 set ::env(FP_SIZING) absolute

@@ -1,5 +1,6 @@
 
 set script_dir [file dirname [file normalize [info script]]]
+source $script_dir/../sizes.tcl
 
 set ::env(DESIGN_NAME) sb_0__2_
 
@@ -23,7 +24,7 @@ set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 
 # Floorplan & Placement
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 140 140"
+set ::env(DIE_AREA) "0 0 $sb_x $sb_y"
 set ::env(PL_TARGET_DENSITY) 0.5
 set ::env(CELL_PAD) 8
 
@@ -32,7 +33,7 @@ set ::env(RUN_MAGIC) 1
 # Routing
 set ::env(ROUTING_STRATEGY) 0
 
-set ::env(PDN_CFG) $script_dir/pdn.tcl
+set ::env(PDN_CFG) $script_dir/../pdn.tcl
 set ::env(FP_PIN_ORDER_CFG) $script_dir/pin.cfg
 
 set ::env(USE_ARC_ANTENNA_CHECK) 1
