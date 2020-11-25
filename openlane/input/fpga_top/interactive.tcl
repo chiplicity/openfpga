@@ -15,9 +15,9 @@ source $script_dir/openfpga_fp.tcl
 
 set ::env(DIE_AREA) "0 0 $floorplan_x $floorplan_y"
 
-init_floorplan_or
+init_floorplan
 place_io_ol -cfg $::env(FP_PIN_ORDER_CFG)
-global_placement_or
+global_placement
 
 # xbars
 for { set i 0}  {$i < $num_cbx_x} {incr i} {
@@ -55,17 +55,17 @@ for { set i 0}  {$i < $num_clbs_x} {incr i} {
 if {$EMBED_IOS == 0} {
     for {set i 0} { $i < $num_hor_io_blocks} {incr i} {
         
-        set macro_name grid_io_top_[expr {$i + 1}]__[expr {$grid_y + 1}]_
+        set macro_name grid_io_top_top_[expr {$i + 1}]__[expr {$grid_y + 1}]_
         add_macro_placement $macro_name [expr {$grid_io_top_x($i) }] [expr {$grid_io_top_y($i) }] N
 
-        set macro_name grid_io_bottom_[expr {$i + 1}]__0_
+        set macro_name grid_io_bottom_bottom_[expr {$i + 1}]__0_
         add_macro_placement $macro_name [expr {$grid_io_bottom_x($i) }] [expr {$grid_io_bottom_y($i) }] N
     }
     for {set i 0} { $i < $num_ver_io_blocks} {incr i} {
-        set macro_name grid_io_left_0__[expr {$i + 1}]_
+        set macro_name grid_io_left_left_0__[expr {$i + 1}]_
         add_macro_placement $macro_name [expr {$grid_io_left_x($i) }] [expr {$grid_io_left_y($i) }] N
         
-        set macro_name grid_io_right_[expr {$grid_y + 1}]__[expr {$i + 1}]_
+        set macro_name grid_io_right_right_[expr {$grid_y + 1}]__[expr {$i + 1}]_
         add_macro_placement $macro_name [expr {$grid_io_right_x($i) }] [expr {$grid_io_right_y($i) }] N
     }
 }
@@ -82,7 +82,7 @@ detailed_placement
 # run_cts
 gen_pdn
 
-global_routing_or
+global_routing
 detailed_routing
 
 if { $::env(DIODE_INSERTION_STRATEGY) == 2 } {

@@ -2,20 +2,14 @@ set script_dir [file dirname [file normalize [info script]]]
 source $script_dir/../sizes.tcl
 
 # Calculate Spacings
-set sb_to_cbx 65
-set sb_to_cby 65
+set sb_to_cbx 55
+set sb_to_cby 55
 
 set cbx_to_sb $sb_to_cbx
 set cby_to_sb $sb_to_cby
 
-# set cbx_to_clb 70
-# set clb_to_cbx 40
-
 set sb_to_cby_x 0
-set sb_to_cby_y 65
-
-# set clb_to_cby 70
-# set cby_to_clb $clb_to_cby
+set sb_to_cby_y 55
 
 # tile calculations
 set tile_x [expr {$sb_x + $sb_to_cbx + \

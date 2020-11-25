@@ -14,7 +14,7 @@ set ::env(VERILOG_FILES) "$script_dir/../../../openfpga/run/SRC/routing/sb_0__0_
                           $script_dir/../../../openfpga/run/SRC/sub_module/local_encoder.v \ 
                           $script_dir/../../../openfpga/run/SRC/sub_module/arch_encoder.v"
 
-set ::env(CLOCK_PERIOD) "10"
+set ::env(CLOCK_PERIOD) "5"
 set ::env(CLOCK_PORT) "prog_clk"
 set ::env(CLOCK_NET) "prog_clk"
 
@@ -26,7 +26,7 @@ set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 set ::env(FP_SIZING) absolute
 set ::env(DIE_AREA) "0 0 $sb_x $sb_y"
 set ::env(PL_TARGET_DENSITY) 0.4
-set ::env(CELL_PAD) 8
+set ::env(CELL_PAD) 2
 
 set ::env(RUN_MAGIC) 1
 

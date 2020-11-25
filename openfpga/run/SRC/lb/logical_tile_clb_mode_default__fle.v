@@ -1,65 +1,62 @@
-//
-//
-//
-//
-//
-//
-//
-//
+//-------------------------------------------
+//	FPGA Synthesizable Verilog Netlist
+//	Description: Verilog modules for pb_type: fle
+//	Author: Xifan TANG
+//	Organization: University of Utah
+//	Date: Tue Nov 24 12:27:30 2020
+//-------------------------------------------
+//----- Time scale -----
 `timescale 1ns / 1ps
 
-//
-//
-module ltile_clb_mode_fle(prog_clk,
+// ----- BEGIN Physical programmable logic block Verilog module: fle -----
+// ----- Verilog module for ltile_fle -----
+module ltile_fle(prog_clk,
                                           Test_en,
-                                          clk,
                                           fle_in,
-                                          fle_regin,
+                                          fle_reg_in,
                                           fle_sc_in,
                                           fle_clk,
                                           ccff_head,
                                           fle_out,
-                                          fle_regout,
+                                          fle_reg_out,
                                           fle_sc_out,
                                           ccff_tail);
-//
+//----- GLOBAL PORTS -----
 input [0:0] prog_clk;
-//
+//----- GLOBAL PORTS -----
 input [0:0] Test_en;
-//
-input [0:0] clk;
-//
+//----- INPUT PORTS -----
 input [0:3] fle_in;
-//
-input [0:0] fle_regin;
-//
+//----- INPUT PORTS -----
+input [0:0] fle_reg_in;
+//----- INPUT PORTS -----
 input [0:0] fle_sc_in;
-//
+//----- INPUT PORTS -----
 input [0:0] fle_clk;
-//
+//----- INPUT PORTS -----
 input [0:0] ccff_head;
-//
+//----- OUTPUT PORTS -----
 output [0:1] fle_out;
-//
-output [0:0] fle_regout;
-//
+//----- OUTPUT PORTS -----
+output [0:0] fle_reg_out;
+//----- OUTPUT PORTS -----
 output [0:0] fle_sc_out;
-//
+//----- OUTPUT PORTS -----
 output [0:0] ccff_tail;
 
-//
+//----- BEGIN wire-connection ports -----
 wire [0:3] fle_in;
-wire [0:0] fle_regin;
+wire [0:0] fle_reg_in;
 wire [0:0] fle_sc_in;
 wire [0:0] fle_clk;
 wire [0:1] fle_out;
-wire [0:0] fle_regout;
+wire [0:0] fle_reg_out;
 wire [0:0] fle_sc_out;
-//
+//----- END wire-connection ports -----
 
 
-//
-//
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
 
 
 wire [0:0] direct_interc_10_out;
@@ -69,43 +66,42 @@ wire [0:0] direct_interc_6_out;
 wire [0:0] direct_interc_7_out;
 wire [0:0] direct_interc_8_out;
 wire [0:0] direct_interc_9_out;
-wire [0:1] ltile_clb_physical__fabric_0_fabric_out;
-wire [0:0] ltile_clb_physical__fabric_0_fabric_regout;
-wire [0:0] ltile_clb_physical__fabric_0_fabric_sc_out;
+wire [0:1] ltile_phy_fabric_0_fabric_out;
+wire [0:0] ltile_phy_fabric_0_fabric_reg_out;
+wire [0:0] ltile_phy_fabric_0_fabric_sc_out;
 
-//
-//
-//
-//
+// ----- BEGIN Local short connections -----
+// ----- END Local short connections -----
+// ----- BEGIN Local output short connections -----
+// ----- END Local output short connections -----
 
-	ltile_clb_physical__fabric ltile_clb_physical__fabric_0 (
+	ltile_phy_fabric ltile_phy_fabric_0 (
 		.prog_clk(prog_clk[0]),
 		.Test_en(Test_en[0]),
-		.clk(clk[0]),
 		.fabric_in({direct_interc_4_out[0], direct_interc_5_out[0], direct_interc_6_out[0], direct_interc_7_out[0]}),
-		.fabric_regin(direct_interc_8_out[0]),
+		.fabric_reg_in(direct_interc_8_out[0]),
 		.fabric_sc_in(direct_interc_9_out[0]),
 		.fabric_clk(direct_interc_10_out[0]),
 		.ccff_head(ccff_head[0]),
-		.fabric_out(ltile_clb_physical__fabric_0_fabric_out[0:1]),
-		.fabric_regout(ltile_clb_physical__fabric_0_fabric_regout[0]),
-		.fabric_sc_out(ltile_clb_physical__fabric_0_fabric_sc_out[0]),
+		.fabric_out(ltile_phy_fabric_0_fabric_out[0:1]),
+		.fabric_reg_out(ltile_phy_fabric_0_fabric_reg_out[0]),
+		.fabric_sc_out(ltile_phy_fabric_0_fabric_sc_out[0]),
 		.ccff_tail(ccff_tail[0]));
 
 	direct_interc direct_interc_0_ (
-		.in(ltile_clb_physical__fabric_0_fabric_out[0]),
+		.in(ltile_phy_fabric_0_fabric_out[0]),
 		.out(fle_out[0]));
 
 	direct_interc direct_interc_1_ (
-		.in(ltile_clb_physical__fabric_0_fabric_out[1]),
+		.in(ltile_phy_fabric_0_fabric_out[1]),
 		.out(fle_out[1]));
 
 	direct_interc direct_interc_2_ (
-		.in(ltile_clb_physical__fabric_0_fabric_regout[0]),
-		.out(fle_regout[0]));
+		.in(ltile_phy_fabric_0_fabric_reg_out[0]),
+		.out(fle_reg_out[0]));
 
 	direct_interc direct_interc_3_ (
-		.in(ltile_clb_physical__fabric_0_fabric_sc_out[0]),
+		.in(ltile_phy_fabric_0_fabric_sc_out[0]),
 		.out(fle_sc_out[0]));
 
 	direct_interc direct_interc_4_ (
@@ -125,7 +121,7 @@ wire [0:0] ltile_clb_physical__fabric_0_fabric_sc_out;
 		.out(direct_interc_7_out[0]));
 
 	direct_interc direct_interc_8_ (
-		.in(fle_regin[0]),
+		.in(fle_reg_in[0]),
 		.out(direct_interc_8_out[0]));
 
 	direct_interc direct_interc_9_ (
@@ -137,7 +133,7 @@ wire [0:0] ltile_clb_physical__fabric_0_fabric_sc_out;
 		.out(direct_interc_10_out[0]));
 
 endmodule
-//
+// ----- END Verilog module for ltile_fle -----
 
 
-//
+// ----- END Physical programmable logic block Verilog module: fle -----

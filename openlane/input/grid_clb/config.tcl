@@ -11,9 +11,9 @@ set ::env(VERILOG_FILES) " $script_dir/../../../openfpga/run/SRC/sub_module/*.v 
                     $script_dir/../../../openfpga/run/SRC/lb/*.v "
 
 # Fill this
-set ::env(CLOCK_PORT) "clk"
-set ::env(CLOCK_PERIOD) "10"
-set ::env(CLOCK_NET) "clk prog_clk"
+set ::env(CLOCK_PORT) "prog_clk"
+set ::env(CLOCK_PERIOD) "15"
+set ::env(CLOCK_NET) "prog_clk clk"
 
 # Synthesis
 set ::env(SYNTH_MAX_FANOUT) 6
@@ -22,7 +22,7 @@ set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 # Floorplan & Placement
 set ::env(FP_SIZING) absolute
 set ::env(DIE_AREA) "0 0 $clb_x $clb_y"
-set ::env(PL_TARGET_DENSITY) 0.95
+set ::env(PL_TARGET_DENSITY) 0.86
 set ::env(CELL_PAD) 2
 
 set ::env(RUN_MAGIC) 1

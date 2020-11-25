@@ -1,41 +1,41 @@
-//
-//
-//
-//
-//
-//
-//
-//
+//-------------------------------------------
+//	FPGA Synthesizable Verilog Netlist
+//	Description: Memories used in FPGA
+//	Author: Xifan TANG
+//	Organization: University of Utah
+//	Date: Tue Nov 24 12:27:30 2020
+//-------------------------------------------
+//----- Time scale -----
 `timescale 1ns / 1ps
 
-//
+// ----- Verilog module for mux_tree_tapbuf_size10_mem -----
 module mux_tree_tapbuf_size10_mem(prog_clk,
                                   ccff_head,
                                   ccff_tail,
                                   mem_out);
-//
+//----- GLOBAL PORTS -----
 input [0:0] prog_clk;
-//
+//----- INPUT PORTS -----
 input [0:0] ccff_head;
-//
+//----- OUTPUT PORTS -----
 output [0:0] ccff_tail;
-//
+//----- OUTPUT PORTS -----
 output [0:3] mem_out;
 
-//
-//
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
 
 
-//
-//
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
 
 
 
-//
-//
-//
+// ----- BEGIN Local short connections -----
+// ----- END Local short connections -----
+// ----- BEGIN Local output short connections -----
 	assign ccff_tail[0] = mem_out[3];
-//
+// ----- END Local output short connections -----
 
 	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_0_ (
 		.CLK(prog_clk[0]),
@@ -58,38 +58,38 @@ output [0:3] mem_out;
 		.Q(mem_out[3]));
 
 endmodule
-//
+// ----- END Verilog module for mux_tree_tapbuf_size10_mem -----
 
 
 
-//
+// ----- Verilog module for mux_tree_tapbuf_size8_mem -----
 module mux_tree_tapbuf_size8_mem(prog_clk,
                                  ccff_head,
                                  ccff_tail,
                                  mem_out);
-//
+//----- GLOBAL PORTS -----
 input [0:0] prog_clk;
-//
+//----- INPUT PORTS -----
 input [0:0] ccff_head;
-//
+//----- OUTPUT PORTS -----
 output [0:0] ccff_tail;
-//
+//----- OUTPUT PORTS -----
 output [0:3] mem_out;
 
-//
-//
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
 
 
-//
-//
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
 
 
 
-//
-//
-//
+// ----- BEGIN Local short connections -----
+// ----- END Local short connections -----
+// ----- BEGIN Local output short connections -----
 	assign ccff_tail[0] = mem_out[3];
-//
+// ----- END Local output short connections -----
 
 	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_0_ (
 		.CLK(prog_clk[0]),
@@ -112,234 +112,38 @@ output [0:3] mem_out;
 		.Q(mem_out[3]));
 
 endmodule
-//
+// ----- END Verilog module for mux_tree_tapbuf_size8_mem -----
 
 
 
-//
-module mux_tree_tapbuf_size4_mem(prog_clk,
-                                 ccff_head,
-                                 ccff_tail,
-                                 mem_out);
-//
-input [0:0] prog_clk;
-//
-input [0:0] ccff_head;
-//
-output [0:0] ccff_tail;
-//
-output [0:2] mem_out;
-
-//
-//
-
-
-//
-//
-
-
-
-//
-//
-//
-	assign ccff_tail[0] = mem_out[2];
-//
-
-	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_0_ (
-		.CLK(prog_clk[0]),
-		.D(ccff_head[0]),
-		.Q(mem_out[0]));
-
-	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_1_ (
-		.CLK(prog_clk[0]),
-		.D(mem_out[0]),
-		.Q(mem_out[1]));
-
-	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_2_ (
-		.CLK(prog_clk[0]),
-		.D(mem_out[1]),
-		.Q(mem_out[2]));
-
-endmodule
-//
-
-
-
-//
-module mux_tree_tapbuf_size7_mem(prog_clk,
-                                 ccff_head,
-                                 ccff_tail,
-                                 mem_out);
-//
-input [0:0] prog_clk;
-//
-input [0:0] ccff_head;
-//
-output [0:0] ccff_tail;
-//
-output [0:2] mem_out;
-
-//
-//
-
-
-//
-//
-
-
-
-//
-//
-//
-	assign ccff_tail[0] = mem_out[2];
-//
-
-	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_0_ (
-		.CLK(prog_clk[0]),
-		.D(ccff_head[0]),
-		.Q(mem_out[0]));
-
-	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_1_ (
-		.CLK(prog_clk[0]),
-		.D(mem_out[0]),
-		.Q(mem_out[1]));
-
-	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_2_ (
-		.CLK(prog_clk[0]),
-		.D(mem_out[1]),
-		.Q(mem_out[2]));
-
-endmodule
-//
-
-
-
-//
-module mux_tree_tapbuf_size11_mem(prog_clk,
-                                  ccff_head,
-                                  ccff_tail,
-                                  mem_out);
-//
-input [0:0] prog_clk;
-//
-input [0:0] ccff_head;
-//
-output [0:0] ccff_tail;
-//
-output [0:3] mem_out;
-
-//
-//
-
-
-//
-//
-
-
-
-//
-//
-//
-	assign ccff_tail[0] = mem_out[3];
-//
-
-	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_0_ (
-		.CLK(prog_clk[0]),
-		.D(ccff_head[0]),
-		.Q(mem_out[0]));
-
-	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_1_ (
-		.CLK(prog_clk[0]),
-		.D(mem_out[0]),
-		.Q(mem_out[1]));
-
-	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_2_ (
-		.CLK(prog_clk[0]),
-		.D(mem_out[1]),
-		.Q(mem_out[2]));
-
-	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_3_ (
-		.CLK(prog_clk[0]),
-		.D(mem_out[2]),
-		.Q(mem_out[3]));
-
-endmodule
-//
-
-
-
-//
-module mux_tree_tapbuf_size2_mem(prog_clk,
-                                 ccff_head,
-                                 ccff_tail,
-                                 mem_out);
-//
-input [0:0] prog_clk;
-//
-input [0:0] ccff_head;
-//
-output [0:0] ccff_tail;
-//
-output [0:1] mem_out;
-
-//
-//
-
-
-//
-//
-
-
-
-//
-//
-//
-	assign ccff_tail[0] = mem_out[1];
-//
-
-	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_0_ (
-		.CLK(prog_clk[0]),
-		.D(ccff_head[0]),
-		.Q(mem_out[0]));
-
-	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_1_ (
-		.CLK(prog_clk[0]),
-		.D(mem_out[0]),
-		.Q(mem_out[1]));
-
-endmodule
-//
-
-
-
-//
+// ----- Verilog module for mux_tree_tapbuf_size6_mem -----
 module mux_tree_tapbuf_size6_mem(prog_clk,
                                  ccff_head,
                                  ccff_tail,
                                  mem_out);
-//
+//----- GLOBAL PORTS -----
 input [0:0] prog_clk;
-//
+//----- INPUT PORTS -----
 input [0:0] ccff_head;
-//
+//----- OUTPUT PORTS -----
 output [0:0] ccff_tail;
-//
+//----- OUTPUT PORTS -----
 output [0:2] mem_out;
 
-//
-//
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
 
 
-//
-//
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
 
 
 
-//
-//
-//
+// ----- BEGIN Local short connections -----
+// ----- END Local short connections -----
+// ----- BEGIN Local output short connections -----
 	assign ccff_tail[0] = mem_out[2];
-//
+// ----- END Local output short connections -----
 
 	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_0_ (
 		.CLK(prog_clk[0]),
@@ -357,38 +161,38 @@ output [0:2] mem_out;
 		.Q(mem_out[2]));
 
 endmodule
-//
+// ----- END Verilog module for mux_tree_tapbuf_size6_mem -----
 
 
 
-//
+// ----- Verilog module for mux_tree_tapbuf_size5_mem -----
 module mux_tree_tapbuf_size5_mem(prog_clk,
                                  ccff_head,
                                  ccff_tail,
                                  mem_out);
-//
+//----- GLOBAL PORTS -----
 input [0:0] prog_clk;
-//
+//----- INPUT PORTS -----
 input [0:0] ccff_head;
-//
+//----- OUTPUT PORTS -----
 output [0:0] ccff_tail;
-//
+//----- OUTPUT PORTS -----
 output [0:2] mem_out;
 
-//
-//
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
 
 
-//
-//
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
 
 
 
-//
-//
-//
+// ----- BEGIN Local short connections -----
+// ----- END Local short connections -----
+// ----- BEGIN Local output short connections -----
 	assign ccff_tail[0] = mem_out[2];
-//
+// ----- END Local output short connections -----
 
 	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_0_ (
 		.CLK(prog_clk[0]),
@@ -406,38 +210,38 @@ output [0:2] mem_out;
 		.Q(mem_out[2]));
 
 endmodule
-//
+// ----- END Verilog module for mux_tree_tapbuf_size5_mem -----
 
 
 
-//
-module mux_tree_tapbuf_size12_mem(prog_clk,
+// ----- Verilog module for mux_tree_tapbuf_size14_mem -----
+module mux_tree_tapbuf_size14_mem(prog_clk,
                                   ccff_head,
                                   ccff_tail,
                                   mem_out);
-//
+//----- GLOBAL PORTS -----
 input [0:0] prog_clk;
-//
+//----- INPUT PORTS -----
 input [0:0] ccff_head;
-//
+//----- OUTPUT PORTS -----
 output [0:0] ccff_tail;
-//
+//----- OUTPUT PORTS -----
 output [0:3] mem_out;
 
-//
-//
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
 
 
-//
-//
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
 
 
 
-//
-//
-//
+// ----- BEGIN Local short connections -----
+// ----- END Local short connections -----
+// ----- BEGIN Local output short connections -----
 	assign ccff_tail[0] = mem_out[3];
-//
+// ----- END Local output short connections -----
 
 	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_0_ (
 		.CLK(prog_clk[0]),
@@ -460,38 +264,283 @@ output [0:3] mem_out;
 		.Q(mem_out[3]));
 
 endmodule
-//
+// ----- END Verilog module for mux_tree_tapbuf_size14_mem -----
 
 
 
-//
+// ----- Verilog module for mux_tree_tapbuf_size3_mem -----
+module mux_tree_tapbuf_size3_mem(prog_clk,
+                                 ccff_head,
+                                 ccff_tail,
+                                 mem_out);
+//----- GLOBAL PORTS -----
+input [0:0] prog_clk;
+//----- INPUT PORTS -----
+input [0:0] ccff_head;
+//----- OUTPUT PORTS -----
+output [0:0] ccff_tail;
+//----- OUTPUT PORTS -----
+output [0:1] mem_out;
+
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
+
+
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
+
+
+
+// ----- BEGIN Local short connections -----
+// ----- END Local short connections -----
+// ----- BEGIN Local output short connections -----
+	assign ccff_tail[0] = mem_out[1];
+// ----- END Local output short connections -----
+
+	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_0_ (
+		.CLK(prog_clk[0]),
+		.D(ccff_head[0]),
+		.Q(mem_out[0]));
+
+	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_1_ (
+		.CLK(prog_clk[0]),
+		.D(mem_out[0]),
+		.Q(mem_out[1]));
+
+endmodule
+// ----- END Verilog module for mux_tree_tapbuf_size3_mem -----
+
+
+
+// ----- Verilog module for mux_tree_tapbuf_size2_mem -----
+module mux_tree_tapbuf_size2_mem(prog_clk,
+                                 ccff_head,
+                                 ccff_tail,
+                                 mem_out);
+//----- GLOBAL PORTS -----
+input [0:0] prog_clk;
+//----- INPUT PORTS -----
+input [0:0] ccff_head;
+//----- OUTPUT PORTS -----
+output [0:0] ccff_tail;
+//----- OUTPUT PORTS -----
+output [0:1] mem_out;
+
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
+
+
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
+
+
+
+// ----- BEGIN Local short connections -----
+// ----- END Local short connections -----
+// ----- BEGIN Local output short connections -----
+	assign ccff_tail[0] = mem_out[1];
+// ----- END Local output short connections -----
+
+	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_0_ (
+		.CLK(prog_clk[0]),
+		.D(ccff_head[0]),
+		.Q(mem_out[0]));
+
+	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_1_ (
+		.CLK(prog_clk[0]),
+		.D(mem_out[0]),
+		.Q(mem_out[1]));
+
+endmodule
+// ----- END Verilog module for mux_tree_tapbuf_size2_mem -----
+
+
+
+// ----- Verilog module for mux_tree_tapbuf_size7_mem -----
+module mux_tree_tapbuf_size7_mem(prog_clk,
+                                 ccff_head,
+                                 ccff_tail,
+                                 mem_out);
+//----- GLOBAL PORTS -----
+input [0:0] prog_clk;
+//----- INPUT PORTS -----
+input [0:0] ccff_head;
+//----- OUTPUT PORTS -----
+output [0:0] ccff_tail;
+//----- OUTPUT PORTS -----
+output [0:2] mem_out;
+
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
+
+
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
+
+
+
+// ----- BEGIN Local short connections -----
+// ----- END Local short connections -----
+// ----- BEGIN Local output short connections -----
+	assign ccff_tail[0] = mem_out[2];
+// ----- END Local output short connections -----
+
+	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_0_ (
+		.CLK(prog_clk[0]),
+		.D(ccff_head[0]),
+		.Q(mem_out[0]));
+
+	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_1_ (
+		.CLK(prog_clk[0]),
+		.D(mem_out[0]),
+		.Q(mem_out[1]));
+
+	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_2_ (
+		.CLK(prog_clk[0]),
+		.D(mem_out[1]),
+		.Q(mem_out[2]));
+
+endmodule
+// ----- END Verilog module for mux_tree_tapbuf_size7_mem -----
+
+
+
+// ----- Verilog module for mux_tree_tapbuf_size9_mem -----
+module mux_tree_tapbuf_size9_mem(prog_clk,
+                                 ccff_head,
+                                 ccff_tail,
+                                 mem_out);
+//----- GLOBAL PORTS -----
+input [0:0] prog_clk;
+//----- INPUT PORTS -----
+input [0:0] ccff_head;
+//----- OUTPUT PORTS -----
+output [0:0] ccff_tail;
+//----- OUTPUT PORTS -----
+output [0:3] mem_out;
+
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
+
+
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
+
+
+
+// ----- BEGIN Local short connections -----
+// ----- END Local short connections -----
+// ----- BEGIN Local output short connections -----
+	assign ccff_tail[0] = mem_out[3];
+// ----- END Local output short connections -----
+
+	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_0_ (
+		.CLK(prog_clk[0]),
+		.D(ccff_head[0]),
+		.Q(mem_out[0]));
+
+	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_1_ (
+		.CLK(prog_clk[0]),
+		.D(mem_out[0]),
+		.Q(mem_out[1]));
+
+	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_2_ (
+		.CLK(prog_clk[0]),
+		.D(mem_out[1]),
+		.Q(mem_out[2]));
+
+	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_3_ (
+		.CLK(prog_clk[0]),
+		.D(mem_out[2]),
+		.Q(mem_out[3]));
+
+endmodule
+// ----- END Verilog module for mux_tree_tapbuf_size9_mem -----
+
+
+
+// ----- Verilog module for mux_tree_tapbuf_size12_mem -----
+module mux_tree_tapbuf_size12_mem(prog_clk,
+                                  ccff_head,
+                                  ccff_tail,
+                                  mem_out);
+//----- GLOBAL PORTS -----
+input [0:0] prog_clk;
+//----- INPUT PORTS -----
+input [0:0] ccff_head;
+//----- OUTPUT PORTS -----
+output [0:0] ccff_tail;
+//----- OUTPUT PORTS -----
+output [0:3] mem_out;
+
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
+
+
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
+
+
+
+// ----- BEGIN Local short connections -----
+// ----- END Local short connections -----
+// ----- BEGIN Local output short connections -----
+	assign ccff_tail[0] = mem_out[3];
+// ----- END Local output short connections -----
+
+	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_0_ (
+		.CLK(prog_clk[0]),
+		.D(ccff_head[0]),
+		.Q(mem_out[0]));
+
+	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_1_ (
+		.CLK(prog_clk[0]),
+		.D(mem_out[0]),
+		.Q(mem_out[1]));
+
+	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_2_ (
+		.CLK(prog_clk[0]),
+		.D(mem_out[1]),
+		.Q(mem_out[2]));
+
+	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_3_ (
+		.CLK(prog_clk[0]),
+		.D(mem_out[2]),
+		.Q(mem_out[3]));
+
+endmodule
+// ----- END Verilog module for mux_tree_tapbuf_size12_mem -----
+
+
+
+// ----- Verilog module for mux_tree_tapbuf_size16_mem -----
 module mux_tree_tapbuf_size16_mem(prog_clk,
                                   ccff_head,
                                   ccff_tail,
                                   mem_out);
-//
+//----- GLOBAL PORTS -----
 input [0:0] prog_clk;
-//
+//----- INPUT PORTS -----
 input [0:0] ccff_head;
-//
+//----- OUTPUT PORTS -----
 output [0:0] ccff_tail;
-//
+//----- OUTPUT PORTS -----
 output [0:4] mem_out;
 
-//
-//
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
 
 
-//
-//
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
 
 
 
-//
-//
-//
+// ----- BEGIN Local short connections -----
+// ----- END Local short connections -----
+// ----- BEGIN Local output short connections -----
 	assign ccff_tail[0] = mem_out[4];
-//
+// ----- END Local output short connections -----
 
 	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_0_ (
 		.CLK(prog_clk[0]),
@@ -519,82 +568,38 @@ output [0:4] mem_out;
 		.Q(mem_out[4]));
 
 endmodule
-//
+// ----- END Verilog module for mux_tree_tapbuf_size16_mem -----
 
 
 
-//
-module mux_tree_tapbuf_size3_mem(prog_clk,
+// ----- Verilog module for mux_tree_tapbuf_size4_mem -----
+module mux_tree_tapbuf_size4_mem(prog_clk,
                                  ccff_head,
                                  ccff_tail,
                                  mem_out);
-//
+//----- GLOBAL PORTS -----
 input [0:0] prog_clk;
-//
+//----- INPUT PORTS -----
 input [0:0] ccff_head;
-//
+//----- OUTPUT PORTS -----
 output [0:0] ccff_tail;
-//
-output [0:1] mem_out;
+//----- OUTPUT PORTS -----
+output [0:2] mem_out;
 
-//
-//
-
-
-//
-//
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
 
 
-
-//
-//
-//
-	assign ccff_tail[0] = mem_out[1];
-//
-
-	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_0_ (
-		.CLK(prog_clk[0]),
-		.D(ccff_head[0]),
-		.Q(mem_out[0]));
-
-	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_1_ (
-		.CLK(prog_clk[0]),
-		.D(mem_out[0]),
-		.Q(mem_out[1]));
-
-endmodule
-//
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
 
 
 
-//
-module mux_tree_tapbuf_size9_mem(prog_clk,
-                                 ccff_head,
-                                 ccff_tail,
-                                 mem_out);
-//
-input [0:0] prog_clk;
-//
-input [0:0] ccff_head;
-//
-output [0:0] ccff_tail;
-//
-output [0:3] mem_out;
-
-//
-//
-
-
-//
-//
-
-
-
-//
-//
-//
-	assign ccff_tail[0] = mem_out[3];
-//
+// ----- BEGIN Local short connections -----
+// ----- END Local short connections -----
+// ----- BEGIN Local output short connections -----
+	assign ccff_tail[0] = mem_out[2];
+// ----- END Local output short connections -----
 
 	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_0_ (
 		.CLK(prog_clk[0]),
@@ -611,98 +616,39 @@ output [0:3] mem_out;
 		.D(mem_out[1]),
 		.Q(mem_out[2]));
 
-	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_3_ (
-		.CLK(prog_clk[0]),
-		.D(mem_out[2]),
-		.Q(mem_out[3]));
-
 endmodule
-//
+// ----- END Verilog module for mux_tree_tapbuf_size4_mem -----
 
 
 
-//
-module mux_tree_tapbuf_size14_mem(prog_clk,
-                                  ccff_head,
-                                  ccff_tail,
-                                  mem_out);
-//
-input [0:0] prog_clk;
-//
-input [0:0] ccff_head;
-//
-output [0:0] ccff_tail;
-//
-output [0:3] mem_out;
-
-//
-//
-
-
-//
-//
-
-
-
-//
-//
-//
-	assign ccff_tail[0] = mem_out[3];
-//
-
-	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_0_ (
-		.CLK(prog_clk[0]),
-		.D(ccff_head[0]),
-		.Q(mem_out[0]));
-
-	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_1_ (
-		.CLK(prog_clk[0]),
-		.D(mem_out[0]),
-		.Q(mem_out[1]));
-
-	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_2_ (
-		.CLK(prog_clk[0]),
-		.D(mem_out[1]),
-		.Q(mem_out[2]));
-
-	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_3_ (
-		.CLK(prog_clk[0]),
-		.D(mem_out[2]),
-		.Q(mem_out[3]));
-
-endmodule
-//
-
-
-
-//
+// ----- Verilog module for mux_tree_size2_mem -----
 module mux_tree_size2_mem(prog_clk,
                           ccff_head,
                           ccff_tail,
                           mem_out);
-//
+//----- GLOBAL PORTS -----
 input [0:0] prog_clk;
-//
+//----- INPUT PORTS -----
 input [0:0] ccff_head;
-//
+//----- OUTPUT PORTS -----
 output [0:0] ccff_tail;
-//
+//----- OUTPUT PORTS -----
 output [0:1] mem_out;
 
-//
-//
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
 
 
-//
-//
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
 
 
 
-//
-//
-//
+// ----- BEGIN Local short connections -----
+// ----- END Local short connections -----
+// ----- BEGIN Local output short connections -----
 	assign ccff_tail[0] = mem_out[1];
-//
+// ----- END Local output short connections -----
 
 	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_0_ (
 		.CLK(prog_clk[0]),
@@ -715,38 +661,38 @@ output [0:1] mem_out;
 		.Q(mem_out[1]));
 
 endmodule
-//
+// ----- END Verilog module for mux_tree_size2_mem -----
 
 
 
-//
+// ----- Verilog module for frac_lut4_sky130_fd_sc_hd__dfxtp_1_mem -----
 module frac_lut4_sky130_fd_sc_hd__dfxtp_1_mem(prog_clk,
                                               ccff_head,
                                               ccff_tail,
                                               mem_out);
-//
+//----- GLOBAL PORTS -----
 input [0:0] prog_clk;
-//
+//----- INPUT PORTS -----
 input [0:0] ccff_head;
-//
+//----- OUTPUT PORTS -----
 output [0:0] ccff_tail;
-//
+//----- OUTPUT PORTS -----
 output [0:16] mem_out;
 
-//
-//
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
 
 
-//
-//
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
 
 
 
-//
-//
-//
+// ----- BEGIN Local short connections -----
+// ----- END Local short connections -----
+// ----- BEGIN Local output short connections -----
 	assign ccff_tail[0] = mem_out[16];
-//
+// ----- END Local output short connections -----
 
 	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_0_ (
 		.CLK(prog_clk[0]),
@@ -834,38 +780,38 @@ output [0:16] mem_out;
 		.Q(mem_out[16]));
 
 endmodule
-//
+// ----- END Verilog module for frac_lut4_sky130_fd_sc_hd__dfxtp_1_mem -----
 
 
 
-//
-module EMBEDDED_IO_sky130_fd_sc_hd__dfxtp_1_mem(prog_clk,
-                                                ccff_head,
-                                                ccff_tail,
-                                                mem_out);
-//
+// ----- Verilog module for EMBEDDED_IO_HD_sky130_fd_sc_hd__dfxtp_1_mem -----
+module EMBEDDED_IO_HD_sky130_fd_sc_hd__dfxtp_1_mem(prog_clk,
+                                                   ccff_head,
+                                                   ccff_tail,
+                                                   mem_out);
+//----- GLOBAL PORTS -----
 input [0:0] prog_clk;
-//
+//----- INPUT PORTS -----
 input [0:0] ccff_head;
-//
+//----- OUTPUT PORTS -----
 output [0:0] ccff_tail;
-//
+//----- OUTPUT PORTS -----
 output [0:0] mem_out;
 
-//
-//
+//----- BEGIN wire-connection ports -----
+//----- END wire-connection ports -----
 
 
-//
-//
+//----- BEGIN Registered ports -----
+//----- END Registered ports -----
 
 
 
-//
-//
-//
+// ----- BEGIN Local short connections -----
+// ----- END Local short connections -----
+// ----- BEGIN Local output short connections -----
 	assign ccff_tail[0] = mem_out[0];
-//
+// ----- END Local output short connections -----
 
 	sky130_fd_sc_hd__dfxtp_1 sky130_fd_sc_hd__dfxtp_1_0_ (
 		.CLK(prog_clk[0]),
@@ -873,7 +819,7 @@ output [0:0] mem_out;
 		.Q(mem_out[0]));
 
 endmodule
-//
+// ----- END Verilog module for EMBEDDED_IO_HD_sky130_fd_sc_hd__dfxtp_1_mem -----
 
 
 
