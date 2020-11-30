@@ -7,16 +7,15 @@ set ::env(DESIGN_NAME) cbx_1__0_
 set ::env(PDK) "sky130A"
 set ::env(STD_CELL_LIBRARY) "sky130_fd_sc_hd"
 
-set ::env(VERILOG_FILES) "$script_dir/../../../openfpga/run/SRC/routing/cbx_1__0_.v \
-                          $script_dir/../../../openfpga/run/SRC/sub_module/*.v \
-                          $script_dir/../../../openfpga/run/SRC/lb/*.v"
+set ::env(VERILOG_FILES) "$script_dir/../../../FPGA88_SC_HD_Verilog/SRC/routing/cbx_1__0_.v \
+                          $script_dir/../../../FPGA88_SC_HD_Verilog/SRC/sub_module/*.v \
+                          $script_dir/../../../FPGA88_SC_HD_Verilog/SRC/lb/*.v"
 
 set ::env(CLOCK_PERIOD) "10"
-set ::env(CLOCK_PORT) "prog_clk"
-set ::env(CLOCK_NET) "prog_clk"
+set ::env(CLOCK_PORT) "prog_clk_0_N_in"
+set ::env(CLOCK_NET) "logical_tile_io_mode_io__0.ltile_phy_iopad_0.EMBEDDED_IO_HD_sky130_fd_sc_hd__dfxtp_1_mem.prog_clk"
 
 # Synthesis
-set ::env(SYNTH_MAX_FANOUT) 6
 set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 
 # Floorplan & Placement

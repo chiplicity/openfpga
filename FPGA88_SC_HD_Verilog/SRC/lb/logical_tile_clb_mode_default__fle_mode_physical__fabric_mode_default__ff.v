@@ -8,8 +8,8 @@
 //----- Time scale -----
 `timescale 1ns / 1ps
 
-// ----- Verilog module for logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff -----
-module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff(Test_en,
+// ----- Verilog module for ltile_clb_fle_ff -----
+module ltile_clb_fle_ff(Test_en,
                                                                                  ff_D,
                                                                                  ff_DI,
                                                                                  ff_Q,
@@ -51,6 +51,6 @@ wire [0:0] ff_clk;
 		.Q(ff_Q[0]));
 
 endmodule
-// ----- END Verilog module for logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff -----
+// ----- END Verilog module for ltile_clb_fle_ff -----
 
 

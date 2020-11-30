@@ -113,13 +113,13 @@ module grid_clb
   assign SC_IN_TOP = SC_IN_BOT;
   assign SC_OUT_TOP = SC_OUT_BOT;
   assign Test_en_E_in = Test_en_W_in;
-  assign prog_clk_0 = prog_clk;
+  assign prog_clk  = prog_clk_0;
   assign prog_clk_0_N_in = prog_clk_0_S_in;
   assign clk = clk_0;
   assign clk_0_N_in = clk_0_S_in;
 
-  logical_tile_clb_mode_clb_
-  logical_tile_clb_mode_clb__0
+  ltile_clb_mode_
+  ltile_clb_mode__0
   (
     .prog_clk(prog_clk[0]),
     .Test_en(Test_en[0]),

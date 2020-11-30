@@ -165,7 +165,7 @@ module sb_2__1_
   assign chany_top_out[18] = chany_bottom_in[17];
   assign chany_top_out[19] = chany_bottom_in[18];
   assign chanx_left_out[13] = left_bottom_grid_pin_35_[0];
-  assign prog_clk_0 = prog_clk;
+ assign prog_clk  = prog_clk_0;
 
   mux_tree_tapbuf_size10
   mux_top_track_0

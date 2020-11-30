@@ -9,8 +9,8 @@
 `timescale 1ns / 1ps
 
 // ----- BEGIN Physical programmable logic block Verilog module: fle -----
-// ----- Verilog module for logical_tile_clb_mode_default__fle -----
-module logical_tile_clb_mode_default__fle(prog_clk,
+// ----- Verilog module for ltile_fle -----
+module ltile_fle(prog_clk,
                                           Test_en,
                                           fle_in,
                                           fle_reg_in,
@@ -66,16 +66,16 @@ wire [0:0] direct_interc_6_out;
 wire [0:0] direct_interc_7_out;
 wire [0:0] direct_interc_8_out;
 wire [0:0] direct_interc_9_out;
-wire [0:1] logical_tile_clb_mode_default__fle_mode_physical__fabric_0_fabric_out;
-wire [0:0] logical_tile_clb_mode_default__fle_mode_physical__fabric_0_fabric_reg_out;
-wire [0:0] logical_tile_clb_mode_default__fle_mode_physical__fabric_0_fabric_sc_out;
+wire [0:1] ltile_phy_fabric_0_fabric_out;
+wire [0:0] ltile_phy_fabric_0_fabric_reg_out;
+wire [0:0] ltile_phy_fabric_0_fabric_sc_out;
 
 // ----- BEGIN Local short connections -----
 // ----- END Local short connections -----
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	logical_tile_clb_mode_default__fle_mode_physical__fabric logical_tile_clb_mode_default__fle_mode_physical__fabric_0 (
+	ltile_phy_fabric ltile_phy_fabric_0 (
 		.prog_clk(prog_clk[0]),
 		.Test_en(Test_en[0]),
 		.fabric_in({direct_interc_4_out[0], direct_interc_5_out[0], direct_interc_6_out[0], direct_interc_7_out[0]}),
@@ -83,25 +83,25 @@ wire [0:0] logical_tile_clb_mode_default__fle_mode_physical__fabric_0_fabric_sc_
 		.fabric_sc_in(direct_interc_9_out[0]),
 		.fabric_clk(direct_interc_10_out[0]),
 		.ccff_head(ccff_head[0]),
-		.fabric_out(logical_tile_clb_mode_default__fle_mode_physical__fabric_0_fabric_out[0:1]),
-		.fabric_reg_out(logical_tile_clb_mode_default__fle_mode_physical__fabric_0_fabric_reg_out[0]),
-		.fabric_sc_out(logical_tile_clb_mode_default__fle_mode_physical__fabric_0_fabric_sc_out[0]),
+		.fabric_out(ltile_phy_fabric_0_fabric_out[0:1]),
+		.fabric_reg_out(ltile_phy_fabric_0_fabric_reg_out[0]),
+		.fabric_sc_out(ltile_phy_fabric_0_fabric_sc_out[0]),
 		.ccff_tail(ccff_tail[0]));
 
 	direct_interc direct_interc_0_ (
-		.in(logical_tile_clb_mode_default__fle_mode_physical__fabric_0_fabric_out[0]),
+		.in(ltile_phy_fabric_0_fabric_out[0]),
 		.out(fle_out[0]));
 
 	direct_interc direct_interc_1_ (
-		.in(logical_tile_clb_mode_default__fle_mode_physical__fabric_0_fabric_out[1]),
+		.in(ltile_phy_fabric_0_fabric_out[1]),
 		.out(fle_out[1]));
 
 	direct_interc direct_interc_2_ (
-		.in(logical_tile_clb_mode_default__fle_mode_physical__fabric_0_fabric_reg_out[0]),
+		.in(ltile_phy_fabric_0_fabric_reg_out[0]),
 		.out(fle_reg_out[0]));
 
 	direct_interc direct_interc_3_ (
-		.in(logical_tile_clb_mode_default__fle_mode_physical__fabric_0_fabric_sc_out[0]),
+		.in(ltile_phy_fabric_0_fabric_sc_out[0]),
 		.out(fle_sc_out[0]));
 
 	direct_interc direct_interc_4_ (
@@ -133,7 +133,7 @@ wire [0:0] logical_tile_clb_mode_default__fle_mode_physical__fabric_0_fabric_sc_
 		.out(direct_interc_10_out[0]));
 
 endmodule
-// ----- END Verilog module for logical_tile_clb_mode_default__fle -----
+// ----- END Verilog module for ltile_fle -----
 
 
 // ----- END Physical programmable logic block Verilog module: fle -----

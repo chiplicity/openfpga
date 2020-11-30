@@ -8,8 +8,8 @@
 //----- Time scale -----
 `timescale 1ns / 1ps
 
-// ----- Verilog module for logical_tile_io_mode_physical__iopad -----
-module logical_tile_io_mode_physical__iopad(IO_ISOL_N,
+// ----- Verilog module for ltile_phy_iopad -----
+module ltile_phy_iopad(IO_ISOL_N,
                                             prog_clk,
                                             gfpga_pad_EMBEDDED_IO_HD_SOC_IN,
                                             gfpga_pad_EMBEDDED_IO_HD_SOC_OUT,
@@ -70,6 +70,6 @@ wire [0:0] EMBEDDED_IO_HD_0_en;
 		.mem_out(EMBEDDED_IO_HD_0_en[0]));
 
 endmodule
-// ----- END Verilog module for logical_tile_io_mode_physical__iopad -----
+// ----- END Verilog module for ltile_phy_iopad -----
 
 

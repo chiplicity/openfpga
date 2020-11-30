@@ -16,4 +16,4 @@
 
 `define FORMAL_SIMULATION 1
 
-
+`define ICARUS_SIMULATOR 1 

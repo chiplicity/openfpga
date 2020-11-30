@@ -149,7 +149,7 @@ module cbx_1__1_
   assign SC_OUT_BOT = SC_IN_TOP;
   assign SC_OUT_TOP = SC_IN_BOT;
   assign REGOUT_FEEDTHROUGH = REGIN_FEEDTHROUGH;
-  assign prog_clk_0 = prog_clk;
+  assign prog_clk  = prog_clk_0;
   assign prog_clk_1_W_in = prog_clk_1_E_in;
   assign prog_clk_2_W_in = prog_clk_2_E_in;
   assign prog_clk_3_W_in = prog_clk_3_E_in;

@@ -7,16 +7,16 @@ set ::env(DESIGN_NAME) sb_1__0_
 set ::env(PDK) "sky130A"
 set ::env(STD_CELL_LIBRARY) "sky130_fd_sc_hd"
 
-set ::env(VERILOG_FILES) "$script_dir/../../../openfpga/run/SRC/routing/sb_1__0_.v \
-                          $script_dir/../../../openfpga/run/SRC/sub_module/muxes.v \
-                          $script_dir/../../../openfpga/run/SRC/sub_module/memories.v \
-                          $script_dir/../../../openfpga/run/SRC/sub_module/inv_buf_passgate.v \
-                          $script_dir/../../../openfpga/run/SRC/sub_module/local_encoder.v \ 
-                          $script_dir/../../../openfpga/run/SRC/sub_module/arch_encoder.v"
+set ::env(VERILOG_FILES) "$script_dir/../../../FPGA88_SC_HD_Verilog/SRC/routing/sb_1__0_.v \
+                          $script_dir/../../../FPGA88_SC_HD_Verilog/SRC/sub_module/muxes.v \
+                          $script_dir/../../../FPGA88_SC_HD_Verilog/SRC/sub_module/memories.v \
+                          $script_dir/../../../FPGA88_SC_HD_Verilog/SRC/sub_module/inv_buf_passgate.v \
+                          $script_dir/../../../FPGA88_SC_HD_Verilog/SRC/sub_module/local_encoder.v \ 
+                          $script_dir/../../../FPGA88_SC_HD_Verilog/SRC/sub_module/arch_encoder.v"
 
 set ::env(CLOCK_PERIOD) "5"
-set ::env(CLOCK_PORT) "prog_clk"
-set ::env(CLOCK_NET) "prog_clk"
+set ::env(CLOCK_PORT) "prog_clk_0_N_in"
+set ::env(CLOCK_NET) "mem_left_track_1.prog_clk"
 
 # Synthesis
 set ::env(SYNTH_MAX_FANOUT) 6

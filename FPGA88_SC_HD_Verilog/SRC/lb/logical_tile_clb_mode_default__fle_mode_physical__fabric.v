@@ -9,8 +9,8 @@
 `timescale 1ns / 1ps
 
 // ----- BEGIN Physical programmable logic block Verilog module: fabric -----
-// ----- Verilog module for logical_tile_clb_mode_default__fle_mode_physical__fabric -----
-module logical_tile_clb_mode_default__fle_mode_physical__fabric(prog_clk,
+// ----- Verilog module for ltile_phy_fabric -----
+module ltile_phy_fabric(prog_clk,
                                                                 Test_en,
                                                                 fabric_in,
                                                                 fabric_reg_in,
@@ -68,10 +68,10 @@ wire [0:0] direct_interc_6_out;
 wire [0:0] direct_interc_7_out;
 wire [0:0] direct_interc_8_out;
 wire [0:0] direct_interc_9_out;
-wire [0:0] logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0_ff_Q;
-wire [0:0] logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_1_ff_Q;
-wire [0:0] logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_ccff_tail;
-wire [0:1] logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_frac_logic_out;
+wire [0:0] ltile_clb_fle_ff_0_ff_Q;
+wire [0:0] ltile_clb_fle_ff_1_ff_Q;
+wire [0:0] ltile_frac_logic_0_ccff_tail;
+wire [0:1] ltile_frac_logic_0_frac_logic_out;
 wire [0:1] mux_fabric_out_0_undriven_sram_inv;
 wire [0:1] mux_fabric_out_1_undriven_sram_inv;
 wire [0:1] mux_ff_0_D_0_undriven_sram_inv;
@@ -87,48 +87,48 @@ wire [0:0] mux_tree_size2_mem_1_ccff_tail;
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0 (
+	ltile_frac_logic ltile_frac_logic_0 (
 		.prog_clk(prog_clk[0]),
 		.frac_logic_in({direct_interc_2_out[0], direct_interc_3_out[0], direct_interc_4_out[0], direct_interc_5_out[0]}),
 		.ccff_head(ccff_head[0]),
-		.frac_logic_out(logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_frac_logic_out[0:1]),
-		.ccff_tail(logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_ccff_tail[0]));
+		.frac_logic_out(ltile_frac_logic_0_frac_logic_out[0:1]),
+		.ccff_tail(ltile_frac_logic_0_ccff_tail[0]));
 
-	logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0 (
+	ltile_clb_fle_ff ltile_clb_fle_ff_0 (
 		.Test_en(Test_en[0]),
 		.ff_D(mux_tree_size2_2_out[0]),
 		.ff_DI(direct_interc_6_out[0]),
-		.ff_Q(logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0_ff_Q[0]),
+		.ff_Q(ltile_clb_fle_ff_0_ff_Q[0]),
 		.ff_clk(direct_interc_7_out[0]));
 
-	logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_1 (
+	ltile_clb_fle_ff ltile_clb_fle_ff_1 (
 		.Test_en(Test_en[0]),
 		.ff_D(direct_interc_8_out[0]),
 		.ff_DI(direct_interc_9_out[0]),
-		.ff_Q(logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_1_ff_Q[0]),
+		.ff_Q(ltile_clb_fle_ff_1_ff_Q[0]),
 		.ff_clk(direct_interc_10_out[0]));
 
 	mux_tree_size2 mux_fabric_out_0 (
-		.in({logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0_ff_Q[0], logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_frac_logic_out[0]}),
+		.in({ltile_clb_fle_ff_0_ff_Q[0], ltile_frac_logic_0_frac_logic_out[0]}),
 		.sram(mux_tree_size2_0_sram[0:1]),
 		.sram_inv(mux_fabric_out_0_undriven_sram_inv[0:1]),
 		.out(fabric_out[0]));
 
 	mux_tree_size2 mux_fabric_out_1 (
-		.in({logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_1_ff_Q[0], logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_frac_logic_out[1]}),
+		.in({ltile_clb_fle_ff_1_ff_Q[0], ltile_frac_logic_0_frac_logic_out[1]}),
 		.sram(mux_tree_size2_1_sram[0:1]),
 		.sram_inv(mux_fabric_out_1_undriven_sram_inv[0:1]),
 		.out(fabric_out[1]));
 
 	mux_tree_size2 mux_ff_0_D_0 (
-		.in({logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_frac_logic_out[0], fabric_reg_in[0]}),
+		.in({ltile_frac_logic_0_frac_logic_out[0], fabric_reg_in[0]}),
 		.sram(mux_tree_size2_2_sram[0:1]),
 		.sram_inv(mux_ff_0_D_0_undriven_sram_inv[0:1]),
 		.out(mux_tree_size2_2_out[0]));
 
 	mux_tree_size2_mem mem_fabric_out_0 (
 		.prog_clk(prog_clk[0]),
-		.ccff_head(logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_ccff_tail[0]),
+		.ccff_head(ltile_frac_logic_0_ccff_tail[0]),
 		.ccff_tail(mux_tree_size2_mem_0_ccff_tail[0]),
 		.mem_out(mux_tree_size2_0_sram[0:1]));
 
@@ -145,11 +145,11 @@ wire [0:0] mux_tree_size2_mem_1_ccff_tail;
 		.mem_out(mux_tree_size2_2_sram[0:1]));
 
 	direct_interc direct_interc_0_ (
-		.in(logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_1_ff_Q[0]),
+		.in(ltile_clb_fle_ff_1_ff_Q[0]),
 		.out(fabric_reg_out[0]));
 
 	direct_interc direct_interc_1_ (
-		.in(logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_1_ff_Q[0]),
+		.in(ltile_clb_fle_ff_1_ff_Q[0]),
 		.out(fabric_sc_out[0]));
 
 	direct_interc direct_interc_2_ (
@@ -177,11 +177,11 @@ wire [0:0] mux_tree_size2_mem_1_ccff_tail;
 		.out(direct_interc_7_out[0]));
 
 	direct_interc direct_interc_8_ (
-		.in(logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_0_frac_logic_out[1]),
+		.in(ltile_frac_logic_0_frac_logic_out[1]),
 		.out(direct_interc_8_out[0]));
 
 	direct_interc direct_interc_9_ (
-		.in(logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__ff_0_ff_Q[0]),
+		.in(ltile_clb_fle_ff_0_ff_Q[0]),
 		.out(direct_interc_9_out[0]));
 
 	direct_interc direct_interc_10_ (
@@ -189,7 +189,7 @@ wire [0:0] mux_tree_size2_mem_1_ccff_tail;
 		.out(direct_interc_10_out[0]));
 
 endmodule
-// ----- END Verilog module for logical_tile_clb_mode_default__fle_mode_physical__fabric -----
+// ----- END Verilog module for ltile_phy_fabric -----
 
 
 // ----- END Physical programmable logic block Verilog module: fabric -----

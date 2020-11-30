@@ -8,8 +8,8 @@
 //----- Time scale -----
 `timescale 1ns / 1ps
 
-// ----- Verilog module for logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4 -----
-module logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4(prog_clk,
+// ----- Verilog module for ltile_frac_lut4 -----
+module ltile_frac_lut4(prog_clk,
                                                                                                                  frac_lut4_in,
                                                                                                                  ccff_head,
                                                                                                                  frac_lut4_lut3_out,
@@ -65,6 +65,6 @@ wire [0:15] frac_lut4_0_sram;
 		.mem_out({frac_lut4_0_sram[0:15], frac_lut4_0_mode[0]}));
 
 endmodule
-// ----- END Verilog module for logical_tile_clb_mode_default__fle_mode_physical__fabric_mode_default__frac_logic_mode_default__frac_lut4 -----
+// ----- END Verilog module for ltile_frac_lut4 -----
 
 

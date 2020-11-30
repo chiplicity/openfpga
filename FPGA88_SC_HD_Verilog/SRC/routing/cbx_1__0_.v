@@ -143,7 +143,9 @@ module cbx_1__0_
   assign top_width_0_height_0__pin_17_lower[0] = top_width_0_height_0__pin_17_upper[0];
   assign SC_OUT_BOT = SC_IN_TOP;
   assign SC_OUT_TOP = SC_IN_BOT;
-  assign prog_clk_0 = prog_clk;
+  assign prog_clk  = prog_clk_0;
+
+//  assign  prog_clk_0 =  prog_clk;
 
   mux_tree_tapbuf_size10
   mux_top_ipin_0

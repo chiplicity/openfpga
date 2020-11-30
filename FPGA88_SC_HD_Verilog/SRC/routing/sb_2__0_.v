@@ -137,7 +137,7 @@ module sb_2__0_
   assign chany_top_out[16] = chanx_left_in[4];
   assign chany_top_out[15] = chanx_left_in[5];
   assign chany_top_out[14] = chanx_left_in[6];
-  assign prog_clk_0 = prog_clk;
+ assign prog_clk  = prog_clk_0;
 
   mux_tree_tapbuf_size6
   mux_top_track_0

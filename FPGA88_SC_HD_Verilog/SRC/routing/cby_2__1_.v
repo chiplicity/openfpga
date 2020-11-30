@@ -130,7 +130,7 @@ module cby_2__1_
   assign chany_bottom_out[18] = chany_top_in[18];
   assign chany_bottom_out[19] = chany_top_in[19];
   assign left_width_0_height_0__pin_1_lower[0] = left_width_0_height_0__pin_1_upper[0];
-  assign prog_clk_0 = prog_clk;
+ assign prog_clk  = prog_clk_0;
 
   mux_tree_tapbuf_size10
   mux_left_ipin_0

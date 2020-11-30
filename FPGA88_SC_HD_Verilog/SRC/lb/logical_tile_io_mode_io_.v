@@ -49,14 +49,14 @@ wire [0:0] io_inpad;
 
 
 wire [0:0] direct_interc_1_out;
-wire [0:0] logical_tile_io_mode_physical__iopad_0_iopad_inpad;
+wire [0:0] ltile_phy_iopad_0_iopad_inpad;
 
 // ----- BEGIN Local short connections -----
 // ----- END Local short connections -----
 // ----- BEGIN Local output short connections -----
 // ----- END Local output short connections -----
 
-	logical_tile_io_mode_physical__iopad logical_tile_io_mode_physical__iopad_0 (
+	ltile_phy_iopad ltile_phy_iopad_0 (
 		.IO_ISOL_N(IO_ISOL_N[0]),
 		.prog_clk(prog_clk[0]),
 		.gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[0]),
@@ -64,11 +64,11 @@ wire [0:0] logical_tile_io_mode_physical__iopad_0_iopad_inpad;
 		.gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[0]),
 		.iopad_outpad(direct_interc_1_out[0]),
 		.ccff_head(ccff_head[0]),
-		.iopad_inpad(logical_tile_io_mode_physical__iopad_0_iopad_inpad[0]),
+		.iopad_inpad(ltile_phy_iopad_0_iopad_inpad[0]),
 		.ccff_tail(ccff_tail[0]));
 
 	direct_interc direct_interc_0_ (
-		.in(logical_tile_io_mode_physical__iopad_0_iopad_inpad[0]),
+		.in(ltile_phy_iopad_0_iopad_inpad[0]),
 		.out(io_inpad[0]));
 
 	direct_interc direct_interc_1_ (

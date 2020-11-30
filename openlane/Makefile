@@ -1,8 +1,8 @@
-SWITCHES= sb_0__0_ sb_0__1_ sb_0__8_ sb_1__0_ sb_1__1_ sb_1__8_ sb_8__0_ sb_8__1_ sb_8__8_	
-XBARS= cbx_1__0_ cbx_1__1_ cbx_1__8_ cby_0__1_ cby_1__1_ cby_8__1_
+SWITCHES= sb_0__0_ sb_0__1_ sb_0__2_ sb_1__0_ sb_1__1_ sb_1__2_ sb_2__0_ sb_2__1_ sb_2__2_	
+XBARS= cbx_1__0_ cbx_1__1_ cbx_1__2_ cby_0__1_ cby_1__1_ cby_2__1_
 GRID_IOS= grid_io_top grid_io_bottom grid_io_left grid_io_right
 NON_INTERACTIVE_BLOCKS= $(SWITCHES) $(XBARS) $(GRID_IOS) grid_clb
-INTERACTIVE_BLOCKS = fpga_top 
+INTERACTIVE_BLOCKS = fpga_core
 
 INTERACTIVE = $(foreach block,$(INTERACTIVE_BLOCKS), input/$(block)/interactive.tcl)
 CLEAN_INTERACTIVE_BLOCKS = $(foreach block,$(INTERACTIVE_BLOCKS), clean-$(block))

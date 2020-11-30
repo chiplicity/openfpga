@@ -581,13 +581,13 @@ MACRO sb_0__0_
         RECT 84.730 110.880 85.010 113.280 ;
     END
   END chany_top_out[9]
-  PIN prog_clk
+  PIN prog_clk_0_E_in
     DIRECTION INPUT ;
     PORT
       LAYER met3 ;
         RECT 111.600 111.520 114.000 112.120 ;
     END
-  END prog_clk
+  END prog_clk_0_E_in
   PIN right_bottom_grid_pin_11_
     DIRECTION INPUT ;
     PORT
@@ -676,10 +676,11 @@ MACRO sb_0__0_
   END VGND
   OBS
       LAYER li1 ;
-        RECT 5.520 10.075 108.100 100.005 ;
+        RECT 5.520 10.075 108.875 100.005 ;
       LAYER met1 ;
-        RECT 1.450 5.780 112.630 102.940 ;
+        RECT 0.530 5.780 112.630 100.160 ;
       LAYER met2 ;
+        RECT 0.560 110.600 1.190 112.005 ;
         RECT 2.030 110.600 3.950 112.005 ;
         RECT 4.790 110.600 6.710 112.005 ;
         RECT 7.550 110.600 9.470 112.005 ;
@@ -720,7 +721,7 @@ MACRO sb_0__0_
         RECT 104.610 110.600 106.530 112.005 ;
         RECT 107.370 110.600 109.290 112.005 ;
         RECT 110.130 110.600 112.050 112.005 ;
-        RECT 1.480 0.115 112.600 110.600 ;
+        RECT 0.560 0.115 112.600 110.600 ;
       LAYER met3 ;
         RECT 2.400 111.120 111.200 111.985 ;
         RECT 2.400 110.480 111.600 111.120 ;

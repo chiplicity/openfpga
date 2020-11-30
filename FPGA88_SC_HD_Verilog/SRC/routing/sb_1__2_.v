@@ -158,7 +158,7 @@ module sb_1__2_
   assign chanx_right_out[18] = chanx_left_in[17];
   assign chanx_right_out[19] = chanx_left_in[18];
   assign SC_OUT_BOT = SC_IN_BOT;
-  assign prog_clk_0 = prog_clk;
+ assign prog_clk  = prog_clk_0;
 
   mux_tree_tapbuf_size10
   mux_right_track_0
