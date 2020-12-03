@@ -5563,6 +5563,13 @@ module fpga_core
   wire [51:0] clk_2_wires;
   wire [34:0] clk_3_wires;
 
+
+  wire [7:0] logic_zero_tie;
+
+  tie_array tie_array(
+    .x(logic_zero_tie)
+  );
+
   grid_clb
   grid_clb_1__1_
   (
@@ -6165,7 +6172,7 @@ module fpga_core
     .top_width_0_height_0__pin_13_(cbx_1__8__0_bottom_grid_pin_13_[0]),
     .top_width_0_height_0__pin_14_(cbx_1__8__0_bottom_grid_pin_14_[0]),
     .top_width_0_height_0__pin_15_(cbx_1__8__0_bottom_grid_pin_15_[0]),
-    .top_width_0_height_0__pin_32_(grid_clb_1__8__undriven_top_width_0_height_0__pin_32_[0]),
+    .top_width_0_height_0__pin_32_(logic_zero_tie[0]),
     .right_width_0_height_0__pin_16_(cby_1__1__7_left_grid_pin_16_[0]),
     .right_width_0_height_0__pin_17_(cby_1__1__7_left_grid_pin_17_[0]),
     .right_width_0_height_0__pin_18_(cby_1__1__7_left_grid_pin_18_[0]),
@@ -6822,7 +6829,7 @@ module fpga_core
     .top_width_0_height_0__pin_13_(cbx_1__8__1_bottom_grid_pin_13_[0]),
     .top_width_0_height_0__pin_14_(cbx_1__8__1_bottom_grid_pin_14_[0]),
     .top_width_0_height_0__pin_15_(cbx_1__8__1_bottom_grid_pin_15_[0]),
-    .top_width_0_height_0__pin_32_(grid_clb_2__8__undriven_top_width_0_height_0__pin_32_[0]),
+    .top_width_0_height_0__pin_32_(logic_zero_tie[1]),
     .right_width_0_height_0__pin_16_(cby_1__1__15_left_grid_pin_16_[0]),
     .right_width_0_height_0__pin_17_(cby_1__1__15_left_grid_pin_17_[0]),
     .right_width_0_height_0__pin_18_(cby_1__1__15_left_grid_pin_18_[0]),
@@ -7479,7 +7486,7 @@ module fpga_core
     .top_width_0_height_0__pin_13_(cbx_1__8__2_bottom_grid_pin_13_[0]),
     .top_width_0_height_0__pin_14_(cbx_1__8__2_bottom_grid_pin_14_[0]),
     .top_width_0_height_0__pin_15_(cbx_1__8__2_bottom_grid_pin_15_[0]),
-    .top_width_0_height_0__pin_32_(grid_clb_3__8__undriven_top_width_0_height_0__pin_32_[0]),
+    .top_width_0_height_0__pin_32_(logic_zero_tie[2]),
     .right_width_0_height_0__pin_16_(cby_1__1__23_left_grid_pin_16_[0]),
     .right_width_0_height_0__pin_17_(cby_1__1__23_left_grid_pin_17_[0]),
     .right_width_0_height_0__pin_18_(cby_1__1__23_left_grid_pin_18_[0]),
@@ -8136,7 +8143,7 @@ module fpga_core
     .top_width_0_height_0__pin_13_(cbx_1__8__3_bottom_grid_pin_13_[0]),
     .top_width_0_height_0__pin_14_(cbx_1__8__3_bottom_grid_pin_14_[0]),
     .top_width_0_height_0__pin_15_(cbx_1__8__3_bottom_grid_pin_15_[0]),
-    .top_width_0_height_0__pin_32_(grid_clb_4__8__undriven_top_width_0_height_0__pin_32_[0]),
+    .top_width_0_height_0__pin_32_(logic_zero_tie[3]),
     .right_width_0_height_0__pin_16_(cby_1__1__31_left_grid_pin_16_[0]),
     .right_width_0_height_0__pin_17_(cby_1__1__31_left_grid_pin_17_[0]),
     .right_width_0_height_0__pin_18_(cby_1__1__31_left_grid_pin_18_[0]),
@@ -8793,7 +8800,7 @@ module fpga_core
     .top_width_0_height_0__pin_13_(cbx_1__8__4_bottom_grid_pin_13_[0]),
     .top_width_0_height_0__pin_14_(cbx_1__8__4_bottom_grid_pin_14_[0]),
     .top_width_0_height_0__pin_15_(cbx_1__8__4_bottom_grid_pin_15_[0]),
-    .top_width_0_height_0__pin_32_(grid_clb_5__8__undriven_top_width_0_height_0__pin_32_[0]),
+    .top_width_0_height_0__pin_32_(logic_zero_tie[4]),
     .right_width_0_height_0__pin_16_(cby_1__1__39_left_grid_pin_16_[0]),
     .right_width_0_height_0__pin_17_(cby_1__1__39_left_grid_pin_17_[0]),
     .right_width_0_height_0__pin_18_(cby_1__1__39_left_grid_pin_18_[0]),
@@ -9450,7 +9457,7 @@ module fpga_core
     .top_width_0_height_0__pin_13_(cbx_1__8__5_bottom_grid_pin_13_[0]),
     .top_width_0_height_0__pin_14_(cbx_1__8__5_bottom_grid_pin_14_[0]),
     .top_width_0_height_0__pin_15_(cbx_1__8__5_bottom_grid_pin_15_[0]),
-    .top_width_0_height_0__pin_32_(grid_clb_6__8__undriven_top_width_0_height_0__pin_32_[0]),
+    .top_width_0_height_0__pin_32_(logic_zero_tie[5]),
     .right_width_0_height_0__pin_16_(cby_1__1__47_left_grid_pin_16_[0]),
     .right_width_0_height_0__pin_17_(cby_1__1__47_left_grid_pin_17_[0]),
     .right_width_0_height_0__pin_18_(cby_1__1__47_left_grid_pin_18_[0]),
@@ -10107,7 +10114,7 @@ module fpga_core
     .top_width_0_height_0__pin_13_(cbx_1__8__6_bottom_grid_pin_13_[0]),
     .top_width_0_height_0__pin_14_(cbx_1__8__6_bottom_grid_pin_14_[0]),
     .top_width_0_height_0__pin_15_(cbx_1__8__6_bottom_grid_pin_15_[0]),
-    .top_width_0_height_0__pin_32_(grid_clb_7__8__undriven_top_width_0_height_0__pin_32_[0]),
+    .top_width_0_height_0__pin_32_(logic_zero_tie[6]),
     .right_width_0_height_0__pin_16_(cby_1__1__55_left_grid_pin_16_[0]),
     .right_width_0_height_0__pin_17_(cby_1__1__55_left_grid_pin_17_[0]),
     .right_width_0_height_0__pin_18_(cby_1__1__55_left_grid_pin_18_[0]),
@@ -10756,7 +10763,7 @@ module fpga_core
     .top_width_0_height_0__pin_13_(cbx_1__8__7_bottom_grid_pin_13_[0]),
     .top_width_0_height_0__pin_14_(cbx_1__8__7_bottom_grid_pin_14_[0]),
     .top_width_0_height_0__pin_15_(cbx_1__8__7_bottom_grid_pin_15_[0]),
-    .top_width_0_height_0__pin_32_(grid_clb_8__8__undriven_top_width_0_height_0__pin_32_[0]),
+    .top_width_0_height_0__pin_32_(logic_zero_tie[7]),
     .right_width_0_height_0__pin_16_(cby_8__1__7_left_grid_pin_16_[0]),
     .right_width_0_height_0__pin_17_(cby_8__1__7_left_grid_pin_17_[0]),
     .right_width_0_height_0__pin_18_(cby_8__1__7_left_grid_pin_18_[0]),

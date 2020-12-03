@@ -34,3 +34,7 @@ set io_hor_to_sb 35
 set io_ver_to_dec $io_ver_to_sb
 
 set EMBED_IOS 1
+
+# tie macro
+set tie_x 60
+set tie_y 70

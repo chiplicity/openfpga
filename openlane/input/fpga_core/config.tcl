@@ -27,6 +27,7 @@ set ::env(VERILOG_FILES_BLACKBOX) "$script_dir/../../../FPGA88_SC_HD_Verilog/SRC
         $script_dir/../../../FPGA88_SC_HD_Verilog/SRC/routing/sb_2__1_.v \
         $script_dir/../../../FPGA88_SC_HD_Verilog/SRC/routing/sb_2__2_.v \
         $script_dir/../../../FPGA88_SC_HD_Verilog/SRC/lb/grid_clb.v \
+        $script_dir/../../../FPGA88_SC_HD_Verilog/SRC/tie_array.v \
         $script_dir/../../../FPGA88_SC_HD_Verilog/SRC/fpga_defines.v"
 
 
@@ -46,6 +47,7 @@ set ::env(EXTRA_LEFS) "$script_dir/../../../lef/cbx_1__0_.lef \
         $script_dir/../../../lef/sb_1__2_.lef \
         $script_dir/../../../lef/sb_2__2_.lef \
         $script_dir/../../../lef/sb_2__1_.lef \
+        $script_dir/../../../lef/tie_array.lef \
         $script_dir/../../../lef/grid_clb.lef"
 
 set ::env(EXTRA_GDS_FILES) "$script_dir/../../../gds/cbx_1__0_.gds \
@@ -63,6 +65,7 @@ set ::env(EXTRA_GDS_FILES) "$script_dir/../../../gds/cbx_1__0_.gds \
         $script_dir/../../../gds/sb_2__0_.gds \
         $script_dir/../../../gds/sb_2__1_.gds \
         $script_dir/../../../gds/sb_2__2_.gds \
+        $script_dir/../../../gds/tie_array.gds \
         $script_dir/../../../gds/grid_clb.gds"
 
 # Fill this
@@ -75,6 +78,7 @@ set ::env(FP_SIZING) absolute
 
 set ::env(RUN_MAGIC) 1
 
+set ::env(FILL_INSERTION) 0
 #Routing
 set ::env(ROUTING_STRATEGY) 0
 

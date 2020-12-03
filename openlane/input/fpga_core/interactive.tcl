@@ -69,9 +69,11 @@ if {$EMBED_IOS == 0} {
         add_macro_placement $macro_name [expr {$grid_io_right_x($i) }] [expr {$grid_io_right_y($i) }] N
     }
 }
-manual_macro_placement f
 
-tap_decap_or
+#tie array
+add_macro_placement tie_array [expr {$floorplan_x / 2}] [expr {$switches_y(8,8) + $clb_y + 10}] N
+
+manual_macro_placement f
 
 detailed_placement
 

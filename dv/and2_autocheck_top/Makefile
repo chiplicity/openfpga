@@ -21,8 +21,8 @@ hex:  ${PATTERN:=.hex}
 
 # ---- Clean ----
 
-# clean:
-# 	rm -f *.vvp *.vcd *.log
+clean:
+	rm -f *.vvp *.vcd *.log
 
 .PHONY: clean hex all
 

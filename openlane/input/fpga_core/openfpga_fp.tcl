@@ -2,7 +2,7 @@ set script_dir [file dirname [file normalize [info script]]]
 source $script_dir/../sizes.tcl
 
 # Calculate Spacings
-set sb_to_cbx 24
+set sb_to_cbx 35
 set sb_to_cby 35
 
 set cbx_to_sb $sb_to_cbx
@@ -22,7 +22,7 @@ puts "Tile size (x,y): ($tile_x, $tile_y)"
 
 # floorplan
 set margin_x 50
-set margin_y 50
+set margin_y 80
 
 if {$EMBED_IOS == 1} {
 
