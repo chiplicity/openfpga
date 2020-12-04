@@ -17,7 +17,7 @@
 `define FPGA_IO_SIZE 96
 //
 // Design parameter for FPGA bitstream sizes
-`define FPGA_BITSTREAM_SIZE 29695
+`define FPGA_BITSTREAM_SIZE 29696
 
 `define UNIT_DELAY #1
 
@@ -27,8 +27,9 @@
 
 `include "define_simulation.v"
 `include "fabric_netlists.v"
+`include "tie_array.v"
 
-module pre_pnr_ccff_test;
+module ccff_test_post_pnr_autocheck_top_tb;
 // ----- Local wires for global ports of FPGA fabric -----
 wire [0:0] prog_clk;
 wire [0:0] Test_en;
@@ -63,14 +64,10 @@ wire [0:0] IO_ISOL_N;
 // ----- Counters for error checking -----
 integer num_prog_cycles = 0; 
 integer num_errors = 0; 
+integer num_checked_points = 0; 
 
 // Indicate when configuration should be finished
 reg config_done = 0; 
-
-initial begin
-	$dumpfile("pre_pnr_ccff_test.vcd");
-	$dumpvars(0, pre_pnr_ccff_test);
-end
 
 initial
 	begin
@@ -97,10 +94,11 @@ initial
 	begin
 		op_clock_reg[0] = 1'b0;
 	end
-always
-	begin
-		#5	op_clock_reg[0] = ~op_clock_reg[0];
-	end
+
+initial begin
+	$dumpfile("ccff_test_post_pnr_autocheck_top_tb.vcd");
+	$dumpvars(0, ccff_test_post_pnr_autocheck_top_tb);
+end
 // ----- End raw operating clock signal generation -----
 // ----- Actual operating clock is triggered only when config_done is enabled -----
 	assign op_clock[0] = op_clock_reg[0];
@@ -143,9 +141,8 @@ initial
 	assign clk[0] = op_clock[0];
 	assign prog_clk[0] = prog_clock[0];
 	assign Test_en[0] = 1'b0;
-	assign sc_head[0] = 1'b1;
+	assign sc_head[0] = 1'b0;
     assign IO_ISOL_N[0] = 1'b0;
-
 // ----- End connecting global ports of FPGA fabric to stimuli -----
 // ----- FPGA top-level module to be capsulated -----
 	fpga_core FPGA_DUT (
@@ -157,9 +154,9 @@ initial
 		.gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[0:`FPGA_IO_SIZE - 1]),
 		.ccff_head(ccff_head[0]),
 		.ccff_tail(ccff_tail[0]),
-        .IO_ISOL_N(IO_ISOL_N),
-		.sc_head(sc_head),
-		.sc_tail(sc_tail)
+		.sc_head(sc_head[0]),
+		.sc_tail(sc_tail[0]),
+        .IO_ISOL_N(IO_ISOL_N)
         );
 
 // ----- Force constant '0' to FPGA I/O as this testbench only check
@@ -186,11 +183,24 @@ initial
 
         // Check the ccff_tail when configuration is done 
         if (1'b1 == config_done) begin
-           if (sc_tail != 1'b1) begin
-             $display("Error: sc_tail = %b", sc_tail);
-             num_errors = num_errors + 1;
+           // The tail should spit a pulse after configuration is done
+           // So it should be at logic '1' and then pulled down to logic '0'
+           if (0 == num_checked_points) begin
+             if (ccff_tail !== 1'b1) begin
+               $display("Error: ccff_tail = %b", sc_tail);
+               num_errors = num_errors + 1;
+             end
            end
+           if (1 <= num_checked_points) begin
+             if (ccff_tail !== 1'b0) begin
+               $display("Error: ccff_tail = %b", sc_tail);
+               num_errors = num_errors + 1;
+             end
+           end
+           num_checked_points = num_checked_points + 1;
+        end
 
+        if (2 < num_checked_points) begin
            $display("Simulation finish with %d errors", num_errors);
 
            // End simulation

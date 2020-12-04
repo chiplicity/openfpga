@@ -16,6 +16,7 @@
 
 `include "define_simulation.v"
 `include "fabric_netlists.v"
+`include "tie_array.v"
 
 module top_autocheck_top_tb;
 // ----- Local wires for global ports of FPGA fabric -----

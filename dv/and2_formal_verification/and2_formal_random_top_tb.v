@@ -18,6 +18,7 @@
 
 `include "and2.v"
 `include "and2_top_formal_verification.v"
+`include "tie_array.v"
 
 module and2_top_formal_verification_random_tb;
 // ----- Default clock port is added here since benchmark does not contain one -------
@@ -44,7 +45,7 @@ module and2_top_formal_verification_random_tb;
 	integer nb_error= 0;
 
 // ----- FPGA fabric instanciation -------
-	and2_top_formal_verification FPGA_DUT(
+	top_top_formal_verification FPGA_DUT(
 		.a_fm(a),
 		.b_fm(b),
 		.out_c_fm(out_c_gfpga)	);

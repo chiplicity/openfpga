@@ -1,4 +1,4 @@
-RTL_PATH = ../../openfpga/run/SRC
+RTL_PATH = ../../FPGA88_SC_HD_Verilog/SRC
 BENCH_PATH = ../../openfpga/input/benchmarks
 
 GCC_PATH?=/ef/apps/bin
