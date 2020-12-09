@@ -72,8 +72,6 @@ set ::env(EXTRA_GDS_FILES) "$script_dir/../../../gds/cbx_1__0_.gds \
 set ::env(CLOCK_PERIOD) "10"
 set ::env(CLOCK_PORT) "prog_clk"
 
-set ::env(CELL_PAD) 8
-
 set ::env(FP_SIZING) absolute
 
 set ::env(RUN_MAGIC) 1
@@ -86,6 +84,8 @@ set ::env(PDN_CFG) $script_dir/pdn.tcl
 set ::env(FP_PIN_ORDER_CFG) $script_dir/pin.cfg
 
 set ::env(USE_ARC_ANTENNA_CHECK) 1
+
+# set ::env(LVS_INSERT_POWER_PINS) 0
 
 # PDN
 set ::env(FP_PDN_HOFFSET) 85

@@ -9,7 +9,7 @@ pdngen::specify_grid stdcell {
     straps {
 	    met5 {width $::env(FP_PDN_HWIDTH) pitch $::env(FP_PDN_HPITCH) offset $::env(FP_PDN_HOFFSET)}
     }
-    connect {{met4 met5}}
+    connect {}
 }
 
 pdngen::specify_grid macro {
