@@ -8,16 +8,38 @@
 //----- Time scale -----
 `timescale 1ns / 1ps
 
-
 `define UNIT_DELAY #1
+`define ICARUS_SIMULATOR
 
 `include "and2.v"
 `include "libs.ref/sky130_fd_sc_hd/verilog/primitives.v"
 `include "libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v"
 
-`include "define_simulation.v"
-`include "fabric_netlists.v"
-`include "tie_array.v"
+`ifdef GL
+	`include "define_simulation.v"
+	`include "gl/sb_0__0_.v"
+	`include "gl/sb_0__1_.v"
+	`include "gl/sb_0__2_.v"
+	`include "gl/sb_1__0_.v"
+	`include "gl/sb_1__1_.v"
+	`include "gl/sb_1__2_.v"
+	`include "gl/sb_2__0_.v"
+	`include "gl/sb_2__1_.v"
+	`include "gl/sb_2__2_.v"
+	`include "gl/cbx_1__0_.v"
+	`include "gl/cbx_1__1_.v"
+	`include "gl/cbx_1__2_.v"
+	`include "gl/cby_0__1_.v"
+	`include "gl/cby_1__1_.v"
+	`include "gl/cby_2__1_.v"
+	`include "gl/grid_clb.v"
+	`include "gl/tie_array.v"
+	`include "gl/fpga_core.v"
+`else
+	`include "define_simulation.v"
+	`include "fabric_netlists.v"
+	`include "tie_array.v"
+`endif
 
 module and2_autocheck_top_tb;
 // ----- Local wires for global ports of FPGA fabric -----
@@ -151,6 +173,10 @@ initial
 // ----- End connecting global ports of FPGA fabric to stimuli -----
 // ----- FPGA top-level module to be capsulated -----
 	fpga_core FPGA_DUT (
+	`ifdef GL
+		.VPWR(1'b1),
+		.VGND(1'b0),
+	`endif
 		.prog_clk(prog_clk[0]),
 		.Test_en(Test_en[0]),
 		.IO_ISOL_N(IO_ISOL_N[0]),
@@ -30140,8 +30166,8 @@ initial
 `ifdef ICARUS_SIMULATOR
 // ----- Begin Icarus requirement -------
 	initial begin
-		$dumpfile("and2_formal.vcd");
-		$dumpvars(1, and2_autocheck_top_tb);
+		$dumpfile("and2_formal_rtl.vcd");
+		$dumpvars(0, and2_autocheck_top_tb);
 	end
 `endif
 // ----- END Icarus requirement -------

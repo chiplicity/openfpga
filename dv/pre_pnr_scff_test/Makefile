@@ -9,7 +9,7 @@ SIM?=RTL
 
 .SUFFIXES:
 
-PATTERN = and2_autocheck_top
+PATTERN = pre_pnr_scff_test
 
 all:  ${PATTERN:=.vcd}
 
