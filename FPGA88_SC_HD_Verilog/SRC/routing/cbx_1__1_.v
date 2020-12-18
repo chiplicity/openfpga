@@ -150,12 +150,12 @@ module cbx_1__1_
   assign SC_OUT_TOP = SC_IN_BOT;
   assign REGOUT_FEEDTHROUGH = REGIN_FEEDTHROUGH;
   assign prog_clk  = prog_clk_0;
-  assign prog_clk_1_W_in = prog_clk_1_E_in;
-  assign prog_clk_2_W_in = prog_clk_2_E_in;
-  assign prog_clk_3_W_in = prog_clk_3_E_in;
-  assign clk_1_W_in = clk_1_E_in;
-  assign clk_2_W_in = clk_2_E_in;
-  assign clk_3_W_in = clk_3_E_in;
+  // assign prog_clk_1_W_in = prog_clk_1_E_in;
+  // assign prog_clk_2_W_in = prog_clk_2_E_in;
+  // assign prog_clk_3_W_in = prog_clk_3_E_in;
+  // assign clk_1_W_in = clk_1_E_in;
+  // assign clk_2_W_in = clk_2_E_in;
+  // assign clk_3_W_in = clk_3_E_in;
 
   mux_tree_tapbuf_size10
   mux_top_ipin_0

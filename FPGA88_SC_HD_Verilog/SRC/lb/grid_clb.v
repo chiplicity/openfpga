@@ -110,13 +110,14 @@ module grid_clb
   assign right_width_0_height_0__pin_47_lower[0] = right_width_0_height_0__pin_47_upper[0];
   assign right_width_0_height_0__pin_48_lower[0] = right_width_0_height_0__pin_48_upper[0];
   assign right_width_0_height_0__pin_49_lower[0] = right_width_0_height_0__pin_49_upper[0];
-  assign SC_IN_BOT = SC_IN_TOP;
+ 
+  // assign SC_IN_BOT = SC_IN_TOP;
   assign SC_OUT_TOP = SC_OUT_BOT;
-  assign Test_en_E_in = Test_en_W_in;
+  // // assign Test_en_E_in = Test_en_W_in;
   assign prog_clk  = prog_clk_0;
-  assign prog_clk_0_N_in = prog_clk_0_S_in;
+  // assign prog_clk_0_N_in = prog_clk_0_S_in;
   assign clk = clk_0;
-  assign clk_0_N_in = clk_0_S_in;
+  // assign clk_0_N_in = clk_0_S_in;
 
   ltile_clb_mode_
   ltile_clb_mode__0

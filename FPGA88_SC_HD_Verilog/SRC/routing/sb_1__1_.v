@@ -226,20 +226,26 @@ module sb_1__1_
   assign chanx_right_out[18] = chanx_left_in[17];
   assign chanx_right_out[19] = chanx_left_in[18];
   assign prog_clk  = prog_clk_0;
-  assign prog_clk_1_N_in = prog_clk_1_S_in;
-  assign prog_clk_2_N_in = prog_clk_2_W_in;
-  assign prog_clk_2_W_in = prog_clk_2_E_in;
-  assign prog_clk_2_E_in = prog_clk_2_S_in;
-  assign prog_clk_3_N_in = prog_clk_3_W_in;
-  assign prog_clk_3_W_in = prog_clk_3_E_in;
-  assign prog_clk_3_E_in = prog_clk_3_S_in;
-  assign clk_1_N_in = clk_1_S_in;
-  assign clk_2_N_in = clk_2_W_in;
-  assign clk_2_W_in = clk_2_E_in;
-  assign clk_2_E_in = clk_2_S_in;
-  assign clk_3_N_in = clk_3_W_in;
-  assign clk_3_W_in = clk_3_E_in;
-  assign clk_3_E_in = clk_3_S_in;
+  // assign prog_clk_1_N_in = prog_clk_1_S_in;
+
+  // assign prog_clk_2_N_in = prog_clk_2_W_in;
+  
+  // assign prog_clk_2_W_in = prog_clk_2_E_in;
+  
+  // assign prog_clk_2_E_in = prog_clk_2_S_in;
+  
+  // assign prog_clk_3_N_in = prog_clk_3_W_in;
+  
+  // assign prog_clk_3_W_in = prog_clk_3_E_in;
+  
+  // assign prog_clk_3_E_in = prog_clk_3_S_in;
+  // assign clk_1_N_in = clk_1_S_in;
+  // assign clk_2_N_in = clk_2_W_in;
+  // assign clk_2_W_in = clk_2_E_in;
+  // assign clk_2_E_in = clk_2_S_in;
+  // assign clk_3_N_in = clk_3_W_in;
+  // assign clk_3_W_in = clk_3_E_in;
+  // assign clk_3_E_in = clk_3_S_in;
 
   mux_tree_tapbuf_size12
   mux_top_track_0

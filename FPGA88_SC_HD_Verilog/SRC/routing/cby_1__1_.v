@@ -139,13 +139,13 @@ module cby_1__1_
   assign chany_bottom_out[17] = chany_top_in[17];
   assign chany_bottom_out[18] = chany_top_in[18];
   assign chany_bottom_out[19] = chany_top_in[19];
-  assign Test_en_S_in = Test_en_E_in;
-  assign Test_en_E_in = Test_en_W_in;
- assign prog_clk  = prog_clk_0;
-  assign prog_clk_2_S_in = prog_clk_2_N_in;
-  assign prog_clk_3_S_in = prog_clk_3_N_in;
-  assign clk_2_S_in = clk_2_N_in;
-  assign clk_3_S_in = clk_3_N_in;
+  // assign Test_en_S_in = Test_en_E_in;
+  // assign Test_en_E_in = Test_en_W_in;
+  assign prog_clk  = prog_clk_0;
+  // assign prog_clk_2_S_in = prog_clk_2_N_in;
+  // assign prog_clk_3_S_in = prog_clk_3_N_in;
+  // assign clk_2_S_in = clk_2_N_in;
+  // assign clk_3_S_in = clk_3_N_in;
 
   mux_tree_tapbuf_size10
   mux_right_ipin_0
