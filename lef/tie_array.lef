@@ -11,56 +11,56 @@ MACRO tie_array
     DIRECTION OUTPUT TRISTATE ;
     PORT
       LAYER met2 ;
-        RECT 0.020 0.000 0.300 2.400 ;
+        RECT 0.020 0.000 0.300 4.000 ;
     END
   END x[0]
   PIN x[1]
     DIRECTION OUTPUT TRISTATE ;
     PORT
       LAYER met2 ;
-        RECT 7.380 0.000 7.660 2.400 ;
+        RECT 7.380 0.000 7.660 4.000 ;
     END
   END x[1]
   PIN x[2]
     DIRECTION OUTPUT TRISTATE ;
     PORT
       LAYER met2 ;
-        RECT 14.740 0.000 15.020 2.400 ;
+        RECT 14.740 0.000 15.020 4.000 ;
     END
   END x[2]
   PIN x[3]
     DIRECTION OUTPUT TRISTATE ;
     PORT
       LAYER met2 ;
-        RECT 22.100 0.000 22.380 2.400 ;
+        RECT 22.100 0.000 22.380 4.000 ;
     END
   END x[3]
   PIN x[4]
     DIRECTION OUTPUT TRISTATE ;
     PORT
       LAYER met2 ;
-        RECT 29.920 0.000 30.200 2.400 ;
+        RECT 29.920 0.000 30.200 4.000 ;
     END
   END x[4]
   PIN x[5]
     DIRECTION OUTPUT TRISTATE ;
     PORT
       LAYER met2 ;
-        RECT 37.280 0.000 37.560 2.400 ;
+        RECT 37.280 0.000 37.560 4.000 ;
     END
   END x[5]
   PIN x[6]
     DIRECTION OUTPUT TRISTATE ;
     PORT
       LAYER met2 ;
-        RECT 44.640 0.000 44.920 2.400 ;
+        RECT 44.640 0.000 44.920 4.000 ;
     END
   END x[6]
   PIN x[7]
     DIRECTION OUTPUT TRISTATE ;
     PORT
       LAYER met2 ;
-        RECT 52.000 0.000 52.280 2.400 ;
+        RECT 52.000 0.000 52.280 4.000 ;
     END
   END x[7]
   PIN VPWR
@@ -85,14 +85,14 @@ MACRO tie_array
       LAYER met1 ;
         RECT 0.000 10.640 52.300 57.360 ;
       LAYER met2 ;
-        RECT 0.030 2.680 52.270 57.360 ;
-        RECT 0.580 2.400 7.100 2.680 ;
-        RECT 7.940 2.400 14.460 2.680 ;
-        RECT 15.300 2.400 21.820 2.680 ;
-        RECT 22.660 2.400 29.640 2.680 ;
-        RECT 30.480 2.400 37.000 2.680 ;
-        RECT 37.840 2.400 44.360 2.680 ;
-        RECT 45.200 2.400 51.720 2.680 ;
+        RECT 0.030 4.280 52.270 57.360 ;
+        RECT 0.580 4.000 7.100 4.280 ;
+        RECT 7.940 4.000 14.460 4.280 ;
+        RECT 15.300 4.000 21.820 4.280 ;
+        RECT 22.660 4.000 29.640 4.280 ;
+        RECT 30.480 4.000 37.000 4.280 ;
+        RECT 37.840 4.000 44.360 4.280 ;
+        RECT 45.200 4.000 51.720 4.280 ;
       LAYER met3 ;
         RECT 9.130 10.715 43.370 57.285 ;
       LAYER met4 ;

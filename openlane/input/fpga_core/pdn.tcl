@@ -9,7 +9,6 @@ pdngen::specify_grid stdcell {
     straps {
 	    met5 {width $::env(FP_PDN_HWIDTH) pitch $::env(FP_PDN_HPITCH) offset $::env(FP_PDN_HOFFSET)}
     }
-    connect {}
 }
 
 pdngen::specify_grid macro {
@@ -28,4 +27,4 @@ set ::rails_start_with "POWER" ;
 # POWER or GROUND #Upper metal stripes starting with power or ground rails at the left/bottom of the core area
 set ::stripes_start_with "POWER" ;
 
-set ::halo 5
+set ::halo 0

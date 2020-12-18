@@ -8693,7 +8693,6 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   wire grid_clb_19_top_width_0_height_0__pin_40_upper;
   wire grid_clb_19_top_width_0_height_0__pin_41_lower;
   wire grid_clb_19_top_width_0_height_0__pin_41_upper;
-  wire grid_clb_1__1__undriven_bottom_width_0_height_0__pin_50_;
   wire grid_clb_1_ccff_tail;
   wire grid_clb_1_right_width_0_height_0__pin_42_lower;
   wire grid_clb_1_right_width_0_height_0__pin_42_upper;
@@ -9057,7 +9056,6 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   wire grid_clb_29_top_width_0_height_0__pin_40_upper;
   wire grid_clb_29_top_width_0_height_0__pin_41_lower;
   wire grid_clb_29_top_width_0_height_0__pin_41_upper;
-  wire grid_clb_2__1__undriven_bottom_width_0_height_0__pin_50_;
   wire grid_clb_2_ccff_tail;
   wire grid_clb_2_right_width_0_height_0__pin_42_lower;
   wire grid_clb_2_right_width_0_height_0__pin_42_upper;
@@ -9421,7 +9419,6 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   wire grid_clb_39_top_width_0_height_0__pin_40_upper;
   wire grid_clb_39_top_width_0_height_0__pin_41_lower;
   wire grid_clb_39_top_width_0_height_0__pin_41_upper;
-  wire grid_clb_3__1__undriven_bottom_width_0_height_0__pin_50_;
   wire grid_clb_3_ccff_tail;
   wire grid_clb_3_right_width_0_height_0__pin_42_lower;
   wire grid_clb_3_right_width_0_height_0__pin_42_upper;
@@ -9785,7 +9782,6 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   wire grid_clb_49_top_width_0_height_0__pin_40_upper;
   wire grid_clb_49_top_width_0_height_0__pin_41_lower;
   wire grid_clb_49_top_width_0_height_0__pin_41_upper;
-  wire grid_clb_4__1__undriven_bottom_width_0_height_0__pin_50_;
   wire grid_clb_4_ccff_tail;
   wire grid_clb_4_right_width_0_height_0__pin_42_lower;
   wire grid_clb_4_right_width_0_height_0__pin_42_upper;
@@ -10149,7 +10145,6 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   wire grid_clb_59_top_width_0_height_0__pin_40_upper;
   wire grid_clb_59_top_width_0_height_0__pin_41_lower;
   wire grid_clb_59_top_width_0_height_0__pin_41_upper;
-  wire grid_clb_5__1__undriven_bottom_width_0_height_0__pin_50_;
   wire grid_clb_5_ccff_tail;
   wire grid_clb_5_right_width_0_height_0__pin_42_lower;
   wire grid_clb_5_right_width_0_height_0__pin_42_upper;
@@ -10315,7 +10310,6 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   wire grid_clb_63_top_width_0_height_0__pin_40_upper;
   wire grid_clb_63_top_width_0_height_0__pin_41_lower;
   wire grid_clb_63_top_width_0_height_0__pin_41_upper;
-  wire grid_clb_6__1__undriven_bottom_width_0_height_0__pin_50_;
   wire grid_clb_6_ccff_tail;
   wire grid_clb_6_right_width_0_height_0__pin_42_lower;
   wire grid_clb_6_right_width_0_height_0__pin_42_upper;
@@ -10349,7 +10343,6 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   wire grid_clb_6_top_width_0_height_0__pin_40_upper;
   wire grid_clb_6_top_width_0_height_0__pin_41_lower;
   wire grid_clb_6_top_width_0_height_0__pin_41_upper;
-  wire grid_clb_7__1__undriven_bottom_width_0_height_0__pin_50_;
   wire grid_clb_7_ccff_tail;
   wire grid_clb_7_right_width_0_height_0__pin_42_lower;
   wire grid_clb_7_right_width_0_height_0__pin_42_upper;
@@ -10383,7 +10376,6 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   wire grid_clb_7_top_width_0_height_0__pin_40_upper;
   wire grid_clb_7_top_width_0_height_0__pin_41_lower;
   wire grid_clb_7_top_width_0_height_0__pin_41_upper;
-  wire grid_clb_8__1__undriven_bottom_width_0_height_0__pin_50_;
   wire grid_clb_8_ccff_tail;
   wire grid_clb_8_right_width_0_height_0__pin_42_lower;
   wire grid_clb_8_right_width_0_height_0__pin_42_upper;
@@ -17268,11 +17260,13 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .clk_1_E_in(\clk_1_wires[2] ),
     .clk_1_N_out(\clk_1_wires[3] ),
     .clk_1_S_out(\clk_1_wires[4] ),
+    .clk_1_W_in(\clk_1_wires[2] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[6] ),
     .prog_clk_0_W_out(\prog_clk_0_wires[4] ),
     .prog_clk_1_E_in(\prog_clk_1_wires[2] ),
     .prog_clk_1_N_out(\prog_clk_1_wires[3] ),
-    .prog_clk_1_S_out(\prog_clk_1_wires[4] )
+    .prog_clk_1_S_out(\prog_clk_1_wires[4] ),
+    .prog_clk_1_W_in(\prog_clk_1_wires[2] )
   );
   cbx_1__1_ cbx_1__2_ (
     .REGIN_FEEDTHROUGH(\regin_feedthrough_wires[1] ),
@@ -17338,11 +17332,13 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .clk_1_E_in(\clk_1_wires[9] ),
     .clk_1_N_out(\clk_1_wires[10] ),
     .clk_1_S_out(\clk_1_wires[11] ),
+    .clk_1_W_in(\clk_1_wires[9] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[16] ),
     .prog_clk_0_W_out(\prog_clk_0_wires[15] ),
     .prog_clk_1_E_in(\prog_clk_1_wires[9] ),
     .prog_clk_1_N_out(\prog_clk_1_wires[10] ),
-    .prog_clk_1_S_out(\prog_clk_1_wires[11] )
+    .prog_clk_1_S_out(\prog_clk_1_wires[11] ),
+    .prog_clk_1_W_in(\prog_clk_1_wires[9] )
   );
   cbx_1__1_ cbx_1__4_ (
     .REGIN_FEEDTHROUGH(\regin_feedthrough_wires[3] ),
@@ -17408,11 +17404,13 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .clk_1_E_in(\clk_1_wires[16] ),
     .clk_1_N_out(\clk_1_wires[17] ),
     .clk_1_S_out(\clk_1_wires[18] ),
+    .clk_1_W_in(\clk_1_wires[16] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[26] ),
     .prog_clk_0_W_out(\prog_clk_0_wires[25] ),
     .prog_clk_1_E_in(\prog_clk_1_wires[16] ),
     .prog_clk_1_N_out(\prog_clk_1_wires[17] ),
-    .prog_clk_1_S_out(\prog_clk_1_wires[18] )
+    .prog_clk_1_S_out(\prog_clk_1_wires[18] ),
+    .prog_clk_1_W_in(\prog_clk_1_wires[16] )
   );
   cbx_1__1_ cbx_1__6_ (
     .REGIN_FEEDTHROUGH(\regin_feedthrough_wires[5] ),
@@ -17478,11 +17476,13 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .clk_1_E_in(\clk_1_wires[23] ),
     .clk_1_N_out(\clk_1_wires[24] ),
     .clk_1_S_out(\clk_1_wires[25] ),
+    .clk_1_W_in(\clk_1_wires[23] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[36] ),
     .prog_clk_0_W_out(\prog_clk_0_wires[35] ),
     .prog_clk_1_E_in(\prog_clk_1_wires[23] ),
     .prog_clk_1_N_out(\prog_clk_1_wires[24] ),
-    .prog_clk_1_S_out(\prog_clk_1_wires[25] )
+    .prog_clk_1_S_out(\prog_clk_1_wires[25] ),
+    .prog_clk_1_W_in(\prog_clk_1_wires[23] )
   );
   cbx_1__2_ cbx_1__8_ (
     .IO_ISOL_N(IO_ISOL_N),
@@ -17604,10 +17604,12 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chanx_left_out({ \cbx_1__1__7_chanx_left_out[0] , \cbx_1__1__7_chanx_left_out[1] , \cbx_1__1__7_chanx_left_out[2] , \cbx_1__1__7_chanx_left_out[3] , \cbx_1__1__7_chanx_left_out[4] , \cbx_1__1__7_chanx_left_out[5] , \cbx_1__1__7_chanx_left_out[6] , \cbx_1__1__7_chanx_left_out[7] , \cbx_1__1__7_chanx_left_out[8] , \cbx_1__1__7_chanx_left_out[9] , \cbx_1__1__7_chanx_left_out[10] , \cbx_1__1__7_chanx_left_out[11] , \cbx_1__1__7_chanx_left_out[12] , \cbx_1__1__7_chanx_left_out[13] , \cbx_1__1__7_chanx_left_out[14] , \cbx_1__1__7_chanx_left_out[15] , \cbx_1__1__7_chanx_left_out[16] , \cbx_1__1__7_chanx_left_out[17] , \cbx_1__1__7_chanx_left_out[18] , \cbx_1__1__7_chanx_left_out[19]  }),
     .chanx_right_in({ \sb_1__1__7_chanx_left_out[0] , \sb_1__1__7_chanx_left_out[1] , \sb_1__1__7_chanx_left_out[2] , \sb_1__1__7_chanx_left_out[3] , \sb_1__1__7_chanx_left_out[4] , \sb_1__1__7_chanx_left_out[5] , \sb_1__1__7_chanx_left_out[6] , \sb_1__1__7_chanx_left_out[7] , \sb_1__1__7_chanx_left_out[8] , \sb_1__1__7_chanx_left_out[9] , \sb_1__1__7_chanx_left_out[10] , \sb_1__1__7_chanx_left_out[11] , \sb_1__1__7_chanx_left_out[12] , \sb_1__1__7_chanx_left_out[13] , \sb_1__1__7_chanx_left_out[14] , \sb_1__1__7_chanx_left_out[15] , \sb_1__1__7_chanx_left_out[16] , \sb_1__1__7_chanx_left_out[17] , \sb_1__1__7_chanx_left_out[18] , \sb_1__1__7_chanx_left_out[19]  }),
     .chanx_right_out({ \cbx_1__1__7_chanx_right_out[0] , \cbx_1__1__7_chanx_right_out[1] , \cbx_1__1__7_chanx_right_out[2] , \cbx_1__1__7_chanx_right_out[3] , \cbx_1__1__7_chanx_right_out[4] , \cbx_1__1__7_chanx_right_out[5] , \cbx_1__1__7_chanx_right_out[6] , \cbx_1__1__7_chanx_right_out[7] , \cbx_1__1__7_chanx_right_out[8] , \cbx_1__1__7_chanx_right_out[9] , \cbx_1__1__7_chanx_right_out[10] , \cbx_1__1__7_chanx_right_out[11] , \cbx_1__1__7_chanx_right_out[12] , \cbx_1__1__7_chanx_right_out[13] , \cbx_1__1__7_chanx_right_out[14] , \cbx_1__1__7_chanx_right_out[15] , \cbx_1__1__7_chanx_right_out[16] , \cbx_1__1__7_chanx_right_out[17] , \cbx_1__1__7_chanx_right_out[18] , \cbx_1__1__7_chanx_right_out[19]  }),
+    .clk_1_E_in(\clk_1_wires[1] ),
     .clk_1_N_out(\clk_1_wires[5] ),
     .clk_1_S_out(\clk_1_wires[6] ),
     .clk_1_W_in(\clk_1_wires[1] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[46] ),
+    .prog_clk_1_E_in(\prog_clk_1_wires[1] ),
     .prog_clk_1_N_out(\prog_clk_1_wires[5] ),
     .prog_clk_1_S_out(\prog_clk_1_wires[6] ),
     .prog_clk_1_W_in(\prog_clk_1_wires[1] )
@@ -17642,9 +17644,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chanx_right_in({ \sb_1__1__8_chanx_left_out[0] , \sb_1__1__8_chanx_left_out[1] , \sb_1__1__8_chanx_left_out[2] , \sb_1__1__8_chanx_left_out[3] , \sb_1__1__8_chanx_left_out[4] , \sb_1__1__8_chanx_left_out[5] , \sb_1__1__8_chanx_left_out[6] , \sb_1__1__8_chanx_left_out[7] , \sb_1__1__8_chanx_left_out[8] , \sb_1__1__8_chanx_left_out[9] , \sb_1__1__8_chanx_left_out[10] , \sb_1__1__8_chanx_left_out[11] , \sb_1__1__8_chanx_left_out[12] , \sb_1__1__8_chanx_left_out[13] , \sb_1__1__8_chanx_left_out[14] , \sb_1__1__8_chanx_left_out[15] , \sb_1__1__8_chanx_left_out[16] , \sb_1__1__8_chanx_left_out[17] , \sb_1__1__8_chanx_left_out[18] , \sb_1__1__8_chanx_left_out[19]  }),
     .chanx_right_out({ \cbx_1__1__8_chanx_right_out[0] , \cbx_1__1__8_chanx_right_out[1] , \cbx_1__1__8_chanx_right_out[2] , \cbx_1__1__8_chanx_right_out[3] , \cbx_1__1__8_chanx_right_out[4] , \cbx_1__1__8_chanx_right_out[5] , \cbx_1__1__8_chanx_right_out[6] , \cbx_1__1__8_chanx_right_out[7] , \cbx_1__1__8_chanx_right_out[8] , \cbx_1__1__8_chanx_right_out[9] , \cbx_1__1__8_chanx_right_out[10] , \cbx_1__1__8_chanx_right_out[11] , \cbx_1__1__8_chanx_right_out[12] , \cbx_1__1__8_chanx_right_out[13] , \cbx_1__1__8_chanx_right_out[14] , \cbx_1__1__8_chanx_right_out[15] , \cbx_1__1__8_chanx_right_out[16] , \cbx_1__1__8_chanx_right_out[17] , \cbx_1__1__8_chanx_right_out[18] , \cbx_1__1__8_chanx_right_out[19]  }),
     .clk_2_E_in(\clk_2_wires[3] ),
+    .clk_2_W_in(\clk_2_wires[3] ),
     .clk_2_W_out(\clk_2_wires[4] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[49] ),
     .prog_clk_2_E_in(\prog_clk_2_wires[3] ),
+    .prog_clk_2_W_in(\prog_clk_2_wires[3] ),
     .prog_clk_2_W_out(\prog_clk_2_wires[4] )
   );
   cbx_1__1_ cbx_2__3_ (
@@ -17676,10 +17680,12 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chanx_left_out({ \cbx_1__1__9_chanx_left_out[0] , \cbx_1__1__9_chanx_left_out[1] , \cbx_1__1__9_chanx_left_out[2] , \cbx_1__1__9_chanx_left_out[3] , \cbx_1__1__9_chanx_left_out[4] , \cbx_1__1__9_chanx_left_out[5] , \cbx_1__1__9_chanx_left_out[6] , \cbx_1__1__9_chanx_left_out[7] , \cbx_1__1__9_chanx_left_out[8] , \cbx_1__1__9_chanx_left_out[9] , \cbx_1__1__9_chanx_left_out[10] , \cbx_1__1__9_chanx_left_out[11] , \cbx_1__1__9_chanx_left_out[12] , \cbx_1__1__9_chanx_left_out[13] , \cbx_1__1__9_chanx_left_out[14] , \cbx_1__1__9_chanx_left_out[15] , \cbx_1__1__9_chanx_left_out[16] , \cbx_1__1__9_chanx_left_out[17] , \cbx_1__1__9_chanx_left_out[18] , \cbx_1__1__9_chanx_left_out[19]  }),
     .chanx_right_in({ \sb_1__1__9_chanx_left_out[0] , \sb_1__1__9_chanx_left_out[1] , \sb_1__1__9_chanx_left_out[2] , \sb_1__1__9_chanx_left_out[3] , \sb_1__1__9_chanx_left_out[4] , \sb_1__1__9_chanx_left_out[5] , \sb_1__1__9_chanx_left_out[6] , \sb_1__1__9_chanx_left_out[7] , \sb_1__1__9_chanx_left_out[8] , \sb_1__1__9_chanx_left_out[9] , \sb_1__1__9_chanx_left_out[10] , \sb_1__1__9_chanx_left_out[11] , \sb_1__1__9_chanx_left_out[12] , \sb_1__1__9_chanx_left_out[13] , \sb_1__1__9_chanx_left_out[14] , \sb_1__1__9_chanx_left_out[15] , \sb_1__1__9_chanx_left_out[16] , \sb_1__1__9_chanx_left_out[17] , \sb_1__1__9_chanx_left_out[18] , \sb_1__1__9_chanx_left_out[19]  }),
     .chanx_right_out({ \cbx_1__1__9_chanx_right_out[0] , \cbx_1__1__9_chanx_right_out[1] , \cbx_1__1__9_chanx_right_out[2] , \cbx_1__1__9_chanx_right_out[3] , \cbx_1__1__9_chanx_right_out[4] , \cbx_1__1__9_chanx_right_out[5] , \cbx_1__1__9_chanx_right_out[6] , \cbx_1__1__9_chanx_right_out[7] , \cbx_1__1__9_chanx_right_out[8] , \cbx_1__1__9_chanx_right_out[9] , \cbx_1__1__9_chanx_right_out[10] , \cbx_1__1__9_chanx_right_out[11] , \cbx_1__1__9_chanx_right_out[12] , \cbx_1__1__9_chanx_right_out[13] , \cbx_1__1__9_chanx_right_out[14] , \cbx_1__1__9_chanx_right_out[15] , \cbx_1__1__9_chanx_right_out[16] , \cbx_1__1__9_chanx_right_out[17] , \cbx_1__1__9_chanx_right_out[18] , \cbx_1__1__9_chanx_right_out[19]  }),
+    .clk_1_E_in(\clk_1_wires[8] ),
     .clk_1_N_out(\clk_1_wires[12] ),
     .clk_1_S_out(\clk_1_wires[13] ),
     .clk_1_W_in(\clk_1_wires[8] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[52] ),
+    .prog_clk_1_E_in(\prog_clk_1_wires[8] ),
     .prog_clk_1_N_out(\prog_clk_1_wires[12] ),
     .prog_clk_1_S_out(\prog_clk_1_wires[13] ),
     .prog_clk_1_W_in(\prog_clk_1_wires[8] )
@@ -17744,10 +17750,12 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chanx_left_out({ \cbx_1__1__11_chanx_left_out[0] , \cbx_1__1__11_chanx_left_out[1] , \cbx_1__1__11_chanx_left_out[2] , \cbx_1__1__11_chanx_left_out[3] , \cbx_1__1__11_chanx_left_out[4] , \cbx_1__1__11_chanx_left_out[5] , \cbx_1__1__11_chanx_left_out[6] , \cbx_1__1__11_chanx_left_out[7] , \cbx_1__1__11_chanx_left_out[8] , \cbx_1__1__11_chanx_left_out[9] , \cbx_1__1__11_chanx_left_out[10] , \cbx_1__1__11_chanx_left_out[11] , \cbx_1__1__11_chanx_left_out[12] , \cbx_1__1__11_chanx_left_out[13] , \cbx_1__1__11_chanx_left_out[14] , \cbx_1__1__11_chanx_left_out[15] , \cbx_1__1__11_chanx_left_out[16] , \cbx_1__1__11_chanx_left_out[17] , \cbx_1__1__11_chanx_left_out[18] , \cbx_1__1__11_chanx_left_out[19]  }),
     .chanx_right_in({ \sb_1__1__11_chanx_left_out[0] , \sb_1__1__11_chanx_left_out[1] , \sb_1__1__11_chanx_left_out[2] , \sb_1__1__11_chanx_left_out[3] , \sb_1__1__11_chanx_left_out[4] , \sb_1__1__11_chanx_left_out[5] , \sb_1__1__11_chanx_left_out[6] , \sb_1__1__11_chanx_left_out[7] , \sb_1__1__11_chanx_left_out[8] , \sb_1__1__11_chanx_left_out[9] , \sb_1__1__11_chanx_left_out[10] , \sb_1__1__11_chanx_left_out[11] , \sb_1__1__11_chanx_left_out[12] , \sb_1__1__11_chanx_left_out[13] , \sb_1__1__11_chanx_left_out[14] , \sb_1__1__11_chanx_left_out[15] , \sb_1__1__11_chanx_left_out[16] , \sb_1__1__11_chanx_left_out[17] , \sb_1__1__11_chanx_left_out[18] , \sb_1__1__11_chanx_left_out[19]  }),
     .chanx_right_out({ \cbx_1__1__11_chanx_right_out[0] , \cbx_1__1__11_chanx_right_out[1] , \cbx_1__1__11_chanx_right_out[2] , \cbx_1__1__11_chanx_right_out[3] , \cbx_1__1__11_chanx_right_out[4] , \cbx_1__1__11_chanx_right_out[5] , \cbx_1__1__11_chanx_right_out[6] , \cbx_1__1__11_chanx_right_out[7] , \cbx_1__1__11_chanx_right_out[8] , \cbx_1__1__11_chanx_right_out[9] , \cbx_1__1__11_chanx_right_out[10] , \cbx_1__1__11_chanx_right_out[11] , \cbx_1__1__11_chanx_right_out[12] , \cbx_1__1__11_chanx_right_out[13] , \cbx_1__1__11_chanx_right_out[14] , \cbx_1__1__11_chanx_right_out[15] , \cbx_1__1__11_chanx_right_out[16] , \cbx_1__1__11_chanx_right_out[17] , \cbx_1__1__11_chanx_right_out[18] , \cbx_1__1__11_chanx_right_out[19]  }),
+    .clk_1_E_in(\clk_1_wires[15] ),
     .clk_1_N_out(\clk_1_wires[19] ),
     .clk_1_S_out(\clk_1_wires[20] ),
     .clk_1_W_in(\clk_1_wires[15] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[58] ),
+    .prog_clk_1_E_in(\prog_clk_1_wires[15] ),
     .prog_clk_1_N_out(\prog_clk_1_wires[19] ),
     .prog_clk_1_S_out(\prog_clk_1_wires[20] ),
     .prog_clk_1_W_in(\prog_clk_1_wires[15] )
@@ -17782,9 +17790,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chanx_right_in({ \sb_1__1__12_chanx_left_out[0] , \sb_1__1__12_chanx_left_out[1] , \sb_1__1__12_chanx_left_out[2] , \sb_1__1__12_chanx_left_out[3] , \sb_1__1__12_chanx_left_out[4] , \sb_1__1__12_chanx_left_out[5] , \sb_1__1__12_chanx_left_out[6] , \sb_1__1__12_chanx_left_out[7] , \sb_1__1__12_chanx_left_out[8] , \sb_1__1__12_chanx_left_out[9] , \sb_1__1__12_chanx_left_out[10] , \sb_1__1__12_chanx_left_out[11] , \sb_1__1__12_chanx_left_out[12] , \sb_1__1__12_chanx_left_out[13] , \sb_1__1__12_chanx_left_out[14] , \sb_1__1__12_chanx_left_out[15] , \sb_1__1__12_chanx_left_out[16] , \sb_1__1__12_chanx_left_out[17] , \sb_1__1__12_chanx_left_out[18] , \sb_1__1__12_chanx_left_out[19]  }),
     .chanx_right_out({ \cbx_1__1__12_chanx_right_out[0] , \cbx_1__1__12_chanx_right_out[1] , \cbx_1__1__12_chanx_right_out[2] , \cbx_1__1__12_chanx_right_out[3] , \cbx_1__1__12_chanx_right_out[4] , \cbx_1__1__12_chanx_right_out[5] , \cbx_1__1__12_chanx_right_out[6] , \cbx_1__1__12_chanx_right_out[7] , \cbx_1__1__12_chanx_right_out[8] , \cbx_1__1__12_chanx_right_out[9] , \cbx_1__1__12_chanx_right_out[10] , \cbx_1__1__12_chanx_right_out[11] , \cbx_1__1__12_chanx_right_out[12] , \cbx_1__1__12_chanx_right_out[13] , \cbx_1__1__12_chanx_right_out[14] , \cbx_1__1__12_chanx_right_out[15] , \cbx_1__1__12_chanx_right_out[16] , \cbx_1__1__12_chanx_right_out[17] , \cbx_1__1__12_chanx_right_out[18] , \cbx_1__1__12_chanx_right_out[19]  }),
     .clk_2_E_in(\clk_2_wires[16] ),
+    .clk_2_W_in(\clk_2_wires[16] ),
     .clk_2_W_out(\clk_2_wires[17] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[61] ),
     .prog_clk_2_E_in(\prog_clk_2_wires[16] ),
+    .prog_clk_2_W_in(\prog_clk_2_wires[16] ),
     .prog_clk_2_W_out(\prog_clk_2_wires[17] )
   );
   cbx_1__1_ cbx_2__7_ (
@@ -17816,10 +17826,12 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chanx_left_out({ \cbx_1__1__13_chanx_left_out[0] , \cbx_1__1__13_chanx_left_out[1] , \cbx_1__1__13_chanx_left_out[2] , \cbx_1__1__13_chanx_left_out[3] , \cbx_1__1__13_chanx_left_out[4] , \cbx_1__1__13_chanx_left_out[5] , \cbx_1__1__13_chanx_left_out[6] , \cbx_1__1__13_chanx_left_out[7] , \cbx_1__1__13_chanx_left_out[8] , \cbx_1__1__13_chanx_left_out[9] , \cbx_1__1__13_chanx_left_out[10] , \cbx_1__1__13_chanx_left_out[11] , \cbx_1__1__13_chanx_left_out[12] , \cbx_1__1__13_chanx_left_out[13] , \cbx_1__1__13_chanx_left_out[14] , \cbx_1__1__13_chanx_left_out[15] , \cbx_1__1__13_chanx_left_out[16] , \cbx_1__1__13_chanx_left_out[17] , \cbx_1__1__13_chanx_left_out[18] , \cbx_1__1__13_chanx_left_out[19]  }),
     .chanx_right_in({ \sb_1__1__13_chanx_left_out[0] , \sb_1__1__13_chanx_left_out[1] , \sb_1__1__13_chanx_left_out[2] , \sb_1__1__13_chanx_left_out[3] , \sb_1__1__13_chanx_left_out[4] , \sb_1__1__13_chanx_left_out[5] , \sb_1__1__13_chanx_left_out[6] , \sb_1__1__13_chanx_left_out[7] , \sb_1__1__13_chanx_left_out[8] , \sb_1__1__13_chanx_left_out[9] , \sb_1__1__13_chanx_left_out[10] , \sb_1__1__13_chanx_left_out[11] , \sb_1__1__13_chanx_left_out[12] , \sb_1__1__13_chanx_left_out[13] , \sb_1__1__13_chanx_left_out[14] , \sb_1__1__13_chanx_left_out[15] , \sb_1__1__13_chanx_left_out[16] , \sb_1__1__13_chanx_left_out[17] , \sb_1__1__13_chanx_left_out[18] , \sb_1__1__13_chanx_left_out[19]  }),
     .chanx_right_out({ \cbx_1__1__13_chanx_right_out[0] , \cbx_1__1__13_chanx_right_out[1] , \cbx_1__1__13_chanx_right_out[2] , \cbx_1__1__13_chanx_right_out[3] , \cbx_1__1__13_chanx_right_out[4] , \cbx_1__1__13_chanx_right_out[5] , \cbx_1__1__13_chanx_right_out[6] , \cbx_1__1__13_chanx_right_out[7] , \cbx_1__1__13_chanx_right_out[8] , \cbx_1__1__13_chanx_right_out[9] , \cbx_1__1__13_chanx_right_out[10] , \cbx_1__1__13_chanx_right_out[11] , \cbx_1__1__13_chanx_right_out[12] , \cbx_1__1__13_chanx_right_out[13] , \cbx_1__1__13_chanx_right_out[14] , \cbx_1__1__13_chanx_right_out[15] , \cbx_1__1__13_chanx_right_out[16] , \cbx_1__1__13_chanx_right_out[17] , \cbx_1__1__13_chanx_right_out[18] , \cbx_1__1__13_chanx_right_out[19]  }),
+    .clk_1_E_in(\clk_1_wires[22] ),
     .clk_1_N_out(\clk_1_wires[26] ),
     .clk_1_S_out(\clk_1_wires[27] ),
     .clk_1_W_in(\clk_1_wires[22] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[64] ),
+    .prog_clk_1_E_in(\prog_clk_1_wires[22] ),
     .prog_clk_1_N_out(\prog_clk_1_wires[26] ),
     .prog_clk_1_S_out(\prog_clk_1_wires[27] ),
     .prog_clk_1_W_in(\prog_clk_1_wires[22] )
@@ -17946,10 +17958,12 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .clk_1_E_in(\clk_1_wires[30] ),
     .clk_1_N_out(\clk_1_wires[31] ),
     .clk_1_S_out(\clk_1_wires[32] ),
+    .clk_1_W_in(\clk_1_wires[30] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[72] ),
     .prog_clk_1_E_in(\prog_clk_1_wires[30] ),
     .prog_clk_1_N_out(\prog_clk_1_wires[31] ),
-    .prog_clk_1_S_out(\prog_clk_1_wires[32] )
+    .prog_clk_1_S_out(\prog_clk_1_wires[32] ),
+    .prog_clk_1_W_in(\prog_clk_1_wires[30] )
   );
   cbx_1__1_ cbx_3__2_ (
     .REGIN_FEEDTHROUGH(\regin_feedthrough_wires[15] ),
@@ -17980,9 +17994,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chanx_left_out({ \cbx_1__1__15_chanx_left_out[0] , \cbx_1__1__15_chanx_left_out[1] , \cbx_1__1__15_chanx_left_out[2] , \cbx_1__1__15_chanx_left_out[3] , \cbx_1__1__15_chanx_left_out[4] , \cbx_1__1__15_chanx_left_out[5] , \cbx_1__1__15_chanx_left_out[6] , \cbx_1__1__15_chanx_left_out[7] , \cbx_1__1__15_chanx_left_out[8] , \cbx_1__1__15_chanx_left_out[9] , \cbx_1__1__15_chanx_left_out[10] , \cbx_1__1__15_chanx_left_out[11] , \cbx_1__1__15_chanx_left_out[12] , \cbx_1__1__15_chanx_left_out[13] , \cbx_1__1__15_chanx_left_out[14] , \cbx_1__1__15_chanx_left_out[15] , \cbx_1__1__15_chanx_left_out[16] , \cbx_1__1__15_chanx_left_out[17] , \cbx_1__1__15_chanx_left_out[18] , \cbx_1__1__15_chanx_left_out[19]  }),
     .chanx_right_in({ \sb_1__1__15_chanx_left_out[0] , \sb_1__1__15_chanx_left_out[1] , \sb_1__1__15_chanx_left_out[2] , \sb_1__1__15_chanx_left_out[3] , \sb_1__1__15_chanx_left_out[4] , \sb_1__1__15_chanx_left_out[5] , \sb_1__1__15_chanx_left_out[6] , \sb_1__1__15_chanx_left_out[7] , \sb_1__1__15_chanx_left_out[8] , \sb_1__1__15_chanx_left_out[9] , \sb_1__1__15_chanx_left_out[10] , \sb_1__1__15_chanx_left_out[11] , \sb_1__1__15_chanx_left_out[12] , \sb_1__1__15_chanx_left_out[13] , \sb_1__1__15_chanx_left_out[14] , \sb_1__1__15_chanx_left_out[15] , \sb_1__1__15_chanx_left_out[16] , \sb_1__1__15_chanx_left_out[17] , \sb_1__1__15_chanx_left_out[18] , \sb_1__1__15_chanx_left_out[19]  }),
     .chanx_right_out({ \cbx_1__1__15_chanx_right_out[0] , \cbx_1__1__15_chanx_right_out[1] , \cbx_1__1__15_chanx_right_out[2] , \cbx_1__1__15_chanx_right_out[3] , \cbx_1__1__15_chanx_right_out[4] , \cbx_1__1__15_chanx_right_out[5] , \cbx_1__1__15_chanx_right_out[6] , \cbx_1__1__15_chanx_right_out[7] , \cbx_1__1__15_chanx_right_out[8] , \cbx_1__1__15_chanx_right_out[9] , \cbx_1__1__15_chanx_right_out[10] , \cbx_1__1__15_chanx_right_out[11] , \cbx_1__1__15_chanx_right_out[12] , \cbx_1__1__15_chanx_right_out[13] , \cbx_1__1__15_chanx_right_out[14] , \cbx_1__1__15_chanx_right_out[15] , \cbx_1__1__15_chanx_right_out[16] , \cbx_1__1__15_chanx_right_out[17] , \cbx_1__1__15_chanx_right_out[18] , \cbx_1__1__15_chanx_right_out[19]  }),
+    .clk_2_E_in(\clk_2_wires[1] ),
     .clk_2_E_out(\clk_2_wires[2] ),
     .clk_2_W_in(\clk_2_wires[1] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[75] ),
+    .prog_clk_2_E_in(\prog_clk_2_wires[1] ),
     .prog_clk_2_E_out(\prog_clk_2_wires[2] ),
     .prog_clk_2_W_in(\prog_clk_2_wires[1] )
   );
@@ -18018,10 +18034,12 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .clk_1_E_in(\clk_1_wires[37] ),
     .clk_1_N_out(\clk_1_wires[38] ),
     .clk_1_S_out(\clk_1_wires[39] ),
+    .clk_1_W_in(\clk_1_wires[37] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[78] ),
     .prog_clk_1_E_in(\prog_clk_1_wires[37] ),
     .prog_clk_1_N_out(\prog_clk_1_wires[38] ),
-    .prog_clk_1_S_out(\prog_clk_1_wires[39] )
+    .prog_clk_1_S_out(\prog_clk_1_wires[39] ),
+    .prog_clk_1_W_in(\prog_clk_1_wires[37] )
   );
   cbx_1__1_ cbx_3__4_ (
     .REGIN_FEEDTHROUGH(\regin_feedthrough_wires[17] ),
@@ -18053,9 +18071,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chanx_right_in({ \sb_1__1__17_chanx_left_out[0] , \sb_1__1__17_chanx_left_out[1] , \sb_1__1__17_chanx_left_out[2] , \sb_1__1__17_chanx_left_out[3] , \sb_1__1__17_chanx_left_out[4] , \sb_1__1__17_chanx_left_out[5] , \sb_1__1__17_chanx_left_out[6] , \sb_1__1__17_chanx_left_out[7] , \sb_1__1__17_chanx_left_out[8] , \sb_1__1__17_chanx_left_out[9] , \sb_1__1__17_chanx_left_out[10] , \sb_1__1__17_chanx_left_out[11] , \sb_1__1__17_chanx_left_out[12] , \sb_1__1__17_chanx_left_out[13] , \sb_1__1__17_chanx_left_out[14] , \sb_1__1__17_chanx_left_out[15] , \sb_1__1__17_chanx_left_out[16] , \sb_1__1__17_chanx_left_out[17] , \sb_1__1__17_chanx_left_out[18] , \sb_1__1__17_chanx_left_out[19]  }),
     .chanx_right_out({ \cbx_1__1__17_chanx_right_out[0] , \cbx_1__1__17_chanx_right_out[1] , \cbx_1__1__17_chanx_right_out[2] , \cbx_1__1__17_chanx_right_out[3] , \cbx_1__1__17_chanx_right_out[4] , \cbx_1__1__17_chanx_right_out[5] , \cbx_1__1__17_chanx_right_out[6] , \cbx_1__1__17_chanx_right_out[7] , \cbx_1__1__17_chanx_right_out[8] , \cbx_1__1__17_chanx_right_out[9] , \cbx_1__1__17_chanx_right_out[10] , \cbx_1__1__17_chanx_right_out[11] , \cbx_1__1__17_chanx_right_out[12] , \cbx_1__1__17_chanx_right_out[13] , \cbx_1__1__17_chanx_right_out[14] , \cbx_1__1__17_chanx_right_out[15] , \cbx_1__1__17_chanx_right_out[16] , \cbx_1__1__17_chanx_right_out[17] , \cbx_1__1__17_chanx_right_out[18] , \cbx_1__1__17_chanx_right_out[19]  }),
     .clk_3_E_in(\clk_3_wires[8] ),
+    .clk_3_W_in(\clk_3_wires[8] ),
     .clk_3_W_out(\clk_3_wires[9] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[81] ),
     .prog_clk_3_E_in(\prog_clk_3_wires[8] ),
+    .prog_clk_3_W_in(\prog_clk_3_wires[8] ),
     .prog_clk_3_W_out(\prog_clk_3_wires[9] )
   );
   cbx_1__1_ cbx_3__5_ (
@@ -18090,10 +18110,12 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .clk_1_E_in(\clk_1_wires[44] ),
     .clk_1_N_out(\clk_1_wires[45] ),
     .clk_1_S_out(\clk_1_wires[46] ),
+    .clk_1_W_in(\clk_1_wires[44] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[84] ),
     .prog_clk_1_E_in(\prog_clk_1_wires[44] ),
     .prog_clk_1_N_out(\prog_clk_1_wires[45] ),
-    .prog_clk_1_S_out(\prog_clk_1_wires[46] )
+    .prog_clk_1_S_out(\prog_clk_1_wires[46] ),
+    .prog_clk_1_W_in(\prog_clk_1_wires[44] )
   );
   cbx_1__1_ cbx_3__6_ (
     .REGIN_FEEDTHROUGH(\regin_feedthrough_wires[19] ),
@@ -18124,9 +18146,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chanx_left_out({ \cbx_1__1__19_chanx_left_out[0] , \cbx_1__1__19_chanx_left_out[1] , \cbx_1__1__19_chanx_left_out[2] , \cbx_1__1__19_chanx_left_out[3] , \cbx_1__1__19_chanx_left_out[4] , \cbx_1__1__19_chanx_left_out[5] , \cbx_1__1__19_chanx_left_out[6] , \cbx_1__1__19_chanx_left_out[7] , \cbx_1__1__19_chanx_left_out[8] , \cbx_1__1__19_chanx_left_out[9] , \cbx_1__1__19_chanx_left_out[10] , \cbx_1__1__19_chanx_left_out[11] , \cbx_1__1__19_chanx_left_out[12] , \cbx_1__1__19_chanx_left_out[13] , \cbx_1__1__19_chanx_left_out[14] , \cbx_1__1__19_chanx_left_out[15] , \cbx_1__1__19_chanx_left_out[16] , \cbx_1__1__19_chanx_left_out[17] , \cbx_1__1__19_chanx_left_out[18] , \cbx_1__1__19_chanx_left_out[19]  }),
     .chanx_right_in({ \sb_1__1__19_chanx_left_out[0] , \sb_1__1__19_chanx_left_out[1] , \sb_1__1__19_chanx_left_out[2] , \sb_1__1__19_chanx_left_out[3] , \sb_1__1__19_chanx_left_out[4] , \sb_1__1__19_chanx_left_out[5] , \sb_1__1__19_chanx_left_out[6] , \sb_1__1__19_chanx_left_out[7] , \sb_1__1__19_chanx_left_out[8] , \sb_1__1__19_chanx_left_out[9] , \sb_1__1__19_chanx_left_out[10] , \sb_1__1__19_chanx_left_out[11] , \sb_1__1__19_chanx_left_out[12] , \sb_1__1__19_chanx_left_out[13] , \sb_1__1__19_chanx_left_out[14] , \sb_1__1__19_chanx_left_out[15] , \sb_1__1__19_chanx_left_out[16] , \sb_1__1__19_chanx_left_out[17] , \sb_1__1__19_chanx_left_out[18] , \sb_1__1__19_chanx_left_out[19]  }),
     .chanx_right_out({ \cbx_1__1__19_chanx_right_out[0] , \cbx_1__1__19_chanx_right_out[1] , \cbx_1__1__19_chanx_right_out[2] , \cbx_1__1__19_chanx_right_out[3] , \cbx_1__1__19_chanx_right_out[4] , \cbx_1__1__19_chanx_right_out[5] , \cbx_1__1__19_chanx_right_out[6] , \cbx_1__1__19_chanx_right_out[7] , \cbx_1__1__19_chanx_right_out[8] , \cbx_1__1__19_chanx_right_out[9] , \cbx_1__1__19_chanx_right_out[10] , \cbx_1__1__19_chanx_right_out[11] , \cbx_1__1__19_chanx_right_out[12] , \cbx_1__1__19_chanx_right_out[13] , \cbx_1__1__19_chanx_right_out[14] , \cbx_1__1__19_chanx_right_out[15] , \cbx_1__1__19_chanx_right_out[16] , \cbx_1__1__19_chanx_right_out[17] , \cbx_1__1__19_chanx_right_out[18] , \cbx_1__1__19_chanx_right_out[19]  }),
+    .clk_2_E_in(\clk_2_wires[14] ),
     .clk_2_E_out(\clk_2_wires[15] ),
     .clk_2_W_in(\clk_2_wires[14] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[87] ),
+    .prog_clk_2_E_in(\prog_clk_2_wires[14] ),
     .prog_clk_2_E_out(\prog_clk_2_wires[15] ),
     .prog_clk_2_W_in(\prog_clk_2_wires[14] )
   );
@@ -18162,10 +18186,12 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .clk_1_E_in(\clk_1_wires[51] ),
     .clk_1_N_out(\clk_1_wires[52] ),
     .clk_1_S_out(\clk_1_wires[53] ),
+    .clk_1_W_in(\clk_1_wires[51] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[90] ),
     .prog_clk_1_E_in(\prog_clk_1_wires[51] ),
     .prog_clk_1_N_out(\prog_clk_1_wires[52] ),
-    .prog_clk_1_S_out(\prog_clk_1_wires[53] )
+    .prog_clk_1_S_out(\prog_clk_1_wires[53] ),
+    .prog_clk_1_W_in(\prog_clk_1_wires[51] )
   );
   cbx_1__2_ cbx_3__8_ (
     .IO_ISOL_N(IO_ISOL_N),
@@ -18286,10 +18312,12 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chanx_left_out({ \cbx_1__1__21_chanx_left_out[0] , \cbx_1__1__21_chanx_left_out[1] , \cbx_1__1__21_chanx_left_out[2] , \cbx_1__1__21_chanx_left_out[3] , \cbx_1__1__21_chanx_left_out[4] , \cbx_1__1__21_chanx_left_out[5] , \cbx_1__1__21_chanx_left_out[6] , \cbx_1__1__21_chanx_left_out[7] , \cbx_1__1__21_chanx_left_out[8] , \cbx_1__1__21_chanx_left_out[9] , \cbx_1__1__21_chanx_left_out[10] , \cbx_1__1__21_chanx_left_out[11] , \cbx_1__1__21_chanx_left_out[12] , \cbx_1__1__21_chanx_left_out[13] , \cbx_1__1__21_chanx_left_out[14] , \cbx_1__1__21_chanx_left_out[15] , \cbx_1__1__21_chanx_left_out[16] , \cbx_1__1__21_chanx_left_out[17] , \cbx_1__1__21_chanx_left_out[18] , \cbx_1__1__21_chanx_left_out[19]  }),
     .chanx_right_in({ \sb_1__1__21_chanx_left_out[0] , \sb_1__1__21_chanx_left_out[1] , \sb_1__1__21_chanx_left_out[2] , \sb_1__1__21_chanx_left_out[3] , \sb_1__1__21_chanx_left_out[4] , \sb_1__1__21_chanx_left_out[5] , \sb_1__1__21_chanx_left_out[6] , \sb_1__1__21_chanx_left_out[7] , \sb_1__1__21_chanx_left_out[8] , \sb_1__1__21_chanx_left_out[9] , \sb_1__1__21_chanx_left_out[10] , \sb_1__1__21_chanx_left_out[11] , \sb_1__1__21_chanx_left_out[12] , \sb_1__1__21_chanx_left_out[13] , \sb_1__1__21_chanx_left_out[14] , \sb_1__1__21_chanx_left_out[15] , \sb_1__1__21_chanx_left_out[16] , \sb_1__1__21_chanx_left_out[17] , \sb_1__1__21_chanx_left_out[18] , \sb_1__1__21_chanx_left_out[19]  }),
     .chanx_right_out({ \cbx_1__1__21_chanx_right_out[0] , \cbx_1__1__21_chanx_right_out[1] , \cbx_1__1__21_chanx_right_out[2] , \cbx_1__1__21_chanx_right_out[3] , \cbx_1__1__21_chanx_right_out[4] , \cbx_1__1__21_chanx_right_out[5] , \cbx_1__1__21_chanx_right_out[6] , \cbx_1__1__21_chanx_right_out[7] , \cbx_1__1__21_chanx_right_out[8] , \cbx_1__1__21_chanx_right_out[9] , \cbx_1__1__21_chanx_right_out[10] , \cbx_1__1__21_chanx_right_out[11] , \cbx_1__1__21_chanx_right_out[12] , \cbx_1__1__21_chanx_right_out[13] , \cbx_1__1__21_chanx_right_out[14] , \cbx_1__1__21_chanx_right_out[15] , \cbx_1__1__21_chanx_right_out[16] , \cbx_1__1__21_chanx_right_out[17] , \cbx_1__1__21_chanx_right_out[18] , \cbx_1__1__21_chanx_right_out[19]  }),
+    .clk_1_E_in(\clk_1_wires[29] ),
     .clk_1_N_out(\clk_1_wires[33] ),
     .clk_1_S_out(\clk_1_wires[34] ),
     .clk_1_W_in(\clk_1_wires[29] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[98] ),
+    .prog_clk_1_E_in(\prog_clk_1_wires[29] ),
     .prog_clk_1_N_out(\prog_clk_1_wires[33] ),
     .prog_clk_1_S_out(\prog_clk_1_wires[34] ),
     .prog_clk_1_W_in(\prog_clk_1_wires[29] )
@@ -18354,10 +18382,12 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chanx_left_out({ \cbx_1__1__23_chanx_left_out[0] , \cbx_1__1__23_chanx_left_out[1] , \cbx_1__1__23_chanx_left_out[2] , \cbx_1__1__23_chanx_left_out[3] , \cbx_1__1__23_chanx_left_out[4] , \cbx_1__1__23_chanx_left_out[5] , \cbx_1__1__23_chanx_left_out[6] , \cbx_1__1__23_chanx_left_out[7] , \cbx_1__1__23_chanx_left_out[8] , \cbx_1__1__23_chanx_left_out[9] , \cbx_1__1__23_chanx_left_out[10] , \cbx_1__1__23_chanx_left_out[11] , \cbx_1__1__23_chanx_left_out[12] , \cbx_1__1__23_chanx_left_out[13] , \cbx_1__1__23_chanx_left_out[14] , \cbx_1__1__23_chanx_left_out[15] , \cbx_1__1__23_chanx_left_out[16] , \cbx_1__1__23_chanx_left_out[17] , \cbx_1__1__23_chanx_left_out[18] , \cbx_1__1__23_chanx_left_out[19]  }),
     .chanx_right_in({ \sb_1__1__23_chanx_left_out[0] , \sb_1__1__23_chanx_left_out[1] , \sb_1__1__23_chanx_left_out[2] , \sb_1__1__23_chanx_left_out[3] , \sb_1__1__23_chanx_left_out[4] , \sb_1__1__23_chanx_left_out[5] , \sb_1__1__23_chanx_left_out[6] , \sb_1__1__23_chanx_left_out[7] , \sb_1__1__23_chanx_left_out[8] , \sb_1__1__23_chanx_left_out[9] , \sb_1__1__23_chanx_left_out[10] , \sb_1__1__23_chanx_left_out[11] , \sb_1__1__23_chanx_left_out[12] , \sb_1__1__23_chanx_left_out[13] , \sb_1__1__23_chanx_left_out[14] , \sb_1__1__23_chanx_left_out[15] , \sb_1__1__23_chanx_left_out[16] , \sb_1__1__23_chanx_left_out[17] , \sb_1__1__23_chanx_left_out[18] , \sb_1__1__23_chanx_left_out[19]  }),
     .chanx_right_out({ \cbx_1__1__23_chanx_right_out[0] , \cbx_1__1__23_chanx_right_out[1] , \cbx_1__1__23_chanx_right_out[2] , \cbx_1__1__23_chanx_right_out[3] , \cbx_1__1__23_chanx_right_out[4] , \cbx_1__1__23_chanx_right_out[5] , \cbx_1__1__23_chanx_right_out[6] , \cbx_1__1__23_chanx_right_out[7] , \cbx_1__1__23_chanx_right_out[8] , \cbx_1__1__23_chanx_right_out[9] , \cbx_1__1__23_chanx_right_out[10] , \cbx_1__1__23_chanx_right_out[11] , \cbx_1__1__23_chanx_right_out[12] , \cbx_1__1__23_chanx_right_out[13] , \cbx_1__1__23_chanx_right_out[14] , \cbx_1__1__23_chanx_right_out[15] , \cbx_1__1__23_chanx_right_out[16] , \cbx_1__1__23_chanx_right_out[17] , \cbx_1__1__23_chanx_right_out[18] , \cbx_1__1__23_chanx_right_out[19]  }),
+    .clk_1_E_in(\clk_1_wires[36] ),
     .clk_1_N_out(\clk_1_wires[40] ),
     .clk_1_S_out(\clk_1_wires[41] ),
     .clk_1_W_in(\clk_1_wires[36] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[104] ),
+    .prog_clk_1_E_in(\prog_clk_1_wires[36] ),
     .prog_clk_1_N_out(\prog_clk_1_wires[40] ),
     .prog_clk_1_S_out(\prog_clk_1_wires[41] ),
     .prog_clk_1_W_in(\prog_clk_1_wires[36] )
@@ -18392,9 +18422,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chanx_right_in({ \sb_1__1__24_chanx_left_out[0] , \sb_1__1__24_chanx_left_out[1] , \sb_1__1__24_chanx_left_out[2] , \sb_1__1__24_chanx_left_out[3] , \sb_1__1__24_chanx_left_out[4] , \sb_1__1__24_chanx_left_out[5] , \sb_1__1__24_chanx_left_out[6] , \sb_1__1__24_chanx_left_out[7] , \sb_1__1__24_chanx_left_out[8] , \sb_1__1__24_chanx_left_out[9] , \sb_1__1__24_chanx_left_out[10] , \sb_1__1__24_chanx_left_out[11] , \sb_1__1__24_chanx_left_out[12] , \sb_1__1__24_chanx_left_out[13] , \sb_1__1__24_chanx_left_out[14] , \sb_1__1__24_chanx_left_out[15] , \sb_1__1__24_chanx_left_out[16] , \sb_1__1__24_chanx_left_out[17] , \sb_1__1__24_chanx_left_out[18] , \sb_1__1__24_chanx_left_out[19]  }),
     .chanx_right_out({ \cbx_1__1__24_chanx_right_out[0] , \cbx_1__1__24_chanx_right_out[1] , \cbx_1__1__24_chanx_right_out[2] , \cbx_1__1__24_chanx_right_out[3] , \cbx_1__1__24_chanx_right_out[4] , \cbx_1__1__24_chanx_right_out[5] , \cbx_1__1__24_chanx_right_out[6] , \cbx_1__1__24_chanx_right_out[7] , \cbx_1__1__24_chanx_right_out[8] , \cbx_1__1__24_chanx_right_out[9] , \cbx_1__1__24_chanx_right_out[10] , \cbx_1__1__24_chanx_right_out[11] , \cbx_1__1__24_chanx_right_out[12] , \cbx_1__1__24_chanx_right_out[13] , \cbx_1__1__24_chanx_right_out[14] , \cbx_1__1__24_chanx_right_out[15] , \cbx_1__1__24_chanx_right_out[16] , \cbx_1__1__24_chanx_right_out[17] , \cbx_1__1__24_chanx_right_out[18] , \cbx_1__1__24_chanx_right_out[19]  }),
     .clk_3_E_in(\clk_3_wires[3] ),
+    .clk_3_W_in(\clk_3_wires[3] ),
     .clk_3_W_out(\clk_3_wires[4] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[107] ),
     .prog_clk_3_E_in(\prog_clk_3_wires[3] ),
+    .prog_clk_3_W_in(\prog_clk_3_wires[3] ),
     .prog_clk_3_W_out(\prog_clk_3_wires[4] )
   );
   cbx_1__1_ cbx_4__5_ (
@@ -18426,10 +18458,12 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chanx_left_out({ \cbx_1__1__25_chanx_left_out[0] , \cbx_1__1__25_chanx_left_out[1] , \cbx_1__1__25_chanx_left_out[2] , \cbx_1__1__25_chanx_left_out[3] , \cbx_1__1__25_chanx_left_out[4] , \cbx_1__1__25_chanx_left_out[5] , \cbx_1__1__25_chanx_left_out[6] , \cbx_1__1__25_chanx_left_out[7] , \cbx_1__1__25_chanx_left_out[8] , \cbx_1__1__25_chanx_left_out[9] , \cbx_1__1__25_chanx_left_out[10] , \cbx_1__1__25_chanx_left_out[11] , \cbx_1__1__25_chanx_left_out[12] , \cbx_1__1__25_chanx_left_out[13] , \cbx_1__1__25_chanx_left_out[14] , \cbx_1__1__25_chanx_left_out[15] , \cbx_1__1__25_chanx_left_out[16] , \cbx_1__1__25_chanx_left_out[17] , \cbx_1__1__25_chanx_left_out[18] , \cbx_1__1__25_chanx_left_out[19]  }),
     .chanx_right_in({ \sb_1__1__25_chanx_left_out[0] , \sb_1__1__25_chanx_left_out[1] , \sb_1__1__25_chanx_left_out[2] , \sb_1__1__25_chanx_left_out[3] , \sb_1__1__25_chanx_left_out[4] , \sb_1__1__25_chanx_left_out[5] , \sb_1__1__25_chanx_left_out[6] , \sb_1__1__25_chanx_left_out[7] , \sb_1__1__25_chanx_left_out[8] , \sb_1__1__25_chanx_left_out[9] , \sb_1__1__25_chanx_left_out[10] , \sb_1__1__25_chanx_left_out[11] , \sb_1__1__25_chanx_left_out[12] , \sb_1__1__25_chanx_left_out[13] , \sb_1__1__25_chanx_left_out[14] , \sb_1__1__25_chanx_left_out[15] , \sb_1__1__25_chanx_left_out[16] , \sb_1__1__25_chanx_left_out[17] , \sb_1__1__25_chanx_left_out[18] , \sb_1__1__25_chanx_left_out[19]  }),
     .chanx_right_out({ \cbx_1__1__25_chanx_right_out[0] , \cbx_1__1__25_chanx_right_out[1] , \cbx_1__1__25_chanx_right_out[2] , \cbx_1__1__25_chanx_right_out[3] , \cbx_1__1__25_chanx_right_out[4] , \cbx_1__1__25_chanx_right_out[5] , \cbx_1__1__25_chanx_right_out[6] , \cbx_1__1__25_chanx_right_out[7] , \cbx_1__1__25_chanx_right_out[8] , \cbx_1__1__25_chanx_right_out[9] , \cbx_1__1__25_chanx_right_out[10] , \cbx_1__1__25_chanx_right_out[11] , \cbx_1__1__25_chanx_right_out[12] , \cbx_1__1__25_chanx_right_out[13] , \cbx_1__1__25_chanx_right_out[14] , \cbx_1__1__25_chanx_right_out[15] , \cbx_1__1__25_chanx_right_out[16] , \cbx_1__1__25_chanx_right_out[17] , \cbx_1__1__25_chanx_right_out[18] , \cbx_1__1__25_chanx_right_out[19]  }),
+    .clk_1_E_in(\clk_1_wires[43] ),
     .clk_1_N_out(\clk_1_wires[47] ),
     .clk_1_S_out(\clk_1_wires[48] ),
     .clk_1_W_in(\clk_1_wires[43] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[110] ),
+    .prog_clk_1_E_in(\prog_clk_1_wires[43] ),
     .prog_clk_1_N_out(\prog_clk_1_wires[47] ),
     .prog_clk_1_S_out(\prog_clk_1_wires[48] ),
     .prog_clk_1_W_in(\prog_clk_1_wires[43] )
@@ -18494,10 +18528,12 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chanx_left_out({ \cbx_1__1__27_chanx_left_out[0] , \cbx_1__1__27_chanx_left_out[1] , \cbx_1__1__27_chanx_left_out[2] , \cbx_1__1__27_chanx_left_out[3] , \cbx_1__1__27_chanx_left_out[4] , \cbx_1__1__27_chanx_left_out[5] , \cbx_1__1__27_chanx_left_out[6] , \cbx_1__1__27_chanx_left_out[7] , \cbx_1__1__27_chanx_left_out[8] , \cbx_1__1__27_chanx_left_out[9] , \cbx_1__1__27_chanx_left_out[10] , \cbx_1__1__27_chanx_left_out[11] , \cbx_1__1__27_chanx_left_out[12] , \cbx_1__1__27_chanx_left_out[13] , \cbx_1__1__27_chanx_left_out[14] , \cbx_1__1__27_chanx_left_out[15] , \cbx_1__1__27_chanx_left_out[16] , \cbx_1__1__27_chanx_left_out[17] , \cbx_1__1__27_chanx_left_out[18] , \cbx_1__1__27_chanx_left_out[19]  }),
     .chanx_right_in({ \sb_1__1__27_chanx_left_out[0] , \sb_1__1__27_chanx_left_out[1] , \sb_1__1__27_chanx_left_out[2] , \sb_1__1__27_chanx_left_out[3] , \sb_1__1__27_chanx_left_out[4] , \sb_1__1__27_chanx_left_out[5] , \sb_1__1__27_chanx_left_out[6] , \sb_1__1__27_chanx_left_out[7] , \sb_1__1__27_chanx_left_out[8] , \sb_1__1__27_chanx_left_out[9] , \sb_1__1__27_chanx_left_out[10] , \sb_1__1__27_chanx_left_out[11] , \sb_1__1__27_chanx_left_out[12] , \sb_1__1__27_chanx_left_out[13] , \sb_1__1__27_chanx_left_out[14] , \sb_1__1__27_chanx_left_out[15] , \sb_1__1__27_chanx_left_out[16] , \sb_1__1__27_chanx_left_out[17] , \sb_1__1__27_chanx_left_out[18] , \sb_1__1__27_chanx_left_out[19]  }),
     .chanx_right_out({ \cbx_1__1__27_chanx_right_out[0] , \cbx_1__1__27_chanx_right_out[1] , \cbx_1__1__27_chanx_right_out[2] , \cbx_1__1__27_chanx_right_out[3] , \cbx_1__1__27_chanx_right_out[4] , \cbx_1__1__27_chanx_right_out[5] , \cbx_1__1__27_chanx_right_out[6] , \cbx_1__1__27_chanx_right_out[7] , \cbx_1__1__27_chanx_right_out[8] , \cbx_1__1__27_chanx_right_out[9] , \cbx_1__1__27_chanx_right_out[10] , \cbx_1__1__27_chanx_right_out[11] , \cbx_1__1__27_chanx_right_out[12] , \cbx_1__1__27_chanx_right_out[13] , \cbx_1__1__27_chanx_right_out[14] , \cbx_1__1__27_chanx_right_out[15] , \cbx_1__1__27_chanx_right_out[16] , \cbx_1__1__27_chanx_right_out[17] , \cbx_1__1__27_chanx_right_out[18] , \cbx_1__1__27_chanx_right_out[19]  }),
+    .clk_1_E_in(\clk_1_wires[50] ),
     .clk_1_N_out(\clk_1_wires[54] ),
     .clk_1_S_out(\clk_1_wires[55] ),
     .clk_1_W_in(\clk_1_wires[50] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[116] ),
+    .prog_clk_1_E_in(\prog_clk_1_wires[50] ),
     .prog_clk_1_N_out(\prog_clk_1_wires[54] ),
     .prog_clk_1_S_out(\prog_clk_1_wires[55] ),
     .prog_clk_1_W_in(\prog_clk_1_wires[50] )
@@ -18624,10 +18660,12 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .clk_1_E_in(\clk_1_wires[58] ),
     .clk_1_N_out(\clk_1_wires[59] ),
     .clk_1_S_out(\clk_1_wires[60] ),
+    .clk_1_W_in(\clk_1_wires[58] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[124] ),
     .prog_clk_1_E_in(\prog_clk_1_wires[58] ),
     .prog_clk_1_N_out(\prog_clk_1_wires[59] ),
-    .prog_clk_1_S_out(\prog_clk_1_wires[60] )
+    .prog_clk_1_S_out(\prog_clk_1_wires[60] ),
+    .prog_clk_1_W_in(\prog_clk_1_wires[58] )
   );
   cbx_1__1_ cbx_5__2_ (
     .REGIN_FEEDTHROUGH(\regin_feedthrough_wires[29] ),
@@ -18692,10 +18730,12 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .clk_1_E_in(\clk_1_wires[65] ),
     .clk_1_N_out(\clk_1_wires[66] ),
     .clk_1_S_out(\clk_1_wires[67] ),
+    .clk_1_W_in(\clk_1_wires[65] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[130] ),
     .prog_clk_1_E_in(\prog_clk_1_wires[65] ),
     .prog_clk_1_N_out(\prog_clk_1_wires[66] ),
-    .prog_clk_1_S_out(\prog_clk_1_wires[67] )
+    .prog_clk_1_S_out(\prog_clk_1_wires[67] ),
+    .prog_clk_1_W_in(\prog_clk_1_wires[65] )
   );
   cbx_1__1_ cbx_5__4_ (
     .REGIN_FEEDTHROUGH(\regin_feedthrough_wires[31] ),
@@ -18726,9 +18766,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chanx_left_out({ \cbx_1__1__31_chanx_left_out[0] , \cbx_1__1__31_chanx_left_out[1] , \cbx_1__1__31_chanx_left_out[2] , \cbx_1__1__31_chanx_left_out[3] , \cbx_1__1__31_chanx_left_out[4] , \cbx_1__1__31_chanx_left_out[5] , \cbx_1__1__31_chanx_left_out[6] , \cbx_1__1__31_chanx_left_out[7] , \cbx_1__1__31_chanx_left_out[8] , \cbx_1__1__31_chanx_left_out[9] , \cbx_1__1__31_chanx_left_out[10] , \cbx_1__1__31_chanx_left_out[11] , \cbx_1__1__31_chanx_left_out[12] , \cbx_1__1__31_chanx_left_out[13] , \cbx_1__1__31_chanx_left_out[14] , \cbx_1__1__31_chanx_left_out[15] , \cbx_1__1__31_chanx_left_out[16] , \cbx_1__1__31_chanx_left_out[17] , \cbx_1__1__31_chanx_left_out[18] , \cbx_1__1__31_chanx_left_out[19]  }),
     .chanx_right_in({ \sb_1__1__31_chanx_left_out[0] , \sb_1__1__31_chanx_left_out[1] , \sb_1__1__31_chanx_left_out[2] , \sb_1__1__31_chanx_left_out[3] , \sb_1__1__31_chanx_left_out[4] , \sb_1__1__31_chanx_left_out[5] , \sb_1__1__31_chanx_left_out[6] , \sb_1__1__31_chanx_left_out[7] , \sb_1__1__31_chanx_left_out[8] , \sb_1__1__31_chanx_left_out[9] , \sb_1__1__31_chanx_left_out[10] , \sb_1__1__31_chanx_left_out[11] , \sb_1__1__31_chanx_left_out[12] , \sb_1__1__31_chanx_left_out[13] , \sb_1__1__31_chanx_left_out[14] , \sb_1__1__31_chanx_left_out[15] , \sb_1__1__31_chanx_left_out[16] , \sb_1__1__31_chanx_left_out[17] , \sb_1__1__31_chanx_left_out[18] , \sb_1__1__31_chanx_left_out[19]  }),
     .chanx_right_out({ \cbx_1__1__31_chanx_right_out[0] , \cbx_1__1__31_chanx_right_out[1] , \cbx_1__1__31_chanx_right_out[2] , \cbx_1__1__31_chanx_right_out[3] , \cbx_1__1__31_chanx_right_out[4] , \cbx_1__1__31_chanx_right_out[5] , \cbx_1__1__31_chanx_right_out[6] , \cbx_1__1__31_chanx_right_out[7] , \cbx_1__1__31_chanx_right_out[8] , \cbx_1__1__31_chanx_right_out[9] , \cbx_1__1__31_chanx_right_out[10] , \cbx_1__1__31_chanx_right_out[11] , \cbx_1__1__31_chanx_right_out[12] , \cbx_1__1__31_chanx_right_out[13] , \cbx_1__1__31_chanx_right_out[14] , \cbx_1__1__31_chanx_right_out[15] , \cbx_1__1__31_chanx_right_out[16] , \cbx_1__1__31_chanx_right_out[17] , \cbx_1__1__31_chanx_right_out[18] , \cbx_1__1__31_chanx_right_out[19]  }),
+    .clk_3_E_in(\clk_3_wires[1] ),
     .clk_3_E_out(\clk_3_wires[2] ),
     .clk_3_W_in(\clk_3_wires[1] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[133] ),
+    .prog_clk_3_E_in(\prog_clk_3_wires[1] ),
     .prog_clk_3_E_out(\prog_clk_3_wires[2] ),
     .prog_clk_3_W_in(\prog_clk_3_wires[1] )
   );
@@ -18764,10 +18806,12 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .clk_1_E_in(\clk_1_wires[72] ),
     .clk_1_N_out(\clk_1_wires[73] ),
     .clk_1_S_out(\clk_1_wires[74] ),
+    .clk_1_W_in(\clk_1_wires[72] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[136] ),
     .prog_clk_1_E_in(\prog_clk_1_wires[72] ),
     .prog_clk_1_N_out(\prog_clk_1_wires[73] ),
-    .prog_clk_1_S_out(\prog_clk_1_wires[74] )
+    .prog_clk_1_S_out(\prog_clk_1_wires[74] ),
+    .prog_clk_1_W_in(\prog_clk_1_wires[72] )
   );
   cbx_1__1_ cbx_5__6_ (
     .REGIN_FEEDTHROUGH(\regin_feedthrough_wires[33] ),
@@ -18832,10 +18876,12 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .clk_1_E_in(\clk_1_wires[79] ),
     .clk_1_N_out(\clk_1_wires[80] ),
     .clk_1_S_out(\clk_1_wires[81] ),
+    .clk_1_W_in(\clk_1_wires[79] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[142] ),
     .prog_clk_1_E_in(\prog_clk_1_wires[79] ),
     .prog_clk_1_N_out(\prog_clk_1_wires[80] ),
-    .prog_clk_1_S_out(\prog_clk_1_wires[81] )
+    .prog_clk_1_S_out(\prog_clk_1_wires[81] ),
+    .prog_clk_1_W_in(\prog_clk_1_wires[79] )
   );
   cbx_1__2_ cbx_5__8_ (
     .IO_ISOL_N(IO_ISOL_N),
@@ -18956,10 +19002,12 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chanx_left_out({ \cbx_1__1__35_chanx_left_out[0] , \cbx_1__1__35_chanx_left_out[1] , \cbx_1__1__35_chanx_left_out[2] , \cbx_1__1__35_chanx_left_out[3] , \cbx_1__1__35_chanx_left_out[4] , \cbx_1__1__35_chanx_left_out[5] , \cbx_1__1__35_chanx_left_out[6] , \cbx_1__1__35_chanx_left_out[7] , \cbx_1__1__35_chanx_left_out[8] , \cbx_1__1__35_chanx_left_out[9] , \cbx_1__1__35_chanx_left_out[10] , \cbx_1__1__35_chanx_left_out[11] , \cbx_1__1__35_chanx_left_out[12] , \cbx_1__1__35_chanx_left_out[13] , \cbx_1__1__35_chanx_left_out[14] , \cbx_1__1__35_chanx_left_out[15] , \cbx_1__1__35_chanx_left_out[16] , \cbx_1__1__35_chanx_left_out[17] , \cbx_1__1__35_chanx_left_out[18] , \cbx_1__1__35_chanx_left_out[19]  }),
     .chanx_right_in({ \sb_1__1__35_chanx_left_out[0] , \sb_1__1__35_chanx_left_out[1] , \sb_1__1__35_chanx_left_out[2] , \sb_1__1__35_chanx_left_out[3] , \sb_1__1__35_chanx_left_out[4] , \sb_1__1__35_chanx_left_out[5] , \sb_1__1__35_chanx_left_out[6] , \sb_1__1__35_chanx_left_out[7] , \sb_1__1__35_chanx_left_out[8] , \sb_1__1__35_chanx_left_out[9] , \sb_1__1__35_chanx_left_out[10] , \sb_1__1__35_chanx_left_out[11] , \sb_1__1__35_chanx_left_out[12] , \sb_1__1__35_chanx_left_out[13] , \sb_1__1__35_chanx_left_out[14] , \sb_1__1__35_chanx_left_out[15] , \sb_1__1__35_chanx_left_out[16] , \sb_1__1__35_chanx_left_out[17] , \sb_1__1__35_chanx_left_out[18] , \sb_1__1__35_chanx_left_out[19]  }),
     .chanx_right_out({ \cbx_1__1__35_chanx_right_out[0] , \cbx_1__1__35_chanx_right_out[1] , \cbx_1__1__35_chanx_right_out[2] , \cbx_1__1__35_chanx_right_out[3] , \cbx_1__1__35_chanx_right_out[4] , \cbx_1__1__35_chanx_right_out[5] , \cbx_1__1__35_chanx_right_out[6] , \cbx_1__1__35_chanx_right_out[7] , \cbx_1__1__35_chanx_right_out[8] , \cbx_1__1__35_chanx_right_out[9] , \cbx_1__1__35_chanx_right_out[10] , \cbx_1__1__35_chanx_right_out[11] , \cbx_1__1__35_chanx_right_out[12] , \cbx_1__1__35_chanx_right_out[13] , \cbx_1__1__35_chanx_right_out[14] , \cbx_1__1__35_chanx_right_out[15] , \cbx_1__1__35_chanx_right_out[16] , \cbx_1__1__35_chanx_right_out[17] , \cbx_1__1__35_chanx_right_out[18] , \cbx_1__1__35_chanx_right_out[19]  }),
+    .clk_1_E_in(\clk_1_wires[57] ),
     .clk_1_N_out(\clk_1_wires[61] ),
     .clk_1_S_out(\clk_1_wires[62] ),
     .clk_1_W_in(\clk_1_wires[57] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[150] ),
+    .prog_clk_1_E_in(\prog_clk_1_wires[57] ),
     .prog_clk_1_N_out(\prog_clk_1_wires[61] ),
     .prog_clk_1_S_out(\prog_clk_1_wires[62] ),
     .prog_clk_1_W_in(\prog_clk_1_wires[57] )
@@ -18994,9 +19042,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chanx_right_in({ \sb_1__1__36_chanx_left_out[0] , \sb_1__1__36_chanx_left_out[1] , \sb_1__1__36_chanx_left_out[2] , \sb_1__1__36_chanx_left_out[3] , \sb_1__1__36_chanx_left_out[4] , \sb_1__1__36_chanx_left_out[5] , \sb_1__1__36_chanx_left_out[6] , \sb_1__1__36_chanx_left_out[7] , \sb_1__1__36_chanx_left_out[8] , \sb_1__1__36_chanx_left_out[9] , \sb_1__1__36_chanx_left_out[10] , \sb_1__1__36_chanx_left_out[11] , \sb_1__1__36_chanx_left_out[12] , \sb_1__1__36_chanx_left_out[13] , \sb_1__1__36_chanx_left_out[14] , \sb_1__1__36_chanx_left_out[15] , \sb_1__1__36_chanx_left_out[16] , \sb_1__1__36_chanx_left_out[17] , \sb_1__1__36_chanx_left_out[18] , \sb_1__1__36_chanx_left_out[19]  }),
     .chanx_right_out({ \cbx_1__1__36_chanx_right_out[0] , \cbx_1__1__36_chanx_right_out[1] , \cbx_1__1__36_chanx_right_out[2] , \cbx_1__1__36_chanx_right_out[3] , \cbx_1__1__36_chanx_right_out[4] , \cbx_1__1__36_chanx_right_out[5] , \cbx_1__1__36_chanx_right_out[6] , \cbx_1__1__36_chanx_right_out[7] , \cbx_1__1__36_chanx_right_out[8] , \cbx_1__1__36_chanx_right_out[9] , \cbx_1__1__36_chanx_right_out[10] , \cbx_1__1__36_chanx_right_out[11] , \cbx_1__1__36_chanx_right_out[12] , \cbx_1__1__36_chanx_right_out[13] , \cbx_1__1__36_chanx_right_out[14] , \cbx_1__1__36_chanx_right_out[15] , \cbx_1__1__36_chanx_right_out[16] , \cbx_1__1__36_chanx_right_out[17] , \cbx_1__1__36_chanx_right_out[18] , \cbx_1__1__36_chanx_right_out[19]  }),
     .clk_2_E_in(\clk_2_wires[29] ),
+    .clk_2_W_in(\clk_2_wires[29] ),
     .clk_2_W_out(\clk_2_wires[30] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[153] ),
     .prog_clk_2_E_in(\prog_clk_2_wires[29] ),
+    .prog_clk_2_W_in(\prog_clk_2_wires[29] ),
     .prog_clk_2_W_out(\prog_clk_2_wires[30] )
   );
   cbx_1__1_ cbx_6__3_ (
@@ -19028,10 +19078,12 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chanx_left_out({ \cbx_1__1__37_chanx_left_out[0] , \cbx_1__1__37_chanx_left_out[1] , \cbx_1__1__37_chanx_left_out[2] , \cbx_1__1__37_chanx_left_out[3] , \cbx_1__1__37_chanx_left_out[4] , \cbx_1__1__37_chanx_left_out[5] , \cbx_1__1__37_chanx_left_out[6] , \cbx_1__1__37_chanx_left_out[7] , \cbx_1__1__37_chanx_left_out[8] , \cbx_1__1__37_chanx_left_out[9] , \cbx_1__1__37_chanx_left_out[10] , \cbx_1__1__37_chanx_left_out[11] , \cbx_1__1__37_chanx_left_out[12] , \cbx_1__1__37_chanx_left_out[13] , \cbx_1__1__37_chanx_left_out[14] , \cbx_1__1__37_chanx_left_out[15] , \cbx_1__1__37_chanx_left_out[16] , \cbx_1__1__37_chanx_left_out[17] , \cbx_1__1__37_chanx_left_out[18] , \cbx_1__1__37_chanx_left_out[19]  }),
     .chanx_right_in({ \sb_1__1__37_chanx_left_out[0] , \sb_1__1__37_chanx_left_out[1] , \sb_1__1__37_chanx_left_out[2] , \sb_1__1__37_chanx_left_out[3] , \sb_1__1__37_chanx_left_out[4] , \sb_1__1__37_chanx_left_out[5] , \sb_1__1__37_chanx_left_out[6] , \sb_1__1__37_chanx_left_out[7] , \sb_1__1__37_chanx_left_out[8] , \sb_1__1__37_chanx_left_out[9] , \sb_1__1__37_chanx_left_out[10] , \sb_1__1__37_chanx_left_out[11] , \sb_1__1__37_chanx_left_out[12] , \sb_1__1__37_chanx_left_out[13] , \sb_1__1__37_chanx_left_out[14] , \sb_1__1__37_chanx_left_out[15] , \sb_1__1__37_chanx_left_out[16] , \sb_1__1__37_chanx_left_out[17] , \sb_1__1__37_chanx_left_out[18] , \sb_1__1__37_chanx_left_out[19]  }),
     .chanx_right_out({ \cbx_1__1__37_chanx_right_out[0] , \cbx_1__1__37_chanx_right_out[1] , \cbx_1__1__37_chanx_right_out[2] , \cbx_1__1__37_chanx_right_out[3] , \cbx_1__1__37_chanx_right_out[4] , \cbx_1__1__37_chanx_right_out[5] , \cbx_1__1__37_chanx_right_out[6] , \cbx_1__1__37_chanx_right_out[7] , \cbx_1__1__37_chanx_right_out[8] , \cbx_1__1__37_chanx_right_out[9] , \cbx_1__1__37_chanx_right_out[10] , \cbx_1__1__37_chanx_right_out[11] , \cbx_1__1__37_chanx_right_out[12] , \cbx_1__1__37_chanx_right_out[13] , \cbx_1__1__37_chanx_right_out[14] , \cbx_1__1__37_chanx_right_out[15] , \cbx_1__1__37_chanx_right_out[16] , \cbx_1__1__37_chanx_right_out[17] , \cbx_1__1__37_chanx_right_out[18] , \cbx_1__1__37_chanx_right_out[19]  }),
+    .clk_1_E_in(\clk_1_wires[64] ),
     .clk_1_N_out(\clk_1_wires[68] ),
     .clk_1_S_out(\clk_1_wires[69] ),
     .clk_1_W_in(\clk_1_wires[64] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[156] ),
+    .prog_clk_1_E_in(\prog_clk_1_wires[64] ),
     .prog_clk_1_N_out(\prog_clk_1_wires[68] ),
     .prog_clk_1_S_out(\prog_clk_1_wires[69] ),
     .prog_clk_1_W_in(\prog_clk_1_wires[64] )
@@ -19065,9 +19117,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chanx_left_out({ \cbx_1__1__38_chanx_left_out[0] , \cbx_1__1__38_chanx_left_out[1] , \cbx_1__1__38_chanx_left_out[2] , \cbx_1__1__38_chanx_left_out[3] , \cbx_1__1__38_chanx_left_out[4] , \cbx_1__1__38_chanx_left_out[5] , \cbx_1__1__38_chanx_left_out[6] , \cbx_1__1__38_chanx_left_out[7] , \cbx_1__1__38_chanx_left_out[8] , \cbx_1__1__38_chanx_left_out[9] , \cbx_1__1__38_chanx_left_out[10] , \cbx_1__1__38_chanx_left_out[11] , \cbx_1__1__38_chanx_left_out[12] , \cbx_1__1__38_chanx_left_out[13] , \cbx_1__1__38_chanx_left_out[14] , \cbx_1__1__38_chanx_left_out[15] , \cbx_1__1__38_chanx_left_out[16] , \cbx_1__1__38_chanx_left_out[17] , \cbx_1__1__38_chanx_left_out[18] , \cbx_1__1__38_chanx_left_out[19]  }),
     .chanx_right_in({ \sb_1__1__38_chanx_left_out[0] , \sb_1__1__38_chanx_left_out[1] , \sb_1__1__38_chanx_left_out[2] , \sb_1__1__38_chanx_left_out[3] , \sb_1__1__38_chanx_left_out[4] , \sb_1__1__38_chanx_left_out[5] , \sb_1__1__38_chanx_left_out[6] , \sb_1__1__38_chanx_left_out[7] , \sb_1__1__38_chanx_left_out[8] , \sb_1__1__38_chanx_left_out[9] , \sb_1__1__38_chanx_left_out[10] , \sb_1__1__38_chanx_left_out[11] , \sb_1__1__38_chanx_left_out[12] , \sb_1__1__38_chanx_left_out[13] , \sb_1__1__38_chanx_left_out[14] , \sb_1__1__38_chanx_left_out[15] , \sb_1__1__38_chanx_left_out[16] , \sb_1__1__38_chanx_left_out[17] , \sb_1__1__38_chanx_left_out[18] , \sb_1__1__38_chanx_left_out[19]  }),
     .chanx_right_out({ \cbx_1__1__38_chanx_right_out[0] , \cbx_1__1__38_chanx_right_out[1] , \cbx_1__1__38_chanx_right_out[2] , \cbx_1__1__38_chanx_right_out[3] , \cbx_1__1__38_chanx_right_out[4] , \cbx_1__1__38_chanx_right_out[5] , \cbx_1__1__38_chanx_right_out[6] , \cbx_1__1__38_chanx_right_out[7] , \cbx_1__1__38_chanx_right_out[8] , \cbx_1__1__38_chanx_right_out[9] , \cbx_1__1__38_chanx_right_out[10] , \cbx_1__1__38_chanx_right_out[11] , \cbx_1__1__38_chanx_right_out[12] , \cbx_1__1__38_chanx_right_out[13] , \cbx_1__1__38_chanx_right_out[14] , \cbx_1__1__38_chanx_right_out[15] , \cbx_1__1__38_chanx_right_out[16] , \cbx_1__1__38_chanx_right_out[17] , \cbx_1__1__38_chanx_right_out[18] , \cbx_1__1__38_chanx_right_out[19]  }),
+    .clk_3_E_in(\clk_3_wires[6] ),
     .clk_3_E_out(\clk_3_wires[7] ),
     .clk_3_W_in(\clk_3_wires[6] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[159] ),
+    .prog_clk_3_E_in(\prog_clk_3_wires[6] ),
     .prog_clk_3_E_out(\prog_clk_3_wires[7] ),
     .prog_clk_3_W_in(\prog_clk_3_wires[6] )
   );
@@ -19100,10 +19154,12 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chanx_left_out({ \cbx_1__1__39_chanx_left_out[0] , \cbx_1__1__39_chanx_left_out[1] , \cbx_1__1__39_chanx_left_out[2] , \cbx_1__1__39_chanx_left_out[3] , \cbx_1__1__39_chanx_left_out[4] , \cbx_1__1__39_chanx_left_out[5] , \cbx_1__1__39_chanx_left_out[6] , \cbx_1__1__39_chanx_left_out[7] , \cbx_1__1__39_chanx_left_out[8] , \cbx_1__1__39_chanx_left_out[9] , \cbx_1__1__39_chanx_left_out[10] , \cbx_1__1__39_chanx_left_out[11] , \cbx_1__1__39_chanx_left_out[12] , \cbx_1__1__39_chanx_left_out[13] , \cbx_1__1__39_chanx_left_out[14] , \cbx_1__1__39_chanx_left_out[15] , \cbx_1__1__39_chanx_left_out[16] , \cbx_1__1__39_chanx_left_out[17] , \cbx_1__1__39_chanx_left_out[18] , \cbx_1__1__39_chanx_left_out[19]  }),
     .chanx_right_in({ \sb_1__1__39_chanx_left_out[0] , \sb_1__1__39_chanx_left_out[1] , \sb_1__1__39_chanx_left_out[2] , \sb_1__1__39_chanx_left_out[3] , \sb_1__1__39_chanx_left_out[4] , \sb_1__1__39_chanx_left_out[5] , \sb_1__1__39_chanx_left_out[6] , \sb_1__1__39_chanx_left_out[7] , \sb_1__1__39_chanx_left_out[8] , \sb_1__1__39_chanx_left_out[9] , \sb_1__1__39_chanx_left_out[10] , \sb_1__1__39_chanx_left_out[11] , \sb_1__1__39_chanx_left_out[12] , \sb_1__1__39_chanx_left_out[13] , \sb_1__1__39_chanx_left_out[14] , \sb_1__1__39_chanx_left_out[15] , \sb_1__1__39_chanx_left_out[16] , \sb_1__1__39_chanx_left_out[17] , \sb_1__1__39_chanx_left_out[18] , \sb_1__1__39_chanx_left_out[19]  }),
     .chanx_right_out({ \cbx_1__1__39_chanx_right_out[0] , \cbx_1__1__39_chanx_right_out[1] , \cbx_1__1__39_chanx_right_out[2] , \cbx_1__1__39_chanx_right_out[3] , \cbx_1__1__39_chanx_right_out[4] , \cbx_1__1__39_chanx_right_out[5] , \cbx_1__1__39_chanx_right_out[6] , \cbx_1__1__39_chanx_right_out[7] , \cbx_1__1__39_chanx_right_out[8] , \cbx_1__1__39_chanx_right_out[9] , \cbx_1__1__39_chanx_right_out[10] , \cbx_1__1__39_chanx_right_out[11] , \cbx_1__1__39_chanx_right_out[12] , \cbx_1__1__39_chanx_right_out[13] , \cbx_1__1__39_chanx_right_out[14] , \cbx_1__1__39_chanx_right_out[15] , \cbx_1__1__39_chanx_right_out[16] , \cbx_1__1__39_chanx_right_out[17] , \cbx_1__1__39_chanx_right_out[18] , \cbx_1__1__39_chanx_right_out[19]  }),
+    .clk_1_E_in(\clk_1_wires[71] ),
     .clk_1_N_out(\clk_1_wires[75] ),
     .clk_1_S_out(\clk_1_wires[76] ),
     .clk_1_W_in(\clk_1_wires[71] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[162] ),
+    .prog_clk_1_E_in(\prog_clk_1_wires[71] ),
     .prog_clk_1_N_out(\prog_clk_1_wires[75] ),
     .prog_clk_1_S_out(\prog_clk_1_wires[76] ),
     .prog_clk_1_W_in(\prog_clk_1_wires[71] )
@@ -19138,9 +19194,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chanx_right_in({ \sb_1__1__40_chanx_left_out[0] , \sb_1__1__40_chanx_left_out[1] , \sb_1__1__40_chanx_left_out[2] , \sb_1__1__40_chanx_left_out[3] , \sb_1__1__40_chanx_left_out[4] , \sb_1__1__40_chanx_left_out[5] , \sb_1__1__40_chanx_left_out[6] , \sb_1__1__40_chanx_left_out[7] , \sb_1__1__40_chanx_left_out[8] , \sb_1__1__40_chanx_left_out[9] , \sb_1__1__40_chanx_left_out[10] , \sb_1__1__40_chanx_left_out[11] , \sb_1__1__40_chanx_left_out[12] , \sb_1__1__40_chanx_left_out[13] , \sb_1__1__40_chanx_left_out[14] , \sb_1__1__40_chanx_left_out[15] , \sb_1__1__40_chanx_left_out[16] , \sb_1__1__40_chanx_left_out[17] , \sb_1__1__40_chanx_left_out[18] , \sb_1__1__40_chanx_left_out[19]  }),
     .chanx_right_out({ \cbx_1__1__40_chanx_right_out[0] , \cbx_1__1__40_chanx_right_out[1] , \cbx_1__1__40_chanx_right_out[2] , \cbx_1__1__40_chanx_right_out[3] , \cbx_1__1__40_chanx_right_out[4] , \cbx_1__1__40_chanx_right_out[5] , \cbx_1__1__40_chanx_right_out[6] , \cbx_1__1__40_chanx_right_out[7] , \cbx_1__1__40_chanx_right_out[8] , \cbx_1__1__40_chanx_right_out[9] , \cbx_1__1__40_chanx_right_out[10] , \cbx_1__1__40_chanx_right_out[11] , \cbx_1__1__40_chanx_right_out[12] , \cbx_1__1__40_chanx_right_out[13] , \cbx_1__1__40_chanx_right_out[14] , \cbx_1__1__40_chanx_right_out[15] , \cbx_1__1__40_chanx_right_out[16] , \cbx_1__1__40_chanx_right_out[17] , \cbx_1__1__40_chanx_right_out[18] , \cbx_1__1__40_chanx_right_out[19]  }),
     .clk_2_E_in(\clk_2_wires[42] ),
+    .clk_2_W_in(\clk_2_wires[42] ),
     .clk_2_W_out(\clk_2_wires[43] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[165] ),
     .prog_clk_2_E_in(\prog_clk_2_wires[42] ),
+    .prog_clk_2_W_in(\prog_clk_2_wires[42] ),
     .prog_clk_2_W_out(\prog_clk_2_wires[43] )
   );
   cbx_1__1_ cbx_6__7_ (
@@ -19172,10 +19230,12 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chanx_left_out({ \cbx_1__1__41_chanx_left_out[0] , \cbx_1__1__41_chanx_left_out[1] , \cbx_1__1__41_chanx_left_out[2] , \cbx_1__1__41_chanx_left_out[3] , \cbx_1__1__41_chanx_left_out[4] , \cbx_1__1__41_chanx_left_out[5] , \cbx_1__1__41_chanx_left_out[6] , \cbx_1__1__41_chanx_left_out[7] , \cbx_1__1__41_chanx_left_out[8] , \cbx_1__1__41_chanx_left_out[9] , \cbx_1__1__41_chanx_left_out[10] , \cbx_1__1__41_chanx_left_out[11] , \cbx_1__1__41_chanx_left_out[12] , \cbx_1__1__41_chanx_left_out[13] , \cbx_1__1__41_chanx_left_out[14] , \cbx_1__1__41_chanx_left_out[15] , \cbx_1__1__41_chanx_left_out[16] , \cbx_1__1__41_chanx_left_out[17] , \cbx_1__1__41_chanx_left_out[18] , \cbx_1__1__41_chanx_left_out[19]  }),
     .chanx_right_in({ \sb_1__1__41_chanx_left_out[0] , \sb_1__1__41_chanx_left_out[1] , \sb_1__1__41_chanx_left_out[2] , \sb_1__1__41_chanx_left_out[3] , \sb_1__1__41_chanx_left_out[4] , \sb_1__1__41_chanx_left_out[5] , \sb_1__1__41_chanx_left_out[6] , \sb_1__1__41_chanx_left_out[7] , \sb_1__1__41_chanx_left_out[8] , \sb_1__1__41_chanx_left_out[9] , \sb_1__1__41_chanx_left_out[10] , \sb_1__1__41_chanx_left_out[11] , \sb_1__1__41_chanx_left_out[12] , \sb_1__1__41_chanx_left_out[13] , \sb_1__1__41_chanx_left_out[14] , \sb_1__1__41_chanx_left_out[15] , \sb_1__1__41_chanx_left_out[16] , \sb_1__1__41_chanx_left_out[17] , \sb_1__1__41_chanx_left_out[18] , \sb_1__1__41_chanx_left_out[19]  }),
     .chanx_right_out({ \cbx_1__1__41_chanx_right_out[0] , \cbx_1__1__41_chanx_right_out[1] , \cbx_1__1__41_chanx_right_out[2] , \cbx_1__1__41_chanx_right_out[3] , \cbx_1__1__41_chanx_right_out[4] , \cbx_1__1__41_chanx_right_out[5] , \cbx_1__1__41_chanx_right_out[6] , \cbx_1__1__41_chanx_right_out[7] , \cbx_1__1__41_chanx_right_out[8] , \cbx_1__1__41_chanx_right_out[9] , \cbx_1__1__41_chanx_right_out[10] , \cbx_1__1__41_chanx_right_out[11] , \cbx_1__1__41_chanx_right_out[12] , \cbx_1__1__41_chanx_right_out[13] , \cbx_1__1__41_chanx_right_out[14] , \cbx_1__1__41_chanx_right_out[15] , \cbx_1__1__41_chanx_right_out[16] , \cbx_1__1__41_chanx_right_out[17] , \cbx_1__1__41_chanx_right_out[18] , \cbx_1__1__41_chanx_right_out[19]  }),
+    .clk_1_E_in(\clk_1_wires[78] ),
     .clk_1_N_out(\clk_1_wires[82] ),
     .clk_1_S_out(\clk_1_wires[83] ),
     .clk_1_W_in(\clk_1_wires[78] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[168] ),
+    .prog_clk_1_E_in(\prog_clk_1_wires[78] ),
     .prog_clk_1_N_out(\prog_clk_1_wires[82] ),
     .prog_clk_1_S_out(\prog_clk_1_wires[83] ),
     .prog_clk_1_W_in(\prog_clk_1_wires[78] )
@@ -19302,10 +19362,12 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .clk_1_E_in(\clk_1_wires[86] ),
     .clk_1_N_out(\clk_1_wires[87] ),
     .clk_1_S_out(\clk_1_wires[88] ),
+    .clk_1_W_in(\clk_1_wires[86] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[176] ),
     .prog_clk_1_E_in(\prog_clk_1_wires[86] ),
     .prog_clk_1_N_out(\prog_clk_1_wires[87] ),
-    .prog_clk_1_S_out(\prog_clk_1_wires[88] )
+    .prog_clk_1_S_out(\prog_clk_1_wires[88] ),
+    .prog_clk_1_W_in(\prog_clk_1_wires[86] )
   );
   cbx_1__1_ cbx_7__2_ (
     .REGIN_FEEDTHROUGH(\regin_feedthrough_wires[43] ),
@@ -19336,9 +19398,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chanx_left_out({ \cbx_1__1__43_chanx_left_out[0] , \cbx_1__1__43_chanx_left_out[1] , \cbx_1__1__43_chanx_left_out[2] , \cbx_1__1__43_chanx_left_out[3] , \cbx_1__1__43_chanx_left_out[4] , \cbx_1__1__43_chanx_left_out[5] , \cbx_1__1__43_chanx_left_out[6] , \cbx_1__1__43_chanx_left_out[7] , \cbx_1__1__43_chanx_left_out[8] , \cbx_1__1__43_chanx_left_out[9] , \cbx_1__1__43_chanx_left_out[10] , \cbx_1__1__43_chanx_left_out[11] , \cbx_1__1__43_chanx_left_out[12] , \cbx_1__1__43_chanx_left_out[13] , \cbx_1__1__43_chanx_left_out[14] , \cbx_1__1__43_chanx_left_out[15] , \cbx_1__1__43_chanx_left_out[16] , \cbx_1__1__43_chanx_left_out[17] , \cbx_1__1__43_chanx_left_out[18] , \cbx_1__1__43_chanx_left_out[19]  }),
     .chanx_right_in({ \sb_1__1__43_chanx_left_out[0] , \sb_1__1__43_chanx_left_out[1] , \sb_1__1__43_chanx_left_out[2] , \sb_1__1__43_chanx_left_out[3] , \sb_1__1__43_chanx_left_out[4] , \sb_1__1__43_chanx_left_out[5] , \sb_1__1__43_chanx_left_out[6] , \sb_1__1__43_chanx_left_out[7] , \sb_1__1__43_chanx_left_out[8] , \sb_1__1__43_chanx_left_out[9] , \sb_1__1__43_chanx_left_out[10] , \sb_1__1__43_chanx_left_out[11] , \sb_1__1__43_chanx_left_out[12] , \sb_1__1__43_chanx_left_out[13] , \sb_1__1__43_chanx_left_out[14] , \sb_1__1__43_chanx_left_out[15] , \sb_1__1__43_chanx_left_out[16] , \sb_1__1__43_chanx_left_out[17] , \sb_1__1__43_chanx_left_out[18] , \sb_1__1__43_chanx_left_out[19]  }),
     .chanx_right_out({ \cbx_1__1__43_chanx_right_out[0] , \cbx_1__1__43_chanx_right_out[1] , \cbx_1__1__43_chanx_right_out[2] , \cbx_1__1__43_chanx_right_out[3] , \cbx_1__1__43_chanx_right_out[4] , \cbx_1__1__43_chanx_right_out[5] , \cbx_1__1__43_chanx_right_out[6] , \cbx_1__1__43_chanx_right_out[7] , \cbx_1__1__43_chanx_right_out[8] , \cbx_1__1__43_chanx_right_out[9] , \cbx_1__1__43_chanx_right_out[10] , \cbx_1__1__43_chanx_right_out[11] , \cbx_1__1__43_chanx_right_out[12] , \cbx_1__1__43_chanx_right_out[13] , \cbx_1__1__43_chanx_right_out[14] , \cbx_1__1__43_chanx_right_out[15] , \cbx_1__1__43_chanx_right_out[16] , \cbx_1__1__43_chanx_right_out[17] , \cbx_1__1__43_chanx_right_out[18] , \cbx_1__1__43_chanx_right_out[19]  }),
+    .clk_2_E_in(\clk_2_wires[27] ),
     .clk_2_E_out(\clk_2_wires[28] ),
     .clk_2_W_in(\clk_2_wires[27] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[179] ),
+    .prog_clk_2_E_in(\prog_clk_2_wires[27] ),
     .prog_clk_2_E_out(\prog_clk_2_wires[28] ),
     .prog_clk_2_W_in(\prog_clk_2_wires[27] )
   );
@@ -19374,10 +19438,12 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .clk_1_E_in(\clk_1_wires[93] ),
     .clk_1_N_out(\clk_1_wires[94] ),
     .clk_1_S_out(\clk_1_wires[95] ),
+    .clk_1_W_in(\clk_1_wires[93] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[182] ),
     .prog_clk_1_E_in(\prog_clk_1_wires[93] ),
     .prog_clk_1_N_out(\prog_clk_1_wires[94] ),
-    .prog_clk_1_S_out(\prog_clk_1_wires[95] )
+    .prog_clk_1_S_out(\prog_clk_1_wires[95] ),
+    .prog_clk_1_W_in(\prog_clk_1_wires[93] )
   );
   cbx_1__1_ cbx_7__4_ (
     .REGIN_FEEDTHROUGH(\regin_feedthrough_wires[45] ),
@@ -19442,10 +19508,12 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .clk_1_E_in(\clk_1_wires[100] ),
     .clk_1_N_out(\clk_1_wires[101] ),
     .clk_1_S_out(\clk_1_wires[102] ),
+    .clk_1_W_in(\clk_1_wires[100] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[188] ),
     .prog_clk_1_E_in(\prog_clk_1_wires[100] ),
     .prog_clk_1_N_out(\prog_clk_1_wires[101] ),
-    .prog_clk_1_S_out(\prog_clk_1_wires[102] )
+    .prog_clk_1_S_out(\prog_clk_1_wires[102] ),
+    .prog_clk_1_W_in(\prog_clk_1_wires[100] )
   );
   cbx_1__1_ cbx_7__6_ (
     .REGIN_FEEDTHROUGH(\regin_feedthrough_wires[47] ),
@@ -19476,9 +19544,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chanx_left_out({ \cbx_1__1__47_chanx_left_out[0] , \cbx_1__1__47_chanx_left_out[1] , \cbx_1__1__47_chanx_left_out[2] , \cbx_1__1__47_chanx_left_out[3] , \cbx_1__1__47_chanx_left_out[4] , \cbx_1__1__47_chanx_left_out[5] , \cbx_1__1__47_chanx_left_out[6] , \cbx_1__1__47_chanx_left_out[7] , \cbx_1__1__47_chanx_left_out[8] , \cbx_1__1__47_chanx_left_out[9] , \cbx_1__1__47_chanx_left_out[10] , \cbx_1__1__47_chanx_left_out[11] , \cbx_1__1__47_chanx_left_out[12] , \cbx_1__1__47_chanx_left_out[13] , \cbx_1__1__47_chanx_left_out[14] , \cbx_1__1__47_chanx_left_out[15] , \cbx_1__1__47_chanx_left_out[16] , \cbx_1__1__47_chanx_left_out[17] , \cbx_1__1__47_chanx_left_out[18] , \cbx_1__1__47_chanx_left_out[19]  }),
     .chanx_right_in({ \sb_1__1__47_chanx_left_out[0] , \sb_1__1__47_chanx_left_out[1] , \sb_1__1__47_chanx_left_out[2] , \sb_1__1__47_chanx_left_out[3] , \sb_1__1__47_chanx_left_out[4] , \sb_1__1__47_chanx_left_out[5] , \sb_1__1__47_chanx_left_out[6] , \sb_1__1__47_chanx_left_out[7] , \sb_1__1__47_chanx_left_out[8] , \sb_1__1__47_chanx_left_out[9] , \sb_1__1__47_chanx_left_out[10] , \sb_1__1__47_chanx_left_out[11] , \sb_1__1__47_chanx_left_out[12] , \sb_1__1__47_chanx_left_out[13] , \sb_1__1__47_chanx_left_out[14] , \sb_1__1__47_chanx_left_out[15] , \sb_1__1__47_chanx_left_out[16] , \sb_1__1__47_chanx_left_out[17] , \sb_1__1__47_chanx_left_out[18] , \sb_1__1__47_chanx_left_out[19]  }),
     .chanx_right_out({ \cbx_1__1__47_chanx_right_out[0] , \cbx_1__1__47_chanx_right_out[1] , \cbx_1__1__47_chanx_right_out[2] , \cbx_1__1__47_chanx_right_out[3] , \cbx_1__1__47_chanx_right_out[4] , \cbx_1__1__47_chanx_right_out[5] , \cbx_1__1__47_chanx_right_out[6] , \cbx_1__1__47_chanx_right_out[7] , \cbx_1__1__47_chanx_right_out[8] , \cbx_1__1__47_chanx_right_out[9] , \cbx_1__1__47_chanx_right_out[10] , \cbx_1__1__47_chanx_right_out[11] , \cbx_1__1__47_chanx_right_out[12] , \cbx_1__1__47_chanx_right_out[13] , \cbx_1__1__47_chanx_right_out[14] , \cbx_1__1__47_chanx_right_out[15] , \cbx_1__1__47_chanx_right_out[16] , \cbx_1__1__47_chanx_right_out[17] , \cbx_1__1__47_chanx_right_out[18] , \cbx_1__1__47_chanx_right_out[19]  }),
+    .clk_2_E_in(\clk_2_wires[40] ),
     .clk_2_E_out(\clk_2_wires[41] ),
     .clk_2_W_in(\clk_2_wires[40] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[191] ),
+    .prog_clk_2_E_in(\prog_clk_2_wires[40] ),
     .prog_clk_2_E_out(\prog_clk_2_wires[41] ),
     .prog_clk_2_W_in(\prog_clk_2_wires[40] )
   );
@@ -19514,10 +19584,12 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .clk_1_E_in(\clk_1_wires[107] ),
     .clk_1_N_out(\clk_1_wires[108] ),
     .clk_1_S_out(\clk_1_wires[109] ),
+    .clk_1_W_in(\clk_1_wires[107] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[194] ),
     .prog_clk_1_E_in(\prog_clk_1_wires[107] ),
     .prog_clk_1_N_out(\prog_clk_1_wires[108] ),
-    .prog_clk_1_S_out(\prog_clk_1_wires[109] )
+    .prog_clk_1_S_out(\prog_clk_1_wires[109] ),
+    .prog_clk_1_W_in(\prog_clk_1_wires[107] )
   );
   cbx_1__2_ cbx_7__8_ (
     .IO_ISOL_N(IO_ISOL_N),
@@ -19638,10 +19710,12 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chanx_left_out({ \cbx_1__1__49_chanx_left_out[0] , \cbx_1__1__49_chanx_left_out[1] , \cbx_1__1__49_chanx_left_out[2] , \cbx_1__1__49_chanx_left_out[3] , \cbx_1__1__49_chanx_left_out[4] , \cbx_1__1__49_chanx_left_out[5] , \cbx_1__1__49_chanx_left_out[6] , \cbx_1__1__49_chanx_left_out[7] , \cbx_1__1__49_chanx_left_out[8] , \cbx_1__1__49_chanx_left_out[9] , \cbx_1__1__49_chanx_left_out[10] , \cbx_1__1__49_chanx_left_out[11] , \cbx_1__1__49_chanx_left_out[12] , \cbx_1__1__49_chanx_left_out[13] , \cbx_1__1__49_chanx_left_out[14] , \cbx_1__1__49_chanx_left_out[15] , \cbx_1__1__49_chanx_left_out[16] , \cbx_1__1__49_chanx_left_out[17] , \cbx_1__1__49_chanx_left_out[18] , \cbx_1__1__49_chanx_left_out[19]  }),
     .chanx_right_in({ \sb_8__1__0_chanx_left_out[0] , \sb_8__1__0_chanx_left_out[1] , \sb_8__1__0_chanx_left_out[2] , \sb_8__1__0_chanx_left_out[3] , \sb_8__1__0_chanx_left_out[4] , \sb_8__1__0_chanx_left_out[5] , \sb_8__1__0_chanx_left_out[6] , \sb_8__1__0_chanx_left_out[7] , \sb_8__1__0_chanx_left_out[8] , \sb_8__1__0_chanx_left_out[9] , \sb_8__1__0_chanx_left_out[10] , \sb_8__1__0_chanx_left_out[11] , \sb_8__1__0_chanx_left_out[12] , \sb_8__1__0_chanx_left_out[13] , \sb_8__1__0_chanx_left_out[14] , \sb_8__1__0_chanx_left_out[15] , \sb_8__1__0_chanx_left_out[16] , \sb_8__1__0_chanx_left_out[17] , \sb_8__1__0_chanx_left_out[18] , \sb_8__1__0_chanx_left_out[19]  }),
     .chanx_right_out({ \cbx_1__1__49_chanx_right_out[0] , \cbx_1__1__49_chanx_right_out[1] , \cbx_1__1__49_chanx_right_out[2] , \cbx_1__1__49_chanx_right_out[3] , \cbx_1__1__49_chanx_right_out[4] , \cbx_1__1__49_chanx_right_out[5] , \cbx_1__1__49_chanx_right_out[6] , \cbx_1__1__49_chanx_right_out[7] , \cbx_1__1__49_chanx_right_out[8] , \cbx_1__1__49_chanx_right_out[9] , \cbx_1__1__49_chanx_right_out[10] , \cbx_1__1__49_chanx_right_out[11] , \cbx_1__1__49_chanx_right_out[12] , \cbx_1__1__49_chanx_right_out[13] , \cbx_1__1__49_chanx_right_out[14] , \cbx_1__1__49_chanx_right_out[15] , \cbx_1__1__49_chanx_right_out[16] , \cbx_1__1__49_chanx_right_out[17] , \cbx_1__1__49_chanx_right_out[18] , \cbx_1__1__49_chanx_right_out[19]  }),
+    .clk_1_E_in(\clk_1_wires[85] ),
     .clk_1_N_out(\clk_1_wires[89] ),
     .clk_1_S_out(\clk_1_wires[90] ),
     .clk_1_W_in(\clk_1_wires[85] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[202] ),
+    .prog_clk_1_E_in(\prog_clk_1_wires[85] ),
     .prog_clk_1_N_out(\prog_clk_1_wires[89] ),
     .prog_clk_1_S_out(\prog_clk_1_wires[90] ),
     .prog_clk_1_W_in(\prog_clk_1_wires[85] )
@@ -19706,10 +19780,12 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chanx_left_out({ \cbx_1__1__51_chanx_left_out[0] , \cbx_1__1__51_chanx_left_out[1] , \cbx_1__1__51_chanx_left_out[2] , \cbx_1__1__51_chanx_left_out[3] , \cbx_1__1__51_chanx_left_out[4] , \cbx_1__1__51_chanx_left_out[5] , \cbx_1__1__51_chanx_left_out[6] , \cbx_1__1__51_chanx_left_out[7] , \cbx_1__1__51_chanx_left_out[8] , \cbx_1__1__51_chanx_left_out[9] , \cbx_1__1__51_chanx_left_out[10] , \cbx_1__1__51_chanx_left_out[11] , \cbx_1__1__51_chanx_left_out[12] , \cbx_1__1__51_chanx_left_out[13] , \cbx_1__1__51_chanx_left_out[14] , \cbx_1__1__51_chanx_left_out[15] , \cbx_1__1__51_chanx_left_out[16] , \cbx_1__1__51_chanx_left_out[17] , \cbx_1__1__51_chanx_left_out[18] , \cbx_1__1__51_chanx_left_out[19]  }),
     .chanx_right_in({ \sb_8__1__2_chanx_left_out[0] , \sb_8__1__2_chanx_left_out[1] , \sb_8__1__2_chanx_left_out[2] , \sb_8__1__2_chanx_left_out[3] , \sb_8__1__2_chanx_left_out[4] , \sb_8__1__2_chanx_left_out[5] , \sb_8__1__2_chanx_left_out[6] , \sb_8__1__2_chanx_left_out[7] , \sb_8__1__2_chanx_left_out[8] , \sb_8__1__2_chanx_left_out[9] , \sb_8__1__2_chanx_left_out[10] , \sb_8__1__2_chanx_left_out[11] , \sb_8__1__2_chanx_left_out[12] , \sb_8__1__2_chanx_left_out[13] , \sb_8__1__2_chanx_left_out[14] , \sb_8__1__2_chanx_left_out[15] , \sb_8__1__2_chanx_left_out[16] , \sb_8__1__2_chanx_left_out[17] , \sb_8__1__2_chanx_left_out[18] , \sb_8__1__2_chanx_left_out[19]  }),
     .chanx_right_out({ \cbx_1__1__51_chanx_right_out[0] , \cbx_1__1__51_chanx_right_out[1] , \cbx_1__1__51_chanx_right_out[2] , \cbx_1__1__51_chanx_right_out[3] , \cbx_1__1__51_chanx_right_out[4] , \cbx_1__1__51_chanx_right_out[5] , \cbx_1__1__51_chanx_right_out[6] , \cbx_1__1__51_chanx_right_out[7] , \cbx_1__1__51_chanx_right_out[8] , \cbx_1__1__51_chanx_right_out[9] , \cbx_1__1__51_chanx_right_out[10] , \cbx_1__1__51_chanx_right_out[11] , \cbx_1__1__51_chanx_right_out[12] , \cbx_1__1__51_chanx_right_out[13] , \cbx_1__1__51_chanx_right_out[14] , \cbx_1__1__51_chanx_right_out[15] , \cbx_1__1__51_chanx_right_out[16] , \cbx_1__1__51_chanx_right_out[17] , \cbx_1__1__51_chanx_right_out[18] , \cbx_1__1__51_chanx_right_out[19]  }),
+    .clk_1_E_in(\clk_1_wires[92] ),
     .clk_1_N_out(\clk_1_wires[96] ),
     .clk_1_S_out(\clk_1_wires[97] ),
     .clk_1_W_in(\clk_1_wires[92] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[208] ),
+    .prog_clk_1_E_in(\prog_clk_1_wires[92] ),
     .prog_clk_1_N_out(\prog_clk_1_wires[96] ),
     .prog_clk_1_S_out(\prog_clk_1_wires[97] ),
     .prog_clk_1_W_in(\prog_clk_1_wires[92] )
@@ -19774,10 +19850,12 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chanx_left_out({ \cbx_1__1__53_chanx_left_out[0] , \cbx_1__1__53_chanx_left_out[1] , \cbx_1__1__53_chanx_left_out[2] , \cbx_1__1__53_chanx_left_out[3] , \cbx_1__1__53_chanx_left_out[4] , \cbx_1__1__53_chanx_left_out[5] , \cbx_1__1__53_chanx_left_out[6] , \cbx_1__1__53_chanx_left_out[7] , \cbx_1__1__53_chanx_left_out[8] , \cbx_1__1__53_chanx_left_out[9] , \cbx_1__1__53_chanx_left_out[10] , \cbx_1__1__53_chanx_left_out[11] , \cbx_1__1__53_chanx_left_out[12] , \cbx_1__1__53_chanx_left_out[13] , \cbx_1__1__53_chanx_left_out[14] , \cbx_1__1__53_chanx_left_out[15] , \cbx_1__1__53_chanx_left_out[16] , \cbx_1__1__53_chanx_left_out[17] , \cbx_1__1__53_chanx_left_out[18] , \cbx_1__1__53_chanx_left_out[19]  }),
     .chanx_right_in({ \sb_8__1__4_chanx_left_out[0] , \sb_8__1__4_chanx_left_out[1] , \sb_8__1__4_chanx_left_out[2] , \sb_8__1__4_chanx_left_out[3] , \sb_8__1__4_chanx_left_out[4] , \sb_8__1__4_chanx_left_out[5] , \sb_8__1__4_chanx_left_out[6] , \sb_8__1__4_chanx_left_out[7] , \sb_8__1__4_chanx_left_out[8] , \sb_8__1__4_chanx_left_out[9] , \sb_8__1__4_chanx_left_out[10] , \sb_8__1__4_chanx_left_out[11] , \sb_8__1__4_chanx_left_out[12] , \sb_8__1__4_chanx_left_out[13] , \sb_8__1__4_chanx_left_out[14] , \sb_8__1__4_chanx_left_out[15] , \sb_8__1__4_chanx_left_out[16] , \sb_8__1__4_chanx_left_out[17] , \sb_8__1__4_chanx_left_out[18] , \sb_8__1__4_chanx_left_out[19]  }),
     .chanx_right_out({ \cbx_1__1__53_chanx_right_out[0] , \cbx_1__1__53_chanx_right_out[1] , \cbx_1__1__53_chanx_right_out[2] , \cbx_1__1__53_chanx_right_out[3] , \cbx_1__1__53_chanx_right_out[4] , \cbx_1__1__53_chanx_right_out[5] , \cbx_1__1__53_chanx_right_out[6] , \cbx_1__1__53_chanx_right_out[7] , \cbx_1__1__53_chanx_right_out[8] , \cbx_1__1__53_chanx_right_out[9] , \cbx_1__1__53_chanx_right_out[10] , \cbx_1__1__53_chanx_right_out[11] , \cbx_1__1__53_chanx_right_out[12] , \cbx_1__1__53_chanx_right_out[13] , \cbx_1__1__53_chanx_right_out[14] , \cbx_1__1__53_chanx_right_out[15] , \cbx_1__1__53_chanx_right_out[16] , \cbx_1__1__53_chanx_right_out[17] , \cbx_1__1__53_chanx_right_out[18] , \cbx_1__1__53_chanx_right_out[19]  }),
+    .clk_1_E_in(\clk_1_wires[99] ),
     .clk_1_N_out(\clk_1_wires[103] ),
     .clk_1_S_out(\clk_1_wires[104] ),
     .clk_1_W_in(\clk_1_wires[99] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[214] ),
+    .prog_clk_1_E_in(\prog_clk_1_wires[99] ),
     .prog_clk_1_N_out(\prog_clk_1_wires[103] ),
     .prog_clk_1_S_out(\prog_clk_1_wires[104] ),
     .prog_clk_1_W_in(\prog_clk_1_wires[99] )
@@ -19842,10 +19920,12 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chanx_left_out({ \cbx_1__1__55_chanx_left_out[0] , \cbx_1__1__55_chanx_left_out[1] , \cbx_1__1__55_chanx_left_out[2] , \cbx_1__1__55_chanx_left_out[3] , \cbx_1__1__55_chanx_left_out[4] , \cbx_1__1__55_chanx_left_out[5] , \cbx_1__1__55_chanx_left_out[6] , \cbx_1__1__55_chanx_left_out[7] , \cbx_1__1__55_chanx_left_out[8] , \cbx_1__1__55_chanx_left_out[9] , \cbx_1__1__55_chanx_left_out[10] , \cbx_1__1__55_chanx_left_out[11] , \cbx_1__1__55_chanx_left_out[12] , \cbx_1__1__55_chanx_left_out[13] , \cbx_1__1__55_chanx_left_out[14] , \cbx_1__1__55_chanx_left_out[15] , \cbx_1__1__55_chanx_left_out[16] , \cbx_1__1__55_chanx_left_out[17] , \cbx_1__1__55_chanx_left_out[18] , \cbx_1__1__55_chanx_left_out[19]  }),
     .chanx_right_in({ \sb_8__1__6_chanx_left_out[0] , \sb_8__1__6_chanx_left_out[1] , \sb_8__1__6_chanx_left_out[2] , \sb_8__1__6_chanx_left_out[3] , \sb_8__1__6_chanx_left_out[4] , \sb_8__1__6_chanx_left_out[5] , \sb_8__1__6_chanx_left_out[6] , \sb_8__1__6_chanx_left_out[7] , \sb_8__1__6_chanx_left_out[8] , \sb_8__1__6_chanx_left_out[9] , \sb_8__1__6_chanx_left_out[10] , \sb_8__1__6_chanx_left_out[11] , \sb_8__1__6_chanx_left_out[12] , \sb_8__1__6_chanx_left_out[13] , \sb_8__1__6_chanx_left_out[14] , \sb_8__1__6_chanx_left_out[15] , \sb_8__1__6_chanx_left_out[16] , \sb_8__1__6_chanx_left_out[17] , \sb_8__1__6_chanx_left_out[18] , \sb_8__1__6_chanx_left_out[19]  }),
     .chanx_right_out({ \cbx_1__1__55_chanx_right_out[0] , \cbx_1__1__55_chanx_right_out[1] , \cbx_1__1__55_chanx_right_out[2] , \cbx_1__1__55_chanx_right_out[3] , \cbx_1__1__55_chanx_right_out[4] , \cbx_1__1__55_chanx_right_out[5] , \cbx_1__1__55_chanx_right_out[6] , \cbx_1__1__55_chanx_right_out[7] , \cbx_1__1__55_chanx_right_out[8] , \cbx_1__1__55_chanx_right_out[9] , \cbx_1__1__55_chanx_right_out[10] , \cbx_1__1__55_chanx_right_out[11] , \cbx_1__1__55_chanx_right_out[12] , \cbx_1__1__55_chanx_right_out[13] , \cbx_1__1__55_chanx_right_out[14] , \cbx_1__1__55_chanx_right_out[15] , \cbx_1__1__55_chanx_right_out[16] , \cbx_1__1__55_chanx_right_out[17] , \cbx_1__1__55_chanx_right_out[18] , \cbx_1__1__55_chanx_right_out[19]  }),
+    .clk_1_E_in(\clk_1_wires[106] ),
     .clk_1_N_out(\clk_1_wires[110] ),
     .clk_1_S_out(\clk_1_wires[111] ),
     .clk_1_W_in(\clk_1_wires[106] ),
     .prog_clk_0_N_in(\prog_clk_0_wires[220] ),
+    .prog_clk_1_E_in(\prog_clk_1_wires[106] ),
     .prog_clk_1_N_out(\prog_clk_1_wires[110] ),
     .prog_clk_1_S_out(\prog_clk_1_wires[111] ),
     .prog_clk_1_W_in(\prog_clk_1_wires[106] )
@@ -20041,6 +20121,8 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   cby_1__1_ cby_1__1_ (
     .Test_en_E_in(\Test_enWires[18] ),
+    .Test_en_S_in(\Test_enWires[18] ),
+    .Test_en_W_in(\Test_enWires[18] ),
     .Test_en_W_out(\Test_enWires[16] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -20071,6 +20153,8 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   cby_1__1_ cby_1__2_ (
     .Test_en_E_in(\Test_enWires[32] ),
+    .Test_en_S_in(\Test_enWires[32] ),
+    .Test_en_W_in(\Test_enWires[32] ),
     .Test_en_W_out(\Test_enWires[30] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -20081,6 +20165,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_in({ \sb_1__1__1_chany_bottom_out[0] , \sb_1__1__1_chany_bottom_out[1] , \sb_1__1__1_chany_bottom_out[2] , \sb_1__1__1_chany_bottom_out[3] , \sb_1__1__1_chany_bottom_out[4] , \sb_1__1__1_chany_bottom_out[5] , \sb_1__1__1_chany_bottom_out[6] , \sb_1__1__1_chany_bottom_out[7] , \sb_1__1__1_chany_bottom_out[8] , \sb_1__1__1_chany_bottom_out[9] , \sb_1__1__1_chany_bottom_out[10] , \sb_1__1__1_chany_bottom_out[11] , \sb_1__1__1_chany_bottom_out[12] , \sb_1__1__1_chany_bottom_out[13] , \sb_1__1__1_chany_bottom_out[14] , \sb_1__1__1_chany_bottom_out[15] , \sb_1__1__1_chany_bottom_out[16] , \sb_1__1__1_chany_bottom_out[17] , \sb_1__1__1_chany_bottom_out[18] , \sb_1__1__1_chany_bottom_out[19]  }),
     .chany_top_out({ \cby_1__1__1_chany_top_out[0] , \cby_1__1__1_chany_top_out[1] , \cby_1__1__1_chany_top_out[2] , \cby_1__1__1_chany_top_out[3] , \cby_1__1__1_chany_top_out[4] , \cby_1__1__1_chany_top_out[5] , \cby_1__1__1_chany_top_out[6] , \cby_1__1__1_chany_top_out[7] , \cby_1__1__1_chany_top_out[8] , \cby_1__1__1_chany_top_out[9] , \cby_1__1__1_chany_top_out[10] , \cby_1__1__1_chany_top_out[11] , \cby_1__1__1_chany_top_out[12] , \cby_1__1__1_chany_top_out[13] , \cby_1__1__1_chany_top_out[14] , \cby_1__1__1_chany_top_out[15] , \cby_1__1__1_chany_top_out[16] , \cby_1__1__1_chany_top_out[17] , \cby_1__1__1_chany_top_out[18] , \cby_1__1__1_chany_top_out[19]  }),
     .clk_2_N_in(\clk_2_wires[7] ),
+    .clk_2_S_in(\clk_2_wires[7] ),
     .clk_2_S_out(\clk_2_wires[8] ),
     .left_grid_pin_16_(cby_1__1__1_left_grid_pin_16_),
     .left_grid_pin_17_(cby_1__1__1_left_grid_pin_17_),
@@ -20101,10 +20186,13 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_S_out(\prog_clk_0_wires[8] ),
     .prog_clk_0_W_in(\prog_clk_0_wires[7] ),
     .prog_clk_2_N_in(\prog_clk_2_wires[7] ),
+    .prog_clk_2_S_in(\prog_clk_2_wires[7] ),
     .prog_clk_2_S_out(\prog_clk_2_wires[8] )
   );
   cby_1__1_ cby_1__3_ (
     .Test_en_E_in(\Test_enWires[46] ),
+    .Test_en_S_in(\Test_enWires[46] ),
+    .Test_en_W_in(\Test_enWires[46] ),
     .Test_en_W_out(\Test_enWires[44] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -20114,6 +20202,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \cby_1__1__2_chany_bottom_out[0] , \cby_1__1__2_chany_bottom_out[1] , \cby_1__1__2_chany_bottom_out[2] , \cby_1__1__2_chany_bottom_out[3] , \cby_1__1__2_chany_bottom_out[4] , \cby_1__1__2_chany_bottom_out[5] , \cby_1__1__2_chany_bottom_out[6] , \cby_1__1__2_chany_bottom_out[7] , \cby_1__1__2_chany_bottom_out[8] , \cby_1__1__2_chany_bottom_out[9] , \cby_1__1__2_chany_bottom_out[10] , \cby_1__1__2_chany_bottom_out[11] , \cby_1__1__2_chany_bottom_out[12] , \cby_1__1__2_chany_bottom_out[13] , \cby_1__1__2_chany_bottom_out[14] , \cby_1__1__2_chany_bottom_out[15] , \cby_1__1__2_chany_bottom_out[16] , \cby_1__1__2_chany_bottom_out[17] , \cby_1__1__2_chany_bottom_out[18] , \cby_1__1__2_chany_bottom_out[19]  }),
     .chany_top_in({ \sb_1__1__2_chany_bottom_out[0] , \sb_1__1__2_chany_bottom_out[1] , \sb_1__1__2_chany_bottom_out[2] , \sb_1__1__2_chany_bottom_out[3] , \sb_1__1__2_chany_bottom_out[4] , \sb_1__1__2_chany_bottom_out[5] , \sb_1__1__2_chany_bottom_out[6] , \sb_1__1__2_chany_bottom_out[7] , \sb_1__1__2_chany_bottom_out[8] , \sb_1__1__2_chany_bottom_out[9] , \sb_1__1__2_chany_bottom_out[10] , \sb_1__1__2_chany_bottom_out[11] , \sb_1__1__2_chany_bottom_out[12] , \sb_1__1__2_chany_bottom_out[13] , \sb_1__1__2_chany_bottom_out[14] , \sb_1__1__2_chany_bottom_out[15] , \sb_1__1__2_chany_bottom_out[16] , \sb_1__1__2_chany_bottom_out[17] , \sb_1__1__2_chany_bottom_out[18] , \sb_1__1__2_chany_bottom_out[19]  }),
     .chany_top_out({ \cby_1__1__2_chany_top_out[0] , \cby_1__1__2_chany_top_out[1] , \cby_1__1__2_chany_top_out[2] , \cby_1__1__2_chany_top_out[3] , \cby_1__1__2_chany_top_out[4] , \cby_1__1__2_chany_top_out[5] , \cby_1__1__2_chany_top_out[6] , \cby_1__1__2_chany_top_out[7] , \cby_1__1__2_chany_top_out[8] , \cby_1__1__2_chany_top_out[9] , \cby_1__1__2_chany_top_out[10] , \cby_1__1__2_chany_top_out[11] , \cby_1__1__2_chany_top_out[12] , \cby_1__1__2_chany_top_out[13] , \cby_1__1__2_chany_top_out[14] , \cby_1__1__2_chany_top_out[15] , \cby_1__1__2_chany_top_out[16] , \cby_1__1__2_chany_top_out[17] , \cby_1__1__2_chany_top_out[18] , \cby_1__1__2_chany_top_out[19]  }),
+    .clk_2_N_in(\clk_2_wires[5] ),
     .clk_2_N_out(\clk_2_wires[6] ),
     .clk_2_S_in(\clk_2_wires[5] ),
     .left_grid_pin_16_(cby_1__1__2_left_grid_pin_16_),
@@ -20134,11 +20223,14 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_grid_pin_31_(cby_1__1__2_left_grid_pin_31_),
     .prog_clk_0_S_out(\prog_clk_0_wires[13] ),
     .prog_clk_0_W_in(\prog_clk_0_wires[12] ),
+    .prog_clk_2_N_in(\prog_clk_2_wires[5] ),
     .prog_clk_2_N_out(\prog_clk_2_wires[6] ),
     .prog_clk_2_S_in(\prog_clk_2_wires[5] )
   );
   cby_1__1_ cby_1__4_ (
     .Test_en_E_in(\Test_enWires[60] ),
+    .Test_en_S_in(\Test_enWires[60] ),
+    .Test_en_W_in(\Test_enWires[60] ),
     .Test_en_W_out(\Test_enWires[58] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -20169,6 +20261,8 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   cby_1__1_ cby_1__5_ (
     .Test_en_E_in(\Test_enWires[74] ),
+    .Test_en_S_in(\Test_enWires[74] ),
+    .Test_en_W_in(\Test_enWires[74] ),
     .Test_en_W_out(\Test_enWires[72] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -20199,6 +20293,8 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   cby_1__1_ cby_1__6_ (
     .Test_en_E_in(\Test_enWires[88] ),
+    .Test_en_S_in(\Test_enWires[88] ),
+    .Test_en_W_in(\Test_enWires[88] ),
     .Test_en_W_out(\Test_enWires[86] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -20209,6 +20305,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_in({ \sb_1__1__5_chany_bottom_out[0] , \sb_1__1__5_chany_bottom_out[1] , \sb_1__1__5_chany_bottom_out[2] , \sb_1__1__5_chany_bottom_out[3] , \sb_1__1__5_chany_bottom_out[4] , \sb_1__1__5_chany_bottom_out[5] , \sb_1__1__5_chany_bottom_out[6] , \sb_1__1__5_chany_bottom_out[7] , \sb_1__1__5_chany_bottom_out[8] , \sb_1__1__5_chany_bottom_out[9] , \sb_1__1__5_chany_bottom_out[10] , \sb_1__1__5_chany_bottom_out[11] , \sb_1__1__5_chany_bottom_out[12] , \sb_1__1__5_chany_bottom_out[13] , \sb_1__1__5_chany_bottom_out[14] , \sb_1__1__5_chany_bottom_out[15] , \sb_1__1__5_chany_bottom_out[16] , \sb_1__1__5_chany_bottom_out[17] , \sb_1__1__5_chany_bottom_out[18] , \sb_1__1__5_chany_bottom_out[19]  }),
     .chany_top_out({ \cby_1__1__5_chany_top_out[0] , \cby_1__1__5_chany_top_out[1] , \cby_1__1__5_chany_top_out[2] , \cby_1__1__5_chany_top_out[3] , \cby_1__1__5_chany_top_out[4] , \cby_1__1__5_chany_top_out[5] , \cby_1__1__5_chany_top_out[6] , \cby_1__1__5_chany_top_out[7] , \cby_1__1__5_chany_top_out[8] , \cby_1__1__5_chany_top_out[9] , \cby_1__1__5_chany_top_out[10] , \cby_1__1__5_chany_top_out[11] , \cby_1__1__5_chany_top_out[12] , \cby_1__1__5_chany_top_out[13] , \cby_1__1__5_chany_top_out[14] , \cby_1__1__5_chany_top_out[15] , \cby_1__1__5_chany_top_out[16] , \cby_1__1__5_chany_top_out[17] , \cby_1__1__5_chany_top_out[18] , \cby_1__1__5_chany_top_out[19]  }),
     .clk_2_N_in(\clk_2_wires[20] ),
+    .clk_2_S_in(\clk_2_wires[20] ),
     .clk_2_S_out(\clk_2_wires[21] ),
     .left_grid_pin_16_(cby_1__1__5_left_grid_pin_16_),
     .left_grid_pin_17_(cby_1__1__5_left_grid_pin_17_),
@@ -20229,10 +20326,13 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_S_out(\prog_clk_0_wires[28] ),
     .prog_clk_0_W_in(\prog_clk_0_wires[27] ),
     .prog_clk_2_N_in(\prog_clk_2_wires[20] ),
+    .prog_clk_2_S_in(\prog_clk_2_wires[20] ),
     .prog_clk_2_S_out(\prog_clk_2_wires[21] )
   );
   cby_1__1_ cby_1__7_ (
     .Test_en_E_in(\Test_enWires[102] ),
+    .Test_en_S_in(\Test_enWires[102] ),
+    .Test_en_W_in(\Test_enWires[102] ),
     .Test_en_W_out(\Test_enWires[100] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -20242,6 +20342,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \cby_1__1__6_chany_bottom_out[0] , \cby_1__1__6_chany_bottom_out[1] , \cby_1__1__6_chany_bottom_out[2] , \cby_1__1__6_chany_bottom_out[3] , \cby_1__1__6_chany_bottom_out[4] , \cby_1__1__6_chany_bottom_out[5] , \cby_1__1__6_chany_bottom_out[6] , \cby_1__1__6_chany_bottom_out[7] , \cby_1__1__6_chany_bottom_out[8] , \cby_1__1__6_chany_bottom_out[9] , \cby_1__1__6_chany_bottom_out[10] , \cby_1__1__6_chany_bottom_out[11] , \cby_1__1__6_chany_bottom_out[12] , \cby_1__1__6_chany_bottom_out[13] , \cby_1__1__6_chany_bottom_out[14] , \cby_1__1__6_chany_bottom_out[15] , \cby_1__1__6_chany_bottom_out[16] , \cby_1__1__6_chany_bottom_out[17] , \cby_1__1__6_chany_bottom_out[18] , \cby_1__1__6_chany_bottom_out[19]  }),
     .chany_top_in({ \sb_1__1__6_chany_bottom_out[0] , \sb_1__1__6_chany_bottom_out[1] , \sb_1__1__6_chany_bottom_out[2] , \sb_1__1__6_chany_bottom_out[3] , \sb_1__1__6_chany_bottom_out[4] , \sb_1__1__6_chany_bottom_out[5] , \sb_1__1__6_chany_bottom_out[6] , \sb_1__1__6_chany_bottom_out[7] , \sb_1__1__6_chany_bottom_out[8] , \sb_1__1__6_chany_bottom_out[9] , \sb_1__1__6_chany_bottom_out[10] , \sb_1__1__6_chany_bottom_out[11] , \sb_1__1__6_chany_bottom_out[12] , \sb_1__1__6_chany_bottom_out[13] , \sb_1__1__6_chany_bottom_out[14] , \sb_1__1__6_chany_bottom_out[15] , \sb_1__1__6_chany_bottom_out[16] , \sb_1__1__6_chany_bottom_out[17] , \sb_1__1__6_chany_bottom_out[18] , \sb_1__1__6_chany_bottom_out[19]  }),
     .chany_top_out({ \cby_1__1__6_chany_top_out[0] , \cby_1__1__6_chany_top_out[1] , \cby_1__1__6_chany_top_out[2] , \cby_1__1__6_chany_top_out[3] , \cby_1__1__6_chany_top_out[4] , \cby_1__1__6_chany_top_out[5] , \cby_1__1__6_chany_top_out[6] , \cby_1__1__6_chany_top_out[7] , \cby_1__1__6_chany_top_out[8] , \cby_1__1__6_chany_top_out[9] , \cby_1__1__6_chany_top_out[10] , \cby_1__1__6_chany_top_out[11] , \cby_1__1__6_chany_top_out[12] , \cby_1__1__6_chany_top_out[13] , \cby_1__1__6_chany_top_out[14] , \cby_1__1__6_chany_top_out[15] , \cby_1__1__6_chany_top_out[16] , \cby_1__1__6_chany_top_out[17] , \cby_1__1__6_chany_top_out[18] , \cby_1__1__6_chany_top_out[19]  }),
+    .clk_2_N_in(\clk_2_wires[18] ),
     .clk_2_N_out(\clk_2_wires[19] ),
     .clk_2_S_in(\clk_2_wires[18] ),
     .left_grid_pin_16_(cby_1__1__6_left_grid_pin_16_),
@@ -20262,11 +20363,14 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_grid_pin_31_(cby_1__1__6_left_grid_pin_31_),
     .prog_clk_0_S_out(\prog_clk_0_wires[33] ),
     .prog_clk_0_W_in(\prog_clk_0_wires[32] ),
+    .prog_clk_2_N_in(\prog_clk_2_wires[18] ),
     .prog_clk_2_N_out(\prog_clk_2_wires[19] ),
     .prog_clk_2_S_in(\prog_clk_2_wires[18] )
   );
   cby_1__1_ cby_1__8_ (
     .Test_en_E_in(\Test_enWires[116] ),
+    .Test_en_S_in(\Test_enWires[116] ),
+    .Test_en_W_in(\Test_enWires[116] ),
     .Test_en_W_out(\Test_enWires[114] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -20298,6 +20402,8 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   cby_1__1_ cby_2__1_ (
     .Test_en_E_in(\Test_enWires[20] ),
+    .Test_en_S_in(\Test_enWires[20] ),
+    .Test_en_W_in(\Test_enWires[20] ),
     .Test_en_W_out(\Test_enWires[17] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -20328,6 +20434,8 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   cby_1__1_ cby_2__2_ (
     .Test_en_E_in(\Test_enWires[34] ),
+    .Test_en_S_in(\Test_enWires[34] ),
+    .Test_en_W_in(\Test_enWires[34] ),
     .Test_en_W_out(\Test_enWires[31] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -20358,6 +20466,8 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   cby_1__1_ cby_2__3_ (
     .Test_en_E_in(\Test_enWires[48] ),
+    .Test_en_S_in(\Test_enWires[48] ),
+    .Test_en_W_in(\Test_enWires[48] ),
     .Test_en_W_out(\Test_enWires[45] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -20368,6 +20478,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_in({ \sb_1__1__9_chany_bottom_out[0] , \sb_1__1__9_chany_bottom_out[1] , \sb_1__1__9_chany_bottom_out[2] , \sb_1__1__9_chany_bottom_out[3] , \sb_1__1__9_chany_bottom_out[4] , \sb_1__1__9_chany_bottom_out[5] , \sb_1__1__9_chany_bottom_out[6] , \sb_1__1__9_chany_bottom_out[7] , \sb_1__1__9_chany_bottom_out[8] , \sb_1__1__9_chany_bottom_out[9] , \sb_1__1__9_chany_bottom_out[10] , \sb_1__1__9_chany_bottom_out[11] , \sb_1__1__9_chany_bottom_out[12] , \sb_1__1__9_chany_bottom_out[13] , \sb_1__1__9_chany_bottom_out[14] , \sb_1__1__9_chany_bottom_out[15] , \sb_1__1__9_chany_bottom_out[16] , \sb_1__1__9_chany_bottom_out[17] , \sb_1__1__9_chany_bottom_out[18] , \sb_1__1__9_chany_bottom_out[19]  }),
     .chany_top_out({ \cby_1__1__10_chany_top_out[0] , \cby_1__1__10_chany_top_out[1] , \cby_1__1__10_chany_top_out[2] , \cby_1__1__10_chany_top_out[3] , \cby_1__1__10_chany_top_out[4] , \cby_1__1__10_chany_top_out[5] , \cby_1__1__10_chany_top_out[6] , \cby_1__1__10_chany_top_out[7] , \cby_1__1__10_chany_top_out[8] , \cby_1__1__10_chany_top_out[9] , \cby_1__1__10_chany_top_out[10] , \cby_1__1__10_chany_top_out[11] , \cby_1__1__10_chany_top_out[12] , \cby_1__1__10_chany_top_out[13] , \cby_1__1__10_chany_top_out[14] , \cby_1__1__10_chany_top_out[15] , \cby_1__1__10_chany_top_out[16] , \cby_1__1__10_chany_top_out[17] , \cby_1__1__10_chany_top_out[18] , \cby_1__1__10_chany_top_out[19]  }),
     .clk_3_N_in(\clk_3_wires[16] ),
+    .clk_3_S_in(\clk_3_wires[16] ),
     .clk_3_S_out(\clk_3_wires[17] ),
     .left_grid_pin_16_(cby_1__1__10_left_grid_pin_16_),
     .left_grid_pin_17_(cby_1__1__10_left_grid_pin_17_),
@@ -20388,10 +20499,13 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_S_out(\prog_clk_0_wires[51] ),
     .prog_clk_0_W_in(\prog_clk_0_wires[50] ),
     .prog_clk_3_N_in(\prog_clk_3_wires[16] ),
+    .prog_clk_3_S_in(\prog_clk_3_wires[16] ),
     .prog_clk_3_S_out(\prog_clk_3_wires[17] )
   );
   cby_1__1_ cby_2__4_ (
     .Test_en_E_in(\Test_enWires[62] ),
+    .Test_en_S_in(\Test_enWires[62] ),
+    .Test_en_W_in(\Test_enWires[62] ),
     .Test_en_W_out(\Test_enWires[59] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -20402,6 +20516,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_in({ \sb_1__1__10_chany_bottom_out[0] , \sb_1__1__10_chany_bottom_out[1] , \sb_1__1__10_chany_bottom_out[2] , \sb_1__1__10_chany_bottom_out[3] , \sb_1__1__10_chany_bottom_out[4] , \sb_1__1__10_chany_bottom_out[5] , \sb_1__1__10_chany_bottom_out[6] , \sb_1__1__10_chany_bottom_out[7] , \sb_1__1__10_chany_bottom_out[8] , \sb_1__1__10_chany_bottom_out[9] , \sb_1__1__10_chany_bottom_out[10] , \sb_1__1__10_chany_bottom_out[11] , \sb_1__1__10_chany_bottom_out[12] , \sb_1__1__10_chany_bottom_out[13] , \sb_1__1__10_chany_bottom_out[14] , \sb_1__1__10_chany_bottom_out[15] , \sb_1__1__10_chany_bottom_out[16] , \sb_1__1__10_chany_bottom_out[17] , \sb_1__1__10_chany_bottom_out[18] , \sb_1__1__10_chany_bottom_out[19]  }),
     .chany_top_out({ \cby_1__1__11_chany_top_out[0] , \cby_1__1__11_chany_top_out[1] , \cby_1__1__11_chany_top_out[2] , \cby_1__1__11_chany_top_out[3] , \cby_1__1__11_chany_top_out[4] , \cby_1__1__11_chany_top_out[5] , \cby_1__1__11_chany_top_out[6] , \cby_1__1__11_chany_top_out[7] , \cby_1__1__11_chany_top_out[8] , \cby_1__1__11_chany_top_out[9] , \cby_1__1__11_chany_top_out[10] , \cby_1__1__11_chany_top_out[11] , \cby_1__1__11_chany_top_out[12] , \cby_1__1__11_chany_top_out[13] , \cby_1__1__11_chany_top_out[14] , \cby_1__1__11_chany_top_out[15] , \cby_1__1__11_chany_top_out[16] , \cby_1__1__11_chany_top_out[17] , \cby_1__1__11_chany_top_out[18] , \cby_1__1__11_chany_top_out[19]  }),
     .clk_3_N_in(\clk_3_wires[12] ),
+    .clk_3_S_in(\clk_3_wires[12] ),
     .clk_3_S_out(\clk_3_wires[13] ),
     .left_grid_pin_16_(cby_1__1__11_left_grid_pin_16_),
     .left_grid_pin_17_(cby_1__1__11_left_grid_pin_17_),
@@ -20422,10 +20537,13 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_S_out(\prog_clk_0_wires[54] ),
     .prog_clk_0_W_in(\prog_clk_0_wires[53] ),
     .prog_clk_3_N_in(\prog_clk_3_wires[12] ),
+    .prog_clk_3_S_in(\prog_clk_3_wires[12] ),
     .prog_clk_3_S_out(\prog_clk_3_wires[13] )
   );
   cby_1__1_ cby_2__5_ (
     .Test_en_E_in(\Test_enWires[76] ),
+    .Test_en_S_in(\Test_enWires[76] ),
+    .Test_en_W_in(\Test_enWires[76] ),
     .Test_en_W_out(\Test_enWires[73] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -20435,6 +20553,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \cby_1__1__12_chany_bottom_out[0] , \cby_1__1__12_chany_bottom_out[1] , \cby_1__1__12_chany_bottom_out[2] , \cby_1__1__12_chany_bottom_out[3] , \cby_1__1__12_chany_bottom_out[4] , \cby_1__1__12_chany_bottom_out[5] , \cby_1__1__12_chany_bottom_out[6] , \cby_1__1__12_chany_bottom_out[7] , \cby_1__1__12_chany_bottom_out[8] , \cby_1__1__12_chany_bottom_out[9] , \cby_1__1__12_chany_bottom_out[10] , \cby_1__1__12_chany_bottom_out[11] , \cby_1__1__12_chany_bottom_out[12] , \cby_1__1__12_chany_bottom_out[13] , \cby_1__1__12_chany_bottom_out[14] , \cby_1__1__12_chany_bottom_out[15] , \cby_1__1__12_chany_bottom_out[16] , \cby_1__1__12_chany_bottom_out[17] , \cby_1__1__12_chany_bottom_out[18] , \cby_1__1__12_chany_bottom_out[19]  }),
     .chany_top_in({ \sb_1__1__11_chany_bottom_out[0] , \sb_1__1__11_chany_bottom_out[1] , \sb_1__1__11_chany_bottom_out[2] , \sb_1__1__11_chany_bottom_out[3] , \sb_1__1__11_chany_bottom_out[4] , \sb_1__1__11_chany_bottom_out[5] , \sb_1__1__11_chany_bottom_out[6] , \sb_1__1__11_chany_bottom_out[7] , \sb_1__1__11_chany_bottom_out[8] , \sb_1__1__11_chany_bottom_out[9] , \sb_1__1__11_chany_bottom_out[10] , \sb_1__1__11_chany_bottom_out[11] , \sb_1__1__11_chany_bottom_out[12] , \sb_1__1__11_chany_bottom_out[13] , \sb_1__1__11_chany_bottom_out[14] , \sb_1__1__11_chany_bottom_out[15] , \sb_1__1__11_chany_bottom_out[16] , \sb_1__1__11_chany_bottom_out[17] , \sb_1__1__11_chany_bottom_out[18] , \sb_1__1__11_chany_bottom_out[19]  }),
     .chany_top_out({ \cby_1__1__12_chany_top_out[0] , \cby_1__1__12_chany_top_out[1] , \cby_1__1__12_chany_top_out[2] , \cby_1__1__12_chany_top_out[3] , \cby_1__1__12_chany_top_out[4] , \cby_1__1__12_chany_top_out[5] , \cby_1__1__12_chany_top_out[6] , \cby_1__1__12_chany_top_out[7] , \cby_1__1__12_chany_top_out[8] , \cby_1__1__12_chany_top_out[9] , \cby_1__1__12_chany_top_out[10] , \cby_1__1__12_chany_top_out[11] , \cby_1__1__12_chany_top_out[12] , \cby_1__1__12_chany_top_out[13] , \cby_1__1__12_chany_top_out[14] , \cby_1__1__12_chany_top_out[15] , \cby_1__1__12_chany_top_out[16] , \cby_1__1__12_chany_top_out[17] , \cby_1__1__12_chany_top_out[18] , \cby_1__1__12_chany_top_out[19]  }),
+    .clk_3_N_in(\clk_3_wires[10] ),
     .clk_3_N_out(\clk_3_wires[11] ),
     .clk_3_S_in(\clk_3_wires[10] ),
     .left_grid_pin_16_(cby_1__1__12_left_grid_pin_16_),
@@ -20455,11 +20574,14 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_grid_pin_31_(cby_1__1__12_left_grid_pin_31_),
     .prog_clk_0_S_out(\prog_clk_0_wires[57] ),
     .prog_clk_0_W_in(\prog_clk_0_wires[56] ),
+    .prog_clk_3_N_in(\prog_clk_3_wires[10] ),
     .prog_clk_3_N_out(\prog_clk_3_wires[11] ),
     .prog_clk_3_S_in(\prog_clk_3_wires[10] )
   );
   cby_1__1_ cby_2__6_ (
     .Test_en_E_in(\Test_enWires[90] ),
+    .Test_en_S_in(\Test_enWires[90] ),
+    .Test_en_W_in(\Test_enWires[90] ),
     .Test_en_W_out(\Test_enWires[87] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -20469,6 +20591,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \cby_1__1__13_chany_bottom_out[0] , \cby_1__1__13_chany_bottom_out[1] , \cby_1__1__13_chany_bottom_out[2] , \cby_1__1__13_chany_bottom_out[3] , \cby_1__1__13_chany_bottom_out[4] , \cby_1__1__13_chany_bottom_out[5] , \cby_1__1__13_chany_bottom_out[6] , \cby_1__1__13_chany_bottom_out[7] , \cby_1__1__13_chany_bottom_out[8] , \cby_1__1__13_chany_bottom_out[9] , \cby_1__1__13_chany_bottom_out[10] , \cby_1__1__13_chany_bottom_out[11] , \cby_1__1__13_chany_bottom_out[12] , \cby_1__1__13_chany_bottom_out[13] , \cby_1__1__13_chany_bottom_out[14] , \cby_1__1__13_chany_bottom_out[15] , \cby_1__1__13_chany_bottom_out[16] , \cby_1__1__13_chany_bottom_out[17] , \cby_1__1__13_chany_bottom_out[18] , \cby_1__1__13_chany_bottom_out[19]  }),
     .chany_top_in({ \sb_1__1__12_chany_bottom_out[0] , \sb_1__1__12_chany_bottom_out[1] , \sb_1__1__12_chany_bottom_out[2] , \sb_1__1__12_chany_bottom_out[3] , \sb_1__1__12_chany_bottom_out[4] , \sb_1__1__12_chany_bottom_out[5] , \sb_1__1__12_chany_bottom_out[6] , \sb_1__1__12_chany_bottom_out[7] , \sb_1__1__12_chany_bottom_out[8] , \sb_1__1__12_chany_bottom_out[9] , \sb_1__1__12_chany_bottom_out[10] , \sb_1__1__12_chany_bottom_out[11] , \sb_1__1__12_chany_bottom_out[12] , \sb_1__1__12_chany_bottom_out[13] , \sb_1__1__12_chany_bottom_out[14] , \sb_1__1__12_chany_bottom_out[15] , \sb_1__1__12_chany_bottom_out[16] , \sb_1__1__12_chany_bottom_out[17] , \sb_1__1__12_chany_bottom_out[18] , \sb_1__1__12_chany_bottom_out[19]  }),
     .chany_top_out({ \cby_1__1__13_chany_top_out[0] , \cby_1__1__13_chany_top_out[1] , \cby_1__1__13_chany_top_out[2] , \cby_1__1__13_chany_top_out[3] , \cby_1__1__13_chany_top_out[4] , \cby_1__1__13_chany_top_out[5] , \cby_1__1__13_chany_top_out[6] , \cby_1__1__13_chany_top_out[7] , \cby_1__1__13_chany_top_out[8] , \cby_1__1__13_chany_top_out[9] , \cby_1__1__13_chany_top_out[10] , \cby_1__1__13_chany_top_out[11] , \cby_1__1__13_chany_top_out[12] , \cby_1__1__13_chany_top_out[13] , \cby_1__1__13_chany_top_out[14] , \cby_1__1__13_chany_top_out[15] , \cby_1__1__13_chany_top_out[16] , \cby_1__1__13_chany_top_out[17] , \cby_1__1__13_chany_top_out[18] , \cby_1__1__13_chany_top_out[19]  }),
+    .clk_3_N_in(\clk_3_wires[14] ),
     .clk_3_N_out(\clk_3_wires[15] ),
     .clk_3_S_in(\clk_3_wires[14] ),
     .left_grid_pin_16_(cby_1__1__13_left_grid_pin_16_),
@@ -20489,11 +20612,14 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_grid_pin_31_(cby_1__1__13_left_grid_pin_31_),
     .prog_clk_0_S_out(\prog_clk_0_wires[60] ),
     .prog_clk_0_W_in(\prog_clk_0_wires[59] ),
+    .prog_clk_3_N_in(\prog_clk_3_wires[14] ),
     .prog_clk_3_N_out(\prog_clk_3_wires[15] ),
     .prog_clk_3_S_in(\prog_clk_3_wires[14] )
   );
   cby_1__1_ cby_2__7_ (
     .Test_en_E_in(\Test_enWires[104] ),
+    .Test_en_S_in(\Test_enWires[104] ),
+    .Test_en_W_in(\Test_enWires[104] ),
     .Test_en_W_out(\Test_enWires[101] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -20524,6 +20650,8 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   cby_1__1_ cby_2__8_ (
     .Test_en_E_in(\Test_enWires[118] ),
+    .Test_en_S_in(\Test_enWires[118] ),
+    .Test_en_W_in(\Test_enWires[118] ),
     .Test_en_W_out(\Test_enWires[115] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -20555,6 +20683,8 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   cby_1__1_ cby_3__1_ (
     .Test_en_E_in(\Test_enWires[22] ),
+    .Test_en_S_in(\Test_enWires[22] ),
+    .Test_en_W_in(\Test_enWires[22] ),
     .Test_en_W_out(\Test_enWires[19] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -20585,6 +20715,8 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   cby_1__1_ cby_3__2_ (
     .Test_en_E_in(\Test_enWires[36] ),
+    .Test_en_S_in(\Test_enWires[36] ),
+    .Test_en_W_in(\Test_enWires[36] ),
     .Test_en_W_out(\Test_enWires[33] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -20595,6 +20727,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_in({ \sb_1__1__15_chany_bottom_out[0] , \sb_1__1__15_chany_bottom_out[1] , \sb_1__1__15_chany_bottom_out[2] , \sb_1__1__15_chany_bottom_out[3] , \sb_1__1__15_chany_bottom_out[4] , \sb_1__1__15_chany_bottom_out[5] , \sb_1__1__15_chany_bottom_out[6] , \sb_1__1__15_chany_bottom_out[7] , \sb_1__1__15_chany_bottom_out[8] , \sb_1__1__15_chany_bottom_out[9] , \sb_1__1__15_chany_bottom_out[10] , \sb_1__1__15_chany_bottom_out[11] , \sb_1__1__15_chany_bottom_out[12] , \sb_1__1__15_chany_bottom_out[13] , \sb_1__1__15_chany_bottom_out[14] , \sb_1__1__15_chany_bottom_out[15] , \sb_1__1__15_chany_bottom_out[16] , \sb_1__1__15_chany_bottom_out[17] , \sb_1__1__15_chany_bottom_out[18] , \sb_1__1__15_chany_bottom_out[19]  }),
     .chany_top_out({ \cby_1__1__17_chany_top_out[0] , \cby_1__1__17_chany_top_out[1] , \cby_1__1__17_chany_top_out[2] , \cby_1__1__17_chany_top_out[3] , \cby_1__1__17_chany_top_out[4] , \cby_1__1__17_chany_top_out[5] , \cby_1__1__17_chany_top_out[6] , \cby_1__1__17_chany_top_out[7] , \cby_1__1__17_chany_top_out[8] , \cby_1__1__17_chany_top_out[9] , \cby_1__1__17_chany_top_out[10] , \cby_1__1__17_chany_top_out[11] , \cby_1__1__17_chany_top_out[12] , \cby_1__1__17_chany_top_out[13] , \cby_1__1__17_chany_top_out[14] , \cby_1__1__17_chany_top_out[15] , \cby_1__1__17_chany_top_out[16] , \cby_1__1__17_chany_top_out[17] , \cby_1__1__17_chany_top_out[18] , \cby_1__1__17_chany_top_out[19]  }),
     .clk_2_N_in(\clk_2_wires[11] ),
+    .clk_2_S_in(\clk_2_wires[11] ),
     .clk_2_S_out(\clk_2_wires[12] ),
     .left_grid_pin_16_(cby_1__1__17_left_grid_pin_16_),
     .left_grid_pin_17_(cby_1__1__17_left_grid_pin_17_),
@@ -20615,10 +20748,13 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_S_out(\prog_clk_0_wires[74] ),
     .prog_clk_0_W_in(\prog_clk_0_wires[73] ),
     .prog_clk_2_N_in(\prog_clk_2_wires[11] ),
+    .prog_clk_2_S_in(\prog_clk_2_wires[11] ),
     .prog_clk_2_S_out(\prog_clk_2_wires[12] )
   );
   cby_1__1_ cby_3__3_ (
     .Test_en_E_in(\Test_enWires[50] ),
+    .Test_en_S_in(\Test_enWires[50] ),
+    .Test_en_W_in(\Test_enWires[50] ),
     .Test_en_W_out(\Test_enWires[47] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -20628,6 +20764,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \cby_1__1__18_chany_bottom_out[0] , \cby_1__1__18_chany_bottom_out[1] , \cby_1__1__18_chany_bottom_out[2] , \cby_1__1__18_chany_bottom_out[3] , \cby_1__1__18_chany_bottom_out[4] , \cby_1__1__18_chany_bottom_out[5] , \cby_1__1__18_chany_bottom_out[6] , \cby_1__1__18_chany_bottom_out[7] , \cby_1__1__18_chany_bottom_out[8] , \cby_1__1__18_chany_bottom_out[9] , \cby_1__1__18_chany_bottom_out[10] , \cby_1__1__18_chany_bottom_out[11] , \cby_1__1__18_chany_bottom_out[12] , \cby_1__1__18_chany_bottom_out[13] , \cby_1__1__18_chany_bottom_out[14] , \cby_1__1__18_chany_bottom_out[15] , \cby_1__1__18_chany_bottom_out[16] , \cby_1__1__18_chany_bottom_out[17] , \cby_1__1__18_chany_bottom_out[18] , \cby_1__1__18_chany_bottom_out[19]  }),
     .chany_top_in({ \sb_1__1__16_chany_bottom_out[0] , \sb_1__1__16_chany_bottom_out[1] , \sb_1__1__16_chany_bottom_out[2] , \sb_1__1__16_chany_bottom_out[3] , \sb_1__1__16_chany_bottom_out[4] , \sb_1__1__16_chany_bottom_out[5] , \sb_1__1__16_chany_bottom_out[6] , \sb_1__1__16_chany_bottom_out[7] , \sb_1__1__16_chany_bottom_out[8] , \sb_1__1__16_chany_bottom_out[9] , \sb_1__1__16_chany_bottom_out[10] , \sb_1__1__16_chany_bottom_out[11] , \sb_1__1__16_chany_bottom_out[12] , \sb_1__1__16_chany_bottom_out[13] , \sb_1__1__16_chany_bottom_out[14] , \sb_1__1__16_chany_bottom_out[15] , \sb_1__1__16_chany_bottom_out[16] , \sb_1__1__16_chany_bottom_out[17] , \sb_1__1__16_chany_bottom_out[18] , \sb_1__1__16_chany_bottom_out[19]  }),
     .chany_top_out({ \cby_1__1__18_chany_top_out[0] , \cby_1__1__18_chany_top_out[1] , \cby_1__1__18_chany_top_out[2] , \cby_1__1__18_chany_top_out[3] , \cby_1__1__18_chany_top_out[4] , \cby_1__1__18_chany_top_out[5] , \cby_1__1__18_chany_top_out[6] , \cby_1__1__18_chany_top_out[7] , \cby_1__1__18_chany_top_out[8] , \cby_1__1__18_chany_top_out[9] , \cby_1__1__18_chany_top_out[10] , \cby_1__1__18_chany_top_out[11] , \cby_1__1__18_chany_top_out[12] , \cby_1__1__18_chany_top_out[13] , \cby_1__1__18_chany_top_out[14] , \cby_1__1__18_chany_top_out[15] , \cby_1__1__18_chany_top_out[16] , \cby_1__1__18_chany_top_out[17] , \cby_1__1__18_chany_top_out[18] , \cby_1__1__18_chany_top_out[19]  }),
+    .clk_2_N_in(\clk_2_wires[9] ),
     .clk_2_N_out(\clk_2_wires[10] ),
     .clk_2_S_in(\clk_2_wires[9] ),
     .left_grid_pin_16_(cby_1__1__18_left_grid_pin_16_),
@@ -20648,11 +20785,14 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_grid_pin_31_(cby_1__1__18_left_grid_pin_31_),
     .prog_clk_0_S_out(\prog_clk_0_wires[77] ),
     .prog_clk_0_W_in(\prog_clk_0_wires[76] ),
+    .prog_clk_2_N_in(\prog_clk_2_wires[9] ),
     .prog_clk_2_N_out(\prog_clk_2_wires[10] ),
     .prog_clk_2_S_in(\prog_clk_2_wires[9] )
   );
   cby_1__1_ cby_3__4_ (
     .Test_en_E_in(\Test_enWires[64] ),
+    .Test_en_S_in(\Test_enWires[64] ),
+    .Test_en_W_in(\Test_enWires[64] ),
     .Test_en_W_out(\Test_enWires[61] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -20683,6 +20823,8 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   cby_1__1_ cby_3__5_ (
     .Test_en_E_in(\Test_enWires[78] ),
+    .Test_en_S_in(\Test_enWires[78] ),
+    .Test_en_W_in(\Test_enWires[78] ),
     .Test_en_W_out(\Test_enWires[75] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -20713,6 +20855,8 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   cby_1__1_ cby_3__6_ (
     .Test_en_E_in(\Test_enWires[92] ),
+    .Test_en_S_in(\Test_enWires[92] ),
+    .Test_en_W_in(\Test_enWires[92] ),
     .Test_en_W_out(\Test_enWires[89] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -20723,6 +20867,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_in({ \sb_1__1__19_chany_bottom_out[0] , \sb_1__1__19_chany_bottom_out[1] , \sb_1__1__19_chany_bottom_out[2] , \sb_1__1__19_chany_bottom_out[3] , \sb_1__1__19_chany_bottom_out[4] , \sb_1__1__19_chany_bottom_out[5] , \sb_1__1__19_chany_bottom_out[6] , \sb_1__1__19_chany_bottom_out[7] , \sb_1__1__19_chany_bottom_out[8] , \sb_1__1__19_chany_bottom_out[9] , \sb_1__1__19_chany_bottom_out[10] , \sb_1__1__19_chany_bottom_out[11] , \sb_1__1__19_chany_bottom_out[12] , \sb_1__1__19_chany_bottom_out[13] , \sb_1__1__19_chany_bottom_out[14] , \sb_1__1__19_chany_bottom_out[15] , \sb_1__1__19_chany_bottom_out[16] , \sb_1__1__19_chany_bottom_out[17] , \sb_1__1__19_chany_bottom_out[18] , \sb_1__1__19_chany_bottom_out[19]  }),
     .chany_top_out({ \cby_1__1__21_chany_top_out[0] , \cby_1__1__21_chany_top_out[1] , \cby_1__1__21_chany_top_out[2] , \cby_1__1__21_chany_top_out[3] , \cby_1__1__21_chany_top_out[4] , \cby_1__1__21_chany_top_out[5] , \cby_1__1__21_chany_top_out[6] , \cby_1__1__21_chany_top_out[7] , \cby_1__1__21_chany_top_out[8] , \cby_1__1__21_chany_top_out[9] , \cby_1__1__21_chany_top_out[10] , \cby_1__1__21_chany_top_out[11] , \cby_1__1__21_chany_top_out[12] , \cby_1__1__21_chany_top_out[13] , \cby_1__1__21_chany_top_out[14] , \cby_1__1__21_chany_top_out[15] , \cby_1__1__21_chany_top_out[16] , \cby_1__1__21_chany_top_out[17] , \cby_1__1__21_chany_top_out[18] , \cby_1__1__21_chany_top_out[19]  }),
     .clk_2_N_in(\clk_2_wires[24] ),
+    .clk_2_S_in(\clk_2_wires[24] ),
     .clk_2_S_out(\clk_2_wires[25] ),
     .left_grid_pin_16_(cby_1__1__21_left_grid_pin_16_),
     .left_grid_pin_17_(cby_1__1__21_left_grid_pin_17_),
@@ -20743,10 +20888,13 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_S_out(\prog_clk_0_wires[86] ),
     .prog_clk_0_W_in(\prog_clk_0_wires[85] ),
     .prog_clk_2_N_in(\prog_clk_2_wires[24] ),
+    .prog_clk_2_S_in(\prog_clk_2_wires[24] ),
     .prog_clk_2_S_out(\prog_clk_2_wires[25] )
   );
   cby_1__1_ cby_3__7_ (
     .Test_en_E_in(\Test_enWires[106] ),
+    .Test_en_S_in(\Test_enWires[106] ),
+    .Test_en_W_in(\Test_enWires[106] ),
     .Test_en_W_out(\Test_enWires[103] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -20756,6 +20904,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \cby_1__1__22_chany_bottom_out[0] , \cby_1__1__22_chany_bottom_out[1] , \cby_1__1__22_chany_bottom_out[2] , \cby_1__1__22_chany_bottom_out[3] , \cby_1__1__22_chany_bottom_out[4] , \cby_1__1__22_chany_bottom_out[5] , \cby_1__1__22_chany_bottom_out[6] , \cby_1__1__22_chany_bottom_out[7] , \cby_1__1__22_chany_bottom_out[8] , \cby_1__1__22_chany_bottom_out[9] , \cby_1__1__22_chany_bottom_out[10] , \cby_1__1__22_chany_bottom_out[11] , \cby_1__1__22_chany_bottom_out[12] , \cby_1__1__22_chany_bottom_out[13] , \cby_1__1__22_chany_bottom_out[14] , \cby_1__1__22_chany_bottom_out[15] , \cby_1__1__22_chany_bottom_out[16] , \cby_1__1__22_chany_bottom_out[17] , \cby_1__1__22_chany_bottom_out[18] , \cby_1__1__22_chany_bottom_out[19]  }),
     .chany_top_in({ \sb_1__1__20_chany_bottom_out[0] , \sb_1__1__20_chany_bottom_out[1] , \sb_1__1__20_chany_bottom_out[2] , \sb_1__1__20_chany_bottom_out[3] , \sb_1__1__20_chany_bottom_out[4] , \sb_1__1__20_chany_bottom_out[5] , \sb_1__1__20_chany_bottom_out[6] , \sb_1__1__20_chany_bottom_out[7] , \sb_1__1__20_chany_bottom_out[8] , \sb_1__1__20_chany_bottom_out[9] , \sb_1__1__20_chany_bottom_out[10] , \sb_1__1__20_chany_bottom_out[11] , \sb_1__1__20_chany_bottom_out[12] , \sb_1__1__20_chany_bottom_out[13] , \sb_1__1__20_chany_bottom_out[14] , \sb_1__1__20_chany_bottom_out[15] , \sb_1__1__20_chany_bottom_out[16] , \sb_1__1__20_chany_bottom_out[17] , \sb_1__1__20_chany_bottom_out[18] , \sb_1__1__20_chany_bottom_out[19]  }),
     .chany_top_out({ \cby_1__1__22_chany_top_out[0] , \cby_1__1__22_chany_top_out[1] , \cby_1__1__22_chany_top_out[2] , \cby_1__1__22_chany_top_out[3] , \cby_1__1__22_chany_top_out[4] , \cby_1__1__22_chany_top_out[5] , \cby_1__1__22_chany_top_out[6] , \cby_1__1__22_chany_top_out[7] , \cby_1__1__22_chany_top_out[8] , \cby_1__1__22_chany_top_out[9] , \cby_1__1__22_chany_top_out[10] , \cby_1__1__22_chany_top_out[11] , \cby_1__1__22_chany_top_out[12] , \cby_1__1__22_chany_top_out[13] , \cby_1__1__22_chany_top_out[14] , \cby_1__1__22_chany_top_out[15] , \cby_1__1__22_chany_top_out[16] , \cby_1__1__22_chany_top_out[17] , \cby_1__1__22_chany_top_out[18] , \cby_1__1__22_chany_top_out[19]  }),
+    .clk_2_N_in(\clk_2_wires[22] ),
     .clk_2_N_out(\clk_2_wires[23] ),
     .clk_2_S_in(\clk_2_wires[22] ),
     .left_grid_pin_16_(cby_1__1__22_left_grid_pin_16_),
@@ -20776,11 +20925,14 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_grid_pin_31_(cby_1__1__22_left_grid_pin_31_),
     .prog_clk_0_S_out(\prog_clk_0_wires[89] ),
     .prog_clk_0_W_in(\prog_clk_0_wires[88] ),
+    .prog_clk_2_N_in(\prog_clk_2_wires[22] ),
     .prog_clk_2_N_out(\prog_clk_2_wires[23] ),
     .prog_clk_2_S_in(\prog_clk_2_wires[22] )
   );
   cby_1__1_ cby_3__8_ (
     .Test_en_E_in(\Test_enWires[120] ),
+    .Test_en_S_in(\Test_enWires[120] ),
+    .Test_en_W_in(\Test_enWires[120] ),
     .Test_en_W_out(\Test_enWires[117] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -20811,9 +20963,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_W_in(\prog_clk_0_wires[91] )
   );
   cby_1__1_ cby_4__1_ (
+    .Test_en_E_in(\Test_enWires[1] ),
     .Test_en_E_out(\Test_enWires[23] ),
     .Test_en_N_out(\Test_enWires[2] ),
     .Test_en_S_in(\Test_enWires[1] ),
+    .Test_en_W_in(\Test_enWires[1] ),
     .Test_en_W_out(\Test_enWires[21] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -20823,6 +20977,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \cby_1__1__24_chany_bottom_out[0] , \cby_1__1__24_chany_bottom_out[1] , \cby_1__1__24_chany_bottom_out[2] , \cby_1__1__24_chany_bottom_out[3] , \cby_1__1__24_chany_bottom_out[4] , \cby_1__1__24_chany_bottom_out[5] , \cby_1__1__24_chany_bottom_out[6] , \cby_1__1__24_chany_bottom_out[7] , \cby_1__1__24_chany_bottom_out[8] , \cby_1__1__24_chany_bottom_out[9] , \cby_1__1__24_chany_bottom_out[10] , \cby_1__1__24_chany_bottom_out[11] , \cby_1__1__24_chany_bottom_out[12] , \cby_1__1__24_chany_bottom_out[13] , \cby_1__1__24_chany_bottom_out[14] , \cby_1__1__24_chany_bottom_out[15] , \cby_1__1__24_chany_bottom_out[16] , \cby_1__1__24_chany_bottom_out[17] , \cby_1__1__24_chany_bottom_out[18] , \cby_1__1__24_chany_bottom_out[19]  }),
     .chany_top_in({ \sb_1__1__21_chany_bottom_out[0] , \sb_1__1__21_chany_bottom_out[1] , \sb_1__1__21_chany_bottom_out[2] , \sb_1__1__21_chany_bottom_out[3] , \sb_1__1__21_chany_bottom_out[4] , \sb_1__1__21_chany_bottom_out[5] , \sb_1__1__21_chany_bottom_out[6] , \sb_1__1__21_chany_bottom_out[7] , \sb_1__1__21_chany_bottom_out[8] , \sb_1__1__21_chany_bottom_out[9] , \sb_1__1__21_chany_bottom_out[10] , \sb_1__1__21_chany_bottom_out[11] , \sb_1__1__21_chany_bottom_out[12] , \sb_1__1__21_chany_bottom_out[13] , \sb_1__1__21_chany_bottom_out[14] , \sb_1__1__21_chany_bottom_out[15] , \sb_1__1__21_chany_bottom_out[16] , \sb_1__1__21_chany_bottom_out[17] , \sb_1__1__21_chany_bottom_out[18] , \sb_1__1__21_chany_bottom_out[19]  }),
     .chany_top_out({ \cby_1__1__24_chany_top_out[0] , \cby_1__1__24_chany_top_out[1] , \cby_1__1__24_chany_top_out[2] , \cby_1__1__24_chany_top_out[3] , \cby_1__1__24_chany_top_out[4] , \cby_1__1__24_chany_top_out[5] , \cby_1__1__24_chany_top_out[6] , \cby_1__1__24_chany_top_out[7] , \cby_1__1__24_chany_top_out[8] , \cby_1__1__24_chany_top_out[9] , \cby_1__1__24_chany_top_out[10] , \cby_1__1__24_chany_top_out[11] , \cby_1__1__24_chany_top_out[12] , \cby_1__1__24_chany_top_out[13] , \cby_1__1__24_chany_top_out[14] , \cby_1__1__24_chany_top_out[15] , \cby_1__1__24_chany_top_out[16] , \cby_1__1__24_chany_top_out[17] , \cby_1__1__24_chany_top_out[18] , \cby_1__1__24_chany_top_out[19]  }),
+    .clk_3_N_in(\clk_3_wires[28] ),
     .clk_3_N_out(\clk_3_wires[27] ),
     .clk_3_S_in(\clk_3_wires[28] ),
     .left_grid_pin_16_(cby_1__1__24_left_grid_pin_16_),
@@ -20843,13 +20998,16 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_grid_pin_31_(cby_1__1__24_left_grid_pin_31_),
     .prog_clk_0_S_out(\prog_clk_0_wires[97] ),
     .prog_clk_0_W_in(\prog_clk_0_wires[96] ),
+    .prog_clk_3_N_in(\prog_clk_3_wires[28] ),
     .prog_clk_3_N_out(\prog_clk_3_wires[27] ),
     .prog_clk_3_S_in(\prog_clk_3_wires[28] )
   );
   cby_1__1_ cby_4__2_ (
+    .Test_en_E_in(\Test_enWires[3] ),
     .Test_en_E_out(\Test_enWires[37] ),
     .Test_en_N_out(\Test_enWires[4] ),
     .Test_en_S_in(\Test_enWires[3] ),
+    .Test_en_W_in(\Test_enWires[3] ),
     .Test_en_W_out(\Test_enWires[35] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -20859,6 +21017,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \cby_1__1__25_chany_bottom_out[0] , \cby_1__1__25_chany_bottom_out[1] , \cby_1__1__25_chany_bottom_out[2] , \cby_1__1__25_chany_bottom_out[3] , \cby_1__1__25_chany_bottom_out[4] , \cby_1__1__25_chany_bottom_out[5] , \cby_1__1__25_chany_bottom_out[6] , \cby_1__1__25_chany_bottom_out[7] , \cby_1__1__25_chany_bottom_out[8] , \cby_1__1__25_chany_bottom_out[9] , \cby_1__1__25_chany_bottom_out[10] , \cby_1__1__25_chany_bottom_out[11] , \cby_1__1__25_chany_bottom_out[12] , \cby_1__1__25_chany_bottom_out[13] , \cby_1__1__25_chany_bottom_out[14] , \cby_1__1__25_chany_bottom_out[15] , \cby_1__1__25_chany_bottom_out[16] , \cby_1__1__25_chany_bottom_out[17] , \cby_1__1__25_chany_bottom_out[18] , \cby_1__1__25_chany_bottom_out[19]  }),
     .chany_top_in({ \sb_1__1__22_chany_bottom_out[0] , \sb_1__1__22_chany_bottom_out[1] , \sb_1__1__22_chany_bottom_out[2] , \sb_1__1__22_chany_bottom_out[3] , \sb_1__1__22_chany_bottom_out[4] , \sb_1__1__22_chany_bottom_out[5] , \sb_1__1__22_chany_bottom_out[6] , \sb_1__1__22_chany_bottom_out[7] , \sb_1__1__22_chany_bottom_out[8] , \sb_1__1__22_chany_bottom_out[9] , \sb_1__1__22_chany_bottom_out[10] , \sb_1__1__22_chany_bottom_out[11] , \sb_1__1__22_chany_bottom_out[12] , \sb_1__1__22_chany_bottom_out[13] , \sb_1__1__22_chany_bottom_out[14] , \sb_1__1__22_chany_bottom_out[15] , \sb_1__1__22_chany_bottom_out[16] , \sb_1__1__22_chany_bottom_out[17] , \sb_1__1__22_chany_bottom_out[18] , \sb_1__1__22_chany_bottom_out[19]  }),
     .chany_top_out({ \cby_1__1__25_chany_top_out[0] , \cby_1__1__25_chany_top_out[1] , \cby_1__1__25_chany_top_out[2] , \cby_1__1__25_chany_top_out[3] , \cby_1__1__25_chany_top_out[4] , \cby_1__1__25_chany_top_out[5] , \cby_1__1__25_chany_top_out[6] , \cby_1__1__25_chany_top_out[7] , \cby_1__1__25_chany_top_out[8] , \cby_1__1__25_chany_top_out[9] , \cby_1__1__25_chany_top_out[10] , \cby_1__1__25_chany_top_out[11] , \cby_1__1__25_chany_top_out[12] , \cby_1__1__25_chany_top_out[13] , \cby_1__1__25_chany_top_out[14] , \cby_1__1__25_chany_top_out[15] , \cby_1__1__25_chany_top_out[16] , \cby_1__1__25_chany_top_out[17] , \cby_1__1__25_chany_top_out[18] , \cby_1__1__25_chany_top_out[19]  }),
+    .clk_3_N_in(\clk_3_wires[30] ),
     .clk_3_N_out(\clk_3_wires[29] ),
     .clk_3_S_in(\clk_3_wires[30] ),
     .left_grid_pin_16_(cby_1__1__25_left_grid_pin_16_),
@@ -20879,13 +21038,16 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_grid_pin_31_(cby_1__1__25_left_grid_pin_31_),
     .prog_clk_0_S_out(\prog_clk_0_wires[100] ),
     .prog_clk_0_W_in(\prog_clk_0_wires[99] ),
+    .prog_clk_3_N_in(\prog_clk_3_wires[30] ),
     .prog_clk_3_N_out(\prog_clk_3_wires[29] ),
     .prog_clk_3_S_in(\prog_clk_3_wires[30] )
   );
   cby_1__1_ cby_4__3_ (
+    .Test_en_E_in(\Test_enWires[5] ),
     .Test_en_E_out(\Test_enWires[51] ),
     .Test_en_N_out(\Test_enWires[6] ),
     .Test_en_S_in(\Test_enWires[5] ),
+    .Test_en_W_in(\Test_enWires[5] ),
     .Test_en_W_out(\Test_enWires[49] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -20895,6 +21057,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \cby_1__1__26_chany_bottom_out[0] , \cby_1__1__26_chany_bottom_out[1] , \cby_1__1__26_chany_bottom_out[2] , \cby_1__1__26_chany_bottom_out[3] , \cby_1__1__26_chany_bottom_out[4] , \cby_1__1__26_chany_bottom_out[5] , \cby_1__1__26_chany_bottom_out[6] , \cby_1__1__26_chany_bottom_out[7] , \cby_1__1__26_chany_bottom_out[8] , \cby_1__1__26_chany_bottom_out[9] , \cby_1__1__26_chany_bottom_out[10] , \cby_1__1__26_chany_bottom_out[11] , \cby_1__1__26_chany_bottom_out[12] , \cby_1__1__26_chany_bottom_out[13] , \cby_1__1__26_chany_bottom_out[14] , \cby_1__1__26_chany_bottom_out[15] , \cby_1__1__26_chany_bottom_out[16] , \cby_1__1__26_chany_bottom_out[17] , \cby_1__1__26_chany_bottom_out[18] , \cby_1__1__26_chany_bottom_out[19]  }),
     .chany_top_in({ \sb_1__1__23_chany_bottom_out[0] , \sb_1__1__23_chany_bottom_out[1] , \sb_1__1__23_chany_bottom_out[2] , \sb_1__1__23_chany_bottom_out[3] , \sb_1__1__23_chany_bottom_out[4] , \sb_1__1__23_chany_bottom_out[5] , \sb_1__1__23_chany_bottom_out[6] , \sb_1__1__23_chany_bottom_out[7] , \sb_1__1__23_chany_bottom_out[8] , \sb_1__1__23_chany_bottom_out[9] , \sb_1__1__23_chany_bottom_out[10] , \sb_1__1__23_chany_bottom_out[11] , \sb_1__1__23_chany_bottom_out[12] , \sb_1__1__23_chany_bottom_out[13] , \sb_1__1__23_chany_bottom_out[14] , \sb_1__1__23_chany_bottom_out[15] , \sb_1__1__23_chany_bottom_out[16] , \sb_1__1__23_chany_bottom_out[17] , \sb_1__1__23_chany_bottom_out[18] , \sb_1__1__23_chany_bottom_out[19]  }),
     .chany_top_out({ \cby_1__1__26_chany_top_out[0] , \cby_1__1__26_chany_top_out[1] , \cby_1__1__26_chany_top_out[2] , \cby_1__1__26_chany_top_out[3] , \cby_1__1__26_chany_top_out[4] , \cby_1__1__26_chany_top_out[5] , \cby_1__1__26_chany_top_out[6] , \cby_1__1__26_chany_top_out[7] , \cby_1__1__26_chany_top_out[8] , \cby_1__1__26_chany_top_out[9] , \cby_1__1__26_chany_top_out[10] , \cby_1__1__26_chany_top_out[11] , \cby_1__1__26_chany_top_out[12] , \cby_1__1__26_chany_top_out[13] , \cby_1__1__26_chany_top_out[14] , \cby_1__1__26_chany_top_out[15] , \cby_1__1__26_chany_top_out[16] , \cby_1__1__26_chany_top_out[17] , \cby_1__1__26_chany_top_out[18] , \cby_1__1__26_chany_top_out[19]  }),
+    .clk_3_N_in(\clk_3_wires[32] ),
     .clk_3_N_out(\clk_3_wires[31] ),
     .clk_3_S_in(\clk_3_wires[32] ),
     .left_grid_pin_16_(cby_1__1__26_left_grid_pin_16_),
@@ -20915,13 +21078,16 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_grid_pin_31_(cby_1__1__26_left_grid_pin_31_),
     .prog_clk_0_S_out(\prog_clk_0_wires[103] ),
     .prog_clk_0_W_in(\prog_clk_0_wires[102] ),
+    .prog_clk_3_N_in(\prog_clk_3_wires[32] ),
     .prog_clk_3_N_out(\prog_clk_3_wires[31] ),
     .prog_clk_3_S_in(\prog_clk_3_wires[32] )
   );
   cby_1__1_ cby_4__4_ (
+    .Test_en_E_in(\Test_enWires[7] ),
     .Test_en_E_out(\Test_enWires[65] ),
     .Test_en_N_out(\Test_enWires[8] ),
     .Test_en_S_in(\Test_enWires[7] ),
+    .Test_en_W_in(\Test_enWires[7] ),
     .Test_en_W_out(\Test_enWires[63] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -20931,6 +21097,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \cby_1__1__27_chany_bottom_out[0] , \cby_1__1__27_chany_bottom_out[1] , \cby_1__1__27_chany_bottom_out[2] , \cby_1__1__27_chany_bottom_out[3] , \cby_1__1__27_chany_bottom_out[4] , \cby_1__1__27_chany_bottom_out[5] , \cby_1__1__27_chany_bottom_out[6] , \cby_1__1__27_chany_bottom_out[7] , \cby_1__1__27_chany_bottom_out[8] , \cby_1__1__27_chany_bottom_out[9] , \cby_1__1__27_chany_bottom_out[10] , \cby_1__1__27_chany_bottom_out[11] , \cby_1__1__27_chany_bottom_out[12] , \cby_1__1__27_chany_bottom_out[13] , \cby_1__1__27_chany_bottom_out[14] , \cby_1__1__27_chany_bottom_out[15] , \cby_1__1__27_chany_bottom_out[16] , \cby_1__1__27_chany_bottom_out[17] , \cby_1__1__27_chany_bottom_out[18] , \cby_1__1__27_chany_bottom_out[19]  }),
     .chany_top_in({ \sb_1__1__24_chany_bottom_out[0] , \sb_1__1__24_chany_bottom_out[1] , \sb_1__1__24_chany_bottom_out[2] , \sb_1__1__24_chany_bottom_out[3] , \sb_1__1__24_chany_bottom_out[4] , \sb_1__1__24_chany_bottom_out[5] , \sb_1__1__24_chany_bottom_out[6] , \sb_1__1__24_chany_bottom_out[7] , \sb_1__1__24_chany_bottom_out[8] , \sb_1__1__24_chany_bottom_out[9] , \sb_1__1__24_chany_bottom_out[10] , \sb_1__1__24_chany_bottom_out[11] , \sb_1__1__24_chany_bottom_out[12] , \sb_1__1__24_chany_bottom_out[13] , \sb_1__1__24_chany_bottom_out[14] , \sb_1__1__24_chany_bottom_out[15] , \sb_1__1__24_chany_bottom_out[16] , \sb_1__1__24_chany_bottom_out[17] , \sb_1__1__24_chany_bottom_out[18] , \sb_1__1__24_chany_bottom_out[19]  }),
     .chany_top_out({ \cby_1__1__27_chany_top_out[0] , \cby_1__1__27_chany_top_out[1] , \cby_1__1__27_chany_top_out[2] , \cby_1__1__27_chany_top_out[3] , \cby_1__1__27_chany_top_out[4] , \cby_1__1__27_chany_top_out[5] , \cby_1__1__27_chany_top_out[6] , \cby_1__1__27_chany_top_out[7] , \cby_1__1__27_chany_top_out[8] , \cby_1__1__27_chany_top_out[9] , \cby_1__1__27_chany_top_out[10] , \cby_1__1__27_chany_top_out[11] , \cby_1__1__27_chany_top_out[12] , \cby_1__1__27_chany_top_out[13] , \cby_1__1__27_chany_top_out[14] , \cby_1__1__27_chany_top_out[15] , \cby_1__1__27_chany_top_out[16] , \cby_1__1__27_chany_top_out[17] , \cby_1__1__27_chany_top_out[18] , \cby_1__1__27_chany_top_out[19]  }),
+    .clk_3_N_in(\clk_3_wires[34] ),
     .clk_3_N_out(\clk_3_wires[33] ),
     .clk_3_S_in(\clk_3_wires[34] ),
     .left_grid_pin_16_(cby_1__1__27_left_grid_pin_16_),
@@ -20951,13 +21118,16 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_grid_pin_31_(cby_1__1__27_left_grid_pin_31_),
     .prog_clk_0_S_out(\prog_clk_0_wires[106] ),
     .prog_clk_0_W_in(\prog_clk_0_wires[105] ),
+    .prog_clk_3_N_in(\prog_clk_3_wires[34] ),
     .prog_clk_3_N_out(\prog_clk_3_wires[33] ),
     .prog_clk_3_S_in(\prog_clk_3_wires[34] )
   );
   cby_1__1_ cby_4__5_ (
+    .Test_en_E_in(\Test_enWires[9] ),
     .Test_en_E_out(\Test_enWires[79] ),
     .Test_en_N_out(\Test_enWires[10] ),
     .Test_en_S_in(\Test_enWires[9] ),
+    .Test_en_W_in(\Test_enWires[9] ),
     .Test_en_W_out(\Test_enWires[77] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -20987,9 +21157,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_W_in(\prog_clk_0_wires[108] )
   );
   cby_1__1_ cby_4__6_ (
+    .Test_en_E_in(\Test_enWires[11] ),
     .Test_en_E_out(\Test_enWires[93] ),
     .Test_en_N_out(\Test_enWires[12] ),
     .Test_en_S_in(\Test_enWires[11] ),
+    .Test_en_W_in(\Test_enWires[11] ),
     .Test_en_W_out(\Test_enWires[91] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -21019,9 +21191,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_W_in(\prog_clk_0_wires[111] )
   );
   cby_1__1_ cby_4__7_ (
+    .Test_en_E_in(\Test_enWires[13] ),
     .Test_en_E_out(\Test_enWires[107] ),
     .Test_en_N_out(\Test_enWires[14] ),
     .Test_en_S_in(\Test_enWires[13] ),
+    .Test_en_W_in(\Test_enWires[13] ),
     .Test_en_W_out(\Test_enWires[105] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -21051,8 +21225,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_W_in(\prog_clk_0_wires[114] )
   );
   cby_1__1_ cby_4__8_ (
+    .Test_en_E_in(\Test_enWires[15] ),
     .Test_en_E_out(\Test_enWires[121] ),
     .Test_en_S_in(\Test_enWires[15] ),
+    .Test_en_W_in(\Test_enWires[15] ),
     .Test_en_W_out(\Test_enWires[119] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -21083,7 +21259,9 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_W_in(\prog_clk_0_wires[117] )
   );
   cby_1__1_ cby_5__1_ (
+    .Test_en_E_in(\Test_enWires[24] ),
     .Test_en_E_out(\Test_enWires[25] ),
+    .Test_en_S_in(\Test_enWires[24] ),
     .Test_en_W_in(\Test_enWires[24] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -21113,7 +21291,9 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_W_in(\prog_clk_0_wires[122] )
   );
   cby_1__1_ cby_5__2_ (
+    .Test_en_E_in(\Test_enWires[38] ),
     .Test_en_E_out(\Test_enWires[39] ),
+    .Test_en_S_in(\Test_enWires[38] ),
     .Test_en_W_in(\Test_enWires[38] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -21124,6 +21304,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_in({ \sb_1__1__29_chany_bottom_out[0] , \sb_1__1__29_chany_bottom_out[1] , \sb_1__1__29_chany_bottom_out[2] , \sb_1__1__29_chany_bottom_out[3] , \sb_1__1__29_chany_bottom_out[4] , \sb_1__1__29_chany_bottom_out[5] , \sb_1__1__29_chany_bottom_out[6] , \sb_1__1__29_chany_bottom_out[7] , \sb_1__1__29_chany_bottom_out[8] , \sb_1__1__29_chany_bottom_out[9] , \sb_1__1__29_chany_bottom_out[10] , \sb_1__1__29_chany_bottom_out[11] , \sb_1__1__29_chany_bottom_out[12] , \sb_1__1__29_chany_bottom_out[13] , \sb_1__1__29_chany_bottom_out[14] , \sb_1__1__29_chany_bottom_out[15] , \sb_1__1__29_chany_bottom_out[16] , \sb_1__1__29_chany_bottom_out[17] , \sb_1__1__29_chany_bottom_out[18] , \sb_1__1__29_chany_bottom_out[19]  }),
     .chany_top_out({ \cby_1__1__33_chany_top_out[0] , \cby_1__1__33_chany_top_out[1] , \cby_1__1__33_chany_top_out[2] , \cby_1__1__33_chany_top_out[3] , \cby_1__1__33_chany_top_out[4] , \cby_1__1__33_chany_top_out[5] , \cby_1__1__33_chany_top_out[6] , \cby_1__1__33_chany_top_out[7] , \cby_1__1__33_chany_top_out[8] , \cby_1__1__33_chany_top_out[9] , \cby_1__1__33_chany_top_out[10] , \cby_1__1__33_chany_top_out[11] , \cby_1__1__33_chany_top_out[12] , \cby_1__1__33_chany_top_out[13] , \cby_1__1__33_chany_top_out[14] , \cby_1__1__33_chany_top_out[15] , \cby_1__1__33_chany_top_out[16] , \cby_1__1__33_chany_top_out[17] , \cby_1__1__33_chany_top_out[18] , \cby_1__1__33_chany_top_out[19]  }),
     .clk_2_N_in(\clk_2_wires[33] ),
+    .clk_2_S_in(\clk_2_wires[33] ),
     .clk_2_S_out(\clk_2_wires[34] ),
     .left_grid_pin_16_(cby_1__1__33_left_grid_pin_16_),
     .left_grid_pin_17_(cby_1__1__33_left_grid_pin_17_),
@@ -21144,10 +21325,13 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_S_out(\prog_clk_0_wires[126] ),
     .prog_clk_0_W_in(\prog_clk_0_wires[125] ),
     .prog_clk_2_N_in(\prog_clk_2_wires[33] ),
+    .prog_clk_2_S_in(\prog_clk_2_wires[33] ),
     .prog_clk_2_S_out(\prog_clk_2_wires[34] )
   );
   cby_1__1_ cby_5__3_ (
+    .Test_en_E_in(\Test_enWires[52] ),
     .Test_en_E_out(\Test_enWires[53] ),
+    .Test_en_S_in(\Test_enWires[52] ),
     .Test_en_W_in(\Test_enWires[52] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -21157,6 +21341,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \cby_1__1__34_chany_bottom_out[0] , \cby_1__1__34_chany_bottom_out[1] , \cby_1__1__34_chany_bottom_out[2] , \cby_1__1__34_chany_bottom_out[3] , \cby_1__1__34_chany_bottom_out[4] , \cby_1__1__34_chany_bottom_out[5] , \cby_1__1__34_chany_bottom_out[6] , \cby_1__1__34_chany_bottom_out[7] , \cby_1__1__34_chany_bottom_out[8] , \cby_1__1__34_chany_bottom_out[9] , \cby_1__1__34_chany_bottom_out[10] , \cby_1__1__34_chany_bottom_out[11] , \cby_1__1__34_chany_bottom_out[12] , \cby_1__1__34_chany_bottom_out[13] , \cby_1__1__34_chany_bottom_out[14] , \cby_1__1__34_chany_bottom_out[15] , \cby_1__1__34_chany_bottom_out[16] , \cby_1__1__34_chany_bottom_out[17] , \cby_1__1__34_chany_bottom_out[18] , \cby_1__1__34_chany_bottom_out[19]  }),
     .chany_top_in({ \sb_1__1__30_chany_bottom_out[0] , \sb_1__1__30_chany_bottom_out[1] , \sb_1__1__30_chany_bottom_out[2] , \sb_1__1__30_chany_bottom_out[3] , \sb_1__1__30_chany_bottom_out[4] , \sb_1__1__30_chany_bottom_out[5] , \sb_1__1__30_chany_bottom_out[6] , \sb_1__1__30_chany_bottom_out[7] , \sb_1__1__30_chany_bottom_out[8] , \sb_1__1__30_chany_bottom_out[9] , \sb_1__1__30_chany_bottom_out[10] , \sb_1__1__30_chany_bottom_out[11] , \sb_1__1__30_chany_bottom_out[12] , \sb_1__1__30_chany_bottom_out[13] , \sb_1__1__30_chany_bottom_out[14] , \sb_1__1__30_chany_bottom_out[15] , \sb_1__1__30_chany_bottom_out[16] , \sb_1__1__30_chany_bottom_out[17] , \sb_1__1__30_chany_bottom_out[18] , \sb_1__1__30_chany_bottom_out[19]  }),
     .chany_top_out({ \cby_1__1__34_chany_top_out[0] , \cby_1__1__34_chany_top_out[1] , \cby_1__1__34_chany_top_out[2] , \cby_1__1__34_chany_top_out[3] , \cby_1__1__34_chany_top_out[4] , \cby_1__1__34_chany_top_out[5] , \cby_1__1__34_chany_top_out[6] , \cby_1__1__34_chany_top_out[7] , \cby_1__1__34_chany_top_out[8] , \cby_1__1__34_chany_top_out[9] , \cby_1__1__34_chany_top_out[10] , \cby_1__1__34_chany_top_out[11] , \cby_1__1__34_chany_top_out[12] , \cby_1__1__34_chany_top_out[13] , \cby_1__1__34_chany_top_out[14] , \cby_1__1__34_chany_top_out[15] , \cby_1__1__34_chany_top_out[16] , \cby_1__1__34_chany_top_out[17] , \cby_1__1__34_chany_top_out[18] , \cby_1__1__34_chany_top_out[19]  }),
+    .clk_2_N_in(\clk_2_wires[31] ),
     .clk_2_N_out(\clk_2_wires[32] ),
     .clk_2_S_in(\clk_2_wires[31] ),
     .left_grid_pin_16_(cby_1__1__34_left_grid_pin_16_),
@@ -21177,11 +21362,14 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_grid_pin_31_(cby_1__1__34_left_grid_pin_31_),
     .prog_clk_0_S_out(\prog_clk_0_wires[129] ),
     .prog_clk_0_W_in(\prog_clk_0_wires[128] ),
+    .prog_clk_2_N_in(\prog_clk_2_wires[31] ),
     .prog_clk_2_N_out(\prog_clk_2_wires[32] ),
     .prog_clk_2_S_in(\prog_clk_2_wires[31] )
   );
   cby_1__1_ cby_5__4_ (
+    .Test_en_E_in(\Test_enWires[66] ),
     .Test_en_E_out(\Test_enWires[67] ),
+    .Test_en_S_in(\Test_enWires[66] ),
     .Test_en_W_in(\Test_enWires[66] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -21211,7 +21399,9 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_W_in(\prog_clk_0_wires[131] )
   );
   cby_1__1_ cby_5__5_ (
+    .Test_en_E_in(\Test_enWires[80] ),
     .Test_en_E_out(\Test_enWires[81] ),
+    .Test_en_S_in(\Test_enWires[80] ),
     .Test_en_W_in(\Test_enWires[80] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -21241,7 +21431,9 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_W_in(\prog_clk_0_wires[134] )
   );
   cby_1__1_ cby_5__6_ (
+    .Test_en_E_in(\Test_enWires[94] ),
     .Test_en_E_out(\Test_enWires[95] ),
+    .Test_en_S_in(\Test_enWires[94] ),
     .Test_en_W_in(\Test_enWires[94] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -21252,6 +21444,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_in({ \sb_1__1__33_chany_bottom_out[0] , \sb_1__1__33_chany_bottom_out[1] , \sb_1__1__33_chany_bottom_out[2] , \sb_1__1__33_chany_bottom_out[3] , \sb_1__1__33_chany_bottom_out[4] , \sb_1__1__33_chany_bottom_out[5] , \sb_1__1__33_chany_bottom_out[6] , \sb_1__1__33_chany_bottom_out[7] , \sb_1__1__33_chany_bottom_out[8] , \sb_1__1__33_chany_bottom_out[9] , \sb_1__1__33_chany_bottom_out[10] , \sb_1__1__33_chany_bottom_out[11] , \sb_1__1__33_chany_bottom_out[12] , \sb_1__1__33_chany_bottom_out[13] , \sb_1__1__33_chany_bottom_out[14] , \sb_1__1__33_chany_bottom_out[15] , \sb_1__1__33_chany_bottom_out[16] , \sb_1__1__33_chany_bottom_out[17] , \sb_1__1__33_chany_bottom_out[18] , \sb_1__1__33_chany_bottom_out[19]  }),
     .chany_top_out({ \cby_1__1__37_chany_top_out[0] , \cby_1__1__37_chany_top_out[1] , \cby_1__1__37_chany_top_out[2] , \cby_1__1__37_chany_top_out[3] , \cby_1__1__37_chany_top_out[4] , \cby_1__1__37_chany_top_out[5] , \cby_1__1__37_chany_top_out[6] , \cby_1__1__37_chany_top_out[7] , \cby_1__1__37_chany_top_out[8] , \cby_1__1__37_chany_top_out[9] , \cby_1__1__37_chany_top_out[10] , \cby_1__1__37_chany_top_out[11] , \cby_1__1__37_chany_top_out[12] , \cby_1__1__37_chany_top_out[13] , \cby_1__1__37_chany_top_out[14] , \cby_1__1__37_chany_top_out[15] , \cby_1__1__37_chany_top_out[16] , \cby_1__1__37_chany_top_out[17] , \cby_1__1__37_chany_top_out[18] , \cby_1__1__37_chany_top_out[19]  }),
     .clk_2_N_in(\clk_2_wires[46] ),
+    .clk_2_S_in(\clk_2_wires[46] ),
     .clk_2_S_out(\clk_2_wires[47] ),
     .left_grid_pin_16_(cby_1__1__37_left_grid_pin_16_),
     .left_grid_pin_17_(cby_1__1__37_left_grid_pin_17_),
@@ -21272,10 +21465,13 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_S_out(\prog_clk_0_wires[138] ),
     .prog_clk_0_W_in(\prog_clk_0_wires[137] ),
     .prog_clk_2_N_in(\prog_clk_2_wires[46] ),
+    .prog_clk_2_S_in(\prog_clk_2_wires[46] ),
     .prog_clk_2_S_out(\prog_clk_2_wires[47] )
   );
   cby_1__1_ cby_5__7_ (
+    .Test_en_E_in(\Test_enWires[108] ),
     .Test_en_E_out(\Test_enWires[109] ),
+    .Test_en_S_in(\Test_enWires[108] ),
     .Test_en_W_in(\Test_enWires[108] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -21285,6 +21481,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \cby_1__1__38_chany_bottom_out[0] , \cby_1__1__38_chany_bottom_out[1] , \cby_1__1__38_chany_bottom_out[2] , \cby_1__1__38_chany_bottom_out[3] , \cby_1__1__38_chany_bottom_out[4] , \cby_1__1__38_chany_bottom_out[5] , \cby_1__1__38_chany_bottom_out[6] , \cby_1__1__38_chany_bottom_out[7] , \cby_1__1__38_chany_bottom_out[8] , \cby_1__1__38_chany_bottom_out[9] , \cby_1__1__38_chany_bottom_out[10] , \cby_1__1__38_chany_bottom_out[11] , \cby_1__1__38_chany_bottom_out[12] , \cby_1__1__38_chany_bottom_out[13] , \cby_1__1__38_chany_bottom_out[14] , \cby_1__1__38_chany_bottom_out[15] , \cby_1__1__38_chany_bottom_out[16] , \cby_1__1__38_chany_bottom_out[17] , \cby_1__1__38_chany_bottom_out[18] , \cby_1__1__38_chany_bottom_out[19]  }),
     .chany_top_in({ \sb_1__1__34_chany_bottom_out[0] , \sb_1__1__34_chany_bottom_out[1] , \sb_1__1__34_chany_bottom_out[2] , \sb_1__1__34_chany_bottom_out[3] , \sb_1__1__34_chany_bottom_out[4] , \sb_1__1__34_chany_bottom_out[5] , \sb_1__1__34_chany_bottom_out[6] , \sb_1__1__34_chany_bottom_out[7] , \sb_1__1__34_chany_bottom_out[8] , \sb_1__1__34_chany_bottom_out[9] , \sb_1__1__34_chany_bottom_out[10] , \sb_1__1__34_chany_bottom_out[11] , \sb_1__1__34_chany_bottom_out[12] , \sb_1__1__34_chany_bottom_out[13] , \sb_1__1__34_chany_bottom_out[14] , \sb_1__1__34_chany_bottom_out[15] , \sb_1__1__34_chany_bottom_out[16] , \sb_1__1__34_chany_bottom_out[17] , \sb_1__1__34_chany_bottom_out[18] , \sb_1__1__34_chany_bottom_out[19]  }),
     .chany_top_out({ \cby_1__1__38_chany_top_out[0] , \cby_1__1__38_chany_top_out[1] , \cby_1__1__38_chany_top_out[2] , \cby_1__1__38_chany_top_out[3] , \cby_1__1__38_chany_top_out[4] , \cby_1__1__38_chany_top_out[5] , \cby_1__1__38_chany_top_out[6] , \cby_1__1__38_chany_top_out[7] , \cby_1__1__38_chany_top_out[8] , \cby_1__1__38_chany_top_out[9] , \cby_1__1__38_chany_top_out[10] , \cby_1__1__38_chany_top_out[11] , \cby_1__1__38_chany_top_out[12] , \cby_1__1__38_chany_top_out[13] , \cby_1__1__38_chany_top_out[14] , \cby_1__1__38_chany_top_out[15] , \cby_1__1__38_chany_top_out[16] , \cby_1__1__38_chany_top_out[17] , \cby_1__1__38_chany_top_out[18] , \cby_1__1__38_chany_top_out[19]  }),
+    .clk_2_N_in(\clk_2_wires[44] ),
     .clk_2_N_out(\clk_2_wires[45] ),
     .clk_2_S_in(\clk_2_wires[44] ),
     .left_grid_pin_16_(cby_1__1__38_left_grid_pin_16_),
@@ -21305,11 +21502,14 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_grid_pin_31_(cby_1__1__38_left_grid_pin_31_),
     .prog_clk_0_S_out(\prog_clk_0_wires[141] ),
     .prog_clk_0_W_in(\prog_clk_0_wires[140] ),
+    .prog_clk_2_N_in(\prog_clk_2_wires[44] ),
     .prog_clk_2_N_out(\prog_clk_2_wires[45] ),
     .prog_clk_2_S_in(\prog_clk_2_wires[44] )
   );
   cby_1__1_ cby_5__8_ (
+    .Test_en_E_in(\Test_enWires[122] ),
     .Test_en_E_out(\Test_enWires[123] ),
+    .Test_en_S_in(\Test_enWires[122] ),
     .Test_en_W_in(\Test_enWires[122] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -21340,7 +21540,9 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_W_in(\prog_clk_0_wires[143] )
   );
   cby_1__1_ cby_6__1_ (
+    .Test_en_E_in(\Test_enWires[26] ),
     .Test_en_E_out(\Test_enWires[27] ),
+    .Test_en_S_in(\Test_enWires[26] ),
     .Test_en_W_in(\Test_enWires[26] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -21370,7 +21572,9 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_W_in(\prog_clk_0_wires[148] )
   );
   cby_1__1_ cby_6__2_ (
+    .Test_en_E_in(\Test_enWires[40] ),
     .Test_en_E_out(\Test_enWires[41] ),
+    .Test_en_S_in(\Test_enWires[40] ),
     .Test_en_W_in(\Test_enWires[40] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -21400,7 +21604,9 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_W_in(\prog_clk_0_wires[151] )
   );
   cby_1__1_ cby_6__3_ (
+    .Test_en_E_in(\Test_enWires[54] ),
     .Test_en_E_out(\Test_enWires[55] ),
+    .Test_en_S_in(\Test_enWires[54] ),
     .Test_en_W_in(\Test_enWires[54] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -21411,6 +21617,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_in({ \sb_1__1__37_chany_bottom_out[0] , \sb_1__1__37_chany_bottom_out[1] , \sb_1__1__37_chany_bottom_out[2] , \sb_1__1__37_chany_bottom_out[3] , \sb_1__1__37_chany_bottom_out[4] , \sb_1__1__37_chany_bottom_out[5] , \sb_1__1__37_chany_bottom_out[6] , \sb_1__1__37_chany_bottom_out[7] , \sb_1__1__37_chany_bottom_out[8] , \sb_1__1__37_chany_bottom_out[9] , \sb_1__1__37_chany_bottom_out[10] , \sb_1__1__37_chany_bottom_out[11] , \sb_1__1__37_chany_bottom_out[12] , \sb_1__1__37_chany_bottom_out[13] , \sb_1__1__37_chany_bottom_out[14] , \sb_1__1__37_chany_bottom_out[15] , \sb_1__1__37_chany_bottom_out[16] , \sb_1__1__37_chany_bottom_out[17] , \sb_1__1__37_chany_bottom_out[18] , \sb_1__1__37_chany_bottom_out[19]  }),
     .chany_top_out({ \cby_1__1__42_chany_top_out[0] , \cby_1__1__42_chany_top_out[1] , \cby_1__1__42_chany_top_out[2] , \cby_1__1__42_chany_top_out[3] , \cby_1__1__42_chany_top_out[4] , \cby_1__1__42_chany_top_out[5] , \cby_1__1__42_chany_top_out[6] , \cby_1__1__42_chany_top_out[7] , \cby_1__1__42_chany_top_out[8] , \cby_1__1__42_chany_top_out[9] , \cby_1__1__42_chany_top_out[10] , \cby_1__1__42_chany_top_out[11] , \cby_1__1__42_chany_top_out[12] , \cby_1__1__42_chany_top_out[13] , \cby_1__1__42_chany_top_out[14] , \cby_1__1__42_chany_top_out[15] , \cby_1__1__42_chany_top_out[16] , \cby_1__1__42_chany_top_out[17] , \cby_1__1__42_chany_top_out[18] , \cby_1__1__42_chany_top_out[19]  }),
     .clk_3_N_in(\clk_3_wires[24] ),
+    .clk_3_S_in(\clk_3_wires[24] ),
     .clk_3_S_out(\clk_3_wires[25] ),
     .left_grid_pin_16_(cby_1__1__42_left_grid_pin_16_),
     .left_grid_pin_17_(cby_1__1__42_left_grid_pin_17_),
@@ -21431,10 +21638,13 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_S_out(\prog_clk_0_wires[155] ),
     .prog_clk_0_W_in(\prog_clk_0_wires[154] ),
     .prog_clk_3_N_in(\prog_clk_3_wires[24] ),
+    .prog_clk_3_S_in(\prog_clk_3_wires[24] ),
     .prog_clk_3_S_out(\prog_clk_3_wires[25] )
   );
   cby_1__1_ cby_6__4_ (
+    .Test_en_E_in(\Test_enWires[68] ),
     .Test_en_E_out(\Test_enWires[69] ),
+    .Test_en_S_in(\Test_enWires[68] ),
     .Test_en_W_in(\Test_enWires[68] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -21445,6 +21655,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_in({ \sb_1__1__38_chany_bottom_out[0] , \sb_1__1__38_chany_bottom_out[1] , \sb_1__1__38_chany_bottom_out[2] , \sb_1__1__38_chany_bottom_out[3] , \sb_1__1__38_chany_bottom_out[4] , \sb_1__1__38_chany_bottom_out[5] , \sb_1__1__38_chany_bottom_out[6] , \sb_1__1__38_chany_bottom_out[7] , \sb_1__1__38_chany_bottom_out[8] , \sb_1__1__38_chany_bottom_out[9] , \sb_1__1__38_chany_bottom_out[10] , \sb_1__1__38_chany_bottom_out[11] , \sb_1__1__38_chany_bottom_out[12] , \sb_1__1__38_chany_bottom_out[13] , \sb_1__1__38_chany_bottom_out[14] , \sb_1__1__38_chany_bottom_out[15] , \sb_1__1__38_chany_bottom_out[16] , \sb_1__1__38_chany_bottom_out[17] , \sb_1__1__38_chany_bottom_out[18] , \sb_1__1__38_chany_bottom_out[19]  }),
     .chany_top_out({ \cby_1__1__43_chany_top_out[0] , \cby_1__1__43_chany_top_out[1] , \cby_1__1__43_chany_top_out[2] , \cby_1__1__43_chany_top_out[3] , \cby_1__1__43_chany_top_out[4] , \cby_1__1__43_chany_top_out[5] , \cby_1__1__43_chany_top_out[6] , \cby_1__1__43_chany_top_out[7] , \cby_1__1__43_chany_top_out[8] , \cby_1__1__43_chany_top_out[9] , \cby_1__1__43_chany_top_out[10] , \cby_1__1__43_chany_top_out[11] , \cby_1__1__43_chany_top_out[12] , \cby_1__1__43_chany_top_out[13] , \cby_1__1__43_chany_top_out[14] , \cby_1__1__43_chany_top_out[15] , \cby_1__1__43_chany_top_out[16] , \cby_1__1__43_chany_top_out[17] , \cby_1__1__43_chany_top_out[18] , \cby_1__1__43_chany_top_out[19]  }),
     .clk_3_N_in(\clk_3_wires[20] ),
+    .clk_3_S_in(\clk_3_wires[20] ),
     .clk_3_S_out(\clk_3_wires[21] ),
     .left_grid_pin_16_(cby_1__1__43_left_grid_pin_16_),
     .left_grid_pin_17_(cby_1__1__43_left_grid_pin_17_),
@@ -21465,10 +21676,13 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_S_out(\prog_clk_0_wires[158] ),
     .prog_clk_0_W_in(\prog_clk_0_wires[157] ),
     .prog_clk_3_N_in(\prog_clk_3_wires[20] ),
+    .prog_clk_3_S_in(\prog_clk_3_wires[20] ),
     .prog_clk_3_S_out(\prog_clk_3_wires[21] )
   );
   cby_1__1_ cby_6__5_ (
+    .Test_en_E_in(\Test_enWires[82] ),
     .Test_en_E_out(\Test_enWires[83] ),
+    .Test_en_S_in(\Test_enWires[82] ),
     .Test_en_W_in(\Test_enWires[82] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -21478,6 +21692,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \cby_1__1__44_chany_bottom_out[0] , \cby_1__1__44_chany_bottom_out[1] , \cby_1__1__44_chany_bottom_out[2] , \cby_1__1__44_chany_bottom_out[3] , \cby_1__1__44_chany_bottom_out[4] , \cby_1__1__44_chany_bottom_out[5] , \cby_1__1__44_chany_bottom_out[6] , \cby_1__1__44_chany_bottom_out[7] , \cby_1__1__44_chany_bottom_out[8] , \cby_1__1__44_chany_bottom_out[9] , \cby_1__1__44_chany_bottom_out[10] , \cby_1__1__44_chany_bottom_out[11] , \cby_1__1__44_chany_bottom_out[12] , \cby_1__1__44_chany_bottom_out[13] , \cby_1__1__44_chany_bottom_out[14] , \cby_1__1__44_chany_bottom_out[15] , \cby_1__1__44_chany_bottom_out[16] , \cby_1__1__44_chany_bottom_out[17] , \cby_1__1__44_chany_bottom_out[18] , \cby_1__1__44_chany_bottom_out[19]  }),
     .chany_top_in({ \sb_1__1__39_chany_bottom_out[0] , \sb_1__1__39_chany_bottom_out[1] , \sb_1__1__39_chany_bottom_out[2] , \sb_1__1__39_chany_bottom_out[3] , \sb_1__1__39_chany_bottom_out[4] , \sb_1__1__39_chany_bottom_out[5] , \sb_1__1__39_chany_bottom_out[6] , \sb_1__1__39_chany_bottom_out[7] , \sb_1__1__39_chany_bottom_out[8] , \sb_1__1__39_chany_bottom_out[9] , \sb_1__1__39_chany_bottom_out[10] , \sb_1__1__39_chany_bottom_out[11] , \sb_1__1__39_chany_bottom_out[12] , \sb_1__1__39_chany_bottom_out[13] , \sb_1__1__39_chany_bottom_out[14] , \sb_1__1__39_chany_bottom_out[15] , \sb_1__1__39_chany_bottom_out[16] , \sb_1__1__39_chany_bottom_out[17] , \sb_1__1__39_chany_bottom_out[18] , \sb_1__1__39_chany_bottom_out[19]  }),
     .chany_top_out({ \cby_1__1__44_chany_top_out[0] , \cby_1__1__44_chany_top_out[1] , \cby_1__1__44_chany_top_out[2] , \cby_1__1__44_chany_top_out[3] , \cby_1__1__44_chany_top_out[4] , \cby_1__1__44_chany_top_out[5] , \cby_1__1__44_chany_top_out[6] , \cby_1__1__44_chany_top_out[7] , \cby_1__1__44_chany_top_out[8] , \cby_1__1__44_chany_top_out[9] , \cby_1__1__44_chany_top_out[10] , \cby_1__1__44_chany_top_out[11] , \cby_1__1__44_chany_top_out[12] , \cby_1__1__44_chany_top_out[13] , \cby_1__1__44_chany_top_out[14] , \cby_1__1__44_chany_top_out[15] , \cby_1__1__44_chany_top_out[16] , \cby_1__1__44_chany_top_out[17] , \cby_1__1__44_chany_top_out[18] , \cby_1__1__44_chany_top_out[19]  }),
+    .clk_3_N_in(\clk_3_wires[18] ),
     .clk_3_N_out(\clk_3_wires[19] ),
     .clk_3_S_in(\clk_3_wires[18] ),
     .left_grid_pin_16_(cby_1__1__44_left_grid_pin_16_),
@@ -21498,11 +21713,14 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_grid_pin_31_(cby_1__1__44_left_grid_pin_31_),
     .prog_clk_0_S_out(\prog_clk_0_wires[161] ),
     .prog_clk_0_W_in(\prog_clk_0_wires[160] ),
+    .prog_clk_3_N_in(\prog_clk_3_wires[18] ),
     .prog_clk_3_N_out(\prog_clk_3_wires[19] ),
     .prog_clk_3_S_in(\prog_clk_3_wires[18] )
   );
   cby_1__1_ cby_6__6_ (
+    .Test_en_E_in(\Test_enWires[96] ),
     .Test_en_E_out(\Test_enWires[97] ),
+    .Test_en_S_in(\Test_enWires[96] ),
     .Test_en_W_in(\Test_enWires[96] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -21512,6 +21730,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \cby_1__1__45_chany_bottom_out[0] , \cby_1__1__45_chany_bottom_out[1] , \cby_1__1__45_chany_bottom_out[2] , \cby_1__1__45_chany_bottom_out[3] , \cby_1__1__45_chany_bottom_out[4] , \cby_1__1__45_chany_bottom_out[5] , \cby_1__1__45_chany_bottom_out[6] , \cby_1__1__45_chany_bottom_out[7] , \cby_1__1__45_chany_bottom_out[8] , \cby_1__1__45_chany_bottom_out[9] , \cby_1__1__45_chany_bottom_out[10] , \cby_1__1__45_chany_bottom_out[11] , \cby_1__1__45_chany_bottom_out[12] , \cby_1__1__45_chany_bottom_out[13] , \cby_1__1__45_chany_bottom_out[14] , \cby_1__1__45_chany_bottom_out[15] , \cby_1__1__45_chany_bottom_out[16] , \cby_1__1__45_chany_bottom_out[17] , \cby_1__1__45_chany_bottom_out[18] , \cby_1__1__45_chany_bottom_out[19]  }),
     .chany_top_in({ \sb_1__1__40_chany_bottom_out[0] , \sb_1__1__40_chany_bottom_out[1] , \sb_1__1__40_chany_bottom_out[2] , \sb_1__1__40_chany_bottom_out[3] , \sb_1__1__40_chany_bottom_out[4] , \sb_1__1__40_chany_bottom_out[5] , \sb_1__1__40_chany_bottom_out[6] , \sb_1__1__40_chany_bottom_out[7] , \sb_1__1__40_chany_bottom_out[8] , \sb_1__1__40_chany_bottom_out[9] , \sb_1__1__40_chany_bottom_out[10] , \sb_1__1__40_chany_bottom_out[11] , \sb_1__1__40_chany_bottom_out[12] , \sb_1__1__40_chany_bottom_out[13] , \sb_1__1__40_chany_bottom_out[14] , \sb_1__1__40_chany_bottom_out[15] , \sb_1__1__40_chany_bottom_out[16] , \sb_1__1__40_chany_bottom_out[17] , \sb_1__1__40_chany_bottom_out[18] , \sb_1__1__40_chany_bottom_out[19]  }),
     .chany_top_out({ \cby_1__1__45_chany_top_out[0] , \cby_1__1__45_chany_top_out[1] , \cby_1__1__45_chany_top_out[2] , \cby_1__1__45_chany_top_out[3] , \cby_1__1__45_chany_top_out[4] , \cby_1__1__45_chany_top_out[5] , \cby_1__1__45_chany_top_out[6] , \cby_1__1__45_chany_top_out[7] , \cby_1__1__45_chany_top_out[8] , \cby_1__1__45_chany_top_out[9] , \cby_1__1__45_chany_top_out[10] , \cby_1__1__45_chany_top_out[11] , \cby_1__1__45_chany_top_out[12] , \cby_1__1__45_chany_top_out[13] , \cby_1__1__45_chany_top_out[14] , \cby_1__1__45_chany_top_out[15] , \cby_1__1__45_chany_top_out[16] , \cby_1__1__45_chany_top_out[17] , \cby_1__1__45_chany_top_out[18] , \cby_1__1__45_chany_top_out[19]  }),
+    .clk_3_N_in(\clk_3_wires[22] ),
     .clk_3_N_out(\clk_3_wires[23] ),
     .clk_3_S_in(\clk_3_wires[22] ),
     .left_grid_pin_16_(cby_1__1__45_left_grid_pin_16_),
@@ -21532,11 +21751,14 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_grid_pin_31_(cby_1__1__45_left_grid_pin_31_),
     .prog_clk_0_S_out(\prog_clk_0_wires[164] ),
     .prog_clk_0_W_in(\prog_clk_0_wires[163] ),
+    .prog_clk_3_N_in(\prog_clk_3_wires[22] ),
     .prog_clk_3_N_out(\prog_clk_3_wires[23] ),
     .prog_clk_3_S_in(\prog_clk_3_wires[22] )
   );
   cby_1__1_ cby_6__7_ (
+    .Test_en_E_in(\Test_enWires[110] ),
     .Test_en_E_out(\Test_enWires[111] ),
+    .Test_en_S_in(\Test_enWires[110] ),
     .Test_en_W_in(\Test_enWires[110] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -21566,7 +21788,9 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_W_in(\prog_clk_0_wires[166] )
   );
   cby_1__1_ cby_6__8_ (
+    .Test_en_E_in(\Test_enWires[124] ),
     .Test_en_E_out(\Test_enWires[125] ),
+    .Test_en_S_in(\Test_enWires[124] ),
     .Test_en_W_in(\Test_enWires[124] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -21597,7 +21821,9 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_W_in(\prog_clk_0_wires[169] )
   );
   cby_1__1_ cby_7__1_ (
+    .Test_en_E_in(\Test_enWires[28] ),
     .Test_en_E_out(\Test_enWires[29] ),
+    .Test_en_S_in(\Test_enWires[28] ),
     .Test_en_W_in(\Test_enWires[28] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -21627,7 +21853,9 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_W_in(\prog_clk_0_wires[174] )
   );
   cby_1__1_ cby_7__2_ (
+    .Test_en_E_in(\Test_enWires[42] ),
     .Test_en_E_out(\Test_enWires[43] ),
+    .Test_en_S_in(\Test_enWires[42] ),
     .Test_en_W_in(\Test_enWires[42] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -21638,6 +21866,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_in({ \sb_1__1__43_chany_bottom_out[0] , \sb_1__1__43_chany_bottom_out[1] , \sb_1__1__43_chany_bottom_out[2] , \sb_1__1__43_chany_bottom_out[3] , \sb_1__1__43_chany_bottom_out[4] , \sb_1__1__43_chany_bottom_out[5] , \sb_1__1__43_chany_bottom_out[6] , \sb_1__1__43_chany_bottom_out[7] , \sb_1__1__43_chany_bottom_out[8] , \sb_1__1__43_chany_bottom_out[9] , \sb_1__1__43_chany_bottom_out[10] , \sb_1__1__43_chany_bottom_out[11] , \sb_1__1__43_chany_bottom_out[12] , \sb_1__1__43_chany_bottom_out[13] , \sb_1__1__43_chany_bottom_out[14] , \sb_1__1__43_chany_bottom_out[15] , \sb_1__1__43_chany_bottom_out[16] , \sb_1__1__43_chany_bottom_out[17] , \sb_1__1__43_chany_bottom_out[18] , \sb_1__1__43_chany_bottom_out[19]  }),
     .chany_top_out({ \cby_1__1__49_chany_top_out[0] , \cby_1__1__49_chany_top_out[1] , \cby_1__1__49_chany_top_out[2] , \cby_1__1__49_chany_top_out[3] , \cby_1__1__49_chany_top_out[4] , \cby_1__1__49_chany_top_out[5] , \cby_1__1__49_chany_top_out[6] , \cby_1__1__49_chany_top_out[7] , \cby_1__1__49_chany_top_out[8] , \cby_1__1__49_chany_top_out[9] , \cby_1__1__49_chany_top_out[10] , \cby_1__1__49_chany_top_out[11] , \cby_1__1__49_chany_top_out[12] , \cby_1__1__49_chany_top_out[13] , \cby_1__1__49_chany_top_out[14] , \cby_1__1__49_chany_top_out[15] , \cby_1__1__49_chany_top_out[16] , \cby_1__1__49_chany_top_out[17] , \cby_1__1__49_chany_top_out[18] , \cby_1__1__49_chany_top_out[19]  }),
     .clk_2_N_in(\clk_2_wires[37] ),
+    .clk_2_S_in(\clk_2_wires[37] ),
     .clk_2_S_out(\clk_2_wires[38] ),
     .left_grid_pin_16_(cby_1__1__49_left_grid_pin_16_),
     .left_grid_pin_17_(cby_1__1__49_left_grid_pin_17_),
@@ -21658,10 +21887,13 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_S_out(\prog_clk_0_wires[178] ),
     .prog_clk_0_W_in(\prog_clk_0_wires[177] ),
     .prog_clk_2_N_in(\prog_clk_2_wires[37] ),
+    .prog_clk_2_S_in(\prog_clk_2_wires[37] ),
     .prog_clk_2_S_out(\prog_clk_2_wires[38] )
   );
   cby_1__1_ cby_7__3_ (
+    .Test_en_E_in(\Test_enWires[56] ),
     .Test_en_E_out(\Test_enWires[57] ),
+    .Test_en_S_in(\Test_enWires[56] ),
     .Test_en_W_in(\Test_enWires[56] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -21671,6 +21903,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \cby_1__1__50_chany_bottom_out[0] , \cby_1__1__50_chany_bottom_out[1] , \cby_1__1__50_chany_bottom_out[2] , \cby_1__1__50_chany_bottom_out[3] , \cby_1__1__50_chany_bottom_out[4] , \cby_1__1__50_chany_bottom_out[5] , \cby_1__1__50_chany_bottom_out[6] , \cby_1__1__50_chany_bottom_out[7] , \cby_1__1__50_chany_bottom_out[8] , \cby_1__1__50_chany_bottom_out[9] , \cby_1__1__50_chany_bottom_out[10] , \cby_1__1__50_chany_bottom_out[11] , \cby_1__1__50_chany_bottom_out[12] , \cby_1__1__50_chany_bottom_out[13] , \cby_1__1__50_chany_bottom_out[14] , \cby_1__1__50_chany_bottom_out[15] , \cby_1__1__50_chany_bottom_out[16] , \cby_1__1__50_chany_bottom_out[17] , \cby_1__1__50_chany_bottom_out[18] , \cby_1__1__50_chany_bottom_out[19]  }),
     .chany_top_in({ \sb_1__1__44_chany_bottom_out[0] , \sb_1__1__44_chany_bottom_out[1] , \sb_1__1__44_chany_bottom_out[2] , \sb_1__1__44_chany_bottom_out[3] , \sb_1__1__44_chany_bottom_out[4] , \sb_1__1__44_chany_bottom_out[5] , \sb_1__1__44_chany_bottom_out[6] , \sb_1__1__44_chany_bottom_out[7] , \sb_1__1__44_chany_bottom_out[8] , \sb_1__1__44_chany_bottom_out[9] , \sb_1__1__44_chany_bottom_out[10] , \sb_1__1__44_chany_bottom_out[11] , \sb_1__1__44_chany_bottom_out[12] , \sb_1__1__44_chany_bottom_out[13] , \sb_1__1__44_chany_bottom_out[14] , \sb_1__1__44_chany_bottom_out[15] , \sb_1__1__44_chany_bottom_out[16] , \sb_1__1__44_chany_bottom_out[17] , \sb_1__1__44_chany_bottom_out[18] , \sb_1__1__44_chany_bottom_out[19]  }),
     .chany_top_out({ \cby_1__1__50_chany_top_out[0] , \cby_1__1__50_chany_top_out[1] , \cby_1__1__50_chany_top_out[2] , \cby_1__1__50_chany_top_out[3] , \cby_1__1__50_chany_top_out[4] , \cby_1__1__50_chany_top_out[5] , \cby_1__1__50_chany_top_out[6] , \cby_1__1__50_chany_top_out[7] , \cby_1__1__50_chany_top_out[8] , \cby_1__1__50_chany_top_out[9] , \cby_1__1__50_chany_top_out[10] , \cby_1__1__50_chany_top_out[11] , \cby_1__1__50_chany_top_out[12] , \cby_1__1__50_chany_top_out[13] , \cby_1__1__50_chany_top_out[14] , \cby_1__1__50_chany_top_out[15] , \cby_1__1__50_chany_top_out[16] , \cby_1__1__50_chany_top_out[17] , \cby_1__1__50_chany_top_out[18] , \cby_1__1__50_chany_top_out[19]  }),
+    .clk_2_N_in(\clk_2_wires[35] ),
     .clk_2_N_out(\clk_2_wires[36] ),
     .clk_2_S_in(\clk_2_wires[35] ),
     .left_grid_pin_16_(cby_1__1__50_left_grid_pin_16_),
@@ -21691,11 +21924,14 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_grid_pin_31_(cby_1__1__50_left_grid_pin_31_),
     .prog_clk_0_S_out(\prog_clk_0_wires[181] ),
     .prog_clk_0_W_in(\prog_clk_0_wires[180] ),
+    .prog_clk_2_N_in(\prog_clk_2_wires[35] ),
     .prog_clk_2_N_out(\prog_clk_2_wires[36] ),
     .prog_clk_2_S_in(\prog_clk_2_wires[35] )
   );
   cby_1__1_ cby_7__4_ (
+    .Test_en_E_in(\Test_enWires[70] ),
     .Test_en_E_out(\Test_enWires[71] ),
+    .Test_en_S_in(\Test_enWires[70] ),
     .Test_en_W_in(\Test_enWires[70] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -21725,7 +21961,9 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_W_in(\prog_clk_0_wires[183] )
   );
   cby_1__1_ cby_7__5_ (
+    .Test_en_E_in(\Test_enWires[84] ),
     .Test_en_E_out(\Test_enWires[85] ),
+    .Test_en_S_in(\Test_enWires[84] ),
     .Test_en_W_in(\Test_enWires[84] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -21755,7 +21993,9 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_W_in(\prog_clk_0_wires[186] )
   );
   cby_1__1_ cby_7__6_ (
+    .Test_en_E_in(\Test_enWires[98] ),
     .Test_en_E_out(\Test_enWires[99] ),
+    .Test_en_S_in(\Test_enWires[98] ),
     .Test_en_W_in(\Test_enWires[98] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -21766,6 +22006,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_in({ \sb_1__1__47_chany_bottom_out[0] , \sb_1__1__47_chany_bottom_out[1] , \sb_1__1__47_chany_bottom_out[2] , \sb_1__1__47_chany_bottom_out[3] , \sb_1__1__47_chany_bottom_out[4] , \sb_1__1__47_chany_bottom_out[5] , \sb_1__1__47_chany_bottom_out[6] , \sb_1__1__47_chany_bottom_out[7] , \sb_1__1__47_chany_bottom_out[8] , \sb_1__1__47_chany_bottom_out[9] , \sb_1__1__47_chany_bottom_out[10] , \sb_1__1__47_chany_bottom_out[11] , \sb_1__1__47_chany_bottom_out[12] , \sb_1__1__47_chany_bottom_out[13] , \sb_1__1__47_chany_bottom_out[14] , \sb_1__1__47_chany_bottom_out[15] , \sb_1__1__47_chany_bottom_out[16] , \sb_1__1__47_chany_bottom_out[17] , \sb_1__1__47_chany_bottom_out[18] , \sb_1__1__47_chany_bottom_out[19]  }),
     .chany_top_out({ \cby_1__1__53_chany_top_out[0] , \cby_1__1__53_chany_top_out[1] , \cby_1__1__53_chany_top_out[2] , \cby_1__1__53_chany_top_out[3] , \cby_1__1__53_chany_top_out[4] , \cby_1__1__53_chany_top_out[5] , \cby_1__1__53_chany_top_out[6] , \cby_1__1__53_chany_top_out[7] , \cby_1__1__53_chany_top_out[8] , \cby_1__1__53_chany_top_out[9] , \cby_1__1__53_chany_top_out[10] , \cby_1__1__53_chany_top_out[11] , \cby_1__1__53_chany_top_out[12] , \cby_1__1__53_chany_top_out[13] , \cby_1__1__53_chany_top_out[14] , \cby_1__1__53_chany_top_out[15] , \cby_1__1__53_chany_top_out[16] , \cby_1__1__53_chany_top_out[17] , \cby_1__1__53_chany_top_out[18] , \cby_1__1__53_chany_top_out[19]  }),
     .clk_2_N_in(\clk_2_wires[50] ),
+    .clk_2_S_in(\clk_2_wires[50] ),
     .clk_2_S_out(\clk_2_wires[51] ),
     .left_grid_pin_16_(cby_1__1__53_left_grid_pin_16_),
     .left_grid_pin_17_(cby_1__1__53_left_grid_pin_17_),
@@ -21786,10 +22027,13 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_S_out(\prog_clk_0_wires[190] ),
     .prog_clk_0_W_in(\prog_clk_0_wires[189] ),
     .prog_clk_2_N_in(\prog_clk_2_wires[50] ),
+    .prog_clk_2_S_in(\prog_clk_2_wires[50] ),
     .prog_clk_2_S_out(\prog_clk_2_wires[51] )
   );
   cby_1__1_ cby_7__7_ (
+    .Test_en_E_in(\Test_enWires[112] ),
     .Test_en_E_out(\Test_enWires[113] ),
+    .Test_en_S_in(\Test_enWires[112] ),
     .Test_en_W_in(\Test_enWires[112] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -21799,6 +22043,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \cby_1__1__54_chany_bottom_out[0] , \cby_1__1__54_chany_bottom_out[1] , \cby_1__1__54_chany_bottom_out[2] , \cby_1__1__54_chany_bottom_out[3] , \cby_1__1__54_chany_bottom_out[4] , \cby_1__1__54_chany_bottom_out[5] , \cby_1__1__54_chany_bottom_out[6] , \cby_1__1__54_chany_bottom_out[7] , \cby_1__1__54_chany_bottom_out[8] , \cby_1__1__54_chany_bottom_out[9] , \cby_1__1__54_chany_bottom_out[10] , \cby_1__1__54_chany_bottom_out[11] , \cby_1__1__54_chany_bottom_out[12] , \cby_1__1__54_chany_bottom_out[13] , \cby_1__1__54_chany_bottom_out[14] , \cby_1__1__54_chany_bottom_out[15] , \cby_1__1__54_chany_bottom_out[16] , \cby_1__1__54_chany_bottom_out[17] , \cby_1__1__54_chany_bottom_out[18] , \cby_1__1__54_chany_bottom_out[19]  }),
     .chany_top_in({ \sb_1__1__48_chany_bottom_out[0] , \sb_1__1__48_chany_bottom_out[1] , \sb_1__1__48_chany_bottom_out[2] , \sb_1__1__48_chany_bottom_out[3] , \sb_1__1__48_chany_bottom_out[4] , \sb_1__1__48_chany_bottom_out[5] , \sb_1__1__48_chany_bottom_out[6] , \sb_1__1__48_chany_bottom_out[7] , \sb_1__1__48_chany_bottom_out[8] , \sb_1__1__48_chany_bottom_out[9] , \sb_1__1__48_chany_bottom_out[10] , \sb_1__1__48_chany_bottom_out[11] , \sb_1__1__48_chany_bottom_out[12] , \sb_1__1__48_chany_bottom_out[13] , \sb_1__1__48_chany_bottom_out[14] , \sb_1__1__48_chany_bottom_out[15] , \sb_1__1__48_chany_bottom_out[16] , \sb_1__1__48_chany_bottom_out[17] , \sb_1__1__48_chany_bottom_out[18] , \sb_1__1__48_chany_bottom_out[19]  }),
     .chany_top_out({ \cby_1__1__54_chany_top_out[0] , \cby_1__1__54_chany_top_out[1] , \cby_1__1__54_chany_top_out[2] , \cby_1__1__54_chany_top_out[3] , \cby_1__1__54_chany_top_out[4] , \cby_1__1__54_chany_top_out[5] , \cby_1__1__54_chany_top_out[6] , \cby_1__1__54_chany_top_out[7] , \cby_1__1__54_chany_top_out[8] , \cby_1__1__54_chany_top_out[9] , \cby_1__1__54_chany_top_out[10] , \cby_1__1__54_chany_top_out[11] , \cby_1__1__54_chany_top_out[12] , \cby_1__1__54_chany_top_out[13] , \cby_1__1__54_chany_top_out[14] , \cby_1__1__54_chany_top_out[15] , \cby_1__1__54_chany_top_out[16] , \cby_1__1__54_chany_top_out[17] , \cby_1__1__54_chany_top_out[18] , \cby_1__1__54_chany_top_out[19]  }),
+    .clk_2_N_in(\clk_2_wires[48] ),
     .clk_2_N_out(\clk_2_wires[49] ),
     .clk_2_S_in(\clk_2_wires[48] ),
     .left_grid_pin_16_(cby_1__1__54_left_grid_pin_16_),
@@ -21819,11 +22064,14 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_grid_pin_31_(cby_1__1__54_left_grid_pin_31_),
     .prog_clk_0_S_out(\prog_clk_0_wires[193] ),
     .prog_clk_0_W_in(\prog_clk_0_wires[192] ),
+    .prog_clk_2_N_in(\prog_clk_2_wires[48] ),
     .prog_clk_2_N_out(\prog_clk_2_wires[49] ),
     .prog_clk_2_S_in(\prog_clk_2_wires[48] )
   );
   cby_1__1_ cby_7__8_ (
+    .Test_en_E_in(\Test_enWires[126] ),
     .Test_en_E_out(\Test_enWires[127] ),
+    .Test_en_S_in(\Test_enWires[126] ),
     .Test_en_W_in(\Test_enWires[126] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -22143,17 +22391,20 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .right_grid_pin_0_(cby_8__1__7_right_grid_pin_0_)
   );
   grid_clb grid_clb_1__1_ (
+    .SC_IN_BOT(\scff_Wires[15] ),
     .SC_IN_TOP(\scff_Wires[15] ),
     .SC_OUT_BOT(\scff_Wires[17] ),
     .Test_en_E_in(\Test_enWires[16] ),
+    .Test_en_W_in(\Test_enWires[16] ),
     .VGND(VGND),
     .VPWR(VPWR),
-    .bottom_width_0_height_0__pin_50_(grid_clb_1__1__undriven_bottom_width_0_height_0__pin_50_),
     .ccff_head(grid_io_left_0_ccff_tail),
     .ccff_tail(grid_clb_0_ccff_tail),
     .clk_0_N_in(\clk_1_wires[4] ),
+    .clk_0_S_in(\clk_1_wires[4] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[1] ),
     .prog_clk_0_N_in(\prog_clk_1_wires[4] ),
+    .prog_clk_0_S_in(\prog_clk_1_wires[4] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[0] ),
     .prog_clk_0_W_out(\prog_clk_0_wires[3] ),
     .right_width_0_height_0__pin_16_(cby_1__1__0_left_grid_pin_16_),
@@ -22223,16 +22474,20 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .top_width_0_height_0__pin_9_(cbx_1__1__0_bottom_grid_pin_9_)
   );
   grid_clb grid_clb_1__2_ (
+    .SC_IN_BOT(\scff_Wires[13] ),
     .SC_IN_TOP(\scff_Wires[13] ),
     .SC_OUT_BOT(\scff_Wires[14] ),
     .Test_en_E_in(\Test_enWires[30] ),
+    .Test_en_W_in(\Test_enWires[30] ),
     .VGND(VGND),
     .VPWR(VPWR),
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[0] ),
     .ccff_head(grid_io_left_1_ccff_tail),
     .ccff_tail(grid_clb_1_ccff_tail),
+    .clk_0_N_in(\clk_1_wires[3] ),
     .clk_0_S_in(\clk_1_wires[3] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[7] ),
+    .prog_clk_0_N_in(\prog_clk_1_wires[3] ),
     .prog_clk_0_S_in(\prog_clk_1_wires[3] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[6] ),
     .prog_clk_0_W_out(\prog_clk_0_wires[9] ),
@@ -22303,17 +22558,21 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .top_width_0_height_0__pin_9_(cbx_1__1__1_bottom_grid_pin_9_)
   );
   grid_clb grid_clb_1__3_ (
+    .SC_IN_BOT(\scff_Wires[11] ),
     .SC_IN_TOP(\scff_Wires[11] ),
     .SC_OUT_BOT(\scff_Wires[12] ),
     .Test_en_E_in(\Test_enWires[44] ),
+    .Test_en_W_in(\Test_enWires[44] ),
     .VGND(VGND),
     .VPWR(VPWR),
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[1] ),
     .ccff_head(grid_io_left_2_ccff_tail),
     .ccff_tail(grid_clb_2_ccff_tail),
     .clk_0_N_in(\clk_1_wires[11] ),
+    .clk_0_S_in(\clk_1_wires[11] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[12] ),
     .prog_clk_0_N_in(\prog_clk_1_wires[11] ),
+    .prog_clk_0_S_in(\prog_clk_1_wires[11] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[11] ),
     .prog_clk_0_W_out(\prog_clk_0_wires[14] ),
     .right_width_0_height_0__pin_16_(cby_1__1__2_left_grid_pin_16_),
@@ -22383,16 +22642,20 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .top_width_0_height_0__pin_9_(cbx_1__1__2_bottom_grid_pin_9_)
   );
   grid_clb grid_clb_1__4_ (
+    .SC_IN_BOT(\scff_Wires[9] ),
     .SC_IN_TOP(\scff_Wires[9] ),
     .SC_OUT_BOT(\scff_Wires[10] ),
     .Test_en_E_in(\Test_enWires[58] ),
+    .Test_en_W_in(\Test_enWires[58] ),
     .VGND(VGND),
     .VPWR(VPWR),
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[2] ),
     .ccff_head(grid_io_left_3_ccff_tail),
     .ccff_tail(grid_clb_3_ccff_tail),
+    .clk_0_N_in(\clk_1_wires[10] ),
     .clk_0_S_in(\clk_1_wires[10] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[17] ),
+    .prog_clk_0_N_in(\prog_clk_1_wires[10] ),
     .prog_clk_0_S_in(\prog_clk_1_wires[10] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[16] ),
     .prog_clk_0_W_out(\prog_clk_0_wires[19] ),
@@ -22463,17 +22726,21 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .top_width_0_height_0__pin_9_(cbx_1__1__3_bottom_grid_pin_9_)
   );
   grid_clb grid_clb_1__5_ (
+    .SC_IN_BOT(\scff_Wires[7] ),
     .SC_IN_TOP(\scff_Wires[7] ),
     .SC_OUT_BOT(\scff_Wires[8] ),
     .Test_en_E_in(\Test_enWires[72] ),
+    .Test_en_W_in(\Test_enWires[72] ),
     .VGND(VGND),
     .VPWR(VPWR),
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[3] ),
     .ccff_head(grid_io_left_4_ccff_tail),
     .ccff_tail(grid_clb_4_ccff_tail),
     .clk_0_N_in(\clk_1_wires[18] ),
+    .clk_0_S_in(\clk_1_wires[18] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[22] ),
     .prog_clk_0_N_in(\prog_clk_1_wires[18] ),
+    .prog_clk_0_S_in(\prog_clk_1_wires[18] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[21] ),
     .prog_clk_0_W_out(\prog_clk_0_wires[24] ),
     .right_width_0_height_0__pin_16_(cby_1__1__4_left_grid_pin_16_),
@@ -22543,16 +22810,20 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .top_width_0_height_0__pin_9_(cbx_1__1__4_bottom_grid_pin_9_)
   );
   grid_clb grid_clb_1__6_ (
+    .SC_IN_BOT(\scff_Wires[5] ),
     .SC_IN_TOP(\scff_Wires[5] ),
     .SC_OUT_BOT(\scff_Wires[6] ),
     .Test_en_E_in(\Test_enWires[86] ),
+    .Test_en_W_in(\Test_enWires[86] ),
     .VGND(VGND),
     .VPWR(VPWR),
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[4] ),
     .ccff_head(grid_io_left_5_ccff_tail),
     .ccff_tail(grid_clb_5_ccff_tail),
+    .clk_0_N_in(\clk_1_wires[17] ),
     .clk_0_S_in(\clk_1_wires[17] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[27] ),
+    .prog_clk_0_N_in(\prog_clk_1_wires[17] ),
     .prog_clk_0_S_in(\prog_clk_1_wires[17] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[26] ),
     .prog_clk_0_W_out(\prog_clk_0_wires[29] ),
@@ -22623,17 +22894,21 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .top_width_0_height_0__pin_9_(cbx_1__1__5_bottom_grid_pin_9_)
   );
   grid_clb grid_clb_1__7_ (
+    .SC_IN_BOT(\scff_Wires[3] ),
     .SC_IN_TOP(\scff_Wires[3] ),
     .SC_OUT_BOT(\scff_Wires[4] ),
     .Test_en_E_in(\Test_enWires[100] ),
+    .Test_en_W_in(\Test_enWires[100] ),
     .VGND(VGND),
     .VPWR(VPWR),
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[5] ),
     .ccff_head(grid_io_left_6_ccff_tail),
     .ccff_tail(grid_clb_6_ccff_tail),
     .clk_0_N_in(\clk_1_wires[25] ),
+    .clk_0_S_in(\clk_1_wires[25] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[32] ),
     .prog_clk_0_N_in(\prog_clk_1_wires[25] ),
+    .prog_clk_0_S_in(\prog_clk_1_wires[25] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[31] ),
     .prog_clk_0_W_out(\prog_clk_0_wires[34] ),
     .right_width_0_height_0__pin_16_(cby_1__1__6_left_grid_pin_16_),
@@ -22703,16 +22978,20 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .top_width_0_height_0__pin_9_(cbx_1__1__6_bottom_grid_pin_9_)
   );
   grid_clb grid_clb_1__8_ (
+    .SC_IN_BOT(\scff_Wires[1] ),
     .SC_IN_TOP(\scff_Wires[1] ),
     .SC_OUT_BOT(\scff_Wires[2] ),
     .Test_en_E_in(\Test_enWires[114] ),
+    .Test_en_W_in(\Test_enWires[114] ),
     .VGND(VGND),
     .VPWR(VPWR),
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[6] ),
     .ccff_head(grid_io_left_7_ccff_tail),
     .ccff_tail(grid_clb_7_ccff_tail),
+    .clk_0_N_in(\clk_1_wires[24] ),
     .clk_0_S_in(\clk_1_wires[24] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[37] ),
+    .prog_clk_0_N_in(\prog_clk_1_wires[24] ),
     .prog_clk_0_N_out(\prog_clk_0_wires[39] ),
     .prog_clk_0_S_in(\prog_clk_1_wires[24] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[36] ),
@@ -22785,17 +23064,20 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   grid_clb grid_clb_2__1_ (
     .SC_IN_BOT(\scff_Wires[20] ),
+    .SC_IN_TOP(\scff_Wires[20] ),
     .SC_OUT_TOP(\scff_Wires[21] ),
     .Test_en_E_in(\Test_enWires[17] ),
+    .Test_en_W_in(\Test_enWires[17] ),
     .Test_en_W_out(\Test_enWires[18] ),
     .VGND(VGND),
     .VPWR(VPWR),
-    .bottom_width_0_height_0__pin_50_(grid_clb_2__1__undriven_bottom_width_0_height_0__pin_50_),
     .ccff_head(cby_1__1__0_ccff_tail),
     .ccff_tail(grid_clb_8_ccff_tail),
     .clk_0_N_in(\clk_1_wires[6] ),
+    .clk_0_S_in(\clk_1_wires[6] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[44] ),
     .prog_clk_0_N_in(\prog_clk_1_wires[6] ),
+    .prog_clk_0_S_in(\prog_clk_1_wires[6] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[43] ),
     .right_width_0_height_0__pin_16_(cby_1__1__8_left_grid_pin_16_),
     .right_width_0_height_0__pin_17_(cby_1__1__8_left_grid_pin_17_),
@@ -22865,16 +23147,20 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   grid_clb grid_clb_2__2_ (
     .SC_IN_BOT(\scff_Wires[22] ),
+    .SC_IN_TOP(\scff_Wires[22] ),
     .SC_OUT_TOP(\scff_Wires[23] ),
     .Test_en_E_in(\Test_enWires[31] ),
+    .Test_en_W_in(\Test_enWires[31] ),
     .Test_en_W_out(\Test_enWires[32] ),
     .VGND(VGND),
     .VPWR(VPWR),
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[7] ),
     .ccff_head(cby_1__1__1_ccff_tail),
     .ccff_tail(grid_clb_9_ccff_tail),
+    .clk_0_N_in(\clk_1_wires[5] ),
     .clk_0_S_in(\clk_1_wires[5] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[47] ),
+    .prog_clk_0_N_in(\prog_clk_1_wires[5] ),
     .prog_clk_0_S_in(\prog_clk_1_wires[5] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[46] ),
     .right_width_0_height_0__pin_16_(cby_1__1__9_left_grid_pin_16_),
@@ -22945,8 +23231,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   grid_clb grid_clb_2__3_ (
     .SC_IN_BOT(\scff_Wires[24] ),
+    .SC_IN_TOP(\scff_Wires[24] ),
     .SC_OUT_TOP(\scff_Wires[25] ),
     .Test_en_E_in(\Test_enWires[45] ),
+    .Test_en_W_in(\Test_enWires[45] ),
     .Test_en_W_out(\Test_enWires[46] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -22954,8 +23242,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .ccff_head(cby_1__1__2_ccff_tail),
     .ccff_tail(grid_clb_10_ccff_tail),
     .clk_0_N_in(\clk_1_wires[13] ),
+    .clk_0_S_in(\clk_1_wires[13] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[50] ),
     .prog_clk_0_N_in(\prog_clk_1_wires[13] ),
+    .prog_clk_0_S_in(\prog_clk_1_wires[13] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[49] ),
     .right_width_0_height_0__pin_16_(cby_1__1__10_left_grid_pin_16_),
     .right_width_0_height_0__pin_17_(cby_1__1__10_left_grid_pin_17_),
@@ -23025,16 +23315,20 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   grid_clb grid_clb_2__4_ (
     .SC_IN_BOT(\scff_Wires[26] ),
+    .SC_IN_TOP(\scff_Wires[26] ),
     .SC_OUT_TOP(\scff_Wires[27] ),
     .Test_en_E_in(\Test_enWires[59] ),
+    .Test_en_W_in(\Test_enWires[59] ),
     .Test_en_W_out(\Test_enWires[60] ),
     .VGND(VGND),
     .VPWR(VPWR),
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[9] ),
     .ccff_head(cby_1__1__3_ccff_tail),
     .ccff_tail(grid_clb_11_ccff_tail),
+    .clk_0_N_in(\clk_1_wires[12] ),
     .clk_0_S_in(\clk_1_wires[12] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[53] ),
+    .prog_clk_0_N_in(\prog_clk_1_wires[12] ),
     .prog_clk_0_S_in(\prog_clk_1_wires[12] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[52] ),
     .right_width_0_height_0__pin_16_(cby_1__1__11_left_grid_pin_16_),
@@ -23105,8 +23399,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   grid_clb grid_clb_2__5_ (
     .SC_IN_BOT(\scff_Wires[28] ),
+    .SC_IN_TOP(\scff_Wires[28] ),
     .SC_OUT_TOP(\scff_Wires[29] ),
     .Test_en_E_in(\Test_enWires[73] ),
+    .Test_en_W_in(\Test_enWires[73] ),
     .Test_en_W_out(\Test_enWires[74] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -23114,8 +23410,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .ccff_head(cby_1__1__4_ccff_tail),
     .ccff_tail(grid_clb_12_ccff_tail),
     .clk_0_N_in(\clk_1_wires[20] ),
+    .clk_0_S_in(\clk_1_wires[20] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[56] ),
     .prog_clk_0_N_in(\prog_clk_1_wires[20] ),
+    .prog_clk_0_S_in(\prog_clk_1_wires[20] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[55] ),
     .right_width_0_height_0__pin_16_(cby_1__1__12_left_grid_pin_16_),
     .right_width_0_height_0__pin_17_(cby_1__1__12_left_grid_pin_17_),
@@ -23185,16 +23483,20 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   grid_clb grid_clb_2__6_ (
     .SC_IN_BOT(\scff_Wires[30] ),
+    .SC_IN_TOP(\scff_Wires[30] ),
     .SC_OUT_TOP(\scff_Wires[31] ),
     .Test_en_E_in(\Test_enWires[87] ),
+    .Test_en_W_in(\Test_enWires[87] ),
     .Test_en_W_out(\Test_enWires[88] ),
     .VGND(VGND),
     .VPWR(VPWR),
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[11] ),
     .ccff_head(cby_1__1__5_ccff_tail),
     .ccff_tail(grid_clb_13_ccff_tail),
+    .clk_0_N_in(\clk_1_wires[19] ),
     .clk_0_S_in(\clk_1_wires[19] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[59] ),
+    .prog_clk_0_N_in(\prog_clk_1_wires[19] ),
     .prog_clk_0_S_in(\prog_clk_1_wires[19] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[58] ),
     .right_width_0_height_0__pin_16_(cby_1__1__13_left_grid_pin_16_),
@@ -23265,8 +23567,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   grid_clb grid_clb_2__7_ (
     .SC_IN_BOT(\scff_Wires[32] ),
+    .SC_IN_TOP(\scff_Wires[32] ),
     .SC_OUT_TOP(\scff_Wires[33] ),
     .Test_en_E_in(\Test_enWires[101] ),
+    .Test_en_W_in(\Test_enWires[101] ),
     .Test_en_W_out(\Test_enWires[102] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -23274,8 +23578,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .ccff_head(cby_1__1__6_ccff_tail),
     .ccff_tail(grid_clb_14_ccff_tail),
     .clk_0_N_in(\clk_1_wires[27] ),
+    .clk_0_S_in(\clk_1_wires[27] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[62] ),
     .prog_clk_0_N_in(\prog_clk_1_wires[27] ),
+    .prog_clk_0_S_in(\prog_clk_1_wires[27] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[61] ),
     .right_width_0_height_0__pin_16_(cby_1__1__14_left_grid_pin_16_),
     .right_width_0_height_0__pin_17_(cby_1__1__14_left_grid_pin_17_),
@@ -23345,16 +23651,20 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   grid_clb grid_clb_2__8_ (
     .SC_IN_BOT(\scff_Wires[34] ),
+    .SC_IN_TOP(\scff_Wires[34] ),
     .SC_OUT_TOP(\scff_Wires[35] ),
     .Test_en_E_in(\Test_enWires[115] ),
+    .Test_en_W_in(\Test_enWires[115] ),
     .Test_en_W_out(\Test_enWires[116] ),
     .VGND(VGND),
     .VPWR(VPWR),
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[13] ),
     .ccff_head(cby_1__1__7_ccff_tail),
     .ccff_tail(grid_clb_15_ccff_tail),
+    .clk_0_N_in(\clk_1_wires[26] ),
     .clk_0_S_in(\clk_1_wires[26] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[65] ),
+    .prog_clk_0_N_in(\prog_clk_1_wires[26] ),
     .prog_clk_0_N_out(\prog_clk_0_wires[67] ),
     .prog_clk_0_S_in(\prog_clk_1_wires[26] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[64] ),
@@ -23425,18 +23735,21 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .top_width_0_height_0__pin_9_(cbx_1__8__1_bottom_grid_pin_9_)
   );
   grid_clb grid_clb_3__1_ (
+    .SC_IN_BOT(\scff_Wires[52] ),
     .SC_IN_TOP(\scff_Wires[52] ),
     .SC_OUT_BOT(\scff_Wires[54] ),
     .Test_en_E_in(\Test_enWires[19] ),
+    .Test_en_W_in(\Test_enWires[19] ),
     .Test_en_W_out(\Test_enWires[20] ),
     .VGND(VGND),
     .VPWR(VPWR),
-    .bottom_width_0_height_0__pin_50_(grid_clb_3__1__undriven_bottom_width_0_height_0__pin_50_),
     .ccff_head(cby_1__1__8_ccff_tail),
     .ccff_tail(grid_clb_16_ccff_tail),
     .clk_0_N_in(\clk_1_wires[32] ),
+    .clk_0_S_in(\clk_1_wires[32] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[70] ),
     .prog_clk_0_N_in(\prog_clk_1_wires[32] ),
+    .prog_clk_0_S_in(\prog_clk_1_wires[32] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[69] ),
     .right_width_0_height_0__pin_16_(cby_1__1__16_left_grid_pin_16_),
     .right_width_0_height_0__pin_17_(cby_1__1__16_left_grid_pin_17_),
@@ -23505,17 +23818,21 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .top_width_0_height_0__pin_9_(cbx_1__1__14_bottom_grid_pin_9_)
   );
   grid_clb grid_clb_3__2_ (
+    .SC_IN_BOT(\scff_Wires[50] ),
     .SC_IN_TOP(\scff_Wires[50] ),
     .SC_OUT_BOT(\scff_Wires[51] ),
     .Test_en_E_in(\Test_enWires[33] ),
+    .Test_en_W_in(\Test_enWires[33] ),
     .Test_en_W_out(\Test_enWires[34] ),
     .VGND(VGND),
     .VPWR(VPWR),
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[14] ),
     .ccff_head(cby_1__1__9_ccff_tail),
     .ccff_tail(grid_clb_17_ccff_tail),
+    .clk_0_N_in(\clk_1_wires[31] ),
     .clk_0_S_in(\clk_1_wires[31] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[73] ),
+    .prog_clk_0_N_in(\prog_clk_1_wires[31] ),
     .prog_clk_0_S_in(\prog_clk_1_wires[31] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[72] ),
     .right_width_0_height_0__pin_16_(cby_1__1__17_left_grid_pin_16_),
@@ -23585,9 +23902,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .top_width_0_height_0__pin_9_(cbx_1__1__15_bottom_grid_pin_9_)
   );
   grid_clb grid_clb_3__3_ (
+    .SC_IN_BOT(\scff_Wires[48] ),
     .SC_IN_TOP(\scff_Wires[48] ),
     .SC_OUT_BOT(\scff_Wires[49] ),
     .Test_en_E_in(\Test_enWires[47] ),
+    .Test_en_W_in(\Test_enWires[47] ),
     .Test_en_W_out(\Test_enWires[48] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -23595,8 +23914,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .ccff_head(cby_1__1__10_ccff_tail),
     .ccff_tail(grid_clb_18_ccff_tail),
     .clk_0_N_in(\clk_1_wires[39] ),
+    .clk_0_S_in(\clk_1_wires[39] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[76] ),
     .prog_clk_0_N_in(\prog_clk_1_wires[39] ),
+    .prog_clk_0_S_in(\prog_clk_1_wires[39] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[75] ),
     .right_width_0_height_0__pin_16_(cby_1__1__18_left_grid_pin_16_),
     .right_width_0_height_0__pin_17_(cby_1__1__18_left_grid_pin_17_),
@@ -23665,17 +23986,21 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .top_width_0_height_0__pin_9_(cbx_1__1__16_bottom_grid_pin_9_)
   );
   grid_clb grid_clb_3__4_ (
+    .SC_IN_BOT(\scff_Wires[46] ),
     .SC_IN_TOP(\scff_Wires[46] ),
     .SC_OUT_BOT(\scff_Wires[47] ),
     .Test_en_E_in(\Test_enWires[61] ),
+    .Test_en_W_in(\Test_enWires[61] ),
     .Test_en_W_out(\Test_enWires[62] ),
     .VGND(VGND),
     .VPWR(VPWR),
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[16] ),
     .ccff_head(cby_1__1__11_ccff_tail),
     .ccff_tail(grid_clb_19_ccff_tail),
+    .clk_0_N_in(\clk_1_wires[38] ),
     .clk_0_S_in(\clk_1_wires[38] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[79] ),
+    .prog_clk_0_N_in(\prog_clk_1_wires[38] ),
     .prog_clk_0_S_in(\prog_clk_1_wires[38] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[78] ),
     .right_width_0_height_0__pin_16_(cby_1__1__19_left_grid_pin_16_),
@@ -23745,9 +24070,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .top_width_0_height_0__pin_9_(cbx_1__1__17_bottom_grid_pin_9_)
   );
   grid_clb grid_clb_3__5_ (
+    .SC_IN_BOT(\scff_Wires[44] ),
     .SC_IN_TOP(\scff_Wires[44] ),
     .SC_OUT_BOT(\scff_Wires[45] ),
     .Test_en_E_in(\Test_enWires[75] ),
+    .Test_en_W_in(\Test_enWires[75] ),
     .Test_en_W_out(\Test_enWires[76] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -23755,8 +24082,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .ccff_head(cby_1__1__12_ccff_tail),
     .ccff_tail(grid_clb_20_ccff_tail),
     .clk_0_N_in(\clk_1_wires[46] ),
+    .clk_0_S_in(\clk_1_wires[46] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[82] ),
     .prog_clk_0_N_in(\prog_clk_1_wires[46] ),
+    .prog_clk_0_S_in(\prog_clk_1_wires[46] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[81] ),
     .right_width_0_height_0__pin_16_(cby_1__1__20_left_grid_pin_16_),
     .right_width_0_height_0__pin_17_(cby_1__1__20_left_grid_pin_17_),
@@ -23825,17 +24154,21 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .top_width_0_height_0__pin_9_(cbx_1__1__18_bottom_grid_pin_9_)
   );
   grid_clb grid_clb_3__6_ (
+    .SC_IN_BOT(\scff_Wires[42] ),
     .SC_IN_TOP(\scff_Wires[42] ),
     .SC_OUT_BOT(\scff_Wires[43] ),
     .Test_en_E_in(\Test_enWires[89] ),
+    .Test_en_W_in(\Test_enWires[89] ),
     .Test_en_W_out(\Test_enWires[90] ),
     .VGND(VGND),
     .VPWR(VPWR),
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[18] ),
     .ccff_head(cby_1__1__13_ccff_tail),
     .ccff_tail(grid_clb_21_ccff_tail),
+    .clk_0_N_in(\clk_1_wires[45] ),
     .clk_0_S_in(\clk_1_wires[45] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[85] ),
+    .prog_clk_0_N_in(\prog_clk_1_wires[45] ),
     .prog_clk_0_S_in(\prog_clk_1_wires[45] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[84] ),
     .right_width_0_height_0__pin_16_(cby_1__1__21_left_grid_pin_16_),
@@ -23905,9 +24238,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .top_width_0_height_0__pin_9_(cbx_1__1__19_bottom_grid_pin_9_)
   );
   grid_clb grid_clb_3__7_ (
+    .SC_IN_BOT(\scff_Wires[40] ),
     .SC_IN_TOP(\scff_Wires[40] ),
     .SC_OUT_BOT(\scff_Wires[41] ),
     .Test_en_E_in(\Test_enWires[103] ),
+    .Test_en_W_in(\Test_enWires[103] ),
     .Test_en_W_out(\Test_enWires[104] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -23915,8 +24250,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .ccff_head(cby_1__1__14_ccff_tail),
     .ccff_tail(grid_clb_22_ccff_tail),
     .clk_0_N_in(\clk_1_wires[53] ),
+    .clk_0_S_in(\clk_1_wires[53] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[88] ),
     .prog_clk_0_N_in(\prog_clk_1_wires[53] ),
+    .prog_clk_0_S_in(\prog_clk_1_wires[53] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[87] ),
     .right_width_0_height_0__pin_16_(cby_1__1__22_left_grid_pin_16_),
     .right_width_0_height_0__pin_17_(cby_1__1__22_left_grid_pin_17_),
@@ -23985,17 +24322,21 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .top_width_0_height_0__pin_9_(cbx_1__1__20_bottom_grid_pin_9_)
   );
   grid_clb grid_clb_3__8_ (
+    .SC_IN_BOT(\scff_Wires[38] ),
     .SC_IN_TOP(\scff_Wires[38] ),
     .SC_OUT_BOT(\scff_Wires[39] ),
     .Test_en_E_in(\Test_enWires[117] ),
+    .Test_en_W_in(\Test_enWires[117] ),
     .Test_en_W_out(\Test_enWires[118] ),
     .VGND(VGND),
     .VPWR(VPWR),
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[20] ),
     .ccff_head(cby_1__1__15_ccff_tail),
     .ccff_tail(grid_clb_23_ccff_tail),
+    .clk_0_N_in(\clk_1_wires[52] ),
     .clk_0_S_in(\clk_1_wires[52] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[91] ),
+    .prog_clk_0_N_in(\prog_clk_1_wires[52] ),
     .prog_clk_0_N_out(\prog_clk_0_wires[93] ),
     .prog_clk_0_S_in(\prog_clk_1_wires[52] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[90] ),
@@ -24067,17 +24408,20 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   grid_clb grid_clb_4__1_ (
     .SC_IN_BOT(\scff_Wires[57] ),
+    .SC_IN_TOP(\scff_Wires[57] ),
     .SC_OUT_TOP(\scff_Wires[58] ),
     .Test_en_E_in(\Test_enWires[21] ),
+    .Test_en_W_in(\Test_enWires[21] ),
     .Test_en_W_out(\Test_enWires[22] ),
     .VGND(VGND),
     .VPWR(VPWR),
-    .bottom_width_0_height_0__pin_50_(grid_clb_4__1__undriven_bottom_width_0_height_0__pin_50_),
     .ccff_head(cby_1__1__16_ccff_tail),
     .ccff_tail(grid_clb_24_ccff_tail),
     .clk_0_N_in(\clk_1_wires[34] ),
+    .clk_0_S_in(\clk_1_wires[34] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[96] ),
     .prog_clk_0_N_in(\prog_clk_1_wires[34] ),
+    .prog_clk_0_S_in(\prog_clk_1_wires[34] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[95] ),
     .right_width_0_height_0__pin_16_(cby_1__1__24_left_grid_pin_16_),
     .right_width_0_height_0__pin_17_(cby_1__1__24_left_grid_pin_17_),
@@ -24147,16 +24491,20 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   grid_clb grid_clb_4__2_ (
     .SC_IN_BOT(\scff_Wires[59] ),
+    .SC_IN_TOP(\scff_Wires[59] ),
     .SC_OUT_TOP(\scff_Wires[60] ),
     .Test_en_E_in(\Test_enWires[35] ),
+    .Test_en_W_in(\Test_enWires[35] ),
     .Test_en_W_out(\Test_enWires[36] ),
     .VGND(VGND),
     .VPWR(VPWR),
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[21] ),
     .ccff_head(cby_1__1__17_ccff_tail),
     .ccff_tail(grid_clb_25_ccff_tail),
+    .clk_0_N_in(\clk_1_wires[33] ),
     .clk_0_S_in(\clk_1_wires[33] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[99] ),
+    .prog_clk_0_N_in(\prog_clk_1_wires[33] ),
     .prog_clk_0_S_in(\prog_clk_1_wires[33] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[98] ),
     .right_width_0_height_0__pin_16_(cby_1__1__25_left_grid_pin_16_),
@@ -24227,8 +24575,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   grid_clb grid_clb_4__3_ (
     .SC_IN_BOT(\scff_Wires[61] ),
+    .SC_IN_TOP(\scff_Wires[61] ),
     .SC_OUT_TOP(\scff_Wires[62] ),
     .Test_en_E_in(\Test_enWires[49] ),
+    .Test_en_W_in(\Test_enWires[49] ),
     .Test_en_W_out(\Test_enWires[50] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -24236,8 +24586,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .ccff_head(cby_1__1__18_ccff_tail),
     .ccff_tail(grid_clb_26_ccff_tail),
     .clk_0_N_in(\clk_1_wires[41] ),
+    .clk_0_S_in(\clk_1_wires[41] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[102] ),
     .prog_clk_0_N_in(\prog_clk_1_wires[41] ),
+    .prog_clk_0_S_in(\prog_clk_1_wires[41] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[101] ),
     .right_width_0_height_0__pin_16_(cby_1__1__26_left_grid_pin_16_),
     .right_width_0_height_0__pin_17_(cby_1__1__26_left_grid_pin_17_),
@@ -24307,16 +24659,20 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   grid_clb grid_clb_4__4_ (
     .SC_IN_BOT(\scff_Wires[63] ),
+    .SC_IN_TOP(\scff_Wires[63] ),
     .SC_OUT_TOP(\scff_Wires[64] ),
     .Test_en_E_in(\Test_enWires[63] ),
+    .Test_en_W_in(\Test_enWires[63] ),
     .Test_en_W_out(\Test_enWires[64] ),
     .VGND(VGND),
     .VPWR(VPWR),
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[23] ),
     .ccff_head(cby_1__1__19_ccff_tail),
     .ccff_tail(grid_clb_27_ccff_tail),
+    .clk_0_N_in(\clk_1_wires[40] ),
     .clk_0_S_in(\clk_1_wires[40] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[105] ),
+    .prog_clk_0_N_in(\prog_clk_1_wires[40] ),
     .prog_clk_0_S_in(\prog_clk_1_wires[40] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[104] ),
     .right_width_0_height_0__pin_16_(cby_1__1__27_left_grid_pin_16_),
@@ -24387,8 +24743,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   grid_clb grid_clb_4__5_ (
     .SC_IN_BOT(\scff_Wires[65] ),
+    .SC_IN_TOP(\scff_Wires[65] ),
     .SC_OUT_TOP(\scff_Wires[66] ),
     .Test_en_E_in(\Test_enWires[77] ),
+    .Test_en_W_in(\Test_enWires[77] ),
     .Test_en_W_out(\Test_enWires[78] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -24396,8 +24754,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .ccff_head(cby_1__1__20_ccff_tail),
     .ccff_tail(grid_clb_28_ccff_tail),
     .clk_0_N_in(\clk_1_wires[48] ),
+    .clk_0_S_in(\clk_1_wires[48] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[108] ),
     .prog_clk_0_N_in(\prog_clk_1_wires[48] ),
+    .prog_clk_0_S_in(\prog_clk_1_wires[48] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[107] ),
     .right_width_0_height_0__pin_16_(cby_1__1__28_left_grid_pin_16_),
     .right_width_0_height_0__pin_17_(cby_1__1__28_left_grid_pin_17_),
@@ -24467,16 +24827,20 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   grid_clb grid_clb_4__6_ (
     .SC_IN_BOT(\scff_Wires[67] ),
+    .SC_IN_TOP(\scff_Wires[67] ),
     .SC_OUT_TOP(\scff_Wires[68] ),
     .Test_en_E_in(\Test_enWires[91] ),
+    .Test_en_W_in(\Test_enWires[91] ),
     .Test_en_W_out(\Test_enWires[92] ),
     .VGND(VGND),
     .VPWR(VPWR),
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[25] ),
     .ccff_head(cby_1__1__21_ccff_tail),
     .ccff_tail(grid_clb_29_ccff_tail),
+    .clk_0_N_in(\clk_1_wires[47] ),
     .clk_0_S_in(\clk_1_wires[47] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[111] ),
+    .prog_clk_0_N_in(\prog_clk_1_wires[47] ),
     .prog_clk_0_S_in(\prog_clk_1_wires[47] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[110] ),
     .right_width_0_height_0__pin_16_(cby_1__1__29_left_grid_pin_16_),
@@ -24547,8 +24911,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   grid_clb grid_clb_4__7_ (
     .SC_IN_BOT(\scff_Wires[69] ),
+    .SC_IN_TOP(\scff_Wires[69] ),
     .SC_OUT_TOP(\scff_Wires[70] ),
     .Test_en_E_in(\Test_enWires[105] ),
+    .Test_en_W_in(\Test_enWires[105] ),
     .Test_en_W_out(\Test_enWires[106] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -24556,8 +24922,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .ccff_head(cby_1__1__22_ccff_tail),
     .ccff_tail(grid_clb_30_ccff_tail),
     .clk_0_N_in(\clk_1_wires[55] ),
+    .clk_0_S_in(\clk_1_wires[55] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[114] ),
     .prog_clk_0_N_in(\prog_clk_1_wires[55] ),
+    .prog_clk_0_S_in(\prog_clk_1_wires[55] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[113] ),
     .right_width_0_height_0__pin_16_(cby_1__1__30_left_grid_pin_16_),
     .right_width_0_height_0__pin_17_(cby_1__1__30_left_grid_pin_17_),
@@ -24627,16 +24995,20 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   grid_clb grid_clb_4__8_ (
     .SC_IN_BOT(\scff_Wires[71] ),
+    .SC_IN_TOP(\scff_Wires[71] ),
     .SC_OUT_TOP(\scff_Wires[72] ),
     .Test_en_E_in(\Test_enWires[119] ),
+    .Test_en_W_in(\Test_enWires[119] ),
     .Test_en_W_out(\Test_enWires[120] ),
     .VGND(VGND),
     .VPWR(VPWR),
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[27] ),
     .ccff_head(cby_1__1__23_ccff_tail),
     .ccff_tail(grid_clb_31_ccff_tail),
+    .clk_0_N_in(\clk_1_wires[54] ),
     .clk_0_S_in(\clk_1_wires[54] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[117] ),
+    .prog_clk_0_N_in(\prog_clk_1_wires[54] ),
     .prog_clk_0_N_out(\prog_clk_0_wires[119] ),
     .prog_clk_0_S_in(\prog_clk_1_wires[54] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[116] ),
@@ -24707,18 +25079,21 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .top_width_0_height_0__pin_9_(cbx_1__8__3_bottom_grid_pin_9_)
   );
   grid_clb grid_clb_5__1_ (
+    .SC_IN_BOT(\scff_Wires[89] ),
     .SC_IN_TOP(\scff_Wires[89] ),
     .SC_OUT_BOT(\scff_Wires[91] ),
+    .Test_en_E_in(\Test_enWires[23] ),
     .Test_en_E_out(\Test_enWires[24] ),
     .Test_en_W_in(\Test_enWires[23] ),
     .VGND(VGND),
     .VPWR(VPWR),
-    .bottom_width_0_height_0__pin_50_(grid_clb_5__1__undriven_bottom_width_0_height_0__pin_50_),
     .ccff_head(cby_1__1__24_ccff_tail),
     .ccff_tail(grid_clb_32_ccff_tail),
     .clk_0_N_in(\clk_1_wires[60] ),
+    .clk_0_S_in(\clk_1_wires[60] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[122] ),
     .prog_clk_0_N_in(\prog_clk_1_wires[60] ),
+    .prog_clk_0_S_in(\prog_clk_1_wires[60] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[121] ),
     .right_width_0_height_0__pin_16_(cby_1__1__32_left_grid_pin_16_),
     .right_width_0_height_0__pin_17_(cby_1__1__32_left_grid_pin_17_),
@@ -24787,8 +25162,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .top_width_0_height_0__pin_9_(cbx_1__1__28_bottom_grid_pin_9_)
   );
   grid_clb grid_clb_5__2_ (
+    .SC_IN_BOT(\scff_Wires[87] ),
     .SC_IN_TOP(\scff_Wires[87] ),
     .SC_OUT_BOT(\scff_Wires[88] ),
+    .Test_en_E_in(\Test_enWires[37] ),
     .Test_en_E_out(\Test_enWires[38] ),
     .Test_en_W_in(\Test_enWires[37] ),
     .VGND(VGND),
@@ -24796,8 +25173,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[28] ),
     .ccff_head(cby_1__1__25_ccff_tail),
     .ccff_tail(grid_clb_33_ccff_tail),
+    .clk_0_N_in(\clk_1_wires[59] ),
     .clk_0_S_in(\clk_1_wires[59] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[125] ),
+    .prog_clk_0_N_in(\prog_clk_1_wires[59] ),
     .prog_clk_0_S_in(\prog_clk_1_wires[59] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[124] ),
     .right_width_0_height_0__pin_16_(cby_1__1__33_left_grid_pin_16_),
@@ -24867,8 +25246,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .top_width_0_height_0__pin_9_(cbx_1__1__29_bottom_grid_pin_9_)
   );
   grid_clb grid_clb_5__3_ (
+    .SC_IN_BOT(\scff_Wires[85] ),
     .SC_IN_TOP(\scff_Wires[85] ),
     .SC_OUT_BOT(\scff_Wires[86] ),
+    .Test_en_E_in(\Test_enWires[51] ),
     .Test_en_E_out(\Test_enWires[52] ),
     .Test_en_W_in(\Test_enWires[51] ),
     .VGND(VGND),
@@ -24877,8 +25258,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .ccff_head(cby_1__1__26_ccff_tail),
     .ccff_tail(grid_clb_34_ccff_tail),
     .clk_0_N_in(\clk_1_wires[67] ),
+    .clk_0_S_in(\clk_1_wires[67] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[128] ),
     .prog_clk_0_N_in(\prog_clk_1_wires[67] ),
+    .prog_clk_0_S_in(\prog_clk_1_wires[67] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[127] ),
     .right_width_0_height_0__pin_16_(cby_1__1__34_left_grid_pin_16_),
     .right_width_0_height_0__pin_17_(cby_1__1__34_left_grid_pin_17_),
@@ -24947,8 +25330,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .top_width_0_height_0__pin_9_(cbx_1__1__30_bottom_grid_pin_9_)
   );
   grid_clb grid_clb_5__4_ (
+    .SC_IN_BOT(\scff_Wires[83] ),
     .SC_IN_TOP(\scff_Wires[83] ),
     .SC_OUT_BOT(\scff_Wires[84] ),
+    .Test_en_E_in(\Test_enWires[65] ),
     .Test_en_E_out(\Test_enWires[66] ),
     .Test_en_W_in(\Test_enWires[65] ),
     .VGND(VGND),
@@ -24956,8 +25341,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[30] ),
     .ccff_head(cby_1__1__27_ccff_tail),
     .ccff_tail(grid_clb_35_ccff_tail),
+    .clk_0_N_in(\clk_1_wires[66] ),
     .clk_0_S_in(\clk_1_wires[66] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[131] ),
+    .prog_clk_0_N_in(\prog_clk_1_wires[66] ),
     .prog_clk_0_S_in(\prog_clk_1_wires[66] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[130] ),
     .right_width_0_height_0__pin_16_(cby_1__1__35_left_grid_pin_16_),
@@ -25027,8 +25414,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .top_width_0_height_0__pin_9_(cbx_1__1__31_bottom_grid_pin_9_)
   );
   grid_clb grid_clb_5__5_ (
+    .SC_IN_BOT(\scff_Wires[81] ),
     .SC_IN_TOP(\scff_Wires[81] ),
     .SC_OUT_BOT(\scff_Wires[82] ),
+    .Test_en_E_in(\Test_enWires[79] ),
     .Test_en_E_out(\Test_enWires[80] ),
     .Test_en_W_in(\Test_enWires[79] ),
     .VGND(VGND),
@@ -25037,8 +25426,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .ccff_head(cby_1__1__28_ccff_tail),
     .ccff_tail(grid_clb_36_ccff_tail),
     .clk_0_N_in(\clk_1_wires[74] ),
+    .clk_0_S_in(\clk_1_wires[74] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[134] ),
     .prog_clk_0_N_in(\prog_clk_1_wires[74] ),
+    .prog_clk_0_S_in(\prog_clk_1_wires[74] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[133] ),
     .right_width_0_height_0__pin_16_(cby_1__1__36_left_grid_pin_16_),
     .right_width_0_height_0__pin_17_(cby_1__1__36_left_grid_pin_17_),
@@ -25107,8 +25498,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .top_width_0_height_0__pin_9_(cbx_1__1__32_bottom_grid_pin_9_)
   );
   grid_clb grid_clb_5__6_ (
+    .SC_IN_BOT(\scff_Wires[79] ),
     .SC_IN_TOP(\scff_Wires[79] ),
     .SC_OUT_BOT(\scff_Wires[80] ),
+    .Test_en_E_in(\Test_enWires[93] ),
     .Test_en_E_out(\Test_enWires[94] ),
     .Test_en_W_in(\Test_enWires[93] ),
     .VGND(VGND),
@@ -25116,8 +25509,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[32] ),
     .ccff_head(cby_1__1__29_ccff_tail),
     .ccff_tail(grid_clb_37_ccff_tail),
+    .clk_0_N_in(\clk_1_wires[73] ),
     .clk_0_S_in(\clk_1_wires[73] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[137] ),
+    .prog_clk_0_N_in(\prog_clk_1_wires[73] ),
     .prog_clk_0_S_in(\prog_clk_1_wires[73] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[136] ),
     .right_width_0_height_0__pin_16_(cby_1__1__37_left_grid_pin_16_),
@@ -25187,8 +25582,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .top_width_0_height_0__pin_9_(cbx_1__1__33_bottom_grid_pin_9_)
   );
   grid_clb grid_clb_5__7_ (
+    .SC_IN_BOT(\scff_Wires[77] ),
     .SC_IN_TOP(\scff_Wires[77] ),
     .SC_OUT_BOT(\scff_Wires[78] ),
+    .Test_en_E_in(\Test_enWires[107] ),
     .Test_en_E_out(\Test_enWires[108] ),
     .Test_en_W_in(\Test_enWires[107] ),
     .VGND(VGND),
@@ -25197,8 +25594,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .ccff_head(cby_1__1__30_ccff_tail),
     .ccff_tail(grid_clb_38_ccff_tail),
     .clk_0_N_in(\clk_1_wires[81] ),
+    .clk_0_S_in(\clk_1_wires[81] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[140] ),
     .prog_clk_0_N_in(\prog_clk_1_wires[81] ),
+    .prog_clk_0_S_in(\prog_clk_1_wires[81] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[139] ),
     .right_width_0_height_0__pin_16_(cby_1__1__38_left_grid_pin_16_),
     .right_width_0_height_0__pin_17_(cby_1__1__38_left_grid_pin_17_),
@@ -25267,8 +25666,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .top_width_0_height_0__pin_9_(cbx_1__1__34_bottom_grid_pin_9_)
   );
   grid_clb grid_clb_5__8_ (
+    .SC_IN_BOT(\scff_Wires[75] ),
     .SC_IN_TOP(\scff_Wires[75] ),
     .SC_OUT_BOT(\scff_Wires[76] ),
+    .Test_en_E_in(\Test_enWires[121] ),
     .Test_en_E_out(\Test_enWires[122] ),
     .Test_en_W_in(\Test_enWires[121] ),
     .VGND(VGND),
@@ -25276,8 +25677,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[34] ),
     .ccff_head(cby_1__1__31_ccff_tail),
     .ccff_tail(grid_clb_39_ccff_tail),
+    .clk_0_N_in(\clk_1_wires[80] ),
     .clk_0_S_in(\clk_1_wires[80] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[143] ),
+    .prog_clk_0_N_in(\prog_clk_1_wires[80] ),
     .prog_clk_0_N_out(\prog_clk_0_wires[145] ),
     .prog_clk_0_S_in(\prog_clk_1_wires[80] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[142] ),
@@ -25349,17 +25752,20 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   grid_clb grid_clb_6__1_ (
     .SC_IN_BOT(\scff_Wires[94] ),
+    .SC_IN_TOP(\scff_Wires[94] ),
     .SC_OUT_TOP(\scff_Wires[95] ),
+    .Test_en_E_in(\Test_enWires[25] ),
     .Test_en_E_out(\Test_enWires[26] ),
     .Test_en_W_in(\Test_enWires[25] ),
     .VGND(VGND),
     .VPWR(VPWR),
-    .bottom_width_0_height_0__pin_50_(grid_clb_6__1__undriven_bottom_width_0_height_0__pin_50_),
     .ccff_head(cby_1__1__32_ccff_tail),
     .ccff_tail(grid_clb_40_ccff_tail),
     .clk_0_N_in(\clk_1_wires[62] ),
+    .clk_0_S_in(\clk_1_wires[62] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[148] ),
     .prog_clk_0_N_in(\prog_clk_1_wires[62] ),
+    .prog_clk_0_S_in(\prog_clk_1_wires[62] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[147] ),
     .right_width_0_height_0__pin_16_(cby_1__1__40_left_grid_pin_16_),
     .right_width_0_height_0__pin_17_(cby_1__1__40_left_grid_pin_17_),
@@ -25429,7 +25835,9 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   grid_clb grid_clb_6__2_ (
     .SC_IN_BOT(\scff_Wires[96] ),
+    .SC_IN_TOP(\scff_Wires[96] ),
     .SC_OUT_TOP(\scff_Wires[97] ),
+    .Test_en_E_in(\Test_enWires[39] ),
     .Test_en_E_out(\Test_enWires[40] ),
     .Test_en_W_in(\Test_enWires[39] ),
     .VGND(VGND),
@@ -25437,8 +25845,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[35] ),
     .ccff_head(cby_1__1__33_ccff_tail),
     .ccff_tail(grid_clb_41_ccff_tail),
+    .clk_0_N_in(\clk_1_wires[61] ),
     .clk_0_S_in(\clk_1_wires[61] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[151] ),
+    .prog_clk_0_N_in(\prog_clk_1_wires[61] ),
     .prog_clk_0_S_in(\prog_clk_1_wires[61] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[150] ),
     .right_width_0_height_0__pin_16_(cby_1__1__41_left_grid_pin_16_),
@@ -25509,7 +25919,9 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   grid_clb grid_clb_6__3_ (
     .SC_IN_BOT(\scff_Wires[98] ),
+    .SC_IN_TOP(\scff_Wires[98] ),
     .SC_OUT_TOP(\scff_Wires[99] ),
+    .Test_en_E_in(\Test_enWires[53] ),
     .Test_en_E_out(\Test_enWires[54] ),
     .Test_en_W_in(\Test_enWires[53] ),
     .VGND(VGND),
@@ -25518,8 +25930,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .ccff_head(cby_1__1__34_ccff_tail),
     .ccff_tail(grid_clb_42_ccff_tail),
     .clk_0_N_in(\clk_1_wires[69] ),
+    .clk_0_S_in(\clk_1_wires[69] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[154] ),
     .prog_clk_0_N_in(\prog_clk_1_wires[69] ),
+    .prog_clk_0_S_in(\prog_clk_1_wires[69] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[153] ),
     .right_width_0_height_0__pin_16_(cby_1__1__42_left_grid_pin_16_),
     .right_width_0_height_0__pin_17_(cby_1__1__42_left_grid_pin_17_),
@@ -25589,7 +26003,9 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   grid_clb grid_clb_6__4_ (
     .SC_IN_BOT(\scff_Wires[100] ),
+    .SC_IN_TOP(\scff_Wires[100] ),
     .SC_OUT_TOP(\scff_Wires[101] ),
+    .Test_en_E_in(\Test_enWires[67] ),
     .Test_en_E_out(\Test_enWires[68] ),
     .Test_en_W_in(\Test_enWires[67] ),
     .VGND(VGND),
@@ -25597,8 +26013,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[37] ),
     .ccff_head(cby_1__1__35_ccff_tail),
     .ccff_tail(grid_clb_43_ccff_tail),
+    .clk_0_N_in(\clk_1_wires[68] ),
     .clk_0_S_in(\clk_1_wires[68] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[157] ),
+    .prog_clk_0_N_in(\prog_clk_1_wires[68] ),
     .prog_clk_0_S_in(\prog_clk_1_wires[68] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[156] ),
     .right_width_0_height_0__pin_16_(cby_1__1__43_left_grid_pin_16_),
@@ -25669,7 +26087,9 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   grid_clb grid_clb_6__5_ (
     .SC_IN_BOT(\scff_Wires[102] ),
+    .SC_IN_TOP(\scff_Wires[102] ),
     .SC_OUT_TOP(\scff_Wires[103] ),
+    .Test_en_E_in(\Test_enWires[81] ),
     .Test_en_E_out(\Test_enWires[82] ),
     .Test_en_W_in(\Test_enWires[81] ),
     .VGND(VGND),
@@ -25678,8 +26098,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .ccff_head(cby_1__1__36_ccff_tail),
     .ccff_tail(grid_clb_44_ccff_tail),
     .clk_0_N_in(\clk_1_wires[76] ),
+    .clk_0_S_in(\clk_1_wires[76] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[160] ),
     .prog_clk_0_N_in(\prog_clk_1_wires[76] ),
+    .prog_clk_0_S_in(\prog_clk_1_wires[76] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[159] ),
     .right_width_0_height_0__pin_16_(cby_1__1__44_left_grid_pin_16_),
     .right_width_0_height_0__pin_17_(cby_1__1__44_left_grid_pin_17_),
@@ -25749,7 +26171,9 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   grid_clb grid_clb_6__6_ (
     .SC_IN_BOT(\scff_Wires[104] ),
+    .SC_IN_TOP(\scff_Wires[104] ),
     .SC_OUT_TOP(\scff_Wires[105] ),
+    .Test_en_E_in(\Test_enWires[95] ),
     .Test_en_E_out(\Test_enWires[96] ),
     .Test_en_W_in(\Test_enWires[95] ),
     .VGND(VGND),
@@ -25757,8 +26181,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[39] ),
     .ccff_head(cby_1__1__37_ccff_tail),
     .ccff_tail(grid_clb_45_ccff_tail),
+    .clk_0_N_in(\clk_1_wires[75] ),
     .clk_0_S_in(\clk_1_wires[75] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[163] ),
+    .prog_clk_0_N_in(\prog_clk_1_wires[75] ),
     .prog_clk_0_S_in(\prog_clk_1_wires[75] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[162] ),
     .right_width_0_height_0__pin_16_(cby_1__1__45_left_grid_pin_16_),
@@ -25829,7 +26255,9 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   grid_clb grid_clb_6__7_ (
     .SC_IN_BOT(\scff_Wires[106] ),
+    .SC_IN_TOP(\scff_Wires[106] ),
     .SC_OUT_TOP(\scff_Wires[107] ),
+    .Test_en_E_in(\Test_enWires[109] ),
     .Test_en_E_out(\Test_enWires[110] ),
     .Test_en_W_in(\Test_enWires[109] ),
     .VGND(VGND),
@@ -25838,8 +26266,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .ccff_head(cby_1__1__38_ccff_tail),
     .ccff_tail(grid_clb_46_ccff_tail),
     .clk_0_N_in(\clk_1_wires[83] ),
+    .clk_0_S_in(\clk_1_wires[83] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[166] ),
     .prog_clk_0_N_in(\prog_clk_1_wires[83] ),
+    .prog_clk_0_S_in(\prog_clk_1_wires[83] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[165] ),
     .right_width_0_height_0__pin_16_(cby_1__1__46_left_grid_pin_16_),
     .right_width_0_height_0__pin_17_(cby_1__1__46_left_grid_pin_17_),
@@ -25909,7 +26339,9 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   grid_clb grid_clb_6__8_ (
     .SC_IN_BOT(\scff_Wires[108] ),
+    .SC_IN_TOP(\scff_Wires[108] ),
     .SC_OUT_TOP(\scff_Wires[109] ),
+    .Test_en_E_in(\Test_enWires[123] ),
     .Test_en_E_out(\Test_enWires[124] ),
     .Test_en_W_in(\Test_enWires[123] ),
     .VGND(VGND),
@@ -25917,8 +26349,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[41] ),
     .ccff_head(cby_1__1__39_ccff_tail),
     .ccff_tail(grid_clb_47_ccff_tail),
+    .clk_0_N_in(\clk_1_wires[82] ),
     .clk_0_S_in(\clk_1_wires[82] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[169] ),
+    .prog_clk_0_N_in(\prog_clk_1_wires[82] ),
     .prog_clk_0_N_out(\prog_clk_0_wires[171] ),
     .prog_clk_0_S_in(\prog_clk_1_wires[82] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[168] ),
@@ -25989,18 +26423,21 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .top_width_0_height_0__pin_9_(cbx_1__8__5_bottom_grid_pin_9_)
   );
   grid_clb grid_clb_7__1_ (
+    .SC_IN_BOT(\scff_Wires[126] ),
     .SC_IN_TOP(\scff_Wires[126] ),
     .SC_OUT_BOT(\scff_Wires[128] ),
+    .Test_en_E_in(\Test_enWires[27] ),
     .Test_en_E_out(\Test_enWires[28] ),
     .Test_en_W_in(\Test_enWires[27] ),
     .VGND(VGND),
     .VPWR(VPWR),
-    .bottom_width_0_height_0__pin_50_(grid_clb_7__1__undriven_bottom_width_0_height_0__pin_50_),
     .ccff_head(cby_1__1__40_ccff_tail),
     .ccff_tail(grid_clb_48_ccff_tail),
     .clk_0_N_in(\clk_1_wires[88] ),
+    .clk_0_S_in(\clk_1_wires[88] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[174] ),
     .prog_clk_0_N_in(\prog_clk_1_wires[88] ),
+    .prog_clk_0_S_in(\prog_clk_1_wires[88] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[173] ),
     .right_width_0_height_0__pin_16_(cby_1__1__48_left_grid_pin_16_),
     .right_width_0_height_0__pin_17_(cby_1__1__48_left_grid_pin_17_),
@@ -26069,8 +26506,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .top_width_0_height_0__pin_9_(cbx_1__1__42_bottom_grid_pin_9_)
   );
   grid_clb grid_clb_7__2_ (
+    .SC_IN_BOT(\scff_Wires[124] ),
     .SC_IN_TOP(\scff_Wires[124] ),
     .SC_OUT_BOT(\scff_Wires[125] ),
+    .Test_en_E_in(\Test_enWires[41] ),
     .Test_en_E_out(\Test_enWires[42] ),
     .Test_en_W_in(\Test_enWires[41] ),
     .VGND(VGND),
@@ -26078,8 +26517,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[42] ),
     .ccff_head(cby_1__1__41_ccff_tail),
     .ccff_tail(grid_clb_49_ccff_tail),
+    .clk_0_N_in(\clk_1_wires[87] ),
     .clk_0_S_in(\clk_1_wires[87] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[177] ),
+    .prog_clk_0_N_in(\prog_clk_1_wires[87] ),
     .prog_clk_0_S_in(\prog_clk_1_wires[87] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[176] ),
     .right_width_0_height_0__pin_16_(cby_1__1__49_left_grid_pin_16_),
@@ -26149,8 +26590,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .top_width_0_height_0__pin_9_(cbx_1__1__43_bottom_grid_pin_9_)
   );
   grid_clb grid_clb_7__3_ (
+    .SC_IN_BOT(\scff_Wires[122] ),
     .SC_IN_TOP(\scff_Wires[122] ),
     .SC_OUT_BOT(\scff_Wires[123] ),
+    .Test_en_E_in(\Test_enWires[55] ),
     .Test_en_E_out(\Test_enWires[56] ),
     .Test_en_W_in(\Test_enWires[55] ),
     .VGND(VGND),
@@ -26159,8 +26602,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .ccff_head(cby_1__1__42_ccff_tail),
     .ccff_tail(grid_clb_50_ccff_tail),
     .clk_0_N_in(\clk_1_wires[95] ),
+    .clk_0_S_in(\clk_1_wires[95] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[180] ),
     .prog_clk_0_N_in(\prog_clk_1_wires[95] ),
+    .prog_clk_0_S_in(\prog_clk_1_wires[95] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[179] ),
     .right_width_0_height_0__pin_16_(cby_1__1__50_left_grid_pin_16_),
     .right_width_0_height_0__pin_17_(cby_1__1__50_left_grid_pin_17_),
@@ -26229,8 +26674,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .top_width_0_height_0__pin_9_(cbx_1__1__44_bottom_grid_pin_9_)
   );
   grid_clb grid_clb_7__4_ (
+    .SC_IN_BOT(\scff_Wires[120] ),
     .SC_IN_TOP(\scff_Wires[120] ),
     .SC_OUT_BOT(\scff_Wires[121] ),
+    .Test_en_E_in(\Test_enWires[69] ),
     .Test_en_E_out(\Test_enWires[70] ),
     .Test_en_W_in(\Test_enWires[69] ),
     .VGND(VGND),
@@ -26238,8 +26685,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[44] ),
     .ccff_head(cby_1__1__43_ccff_tail),
     .ccff_tail(grid_clb_51_ccff_tail),
+    .clk_0_N_in(\clk_1_wires[94] ),
     .clk_0_S_in(\clk_1_wires[94] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[183] ),
+    .prog_clk_0_N_in(\prog_clk_1_wires[94] ),
     .prog_clk_0_S_in(\prog_clk_1_wires[94] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[182] ),
     .right_width_0_height_0__pin_16_(cby_1__1__51_left_grid_pin_16_),
@@ -26309,8 +26758,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .top_width_0_height_0__pin_9_(cbx_1__1__45_bottom_grid_pin_9_)
   );
   grid_clb grid_clb_7__5_ (
+    .SC_IN_BOT(\scff_Wires[118] ),
     .SC_IN_TOP(\scff_Wires[118] ),
     .SC_OUT_BOT(\scff_Wires[119] ),
+    .Test_en_E_in(\Test_enWires[83] ),
     .Test_en_E_out(\Test_enWires[84] ),
     .Test_en_W_in(\Test_enWires[83] ),
     .VGND(VGND),
@@ -26319,8 +26770,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .ccff_head(cby_1__1__44_ccff_tail),
     .ccff_tail(grid_clb_52_ccff_tail),
     .clk_0_N_in(\clk_1_wires[102] ),
+    .clk_0_S_in(\clk_1_wires[102] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[186] ),
     .prog_clk_0_N_in(\prog_clk_1_wires[102] ),
+    .prog_clk_0_S_in(\prog_clk_1_wires[102] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[185] ),
     .right_width_0_height_0__pin_16_(cby_1__1__52_left_grid_pin_16_),
     .right_width_0_height_0__pin_17_(cby_1__1__52_left_grid_pin_17_),
@@ -26389,8 +26842,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .top_width_0_height_0__pin_9_(cbx_1__1__46_bottom_grid_pin_9_)
   );
   grid_clb grid_clb_7__6_ (
+    .SC_IN_BOT(\scff_Wires[116] ),
     .SC_IN_TOP(\scff_Wires[116] ),
     .SC_OUT_BOT(\scff_Wires[117] ),
+    .Test_en_E_in(\Test_enWires[97] ),
     .Test_en_E_out(\Test_enWires[98] ),
     .Test_en_W_in(\Test_enWires[97] ),
     .VGND(VGND),
@@ -26398,8 +26853,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[46] ),
     .ccff_head(cby_1__1__45_ccff_tail),
     .ccff_tail(grid_clb_53_ccff_tail),
+    .clk_0_N_in(\clk_1_wires[101] ),
     .clk_0_S_in(\clk_1_wires[101] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[189] ),
+    .prog_clk_0_N_in(\prog_clk_1_wires[101] ),
     .prog_clk_0_S_in(\prog_clk_1_wires[101] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[188] ),
     .right_width_0_height_0__pin_16_(cby_1__1__53_left_grid_pin_16_),
@@ -26469,8 +26926,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .top_width_0_height_0__pin_9_(cbx_1__1__47_bottom_grid_pin_9_)
   );
   grid_clb grid_clb_7__7_ (
+    .SC_IN_BOT(\scff_Wires[114] ),
     .SC_IN_TOP(\scff_Wires[114] ),
     .SC_OUT_BOT(\scff_Wires[115] ),
+    .Test_en_E_in(\Test_enWires[111] ),
     .Test_en_E_out(\Test_enWires[112] ),
     .Test_en_W_in(\Test_enWires[111] ),
     .VGND(VGND),
@@ -26479,8 +26938,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .ccff_head(cby_1__1__46_ccff_tail),
     .ccff_tail(grid_clb_54_ccff_tail),
     .clk_0_N_in(\clk_1_wires[109] ),
+    .clk_0_S_in(\clk_1_wires[109] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[192] ),
     .prog_clk_0_N_in(\prog_clk_1_wires[109] ),
+    .prog_clk_0_S_in(\prog_clk_1_wires[109] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[191] ),
     .right_width_0_height_0__pin_16_(cby_1__1__54_left_grid_pin_16_),
     .right_width_0_height_0__pin_17_(cby_1__1__54_left_grid_pin_17_),
@@ -26549,8 +27010,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .top_width_0_height_0__pin_9_(cbx_1__1__48_bottom_grid_pin_9_)
   );
   grid_clb grid_clb_7__8_ (
+    .SC_IN_BOT(\scff_Wires[112] ),
     .SC_IN_TOP(\scff_Wires[112] ),
     .SC_OUT_BOT(\scff_Wires[113] ),
+    .Test_en_E_in(\Test_enWires[125] ),
     .Test_en_E_out(\Test_enWires[126] ),
     .Test_en_W_in(\Test_enWires[125] ),
     .VGND(VGND),
@@ -26558,8 +27021,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[48] ),
     .ccff_head(cby_1__1__47_ccff_tail),
     .ccff_tail(grid_clb_55_ccff_tail),
+    .clk_0_N_in(\clk_1_wires[108] ),
     .clk_0_S_in(\clk_1_wires[108] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[195] ),
+    .prog_clk_0_N_in(\prog_clk_1_wires[108] ),
     .prog_clk_0_N_out(\prog_clk_0_wires[197] ),
     .prog_clk_0_S_in(\prog_clk_1_wires[108] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[194] ),
@@ -26631,16 +27096,19 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   grid_clb grid_clb_8__1_ (
     .SC_IN_BOT(\scff_Wires[131] ),
+    .SC_IN_TOP(\scff_Wires[131] ),
     .SC_OUT_TOP(\scff_Wires[132] ),
+    .Test_en_E_in(\Test_enWires[29] ),
     .Test_en_W_in(\Test_enWires[29] ),
     .VGND(VGND),
     .VPWR(VPWR),
-    .bottom_width_0_height_0__pin_50_(grid_clb_8__1__undriven_bottom_width_0_height_0__pin_50_),
     .ccff_head(cby_1__1__48_ccff_tail),
     .ccff_tail(grid_clb_56_ccff_tail),
     .clk_0_N_in(\clk_1_wires[90] ),
+    .clk_0_S_in(\clk_1_wires[90] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[200] ),
     .prog_clk_0_N_in(\prog_clk_1_wires[90] ),
+    .prog_clk_0_S_in(\prog_clk_1_wires[90] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[199] ),
     .right_width_0_height_0__pin_16_(cby_8__1__0_left_grid_pin_16_),
     .right_width_0_height_0__pin_17_(cby_8__1__0_left_grid_pin_17_),
@@ -26710,15 +27178,19 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   grid_clb grid_clb_8__2_ (
     .SC_IN_BOT(\scff_Wires[133] ),
+    .SC_IN_TOP(\scff_Wires[133] ),
     .SC_OUT_TOP(\scff_Wires[134] ),
+    .Test_en_E_in(\Test_enWires[43] ),
     .Test_en_W_in(\Test_enWires[43] ),
     .VGND(VGND),
     .VPWR(VPWR),
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[49] ),
     .ccff_head(cby_1__1__49_ccff_tail),
     .ccff_tail(grid_clb_57_ccff_tail),
+    .clk_0_N_in(\clk_1_wires[89] ),
     .clk_0_S_in(\clk_1_wires[89] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[203] ),
+    .prog_clk_0_N_in(\prog_clk_1_wires[89] ),
     .prog_clk_0_S_in(\prog_clk_1_wires[89] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[202] ),
     .right_width_0_height_0__pin_16_(cby_8__1__1_left_grid_pin_16_),
@@ -26789,7 +27261,9 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   grid_clb grid_clb_8__3_ (
     .SC_IN_BOT(\scff_Wires[135] ),
+    .SC_IN_TOP(\scff_Wires[135] ),
     .SC_OUT_TOP(\scff_Wires[136] ),
+    .Test_en_E_in(\Test_enWires[57] ),
     .Test_en_W_in(\Test_enWires[57] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -26797,8 +27271,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .ccff_head(cby_1__1__50_ccff_tail),
     .ccff_tail(grid_clb_58_ccff_tail),
     .clk_0_N_in(\clk_1_wires[97] ),
+    .clk_0_S_in(\clk_1_wires[97] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[206] ),
     .prog_clk_0_N_in(\prog_clk_1_wires[97] ),
+    .prog_clk_0_S_in(\prog_clk_1_wires[97] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[205] ),
     .right_width_0_height_0__pin_16_(cby_8__1__2_left_grid_pin_16_),
     .right_width_0_height_0__pin_17_(cby_8__1__2_left_grid_pin_17_),
@@ -26868,15 +27344,19 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   grid_clb grid_clb_8__4_ (
     .SC_IN_BOT(\scff_Wires[137] ),
+    .SC_IN_TOP(\scff_Wires[137] ),
     .SC_OUT_TOP(\scff_Wires[138] ),
+    .Test_en_E_in(\Test_enWires[71] ),
     .Test_en_W_in(\Test_enWires[71] ),
     .VGND(VGND),
     .VPWR(VPWR),
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[51] ),
     .ccff_head(cby_1__1__51_ccff_tail),
     .ccff_tail(grid_clb_59_ccff_tail),
+    .clk_0_N_in(\clk_1_wires[96] ),
     .clk_0_S_in(\clk_1_wires[96] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[209] ),
+    .prog_clk_0_N_in(\prog_clk_1_wires[96] ),
     .prog_clk_0_S_in(\prog_clk_1_wires[96] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[208] ),
     .right_width_0_height_0__pin_16_(cby_8__1__3_left_grid_pin_16_),
@@ -26947,7 +27427,9 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   grid_clb grid_clb_8__5_ (
     .SC_IN_BOT(\scff_Wires[139] ),
+    .SC_IN_TOP(\scff_Wires[139] ),
     .SC_OUT_TOP(\scff_Wires[140] ),
+    .Test_en_E_in(\Test_enWires[85] ),
     .Test_en_W_in(\Test_enWires[85] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -26955,8 +27437,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .ccff_head(cby_1__1__52_ccff_tail),
     .ccff_tail(grid_clb_60_ccff_tail),
     .clk_0_N_in(\clk_1_wires[104] ),
+    .clk_0_S_in(\clk_1_wires[104] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[212] ),
     .prog_clk_0_N_in(\prog_clk_1_wires[104] ),
+    .prog_clk_0_S_in(\prog_clk_1_wires[104] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[211] ),
     .right_width_0_height_0__pin_16_(cby_8__1__4_left_grid_pin_16_),
     .right_width_0_height_0__pin_17_(cby_8__1__4_left_grid_pin_17_),
@@ -27026,15 +27510,19 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   grid_clb grid_clb_8__6_ (
     .SC_IN_BOT(\scff_Wires[141] ),
+    .SC_IN_TOP(\scff_Wires[141] ),
     .SC_OUT_TOP(\scff_Wires[142] ),
+    .Test_en_E_in(\Test_enWires[99] ),
     .Test_en_W_in(\Test_enWires[99] ),
     .VGND(VGND),
     .VPWR(VPWR),
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[53] ),
     .ccff_head(cby_1__1__53_ccff_tail),
     .ccff_tail(grid_clb_61_ccff_tail),
+    .clk_0_N_in(\clk_1_wires[103] ),
     .clk_0_S_in(\clk_1_wires[103] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[215] ),
+    .prog_clk_0_N_in(\prog_clk_1_wires[103] ),
     .prog_clk_0_S_in(\prog_clk_1_wires[103] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[214] ),
     .right_width_0_height_0__pin_16_(cby_8__1__5_left_grid_pin_16_),
@@ -27105,7 +27593,9 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   grid_clb grid_clb_8__7_ (
     .SC_IN_BOT(\scff_Wires[143] ),
+    .SC_IN_TOP(\scff_Wires[143] ),
     .SC_OUT_TOP(\scff_Wires[144] ),
+    .Test_en_E_in(\Test_enWires[113] ),
     .Test_en_W_in(\Test_enWires[113] ),
     .VGND(VGND),
     .VPWR(VPWR),
@@ -27113,8 +27603,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .ccff_head(cby_1__1__54_ccff_tail),
     .ccff_tail(grid_clb_62_ccff_tail),
     .clk_0_N_in(\clk_1_wires[111] ),
+    .clk_0_S_in(\clk_1_wires[111] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[218] ),
     .prog_clk_0_N_in(\prog_clk_1_wires[111] ),
+    .prog_clk_0_S_in(\prog_clk_1_wires[111] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[217] ),
     .right_width_0_height_0__pin_16_(cby_8__1__6_left_grid_pin_16_),
     .right_width_0_height_0__pin_17_(cby_8__1__6_left_grid_pin_17_),
@@ -27184,15 +27676,19 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
   );
   grid_clb grid_clb_8__8_ (
     .SC_IN_BOT(\scff_Wires[145] ),
+    .SC_IN_TOP(\scff_Wires[145] ),
     .SC_OUT_TOP(\scff_Wires[146] ),
+    .Test_en_E_in(\Test_enWires[127] ),
     .Test_en_W_in(\Test_enWires[127] ),
     .VGND(VGND),
     .VPWR(VPWR),
     .bottom_width_0_height_0__pin_50_(\regin_feedthrough_wires[55] ),
     .ccff_head(cby_1__1__55_ccff_tail),
     .ccff_tail(grid_clb_63_ccff_tail),
+    .clk_0_N_in(\clk_1_wires[110] ),
     .clk_0_S_in(\clk_1_wires[110] ),
     .prog_clk_0_E_out(\prog_clk_0_wires[221] ),
+    .prog_clk_0_N_in(\prog_clk_1_wires[110] ),
     .prog_clk_0_N_out(\prog_clk_0_wires[223] ),
     .prog_clk_0_S_in(\prog_clk_1_wires[110] ),
     .prog_clk_0_S_out(\prog_clk_0_wires[220] ),
@@ -27531,6 +28027,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_out({ \sb_1__1__0_chany_top_out[0] , \sb_1__1__0_chany_top_out[1] , \sb_1__1__0_chany_top_out[2] , \sb_1__1__0_chany_top_out[3] , \sb_1__1__0_chany_top_out[4] , \sb_1__1__0_chany_top_out[5] , \sb_1__1__0_chany_top_out[6] , \sb_1__1__0_chany_top_out[7] , \sb_1__1__0_chany_top_out[8] , \sb_1__1__0_chany_top_out[9] , \sb_1__1__0_chany_top_out[10] , \sb_1__1__0_chany_top_out[11] , \sb_1__1__0_chany_top_out[12] , \sb_1__1__0_chany_top_out[13] , \sb_1__1__0_chany_top_out[14] , \sb_1__1__0_chany_top_out[15] , \sb_1__1__0_chany_top_out[16] , \sb_1__1__0_chany_top_out[17] , \sb_1__1__0_chany_top_out[18] , \sb_1__1__0_chany_top_out[19]  }),
     .clk_1_E_out(\clk_1_wires[1] ),
     .clk_1_N_in(\clk_2_wires[8] ),
+    .clk_1_S_in(\clk_2_wires[8] ),
     .clk_1_W_out(\clk_1_wires[2] ),
     .left_bottom_grid_pin_34_(grid_clb_0_top_width_0_height_0__pin_34_lower),
     .left_bottom_grid_pin_35_(grid_clb_0_top_width_0_height_0__pin_35_lower),
@@ -27543,6 +28040,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_N_in(\prog_clk_0_wires[8] ),
     .prog_clk_1_E_out(\prog_clk_1_wires[1] ),
     .prog_clk_1_N_in(\prog_clk_2_wires[8] ),
+    .prog_clk_1_S_in(\prog_clk_2_wires[8] ),
     .prog_clk_1_W_out(\prog_clk_1_wires[2] ),
     .right_bottom_grid_pin_34_(grid_clb_8_top_width_0_height_0__pin_34_upper),
     .right_bottom_grid_pin_35_(grid_clb_8_top_width_0_height_0__pin_35_upper),
@@ -27583,8 +28081,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_in({ \cby_1__1__2_chany_bottom_out[0] , \cby_1__1__2_chany_bottom_out[1] , \cby_1__1__2_chany_bottom_out[2] , \cby_1__1__2_chany_bottom_out[3] , \cby_1__1__2_chany_bottom_out[4] , \cby_1__1__2_chany_bottom_out[5] , \cby_1__1__2_chany_bottom_out[6] , \cby_1__1__2_chany_bottom_out[7] , \cby_1__1__2_chany_bottom_out[8] , \cby_1__1__2_chany_bottom_out[9] , \cby_1__1__2_chany_bottom_out[10] , \cby_1__1__2_chany_bottom_out[11] , \cby_1__1__2_chany_bottom_out[12] , \cby_1__1__2_chany_bottom_out[13] , \cby_1__1__2_chany_bottom_out[14] , \cby_1__1__2_chany_bottom_out[15] , \cby_1__1__2_chany_bottom_out[16] , \cby_1__1__2_chany_bottom_out[17] , \cby_1__1__2_chany_bottom_out[18] , \cby_1__1__2_chany_bottom_out[19]  }),
     .chany_top_out({ \sb_1__1__1_chany_top_out[0] , \sb_1__1__1_chany_top_out[1] , \sb_1__1__1_chany_top_out[2] , \sb_1__1__1_chany_top_out[3] , \sb_1__1__1_chany_top_out[4] , \sb_1__1__1_chany_top_out[5] , \sb_1__1__1_chany_top_out[6] , \sb_1__1__1_chany_top_out[7] , \sb_1__1__1_chany_top_out[8] , \sb_1__1__1_chany_top_out[9] , \sb_1__1__1_chany_top_out[10] , \sb_1__1__1_chany_top_out[11] , \sb_1__1__1_chany_top_out[12] , \sb_1__1__1_chany_top_out[13] , \sb_1__1__1_chany_top_out[14] , \sb_1__1__1_chany_top_out[15] , \sb_1__1__1_chany_top_out[16] , \sb_1__1__1_chany_top_out[17] , \sb_1__1__1_chany_top_out[18] , \sb_1__1__1_chany_top_out[19]  }),
     .clk_2_E_in(\clk_2_wires[4] ),
+    .clk_2_N_in(\clk_2_wires[4] ),
     .clk_2_N_out(\clk_2_wires[5] ),
+    .clk_2_S_in(\clk_2_wires[4] ),
     .clk_2_S_out(\clk_2_wires[7] ),
+    .clk_2_W_in(\clk_2_wires[4] ),
     .left_bottom_grid_pin_34_(grid_clb_1_top_width_0_height_0__pin_34_lower),
     .left_bottom_grid_pin_35_(grid_clb_1_top_width_0_height_0__pin_35_lower),
     .left_bottom_grid_pin_36_(grid_clb_1_top_width_0_height_0__pin_36_lower),
@@ -27595,8 +28096,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_bottom_grid_pin_41_(grid_clb_1_top_width_0_height_0__pin_41_lower),
     .prog_clk_0_N_in(\prog_clk_0_wires[13] ),
     .prog_clk_2_E_in(\prog_clk_2_wires[4] ),
+    .prog_clk_2_N_in(\prog_clk_2_wires[4] ),
     .prog_clk_2_N_out(\prog_clk_2_wires[5] ),
+    .prog_clk_2_S_in(\prog_clk_2_wires[4] ),
     .prog_clk_2_S_out(\prog_clk_2_wires[7] ),
+    .prog_clk_2_W_in(\prog_clk_2_wires[4] ),
     .right_bottom_grid_pin_34_(grid_clb_9_top_width_0_height_0__pin_34_upper),
     .right_bottom_grid_pin_35_(grid_clb_9_top_width_0_height_0__pin_35_upper),
     .right_bottom_grid_pin_36_(grid_clb_9_top_width_0_height_0__pin_36_upper),
@@ -27636,6 +28140,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_in({ \cby_1__1__3_chany_bottom_out[0] , \cby_1__1__3_chany_bottom_out[1] , \cby_1__1__3_chany_bottom_out[2] , \cby_1__1__3_chany_bottom_out[3] , \cby_1__1__3_chany_bottom_out[4] , \cby_1__1__3_chany_bottom_out[5] , \cby_1__1__3_chany_bottom_out[6] , \cby_1__1__3_chany_bottom_out[7] , \cby_1__1__3_chany_bottom_out[8] , \cby_1__1__3_chany_bottom_out[9] , \cby_1__1__3_chany_bottom_out[10] , \cby_1__1__3_chany_bottom_out[11] , \cby_1__1__3_chany_bottom_out[12] , \cby_1__1__3_chany_bottom_out[13] , \cby_1__1__3_chany_bottom_out[14] , \cby_1__1__3_chany_bottom_out[15] , \cby_1__1__3_chany_bottom_out[16] , \cby_1__1__3_chany_bottom_out[17] , \cby_1__1__3_chany_bottom_out[18] , \cby_1__1__3_chany_bottom_out[19]  }),
     .chany_top_out({ \sb_1__1__2_chany_top_out[0] , \sb_1__1__2_chany_top_out[1] , \sb_1__1__2_chany_top_out[2] , \sb_1__1__2_chany_top_out[3] , \sb_1__1__2_chany_top_out[4] , \sb_1__1__2_chany_top_out[5] , \sb_1__1__2_chany_top_out[6] , \sb_1__1__2_chany_top_out[7] , \sb_1__1__2_chany_top_out[8] , \sb_1__1__2_chany_top_out[9] , \sb_1__1__2_chany_top_out[10] , \sb_1__1__2_chany_top_out[11] , \sb_1__1__2_chany_top_out[12] , \sb_1__1__2_chany_top_out[13] , \sb_1__1__2_chany_top_out[14] , \sb_1__1__2_chany_top_out[15] , \sb_1__1__2_chany_top_out[16] , \sb_1__1__2_chany_top_out[17] , \sb_1__1__2_chany_top_out[18] , \sb_1__1__2_chany_top_out[19]  }),
     .clk_1_E_out(\clk_1_wires[8] ),
+    .clk_1_N_in(\clk_2_wires[6] ),
     .clk_1_S_in(\clk_2_wires[6] ),
     .clk_1_W_out(\clk_1_wires[9] ),
     .left_bottom_grid_pin_34_(grid_clb_2_top_width_0_height_0__pin_34_lower),
@@ -27648,6 +28153,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_bottom_grid_pin_41_(grid_clb_2_top_width_0_height_0__pin_41_lower),
     .prog_clk_0_N_in(\prog_clk_0_wires[18] ),
     .prog_clk_1_E_out(\prog_clk_1_wires[8] ),
+    .prog_clk_1_N_in(\prog_clk_2_wires[6] ),
     .prog_clk_1_S_in(\prog_clk_2_wires[6] ),
     .prog_clk_1_W_out(\prog_clk_1_wires[9] ),
     .right_bottom_grid_pin_34_(grid_clb_10_top_width_0_height_0__pin_34_upper),
@@ -27737,6 +28243,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_out({ \sb_1__1__4_chany_top_out[0] , \sb_1__1__4_chany_top_out[1] , \sb_1__1__4_chany_top_out[2] , \sb_1__1__4_chany_top_out[3] , \sb_1__1__4_chany_top_out[4] , \sb_1__1__4_chany_top_out[5] , \sb_1__1__4_chany_top_out[6] , \sb_1__1__4_chany_top_out[7] , \sb_1__1__4_chany_top_out[8] , \sb_1__1__4_chany_top_out[9] , \sb_1__1__4_chany_top_out[10] , \sb_1__1__4_chany_top_out[11] , \sb_1__1__4_chany_top_out[12] , \sb_1__1__4_chany_top_out[13] , \sb_1__1__4_chany_top_out[14] , \sb_1__1__4_chany_top_out[15] , \sb_1__1__4_chany_top_out[16] , \sb_1__1__4_chany_top_out[17] , \sb_1__1__4_chany_top_out[18] , \sb_1__1__4_chany_top_out[19]  }),
     .clk_1_E_out(\clk_1_wires[15] ),
     .clk_1_N_in(\clk_2_wires[21] ),
+    .clk_1_S_in(\clk_2_wires[21] ),
     .clk_1_W_out(\clk_1_wires[16] ),
     .left_bottom_grid_pin_34_(grid_clb_4_top_width_0_height_0__pin_34_lower),
     .left_bottom_grid_pin_35_(grid_clb_4_top_width_0_height_0__pin_35_lower),
@@ -27749,6 +28256,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_N_in(\prog_clk_0_wires[28] ),
     .prog_clk_1_E_out(\prog_clk_1_wires[15] ),
     .prog_clk_1_N_in(\prog_clk_2_wires[21] ),
+    .prog_clk_1_S_in(\prog_clk_2_wires[21] ),
     .prog_clk_1_W_out(\prog_clk_1_wires[16] ),
     .right_bottom_grid_pin_34_(grid_clb_12_top_width_0_height_0__pin_34_upper),
     .right_bottom_grid_pin_35_(grid_clb_12_top_width_0_height_0__pin_35_upper),
@@ -27789,8 +28297,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_in({ \cby_1__1__6_chany_bottom_out[0] , \cby_1__1__6_chany_bottom_out[1] , \cby_1__1__6_chany_bottom_out[2] , \cby_1__1__6_chany_bottom_out[3] , \cby_1__1__6_chany_bottom_out[4] , \cby_1__1__6_chany_bottom_out[5] , \cby_1__1__6_chany_bottom_out[6] , \cby_1__1__6_chany_bottom_out[7] , \cby_1__1__6_chany_bottom_out[8] , \cby_1__1__6_chany_bottom_out[9] , \cby_1__1__6_chany_bottom_out[10] , \cby_1__1__6_chany_bottom_out[11] , \cby_1__1__6_chany_bottom_out[12] , \cby_1__1__6_chany_bottom_out[13] , \cby_1__1__6_chany_bottom_out[14] , \cby_1__1__6_chany_bottom_out[15] , \cby_1__1__6_chany_bottom_out[16] , \cby_1__1__6_chany_bottom_out[17] , \cby_1__1__6_chany_bottom_out[18] , \cby_1__1__6_chany_bottom_out[19]  }),
     .chany_top_out({ \sb_1__1__5_chany_top_out[0] , \sb_1__1__5_chany_top_out[1] , \sb_1__1__5_chany_top_out[2] , \sb_1__1__5_chany_top_out[3] , \sb_1__1__5_chany_top_out[4] , \sb_1__1__5_chany_top_out[5] , \sb_1__1__5_chany_top_out[6] , \sb_1__1__5_chany_top_out[7] , \sb_1__1__5_chany_top_out[8] , \sb_1__1__5_chany_top_out[9] , \sb_1__1__5_chany_top_out[10] , \sb_1__1__5_chany_top_out[11] , \sb_1__1__5_chany_top_out[12] , \sb_1__1__5_chany_top_out[13] , \sb_1__1__5_chany_top_out[14] , \sb_1__1__5_chany_top_out[15] , \sb_1__1__5_chany_top_out[16] , \sb_1__1__5_chany_top_out[17] , \sb_1__1__5_chany_top_out[18] , \sb_1__1__5_chany_top_out[19]  }),
     .clk_2_E_in(\clk_2_wires[17] ),
+    .clk_2_N_in(\clk_2_wires[17] ),
     .clk_2_N_out(\clk_2_wires[18] ),
+    .clk_2_S_in(\clk_2_wires[17] ),
     .clk_2_S_out(\clk_2_wires[20] ),
+    .clk_2_W_in(\clk_2_wires[17] ),
     .left_bottom_grid_pin_34_(grid_clb_5_top_width_0_height_0__pin_34_lower),
     .left_bottom_grid_pin_35_(grid_clb_5_top_width_0_height_0__pin_35_lower),
     .left_bottom_grid_pin_36_(grid_clb_5_top_width_0_height_0__pin_36_lower),
@@ -27801,8 +28312,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_bottom_grid_pin_41_(grid_clb_5_top_width_0_height_0__pin_41_lower),
     .prog_clk_0_N_in(\prog_clk_0_wires[33] ),
     .prog_clk_2_E_in(\prog_clk_2_wires[17] ),
+    .prog_clk_2_N_in(\prog_clk_2_wires[17] ),
     .prog_clk_2_N_out(\prog_clk_2_wires[18] ),
+    .prog_clk_2_S_in(\prog_clk_2_wires[17] ),
     .prog_clk_2_S_out(\prog_clk_2_wires[20] ),
+    .prog_clk_2_W_in(\prog_clk_2_wires[17] ),
     .right_bottom_grid_pin_34_(grid_clb_13_top_width_0_height_0__pin_34_upper),
     .right_bottom_grid_pin_35_(grid_clb_13_top_width_0_height_0__pin_35_upper),
     .right_bottom_grid_pin_36_(grid_clb_13_top_width_0_height_0__pin_36_upper),
@@ -27842,6 +28356,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_in({ \cby_1__1__7_chany_bottom_out[0] , \cby_1__1__7_chany_bottom_out[1] , \cby_1__1__7_chany_bottom_out[2] , \cby_1__1__7_chany_bottom_out[3] , \cby_1__1__7_chany_bottom_out[4] , \cby_1__1__7_chany_bottom_out[5] , \cby_1__1__7_chany_bottom_out[6] , \cby_1__1__7_chany_bottom_out[7] , \cby_1__1__7_chany_bottom_out[8] , \cby_1__1__7_chany_bottom_out[9] , \cby_1__1__7_chany_bottom_out[10] , \cby_1__1__7_chany_bottom_out[11] , \cby_1__1__7_chany_bottom_out[12] , \cby_1__1__7_chany_bottom_out[13] , \cby_1__1__7_chany_bottom_out[14] , \cby_1__1__7_chany_bottom_out[15] , \cby_1__1__7_chany_bottom_out[16] , \cby_1__1__7_chany_bottom_out[17] , \cby_1__1__7_chany_bottom_out[18] , \cby_1__1__7_chany_bottom_out[19]  }),
     .chany_top_out({ \sb_1__1__6_chany_top_out[0] , \sb_1__1__6_chany_top_out[1] , \sb_1__1__6_chany_top_out[2] , \sb_1__1__6_chany_top_out[3] , \sb_1__1__6_chany_top_out[4] , \sb_1__1__6_chany_top_out[5] , \sb_1__1__6_chany_top_out[6] , \sb_1__1__6_chany_top_out[7] , \sb_1__1__6_chany_top_out[8] , \sb_1__1__6_chany_top_out[9] , \sb_1__1__6_chany_top_out[10] , \sb_1__1__6_chany_top_out[11] , \sb_1__1__6_chany_top_out[12] , \sb_1__1__6_chany_top_out[13] , \sb_1__1__6_chany_top_out[14] , \sb_1__1__6_chany_top_out[15] , \sb_1__1__6_chany_top_out[16] , \sb_1__1__6_chany_top_out[17] , \sb_1__1__6_chany_top_out[18] , \sb_1__1__6_chany_top_out[19]  }),
     .clk_1_E_out(\clk_1_wires[22] ),
+    .clk_1_N_in(\clk_2_wires[19] ),
     .clk_1_S_in(\clk_2_wires[19] ),
     .clk_1_W_out(\clk_1_wires[23] ),
     .left_bottom_grid_pin_34_(grid_clb_6_top_width_0_height_0__pin_34_lower),
@@ -27854,6 +28369,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_bottom_grid_pin_41_(grid_clb_6_top_width_0_height_0__pin_41_lower),
     .prog_clk_0_N_in(\prog_clk_0_wires[38] ),
     .prog_clk_1_E_out(\prog_clk_1_wires[22] ),
+    .prog_clk_1_N_in(\prog_clk_2_wires[19] ),
     .prog_clk_1_S_in(\prog_clk_2_wires[19] ),
     .prog_clk_1_W_out(\prog_clk_1_wires[23] ),
     .right_bottom_grid_pin_34_(grid_clb_14_top_width_0_height_0__pin_34_upper),
@@ -28019,8 +28535,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \sb_1__1__8_chany_bottom_out[0] , \sb_1__1__8_chany_bottom_out[1] , \sb_1__1__8_chany_bottom_out[2] , \sb_1__1__8_chany_bottom_out[3] , \sb_1__1__8_chany_bottom_out[4] , \sb_1__1__8_chany_bottom_out[5] , \sb_1__1__8_chany_bottom_out[6] , \sb_1__1__8_chany_bottom_out[7] , \sb_1__1__8_chany_bottom_out[8] , \sb_1__1__8_chany_bottom_out[9] , \sb_1__1__8_chany_bottom_out[10] , \sb_1__1__8_chany_bottom_out[11] , \sb_1__1__8_chany_bottom_out[12] , \sb_1__1__8_chany_bottom_out[13] , \sb_1__1__8_chany_bottom_out[14] , \sb_1__1__8_chany_bottom_out[15] , \sb_1__1__8_chany_bottom_out[16] , \sb_1__1__8_chany_bottom_out[17] , \sb_1__1__8_chany_bottom_out[18] , \sb_1__1__8_chany_bottom_out[19]  }),
     .chany_top_in({ \cby_1__1__10_chany_bottom_out[0] , \cby_1__1__10_chany_bottom_out[1] , \cby_1__1__10_chany_bottom_out[2] , \cby_1__1__10_chany_bottom_out[3] , \cby_1__1__10_chany_bottom_out[4] , \cby_1__1__10_chany_bottom_out[5] , \cby_1__1__10_chany_bottom_out[6] , \cby_1__1__10_chany_bottom_out[7] , \cby_1__1__10_chany_bottom_out[8] , \cby_1__1__10_chany_bottom_out[9] , \cby_1__1__10_chany_bottom_out[10] , \cby_1__1__10_chany_bottom_out[11] , \cby_1__1__10_chany_bottom_out[12] , \cby_1__1__10_chany_bottom_out[13] , \cby_1__1__10_chany_bottom_out[14] , \cby_1__1__10_chany_bottom_out[15] , \cby_1__1__10_chany_bottom_out[16] , \cby_1__1__10_chany_bottom_out[17] , \cby_1__1__10_chany_bottom_out[18] , \cby_1__1__10_chany_bottom_out[19]  }),
     .chany_top_out({ \sb_1__1__8_chany_top_out[0] , \sb_1__1__8_chany_top_out[1] , \sb_1__1__8_chany_top_out[2] , \sb_1__1__8_chany_top_out[3] , \sb_1__1__8_chany_top_out[4] , \sb_1__1__8_chany_top_out[5] , \sb_1__1__8_chany_top_out[6] , \sb_1__1__8_chany_top_out[7] , \sb_1__1__8_chany_top_out[8] , \sb_1__1__8_chany_top_out[9] , \sb_1__1__8_chany_top_out[10] , \sb_1__1__8_chany_top_out[11] , \sb_1__1__8_chany_top_out[12] , \sb_1__1__8_chany_top_out[13] , \sb_1__1__8_chany_top_out[14] , \sb_1__1__8_chany_top_out[15] , \sb_1__1__8_chany_top_out[16] , \sb_1__1__8_chany_top_out[17] , \sb_1__1__8_chany_top_out[18] , \sb_1__1__8_chany_top_out[19]  }),
+    .clk_2_E_in(\clk_3_wires[17] ),
     .clk_2_E_out(\clk_2_wires[1] ),
     .clk_2_N_in(\clk_3_wires[17] ),
+    .clk_2_S_in(\clk_3_wires[17] ),
+    .clk_2_W_in(\clk_3_wires[17] ),
     .clk_2_W_out(\clk_2_wires[3] ),
     .left_bottom_grid_pin_34_(grid_clb_9_top_width_0_height_0__pin_34_lower),
     .left_bottom_grid_pin_35_(grid_clb_9_top_width_0_height_0__pin_35_lower),
@@ -28031,8 +28550,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_bottom_grid_pin_40_(grid_clb_9_top_width_0_height_0__pin_40_lower),
     .left_bottom_grid_pin_41_(grid_clb_9_top_width_0_height_0__pin_41_lower),
     .prog_clk_0_N_in(\prog_clk_0_wires[51] ),
+    .prog_clk_2_E_in(\prog_clk_3_wires[17] ),
     .prog_clk_2_E_out(\prog_clk_2_wires[1] ),
     .prog_clk_2_N_in(\prog_clk_3_wires[17] ),
+    .prog_clk_2_S_in(\prog_clk_3_wires[17] ),
+    .prog_clk_2_W_in(\prog_clk_3_wires[17] ),
     .prog_clk_2_W_out(\prog_clk_2_wires[3] ),
     .right_bottom_grid_pin_34_(grid_clb_17_top_width_0_height_0__pin_34_upper),
     .right_bottom_grid_pin_35_(grid_clb_17_top_width_0_height_0__pin_35_upper),
@@ -28072,8 +28594,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \sb_1__1__9_chany_bottom_out[0] , \sb_1__1__9_chany_bottom_out[1] , \sb_1__1__9_chany_bottom_out[2] , \sb_1__1__9_chany_bottom_out[3] , \sb_1__1__9_chany_bottom_out[4] , \sb_1__1__9_chany_bottom_out[5] , \sb_1__1__9_chany_bottom_out[6] , \sb_1__1__9_chany_bottom_out[7] , \sb_1__1__9_chany_bottom_out[8] , \sb_1__1__9_chany_bottom_out[9] , \sb_1__1__9_chany_bottom_out[10] , \sb_1__1__9_chany_bottom_out[11] , \sb_1__1__9_chany_bottom_out[12] , \sb_1__1__9_chany_bottom_out[13] , \sb_1__1__9_chany_bottom_out[14] , \sb_1__1__9_chany_bottom_out[15] , \sb_1__1__9_chany_bottom_out[16] , \sb_1__1__9_chany_bottom_out[17] , \sb_1__1__9_chany_bottom_out[18] , \sb_1__1__9_chany_bottom_out[19]  }),
     .chany_top_in({ \cby_1__1__11_chany_bottom_out[0] , \cby_1__1__11_chany_bottom_out[1] , \cby_1__1__11_chany_bottom_out[2] , \cby_1__1__11_chany_bottom_out[3] , \cby_1__1__11_chany_bottom_out[4] , \cby_1__1__11_chany_bottom_out[5] , \cby_1__1__11_chany_bottom_out[6] , \cby_1__1__11_chany_bottom_out[7] , \cby_1__1__11_chany_bottom_out[8] , \cby_1__1__11_chany_bottom_out[9] , \cby_1__1__11_chany_bottom_out[10] , \cby_1__1__11_chany_bottom_out[11] , \cby_1__1__11_chany_bottom_out[12] , \cby_1__1__11_chany_bottom_out[13] , \cby_1__1__11_chany_bottom_out[14] , \cby_1__1__11_chany_bottom_out[15] , \cby_1__1__11_chany_bottom_out[16] , \cby_1__1__11_chany_bottom_out[17] , \cby_1__1__11_chany_bottom_out[18] , \cby_1__1__11_chany_bottom_out[19]  }),
     .chany_top_out({ \sb_1__1__9_chany_top_out[0] , \sb_1__1__9_chany_top_out[1] , \sb_1__1__9_chany_top_out[2] , \sb_1__1__9_chany_top_out[3] , \sb_1__1__9_chany_top_out[4] , \sb_1__1__9_chany_top_out[5] , \sb_1__1__9_chany_top_out[6] , \sb_1__1__9_chany_top_out[7] , \sb_1__1__9_chany_top_out[8] , \sb_1__1__9_chany_top_out[9] , \sb_1__1__9_chany_top_out[10] , \sb_1__1__9_chany_top_out[11] , \sb_1__1__9_chany_top_out[12] , \sb_1__1__9_chany_top_out[13] , \sb_1__1__9_chany_top_out[14] , \sb_1__1__9_chany_top_out[15] , \sb_1__1__9_chany_top_out[16] , \sb_1__1__9_chany_top_out[17] , \sb_1__1__9_chany_top_out[18] , \sb_1__1__9_chany_top_out[19]  }),
+    .clk_3_E_in(\clk_3_wires[13] ),
     .clk_3_N_in(\clk_3_wires[13] ),
+    .clk_3_S_in(\clk_3_wires[13] ),
     .clk_3_S_out(\clk_3_wires[16] ),
+    .clk_3_W_in(\clk_3_wires[13] ),
     .left_bottom_grid_pin_34_(grid_clb_10_top_width_0_height_0__pin_34_lower),
     .left_bottom_grid_pin_35_(grid_clb_10_top_width_0_height_0__pin_35_lower),
     .left_bottom_grid_pin_36_(grid_clb_10_top_width_0_height_0__pin_36_lower),
@@ -28083,8 +28608,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_bottom_grid_pin_40_(grid_clb_10_top_width_0_height_0__pin_40_lower),
     .left_bottom_grid_pin_41_(grid_clb_10_top_width_0_height_0__pin_41_lower),
     .prog_clk_0_N_in(\prog_clk_0_wires[54] ),
+    .prog_clk_3_E_in(\prog_clk_3_wires[13] ),
     .prog_clk_3_N_in(\prog_clk_3_wires[13] ),
+    .prog_clk_3_S_in(\prog_clk_3_wires[13] ),
     .prog_clk_3_S_out(\prog_clk_3_wires[16] ),
+    .prog_clk_3_W_in(\prog_clk_3_wires[13] ),
     .right_bottom_grid_pin_34_(grid_clb_18_top_width_0_height_0__pin_34_upper),
     .right_bottom_grid_pin_35_(grid_clb_18_top_width_0_height_0__pin_35_upper),
     .right_bottom_grid_pin_36_(grid_clb_18_top_width_0_height_0__pin_36_upper),
@@ -28124,8 +28652,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_in({ \cby_1__1__12_chany_bottom_out[0] , \cby_1__1__12_chany_bottom_out[1] , \cby_1__1__12_chany_bottom_out[2] , \cby_1__1__12_chany_bottom_out[3] , \cby_1__1__12_chany_bottom_out[4] , \cby_1__1__12_chany_bottom_out[5] , \cby_1__1__12_chany_bottom_out[6] , \cby_1__1__12_chany_bottom_out[7] , \cby_1__1__12_chany_bottom_out[8] , \cby_1__1__12_chany_bottom_out[9] , \cby_1__1__12_chany_bottom_out[10] , \cby_1__1__12_chany_bottom_out[11] , \cby_1__1__12_chany_bottom_out[12] , \cby_1__1__12_chany_bottom_out[13] , \cby_1__1__12_chany_bottom_out[14] , \cby_1__1__12_chany_bottom_out[15] , \cby_1__1__12_chany_bottom_out[16] , \cby_1__1__12_chany_bottom_out[17] , \cby_1__1__12_chany_bottom_out[18] , \cby_1__1__12_chany_bottom_out[19]  }),
     .chany_top_out({ \sb_1__1__10_chany_top_out[0] , \sb_1__1__10_chany_top_out[1] , \sb_1__1__10_chany_top_out[2] , \sb_1__1__10_chany_top_out[3] , \sb_1__1__10_chany_top_out[4] , \sb_1__1__10_chany_top_out[5] , \sb_1__1__10_chany_top_out[6] , \sb_1__1__10_chany_top_out[7] , \sb_1__1__10_chany_top_out[8] , \sb_1__1__10_chany_top_out[9] , \sb_1__1__10_chany_top_out[10] , \sb_1__1__10_chany_top_out[11] , \sb_1__1__10_chany_top_out[12] , \sb_1__1__10_chany_top_out[13] , \sb_1__1__10_chany_top_out[14] , \sb_1__1__10_chany_top_out[15] , \sb_1__1__10_chany_top_out[16] , \sb_1__1__10_chany_top_out[17] , \sb_1__1__10_chany_top_out[18] , \sb_1__1__10_chany_top_out[19]  }),
     .clk_3_E_in(\clk_3_wires[9] ),
+    .clk_3_N_in(\clk_3_wires[9] ),
     .clk_3_N_out(\clk_3_wires[10] ),
+    .clk_3_S_in(\clk_3_wires[9] ),
     .clk_3_S_out(\clk_3_wires[12] ),
+    .clk_3_W_in(\clk_3_wires[9] ),
     .left_bottom_grid_pin_34_(grid_clb_11_top_width_0_height_0__pin_34_lower),
     .left_bottom_grid_pin_35_(grid_clb_11_top_width_0_height_0__pin_35_lower),
     .left_bottom_grid_pin_36_(grid_clb_11_top_width_0_height_0__pin_36_lower),
@@ -28136,8 +28667,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_bottom_grid_pin_41_(grid_clb_11_top_width_0_height_0__pin_41_lower),
     .prog_clk_0_N_in(\prog_clk_0_wires[57] ),
     .prog_clk_3_E_in(\prog_clk_3_wires[9] ),
+    .prog_clk_3_N_in(\prog_clk_3_wires[9] ),
     .prog_clk_3_N_out(\prog_clk_3_wires[10] ),
+    .prog_clk_3_S_in(\prog_clk_3_wires[9] ),
     .prog_clk_3_S_out(\prog_clk_3_wires[12] ),
+    .prog_clk_3_W_in(\prog_clk_3_wires[9] ),
     .right_bottom_grid_pin_34_(grid_clb_19_top_width_0_height_0__pin_34_upper),
     .right_bottom_grid_pin_35_(grid_clb_19_top_width_0_height_0__pin_35_upper),
     .right_bottom_grid_pin_36_(grid_clb_19_top_width_0_height_0__pin_36_upper),
@@ -28176,8 +28710,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \sb_1__1__11_chany_bottom_out[0] , \sb_1__1__11_chany_bottom_out[1] , \sb_1__1__11_chany_bottom_out[2] , \sb_1__1__11_chany_bottom_out[3] , \sb_1__1__11_chany_bottom_out[4] , \sb_1__1__11_chany_bottom_out[5] , \sb_1__1__11_chany_bottom_out[6] , \sb_1__1__11_chany_bottom_out[7] , \sb_1__1__11_chany_bottom_out[8] , \sb_1__1__11_chany_bottom_out[9] , \sb_1__1__11_chany_bottom_out[10] , \sb_1__1__11_chany_bottom_out[11] , \sb_1__1__11_chany_bottom_out[12] , \sb_1__1__11_chany_bottom_out[13] , \sb_1__1__11_chany_bottom_out[14] , \sb_1__1__11_chany_bottom_out[15] , \sb_1__1__11_chany_bottom_out[16] , \sb_1__1__11_chany_bottom_out[17] , \sb_1__1__11_chany_bottom_out[18] , \sb_1__1__11_chany_bottom_out[19]  }),
     .chany_top_in({ \cby_1__1__13_chany_bottom_out[0] , \cby_1__1__13_chany_bottom_out[1] , \cby_1__1__13_chany_bottom_out[2] , \cby_1__1__13_chany_bottom_out[3] , \cby_1__1__13_chany_bottom_out[4] , \cby_1__1__13_chany_bottom_out[5] , \cby_1__1__13_chany_bottom_out[6] , \cby_1__1__13_chany_bottom_out[7] , \cby_1__1__13_chany_bottom_out[8] , \cby_1__1__13_chany_bottom_out[9] , \cby_1__1__13_chany_bottom_out[10] , \cby_1__1__13_chany_bottom_out[11] , \cby_1__1__13_chany_bottom_out[12] , \cby_1__1__13_chany_bottom_out[13] , \cby_1__1__13_chany_bottom_out[14] , \cby_1__1__13_chany_bottom_out[15] , \cby_1__1__13_chany_bottom_out[16] , \cby_1__1__13_chany_bottom_out[17] , \cby_1__1__13_chany_bottom_out[18] , \cby_1__1__13_chany_bottom_out[19]  }),
     .chany_top_out({ \sb_1__1__11_chany_top_out[0] , \sb_1__1__11_chany_top_out[1] , \sb_1__1__11_chany_top_out[2] , \sb_1__1__11_chany_top_out[3] , \sb_1__1__11_chany_top_out[4] , \sb_1__1__11_chany_top_out[5] , \sb_1__1__11_chany_top_out[6] , \sb_1__1__11_chany_top_out[7] , \sb_1__1__11_chany_top_out[8] , \sb_1__1__11_chany_top_out[9] , \sb_1__1__11_chany_top_out[10] , \sb_1__1__11_chany_top_out[11] , \sb_1__1__11_chany_top_out[12] , \sb_1__1__11_chany_top_out[13] , \sb_1__1__11_chany_top_out[14] , \sb_1__1__11_chany_top_out[15] , \sb_1__1__11_chany_top_out[16] , \sb_1__1__11_chany_top_out[17] , \sb_1__1__11_chany_top_out[18] , \sb_1__1__11_chany_top_out[19]  }),
+    .clk_3_E_in(\clk_3_wires[11] ),
+    .clk_3_N_in(\clk_3_wires[11] ),
     .clk_3_N_out(\clk_3_wires[14] ),
     .clk_3_S_in(\clk_3_wires[11] ),
+    .clk_3_W_in(\clk_3_wires[11] ),
     .left_bottom_grid_pin_34_(grid_clb_12_top_width_0_height_0__pin_34_lower),
     .left_bottom_grid_pin_35_(grid_clb_12_top_width_0_height_0__pin_35_lower),
     .left_bottom_grid_pin_36_(grid_clb_12_top_width_0_height_0__pin_36_lower),
@@ -28187,8 +28724,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_bottom_grid_pin_40_(grid_clb_12_top_width_0_height_0__pin_40_lower),
     .left_bottom_grid_pin_41_(grid_clb_12_top_width_0_height_0__pin_41_lower),
     .prog_clk_0_N_in(\prog_clk_0_wires[60] ),
+    .prog_clk_3_E_in(\prog_clk_3_wires[11] ),
+    .prog_clk_3_N_in(\prog_clk_3_wires[11] ),
     .prog_clk_3_N_out(\prog_clk_3_wires[14] ),
     .prog_clk_3_S_in(\prog_clk_3_wires[11] ),
+    .prog_clk_3_W_in(\prog_clk_3_wires[11] ),
     .right_bottom_grid_pin_34_(grid_clb_20_top_width_0_height_0__pin_34_upper),
     .right_bottom_grid_pin_35_(grid_clb_20_top_width_0_height_0__pin_35_upper),
     .right_bottom_grid_pin_36_(grid_clb_20_top_width_0_height_0__pin_36_upper),
@@ -28227,8 +28767,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \sb_1__1__12_chany_bottom_out[0] , \sb_1__1__12_chany_bottom_out[1] , \sb_1__1__12_chany_bottom_out[2] , \sb_1__1__12_chany_bottom_out[3] , \sb_1__1__12_chany_bottom_out[4] , \sb_1__1__12_chany_bottom_out[5] , \sb_1__1__12_chany_bottom_out[6] , \sb_1__1__12_chany_bottom_out[7] , \sb_1__1__12_chany_bottom_out[8] , \sb_1__1__12_chany_bottom_out[9] , \sb_1__1__12_chany_bottom_out[10] , \sb_1__1__12_chany_bottom_out[11] , \sb_1__1__12_chany_bottom_out[12] , \sb_1__1__12_chany_bottom_out[13] , \sb_1__1__12_chany_bottom_out[14] , \sb_1__1__12_chany_bottom_out[15] , \sb_1__1__12_chany_bottom_out[16] , \sb_1__1__12_chany_bottom_out[17] , \sb_1__1__12_chany_bottom_out[18] , \sb_1__1__12_chany_bottom_out[19]  }),
     .chany_top_in({ \cby_1__1__14_chany_bottom_out[0] , \cby_1__1__14_chany_bottom_out[1] , \cby_1__1__14_chany_bottom_out[2] , \cby_1__1__14_chany_bottom_out[3] , \cby_1__1__14_chany_bottom_out[4] , \cby_1__1__14_chany_bottom_out[5] , \cby_1__1__14_chany_bottom_out[6] , \cby_1__1__14_chany_bottom_out[7] , \cby_1__1__14_chany_bottom_out[8] , \cby_1__1__14_chany_bottom_out[9] , \cby_1__1__14_chany_bottom_out[10] , \cby_1__1__14_chany_bottom_out[11] , \cby_1__1__14_chany_bottom_out[12] , \cby_1__1__14_chany_bottom_out[13] , \cby_1__1__14_chany_bottom_out[14] , \cby_1__1__14_chany_bottom_out[15] , \cby_1__1__14_chany_bottom_out[16] , \cby_1__1__14_chany_bottom_out[17] , \cby_1__1__14_chany_bottom_out[18] , \cby_1__1__14_chany_bottom_out[19]  }),
     .chany_top_out({ \sb_1__1__12_chany_top_out[0] , \sb_1__1__12_chany_top_out[1] , \sb_1__1__12_chany_top_out[2] , \sb_1__1__12_chany_top_out[3] , \sb_1__1__12_chany_top_out[4] , \sb_1__1__12_chany_top_out[5] , \sb_1__1__12_chany_top_out[6] , \sb_1__1__12_chany_top_out[7] , \sb_1__1__12_chany_top_out[8] , \sb_1__1__12_chany_top_out[9] , \sb_1__1__12_chany_top_out[10] , \sb_1__1__12_chany_top_out[11] , \sb_1__1__12_chany_top_out[12] , \sb_1__1__12_chany_top_out[13] , \sb_1__1__12_chany_top_out[14] , \sb_1__1__12_chany_top_out[15] , \sb_1__1__12_chany_top_out[16] , \sb_1__1__12_chany_top_out[17] , \sb_1__1__12_chany_top_out[18] , \sb_1__1__12_chany_top_out[19]  }),
+    .clk_2_E_in(\clk_3_wires[15] ),
     .clk_2_E_out(\clk_2_wires[14] ),
+    .clk_2_N_in(\clk_3_wires[15] ),
     .clk_2_S_in(\clk_3_wires[15] ),
+    .clk_2_W_in(\clk_3_wires[15] ),
     .clk_2_W_out(\clk_2_wires[16] ),
     .left_bottom_grid_pin_34_(grid_clb_13_top_width_0_height_0__pin_34_lower),
     .left_bottom_grid_pin_35_(grid_clb_13_top_width_0_height_0__pin_35_lower),
@@ -28239,8 +28782,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_bottom_grid_pin_40_(grid_clb_13_top_width_0_height_0__pin_40_lower),
     .left_bottom_grid_pin_41_(grid_clb_13_top_width_0_height_0__pin_41_lower),
     .prog_clk_0_N_in(\prog_clk_0_wires[63] ),
+    .prog_clk_2_E_in(\prog_clk_3_wires[15] ),
     .prog_clk_2_E_out(\prog_clk_2_wires[14] ),
+    .prog_clk_2_N_in(\prog_clk_3_wires[15] ),
     .prog_clk_2_S_in(\prog_clk_3_wires[15] ),
+    .prog_clk_2_W_in(\prog_clk_3_wires[15] ),
     .prog_clk_2_W_out(\prog_clk_2_wires[16] ),
     .right_bottom_grid_pin_34_(grid_clb_21_top_width_0_height_0__pin_34_upper),
     .right_bottom_grid_pin_35_(grid_clb_21_top_width_0_height_0__pin_35_upper),
@@ -28411,6 +28957,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_out({ \sb_1__1__14_chany_top_out[0] , \sb_1__1__14_chany_top_out[1] , \sb_1__1__14_chany_top_out[2] , \sb_1__1__14_chany_top_out[3] , \sb_1__1__14_chany_top_out[4] , \sb_1__1__14_chany_top_out[5] , \sb_1__1__14_chany_top_out[6] , \sb_1__1__14_chany_top_out[7] , \sb_1__1__14_chany_top_out[8] , \sb_1__1__14_chany_top_out[9] , \sb_1__1__14_chany_top_out[10] , \sb_1__1__14_chany_top_out[11] , \sb_1__1__14_chany_top_out[12] , \sb_1__1__14_chany_top_out[13] , \sb_1__1__14_chany_top_out[14] , \sb_1__1__14_chany_top_out[15] , \sb_1__1__14_chany_top_out[16] , \sb_1__1__14_chany_top_out[17] , \sb_1__1__14_chany_top_out[18] , \sb_1__1__14_chany_top_out[19]  }),
     .clk_1_E_out(\clk_1_wires[29] ),
     .clk_1_N_in(\clk_2_wires[12] ),
+    .clk_1_S_in(\clk_2_wires[12] ),
     .clk_1_W_out(\clk_1_wires[30] ),
     .left_bottom_grid_pin_34_(grid_clb_16_top_width_0_height_0__pin_34_lower),
     .left_bottom_grid_pin_35_(grid_clb_16_top_width_0_height_0__pin_35_lower),
@@ -28423,6 +28970,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_N_in(\prog_clk_0_wires[74] ),
     .prog_clk_1_E_out(\prog_clk_1_wires[29] ),
     .prog_clk_1_N_in(\prog_clk_2_wires[12] ),
+    .prog_clk_1_S_in(\prog_clk_2_wires[12] ),
     .prog_clk_1_W_out(\prog_clk_1_wires[30] ),
     .right_bottom_grid_pin_34_(grid_clb_24_top_width_0_height_0__pin_34_upper),
     .right_bottom_grid_pin_35_(grid_clb_24_top_width_0_height_0__pin_35_upper),
@@ -28462,7 +29010,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \sb_1__1__15_chany_bottom_out[0] , \sb_1__1__15_chany_bottom_out[1] , \sb_1__1__15_chany_bottom_out[2] , \sb_1__1__15_chany_bottom_out[3] , \sb_1__1__15_chany_bottom_out[4] , \sb_1__1__15_chany_bottom_out[5] , \sb_1__1__15_chany_bottom_out[6] , \sb_1__1__15_chany_bottom_out[7] , \sb_1__1__15_chany_bottom_out[8] , \sb_1__1__15_chany_bottom_out[9] , \sb_1__1__15_chany_bottom_out[10] , \sb_1__1__15_chany_bottom_out[11] , \sb_1__1__15_chany_bottom_out[12] , \sb_1__1__15_chany_bottom_out[13] , \sb_1__1__15_chany_bottom_out[14] , \sb_1__1__15_chany_bottom_out[15] , \sb_1__1__15_chany_bottom_out[16] , \sb_1__1__15_chany_bottom_out[17] , \sb_1__1__15_chany_bottom_out[18] , \sb_1__1__15_chany_bottom_out[19]  }),
     .chany_top_in({ \cby_1__1__18_chany_bottom_out[0] , \cby_1__1__18_chany_bottom_out[1] , \cby_1__1__18_chany_bottom_out[2] , \cby_1__1__18_chany_bottom_out[3] , \cby_1__1__18_chany_bottom_out[4] , \cby_1__1__18_chany_bottom_out[5] , \cby_1__1__18_chany_bottom_out[6] , \cby_1__1__18_chany_bottom_out[7] , \cby_1__1__18_chany_bottom_out[8] , \cby_1__1__18_chany_bottom_out[9] , \cby_1__1__18_chany_bottom_out[10] , \cby_1__1__18_chany_bottom_out[11] , \cby_1__1__18_chany_bottom_out[12] , \cby_1__1__18_chany_bottom_out[13] , \cby_1__1__18_chany_bottom_out[14] , \cby_1__1__18_chany_bottom_out[15] , \cby_1__1__18_chany_bottom_out[16] , \cby_1__1__18_chany_bottom_out[17] , \cby_1__1__18_chany_bottom_out[18] , \cby_1__1__18_chany_bottom_out[19]  }),
     .chany_top_out({ \sb_1__1__15_chany_top_out[0] , \sb_1__1__15_chany_top_out[1] , \sb_1__1__15_chany_top_out[2] , \sb_1__1__15_chany_top_out[3] , \sb_1__1__15_chany_top_out[4] , \sb_1__1__15_chany_top_out[5] , \sb_1__1__15_chany_top_out[6] , \sb_1__1__15_chany_top_out[7] , \sb_1__1__15_chany_top_out[8] , \sb_1__1__15_chany_top_out[9] , \sb_1__1__15_chany_top_out[10] , \sb_1__1__15_chany_top_out[11] , \sb_1__1__15_chany_top_out[12] , \sb_1__1__15_chany_top_out[13] , \sb_1__1__15_chany_top_out[14] , \sb_1__1__15_chany_top_out[15] , \sb_1__1__15_chany_top_out[16] , \sb_1__1__15_chany_top_out[17] , \sb_1__1__15_chany_top_out[18] , \sb_1__1__15_chany_top_out[19]  }),
+    .clk_2_E_in(\clk_2_wires[2] ),
+    .clk_2_N_in(\clk_2_wires[2] ),
     .clk_2_N_out(\clk_2_wires[9] ),
+    .clk_2_S_in(\clk_2_wires[2] ),
     .clk_2_S_out(\clk_2_wires[11] ),
     .clk_2_W_in(\clk_2_wires[2] ),
     .left_bottom_grid_pin_34_(grid_clb_17_top_width_0_height_0__pin_34_lower),
@@ -28474,7 +29025,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_bottom_grid_pin_40_(grid_clb_17_top_width_0_height_0__pin_40_lower),
     .left_bottom_grid_pin_41_(grid_clb_17_top_width_0_height_0__pin_41_lower),
     .prog_clk_0_N_in(\prog_clk_0_wires[77] ),
+    .prog_clk_2_E_in(\prog_clk_2_wires[2] ),
+    .prog_clk_2_N_in(\prog_clk_2_wires[2] ),
     .prog_clk_2_N_out(\prog_clk_2_wires[9] ),
+    .prog_clk_2_S_in(\prog_clk_2_wires[2] ),
     .prog_clk_2_S_out(\prog_clk_2_wires[11] ),
     .prog_clk_2_W_in(\prog_clk_2_wires[2] ),
     .right_bottom_grid_pin_34_(grid_clb_25_top_width_0_height_0__pin_34_upper),
@@ -28516,6 +29070,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_in({ \cby_1__1__19_chany_bottom_out[0] , \cby_1__1__19_chany_bottom_out[1] , \cby_1__1__19_chany_bottom_out[2] , \cby_1__1__19_chany_bottom_out[3] , \cby_1__1__19_chany_bottom_out[4] , \cby_1__1__19_chany_bottom_out[5] , \cby_1__1__19_chany_bottom_out[6] , \cby_1__1__19_chany_bottom_out[7] , \cby_1__1__19_chany_bottom_out[8] , \cby_1__1__19_chany_bottom_out[9] , \cby_1__1__19_chany_bottom_out[10] , \cby_1__1__19_chany_bottom_out[11] , \cby_1__1__19_chany_bottom_out[12] , \cby_1__1__19_chany_bottom_out[13] , \cby_1__1__19_chany_bottom_out[14] , \cby_1__1__19_chany_bottom_out[15] , \cby_1__1__19_chany_bottom_out[16] , \cby_1__1__19_chany_bottom_out[17] , \cby_1__1__19_chany_bottom_out[18] , \cby_1__1__19_chany_bottom_out[19]  }),
     .chany_top_out({ \sb_1__1__16_chany_top_out[0] , \sb_1__1__16_chany_top_out[1] , \sb_1__1__16_chany_top_out[2] , \sb_1__1__16_chany_top_out[3] , \sb_1__1__16_chany_top_out[4] , \sb_1__1__16_chany_top_out[5] , \sb_1__1__16_chany_top_out[6] , \sb_1__1__16_chany_top_out[7] , \sb_1__1__16_chany_top_out[8] , \sb_1__1__16_chany_top_out[9] , \sb_1__1__16_chany_top_out[10] , \sb_1__1__16_chany_top_out[11] , \sb_1__1__16_chany_top_out[12] , \sb_1__1__16_chany_top_out[13] , \sb_1__1__16_chany_top_out[14] , \sb_1__1__16_chany_top_out[15] , \sb_1__1__16_chany_top_out[16] , \sb_1__1__16_chany_top_out[17] , \sb_1__1__16_chany_top_out[18] , \sb_1__1__16_chany_top_out[19]  }),
     .clk_1_E_out(\clk_1_wires[36] ),
+    .clk_1_N_in(\clk_2_wires[10] ),
     .clk_1_S_in(\clk_2_wires[10] ),
     .clk_1_W_out(\clk_1_wires[37] ),
     .left_bottom_grid_pin_34_(grid_clb_18_top_width_0_height_0__pin_34_lower),
@@ -28528,6 +29083,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_bottom_grid_pin_41_(grid_clb_18_top_width_0_height_0__pin_41_lower),
     .prog_clk_0_N_in(\prog_clk_0_wires[80] ),
     .prog_clk_1_E_out(\prog_clk_1_wires[36] ),
+    .prog_clk_1_N_in(\prog_clk_2_wires[10] ),
     .prog_clk_1_S_in(\prog_clk_2_wires[10] ),
     .prog_clk_1_W_out(\prog_clk_1_wires[37] ),
     .right_bottom_grid_pin_34_(grid_clb_26_top_width_0_height_0__pin_34_upper),
@@ -28569,6 +29125,9 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_in({ \cby_1__1__20_chany_bottom_out[0] , \cby_1__1__20_chany_bottom_out[1] , \cby_1__1__20_chany_bottom_out[2] , \cby_1__1__20_chany_bottom_out[3] , \cby_1__1__20_chany_bottom_out[4] , \cby_1__1__20_chany_bottom_out[5] , \cby_1__1__20_chany_bottom_out[6] , \cby_1__1__20_chany_bottom_out[7] , \cby_1__1__20_chany_bottom_out[8] , \cby_1__1__20_chany_bottom_out[9] , \cby_1__1__20_chany_bottom_out[10] , \cby_1__1__20_chany_bottom_out[11] , \cby_1__1__20_chany_bottom_out[12] , \cby_1__1__20_chany_bottom_out[13] , \cby_1__1__20_chany_bottom_out[14] , \cby_1__1__20_chany_bottom_out[15] , \cby_1__1__20_chany_bottom_out[16] , \cby_1__1__20_chany_bottom_out[17] , \cby_1__1__20_chany_bottom_out[18] , \cby_1__1__20_chany_bottom_out[19]  }),
     .chany_top_out({ \sb_1__1__17_chany_top_out[0] , \sb_1__1__17_chany_top_out[1] , \sb_1__1__17_chany_top_out[2] , \sb_1__1__17_chany_top_out[3] , \sb_1__1__17_chany_top_out[4] , \sb_1__1__17_chany_top_out[5] , \sb_1__1__17_chany_top_out[6] , \sb_1__1__17_chany_top_out[7] , \sb_1__1__17_chany_top_out[8] , \sb_1__1__17_chany_top_out[9] , \sb_1__1__17_chany_top_out[10] , \sb_1__1__17_chany_top_out[11] , \sb_1__1__17_chany_top_out[12] , \sb_1__1__17_chany_top_out[13] , \sb_1__1__17_chany_top_out[14] , \sb_1__1__17_chany_top_out[15] , \sb_1__1__17_chany_top_out[16] , \sb_1__1__17_chany_top_out[17] , \sb_1__1__17_chany_top_out[18] , \sb_1__1__17_chany_top_out[19]  }),
     .clk_3_E_in(\clk_3_wires[4] ),
+    .clk_3_N_in(\clk_3_wires[4] ),
+    .clk_3_S_in(\clk_3_wires[4] ),
+    .clk_3_W_in(\clk_3_wires[4] ),
     .clk_3_W_out(\clk_3_wires[8] ),
     .left_bottom_grid_pin_34_(grid_clb_19_top_width_0_height_0__pin_34_lower),
     .left_bottom_grid_pin_35_(grid_clb_19_top_width_0_height_0__pin_35_lower),
@@ -28580,6 +29139,9 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_bottom_grid_pin_41_(grid_clb_19_top_width_0_height_0__pin_41_lower),
     .prog_clk_0_N_in(\prog_clk_0_wires[83] ),
     .prog_clk_3_E_in(\prog_clk_3_wires[4] ),
+    .prog_clk_3_N_in(\prog_clk_3_wires[4] ),
+    .prog_clk_3_S_in(\prog_clk_3_wires[4] ),
+    .prog_clk_3_W_in(\prog_clk_3_wires[4] ),
     .prog_clk_3_W_out(\prog_clk_3_wires[8] ),
     .right_bottom_grid_pin_34_(grid_clb_27_top_width_0_height_0__pin_34_upper),
     .right_bottom_grid_pin_35_(grid_clb_27_top_width_0_height_0__pin_35_upper),
@@ -28621,6 +29183,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_out({ \sb_1__1__18_chany_top_out[0] , \sb_1__1__18_chany_top_out[1] , \sb_1__1__18_chany_top_out[2] , \sb_1__1__18_chany_top_out[3] , \sb_1__1__18_chany_top_out[4] , \sb_1__1__18_chany_top_out[5] , \sb_1__1__18_chany_top_out[6] , \sb_1__1__18_chany_top_out[7] , \sb_1__1__18_chany_top_out[8] , \sb_1__1__18_chany_top_out[9] , \sb_1__1__18_chany_top_out[10] , \sb_1__1__18_chany_top_out[11] , \sb_1__1__18_chany_top_out[12] , \sb_1__1__18_chany_top_out[13] , \sb_1__1__18_chany_top_out[14] , \sb_1__1__18_chany_top_out[15] , \sb_1__1__18_chany_top_out[16] , \sb_1__1__18_chany_top_out[17] , \sb_1__1__18_chany_top_out[18] , \sb_1__1__18_chany_top_out[19]  }),
     .clk_1_E_out(\clk_1_wires[43] ),
     .clk_1_N_in(\clk_2_wires[25] ),
+    .clk_1_S_in(\clk_2_wires[25] ),
     .clk_1_W_out(\clk_1_wires[44] ),
     .left_bottom_grid_pin_34_(grid_clb_20_top_width_0_height_0__pin_34_lower),
     .left_bottom_grid_pin_35_(grid_clb_20_top_width_0_height_0__pin_35_lower),
@@ -28633,6 +29196,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_N_in(\prog_clk_0_wires[86] ),
     .prog_clk_1_E_out(\prog_clk_1_wires[43] ),
     .prog_clk_1_N_in(\prog_clk_2_wires[25] ),
+    .prog_clk_1_S_in(\prog_clk_2_wires[25] ),
     .prog_clk_1_W_out(\prog_clk_1_wires[44] ),
     .right_bottom_grid_pin_34_(grid_clb_28_top_width_0_height_0__pin_34_upper),
     .right_bottom_grid_pin_35_(grid_clb_28_top_width_0_height_0__pin_35_upper),
@@ -28672,7 +29236,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \sb_1__1__19_chany_bottom_out[0] , \sb_1__1__19_chany_bottom_out[1] , \sb_1__1__19_chany_bottom_out[2] , \sb_1__1__19_chany_bottom_out[3] , \sb_1__1__19_chany_bottom_out[4] , \sb_1__1__19_chany_bottom_out[5] , \sb_1__1__19_chany_bottom_out[6] , \sb_1__1__19_chany_bottom_out[7] , \sb_1__1__19_chany_bottom_out[8] , \sb_1__1__19_chany_bottom_out[9] , \sb_1__1__19_chany_bottom_out[10] , \sb_1__1__19_chany_bottom_out[11] , \sb_1__1__19_chany_bottom_out[12] , \sb_1__1__19_chany_bottom_out[13] , \sb_1__1__19_chany_bottom_out[14] , \sb_1__1__19_chany_bottom_out[15] , \sb_1__1__19_chany_bottom_out[16] , \sb_1__1__19_chany_bottom_out[17] , \sb_1__1__19_chany_bottom_out[18] , \sb_1__1__19_chany_bottom_out[19]  }),
     .chany_top_in({ \cby_1__1__22_chany_bottom_out[0] , \cby_1__1__22_chany_bottom_out[1] , \cby_1__1__22_chany_bottom_out[2] , \cby_1__1__22_chany_bottom_out[3] , \cby_1__1__22_chany_bottom_out[4] , \cby_1__1__22_chany_bottom_out[5] , \cby_1__1__22_chany_bottom_out[6] , \cby_1__1__22_chany_bottom_out[7] , \cby_1__1__22_chany_bottom_out[8] , \cby_1__1__22_chany_bottom_out[9] , \cby_1__1__22_chany_bottom_out[10] , \cby_1__1__22_chany_bottom_out[11] , \cby_1__1__22_chany_bottom_out[12] , \cby_1__1__22_chany_bottom_out[13] , \cby_1__1__22_chany_bottom_out[14] , \cby_1__1__22_chany_bottom_out[15] , \cby_1__1__22_chany_bottom_out[16] , \cby_1__1__22_chany_bottom_out[17] , \cby_1__1__22_chany_bottom_out[18] , \cby_1__1__22_chany_bottom_out[19]  }),
     .chany_top_out({ \sb_1__1__19_chany_top_out[0] , \sb_1__1__19_chany_top_out[1] , \sb_1__1__19_chany_top_out[2] , \sb_1__1__19_chany_top_out[3] , \sb_1__1__19_chany_top_out[4] , \sb_1__1__19_chany_top_out[5] , \sb_1__1__19_chany_top_out[6] , \sb_1__1__19_chany_top_out[7] , \sb_1__1__19_chany_top_out[8] , \sb_1__1__19_chany_top_out[9] , \sb_1__1__19_chany_top_out[10] , \sb_1__1__19_chany_top_out[11] , \sb_1__1__19_chany_top_out[12] , \sb_1__1__19_chany_top_out[13] , \sb_1__1__19_chany_top_out[14] , \sb_1__1__19_chany_top_out[15] , \sb_1__1__19_chany_top_out[16] , \sb_1__1__19_chany_top_out[17] , \sb_1__1__19_chany_top_out[18] , \sb_1__1__19_chany_top_out[19]  }),
+    .clk_2_E_in(\clk_2_wires[15] ),
+    .clk_2_N_in(\clk_2_wires[15] ),
     .clk_2_N_out(\clk_2_wires[22] ),
+    .clk_2_S_in(\clk_2_wires[15] ),
     .clk_2_S_out(\clk_2_wires[24] ),
     .clk_2_W_in(\clk_2_wires[15] ),
     .left_bottom_grid_pin_34_(grid_clb_21_top_width_0_height_0__pin_34_lower),
@@ -28684,7 +29251,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_bottom_grid_pin_40_(grid_clb_21_top_width_0_height_0__pin_40_lower),
     .left_bottom_grid_pin_41_(grid_clb_21_top_width_0_height_0__pin_41_lower),
     .prog_clk_0_N_in(\prog_clk_0_wires[89] ),
+    .prog_clk_2_E_in(\prog_clk_2_wires[15] ),
+    .prog_clk_2_N_in(\prog_clk_2_wires[15] ),
     .prog_clk_2_N_out(\prog_clk_2_wires[22] ),
+    .prog_clk_2_S_in(\prog_clk_2_wires[15] ),
     .prog_clk_2_S_out(\prog_clk_2_wires[24] ),
     .prog_clk_2_W_in(\prog_clk_2_wires[15] ),
     .right_bottom_grid_pin_34_(grid_clb_29_top_width_0_height_0__pin_34_upper),
@@ -28726,6 +29296,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_in({ \cby_1__1__23_chany_bottom_out[0] , \cby_1__1__23_chany_bottom_out[1] , \cby_1__1__23_chany_bottom_out[2] , \cby_1__1__23_chany_bottom_out[3] , \cby_1__1__23_chany_bottom_out[4] , \cby_1__1__23_chany_bottom_out[5] , \cby_1__1__23_chany_bottom_out[6] , \cby_1__1__23_chany_bottom_out[7] , \cby_1__1__23_chany_bottom_out[8] , \cby_1__1__23_chany_bottom_out[9] , \cby_1__1__23_chany_bottom_out[10] , \cby_1__1__23_chany_bottom_out[11] , \cby_1__1__23_chany_bottom_out[12] , \cby_1__1__23_chany_bottom_out[13] , \cby_1__1__23_chany_bottom_out[14] , \cby_1__1__23_chany_bottom_out[15] , \cby_1__1__23_chany_bottom_out[16] , \cby_1__1__23_chany_bottom_out[17] , \cby_1__1__23_chany_bottom_out[18] , \cby_1__1__23_chany_bottom_out[19]  }),
     .chany_top_out({ \sb_1__1__20_chany_top_out[0] , \sb_1__1__20_chany_top_out[1] , \sb_1__1__20_chany_top_out[2] , \sb_1__1__20_chany_top_out[3] , \sb_1__1__20_chany_top_out[4] , \sb_1__1__20_chany_top_out[5] , \sb_1__1__20_chany_top_out[6] , \sb_1__1__20_chany_top_out[7] , \sb_1__1__20_chany_top_out[8] , \sb_1__1__20_chany_top_out[9] , \sb_1__1__20_chany_top_out[10] , \sb_1__1__20_chany_top_out[11] , \sb_1__1__20_chany_top_out[12] , \sb_1__1__20_chany_top_out[13] , \sb_1__1__20_chany_top_out[14] , \sb_1__1__20_chany_top_out[15] , \sb_1__1__20_chany_top_out[16] , \sb_1__1__20_chany_top_out[17] , \sb_1__1__20_chany_top_out[18] , \sb_1__1__20_chany_top_out[19]  }),
     .clk_1_E_out(\clk_1_wires[50] ),
+    .clk_1_N_in(\clk_2_wires[23] ),
     .clk_1_S_in(\clk_2_wires[23] ),
     .clk_1_W_out(\clk_1_wires[51] ),
     .left_bottom_grid_pin_34_(grid_clb_22_top_width_0_height_0__pin_34_lower),
@@ -28738,6 +29309,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_bottom_grid_pin_41_(grid_clb_22_top_width_0_height_0__pin_41_lower),
     .prog_clk_0_N_in(\prog_clk_0_wires[92] ),
     .prog_clk_1_E_out(\prog_clk_1_wires[50] ),
+    .prog_clk_1_N_in(\prog_clk_2_wires[23] ),
     .prog_clk_1_S_in(\prog_clk_2_wires[23] ),
     .prog_clk_1_W_out(\prog_clk_1_wires[51] ),
     .right_bottom_grid_pin_34_(grid_clb_30_top_width_0_height_0__pin_34_upper),
@@ -28864,8 +29436,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \sb_1__1__21_chany_bottom_out[0] , \sb_1__1__21_chany_bottom_out[1] , \sb_1__1__21_chany_bottom_out[2] , \sb_1__1__21_chany_bottom_out[3] , \sb_1__1__21_chany_bottom_out[4] , \sb_1__1__21_chany_bottom_out[5] , \sb_1__1__21_chany_bottom_out[6] , \sb_1__1__21_chany_bottom_out[7] , \sb_1__1__21_chany_bottom_out[8] , \sb_1__1__21_chany_bottom_out[9] , \sb_1__1__21_chany_bottom_out[10] , \sb_1__1__21_chany_bottom_out[11] , \sb_1__1__21_chany_bottom_out[12] , \sb_1__1__21_chany_bottom_out[13] , \sb_1__1__21_chany_bottom_out[14] , \sb_1__1__21_chany_bottom_out[15] , \sb_1__1__21_chany_bottom_out[16] , \sb_1__1__21_chany_bottom_out[17] , \sb_1__1__21_chany_bottom_out[18] , \sb_1__1__21_chany_bottom_out[19]  }),
     .chany_top_in({ \cby_1__1__25_chany_bottom_out[0] , \cby_1__1__25_chany_bottom_out[1] , \cby_1__1__25_chany_bottom_out[2] , \cby_1__1__25_chany_bottom_out[3] , \cby_1__1__25_chany_bottom_out[4] , \cby_1__1__25_chany_bottom_out[5] , \cby_1__1__25_chany_bottom_out[6] , \cby_1__1__25_chany_bottom_out[7] , \cby_1__1__25_chany_bottom_out[8] , \cby_1__1__25_chany_bottom_out[9] , \cby_1__1__25_chany_bottom_out[10] , \cby_1__1__25_chany_bottom_out[11] , \cby_1__1__25_chany_bottom_out[12] , \cby_1__1__25_chany_bottom_out[13] , \cby_1__1__25_chany_bottom_out[14] , \cby_1__1__25_chany_bottom_out[15] , \cby_1__1__25_chany_bottom_out[16] , \cby_1__1__25_chany_bottom_out[17] , \cby_1__1__25_chany_bottom_out[18] , \cby_1__1__25_chany_bottom_out[19]  }),
     .chany_top_out({ \sb_1__1__21_chany_top_out[0] , \sb_1__1__21_chany_top_out[1] , \sb_1__1__21_chany_top_out[2] , \sb_1__1__21_chany_top_out[3] , \sb_1__1__21_chany_top_out[4] , \sb_1__1__21_chany_top_out[5] , \sb_1__1__21_chany_top_out[6] , \sb_1__1__21_chany_top_out[7] , \sb_1__1__21_chany_top_out[8] , \sb_1__1__21_chany_top_out[9] , \sb_1__1__21_chany_top_out[10] , \sb_1__1__21_chany_top_out[11] , \sb_1__1__21_chany_top_out[12] , \sb_1__1__21_chany_top_out[13] , \sb_1__1__21_chany_top_out[14] , \sb_1__1__21_chany_top_out[15] , \sb_1__1__21_chany_top_out[16] , \sb_1__1__21_chany_top_out[17] , \sb_1__1__21_chany_top_out[18] , \sb_1__1__21_chany_top_out[19]  }),
+    .clk_3_E_in(\clk_3_wires[27] ),
+    .clk_3_N_in(\clk_3_wires[27] ),
     .clk_3_N_out(\clk_3_wires[30] ),
     .clk_3_S_in(\clk_3_wires[27] ),
+    .clk_3_W_in(\clk_3_wires[27] ),
     .left_bottom_grid_pin_34_(grid_clb_24_top_width_0_height_0__pin_34_lower),
     .left_bottom_grid_pin_35_(grid_clb_24_top_width_0_height_0__pin_35_lower),
     .left_bottom_grid_pin_36_(grid_clb_24_top_width_0_height_0__pin_36_lower),
@@ -28875,8 +29450,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_bottom_grid_pin_40_(grid_clb_24_top_width_0_height_0__pin_40_lower),
     .left_bottom_grid_pin_41_(grid_clb_24_top_width_0_height_0__pin_41_lower),
     .prog_clk_0_N_in(\prog_clk_0_wires[100] ),
+    .prog_clk_3_E_in(\prog_clk_3_wires[27] ),
+    .prog_clk_3_N_in(\prog_clk_3_wires[27] ),
     .prog_clk_3_N_out(\prog_clk_3_wires[30] ),
     .prog_clk_3_S_in(\prog_clk_3_wires[27] ),
+    .prog_clk_3_W_in(\prog_clk_3_wires[27] ),
     .right_bottom_grid_pin_34_(grid_clb_32_top_width_0_height_0__pin_34_upper),
     .right_bottom_grid_pin_35_(grid_clb_32_top_width_0_height_0__pin_35_upper),
     .right_bottom_grid_pin_36_(grid_clb_32_top_width_0_height_0__pin_36_upper),
@@ -28917,8 +29495,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \sb_1__1__22_chany_bottom_out[0] , \sb_1__1__22_chany_bottom_out[1] , \sb_1__1__22_chany_bottom_out[2] , \sb_1__1__22_chany_bottom_out[3] , \sb_1__1__22_chany_bottom_out[4] , \sb_1__1__22_chany_bottom_out[5] , \sb_1__1__22_chany_bottom_out[6] , \sb_1__1__22_chany_bottom_out[7] , \sb_1__1__22_chany_bottom_out[8] , \sb_1__1__22_chany_bottom_out[9] , \sb_1__1__22_chany_bottom_out[10] , \sb_1__1__22_chany_bottom_out[11] , \sb_1__1__22_chany_bottom_out[12] , \sb_1__1__22_chany_bottom_out[13] , \sb_1__1__22_chany_bottom_out[14] , \sb_1__1__22_chany_bottom_out[15] , \sb_1__1__22_chany_bottom_out[16] , \sb_1__1__22_chany_bottom_out[17] , \sb_1__1__22_chany_bottom_out[18] , \sb_1__1__22_chany_bottom_out[19]  }),
     .chany_top_in({ \cby_1__1__26_chany_bottom_out[0] , \cby_1__1__26_chany_bottom_out[1] , \cby_1__1__26_chany_bottom_out[2] , \cby_1__1__26_chany_bottom_out[3] , \cby_1__1__26_chany_bottom_out[4] , \cby_1__1__26_chany_bottom_out[5] , \cby_1__1__26_chany_bottom_out[6] , \cby_1__1__26_chany_bottom_out[7] , \cby_1__1__26_chany_bottom_out[8] , \cby_1__1__26_chany_bottom_out[9] , \cby_1__1__26_chany_bottom_out[10] , \cby_1__1__26_chany_bottom_out[11] , \cby_1__1__26_chany_bottom_out[12] , \cby_1__1__26_chany_bottom_out[13] , \cby_1__1__26_chany_bottom_out[14] , \cby_1__1__26_chany_bottom_out[15] , \cby_1__1__26_chany_bottom_out[16] , \cby_1__1__26_chany_bottom_out[17] , \cby_1__1__26_chany_bottom_out[18] , \cby_1__1__26_chany_bottom_out[19]  }),
     .chany_top_out({ \sb_1__1__22_chany_top_out[0] , \sb_1__1__22_chany_top_out[1] , \sb_1__1__22_chany_top_out[2] , \sb_1__1__22_chany_top_out[3] , \sb_1__1__22_chany_top_out[4] , \sb_1__1__22_chany_top_out[5] , \sb_1__1__22_chany_top_out[6] , \sb_1__1__22_chany_top_out[7] , \sb_1__1__22_chany_top_out[8] , \sb_1__1__22_chany_top_out[9] , \sb_1__1__22_chany_top_out[10] , \sb_1__1__22_chany_top_out[11] , \sb_1__1__22_chany_top_out[12] , \sb_1__1__22_chany_top_out[13] , \sb_1__1__22_chany_top_out[14] , \sb_1__1__22_chany_top_out[15] , \sb_1__1__22_chany_top_out[16] , \sb_1__1__22_chany_top_out[17] , \sb_1__1__22_chany_top_out[18] , \sb_1__1__22_chany_top_out[19]  }),
+    .clk_3_E_in(\clk_3_wires[29] ),
+    .clk_3_N_in(\clk_3_wires[29] ),
     .clk_3_N_out(\clk_3_wires[32] ),
     .clk_3_S_in(\clk_3_wires[29] ),
+    .clk_3_W_in(\clk_3_wires[29] ),
     .left_bottom_grid_pin_34_(grid_clb_25_top_width_0_height_0__pin_34_lower),
     .left_bottom_grid_pin_35_(grid_clb_25_top_width_0_height_0__pin_35_lower),
     .left_bottom_grid_pin_36_(grid_clb_25_top_width_0_height_0__pin_36_lower),
@@ -28928,8 +29509,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_bottom_grid_pin_40_(grid_clb_25_top_width_0_height_0__pin_40_lower),
     .left_bottom_grid_pin_41_(grid_clb_25_top_width_0_height_0__pin_41_lower),
     .prog_clk_0_N_in(\prog_clk_0_wires[103] ),
+    .prog_clk_3_E_in(\prog_clk_3_wires[29] ),
+    .prog_clk_3_N_in(\prog_clk_3_wires[29] ),
     .prog_clk_3_N_out(\prog_clk_3_wires[32] ),
     .prog_clk_3_S_in(\prog_clk_3_wires[29] ),
+    .prog_clk_3_W_in(\prog_clk_3_wires[29] ),
     .right_bottom_grid_pin_34_(grid_clb_33_top_width_0_height_0__pin_34_upper),
     .right_bottom_grid_pin_35_(grid_clb_33_top_width_0_height_0__pin_35_upper),
     .right_bottom_grid_pin_36_(grid_clb_33_top_width_0_height_0__pin_36_upper),
@@ -28970,8 +29554,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \sb_1__1__23_chany_bottom_out[0] , \sb_1__1__23_chany_bottom_out[1] , \sb_1__1__23_chany_bottom_out[2] , \sb_1__1__23_chany_bottom_out[3] , \sb_1__1__23_chany_bottom_out[4] , \sb_1__1__23_chany_bottom_out[5] , \sb_1__1__23_chany_bottom_out[6] , \sb_1__1__23_chany_bottom_out[7] , \sb_1__1__23_chany_bottom_out[8] , \sb_1__1__23_chany_bottom_out[9] , \sb_1__1__23_chany_bottom_out[10] , \sb_1__1__23_chany_bottom_out[11] , \sb_1__1__23_chany_bottom_out[12] , \sb_1__1__23_chany_bottom_out[13] , \sb_1__1__23_chany_bottom_out[14] , \sb_1__1__23_chany_bottom_out[15] , \sb_1__1__23_chany_bottom_out[16] , \sb_1__1__23_chany_bottom_out[17] , \sb_1__1__23_chany_bottom_out[18] , \sb_1__1__23_chany_bottom_out[19]  }),
     .chany_top_in({ \cby_1__1__27_chany_bottom_out[0] , \cby_1__1__27_chany_bottom_out[1] , \cby_1__1__27_chany_bottom_out[2] , \cby_1__1__27_chany_bottom_out[3] , \cby_1__1__27_chany_bottom_out[4] , \cby_1__1__27_chany_bottom_out[5] , \cby_1__1__27_chany_bottom_out[6] , \cby_1__1__27_chany_bottom_out[7] , \cby_1__1__27_chany_bottom_out[8] , \cby_1__1__27_chany_bottom_out[9] , \cby_1__1__27_chany_bottom_out[10] , \cby_1__1__27_chany_bottom_out[11] , \cby_1__1__27_chany_bottom_out[12] , \cby_1__1__27_chany_bottom_out[13] , \cby_1__1__27_chany_bottom_out[14] , \cby_1__1__27_chany_bottom_out[15] , \cby_1__1__27_chany_bottom_out[16] , \cby_1__1__27_chany_bottom_out[17] , \cby_1__1__27_chany_bottom_out[18] , \cby_1__1__27_chany_bottom_out[19]  }),
     .chany_top_out({ \sb_1__1__23_chany_top_out[0] , \sb_1__1__23_chany_top_out[1] , \sb_1__1__23_chany_top_out[2] , \sb_1__1__23_chany_top_out[3] , \sb_1__1__23_chany_top_out[4] , \sb_1__1__23_chany_top_out[5] , \sb_1__1__23_chany_top_out[6] , \sb_1__1__23_chany_top_out[7] , \sb_1__1__23_chany_top_out[8] , \sb_1__1__23_chany_top_out[9] , \sb_1__1__23_chany_top_out[10] , \sb_1__1__23_chany_top_out[11] , \sb_1__1__23_chany_top_out[12] , \sb_1__1__23_chany_top_out[13] , \sb_1__1__23_chany_top_out[14] , \sb_1__1__23_chany_top_out[15] , \sb_1__1__23_chany_top_out[16] , \sb_1__1__23_chany_top_out[17] , \sb_1__1__23_chany_top_out[18] , \sb_1__1__23_chany_top_out[19]  }),
+    .clk_3_E_in(\clk_3_wires[31] ),
+    .clk_3_N_in(\clk_3_wires[31] ),
     .clk_3_N_out(\clk_3_wires[34] ),
     .clk_3_S_in(\clk_3_wires[31] ),
+    .clk_3_W_in(\clk_3_wires[31] ),
     .left_bottom_grid_pin_34_(grid_clb_26_top_width_0_height_0__pin_34_lower),
     .left_bottom_grid_pin_35_(grid_clb_26_top_width_0_height_0__pin_35_lower),
     .left_bottom_grid_pin_36_(grid_clb_26_top_width_0_height_0__pin_36_lower),
@@ -28981,8 +29568,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_bottom_grid_pin_40_(grid_clb_26_top_width_0_height_0__pin_40_lower),
     .left_bottom_grid_pin_41_(grid_clb_26_top_width_0_height_0__pin_41_lower),
     .prog_clk_0_N_in(\prog_clk_0_wires[106] ),
+    .prog_clk_3_E_in(\prog_clk_3_wires[31] ),
+    .prog_clk_3_N_in(\prog_clk_3_wires[31] ),
     .prog_clk_3_N_out(\prog_clk_3_wires[34] ),
     .prog_clk_3_S_in(\prog_clk_3_wires[31] ),
+    .prog_clk_3_W_in(\prog_clk_3_wires[31] ),
     .right_bottom_grid_pin_34_(grid_clb_34_top_width_0_height_0__pin_34_upper),
     .right_bottom_grid_pin_35_(grid_clb_34_top_width_0_height_0__pin_35_upper),
     .right_bottom_grid_pin_36_(grid_clb_34_top_width_0_height_0__pin_36_upper),
@@ -29023,8 +29613,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \sb_1__1__24_chany_bottom_out[0] , \sb_1__1__24_chany_bottom_out[1] , \sb_1__1__24_chany_bottom_out[2] , \sb_1__1__24_chany_bottom_out[3] , \sb_1__1__24_chany_bottom_out[4] , \sb_1__1__24_chany_bottom_out[5] , \sb_1__1__24_chany_bottom_out[6] , \sb_1__1__24_chany_bottom_out[7] , \sb_1__1__24_chany_bottom_out[8] , \sb_1__1__24_chany_bottom_out[9] , \sb_1__1__24_chany_bottom_out[10] , \sb_1__1__24_chany_bottom_out[11] , \sb_1__1__24_chany_bottom_out[12] , \sb_1__1__24_chany_bottom_out[13] , \sb_1__1__24_chany_bottom_out[14] , \sb_1__1__24_chany_bottom_out[15] , \sb_1__1__24_chany_bottom_out[16] , \sb_1__1__24_chany_bottom_out[17] , \sb_1__1__24_chany_bottom_out[18] , \sb_1__1__24_chany_bottom_out[19]  }),
     .chany_top_in({ \cby_1__1__28_chany_bottom_out[0] , \cby_1__1__28_chany_bottom_out[1] , \cby_1__1__28_chany_bottom_out[2] , \cby_1__1__28_chany_bottom_out[3] , \cby_1__1__28_chany_bottom_out[4] , \cby_1__1__28_chany_bottom_out[5] , \cby_1__1__28_chany_bottom_out[6] , \cby_1__1__28_chany_bottom_out[7] , \cby_1__1__28_chany_bottom_out[8] , \cby_1__1__28_chany_bottom_out[9] , \cby_1__1__28_chany_bottom_out[10] , \cby_1__1__28_chany_bottom_out[11] , \cby_1__1__28_chany_bottom_out[12] , \cby_1__1__28_chany_bottom_out[13] , \cby_1__1__28_chany_bottom_out[14] , \cby_1__1__28_chany_bottom_out[15] , \cby_1__1__28_chany_bottom_out[16] , \cby_1__1__28_chany_bottom_out[17] , \cby_1__1__28_chany_bottom_out[18] , \cby_1__1__28_chany_bottom_out[19]  }),
     .chany_top_out({ \sb_1__1__24_chany_top_out[0] , \sb_1__1__24_chany_top_out[1] , \sb_1__1__24_chany_top_out[2] , \sb_1__1__24_chany_top_out[3] , \sb_1__1__24_chany_top_out[4] , \sb_1__1__24_chany_top_out[5] , \sb_1__1__24_chany_top_out[6] , \sb_1__1__24_chany_top_out[7] , \sb_1__1__24_chany_top_out[8] , \sb_1__1__24_chany_top_out[9] , \sb_1__1__24_chany_top_out[10] , \sb_1__1__24_chany_top_out[11] , \sb_1__1__24_chany_top_out[12] , \sb_1__1__24_chany_top_out[13] , \sb_1__1__24_chany_top_out[14] , \sb_1__1__24_chany_top_out[15] , \sb_1__1__24_chany_top_out[16] , \sb_1__1__24_chany_top_out[17] , \sb_1__1__24_chany_top_out[18] , \sb_1__1__24_chany_top_out[19]  }),
+    .clk_3_E_in(\clk_3_wires[33] ),
     .clk_3_E_out(\clk_3_wires[1] ),
+    .clk_3_N_in(\clk_3_wires[33] ),
     .clk_3_S_in(\clk_3_wires[33] ),
+    .clk_3_W_in(\clk_3_wires[33] ),
     .clk_3_W_out(\clk_3_wires[3] ),
     .left_bottom_grid_pin_34_(grid_clb_27_top_width_0_height_0__pin_34_lower),
     .left_bottom_grid_pin_35_(grid_clb_27_top_width_0_height_0__pin_35_lower),
@@ -29035,8 +29628,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_bottom_grid_pin_40_(grid_clb_27_top_width_0_height_0__pin_40_lower),
     .left_bottom_grid_pin_41_(grid_clb_27_top_width_0_height_0__pin_41_lower),
     .prog_clk_0_N_in(\prog_clk_0_wires[109] ),
+    .prog_clk_3_E_in(\prog_clk_3_wires[33] ),
     .prog_clk_3_E_out(\prog_clk_3_wires[1] ),
+    .prog_clk_3_N_in(\prog_clk_3_wires[33] ),
     .prog_clk_3_S_in(\prog_clk_3_wires[33] ),
+    .prog_clk_3_W_in(\prog_clk_3_wires[33] ),
     .prog_clk_3_W_out(\prog_clk_3_wires[3] ),
     .right_bottom_grid_pin_34_(grid_clb_35_top_width_0_height_0__pin_34_upper),
     .right_bottom_grid_pin_35_(grid_clb_35_top_width_0_height_0__pin_35_upper),
@@ -29307,6 +29903,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_out({ \sb_1__1__28_chany_top_out[0] , \sb_1__1__28_chany_top_out[1] , \sb_1__1__28_chany_top_out[2] , \sb_1__1__28_chany_top_out[3] , \sb_1__1__28_chany_top_out[4] , \sb_1__1__28_chany_top_out[5] , \sb_1__1__28_chany_top_out[6] , \sb_1__1__28_chany_top_out[7] , \sb_1__1__28_chany_top_out[8] , \sb_1__1__28_chany_top_out[9] , \sb_1__1__28_chany_top_out[10] , \sb_1__1__28_chany_top_out[11] , \sb_1__1__28_chany_top_out[12] , \sb_1__1__28_chany_top_out[13] , \sb_1__1__28_chany_top_out[14] , \sb_1__1__28_chany_top_out[15] , \sb_1__1__28_chany_top_out[16] , \sb_1__1__28_chany_top_out[17] , \sb_1__1__28_chany_top_out[18] , \sb_1__1__28_chany_top_out[19]  }),
     .clk_1_E_out(\clk_1_wires[57] ),
     .clk_1_N_in(\clk_2_wires[34] ),
+    .clk_1_S_in(\clk_2_wires[34] ),
     .clk_1_W_out(\clk_1_wires[58] ),
     .left_bottom_grid_pin_34_(grid_clb_32_top_width_0_height_0__pin_34_lower),
     .left_bottom_grid_pin_35_(grid_clb_32_top_width_0_height_0__pin_35_lower),
@@ -29319,6 +29916,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_N_in(\prog_clk_0_wires[126] ),
     .prog_clk_1_E_out(\prog_clk_1_wires[57] ),
     .prog_clk_1_N_in(\prog_clk_2_wires[34] ),
+    .prog_clk_1_S_in(\prog_clk_2_wires[34] ),
     .prog_clk_1_W_out(\prog_clk_1_wires[58] ),
     .right_bottom_grid_pin_34_(grid_clb_40_top_width_0_height_0__pin_34_upper),
     .right_bottom_grid_pin_35_(grid_clb_40_top_width_0_height_0__pin_35_upper),
@@ -29359,8 +29957,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_in({ \cby_1__1__34_chany_bottom_out[0] , \cby_1__1__34_chany_bottom_out[1] , \cby_1__1__34_chany_bottom_out[2] , \cby_1__1__34_chany_bottom_out[3] , \cby_1__1__34_chany_bottom_out[4] , \cby_1__1__34_chany_bottom_out[5] , \cby_1__1__34_chany_bottom_out[6] , \cby_1__1__34_chany_bottom_out[7] , \cby_1__1__34_chany_bottom_out[8] , \cby_1__1__34_chany_bottom_out[9] , \cby_1__1__34_chany_bottom_out[10] , \cby_1__1__34_chany_bottom_out[11] , \cby_1__1__34_chany_bottom_out[12] , \cby_1__1__34_chany_bottom_out[13] , \cby_1__1__34_chany_bottom_out[14] , \cby_1__1__34_chany_bottom_out[15] , \cby_1__1__34_chany_bottom_out[16] , \cby_1__1__34_chany_bottom_out[17] , \cby_1__1__34_chany_bottom_out[18] , \cby_1__1__34_chany_bottom_out[19]  }),
     .chany_top_out({ \sb_1__1__29_chany_top_out[0] , \sb_1__1__29_chany_top_out[1] , \sb_1__1__29_chany_top_out[2] , \sb_1__1__29_chany_top_out[3] , \sb_1__1__29_chany_top_out[4] , \sb_1__1__29_chany_top_out[5] , \sb_1__1__29_chany_top_out[6] , \sb_1__1__29_chany_top_out[7] , \sb_1__1__29_chany_top_out[8] , \sb_1__1__29_chany_top_out[9] , \sb_1__1__29_chany_top_out[10] , \sb_1__1__29_chany_top_out[11] , \sb_1__1__29_chany_top_out[12] , \sb_1__1__29_chany_top_out[13] , \sb_1__1__29_chany_top_out[14] , \sb_1__1__29_chany_top_out[15] , \sb_1__1__29_chany_top_out[16] , \sb_1__1__29_chany_top_out[17] , \sb_1__1__29_chany_top_out[18] , \sb_1__1__29_chany_top_out[19]  }),
     .clk_2_E_in(\clk_2_wires[30] ),
+    .clk_2_N_in(\clk_2_wires[30] ),
     .clk_2_N_out(\clk_2_wires[31] ),
+    .clk_2_S_in(\clk_2_wires[30] ),
     .clk_2_S_out(\clk_2_wires[33] ),
+    .clk_2_W_in(\clk_2_wires[30] ),
     .left_bottom_grid_pin_34_(grid_clb_33_top_width_0_height_0__pin_34_lower),
     .left_bottom_grid_pin_35_(grid_clb_33_top_width_0_height_0__pin_35_lower),
     .left_bottom_grid_pin_36_(grid_clb_33_top_width_0_height_0__pin_36_lower),
@@ -29371,8 +29972,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_bottom_grid_pin_41_(grid_clb_33_top_width_0_height_0__pin_41_lower),
     .prog_clk_0_N_in(\prog_clk_0_wires[129] ),
     .prog_clk_2_E_in(\prog_clk_2_wires[30] ),
+    .prog_clk_2_N_in(\prog_clk_2_wires[30] ),
     .prog_clk_2_N_out(\prog_clk_2_wires[31] ),
+    .prog_clk_2_S_in(\prog_clk_2_wires[30] ),
     .prog_clk_2_S_out(\prog_clk_2_wires[33] ),
+    .prog_clk_2_W_in(\prog_clk_2_wires[30] ),
     .right_bottom_grid_pin_34_(grid_clb_41_top_width_0_height_0__pin_34_upper),
     .right_bottom_grid_pin_35_(grid_clb_41_top_width_0_height_0__pin_35_upper),
     .right_bottom_grid_pin_36_(grid_clb_41_top_width_0_height_0__pin_36_upper),
@@ -29412,6 +30016,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_in({ \cby_1__1__35_chany_bottom_out[0] , \cby_1__1__35_chany_bottom_out[1] , \cby_1__1__35_chany_bottom_out[2] , \cby_1__1__35_chany_bottom_out[3] , \cby_1__1__35_chany_bottom_out[4] , \cby_1__1__35_chany_bottom_out[5] , \cby_1__1__35_chany_bottom_out[6] , \cby_1__1__35_chany_bottom_out[7] , \cby_1__1__35_chany_bottom_out[8] , \cby_1__1__35_chany_bottom_out[9] , \cby_1__1__35_chany_bottom_out[10] , \cby_1__1__35_chany_bottom_out[11] , \cby_1__1__35_chany_bottom_out[12] , \cby_1__1__35_chany_bottom_out[13] , \cby_1__1__35_chany_bottom_out[14] , \cby_1__1__35_chany_bottom_out[15] , \cby_1__1__35_chany_bottom_out[16] , \cby_1__1__35_chany_bottom_out[17] , \cby_1__1__35_chany_bottom_out[18] , \cby_1__1__35_chany_bottom_out[19]  }),
     .chany_top_out({ \sb_1__1__30_chany_top_out[0] , \sb_1__1__30_chany_top_out[1] , \sb_1__1__30_chany_top_out[2] , \sb_1__1__30_chany_top_out[3] , \sb_1__1__30_chany_top_out[4] , \sb_1__1__30_chany_top_out[5] , \sb_1__1__30_chany_top_out[6] , \sb_1__1__30_chany_top_out[7] , \sb_1__1__30_chany_top_out[8] , \sb_1__1__30_chany_top_out[9] , \sb_1__1__30_chany_top_out[10] , \sb_1__1__30_chany_top_out[11] , \sb_1__1__30_chany_top_out[12] , \sb_1__1__30_chany_top_out[13] , \sb_1__1__30_chany_top_out[14] , \sb_1__1__30_chany_top_out[15] , \sb_1__1__30_chany_top_out[16] , \sb_1__1__30_chany_top_out[17] , \sb_1__1__30_chany_top_out[18] , \sb_1__1__30_chany_top_out[19]  }),
     .clk_1_E_out(\clk_1_wires[64] ),
+    .clk_1_N_in(\clk_2_wires[32] ),
     .clk_1_S_in(\clk_2_wires[32] ),
     .clk_1_W_out(\clk_1_wires[65] ),
     .left_bottom_grid_pin_34_(grid_clb_34_top_width_0_height_0__pin_34_lower),
@@ -29424,6 +30029,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_bottom_grid_pin_41_(grid_clb_34_top_width_0_height_0__pin_41_lower),
     .prog_clk_0_N_in(\prog_clk_0_wires[132] ),
     .prog_clk_1_E_out(\prog_clk_1_wires[64] ),
+    .prog_clk_1_N_in(\prog_clk_2_wires[32] ),
     .prog_clk_1_S_in(\prog_clk_2_wires[32] ),
     .prog_clk_1_W_out(\prog_clk_1_wires[65] ),
     .right_bottom_grid_pin_34_(grid_clb_42_top_width_0_height_0__pin_34_upper),
@@ -29464,7 +30070,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \sb_1__1__31_chany_bottom_out[0] , \sb_1__1__31_chany_bottom_out[1] , \sb_1__1__31_chany_bottom_out[2] , \sb_1__1__31_chany_bottom_out[3] , \sb_1__1__31_chany_bottom_out[4] , \sb_1__1__31_chany_bottom_out[5] , \sb_1__1__31_chany_bottom_out[6] , \sb_1__1__31_chany_bottom_out[7] , \sb_1__1__31_chany_bottom_out[8] , \sb_1__1__31_chany_bottom_out[9] , \sb_1__1__31_chany_bottom_out[10] , \sb_1__1__31_chany_bottom_out[11] , \sb_1__1__31_chany_bottom_out[12] , \sb_1__1__31_chany_bottom_out[13] , \sb_1__1__31_chany_bottom_out[14] , \sb_1__1__31_chany_bottom_out[15] , \sb_1__1__31_chany_bottom_out[16] , \sb_1__1__31_chany_bottom_out[17] , \sb_1__1__31_chany_bottom_out[18] , \sb_1__1__31_chany_bottom_out[19]  }),
     .chany_top_in({ \cby_1__1__36_chany_bottom_out[0] , \cby_1__1__36_chany_bottom_out[1] , \cby_1__1__36_chany_bottom_out[2] , \cby_1__1__36_chany_bottom_out[3] , \cby_1__1__36_chany_bottom_out[4] , \cby_1__1__36_chany_bottom_out[5] , \cby_1__1__36_chany_bottom_out[6] , \cby_1__1__36_chany_bottom_out[7] , \cby_1__1__36_chany_bottom_out[8] , \cby_1__1__36_chany_bottom_out[9] , \cby_1__1__36_chany_bottom_out[10] , \cby_1__1__36_chany_bottom_out[11] , \cby_1__1__36_chany_bottom_out[12] , \cby_1__1__36_chany_bottom_out[13] , \cby_1__1__36_chany_bottom_out[14] , \cby_1__1__36_chany_bottom_out[15] , \cby_1__1__36_chany_bottom_out[16] , \cby_1__1__36_chany_bottom_out[17] , \cby_1__1__36_chany_bottom_out[18] , \cby_1__1__36_chany_bottom_out[19]  }),
     .chany_top_out({ \sb_1__1__31_chany_top_out[0] , \sb_1__1__31_chany_top_out[1] , \sb_1__1__31_chany_top_out[2] , \sb_1__1__31_chany_top_out[3] , \sb_1__1__31_chany_top_out[4] , \sb_1__1__31_chany_top_out[5] , \sb_1__1__31_chany_top_out[6] , \sb_1__1__31_chany_top_out[7] , \sb_1__1__31_chany_top_out[8] , \sb_1__1__31_chany_top_out[9] , \sb_1__1__31_chany_top_out[10] , \sb_1__1__31_chany_top_out[11] , \sb_1__1__31_chany_top_out[12] , \sb_1__1__31_chany_top_out[13] , \sb_1__1__31_chany_top_out[14] , \sb_1__1__31_chany_top_out[15] , \sb_1__1__31_chany_top_out[16] , \sb_1__1__31_chany_top_out[17] , \sb_1__1__31_chany_top_out[18] , \sb_1__1__31_chany_top_out[19]  }),
+    .clk_3_E_in(\clk_3_wires[2] ),
     .clk_3_E_out(\clk_3_wires[6] ),
+    .clk_3_N_in(\clk_3_wires[2] ),
+    .clk_3_S_in(\clk_3_wires[2] ),
     .clk_3_W_in(\clk_3_wires[2] ),
     .left_bottom_grid_pin_34_(grid_clb_35_top_width_0_height_0__pin_34_lower),
     .left_bottom_grid_pin_35_(grid_clb_35_top_width_0_height_0__pin_35_lower),
@@ -29475,7 +30084,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_bottom_grid_pin_40_(grid_clb_35_top_width_0_height_0__pin_40_lower),
     .left_bottom_grid_pin_41_(grid_clb_35_top_width_0_height_0__pin_41_lower),
     .prog_clk_0_N_in(\prog_clk_0_wires[135] ),
+    .prog_clk_3_E_in(\prog_clk_3_wires[2] ),
     .prog_clk_3_E_out(\prog_clk_3_wires[6] ),
+    .prog_clk_3_N_in(\prog_clk_3_wires[2] ),
+    .prog_clk_3_S_in(\prog_clk_3_wires[2] ),
     .prog_clk_3_W_in(\prog_clk_3_wires[2] ),
     .right_bottom_grid_pin_34_(grid_clb_43_top_width_0_height_0__pin_34_upper),
     .right_bottom_grid_pin_35_(grid_clb_43_top_width_0_height_0__pin_35_upper),
@@ -29517,6 +30129,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_out({ \sb_1__1__32_chany_top_out[0] , \sb_1__1__32_chany_top_out[1] , \sb_1__1__32_chany_top_out[2] , \sb_1__1__32_chany_top_out[3] , \sb_1__1__32_chany_top_out[4] , \sb_1__1__32_chany_top_out[5] , \sb_1__1__32_chany_top_out[6] , \sb_1__1__32_chany_top_out[7] , \sb_1__1__32_chany_top_out[8] , \sb_1__1__32_chany_top_out[9] , \sb_1__1__32_chany_top_out[10] , \sb_1__1__32_chany_top_out[11] , \sb_1__1__32_chany_top_out[12] , \sb_1__1__32_chany_top_out[13] , \sb_1__1__32_chany_top_out[14] , \sb_1__1__32_chany_top_out[15] , \sb_1__1__32_chany_top_out[16] , \sb_1__1__32_chany_top_out[17] , \sb_1__1__32_chany_top_out[18] , \sb_1__1__32_chany_top_out[19]  }),
     .clk_1_E_out(\clk_1_wires[71] ),
     .clk_1_N_in(\clk_2_wires[47] ),
+    .clk_1_S_in(\clk_2_wires[47] ),
     .clk_1_W_out(\clk_1_wires[72] ),
     .left_bottom_grid_pin_34_(grid_clb_36_top_width_0_height_0__pin_34_lower),
     .left_bottom_grid_pin_35_(grid_clb_36_top_width_0_height_0__pin_35_lower),
@@ -29529,6 +30142,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_N_in(\prog_clk_0_wires[138] ),
     .prog_clk_1_E_out(\prog_clk_1_wires[71] ),
     .prog_clk_1_N_in(\prog_clk_2_wires[47] ),
+    .prog_clk_1_S_in(\prog_clk_2_wires[47] ),
     .prog_clk_1_W_out(\prog_clk_1_wires[72] ),
     .right_bottom_grid_pin_34_(grid_clb_44_top_width_0_height_0__pin_34_upper),
     .right_bottom_grid_pin_35_(grid_clb_44_top_width_0_height_0__pin_35_upper),
@@ -29569,8 +30183,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_in({ \cby_1__1__38_chany_bottom_out[0] , \cby_1__1__38_chany_bottom_out[1] , \cby_1__1__38_chany_bottom_out[2] , \cby_1__1__38_chany_bottom_out[3] , \cby_1__1__38_chany_bottom_out[4] , \cby_1__1__38_chany_bottom_out[5] , \cby_1__1__38_chany_bottom_out[6] , \cby_1__1__38_chany_bottom_out[7] , \cby_1__1__38_chany_bottom_out[8] , \cby_1__1__38_chany_bottom_out[9] , \cby_1__1__38_chany_bottom_out[10] , \cby_1__1__38_chany_bottom_out[11] , \cby_1__1__38_chany_bottom_out[12] , \cby_1__1__38_chany_bottom_out[13] , \cby_1__1__38_chany_bottom_out[14] , \cby_1__1__38_chany_bottom_out[15] , \cby_1__1__38_chany_bottom_out[16] , \cby_1__1__38_chany_bottom_out[17] , \cby_1__1__38_chany_bottom_out[18] , \cby_1__1__38_chany_bottom_out[19]  }),
     .chany_top_out({ \sb_1__1__33_chany_top_out[0] , \sb_1__1__33_chany_top_out[1] , \sb_1__1__33_chany_top_out[2] , \sb_1__1__33_chany_top_out[3] , \sb_1__1__33_chany_top_out[4] , \sb_1__1__33_chany_top_out[5] , \sb_1__1__33_chany_top_out[6] , \sb_1__1__33_chany_top_out[7] , \sb_1__1__33_chany_top_out[8] , \sb_1__1__33_chany_top_out[9] , \sb_1__1__33_chany_top_out[10] , \sb_1__1__33_chany_top_out[11] , \sb_1__1__33_chany_top_out[12] , \sb_1__1__33_chany_top_out[13] , \sb_1__1__33_chany_top_out[14] , \sb_1__1__33_chany_top_out[15] , \sb_1__1__33_chany_top_out[16] , \sb_1__1__33_chany_top_out[17] , \sb_1__1__33_chany_top_out[18] , \sb_1__1__33_chany_top_out[19]  }),
     .clk_2_E_in(\clk_2_wires[43] ),
+    .clk_2_N_in(\clk_2_wires[43] ),
     .clk_2_N_out(\clk_2_wires[44] ),
+    .clk_2_S_in(\clk_2_wires[43] ),
     .clk_2_S_out(\clk_2_wires[46] ),
+    .clk_2_W_in(\clk_2_wires[43] ),
     .left_bottom_grid_pin_34_(grid_clb_37_top_width_0_height_0__pin_34_lower),
     .left_bottom_grid_pin_35_(grid_clb_37_top_width_0_height_0__pin_35_lower),
     .left_bottom_grid_pin_36_(grid_clb_37_top_width_0_height_0__pin_36_lower),
@@ -29581,8 +30198,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_bottom_grid_pin_41_(grid_clb_37_top_width_0_height_0__pin_41_lower),
     .prog_clk_0_N_in(\prog_clk_0_wires[141] ),
     .prog_clk_2_E_in(\prog_clk_2_wires[43] ),
+    .prog_clk_2_N_in(\prog_clk_2_wires[43] ),
     .prog_clk_2_N_out(\prog_clk_2_wires[44] ),
+    .prog_clk_2_S_in(\prog_clk_2_wires[43] ),
     .prog_clk_2_S_out(\prog_clk_2_wires[46] ),
+    .prog_clk_2_W_in(\prog_clk_2_wires[43] ),
     .right_bottom_grid_pin_34_(grid_clb_45_top_width_0_height_0__pin_34_upper),
     .right_bottom_grid_pin_35_(grid_clb_45_top_width_0_height_0__pin_35_upper),
     .right_bottom_grid_pin_36_(grid_clb_45_top_width_0_height_0__pin_36_upper),
@@ -29622,6 +30242,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_in({ \cby_1__1__39_chany_bottom_out[0] , \cby_1__1__39_chany_bottom_out[1] , \cby_1__1__39_chany_bottom_out[2] , \cby_1__1__39_chany_bottom_out[3] , \cby_1__1__39_chany_bottom_out[4] , \cby_1__1__39_chany_bottom_out[5] , \cby_1__1__39_chany_bottom_out[6] , \cby_1__1__39_chany_bottom_out[7] , \cby_1__1__39_chany_bottom_out[8] , \cby_1__1__39_chany_bottom_out[9] , \cby_1__1__39_chany_bottom_out[10] , \cby_1__1__39_chany_bottom_out[11] , \cby_1__1__39_chany_bottom_out[12] , \cby_1__1__39_chany_bottom_out[13] , \cby_1__1__39_chany_bottom_out[14] , \cby_1__1__39_chany_bottom_out[15] , \cby_1__1__39_chany_bottom_out[16] , \cby_1__1__39_chany_bottom_out[17] , \cby_1__1__39_chany_bottom_out[18] , \cby_1__1__39_chany_bottom_out[19]  }),
     .chany_top_out({ \sb_1__1__34_chany_top_out[0] , \sb_1__1__34_chany_top_out[1] , \sb_1__1__34_chany_top_out[2] , \sb_1__1__34_chany_top_out[3] , \sb_1__1__34_chany_top_out[4] , \sb_1__1__34_chany_top_out[5] , \sb_1__1__34_chany_top_out[6] , \sb_1__1__34_chany_top_out[7] , \sb_1__1__34_chany_top_out[8] , \sb_1__1__34_chany_top_out[9] , \sb_1__1__34_chany_top_out[10] , \sb_1__1__34_chany_top_out[11] , \sb_1__1__34_chany_top_out[12] , \sb_1__1__34_chany_top_out[13] , \sb_1__1__34_chany_top_out[14] , \sb_1__1__34_chany_top_out[15] , \sb_1__1__34_chany_top_out[16] , \sb_1__1__34_chany_top_out[17] , \sb_1__1__34_chany_top_out[18] , \sb_1__1__34_chany_top_out[19]  }),
     .clk_1_E_out(\clk_1_wires[78] ),
+    .clk_1_N_in(\clk_2_wires[45] ),
     .clk_1_S_in(\clk_2_wires[45] ),
     .clk_1_W_out(\clk_1_wires[79] ),
     .left_bottom_grid_pin_34_(grid_clb_38_top_width_0_height_0__pin_34_lower),
@@ -29634,6 +30255,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_bottom_grid_pin_41_(grid_clb_38_top_width_0_height_0__pin_41_lower),
     .prog_clk_0_N_in(\prog_clk_0_wires[144] ),
     .prog_clk_1_E_out(\prog_clk_1_wires[78] ),
+    .prog_clk_1_N_in(\prog_clk_2_wires[45] ),
     .prog_clk_1_S_in(\prog_clk_2_wires[45] ),
     .prog_clk_1_W_out(\prog_clk_1_wires[79] ),
     .right_bottom_grid_pin_34_(grid_clb_46_top_width_0_height_0__pin_34_upper),
@@ -29799,8 +30421,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \sb_1__1__36_chany_bottom_out[0] , \sb_1__1__36_chany_bottom_out[1] , \sb_1__1__36_chany_bottom_out[2] , \sb_1__1__36_chany_bottom_out[3] , \sb_1__1__36_chany_bottom_out[4] , \sb_1__1__36_chany_bottom_out[5] , \sb_1__1__36_chany_bottom_out[6] , \sb_1__1__36_chany_bottom_out[7] , \sb_1__1__36_chany_bottom_out[8] , \sb_1__1__36_chany_bottom_out[9] , \sb_1__1__36_chany_bottom_out[10] , \sb_1__1__36_chany_bottom_out[11] , \sb_1__1__36_chany_bottom_out[12] , \sb_1__1__36_chany_bottom_out[13] , \sb_1__1__36_chany_bottom_out[14] , \sb_1__1__36_chany_bottom_out[15] , \sb_1__1__36_chany_bottom_out[16] , \sb_1__1__36_chany_bottom_out[17] , \sb_1__1__36_chany_bottom_out[18] , \sb_1__1__36_chany_bottom_out[19]  }),
     .chany_top_in({ \cby_1__1__42_chany_bottom_out[0] , \cby_1__1__42_chany_bottom_out[1] , \cby_1__1__42_chany_bottom_out[2] , \cby_1__1__42_chany_bottom_out[3] , \cby_1__1__42_chany_bottom_out[4] , \cby_1__1__42_chany_bottom_out[5] , \cby_1__1__42_chany_bottom_out[6] , \cby_1__1__42_chany_bottom_out[7] , \cby_1__1__42_chany_bottom_out[8] , \cby_1__1__42_chany_bottom_out[9] , \cby_1__1__42_chany_bottom_out[10] , \cby_1__1__42_chany_bottom_out[11] , \cby_1__1__42_chany_bottom_out[12] , \cby_1__1__42_chany_bottom_out[13] , \cby_1__1__42_chany_bottom_out[14] , \cby_1__1__42_chany_bottom_out[15] , \cby_1__1__42_chany_bottom_out[16] , \cby_1__1__42_chany_bottom_out[17] , \cby_1__1__42_chany_bottom_out[18] , \cby_1__1__42_chany_bottom_out[19]  }),
     .chany_top_out({ \sb_1__1__36_chany_top_out[0] , \sb_1__1__36_chany_top_out[1] , \sb_1__1__36_chany_top_out[2] , \sb_1__1__36_chany_top_out[3] , \sb_1__1__36_chany_top_out[4] , \sb_1__1__36_chany_top_out[5] , \sb_1__1__36_chany_top_out[6] , \sb_1__1__36_chany_top_out[7] , \sb_1__1__36_chany_top_out[8] , \sb_1__1__36_chany_top_out[9] , \sb_1__1__36_chany_top_out[10] , \sb_1__1__36_chany_top_out[11] , \sb_1__1__36_chany_top_out[12] , \sb_1__1__36_chany_top_out[13] , \sb_1__1__36_chany_top_out[14] , \sb_1__1__36_chany_top_out[15] , \sb_1__1__36_chany_top_out[16] , \sb_1__1__36_chany_top_out[17] , \sb_1__1__36_chany_top_out[18] , \sb_1__1__36_chany_top_out[19]  }),
+    .clk_2_E_in(\clk_3_wires[25] ),
     .clk_2_E_out(\clk_2_wires[27] ),
     .clk_2_N_in(\clk_3_wires[25] ),
+    .clk_2_S_in(\clk_3_wires[25] ),
+    .clk_2_W_in(\clk_3_wires[25] ),
     .clk_2_W_out(\clk_2_wires[29] ),
     .left_bottom_grid_pin_34_(grid_clb_41_top_width_0_height_0__pin_34_lower),
     .left_bottom_grid_pin_35_(grid_clb_41_top_width_0_height_0__pin_35_lower),
@@ -29811,8 +30436,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_bottom_grid_pin_40_(grid_clb_41_top_width_0_height_0__pin_40_lower),
     .left_bottom_grid_pin_41_(grid_clb_41_top_width_0_height_0__pin_41_lower),
     .prog_clk_0_N_in(\prog_clk_0_wires[155] ),
+    .prog_clk_2_E_in(\prog_clk_3_wires[25] ),
     .prog_clk_2_E_out(\prog_clk_2_wires[27] ),
     .prog_clk_2_N_in(\prog_clk_3_wires[25] ),
+    .prog_clk_2_S_in(\prog_clk_3_wires[25] ),
+    .prog_clk_2_W_in(\prog_clk_3_wires[25] ),
     .prog_clk_2_W_out(\prog_clk_2_wires[29] ),
     .right_bottom_grid_pin_34_(grid_clb_49_top_width_0_height_0__pin_34_upper),
     .right_bottom_grid_pin_35_(grid_clb_49_top_width_0_height_0__pin_35_upper),
@@ -29852,8 +30480,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \sb_1__1__37_chany_bottom_out[0] , \sb_1__1__37_chany_bottom_out[1] , \sb_1__1__37_chany_bottom_out[2] , \sb_1__1__37_chany_bottom_out[3] , \sb_1__1__37_chany_bottom_out[4] , \sb_1__1__37_chany_bottom_out[5] , \sb_1__1__37_chany_bottom_out[6] , \sb_1__1__37_chany_bottom_out[7] , \sb_1__1__37_chany_bottom_out[8] , \sb_1__1__37_chany_bottom_out[9] , \sb_1__1__37_chany_bottom_out[10] , \sb_1__1__37_chany_bottom_out[11] , \sb_1__1__37_chany_bottom_out[12] , \sb_1__1__37_chany_bottom_out[13] , \sb_1__1__37_chany_bottom_out[14] , \sb_1__1__37_chany_bottom_out[15] , \sb_1__1__37_chany_bottom_out[16] , \sb_1__1__37_chany_bottom_out[17] , \sb_1__1__37_chany_bottom_out[18] , \sb_1__1__37_chany_bottom_out[19]  }),
     .chany_top_in({ \cby_1__1__43_chany_bottom_out[0] , \cby_1__1__43_chany_bottom_out[1] , \cby_1__1__43_chany_bottom_out[2] , \cby_1__1__43_chany_bottom_out[3] , \cby_1__1__43_chany_bottom_out[4] , \cby_1__1__43_chany_bottom_out[5] , \cby_1__1__43_chany_bottom_out[6] , \cby_1__1__43_chany_bottom_out[7] , \cby_1__1__43_chany_bottom_out[8] , \cby_1__1__43_chany_bottom_out[9] , \cby_1__1__43_chany_bottom_out[10] , \cby_1__1__43_chany_bottom_out[11] , \cby_1__1__43_chany_bottom_out[12] , \cby_1__1__43_chany_bottom_out[13] , \cby_1__1__43_chany_bottom_out[14] , \cby_1__1__43_chany_bottom_out[15] , \cby_1__1__43_chany_bottom_out[16] , \cby_1__1__43_chany_bottom_out[17] , \cby_1__1__43_chany_bottom_out[18] , \cby_1__1__43_chany_bottom_out[19]  }),
     .chany_top_out({ \sb_1__1__37_chany_top_out[0] , \sb_1__1__37_chany_top_out[1] , \sb_1__1__37_chany_top_out[2] , \sb_1__1__37_chany_top_out[3] , \sb_1__1__37_chany_top_out[4] , \sb_1__1__37_chany_top_out[5] , \sb_1__1__37_chany_top_out[6] , \sb_1__1__37_chany_top_out[7] , \sb_1__1__37_chany_top_out[8] , \sb_1__1__37_chany_top_out[9] , \sb_1__1__37_chany_top_out[10] , \sb_1__1__37_chany_top_out[11] , \sb_1__1__37_chany_top_out[12] , \sb_1__1__37_chany_top_out[13] , \sb_1__1__37_chany_top_out[14] , \sb_1__1__37_chany_top_out[15] , \sb_1__1__37_chany_top_out[16] , \sb_1__1__37_chany_top_out[17] , \sb_1__1__37_chany_top_out[18] , \sb_1__1__37_chany_top_out[19]  }),
+    .clk_3_E_in(\clk_3_wires[21] ),
     .clk_3_N_in(\clk_3_wires[21] ),
+    .clk_3_S_in(\clk_3_wires[21] ),
     .clk_3_S_out(\clk_3_wires[24] ),
+    .clk_3_W_in(\clk_3_wires[21] ),
     .left_bottom_grid_pin_34_(grid_clb_42_top_width_0_height_0__pin_34_lower),
     .left_bottom_grid_pin_35_(grid_clb_42_top_width_0_height_0__pin_35_lower),
     .left_bottom_grid_pin_36_(grid_clb_42_top_width_0_height_0__pin_36_lower),
@@ -29863,8 +30494,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_bottom_grid_pin_40_(grid_clb_42_top_width_0_height_0__pin_40_lower),
     .left_bottom_grid_pin_41_(grid_clb_42_top_width_0_height_0__pin_41_lower),
     .prog_clk_0_N_in(\prog_clk_0_wires[158] ),
+    .prog_clk_3_E_in(\prog_clk_3_wires[21] ),
     .prog_clk_3_N_in(\prog_clk_3_wires[21] ),
+    .prog_clk_3_S_in(\prog_clk_3_wires[21] ),
     .prog_clk_3_S_out(\prog_clk_3_wires[24] ),
+    .prog_clk_3_W_in(\prog_clk_3_wires[21] ),
     .right_bottom_grid_pin_34_(grid_clb_50_top_width_0_height_0__pin_34_upper),
     .right_bottom_grid_pin_35_(grid_clb_50_top_width_0_height_0__pin_35_upper),
     .right_bottom_grid_pin_36_(grid_clb_50_top_width_0_height_0__pin_36_upper),
@@ -29903,7 +30537,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \sb_1__1__38_chany_bottom_out[0] , \sb_1__1__38_chany_bottom_out[1] , \sb_1__1__38_chany_bottom_out[2] , \sb_1__1__38_chany_bottom_out[3] , \sb_1__1__38_chany_bottom_out[4] , \sb_1__1__38_chany_bottom_out[5] , \sb_1__1__38_chany_bottom_out[6] , \sb_1__1__38_chany_bottom_out[7] , \sb_1__1__38_chany_bottom_out[8] , \sb_1__1__38_chany_bottom_out[9] , \sb_1__1__38_chany_bottom_out[10] , \sb_1__1__38_chany_bottom_out[11] , \sb_1__1__38_chany_bottom_out[12] , \sb_1__1__38_chany_bottom_out[13] , \sb_1__1__38_chany_bottom_out[14] , \sb_1__1__38_chany_bottom_out[15] , \sb_1__1__38_chany_bottom_out[16] , \sb_1__1__38_chany_bottom_out[17] , \sb_1__1__38_chany_bottom_out[18] , \sb_1__1__38_chany_bottom_out[19]  }),
     .chany_top_in({ \cby_1__1__44_chany_bottom_out[0] , \cby_1__1__44_chany_bottom_out[1] , \cby_1__1__44_chany_bottom_out[2] , \cby_1__1__44_chany_bottom_out[3] , \cby_1__1__44_chany_bottom_out[4] , \cby_1__1__44_chany_bottom_out[5] , \cby_1__1__44_chany_bottom_out[6] , \cby_1__1__44_chany_bottom_out[7] , \cby_1__1__44_chany_bottom_out[8] , \cby_1__1__44_chany_bottom_out[9] , \cby_1__1__44_chany_bottom_out[10] , \cby_1__1__44_chany_bottom_out[11] , \cby_1__1__44_chany_bottom_out[12] , \cby_1__1__44_chany_bottom_out[13] , \cby_1__1__44_chany_bottom_out[14] , \cby_1__1__44_chany_bottom_out[15] , \cby_1__1__44_chany_bottom_out[16] , \cby_1__1__44_chany_bottom_out[17] , \cby_1__1__44_chany_bottom_out[18] , \cby_1__1__44_chany_bottom_out[19]  }),
     .chany_top_out({ \sb_1__1__38_chany_top_out[0] , \sb_1__1__38_chany_top_out[1] , \sb_1__1__38_chany_top_out[2] , \sb_1__1__38_chany_top_out[3] , \sb_1__1__38_chany_top_out[4] , \sb_1__1__38_chany_top_out[5] , \sb_1__1__38_chany_top_out[6] , \sb_1__1__38_chany_top_out[7] , \sb_1__1__38_chany_top_out[8] , \sb_1__1__38_chany_top_out[9] , \sb_1__1__38_chany_top_out[10] , \sb_1__1__38_chany_top_out[11] , \sb_1__1__38_chany_top_out[12] , \sb_1__1__38_chany_top_out[13] , \sb_1__1__38_chany_top_out[14] , \sb_1__1__38_chany_top_out[15] , \sb_1__1__38_chany_top_out[16] , \sb_1__1__38_chany_top_out[17] , \sb_1__1__38_chany_top_out[18] , \sb_1__1__38_chany_top_out[19]  }),
+    .clk_3_E_in(\clk_3_wires[7] ),
+    .clk_3_N_in(\clk_3_wires[7] ),
     .clk_3_N_out(\clk_3_wires[18] ),
+    .clk_3_S_in(\clk_3_wires[7] ),
     .clk_3_S_out(\clk_3_wires[20] ),
     .clk_3_W_in(\clk_3_wires[7] ),
     .left_bottom_grid_pin_34_(grid_clb_43_top_width_0_height_0__pin_34_lower),
@@ -29915,7 +30552,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_bottom_grid_pin_40_(grid_clb_43_top_width_0_height_0__pin_40_lower),
     .left_bottom_grid_pin_41_(grid_clb_43_top_width_0_height_0__pin_41_lower),
     .prog_clk_0_N_in(\prog_clk_0_wires[161] ),
+    .prog_clk_3_E_in(\prog_clk_3_wires[7] ),
+    .prog_clk_3_N_in(\prog_clk_3_wires[7] ),
     .prog_clk_3_N_out(\prog_clk_3_wires[18] ),
+    .prog_clk_3_S_in(\prog_clk_3_wires[7] ),
     .prog_clk_3_S_out(\prog_clk_3_wires[20] ),
     .prog_clk_3_W_in(\prog_clk_3_wires[7] ),
     .right_bottom_grid_pin_34_(grid_clb_51_top_width_0_height_0__pin_34_upper),
@@ -29956,8 +30596,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \sb_1__1__39_chany_bottom_out[0] , \sb_1__1__39_chany_bottom_out[1] , \sb_1__1__39_chany_bottom_out[2] , \sb_1__1__39_chany_bottom_out[3] , \sb_1__1__39_chany_bottom_out[4] , \sb_1__1__39_chany_bottom_out[5] , \sb_1__1__39_chany_bottom_out[6] , \sb_1__1__39_chany_bottom_out[7] , \sb_1__1__39_chany_bottom_out[8] , \sb_1__1__39_chany_bottom_out[9] , \sb_1__1__39_chany_bottom_out[10] , \sb_1__1__39_chany_bottom_out[11] , \sb_1__1__39_chany_bottom_out[12] , \sb_1__1__39_chany_bottom_out[13] , \sb_1__1__39_chany_bottom_out[14] , \sb_1__1__39_chany_bottom_out[15] , \sb_1__1__39_chany_bottom_out[16] , \sb_1__1__39_chany_bottom_out[17] , \sb_1__1__39_chany_bottom_out[18] , \sb_1__1__39_chany_bottom_out[19]  }),
     .chany_top_in({ \cby_1__1__45_chany_bottom_out[0] , \cby_1__1__45_chany_bottom_out[1] , \cby_1__1__45_chany_bottom_out[2] , \cby_1__1__45_chany_bottom_out[3] , \cby_1__1__45_chany_bottom_out[4] , \cby_1__1__45_chany_bottom_out[5] , \cby_1__1__45_chany_bottom_out[6] , \cby_1__1__45_chany_bottom_out[7] , \cby_1__1__45_chany_bottom_out[8] , \cby_1__1__45_chany_bottom_out[9] , \cby_1__1__45_chany_bottom_out[10] , \cby_1__1__45_chany_bottom_out[11] , \cby_1__1__45_chany_bottom_out[12] , \cby_1__1__45_chany_bottom_out[13] , \cby_1__1__45_chany_bottom_out[14] , \cby_1__1__45_chany_bottom_out[15] , \cby_1__1__45_chany_bottom_out[16] , \cby_1__1__45_chany_bottom_out[17] , \cby_1__1__45_chany_bottom_out[18] , \cby_1__1__45_chany_bottom_out[19]  }),
     .chany_top_out({ \sb_1__1__39_chany_top_out[0] , \sb_1__1__39_chany_top_out[1] , \sb_1__1__39_chany_top_out[2] , \sb_1__1__39_chany_top_out[3] , \sb_1__1__39_chany_top_out[4] , \sb_1__1__39_chany_top_out[5] , \sb_1__1__39_chany_top_out[6] , \sb_1__1__39_chany_top_out[7] , \sb_1__1__39_chany_top_out[8] , \sb_1__1__39_chany_top_out[9] , \sb_1__1__39_chany_top_out[10] , \sb_1__1__39_chany_top_out[11] , \sb_1__1__39_chany_top_out[12] , \sb_1__1__39_chany_top_out[13] , \sb_1__1__39_chany_top_out[14] , \sb_1__1__39_chany_top_out[15] , \sb_1__1__39_chany_top_out[16] , \sb_1__1__39_chany_top_out[17] , \sb_1__1__39_chany_top_out[18] , \sb_1__1__39_chany_top_out[19]  }),
+    .clk_3_E_in(\clk_3_wires[19] ),
+    .clk_3_N_in(\clk_3_wires[19] ),
     .clk_3_N_out(\clk_3_wires[22] ),
     .clk_3_S_in(\clk_3_wires[19] ),
+    .clk_3_W_in(\clk_3_wires[19] ),
     .left_bottom_grid_pin_34_(grid_clb_44_top_width_0_height_0__pin_34_lower),
     .left_bottom_grid_pin_35_(grid_clb_44_top_width_0_height_0__pin_35_lower),
     .left_bottom_grid_pin_36_(grid_clb_44_top_width_0_height_0__pin_36_lower),
@@ -29967,8 +30610,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_bottom_grid_pin_40_(grid_clb_44_top_width_0_height_0__pin_40_lower),
     .left_bottom_grid_pin_41_(grid_clb_44_top_width_0_height_0__pin_41_lower),
     .prog_clk_0_N_in(\prog_clk_0_wires[164] ),
+    .prog_clk_3_E_in(\prog_clk_3_wires[19] ),
+    .prog_clk_3_N_in(\prog_clk_3_wires[19] ),
     .prog_clk_3_N_out(\prog_clk_3_wires[22] ),
     .prog_clk_3_S_in(\prog_clk_3_wires[19] ),
+    .prog_clk_3_W_in(\prog_clk_3_wires[19] ),
     .right_bottom_grid_pin_34_(grid_clb_52_top_width_0_height_0__pin_34_upper),
     .right_bottom_grid_pin_35_(grid_clb_52_top_width_0_height_0__pin_35_upper),
     .right_bottom_grid_pin_36_(grid_clb_52_top_width_0_height_0__pin_36_upper),
@@ -30007,8 +30653,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \sb_1__1__40_chany_bottom_out[0] , \sb_1__1__40_chany_bottom_out[1] , \sb_1__1__40_chany_bottom_out[2] , \sb_1__1__40_chany_bottom_out[3] , \sb_1__1__40_chany_bottom_out[4] , \sb_1__1__40_chany_bottom_out[5] , \sb_1__1__40_chany_bottom_out[6] , \sb_1__1__40_chany_bottom_out[7] , \sb_1__1__40_chany_bottom_out[8] , \sb_1__1__40_chany_bottom_out[9] , \sb_1__1__40_chany_bottom_out[10] , \sb_1__1__40_chany_bottom_out[11] , \sb_1__1__40_chany_bottom_out[12] , \sb_1__1__40_chany_bottom_out[13] , \sb_1__1__40_chany_bottom_out[14] , \sb_1__1__40_chany_bottom_out[15] , \sb_1__1__40_chany_bottom_out[16] , \sb_1__1__40_chany_bottom_out[17] , \sb_1__1__40_chany_bottom_out[18] , \sb_1__1__40_chany_bottom_out[19]  }),
     .chany_top_in({ \cby_1__1__46_chany_bottom_out[0] , \cby_1__1__46_chany_bottom_out[1] , \cby_1__1__46_chany_bottom_out[2] , \cby_1__1__46_chany_bottom_out[3] , \cby_1__1__46_chany_bottom_out[4] , \cby_1__1__46_chany_bottom_out[5] , \cby_1__1__46_chany_bottom_out[6] , \cby_1__1__46_chany_bottom_out[7] , \cby_1__1__46_chany_bottom_out[8] , \cby_1__1__46_chany_bottom_out[9] , \cby_1__1__46_chany_bottom_out[10] , \cby_1__1__46_chany_bottom_out[11] , \cby_1__1__46_chany_bottom_out[12] , \cby_1__1__46_chany_bottom_out[13] , \cby_1__1__46_chany_bottom_out[14] , \cby_1__1__46_chany_bottom_out[15] , \cby_1__1__46_chany_bottom_out[16] , \cby_1__1__46_chany_bottom_out[17] , \cby_1__1__46_chany_bottom_out[18] , \cby_1__1__46_chany_bottom_out[19]  }),
     .chany_top_out({ \sb_1__1__40_chany_top_out[0] , \sb_1__1__40_chany_top_out[1] , \sb_1__1__40_chany_top_out[2] , \sb_1__1__40_chany_top_out[3] , \sb_1__1__40_chany_top_out[4] , \sb_1__1__40_chany_top_out[5] , \sb_1__1__40_chany_top_out[6] , \sb_1__1__40_chany_top_out[7] , \sb_1__1__40_chany_top_out[8] , \sb_1__1__40_chany_top_out[9] , \sb_1__1__40_chany_top_out[10] , \sb_1__1__40_chany_top_out[11] , \sb_1__1__40_chany_top_out[12] , \sb_1__1__40_chany_top_out[13] , \sb_1__1__40_chany_top_out[14] , \sb_1__1__40_chany_top_out[15] , \sb_1__1__40_chany_top_out[16] , \sb_1__1__40_chany_top_out[17] , \sb_1__1__40_chany_top_out[18] , \sb_1__1__40_chany_top_out[19]  }),
+    .clk_2_E_in(\clk_3_wires[23] ),
     .clk_2_E_out(\clk_2_wires[40] ),
+    .clk_2_N_in(\clk_3_wires[23] ),
     .clk_2_S_in(\clk_3_wires[23] ),
+    .clk_2_W_in(\clk_3_wires[23] ),
     .clk_2_W_out(\clk_2_wires[42] ),
     .left_bottom_grid_pin_34_(grid_clb_45_top_width_0_height_0__pin_34_lower),
     .left_bottom_grid_pin_35_(grid_clb_45_top_width_0_height_0__pin_35_lower),
@@ -30019,8 +30668,11 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_bottom_grid_pin_40_(grid_clb_45_top_width_0_height_0__pin_40_lower),
     .left_bottom_grid_pin_41_(grid_clb_45_top_width_0_height_0__pin_41_lower),
     .prog_clk_0_N_in(\prog_clk_0_wires[167] ),
+    .prog_clk_2_E_in(\prog_clk_3_wires[23] ),
     .prog_clk_2_E_out(\prog_clk_2_wires[40] ),
+    .prog_clk_2_N_in(\prog_clk_3_wires[23] ),
     .prog_clk_2_S_in(\prog_clk_3_wires[23] ),
+    .prog_clk_2_W_in(\prog_clk_3_wires[23] ),
     .prog_clk_2_W_out(\prog_clk_2_wires[42] ),
     .right_bottom_grid_pin_34_(grid_clb_53_top_width_0_height_0__pin_34_upper),
     .right_bottom_grid_pin_35_(grid_clb_53_top_width_0_height_0__pin_35_upper),
@@ -30191,6 +30843,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_out({ \sb_1__1__42_chany_top_out[0] , \sb_1__1__42_chany_top_out[1] , \sb_1__1__42_chany_top_out[2] , \sb_1__1__42_chany_top_out[3] , \sb_1__1__42_chany_top_out[4] , \sb_1__1__42_chany_top_out[5] , \sb_1__1__42_chany_top_out[6] , \sb_1__1__42_chany_top_out[7] , \sb_1__1__42_chany_top_out[8] , \sb_1__1__42_chany_top_out[9] , \sb_1__1__42_chany_top_out[10] , \sb_1__1__42_chany_top_out[11] , \sb_1__1__42_chany_top_out[12] , \sb_1__1__42_chany_top_out[13] , \sb_1__1__42_chany_top_out[14] , \sb_1__1__42_chany_top_out[15] , \sb_1__1__42_chany_top_out[16] , \sb_1__1__42_chany_top_out[17] , \sb_1__1__42_chany_top_out[18] , \sb_1__1__42_chany_top_out[19]  }),
     .clk_1_E_out(\clk_1_wires[85] ),
     .clk_1_N_in(\clk_2_wires[38] ),
+    .clk_1_S_in(\clk_2_wires[38] ),
     .clk_1_W_out(\clk_1_wires[86] ),
     .left_bottom_grid_pin_34_(grid_clb_48_top_width_0_height_0__pin_34_lower),
     .left_bottom_grid_pin_35_(grid_clb_48_top_width_0_height_0__pin_35_lower),
@@ -30203,6 +30856,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_N_in(\prog_clk_0_wires[178] ),
     .prog_clk_1_E_out(\prog_clk_1_wires[85] ),
     .prog_clk_1_N_in(\prog_clk_2_wires[38] ),
+    .prog_clk_1_S_in(\prog_clk_2_wires[38] ),
     .prog_clk_1_W_out(\prog_clk_1_wires[86] ),
     .right_bottom_grid_pin_34_(grid_clb_56_top_width_0_height_0__pin_34_upper),
     .right_bottom_grid_pin_35_(grid_clb_56_top_width_0_height_0__pin_35_upper),
@@ -30242,7 +30896,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \sb_1__1__43_chany_bottom_out[0] , \sb_1__1__43_chany_bottom_out[1] , \sb_1__1__43_chany_bottom_out[2] , \sb_1__1__43_chany_bottom_out[3] , \sb_1__1__43_chany_bottom_out[4] , \sb_1__1__43_chany_bottom_out[5] , \sb_1__1__43_chany_bottom_out[6] , \sb_1__1__43_chany_bottom_out[7] , \sb_1__1__43_chany_bottom_out[8] , \sb_1__1__43_chany_bottom_out[9] , \sb_1__1__43_chany_bottom_out[10] , \sb_1__1__43_chany_bottom_out[11] , \sb_1__1__43_chany_bottom_out[12] , \sb_1__1__43_chany_bottom_out[13] , \sb_1__1__43_chany_bottom_out[14] , \sb_1__1__43_chany_bottom_out[15] , \sb_1__1__43_chany_bottom_out[16] , \sb_1__1__43_chany_bottom_out[17] , \sb_1__1__43_chany_bottom_out[18] , \sb_1__1__43_chany_bottom_out[19]  }),
     .chany_top_in({ \cby_1__1__50_chany_bottom_out[0] , \cby_1__1__50_chany_bottom_out[1] , \cby_1__1__50_chany_bottom_out[2] , \cby_1__1__50_chany_bottom_out[3] , \cby_1__1__50_chany_bottom_out[4] , \cby_1__1__50_chany_bottom_out[5] , \cby_1__1__50_chany_bottom_out[6] , \cby_1__1__50_chany_bottom_out[7] , \cby_1__1__50_chany_bottom_out[8] , \cby_1__1__50_chany_bottom_out[9] , \cby_1__1__50_chany_bottom_out[10] , \cby_1__1__50_chany_bottom_out[11] , \cby_1__1__50_chany_bottom_out[12] , \cby_1__1__50_chany_bottom_out[13] , \cby_1__1__50_chany_bottom_out[14] , \cby_1__1__50_chany_bottom_out[15] , \cby_1__1__50_chany_bottom_out[16] , \cby_1__1__50_chany_bottom_out[17] , \cby_1__1__50_chany_bottom_out[18] , \cby_1__1__50_chany_bottom_out[19]  }),
     .chany_top_out({ \sb_1__1__43_chany_top_out[0] , \sb_1__1__43_chany_top_out[1] , \sb_1__1__43_chany_top_out[2] , \sb_1__1__43_chany_top_out[3] , \sb_1__1__43_chany_top_out[4] , \sb_1__1__43_chany_top_out[5] , \sb_1__1__43_chany_top_out[6] , \sb_1__1__43_chany_top_out[7] , \sb_1__1__43_chany_top_out[8] , \sb_1__1__43_chany_top_out[9] , \sb_1__1__43_chany_top_out[10] , \sb_1__1__43_chany_top_out[11] , \sb_1__1__43_chany_top_out[12] , \sb_1__1__43_chany_top_out[13] , \sb_1__1__43_chany_top_out[14] , \sb_1__1__43_chany_top_out[15] , \sb_1__1__43_chany_top_out[16] , \sb_1__1__43_chany_top_out[17] , \sb_1__1__43_chany_top_out[18] , \sb_1__1__43_chany_top_out[19]  }),
+    .clk_2_E_in(\clk_2_wires[28] ),
+    .clk_2_N_in(\clk_2_wires[28] ),
     .clk_2_N_out(\clk_2_wires[35] ),
+    .clk_2_S_in(\clk_2_wires[28] ),
     .clk_2_S_out(\clk_2_wires[37] ),
     .clk_2_W_in(\clk_2_wires[28] ),
     .left_bottom_grid_pin_34_(grid_clb_49_top_width_0_height_0__pin_34_lower),
@@ -30254,7 +30911,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_bottom_grid_pin_40_(grid_clb_49_top_width_0_height_0__pin_40_lower),
     .left_bottom_grid_pin_41_(grid_clb_49_top_width_0_height_0__pin_41_lower),
     .prog_clk_0_N_in(\prog_clk_0_wires[181] ),
+    .prog_clk_2_E_in(\prog_clk_2_wires[28] ),
+    .prog_clk_2_N_in(\prog_clk_2_wires[28] ),
     .prog_clk_2_N_out(\prog_clk_2_wires[35] ),
+    .prog_clk_2_S_in(\prog_clk_2_wires[28] ),
     .prog_clk_2_S_out(\prog_clk_2_wires[37] ),
     .prog_clk_2_W_in(\prog_clk_2_wires[28] ),
     .right_bottom_grid_pin_34_(grid_clb_57_top_width_0_height_0__pin_34_upper),
@@ -30296,6 +30956,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_in({ \cby_1__1__51_chany_bottom_out[0] , \cby_1__1__51_chany_bottom_out[1] , \cby_1__1__51_chany_bottom_out[2] , \cby_1__1__51_chany_bottom_out[3] , \cby_1__1__51_chany_bottom_out[4] , \cby_1__1__51_chany_bottom_out[5] , \cby_1__1__51_chany_bottom_out[6] , \cby_1__1__51_chany_bottom_out[7] , \cby_1__1__51_chany_bottom_out[8] , \cby_1__1__51_chany_bottom_out[9] , \cby_1__1__51_chany_bottom_out[10] , \cby_1__1__51_chany_bottom_out[11] , \cby_1__1__51_chany_bottom_out[12] , \cby_1__1__51_chany_bottom_out[13] , \cby_1__1__51_chany_bottom_out[14] , \cby_1__1__51_chany_bottom_out[15] , \cby_1__1__51_chany_bottom_out[16] , \cby_1__1__51_chany_bottom_out[17] , \cby_1__1__51_chany_bottom_out[18] , \cby_1__1__51_chany_bottom_out[19]  }),
     .chany_top_out({ \sb_1__1__44_chany_top_out[0] , \sb_1__1__44_chany_top_out[1] , \sb_1__1__44_chany_top_out[2] , \sb_1__1__44_chany_top_out[3] , \sb_1__1__44_chany_top_out[4] , \sb_1__1__44_chany_top_out[5] , \sb_1__1__44_chany_top_out[6] , \sb_1__1__44_chany_top_out[7] , \sb_1__1__44_chany_top_out[8] , \sb_1__1__44_chany_top_out[9] , \sb_1__1__44_chany_top_out[10] , \sb_1__1__44_chany_top_out[11] , \sb_1__1__44_chany_top_out[12] , \sb_1__1__44_chany_top_out[13] , \sb_1__1__44_chany_top_out[14] , \sb_1__1__44_chany_top_out[15] , \sb_1__1__44_chany_top_out[16] , \sb_1__1__44_chany_top_out[17] , \sb_1__1__44_chany_top_out[18] , \sb_1__1__44_chany_top_out[19]  }),
     .clk_1_E_out(\clk_1_wires[92] ),
+    .clk_1_N_in(\clk_2_wires[36] ),
     .clk_1_S_in(\clk_2_wires[36] ),
     .clk_1_W_out(\clk_1_wires[93] ),
     .left_bottom_grid_pin_34_(grid_clb_50_top_width_0_height_0__pin_34_lower),
@@ -30308,6 +30969,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_bottom_grid_pin_41_(grid_clb_50_top_width_0_height_0__pin_41_lower),
     .prog_clk_0_N_in(\prog_clk_0_wires[184] ),
     .prog_clk_1_E_out(\prog_clk_1_wires[92] ),
+    .prog_clk_1_N_in(\prog_clk_2_wires[36] ),
     .prog_clk_1_S_in(\prog_clk_2_wires[36] ),
     .prog_clk_1_W_out(\prog_clk_1_wires[93] ),
     .right_bottom_grid_pin_34_(grid_clb_58_top_width_0_height_0__pin_34_upper),
@@ -30397,6 +31059,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_out({ \sb_1__1__46_chany_top_out[0] , \sb_1__1__46_chany_top_out[1] , \sb_1__1__46_chany_top_out[2] , \sb_1__1__46_chany_top_out[3] , \sb_1__1__46_chany_top_out[4] , \sb_1__1__46_chany_top_out[5] , \sb_1__1__46_chany_top_out[6] , \sb_1__1__46_chany_top_out[7] , \sb_1__1__46_chany_top_out[8] , \sb_1__1__46_chany_top_out[9] , \sb_1__1__46_chany_top_out[10] , \sb_1__1__46_chany_top_out[11] , \sb_1__1__46_chany_top_out[12] , \sb_1__1__46_chany_top_out[13] , \sb_1__1__46_chany_top_out[14] , \sb_1__1__46_chany_top_out[15] , \sb_1__1__46_chany_top_out[16] , \sb_1__1__46_chany_top_out[17] , \sb_1__1__46_chany_top_out[18] , \sb_1__1__46_chany_top_out[19]  }),
     .clk_1_E_out(\clk_1_wires[99] ),
     .clk_1_N_in(\clk_2_wires[51] ),
+    .clk_1_S_in(\clk_2_wires[51] ),
     .clk_1_W_out(\clk_1_wires[100] ),
     .left_bottom_grid_pin_34_(grid_clb_52_top_width_0_height_0__pin_34_lower),
     .left_bottom_grid_pin_35_(grid_clb_52_top_width_0_height_0__pin_35_lower),
@@ -30409,6 +31072,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .prog_clk_0_N_in(\prog_clk_0_wires[190] ),
     .prog_clk_1_E_out(\prog_clk_1_wires[99] ),
     .prog_clk_1_N_in(\prog_clk_2_wires[51] ),
+    .prog_clk_1_S_in(\prog_clk_2_wires[51] ),
     .prog_clk_1_W_out(\prog_clk_1_wires[100] ),
     .right_bottom_grid_pin_34_(grid_clb_60_top_width_0_height_0__pin_34_upper),
     .right_bottom_grid_pin_35_(grid_clb_60_top_width_0_height_0__pin_35_upper),
@@ -30448,7 +31112,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_bottom_out({ \sb_1__1__47_chany_bottom_out[0] , \sb_1__1__47_chany_bottom_out[1] , \sb_1__1__47_chany_bottom_out[2] , \sb_1__1__47_chany_bottom_out[3] , \sb_1__1__47_chany_bottom_out[4] , \sb_1__1__47_chany_bottom_out[5] , \sb_1__1__47_chany_bottom_out[6] , \sb_1__1__47_chany_bottom_out[7] , \sb_1__1__47_chany_bottom_out[8] , \sb_1__1__47_chany_bottom_out[9] , \sb_1__1__47_chany_bottom_out[10] , \sb_1__1__47_chany_bottom_out[11] , \sb_1__1__47_chany_bottom_out[12] , \sb_1__1__47_chany_bottom_out[13] , \sb_1__1__47_chany_bottom_out[14] , \sb_1__1__47_chany_bottom_out[15] , \sb_1__1__47_chany_bottom_out[16] , \sb_1__1__47_chany_bottom_out[17] , \sb_1__1__47_chany_bottom_out[18] , \sb_1__1__47_chany_bottom_out[19]  }),
     .chany_top_in({ \cby_1__1__54_chany_bottom_out[0] , \cby_1__1__54_chany_bottom_out[1] , \cby_1__1__54_chany_bottom_out[2] , \cby_1__1__54_chany_bottom_out[3] , \cby_1__1__54_chany_bottom_out[4] , \cby_1__1__54_chany_bottom_out[5] , \cby_1__1__54_chany_bottom_out[6] , \cby_1__1__54_chany_bottom_out[7] , \cby_1__1__54_chany_bottom_out[8] , \cby_1__1__54_chany_bottom_out[9] , \cby_1__1__54_chany_bottom_out[10] , \cby_1__1__54_chany_bottom_out[11] , \cby_1__1__54_chany_bottom_out[12] , \cby_1__1__54_chany_bottom_out[13] , \cby_1__1__54_chany_bottom_out[14] , \cby_1__1__54_chany_bottom_out[15] , \cby_1__1__54_chany_bottom_out[16] , \cby_1__1__54_chany_bottom_out[17] , \cby_1__1__54_chany_bottom_out[18] , \cby_1__1__54_chany_bottom_out[19]  }),
     .chany_top_out({ \sb_1__1__47_chany_top_out[0] , \sb_1__1__47_chany_top_out[1] , \sb_1__1__47_chany_top_out[2] , \sb_1__1__47_chany_top_out[3] , \sb_1__1__47_chany_top_out[4] , \sb_1__1__47_chany_top_out[5] , \sb_1__1__47_chany_top_out[6] , \sb_1__1__47_chany_top_out[7] , \sb_1__1__47_chany_top_out[8] , \sb_1__1__47_chany_top_out[9] , \sb_1__1__47_chany_top_out[10] , \sb_1__1__47_chany_top_out[11] , \sb_1__1__47_chany_top_out[12] , \sb_1__1__47_chany_top_out[13] , \sb_1__1__47_chany_top_out[14] , \sb_1__1__47_chany_top_out[15] , \sb_1__1__47_chany_top_out[16] , \sb_1__1__47_chany_top_out[17] , \sb_1__1__47_chany_top_out[18] , \sb_1__1__47_chany_top_out[19]  }),
+    .clk_2_E_in(\clk_2_wires[41] ),
+    .clk_2_N_in(\clk_2_wires[41] ),
     .clk_2_N_out(\clk_2_wires[48] ),
+    .clk_2_S_in(\clk_2_wires[41] ),
     .clk_2_S_out(\clk_2_wires[50] ),
     .clk_2_W_in(\clk_2_wires[41] ),
     .left_bottom_grid_pin_34_(grid_clb_53_top_width_0_height_0__pin_34_lower),
@@ -30460,7 +31127,10 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_bottom_grid_pin_40_(grid_clb_53_top_width_0_height_0__pin_40_lower),
     .left_bottom_grid_pin_41_(grid_clb_53_top_width_0_height_0__pin_41_lower),
     .prog_clk_0_N_in(\prog_clk_0_wires[193] ),
+    .prog_clk_2_E_in(\prog_clk_2_wires[41] ),
+    .prog_clk_2_N_in(\prog_clk_2_wires[41] ),
     .prog_clk_2_N_out(\prog_clk_2_wires[48] ),
+    .prog_clk_2_S_in(\prog_clk_2_wires[41] ),
     .prog_clk_2_S_out(\prog_clk_2_wires[50] ),
     .prog_clk_2_W_in(\prog_clk_2_wires[41] ),
     .right_bottom_grid_pin_34_(grid_clb_61_top_width_0_height_0__pin_34_upper),
@@ -30502,6 +31172,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .chany_top_in({ \cby_1__1__55_chany_bottom_out[0] , \cby_1__1__55_chany_bottom_out[1] , \cby_1__1__55_chany_bottom_out[2] , \cby_1__1__55_chany_bottom_out[3] , \cby_1__1__55_chany_bottom_out[4] , \cby_1__1__55_chany_bottom_out[5] , \cby_1__1__55_chany_bottom_out[6] , \cby_1__1__55_chany_bottom_out[7] , \cby_1__1__55_chany_bottom_out[8] , \cby_1__1__55_chany_bottom_out[9] , \cby_1__1__55_chany_bottom_out[10] , \cby_1__1__55_chany_bottom_out[11] , \cby_1__1__55_chany_bottom_out[12] , \cby_1__1__55_chany_bottom_out[13] , \cby_1__1__55_chany_bottom_out[14] , \cby_1__1__55_chany_bottom_out[15] , \cby_1__1__55_chany_bottom_out[16] , \cby_1__1__55_chany_bottom_out[17] , \cby_1__1__55_chany_bottom_out[18] , \cby_1__1__55_chany_bottom_out[19]  }),
     .chany_top_out({ \sb_1__1__48_chany_top_out[0] , \sb_1__1__48_chany_top_out[1] , \sb_1__1__48_chany_top_out[2] , \sb_1__1__48_chany_top_out[3] , \sb_1__1__48_chany_top_out[4] , \sb_1__1__48_chany_top_out[5] , \sb_1__1__48_chany_top_out[6] , \sb_1__1__48_chany_top_out[7] , \sb_1__1__48_chany_top_out[8] , \sb_1__1__48_chany_top_out[9] , \sb_1__1__48_chany_top_out[10] , \sb_1__1__48_chany_top_out[11] , \sb_1__1__48_chany_top_out[12] , \sb_1__1__48_chany_top_out[13] , \sb_1__1__48_chany_top_out[14] , \sb_1__1__48_chany_top_out[15] , \sb_1__1__48_chany_top_out[16] , \sb_1__1__48_chany_top_out[17] , \sb_1__1__48_chany_top_out[18] , \sb_1__1__48_chany_top_out[19]  }),
     .clk_1_E_out(\clk_1_wires[106] ),
+    .clk_1_N_in(\clk_2_wires[49] ),
     .clk_1_S_in(\clk_2_wires[49] ),
     .clk_1_W_out(\clk_1_wires[107] ),
     .left_bottom_grid_pin_34_(grid_clb_54_top_width_0_height_0__pin_34_lower),
@@ -30514,6 +31185,7 @@ module fpga_core(IO_ISOL_N, Test_en, ccff_head, ccff_tail, clk, prog_clk, sc_hea
     .left_bottom_grid_pin_41_(grid_clb_54_top_width_0_height_0__pin_41_lower),
     .prog_clk_0_N_in(\prog_clk_0_wires[196] ),
     .prog_clk_1_E_out(\prog_clk_1_wires[106] ),
+    .prog_clk_1_N_in(\prog_clk_2_wires[49] ),
     .prog_clk_1_S_in(\prog_clk_2_wires[49] ),
     .prog_clk_1_W_out(\prog_clk_1_wires[107] ),
     .right_bottom_grid_pin_34_(grid_clb_62_top_width_0_height_0__pin_34_upper),

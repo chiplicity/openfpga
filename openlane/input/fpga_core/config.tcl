@@ -85,8 +85,6 @@ set ::env(FP_PIN_ORDER_CFG) $script_dir/pin.cfg
 
 set ::env(USE_ARC_ANTENNA_CHECK) 1
 
-# set ::env(LVS_INSERT_POWER_PINS) 0
-
 # PDN
 set ::env(FP_PDN_HOFFSET) 85
 set ::env(FP_PDN_HPITCH) 60

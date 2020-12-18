@@ -23,7 +23,7 @@ set ::env(PL_BASIC_PLACEMENT) 1
 set ::env(FP_SIZING) absolute
 set ::env(DIE_AREA) "0 0 $cby_x $cby_y"
 set ::env(PL_TARGET_DENSITY) 0.75
-set ::env(CELL_PAD) 4
+set ::env(CELL_PAD) 2
 
 set ::env(RUN_MAGIC) 1
 
