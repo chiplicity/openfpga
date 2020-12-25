@@ -2,11 +2,11 @@
 
 module cby_2__1_
 ( chany_bottom_in, chany_top_in, ccff_head, chany_bottom_out, chany_top_out, right_grid_pin_0_, left_grid_pin_16_, left_grid_pin_17_, left_grid_pin_18_, left_grid_pin_19_, left_grid_pin_20_, left_grid_pin_21_, left_grid_pin_22_, left_grid_pin_23_, left_grid_pin_24_, left_grid_pin_25_, left_grid_pin_26_, left_grid_pin_27_, left_grid_pin_28_, left_grid_pin_29_, left_grid_pin_30_, left_grid_pin_31_, ccff_tail, IO_ISOL_N, gfpga_pad_EMBEDDED_IO_HD_SOC_IN, gfpga_pad_EMBEDDED_IO_HD_SOC_OUT, gfpga_pad_EMBEDDED_IO_HD_SOC_DIR, left_width_0_height_0__pin_0_, left_width_0_height_0__pin_1_upper, left_width_0_height_0__pin_1_lower, prog_clk_0_W_in, prog_clk_0_S_out, prog_clk_0_N_out ); 
-  input [0:19] chany_bottom_in;
-  input [0:19] chany_top_in;
+  input [19:0] chany_bottom_in;
+  input [19:0] chany_top_in;
   input [0:0] ccff_head;
-  output [0:19] chany_bottom_out;
-  output [0:19] chany_top_out;
+  output [19:0] chany_bottom_out;
+  output [19:0] chany_top_out;
   output [0:0] right_grid_pin_0_;
   output [0:0] left_grid_pin_16_;
   output [0:0] left_grid_pin_17_;

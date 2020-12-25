@@ -2,9 +2,9 @@
 
 module sb_0__1_
 ( chany_top_in, top_left_grid_pin_1_, chanx_right_in, right_bottom_grid_pin_34_, right_bottom_grid_pin_35_, right_bottom_grid_pin_36_, right_bottom_grid_pin_37_, right_bottom_grid_pin_38_, right_bottom_grid_pin_39_, right_bottom_grid_pin_40_, right_bottom_grid_pin_41_, chany_bottom_in, bottom_left_grid_pin_1_, ccff_head, chany_top_out, chanx_right_out, chany_bottom_out, ccff_tail, prog_clk_0_E_in ); 
-  input [0:19] chany_top_in;
+  input [19:0] chany_top_in;
   input [0:0] top_left_grid_pin_1_;
-  input [0:19] chanx_right_in;
+  input [19:0] chanx_right_in;
   input [0:0] right_bottom_grid_pin_34_;
   input [0:0] right_bottom_grid_pin_35_;
   input [0:0] right_bottom_grid_pin_36_;
@@ -13,12 +13,12 @@ module sb_0__1_
   input [0:0] right_bottom_grid_pin_39_;
   input [0:0] right_bottom_grid_pin_40_;
   input [0:0] right_bottom_grid_pin_41_;
-  input [0:19] chany_bottom_in;
+  input [19:0] chany_bottom_in;
   input [0:0] bottom_left_grid_pin_1_;
   input [0:0] ccff_head;
-  output [0:19] chany_top_out;
-  output [0:19] chanx_right_out;
-  output [0:19] chany_bottom_out;
+  output [19:0] chany_top_out;
+  output [19:0] chanx_right_out;
+  output [19:0] chany_bottom_out;
   output [0:0] ccff_tail;
   input prog_clk_0_E_in;
 
@@ -414,7 +414,7 @@ module sb_0__1_
   mux_tree_tapbuf_size4
   mux_right_track_8
   (
-    .in({ chany_top_in[7:8], right_bottom_grid_pin_34_[0], chany_bottom_in[8] }),
+    .in({ chany_top_in[7], chany_top_in[8], right_bottom_grid_pin_34_[0], chany_bottom_in[8] }),
     .sram(mux_tree_tapbuf_size4_2_sram[0:2]),
     .sram_inv(mux_right_track_8_undriven_sram_inv[0:2]),
     .out(chanx_right_out[4])
@@ -454,7 +454,7 @@ module sb_0__1_
   mux_tree_tapbuf_size4
   mux_right_track_24
   (
-    .in({ chany_top_in[18], right_bottom_grid_pin_34_[0], chany_bottom_in[18:19] }),
+    .in({ chany_top_in[18], right_bottom_grid_pin_34_[0], chany_bottom_in[18], chany_bottom_in[19] }),
     .sram(mux_tree_tapbuf_size4_6_sram[0:2]),
     .sram_inv(mux_right_track_24_undriven_sram_inv[0:2]),
     .out(chanx_right_out[12])

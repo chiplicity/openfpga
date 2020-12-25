@@ -19,7 +19,14 @@ hex:  ${PATTERN:=.hex}
 ifeq ($(SIM),RTL)
 	iverilog -DFUNCTIONAL -DSIM -I $(PDK_PATH) -I $(BENCH_PATH) -I $(RTL_PATH) \
 	$< -o $@ 
-else  
+endif
+
+ifeq ($(SIM),YS)
+	iverilog -DFUNCTIONAL -DSIM -DYS -I $(PDK_PATH) -I $(BENCH_PATH) -I $(GL_PATH) -I $(RTL_PATH) \
+	$< -o $@ 
+endif
+
+ifeq ($(SIM),GL)
 	iverilog -DFUNCTIONAL -DSIM -DUSE_POWER_PINS -DGL -I $(PDK_PATH) -I $(GL_PATH) -I $(BENCH_PATH) -I $(RTL_PATH) \
 	$< -o $@ 
 endif

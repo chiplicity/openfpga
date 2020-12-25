@@ -36,9 +36,31 @@
 	`include "gl/tie_array.v"
 	`include "gl/fpga_core.v"
 `else
-	`include "define_simulation.v"
-	`include "fabric_netlists.v"
-	`include "tie_array.v"
+	`ifdef YS
+		`include "define_simulation.v"
+		`include "ys/sb_0__0_.v"
+		`include "ys/sb_0__1_.v"
+		`include "ys/sb_0__2_.v"
+		`include "ys/sb_1__0_.v"
+		`include "ys/sb_1__1_.v"
+		`include "ys/sb_1__2_.v"
+		`include "ys/sb_2__0_.v"
+		`include "ys/sb_2__1_.v"
+		`include "ys/sb_2__2_.v"
+		`include "ys/cbx_1__0_.v"
+		`include "ys/cbx_1__1_.v"
+		`include "ys/cbx_1__2_.v"
+		`include "ys/cby_0__1_.v"
+		`include "ys/cby_1__1_.v"
+		`include "ys/cby_2__1_.v"
+		`include "ys/grid_clb.v"
+		`include "ys/tie_array.v"
+		`include "ys/fpga_core.v"
+	`else
+		`include "define_simulation.v"
+		`include "fabric_netlists.v"
+		`include "tie_array.v"
+	`endif
 `endif
 
 module and2_autocheck_top_tb;
@@ -50,10 +72,10 @@ wire [0:0] clk;
 
 // ----- Local wires for I/Os of FPGA fabric -----
 
-wire [0:95] gfpga_pad_EMBEDDED_IO_HD_SOC_IN;
+wire [95:0] gfpga_pad_EMBEDDED_IO_HD_SOC_IN;
 
-wire [0:95] gfpga_pad_EMBEDDED_IO_HD_SOC_OUT;
-wire [0:95] gfpga_pad_EMBEDDED_IO_HD_SOC_DIR;
+wire [95:0] gfpga_pad_EMBEDDED_IO_HD_SOC_OUT;
+wire [95:0] gfpga_pad_EMBEDDED_IO_HD_SOC_DIR;
 
 reg [0:0] config_done;
 wire [0:0] prog_clock;
@@ -181,9 +203,9 @@ initial
 		.Test_en(Test_en[0]),
 		.IO_ISOL_N(IO_ISOL_N[0]),
 		.clk(clk[0]),
-		.gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[0:95]),
-		.gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[0:95]),
-		.gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[0:95]),
+		.gfpga_pad_EMBEDDED_IO_HD_SOC_IN(gfpga_pad_EMBEDDED_IO_HD_SOC_IN[95:0]),
+		.gfpga_pad_EMBEDDED_IO_HD_SOC_OUT(gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[95:0]),
+		.gfpga_pad_EMBEDDED_IO_HD_SOC_DIR(gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[95:0]),
 		.ccff_head(ccff_head[0]),
 		.ccff_tail(ccff_tail[0]),
 		.sc_head(sc_head[0]),

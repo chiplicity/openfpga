@@ -89,3 +89,5 @@ set ::env(USE_ARC_ANTENNA_CHECK) 1
 set ::env(FP_PDN_HOFFSET) 85
 set ::env(FP_PDN_HPITCH) 60
 set ::env(FP_PDN_VPITCH) 35
+
+set ::env(_WIDTH) 3

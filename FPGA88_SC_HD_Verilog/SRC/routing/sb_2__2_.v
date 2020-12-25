@@ -2,7 +2,7 @@
 
 module sb_2__2_
 ( chany_bottom_in, bottom_right_grid_pin_1_, bottom_left_grid_pin_42_, bottom_left_grid_pin_43_, bottom_left_grid_pin_44_, bottom_left_grid_pin_45_, bottom_left_grid_pin_46_, bottom_left_grid_pin_47_, bottom_left_grid_pin_48_, bottom_left_grid_pin_49_, chanx_left_in, left_top_grid_pin_1_, left_bottom_grid_pin_34_, left_bottom_grid_pin_35_, left_bottom_grid_pin_36_, left_bottom_grid_pin_37_, left_bottom_grid_pin_38_, left_bottom_grid_pin_39_, left_bottom_grid_pin_40_, left_bottom_grid_pin_41_, ccff_head, chany_bottom_out, chanx_left_out, ccff_tail, SC_IN_BOT, SC_OUT_BOT, prog_clk_0_S_in ); 
-  input [0:19] chany_bottom_in;
+  input [19:0] chany_bottom_in;
   input [0:0] bottom_right_grid_pin_1_;
   input [0:0] bottom_left_grid_pin_42_;
   input [0:0] bottom_left_grid_pin_43_;
@@ -12,7 +12,7 @@ module sb_2__2_
   input [0:0] bottom_left_grid_pin_47_;
   input [0:0] bottom_left_grid_pin_48_;
   input [0:0] bottom_left_grid_pin_49_;
-  input [0:19] chanx_left_in;
+  input [19:0] chanx_left_in;
   input [0:0] left_top_grid_pin_1_;
   input [0:0] left_bottom_grid_pin_34_;
   input [0:0] left_bottom_grid_pin_35_;
@@ -23,8 +23,8 @@ module sb_2__2_
   input [0:0] left_bottom_grid_pin_40_;
   input [0:0] left_bottom_grid_pin_41_;
   input [0:0] ccff_head;
-  output [0:19] chany_bottom_out;
-  output [0:19] chanx_left_out;
+  output [19:0] chany_bottom_out;
+  output [19:0] chanx_left_out;
   output [0:0] ccff_tail;
   input SC_IN_BOT;
   output SC_OUT_BOT;

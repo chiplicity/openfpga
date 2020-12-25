@@ -2,7 +2,7 @@
 
 module sb_2__1_
 ( chany_top_in, top_left_grid_pin_42_, top_left_grid_pin_43_, top_left_grid_pin_44_, top_left_grid_pin_45_, top_left_grid_pin_46_, top_left_grid_pin_47_, top_left_grid_pin_48_, top_left_grid_pin_49_, top_right_grid_pin_1_, chany_bottom_in, bottom_right_grid_pin_1_, bottom_left_grid_pin_42_, bottom_left_grid_pin_43_, bottom_left_grid_pin_44_, bottom_left_grid_pin_45_, bottom_left_grid_pin_46_, bottom_left_grid_pin_47_, bottom_left_grid_pin_48_, bottom_left_grid_pin_49_, chanx_left_in, left_bottom_grid_pin_34_, left_bottom_grid_pin_35_, left_bottom_grid_pin_36_, left_bottom_grid_pin_37_, left_bottom_grid_pin_38_, left_bottom_grid_pin_39_, left_bottom_grid_pin_40_, left_bottom_grid_pin_41_, ccff_head, chany_top_out, chany_bottom_out, chanx_left_out, ccff_tail, prog_clk_0_N_in ); 
-  input [0:19] chany_top_in;
+  input [19:0] chany_top_in;
   input [0:0] top_left_grid_pin_42_;
   input [0:0] top_left_grid_pin_43_;
   input [0:0] top_left_grid_pin_44_;
@@ -12,7 +12,7 @@ module sb_2__1_
   input [0:0] top_left_grid_pin_48_;
   input [0:0] top_left_grid_pin_49_;
   input [0:0] top_right_grid_pin_1_;
-  input [0:19] chany_bottom_in;
+  input [19:0] chany_bottom_in;
   input [0:0] bottom_right_grid_pin_1_;
   input [0:0] bottom_left_grid_pin_42_;
   input [0:0] bottom_left_grid_pin_43_;
@@ -22,7 +22,7 @@ module sb_2__1_
   input [0:0] bottom_left_grid_pin_47_;
   input [0:0] bottom_left_grid_pin_48_;
   input [0:0] bottom_left_grid_pin_49_;
-  input [0:19] chanx_left_in;
+  input [19:0] chanx_left_in;
   input [0:0] left_bottom_grid_pin_34_;
   input [0:0] left_bottom_grid_pin_35_;
   input [0:0] left_bottom_grid_pin_36_;
@@ -32,9 +32,9 @@ module sb_2__1_
   input [0:0] left_bottom_grid_pin_40_;
   input [0:0] left_bottom_grid_pin_41_;
   input [0:0] ccff_head;
-  output [0:19] chany_top_out;
-  output [0:19] chany_bottom_out;
-  output [0:19] chanx_left_out;
+  output [19:0] chany_top_out;
+  output [19:0] chany_bottom_out;
+  output [19:0] chanx_left_out;
   output [0:0] ccff_tail;
   input prog_clk_0_N_in;
 
@@ -530,7 +530,7 @@ module sb_2__1_
   mux_tree_tapbuf_size4
   mux_left_track_9
   (
-    .in({ chany_top_in[8], chany_bottom_in[7:8], left_bottom_grid_pin_34_[0] }),
+    .in({ chany_top_in[8], chany_bottom_in[7], chany_bottom_in[8], left_bottom_grid_pin_34_[0] }),
     .sram(mux_tree_tapbuf_size4_0_sram[0:2]),
     .sram_inv(mux_left_track_9_undriven_sram_inv[0:2]),
     .out(chanx_left_out[4])

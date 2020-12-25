@@ -2,11 +2,11 @@
 
 module cbx_1__0_
 ( chanx_left_in, chanx_right_in, ccff_head, chanx_left_out, chanx_right_out, bottom_grid_pin_0_, bottom_grid_pin_2_, bottom_grid_pin_4_, bottom_grid_pin_6_, bottom_grid_pin_8_, bottom_grid_pin_10_, bottom_grid_pin_12_, bottom_grid_pin_14_, bottom_grid_pin_16_, ccff_tail, IO_ISOL_N, gfpga_pad_EMBEDDED_IO_HD_SOC_IN, gfpga_pad_EMBEDDED_IO_HD_SOC_OUT, gfpga_pad_EMBEDDED_IO_HD_SOC_DIR, top_width_0_height_0__pin_0_, top_width_0_height_0__pin_2_, top_width_0_height_0__pin_4_, top_width_0_height_0__pin_6_, top_width_0_height_0__pin_8_, top_width_0_height_0__pin_10_, top_width_0_height_0__pin_12_, top_width_0_height_0__pin_14_, top_width_0_height_0__pin_16_, top_width_0_height_0__pin_1_upper, top_width_0_height_0__pin_1_lower, top_width_0_height_0__pin_3_upper, top_width_0_height_0__pin_3_lower, top_width_0_height_0__pin_5_upper, top_width_0_height_0__pin_5_lower, top_width_0_height_0__pin_7_upper, top_width_0_height_0__pin_7_lower, top_width_0_height_0__pin_9_upper, top_width_0_height_0__pin_9_lower, top_width_0_height_0__pin_11_upper, top_width_0_height_0__pin_11_lower, top_width_0_height_0__pin_13_upper, top_width_0_height_0__pin_13_lower, top_width_0_height_0__pin_15_upper, top_width_0_height_0__pin_15_lower, top_width_0_height_0__pin_17_upper, top_width_0_height_0__pin_17_lower, SC_IN_TOP, SC_OUT_BOT, SC_IN_BOT, SC_OUT_TOP, prog_clk_0_N_in, prog_clk_0_W_out ); 
-  input [0:19] chanx_left_in;
-  input [0:19] chanx_right_in;
+  input [19:0] chanx_left_in;
+  input [19:0] chanx_right_in;
   input [0:0] ccff_head;
-  output [0:19] chanx_left_out;
-  output [0:19] chanx_right_out;
+  output [19:0] chanx_left_out;
+  output [19:0] chanx_right_out;
   output [0:0] bottom_grid_pin_0_;
   output [0:0] bottom_grid_pin_2_;
   output [0:0] bottom_grid_pin_4_;
@@ -18,9 +18,9 @@ module cbx_1__0_
   output [0:0] bottom_grid_pin_16_;
   output [0:0] ccff_tail;
   input [0:0] IO_ISOL_N;
-  input [0:8] gfpga_pad_EMBEDDED_IO_HD_SOC_IN;
-  output [0:8] gfpga_pad_EMBEDDED_IO_HD_SOC_OUT;
-  output [0:8] gfpga_pad_EMBEDDED_IO_HD_SOC_DIR;
+  input [8:0] gfpga_pad_EMBEDDED_IO_HD_SOC_IN;
+  output [8:0] gfpga_pad_EMBEDDED_IO_HD_SOC_OUT;
+  output [8:0] gfpga_pad_EMBEDDED_IO_HD_SOC_DIR;
   input [0:0] top_width_0_height_0__pin_0_;
   input [0:0] top_width_0_height_0__pin_2_;
   input [0:0] top_width_0_height_0__pin_4_;

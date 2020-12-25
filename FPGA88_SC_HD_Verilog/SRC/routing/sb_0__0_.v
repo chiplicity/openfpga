@@ -2,9 +2,9 @@
 
 module sb_0__0_
 ( chany_top_in, top_left_grid_pin_1_, chanx_right_in, right_bottom_grid_pin_1_, right_bottom_grid_pin_3_, right_bottom_grid_pin_5_, right_bottom_grid_pin_7_, right_bottom_grid_pin_9_, right_bottom_grid_pin_11_, right_bottom_grid_pin_13_, right_bottom_grid_pin_15_, right_bottom_grid_pin_17_, ccff_head, chany_top_out, chanx_right_out, ccff_tail, prog_clk_0_E_in ); 
-  input [0:19] chany_top_in;
+  input [19:0] chany_top_in;
   input [0:0] top_left_grid_pin_1_;
-  input [0:19] chanx_right_in;
+  input [19:0] chanx_right_in;
   input [0:0] right_bottom_grid_pin_1_;
   input [0:0] right_bottom_grid_pin_3_;
   input [0:0] right_bottom_grid_pin_5_;
@@ -15,8 +15,8 @@ module sb_0__0_
   input [0:0] right_bottom_grid_pin_15_;
   input [0:0] right_bottom_grid_pin_17_;
   input [0:0] ccff_head;
-  output [0:19] chany_top_out;
-  output [0:19] chanx_right_out;
+  output [19:0] chany_top_out;
+  output [19:0] chanx_right_out;
   output [0:0] ccff_tail;
   input prog_clk_0_E_in;
 

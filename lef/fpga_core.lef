@@ -2084,7 +2084,7 @@ MACRO fpga_core
     USE POWER ;
     PORT
       LAYER met5 ;
-        RECT 5.520 95.080 2480.320 96.680 ;
+        RECT 5.520 94.380 2480.320 97.380 ;
     END
   END VPWR
   PIN VGND
@@ -2092,7 +2092,7 @@ MACRO fpga_core
     USE GROUND ;
     PORT
       LAYER met5 ;
-        RECT 5.520 125.080 2480.320 126.680 ;
+        RECT 5.520 124.380 2480.320 127.380 ;
     END
   END VGND
   OBS
@@ -2455,7 +2455,8 @@ MACRO fpga_core
       LAYER met4 ;
         RECT 64.695 76.335 2434.945 2541.360 ;
       LAYER met5 ;
-        RECT 5.520 155.080 2480.320 2526.680 ;
+        RECT 5.520 128.980 2480.320 2527.390 ;
+        RECT 5.520 98.980 2480.320 122.780 ;
   END
 END fpga_core
 END LIBRARY

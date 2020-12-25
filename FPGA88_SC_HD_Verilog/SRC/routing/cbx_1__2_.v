@@ -2,11 +2,11 @@
 
 module cbx_1__2_
 ( chanx_left_in, chanx_right_in, ccff_head, chanx_left_out, chanx_right_out, top_grid_pin_0_, bottom_grid_pin_0_, bottom_grid_pin_1_, bottom_grid_pin_2_, bottom_grid_pin_3_, bottom_grid_pin_4_, bottom_grid_pin_5_, bottom_grid_pin_6_, bottom_grid_pin_7_, bottom_grid_pin_8_, bottom_grid_pin_9_, bottom_grid_pin_10_, bottom_grid_pin_11_, bottom_grid_pin_12_, bottom_grid_pin_13_, bottom_grid_pin_14_, bottom_grid_pin_15_, ccff_tail, IO_ISOL_N, gfpga_pad_EMBEDDED_IO_HD_SOC_IN, gfpga_pad_EMBEDDED_IO_HD_SOC_OUT, gfpga_pad_EMBEDDED_IO_HD_SOC_DIR, bottom_width_0_height_0__pin_0_, bottom_width_0_height_0__pin_1_upper, bottom_width_0_height_0__pin_1_lower, SC_IN_TOP, SC_OUT_BOT, SC_IN_BOT, SC_OUT_TOP, prog_clk_0_S_in, prog_clk_0_W_out ); 
-  input [0:19] chanx_left_in;
-  input [0:19] chanx_right_in;
+  input [19:0] chanx_left_in;
+  input [19:0] chanx_right_in;
   input [0:0] ccff_head;
-  output [0:19] chanx_left_out;
-  output [0:19] chanx_right_out;
+  output [19:0] chanx_left_out;
+  output [19:0] chanx_right_out;
   output [0:0] top_grid_pin_0_;
   output [0:0] bottom_grid_pin_0_;
   output [0:0] bottom_grid_pin_1_;

@@ -113,9 +113,9 @@ module user_project_wrapper #(
     wire Test_en;
     wire io_isol_n;
     wire clk;
-    wire [0:95] gfpga_pad_EMBEDDED_IO_HD_SOC_IN;
-    wire [0:95] gfpga_pad_EMBEDDED_IO_HD_SOC_OUT;
-    wire [0:95] gfpga_pad_EMBEDDED_IO_HD_SOC_DIR;
+    wire [95:0] gfpga_pad_EMBEDDED_IO_HD_SOC_IN;
+    wire [95:0] gfpga_pad_EMBEDDED_IO_HD_SOC_OUT;
+    wire [95:0] gfpga_pad_EMBEDDED_IO_HD_SOC_DIR;
     wire ccff_head;
     wire ccff_tail;
     wire sc_head;
@@ -136,9 +136,9 @@ module user_project_wrapper #(
     assign io_oeb[24] = gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[0];
 
     // Wire-bond TOP side I/O of FPGA to TOP-side of Caravel interface
-    assign gfpga_pad_EMBEDDED_IO_HD_SOC_IN[1:8] = io_in[23:16];
-    assign io_out[23:16] = gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[1:8];
-    assign io_oeb[23:16] = gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[1:8];
+    assign gfpga_pad_EMBEDDED_IO_HD_SOC_IN[8:1] = io_in[23:16];
+    assign io_out[23:16] = gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[8:1];
+    assign io_oeb[23:16] = gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[8:1];
 
     // Wire-bond TOP side I/O of FPGA to RIGHT-side of Caravel interface
     assign gfpga_pad_EMBEDDED_IO_HD_SOC_IN[9] = io_in[14];
@@ -156,9 +156,9 @@ module user_project_wrapper #(
     assign io_oeb[11] = 1'b0;
 
     // Embedded-IOs -- Bidirectional
-    assign gfpga_pad_EMBEDDED_IO_HD_SOC_IN[10:15] = io_in[7:2];
-    assign io_out[7:2] = gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[10:15];
-    assign io_oeb[7:2] = gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[10:15];
+    assign gfpga_pad_EMBEDDED_IO_HD_SOC_IN[15:10] = io_in[7:2];
+    assign io_out[7:2] = gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[15:10];
+    assign io_oeb[7:2] = gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[15:10];
 
     // IO_ISOL_N -- Input
     assign io_isol_n = io_in[1];
@@ -786,9 +786,9 @@ module user_project_wrapper #(
     assign io_oeb[35] = 1'b0;
 
     // SOC-IN - Bidirectional
-    assign gfpga_pad_EMBEDDED_IO_HD_SOC_IN[88:95] = io_in[34:27];
-    assign io_out[34:27] = gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[88:95];
-    assign io_oeb[34:27] = gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[88:95];
+    assign gfpga_pad_EMBEDDED_IO_HD_SOC_IN[95:88] = io_in[34:27];
+    assign io_out[34:27] = gfpga_pad_EMBEDDED_IO_HD_SOC_OUT[95:88];
+    assign io_oeb[34:27] = gfpga_pad_EMBEDDED_IO_HD_SOC_DIR[95:88];
 
     // SC-HEAD -- Input
     assign sc_head = io_in[26];

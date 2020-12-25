@@ -10,7 +10,7 @@ init_floorplan
 
 place_io_ol
 
-add_macro_placement fpga_core_uut 212 453.2 N
+add_macro_placement fpga_core_uut 212 454.7 N
 
 manual_macro_placement f
 
