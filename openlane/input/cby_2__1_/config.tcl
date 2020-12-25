@@ -1,4 +1,3 @@
-
 set script_dir [file dirname [file normalize [info script]]]
 source $script_dir/../sizes.tcl
 
@@ -19,7 +18,6 @@ set ::env(CLOCK_NET) "logical_tile_io_mode_io__0.ltile_phy_iopad_0.EMBEDDED_IO_H
 set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 
 # Floorplan & Placement
-set ::env(PL_BASIC_PLACEMENT) 1
 set ::env(FP_SIZING) absolute
 set ::env(DIE_AREA) "0 0 $cby_x $cby_y"
 set ::env(PL_TARGET_DENSITY) 0.75

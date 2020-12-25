@@ -16,7 +16,6 @@ set ::env(CLOCK_PORT) "prog_clk_0_N_in"
 set ::env(CLOCK_NET) "mem_top_ipin_0.prog_clk"
 
 # Synthesis
-set ::env(SYNTH_MAX_FANOUT) 6
 set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 
 # Floorplan & Placement

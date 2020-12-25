@@ -21,6 +21,8 @@ set ::env(CLOCK_NET) "mem_left_track_1.prog_clk"
 # Synthesis
 set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 
+set ::env(DIODE_INSERTION_STRATEGY) 4
+
 # Floorplan & Placement
 set ::env(FP_SIZING) absolute
 set ::env(DIE_AREA) "0 0 $sb_x $sb_y"

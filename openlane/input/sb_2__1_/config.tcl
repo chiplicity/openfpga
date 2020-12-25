@@ -14,18 +14,17 @@ set ::env(VERILOG_FILES) "$script_dir/../../../FPGA88_SC_HD_Verilog/SRC/routing/
                           $script_dir/../../../FPGA88_SC_HD_Verilog/SRC/sub_module/local_encoder.v \ 
                           $script_dir/../../../FPGA88_SC_HD_Verilog/SRC/sub_module/arch_encoder.v"
 
-set ::env(CLOCK_PERIOD) "5"
+set ::env(CLOCK_PERIOD) "10"
 set ::env(CLOCK_PORT) "prog_clk_0_N_in"
 set ::env(CLOCK_NET) "mem_bottom_track_1.prog_clk"
 
 # Synthesis
-set ::env(SYNTH_MAX_FANOUT) 6
 set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 
 # Floorplan & Placement
 set ::env(FP_SIZING) absolute
 set ::env(DIE_AREA) "0 0 $sb_x $sb_y"
-set ::env(PL_TARGET_DENSITY) 0.8
+set ::env(PL_TARGET_DENSITY) 0.7
 set ::env(CELL_PAD) 2
 
 set ::env(RUN_MAGIC) 1

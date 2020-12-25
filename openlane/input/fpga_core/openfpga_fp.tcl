@@ -3,13 +3,13 @@ source $script_dir/../sizes.tcl
 
 # Calculate Spacings
 set sb_to_cbx 35
-set sb_to_cby 35
+set sb_to_cby 45
 
 set cbx_to_sb $sb_to_cbx
 set cby_to_sb $sb_to_cby
 
 set sb_to_cby_x 0
-set sb_to_cby_y 35
+set sb_to_cby_y 60
 
 # tile calculations
 set tile_x [expr {$sb_x + $sb_to_cbx + \

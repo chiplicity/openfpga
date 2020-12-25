@@ -91,3 +91,6 @@ set ::env(FP_PDN_HPITCH) 60
 set ::env(FP_PDN_VPITCH) 35
 
 set ::env(_WIDTH) 3
+set ::env(_SPACING) 1.7
+set ::env(_H_OFFSET) 20
+set ::env(_V_OFFSET) 20

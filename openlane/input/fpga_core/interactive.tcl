@@ -71,7 +71,7 @@ if {$EMBED_IOS == 0} {
 }
 
 #tie array
-add_macro_placement tie_array [expr {$floorplan_x / 2}] [expr {$switches_y(8,8) + $clb_y + 10}] N
+add_macro_placement tie_array [expr {$floorplan_x / 2}] [expr {$switches_y(8,8) + $clb_y - 5}] N
 
 manual_macro_placement f
 
@@ -82,14 +82,16 @@ gen_pdn
 run_routing
 
 write_powered_verilog
-# set_netlist $::env(lvs_result_file_tag).powered.v
+#set_netlist $::env(lvs_result_file_tag).powered.v
 
 if { $::env(DIODE_INSERTION_STRATEGY) == 2 } {
     run_magic_antenna_check; # produces a report of violators; extraction!
     heal_antenna_violators; # modifies the routed DEF
 }
 
-run_magic    
+
+run_magic 
+
 save_views       -lef_path $::env(magic_result_file_tag).lef \
                  -def_path $::env(tritonRoute_result_file_tag).def \
                  -gds_path $::env(magic_result_file_tag).gds \

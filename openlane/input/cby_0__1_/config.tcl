@@ -16,7 +16,6 @@ set ::env(CLOCK_PORT) "prog_clk_0_E_in"
 set ::env(CLOCK_NET) "logical_tile_io_mode_io__0.ltile_phy_iopad_0.EMBEDDED_IO_HD_sky130_fd_sc_hd__dfxtp_1_mem.prog_clk"
 
 # Synthesis
-set ::env(SYNTH_MAX_FANOUT) 6
 set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 
 # Floorplan & Placement
@@ -24,8 +23,8 @@ set ::env(PL_BASIC_PLACEMENT) 1
 set ::env(FP_SIZING) absolute
 set ::env(DIE_AREA) "0 0 $cby_x $cby_y"
 set ::env(PL_TARGET_DENSITY) 0.208
-set ::env(CELL_PAD) 2
 
+set ::env(DIODE_INSERTION_STRATEGY) 4
 set ::env(RUN_MAGIC) 1
 
 # Routing

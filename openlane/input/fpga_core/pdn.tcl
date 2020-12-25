@@ -11,6 +11,12 @@ pdngen::specify_grid stdcell {
     }
 }
 
+#  core_ring {
+#			met5 {width $::env(_WIDTH) spacing $::env(_SPACING) core_offset $::env(_H_OFFSET)}
+#			met4 {width $::env(_WIDTH) spacing $::env(_SPACING) core_offset $::env(_V_OFFSET)}
+#	}
+#   connect {{met4 met5}}
+
 pdngen::specify_grid macro {
     orient {R0 R180 MX MY R90 R270 MXR90 MYR90}
     power_pins "VPWR"

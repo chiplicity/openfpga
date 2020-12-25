@@ -25,7 +25,7 @@ set ::env(SYNTH_READ_BLACKBOX_LIB) 1
 set ::env(FP_SIZING) absolute
 set ::env(DIE_AREA) "0 0 $sb_x $sb_y"
 set ::env(PL_TARGET_DENSITY) 0.8
-set ::env(CELL_PAD) 2
+set ::env(CELL_PAD) 0
 
 set ::env(RUN_MAGIC) 1
 
