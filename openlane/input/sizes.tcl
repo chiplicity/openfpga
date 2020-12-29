@@ -7,16 +7,16 @@ set grid_x 8
 set grid_y 8
 
 # grid clb
-set clb_x 122
-set clb_y 122
+set clb_x 123
+set clb_y 123
 
 # Switch 
-set sb_x 114
-set sb_y 114
+set sb_x 115
+set sb_y 115
 
 # xbar
 set cbx_x 100
-set cbx_y 85
+set cbx_y 86
 
 set cby_x $cbx_y
 set cby_y $cbx_x

@@ -1,7 +1,7 @@
 
 
 module cbx_1__1_
-( chanx_left_in, chanx_right_in, ccff_head, chanx_left_out, chanx_right_out, bottom_grid_pin_0_, bottom_grid_pin_1_, bottom_grid_pin_2_, bottom_grid_pin_3_, bottom_grid_pin_4_, bottom_grid_pin_5_, bottom_grid_pin_6_, bottom_grid_pin_7_, bottom_grid_pin_8_, bottom_grid_pin_9_, bottom_grid_pin_10_, bottom_grid_pin_11_, bottom_grid_pin_12_, bottom_grid_pin_13_, bottom_grid_pin_14_, bottom_grid_pin_15_, ccff_tail, SC_IN_TOP, SC_OUT_BOT, SC_IN_BOT, SC_OUT_TOP, REGIN_FEEDTHROUGH, REGOUT_FEEDTHROUGH, prog_clk_0_N_in, prog_clk_0_W_out, prog_clk_1_W_in, prog_clk_1_E_in, prog_clk_1_N_out, prog_clk_1_S_out, prog_clk_2_W_in, prog_clk_2_E_in, prog_clk_2_E_out, prog_clk_2_W_out, prog_clk_3_W_in, prog_clk_3_E_in, prog_clk_3_E_out, prog_clk_3_W_out, clk_1_W_in, clk_1_E_in, clk_1_N_out, clk_1_S_out, clk_2_W_in, clk_2_E_in, clk_2_E_out, clk_2_W_out, clk_3_W_in, clk_3_E_in, clk_3_E_out, clk_3_W_out ); 
+( chanx_left_in, chanx_right_in, ccff_head, chanx_left_out, chanx_right_out, bottom_grid_pin_0_, bottom_grid_pin_1_, bottom_grid_pin_2_, bottom_grid_pin_3_, bottom_grid_pin_4_, bottom_grid_pin_5_, bottom_grid_pin_6_, bottom_grid_pin_7_, bottom_grid_pin_8_, bottom_grid_pin_9_, bottom_grid_pin_10_, bottom_grid_pin_11_, bottom_grid_pin_12_, bottom_grid_pin_13_, bottom_grid_pin_14_, bottom_grid_pin_15_, ccff_tail, SC_IN_TOP, SC_OUT_BOT, SC_IN_BOT, SC_OUT_TOP, REGIN_FEEDTHROUGH, REGOUT_FEEDTHROUGH, prog_clk_0_N_in, prog_clk_0_W_out, prog_clk_1_W_in, prog_clk_1_N_out, prog_clk_1_S_out, prog_clk_2_W_in, prog_clk_2_E_out, prog_clk_2_W_out, prog_clk_3_W_in, prog_clk_3_E_out, prog_clk_3_W_out, clk_1_W_in, clk_1_N_out, clk_1_S_out, clk_2_W_in, clk_2_E_out, clk_2_W_out, clk_3_W_in, clk_3_E_out, clk_3_W_out ); 
   input [19:0] chanx_left_in;
   input [19:0] chanx_right_in;
   input [0:0] ccff_head;
@@ -33,27 +33,25 @@ module cbx_1__1_
   input prog_clk_0_N_in;
   output prog_clk_0_W_out;
   input prog_clk_1_W_in;
-  input prog_clk_1_E_in;
+  // input prog_clk_1_E_in;
   output prog_clk_1_N_out;
   output prog_clk_1_S_out;
   input prog_clk_2_W_in;
-  input prog_clk_2_E_in;
+  // input prog_clk_2_E_in;
   output prog_clk_2_E_out;
   output prog_clk_2_W_out;
   input prog_clk_3_W_in;
-  input prog_clk_3_E_in;
   output prog_clk_3_E_out;
   output prog_clk_3_W_out;
   input clk_1_W_in;
-  input clk_1_E_in;
+  // input clk_1_E_in;
   output clk_1_N_out;
   output clk_1_S_out;
   input clk_2_W_in;
-  input clk_2_E_in;
+  // input clk_2_E_in;
   output clk_2_E_out;
   output clk_2_W_out;
   input clk_3_W_in;
-  input clk_3_E_in;
   output clk_3_E_out;
   output clk_3_W_out;
 

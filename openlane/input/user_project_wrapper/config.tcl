@@ -21,7 +21,8 @@ set ::env(FP_IO_HTHICKNESS_MULT) 4
 
 set ::env(CLOCK_PORT) "w"
 set ::env(CLOCK_PERIOD) "10"
-set ::env(PL_TARGET_DENSITY) 0.208
+set ::env(PL_BASIC_PLACEMENT) 1
+set ::env(PL_TARGET_DENSITY) 0.1
 
 set ::env(DIODE_INSERTION_STRATEGY) 4
 set ::env(MAGIC_GENERATE_LEF) 0

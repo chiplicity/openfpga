@@ -36,3 +36,4 @@ set ::env(PDN_CFG) $script_dir/../pdn.tcl
 set ::env(FP_PIN_ORDER_CFG) $script_dir/pin.cfg
 
 set ::env(USE_ARC_ANTENNA_CHECK) 1
+set ::env(DIODE_INSERTION_STRATEGY) 4

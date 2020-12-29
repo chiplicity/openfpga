@@ -9,6 +9,7 @@ MACRO tie_array
   SIZE 52.300 BY 57.360 ;
   PIN x[0]
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 0.020 0.000 0.300 4.000 ;
@@ -16,6 +17,7 @@ MACRO tie_array
   END x[0]
   PIN x[1]
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 7.380 0.000 7.660 4.000 ;
@@ -23,6 +25,7 @@ MACRO tie_array
   END x[1]
   PIN x[2]
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 14.740 0.000 15.020 4.000 ;
@@ -30,6 +33,7 @@ MACRO tie_array
   END x[2]
   PIN x[3]
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 22.100 0.000 22.380 4.000 ;
@@ -37,6 +41,7 @@ MACRO tie_array
   END x[3]
   PIN x[4]
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 29.920 0.000 30.200 4.000 ;
@@ -44,6 +49,7 @@ MACRO tie_array
   END x[4]
   PIN x[5]
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 37.280 0.000 37.560 4.000 ;
@@ -51,6 +57,7 @@ MACRO tie_array
   END x[5]
   PIN x[6]
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 44.640 0.000 44.920 4.000 ;
@@ -58,13 +65,30 @@ MACRO tie_array
   END x[6]
   PIN x[7]
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 52.000 0.000 52.280 4.000 ;
     END
   END x[7]
   PIN VPWR
-    DIRECTION INPUT ;
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 41.770 10.640 43.370 57.360 ;
+    END
+  END VPWR
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 25.450 10.640 27.050 57.360 ;
+    END
+  END VPWR
+  PIN VPWR
+    DIRECTION INOUT ;
     USE POWER ;
     PORT
       LAYER met4 ;
@@ -72,7 +96,15 @@ MACRO tie_array
     END
   END VPWR
   PIN VGND
-    DIRECTION INPUT ;
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 33.610 10.640 35.210 57.360 ;
+    END
+  END VGND
+  PIN VGND
+    DIRECTION INOUT ;
     USE GROUND ;
     PORT
       LAYER met4 ;
@@ -95,8 +127,6 @@ MACRO tie_array
         RECT 45.200 4.000 51.720 4.280 ;
       LAYER met3 ;
         RECT 9.130 10.715 43.370 57.285 ;
-      LAYER met4 ;
-        RECT 25.450 10.640 43.370 57.360 ;
   END
 END tie_array
 END LIBRARY

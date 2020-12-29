@@ -3,13 +3,13 @@ source $script_dir/../sizes.tcl
 
 # Calculate Spacings
 set sb_to_cbx 35
-set sb_to_cby 45
+set sb_to_cby 55
 
 set cbx_to_sb $sb_to_cbx
 set cby_to_sb $sb_to_cby
 
 set sb_to_cby_x 0
-set sb_to_cby_y 60
+set sb_to_cby_y 55
 
 # tile calculations
 set tile_x [expr {$sb_x + $sb_to_cbx + \
@@ -22,7 +22,7 @@ puts "Tile size (x,y): ($tile_x, $tile_y)"
 
 # floorplan
 set margin_x 50
-set margin_y 80
+set margin_y 75
 
 if {$EMBED_IOS == 1} {
 

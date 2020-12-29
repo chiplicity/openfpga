@@ -23,6 +23,7 @@ set ::env(PL_BASIC_PLACEMENT) 1
 set ::env(FP_SIZING) absolute
 set ::env(DIE_AREA) "0 0 $cby_x $cby_y"
 set ::env(PL_TARGET_DENSITY) 0.208
+set ::env(CELL_PAD) 0
 
 set ::env(DIODE_INSERTION_STRATEGY) 4
 set ::env(RUN_MAGIC) 1
@@ -34,3 +35,4 @@ set ::env(PDN_CFG) $script_dir/../pdn.tcl
 set ::env(FP_PIN_ORDER_CFG) $script_dir/pin.cfg
 
 set ::env(USE_ARC_ANTENNA_CHECK) 1
+set ::env(DIODE_INSERTION_STRATEGY) 4

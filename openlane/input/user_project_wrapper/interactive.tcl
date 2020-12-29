@@ -10,7 +10,7 @@ init_floorplan
 
 place_io_ol
 
-add_macro_placement fpga_core_uut 212 394.76 N
+add_macro_placement fpga_core_uut 140 404.76 N
 
 manual_macro_placement f
 
@@ -23,8 +23,8 @@ set ::env(_VDD_NET_NAME) vccd1
 set ::env(_GND_NET_NAME) vssd1
 set ::env(_V_OFFSET) 14
 set ::env(_H_OFFSET) $::env(_V_OFFSET)
-set ::env(_V_PITCH) 180
-set ::env(_H_PITCH) 60
+set ::env(_V_PITCH) 45
+set ::env(_H_PITCH) 45
 set ::env(_V_PDN_OFFSET) 0
 set ::env(_H_PDN_OFFSET) 0
 

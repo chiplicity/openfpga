@@ -5583,7 +5583,6 @@ module fpga_core
     .Test_en_W_in(Test_enWires[16]),
     .SC_OUT_BOT(scff_Wires[17]),
     .SC_IN_TOP(scff_Wires[15]),
-    .SC_IN_BOT(scff_Wires[15]),
     .top_width_0_height_0__pin_0_(cbx_1__1__0_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__1__0_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__1__0_bottom_grid_pin_2_[0]),
@@ -5668,7 +5667,6 @@ module fpga_core
     .Test_en_W_in(Test_enWires[30]),
     .SC_OUT_BOT(scff_Wires[14]),
     .SC_IN_TOP(scff_Wires[13]),
-    .SC_IN_BOT(scff_Wires[13]),
     .top_width_0_height_0__pin_0_(cbx_1__1__1_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__1__1_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__1__1_bottom_grid_pin_2_[0]),
@@ -5753,7 +5751,6 @@ module fpga_core
     .Test_en_W_in(Test_enWires[44]),
     .SC_OUT_BOT(scff_Wires[12]),
     .SC_IN_TOP(scff_Wires[11]),
-    .SC_IN_BOT(scff_Wires[11]),
     .top_width_0_height_0__pin_0_(cbx_1__1__2_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__1__2_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__1__2_bottom_grid_pin_2_[0]),
@@ -5838,7 +5835,6 @@ module fpga_core
     .Test_en_W_in(Test_enWires[58]),
     .SC_OUT_BOT(scff_Wires[10]),
     .SC_IN_TOP(scff_Wires[9]),
-    .SC_IN_BOT(scff_Wires[9]),
     .top_width_0_height_0__pin_0_(cbx_1__1__3_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__1__3_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__1__3_bottom_grid_pin_2_[0]),
@@ -5923,7 +5919,6 @@ module fpga_core
     .Test_en_W_in(Test_enWires[72]),
     .SC_OUT_BOT(scff_Wires[8]),
     .SC_IN_TOP(scff_Wires[7]),
-    .SC_IN_BOT(scff_Wires[7]),
     .top_width_0_height_0__pin_0_(cbx_1__1__4_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__1__4_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__1__4_bottom_grid_pin_2_[0]),
@@ -6008,7 +6003,6 @@ module fpga_core
     .Test_en_W_in(Test_enWires[86]),
     .SC_OUT_BOT(scff_Wires[6]),
     .SC_IN_TOP(scff_Wires[5]),
-    .SC_IN_BOT(scff_Wires[5]),
     .top_width_0_height_0__pin_0_(cbx_1__1__5_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__1__5_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__1__5_bottom_grid_pin_2_[0]),
@@ -6093,8 +6087,6 @@ module fpga_core
     .Test_en_W_in(Test_enWires[100]),
     .SC_OUT_BOT(scff_Wires[4]),
     .SC_IN_TOP(scff_Wires[3]),
-    .SC_IN_BOT(scff_Wires[3]),
-
     .top_width_0_height_0__pin_0_(cbx_1__1__6_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__1__6_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__1__6_bottom_grid_pin_2_[0]),
@@ -6180,8 +6172,6 @@ module fpga_core
     .Test_en_W_in(Test_enWires[114]),
     .SC_OUT_BOT(scff_Wires[2]),
     .SC_IN_TOP(scff_Wires[1]),
-    .SC_IN_BOT(scff_Wires[1]),
-
     .top_width_0_height_0__pin_0_(cbx_1__8__0_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__8__0_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__8__0_bottom_grid_pin_2_[0]),
@@ -6265,7 +6255,6 @@ module fpga_core
     .Test_en_E_in(Test_enWires[17]),
     .Test_en_W_in(Test_enWires[17]),
     .SC_OUT_TOP(scff_Wires[21]),
-    .SC_IN_BOT(scff_Wires[20]),
     .SC_IN_TOP(scff_Wires[20]),
 
     .top_width_0_height_0__pin_0_(cbx_1__1__7_bottom_grid_pin_0_[0]),
@@ -6351,7 +6340,6 @@ module fpga_core
     .Test_en_E_in(Test_enWires[31]),
     .Test_en_W_in(Test_enWires[31]),
     .SC_OUT_TOP(scff_Wires[23]),
-    .SC_IN_BOT(scff_Wires[22]),
     .SC_IN_TOP(scff_Wires[22]),
 
     .top_width_0_height_0__pin_0_(cbx_1__1__8_bottom_grid_pin_0_[0]),
@@ -6437,7 +6425,6 @@ module fpga_core
     .Test_en_E_in(Test_enWires[45]),
     .Test_en_W_in(Test_enWires[45]),
     .SC_OUT_TOP(scff_Wires[25]),
-    .SC_IN_BOT(scff_Wires[24]),
     .SC_IN_TOP(scff_Wires[24]),
 
     .top_width_0_height_0__pin_0_(cbx_1__1__9_bottom_grid_pin_0_[0]),
@@ -6523,7 +6510,6 @@ module fpga_core
     .Test_en_E_in(Test_enWires[59]),
     .Test_en_W_in(Test_enWires[59]),
     .SC_OUT_TOP(scff_Wires[27]),
-    .SC_IN_BOT(scff_Wires[26]),
     .SC_IN_TOP(scff_Wires[26]),
 
     .top_width_0_height_0__pin_0_(cbx_1__1__10_bottom_grid_pin_0_[0]),
@@ -6609,7 +6595,6 @@ module fpga_core
     .Test_en_E_in(Test_enWires[73]),
     .Test_en_W_in(Test_enWires[73]),
     .SC_OUT_TOP(scff_Wires[29]),
-    .SC_IN_BOT(scff_Wires[28]),
     .SC_IN_TOP(scff_Wires[28]),
 
     .top_width_0_height_0__pin_0_(cbx_1__1__11_bottom_grid_pin_0_[0]),
@@ -6695,7 +6680,6 @@ module fpga_core
     .Test_en_E_in(Test_enWires[87]),
     .Test_en_W_in(Test_enWires[87]),
     .SC_OUT_TOP(scff_Wires[31]),
-    .SC_IN_BOT(scff_Wires[30]),
     .SC_IN_TOP(scff_Wires[30]),
 
     .top_width_0_height_0__pin_0_(cbx_1__1__12_bottom_grid_pin_0_[0]),
@@ -6781,7 +6765,6 @@ module fpga_core
     .Test_en_E_in(Test_enWires[101]),
     .Test_en_W_in(Test_enWires[101]),
     .SC_OUT_TOP(scff_Wires[33]),
-    .SC_IN_BOT(scff_Wires[32]),
     .SC_IN_TOP(scff_Wires[32]),
 
     .top_width_0_height_0__pin_0_(cbx_1__1__13_bottom_grid_pin_0_[0]),
@@ -6868,7 +6851,6 @@ module fpga_core
     .Test_en_E_in(Test_enWires[115]),
     .Test_en_W_in(Test_enWires[115]),
     .SC_OUT_TOP(scff_Wires[35]),
-    .SC_IN_BOT(scff_Wires[34]),
     .SC_IN_TOP(scff_Wires[34]),
 
     .top_width_0_height_0__pin_0_(cbx_1__8__1_bottom_grid_pin_0_[0]),
@@ -6955,8 +6937,6 @@ module fpga_core
     .Test_en_W_in(Test_enWires[19]),
     .SC_OUT_BOT(scff_Wires[54]),
     .SC_IN_TOP(scff_Wires[52]),
-    .SC_IN_BOT(scff_Wires[52]),
-
     .top_width_0_height_0__pin_0_(cbx_1__1__14_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__1__14_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__1__14_bottom_grid_pin_2_[0]),
@@ -7041,8 +7021,6 @@ module fpga_core
     .Test_en_W_in(Test_enWires[33]),
     .SC_OUT_BOT(scff_Wires[51]),
     .SC_IN_TOP(scff_Wires[50]),
-    .SC_IN_BOT(scff_Wires[50]),
-
     .top_width_0_height_0__pin_0_(cbx_1__1__15_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__1__15_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__1__15_bottom_grid_pin_2_[0]),
@@ -7127,8 +7105,6 @@ module fpga_core
     .Test_en_W_in(Test_enWires[47]),
     .SC_OUT_BOT(scff_Wires[49]),
     .SC_IN_TOP(scff_Wires[48]),
-    .SC_IN_BOT(scff_Wires[48]),
-
     .top_width_0_height_0__pin_0_(cbx_1__1__16_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__1__16_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__1__16_bottom_grid_pin_2_[0]),
@@ -7213,8 +7189,6 @@ module fpga_core
     .Test_en_W_in(Test_enWires[61]),
     .SC_OUT_BOT(scff_Wires[47]),
     .SC_IN_TOP(scff_Wires[46]),
-    .SC_IN_BOT(scff_Wires[46]),
-
     .top_width_0_height_0__pin_0_(cbx_1__1__17_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__1__17_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__1__17_bottom_grid_pin_2_[0]),
@@ -7299,8 +7273,6 @@ module fpga_core
     .Test_en_W_in(Test_enWires[75]),
     .SC_OUT_BOT(scff_Wires[45]),
     .SC_IN_TOP(scff_Wires[44]),
-    .SC_IN_BOT(scff_Wires[44]),
-
     .top_width_0_height_0__pin_0_(cbx_1__1__18_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__1__18_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__1__18_bottom_grid_pin_2_[0]),
@@ -7385,8 +7357,6 @@ module fpga_core
     .Test_en_W_in(Test_enWires[89]),
     .SC_OUT_BOT(scff_Wires[43]),
     .SC_IN_TOP(scff_Wires[42]),
-    .SC_IN_BOT(scff_Wires[42]),
-
     .top_width_0_height_0__pin_0_(cbx_1__1__19_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__1__19_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__1__19_bottom_grid_pin_2_[0]),
@@ -7471,8 +7441,6 @@ module fpga_core
     .Test_en_W_in(Test_enWires[103]),
     .SC_OUT_BOT(scff_Wires[41]),
     .SC_IN_TOP(scff_Wires[40]),
-    .SC_IN_BOT(scff_Wires[40]),
-
     .top_width_0_height_0__pin_0_(cbx_1__1__20_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__1__20_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__1__20_bottom_grid_pin_2_[0]),
@@ -7558,8 +7526,6 @@ module fpga_core
     .Test_en_W_in(Test_enWires[117]),
     .SC_OUT_BOT(scff_Wires[39]),
     .SC_IN_TOP(scff_Wires[38]),
-    .SC_IN_BOT(scff_Wires[38]),
-
     .top_width_0_height_0__pin_0_(cbx_1__8__2_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__8__2_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__8__2_bottom_grid_pin_2_[0]),
@@ -7643,9 +7609,7 @@ module fpga_core
     .Test_en_E_in(Test_enWires[21]),
     .Test_en_W_in(Test_enWires[21]),
     .SC_OUT_TOP(scff_Wires[58]),
-    .SC_IN_BOT(scff_Wires[57]),
     .SC_IN_TOP(scff_Wires[57]),
-
     .top_width_0_height_0__pin_0_(cbx_1__1__21_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__1__21_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__1__21_bottom_grid_pin_2_[0]),
@@ -7729,9 +7693,7 @@ module fpga_core
     .Test_en_E_in(Test_enWires[35]),
     .Test_en_W_in(Test_enWires[35]),
     .SC_OUT_TOP(scff_Wires[60]),
-    .SC_IN_BOT(scff_Wires[59]),
     .SC_IN_TOP(scff_Wires[59]),
-
     .top_width_0_height_0__pin_0_(cbx_1__1__22_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__1__22_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__1__22_bottom_grid_pin_2_[0]),
@@ -7815,7 +7777,6 @@ module fpga_core
     .Test_en_E_in(Test_enWires[49]),
     .Test_en_W_in(Test_enWires[49]),
     .SC_OUT_TOP(scff_Wires[62]),
-    .SC_IN_BOT(scff_Wires[61]),
     .SC_IN_TOP(scff_Wires[61]),
 
     .top_width_0_height_0__pin_0_(cbx_1__1__23_bottom_grid_pin_0_[0]),
@@ -7901,7 +7862,6 @@ module fpga_core
     .Test_en_E_in(Test_enWires[63]),
     .Test_en_W_in(Test_enWires[63]),
     .SC_OUT_TOP(scff_Wires[64]),
-    .SC_IN_BOT(scff_Wires[63]),
     .SC_IN_TOP(scff_Wires[63]),
 
     .top_width_0_height_0__pin_0_(cbx_1__1__24_bottom_grid_pin_0_[0]),
@@ -7987,7 +7947,6 @@ module fpga_core
     .Test_en_E_in(Test_enWires[77]),
     .Test_en_W_in(Test_enWires[77]),
     .SC_OUT_TOP(scff_Wires[66]),
-    .SC_IN_BOT(scff_Wires[65]),
     .SC_IN_TOP(scff_Wires[65]),
 
     .top_width_0_height_0__pin_0_(cbx_1__1__25_bottom_grid_pin_0_[0]),
@@ -8074,7 +8033,6 @@ module fpga_core
     .Test_en_W_in(Test_enWires[91]),
     
     .SC_OUT_TOP(scff_Wires[68]),
-    .SC_IN_BOT(scff_Wires[67]),
     .SC_IN_TOP(scff_Wires[67]),
 
     .top_width_0_height_0__pin_0_(cbx_1__1__26_bottom_grid_pin_0_[0]),
@@ -8160,7 +8118,6 @@ module fpga_core
     .Test_en_E_in(Test_enWires[105]),
     .Test_en_W_in(Test_enWires[105]),
     .SC_OUT_TOP(scff_Wires[70]),
-    .SC_IN_BOT(scff_Wires[69]),
     .SC_IN_TOP(scff_Wires[69]),
 
     .top_width_0_height_0__pin_0_(cbx_1__1__27_bottom_grid_pin_0_[0]),
@@ -8247,7 +8204,6 @@ module fpga_core
     .Test_en_E_in(Test_enWires[119]),
     .Test_en_W_in(Test_enWires[119]),
     .SC_OUT_TOP(scff_Wires[72]),
-    .SC_IN_BOT(scff_Wires[71]),
     .SC_IN_TOP(scff_Wires[71]),
 
     .top_width_0_height_0__pin_0_(cbx_1__8__3_bottom_grid_pin_0_[0]),
@@ -8334,8 +8290,6 @@ module fpga_core
     .Test_en_E_in(Test_enWires[23]),
     .SC_OUT_BOT(scff_Wires[91]),
     .SC_IN_TOP(scff_Wires[89]),
-    .SC_IN_BOT(scff_Wires[89]),
-
     .top_width_0_height_0__pin_0_(cbx_1__1__28_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__1__28_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__1__28_bottom_grid_pin_2_[0]),
@@ -8420,8 +8374,6 @@ module fpga_core
     .Test_en_E_in(Test_enWires[37]),
     .SC_OUT_BOT(scff_Wires[88]),
     .SC_IN_TOP(scff_Wires[87]),
-    .SC_IN_BOT(scff_Wires[87]),
-
     .top_width_0_height_0__pin_0_(cbx_1__1__29_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__1__29_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__1__29_bottom_grid_pin_2_[0]),
@@ -8506,8 +8458,6 @@ module fpga_core
     .Test_en_E_in(Test_enWires[51]),
     .SC_OUT_BOT(scff_Wires[86]),
     .SC_IN_TOP(scff_Wires[85]),
-    .SC_IN_BOT(scff_Wires[85]),
-
     .top_width_0_height_0__pin_0_(cbx_1__1__30_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__1__30_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__1__30_bottom_grid_pin_2_[0]),
@@ -8592,8 +8542,6 @@ module fpga_core
     .Test_en_E_in(Test_enWires[65]),
     .SC_OUT_BOT(scff_Wires[84]),
     .SC_IN_TOP(scff_Wires[83]),
-    .SC_IN_BOT(scff_Wires[83]),
-
     .top_width_0_height_0__pin_0_(cbx_1__1__31_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__1__31_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__1__31_bottom_grid_pin_2_[0]),
@@ -8678,8 +8626,6 @@ module fpga_core
     .Test_en_E_in(Test_enWires[79]),
     .SC_OUT_BOT(scff_Wires[82]),
     .SC_IN_TOP(scff_Wires[81]),
-    .SC_IN_BOT(scff_Wires[81]),
-
     .top_width_0_height_0__pin_0_(cbx_1__1__32_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__1__32_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__1__32_bottom_grid_pin_2_[0]),
@@ -8764,8 +8710,6 @@ module fpga_core
     .Test_en_E_in(Test_enWires[93]),
     .SC_OUT_BOT(scff_Wires[80]),
     .SC_IN_TOP(scff_Wires[79]),
-    .SC_IN_BOT(scff_Wires[79]),
-
     .top_width_0_height_0__pin_0_(cbx_1__1__33_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__1__33_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__1__33_bottom_grid_pin_2_[0]),
@@ -8850,8 +8794,6 @@ module fpga_core
     .Test_en_E_in(Test_enWires[107]),
     .SC_OUT_BOT(scff_Wires[78]),
     .SC_IN_TOP(scff_Wires[77]),
-    .SC_IN_BOT(scff_Wires[77]),
-
     .top_width_0_height_0__pin_0_(cbx_1__1__34_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__1__34_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__1__34_bottom_grid_pin_2_[0]),
@@ -8937,8 +8879,6 @@ module fpga_core
     .Test_en_E_in(Test_enWires[121]),
     .SC_OUT_BOT(scff_Wires[76]),
     .SC_IN_TOP(scff_Wires[75]),
-    .SC_IN_BOT(scff_Wires[75]),
-
     .top_width_0_height_0__pin_0_(cbx_1__8__4_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__8__4_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__8__4_bottom_grid_pin_2_[0]),
@@ -9022,7 +8962,6 @@ module fpga_core
     .Test_en_W_in(Test_enWires[25]),
     .Test_en_E_in(Test_enWires[25]),
     .SC_OUT_TOP(scff_Wires[95]),
-    .SC_IN_BOT(scff_Wires[94]),
     .SC_IN_TOP(scff_Wires[94]),
 
     .top_width_0_height_0__pin_0_(cbx_1__1__35_bottom_grid_pin_0_[0]),
@@ -9108,7 +9047,6 @@ module fpga_core
     .Test_en_W_in(Test_enWires[39]),
     .Test_en_E_in(Test_enWires[39]),
     .SC_OUT_TOP(scff_Wires[97]),
-    .SC_IN_BOT(scff_Wires[96]),
     .SC_IN_TOP(scff_Wires[96]),
 
     .top_width_0_height_0__pin_0_(cbx_1__1__36_bottom_grid_pin_0_[0]),
@@ -9194,9 +9132,7 @@ module fpga_core
     .Test_en_W_in(Test_enWires[53]),
     .Test_en_E_in(Test_enWires[53]),
     .SC_OUT_TOP(scff_Wires[99]),
-    .SC_IN_BOT(scff_Wires[98]),
     .SC_IN_TOP(scff_Wires[98]),
-
     .top_width_0_height_0__pin_0_(cbx_1__1__37_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__1__37_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__1__37_bottom_grid_pin_2_[0]),
@@ -9280,7 +9216,6 @@ module fpga_core
     .Test_en_W_in(Test_enWires[67]),
     .Test_en_E_in(Test_enWires[67]),
     .SC_OUT_TOP(scff_Wires[101]),
-    .SC_IN_BOT(scff_Wires[100]),
     .SC_IN_TOP(scff_Wires[100]),
 
     .top_width_0_height_0__pin_0_(cbx_1__1__38_bottom_grid_pin_0_[0]),
@@ -9366,7 +9301,6 @@ module fpga_core
     .Test_en_W_in(Test_enWires[81]),
     .Test_en_E_in(Test_enWires[81]),
     .SC_OUT_TOP(scff_Wires[103]),
-    .SC_IN_BOT(scff_Wires[102]),
     .SC_IN_TOP(scff_Wires[102]),
 
     .top_width_0_height_0__pin_0_(cbx_1__1__39_bottom_grid_pin_0_[0]),
@@ -9452,7 +9386,6 @@ module fpga_core
     .Test_en_W_in(Test_enWires[95]),
     .Test_en_E_in(Test_enWires[95]),
     .SC_OUT_TOP(scff_Wires[105]),
-    .SC_IN_BOT(scff_Wires[104]),
     .SC_IN_TOP(scff_Wires[104]),
 
     .top_width_0_height_0__pin_0_(cbx_1__1__40_bottom_grid_pin_0_[0]),
@@ -9539,7 +9472,6 @@ module fpga_core
     .Test_en_E_in(Test_enWires[109]),
     
     .SC_OUT_TOP(scff_Wires[107]),
-    .SC_IN_BOT(scff_Wires[106]),
     .SC_IN_TOP(scff_Wires[106]),
 
     .top_width_0_height_0__pin_0_(cbx_1__1__41_bottom_grid_pin_0_[0]),
@@ -9626,9 +9558,7 @@ module fpga_core
     .Test_en_W_in(Test_enWires[123]),
     .Test_en_E_in(Test_enWires[123]),
     .SC_OUT_TOP(scff_Wires[109]),
-    .SC_IN_BOT(scff_Wires[108]),
     .SC_IN_TOP(scff_Wires[108]),
-
     .top_width_0_height_0__pin_0_(cbx_1__8__5_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__8__5_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__8__5_bottom_grid_pin_2_[0]),
@@ -9711,11 +9641,8 @@ module fpga_core
     .Test_en_E_out(Test_enWires[28]),
     .Test_en_W_in(Test_enWires[27]),
     .Test_en_E_in(Test_enWires[27]),
-    
     .SC_OUT_BOT(scff_Wires[128]),
     .SC_IN_TOP(scff_Wires[126]),
-    .SC_IN_BOT(scff_Wires[126]),
-
     .top_width_0_height_0__pin_0_(cbx_1__1__42_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__1__42_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__1__42_bottom_grid_pin_2_[0]),
@@ -9801,8 +9728,6 @@ module fpga_core
     
     .SC_OUT_BOT(scff_Wires[125]),
     .SC_IN_TOP(scff_Wires[124]),
-    .SC_IN_BOT(scff_Wires[124]),
-
     .top_width_0_height_0__pin_0_(cbx_1__1__43_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__1__43_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__1__43_bottom_grid_pin_2_[0]),
@@ -9885,11 +9810,8 @@ module fpga_core
     .Test_en_E_out(Test_enWires[56]),
     .Test_en_W_in(Test_enWires[55]),
     .Test_en_E_in(Test_enWires[55]),
-    
     .SC_OUT_BOT(scff_Wires[123]),
     .SC_IN_TOP(scff_Wires[122]),
-    .SC_IN_BOT(scff_Wires[122]),
-
     .top_width_0_height_0__pin_0_(cbx_1__1__44_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__1__44_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__1__44_bottom_grid_pin_2_[0]),
@@ -9975,8 +9897,6 @@ module fpga_core
    
     .SC_OUT_BOT(scff_Wires[121]),
     .SC_IN_TOP(scff_Wires[120]),
-    .SC_IN_BOT(scff_Wires[120]),
-
     .top_width_0_height_0__pin_0_(cbx_1__1__45_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__1__45_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__1__45_bottom_grid_pin_2_[0]),
@@ -10062,8 +9982,6 @@ module fpga_core
    
     .SC_OUT_BOT(scff_Wires[119]),
     .SC_IN_TOP(scff_Wires[118]),
-    .SC_IN_BOT(scff_Wires[118]),
-
     .top_width_0_height_0__pin_0_(cbx_1__1__46_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__1__46_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__1__46_bottom_grid_pin_2_[0]),
@@ -10149,8 +10067,6 @@ module fpga_core
    
     .SC_OUT_BOT(scff_Wires[117]),
     .SC_IN_TOP(scff_Wires[116]),
-    .SC_IN_BOT(scff_Wires[116]),
-
     .top_width_0_height_0__pin_0_(cbx_1__1__47_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__1__47_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__1__47_bottom_grid_pin_2_[0]),
@@ -10235,8 +10151,6 @@ module fpga_core
     .Test_en_E_in(Test_enWires[111]),
     .SC_OUT_BOT(scff_Wires[115]),
     .SC_IN_TOP(scff_Wires[114]),
-    .SC_IN_BOT(scff_Wires[114]),
-
     .top_width_0_height_0__pin_0_(cbx_1__1__48_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__1__48_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__1__48_bottom_grid_pin_2_[0]),
@@ -10322,8 +10236,6 @@ module fpga_core
     .Test_en_E_in(Test_enWires[125]),
     .SC_OUT_BOT(scff_Wires[113]),
     .SC_IN_TOP(scff_Wires[112]),
-    .SC_IN_BOT(scff_Wires[112]),
-
     .top_width_0_height_0__pin_0_(cbx_1__8__6_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__8__6_bottom_grid_pin_1_[0]),
     .top_width_0_height_0__pin_2_(cbx_1__8__6_bottom_grid_pin_2_[0]),
@@ -10406,7 +10318,6 @@ module fpga_core
     .Test_en_W_in(Test_enWires[29]),
     .Test_en_E_in(Test_enWires[29]),
     .SC_OUT_TOP(scff_Wires[132]),
-    .SC_IN_BOT(scff_Wires[131]),
     .SC_IN_TOP(scff_Wires[131]),
 
     .top_width_0_height_0__pin_0_(cbx_1__1__49_bottom_grid_pin_0_[0]),
@@ -10491,8 +10402,7 @@ module fpga_core
     .Test_en_W_in(Test_enWires[43]),
     .Test_en_E_in(Test_enWires[43]),
     .SC_OUT_TOP(scff_Wires[134]),
-    .SC_IN_BOT(scff_Wires[133]),
-      .SC_IN_TOP(scff_Wires[133]),
+    .SC_IN_TOP(scff_Wires[133]),
 
     .top_width_0_height_0__pin_0_(cbx_1__1__50_bottom_grid_pin_0_[0]),
     .top_width_0_height_0__pin_1_(cbx_1__1__50_bottom_grid_pin_1_[0]),
@@ -10576,7 +10486,6 @@ module fpga_core
     .Test_en_W_in(Test_enWires[57]),
     .Test_en_E_in(Test_enWires[57]),
     .SC_OUT_TOP(scff_Wires[136]),
-    .SC_IN_BOT(scff_Wires[135]),
     .SC_IN_TOP(scff_Wires[135]),
 
     .top_width_0_height_0__pin_0_(cbx_1__1__51_bottom_grid_pin_0_[0]),
@@ -10662,7 +10571,6 @@ module fpga_core
     .Test_en_E_in(Test_enWires[71]),
     
     .SC_OUT_TOP(scff_Wires[138]),
-    .SC_IN_BOT(scff_Wires[137]),
     .SC_IN_TOP(scff_Wires[137]),
 
     .top_width_0_height_0__pin_0_(cbx_1__1__52_bottom_grid_pin_0_[0]),
@@ -10748,7 +10656,6 @@ module fpga_core
     .Test_en_E_in(Test_enWires[85]),
     
     .SC_OUT_TOP(scff_Wires[140]),
-    .SC_IN_BOT(scff_Wires[139]),
     .SC_IN_TOP(scff_Wires[139]),
 
     .top_width_0_height_0__pin_0_(cbx_1__1__53_bottom_grid_pin_0_[0]),
@@ -10834,7 +10741,6 @@ module fpga_core
     .Test_en_E_in(Test_enWires[99]),
     
     .SC_OUT_TOP(scff_Wires[142]),
-    .SC_IN_BOT(scff_Wires[141]),
     .SC_IN_TOP(scff_Wires[141]),
 
     .top_width_0_height_0__pin_0_(cbx_1__1__54_bottom_grid_pin_0_[0]),
@@ -10920,7 +10826,6 @@ module fpga_core
     .Test_en_E_in(Test_enWires[113]),
     
     .SC_OUT_TOP(scff_Wires[144]),
-    .SC_IN_BOT(scff_Wires[143]),
     .SC_IN_TOP(scff_Wires[143]),
 
     .top_width_0_height_0__pin_0_(cbx_1__1__55_bottom_grid_pin_0_[0]),
@@ -11007,7 +10912,6 @@ module fpga_core
     .Test_en_E_in(Test_enWires[127]),
 
     .SC_OUT_TOP(scff_Wires[146]),
-    .SC_IN_BOT(scff_Wires[145]),
     .SC_IN_TOP(scff_Wires[145]),
 
     .top_width_0_height_0__pin_0_(cbx_1__8__7_bottom_grid_pin_0_[0]),
@@ -11591,11 +11495,9 @@ module fpga_core
   sb_1__1_ sb_1__1_
   (
     .clk_1_N_in(clk_2_wires[8]),
-    .clk_1_S_in(clk_2_wires[8]),
     .clk_1_W_out(clk_1_wires[2]),
     .clk_1_E_out(clk_1_wires[1]),
     .prog_clk_1_N_in(prog_clk_2_wires[8]),
-    .prog_clk_1_S_in(prog_clk_2_wires[8]),
     .prog_clk_1_W_out(prog_clk_1_wires[2]),
     .prog_clk_1_E_out(prog_clk_1_wires[1]),
     .prog_clk_0_N_in(prog_clk_0_wires[8]),
@@ -11648,15 +11550,9 @@ module fpga_core
   (
     .clk_2_S_out(clk_2_wires[7]),
     .clk_2_N_out(clk_2_wires[5]),
-    .clk_2_E_in(clk_2_wires[4]),
-    .clk_2_S_in(clk_2_wires[4]),
-    .clk_2_W_in(clk_2_wires[4]),
     .clk_2_N_in(clk_2_wires[4]),
     .prog_clk_2_S_out(prog_clk_2_wires[7]),
     .prog_clk_2_N_out(prog_clk_2_wires[5]),
-    .prog_clk_2_E_in(prog_clk_2_wires[4]),
-    .prog_clk_2_W_in(prog_clk_2_wires[4]),
-    .prog_clk_2_S_in(prog_clk_2_wires[4]),
     .prog_clk_2_N_in(prog_clk_2_wires[4]),
     .prog_clk_0_N_in(prog_clk_0_wires[13]),
     .chany_top_in(cby_1__1__2_chany_bottom_out[0:19]),
@@ -11706,11 +11602,9 @@ module fpga_core
 
   sb_1__1_ sb_1__3_
   (
-    .clk_1_S_in(clk_2_wires[6]),
     .clk_1_N_in(clk_2_wires[6]),
     .clk_1_W_out(clk_1_wires[9]),
     .clk_1_E_out(clk_1_wires[8]),
-    .prog_clk_1_S_in(prog_clk_2_wires[6]),
     .prog_clk_1_N_in(prog_clk_2_wires[6]),
     .prog_clk_1_W_out(prog_clk_1_wires[9]),
     .prog_clk_1_E_out(prog_clk_1_wires[8]),
@@ -11811,11 +11705,9 @@ module fpga_core
   sb_1__1_ sb_1__5_
   (
     .clk_1_N_in(clk_2_wires[21]),
-    .clk_1_S_in(clk_2_wires[21]),
     .clk_1_W_out(clk_1_wires[16]),
     .clk_1_E_out(clk_1_wires[15]),
     .prog_clk_1_N_in(prog_clk_2_wires[21]),
-    .prog_clk_1_S_in(prog_clk_2_wires[21]),
     .prog_clk_1_W_out(prog_clk_1_wires[16]),
     .prog_clk_1_E_out(prog_clk_1_wires[15]),
     .prog_clk_0_N_in(prog_clk_0_wires[28]),
@@ -11868,15 +11760,9 @@ module fpga_core
   (
     .clk_2_S_out(clk_2_wires[20]),
     .clk_2_N_out(clk_2_wires[18]),
-    .clk_2_E_in(clk_2_wires[17]),
-    .clk_2_W_in(clk_2_wires[17]),
-    .clk_2_S_in(clk_2_wires[17]),
     .clk_2_N_in(clk_2_wires[17]),
     .prog_clk_2_S_out(prog_clk_2_wires[20]),
     .prog_clk_2_N_out(prog_clk_2_wires[18]),
-    .prog_clk_2_E_in(prog_clk_2_wires[17]),
-    .prog_clk_2_W_in(prog_clk_2_wires[17]),
-    .prog_clk_2_S_in(prog_clk_2_wires[17]),
     .prog_clk_2_N_in(prog_clk_2_wires[17]),
     .prog_clk_0_N_in(prog_clk_0_wires[33]),
     .chany_top_in(cby_1__1__6_chany_bottom_out[0:19]),
@@ -11926,11 +11812,9 @@ module fpga_core
 
   sb_1__1_ sb_1__7_
   (
-    .clk_1_S_in(clk_2_wires[19]),
     .clk_1_N_in(clk_2_wires[19]),
     .clk_1_W_out(clk_1_wires[23]),
     .clk_1_E_out(clk_1_wires[22]),
-    .prog_clk_1_S_in(prog_clk_2_wires[19]),
     .prog_clk_1_N_in(prog_clk_2_wires[19]),
     .prog_clk_1_W_out(prog_clk_1_wires[23]),
     .prog_clk_1_E_out(prog_clk_1_wires[22]),
@@ -12031,15 +11915,9 @@ module fpga_core
   sb_1__1_ sb_2__2_
   (
     .clk_2_N_in(clk_3_wires[17]),
-    .clk_2_W_in(clk_3_wires[17]),
-    .clk_2_E_in(clk_3_wires[17]),
-    .clk_2_S_in(clk_3_wires[17]),
     .clk_2_W_out(clk_2_wires[3]),
     .clk_2_E_out(clk_2_wires[1]),
     .prog_clk_2_N_in(prog_clk_3_wires[17]),
-    .prog_clk_2_E_in(prog_clk_3_wires[17]),
-    .prog_clk_2_W_in(prog_clk_3_wires[17]),
-    .prog_clk_2_S_in(prog_clk_3_wires[17]),
     .prog_clk_2_W_out(prog_clk_2_wires[3]),
     .prog_clk_2_E_out(prog_clk_2_wires[1]),
     .prog_clk_0_N_in(prog_clk_0_wires[51]),
@@ -12092,16 +11970,8 @@ module fpga_core
   (
     .clk_3_S_out(clk_3_wires[16]),
     .clk_3_N_in(clk_3_wires[13]),
-    .clk_3_E_in(clk_3_wires[13]),
-    .clk_3_W_in(clk_3_wires[13]),
-    .clk_3_S_in(clk_3_wires[13]),
-
     .prog_clk_3_S_out(prog_clk_3_wires[16]),
     .prog_clk_3_N_in(prog_clk_3_wires[13]),
-    .prog_clk_3_E_in(prog_clk_3_wires[13]),
-    .prog_clk_3_W_in(prog_clk_3_wires[13]),
-    .prog_clk_3_S_in(prog_clk_3_wires[13]),
-
     .prog_clk_0_N_in(prog_clk_0_wires[54]),
     .chany_top_in(cby_1__1__11_chany_bottom_out[0:19]),
     .top_left_grid_pin_42_(grid_clb_11_right_width_0_height_0__pin_42_lower[0]),
@@ -12152,16 +12022,10 @@ module fpga_core
   (
     .clk_3_S_out(clk_3_wires[12]),
     .clk_3_N_out(clk_3_wires[10]),
-    .clk_3_E_in(clk_3_wires[9]),
-    .clk_3_W_in(clk_3_wires[9]),
     .clk_3_N_in(clk_3_wires[9]),
-    .clk_3_S_in(clk_3_wires[9]),
     .prog_clk_3_S_out(prog_clk_3_wires[12]),
     .prog_clk_3_N_out(prog_clk_3_wires[10]),
-    .prog_clk_3_E_in(prog_clk_3_wires[9]),
-    .prog_clk_3_W_in(prog_clk_3_wires[9]),
     .prog_clk_3_N_in(prog_clk_3_wires[9]),
-    .prog_clk_3_S_in(prog_clk_3_wires[9]),
     .prog_clk_0_N_in(prog_clk_0_wires[57]),
     .chany_top_in(cby_1__1__12_chany_bottom_out[0:19]),
     .top_left_grid_pin_42_(grid_clb_12_right_width_0_height_0__pin_42_lower[0]),
@@ -12211,15 +12075,9 @@ module fpga_core
   sb_1__1_ sb_2__5_
   (
     .clk_3_N_out(clk_3_wires[14]),
-    .clk_3_S_in(clk_3_wires[11]),
     .clk_3_N_in(clk_3_wires[11]),
-    .clk_3_E_in(clk_3_wires[11]),
-    .clk_3_W_in(clk_3_wires[11]),
     .prog_clk_3_N_out(prog_clk_3_wires[14]),
-    .prog_clk_3_S_in(prog_clk_3_wires[11]),
     .prog_clk_3_N_in(prog_clk_3_wires[11]),
-    .prog_clk_3_E_in(prog_clk_3_wires[11]),
-    .prog_clk_3_W_in(prog_clk_3_wires[11]),
     .prog_clk_0_N_in(prog_clk_0_wires[60]),
     .chany_top_in(cby_1__1__13_chany_bottom_out[0:19]),
     .top_left_grid_pin_42_(grid_clb_13_right_width_0_height_0__pin_42_lower[0]),
@@ -12268,15 +12126,9 @@ module fpga_core
 
   sb_1__1_ sb_2__6_
   (
-    .clk_2_S_in(clk_3_wires[15]),
     .clk_2_N_in(clk_3_wires[15]),
-    .clk_2_E_in(clk_3_wires[15]),
-    .clk_2_W_in(clk_3_wires[15]),
     .clk_2_W_out(clk_2_wires[16]),
     .clk_2_E_out(clk_2_wires[14]),
-    .prog_clk_2_S_in(prog_clk_3_wires[15]),
-    .prog_clk_2_W_in(prog_clk_3_wires[15]),
-    .prog_clk_2_E_in(prog_clk_3_wires[15]),
     .prog_clk_2_N_in(prog_clk_3_wires[15]),
     .prog_clk_2_W_out(prog_clk_2_wires[16]),
     .prog_clk_2_E_out(prog_clk_2_wires[14]),
@@ -12377,11 +12229,9 @@ module fpga_core
   sb_1__1_ sb_3__1_
   (
     .clk_1_N_in(clk_2_wires[12]),
-    .clk_1_S_in(clk_2_wires[12]),
     .clk_1_W_out(clk_1_wires[30]),
     .clk_1_E_out(clk_1_wires[29]),
     .prog_clk_1_N_in(prog_clk_2_wires[12]),
-    .prog_clk_1_S_in(prog_clk_2_wires[12]),
     .prog_clk_1_W_out(prog_clk_1_wires[30]),
     .prog_clk_1_E_out(prog_clk_1_wires[29]),
     .prog_clk_0_N_in(prog_clk_0_wires[74]),
@@ -12434,15 +12284,9 @@ module fpga_core
   (
     .clk_2_S_out(clk_2_wires[11]),
     .clk_2_N_out(clk_2_wires[9]),
-    .clk_2_W_in(clk_2_wires[2]),
-    .clk_2_S_in(clk_2_wires[2]),
     .clk_2_N_in(clk_2_wires[2]),
-    .clk_2_E_in(clk_2_wires[2]),
     .prog_clk_2_S_out(prog_clk_2_wires[11]),
     .prog_clk_2_N_out(prog_clk_2_wires[9]),
-    .prog_clk_2_W_in(prog_clk_2_wires[2]),
-    .prog_clk_2_E_in(prog_clk_2_wires[2]),
-    .prog_clk_2_S_in(prog_clk_2_wires[2]),
     .prog_clk_2_N_in(prog_clk_2_wires[2]),
     .prog_clk_0_N_in(prog_clk_0_wires[77]),
     .chany_top_in(cby_1__1__18_chany_bottom_out[0:19]),
@@ -12492,11 +12336,9 @@ module fpga_core
 
   sb_1__1_ sb_3__3_
   (
-    .clk_1_S_in(clk_2_wires[10]),
     .clk_1_N_in(clk_2_wires[10]),
     .clk_1_W_out(clk_1_wires[37]),
     .clk_1_E_out(clk_1_wires[36]),
-    .prog_clk_1_S_in(prog_clk_2_wires[10]),
     .prog_clk_1_N_in(prog_clk_2_wires[10]),
     .prog_clk_1_W_out(prog_clk_1_wires[37]),
     .prog_clk_1_E_out(prog_clk_1_wires[36]),
@@ -12549,15 +12391,9 @@ module fpga_core
   sb_1__1_ sb_3__4_
   (
     .clk_3_W_out(clk_3_wires[8]),
-    .clk_3_E_in(clk_3_wires[4]),
-    .clk_3_W_in(clk_3_wires[4]),
     .clk_3_N_in(clk_3_wires[4]),
-    .clk_3_S_in(clk_3_wires[4]),
     .prog_clk_3_W_out(prog_clk_3_wires[8]),
-    .prog_clk_3_E_in(prog_clk_3_wires[4]),
-    .prog_clk_3_W_in(prog_clk_3_wires[4]),
     .prog_clk_3_N_in(prog_clk_3_wires[4]),
-    .prog_clk_3_S_in(prog_clk_3_wires[4]),
     .prog_clk_0_N_in(prog_clk_0_wires[83]),
     .chany_top_in(cby_1__1__20_chany_bottom_out[0:19]),
     .top_left_grid_pin_42_(grid_clb_20_right_width_0_height_0__pin_42_lower[0]),
@@ -12607,11 +12443,9 @@ module fpga_core
   sb_1__1_ sb_3__5_
   (
     .clk_1_N_in(clk_2_wires[25]),
-    .clk_1_S_in(clk_2_wires[25]),
     .clk_1_W_out(clk_1_wires[44]),
     .clk_1_E_out(clk_1_wires[43]),
     .prog_clk_1_N_in(prog_clk_2_wires[25]),
-    .prog_clk_1_S_in(prog_clk_2_wires[25]),
     .prog_clk_1_W_out(prog_clk_1_wires[44]),
     .prog_clk_1_E_out(prog_clk_1_wires[43]),
     .prog_clk_0_N_in(prog_clk_0_wires[86]),
@@ -12664,18 +12498,10 @@ module fpga_core
   (
     .clk_2_S_out(clk_2_wires[24]),
     .clk_2_N_out(clk_2_wires[22]),
-    .clk_2_W_in(clk_2_wires[15]),
-    .clk_2_E_in(clk_2_wires[15]),
     .clk_2_N_in(clk_2_wires[15]),
-    .clk_2_S_in(clk_2_wires[15]),
     .prog_clk_2_S_out(prog_clk_2_wires[24]),
     .prog_clk_2_N_out(prog_clk_2_wires[22]),
-
-    .prog_clk_2_W_in(prog_clk_2_wires[15]),
-    .prog_clk_2_E_in(prog_clk_2_wires[15]),
     .prog_clk_2_N_in(prog_clk_2_wires[15]),
-    .prog_clk_2_S_in(prog_clk_2_wires[15]),
-
     .prog_clk_0_N_in(prog_clk_0_wires[89]),
     .chany_top_in(cby_1__1__22_chany_bottom_out[0:19]),
     .top_left_grid_pin_42_(grid_clb_22_right_width_0_height_0__pin_42_lower[0]),
@@ -12724,12 +12550,10 @@ module fpga_core
 
   sb_1__1_ sb_3__7_
   (
-    .clk_1_S_in(clk_2_wires[23]),
     .clk_1_N_in(clk_2_wires[23]),
 
     .clk_1_W_out(clk_1_wires[51]),
     .clk_1_E_out(clk_1_wires[50]),
-    .prog_clk_1_S_in(prog_clk_2_wires[23]),
     .prog_clk_1_N_in(prog_clk_2_wires[23]),
     .prog_clk_1_W_out(prog_clk_1_wires[51]),
     .prog_clk_1_E_out(prog_clk_1_wires[50]),
@@ -12782,16 +12606,9 @@ module fpga_core
   sb_1__1_ sb_4__1_
   (
     .clk_3_N_out(clk_3_wires[30]),
-    .clk_3_S_in(clk_3_wires[27]),
     .clk_3_N_in(clk_3_wires[27]),
-    .clk_3_E_in(clk_3_wires[27]),
-    .clk_3_W_in(clk_3_wires[27]),
     .prog_clk_3_N_out(prog_clk_3_wires[30]),
-    .prog_clk_3_S_in(prog_clk_3_wires[27]),
     .prog_clk_3_N_in(prog_clk_3_wires[27]),
-    .prog_clk_3_E_in(prog_clk_3_wires[27]),
-    .prog_clk_3_W_in(prog_clk_3_wires[27]),
-
     .prog_clk_0_N_in(prog_clk_0_wires[100]),
     .Test_en_N_out(Test_enWires[3]),
     .Test_en_S_in(Test_enWires[2]),
@@ -12843,15 +12660,8 @@ module fpga_core
   sb_1__1_ sb_4__2_
   (
     .clk_3_N_out(clk_3_wires[32]),
-    .clk_3_S_in(clk_3_wires[29]),
     .clk_3_N_in(clk_3_wires[29]),
-    .clk_3_W_in(clk_3_wires[29]),
-    .clk_3_E_in(clk_3_wires[29]),
-
     .prog_clk_3_N_out(prog_clk_3_wires[32]),
-    .prog_clk_3_S_in(prog_clk_3_wires[29]),
-    .prog_clk_3_E_in(prog_clk_3_wires[29]),
-    .prog_clk_3_W_in(prog_clk_3_wires[29]),
     .prog_clk_3_N_in(prog_clk_3_wires[29]),
     .prog_clk_0_N_in(prog_clk_0_wires[103]),
     .Test_en_N_out(Test_enWires[5]),
@@ -12904,15 +12714,9 @@ module fpga_core
   sb_1__1_ sb_4__3_
   (
     .clk_3_N_out(clk_3_wires[34]),
-    .clk_3_S_in(clk_3_wires[31]),
-    .clk_3_W_in(clk_3_wires[31]),
     .clk_3_N_in(clk_3_wires[31]),
-    .clk_3_E_in(clk_3_wires[31]),
     .prog_clk_3_N_out(prog_clk_3_wires[34]),
-    .prog_clk_3_S_in(prog_clk_3_wires[31]),
     .prog_clk_3_N_in(prog_clk_3_wires[31]),
-    .prog_clk_3_W_in(prog_clk_3_wires[31]),
-    .prog_clk_3_E_in(prog_clk_3_wires[31]),
     .prog_clk_0_N_in(prog_clk_0_wires[106]),
     .Test_en_N_out(Test_enWires[7]),
     .Test_en_S_in(Test_enWires[6]),
@@ -12963,16 +12767,10 @@ module fpga_core
 
   sb_1__1_ sb_4__4_
   (
-    .clk_3_S_in(clk_3_wires[33]),
     .clk_3_N_in(clk_3_wires[33]),
-    .clk_3_E_in(clk_3_wires[33]),
-    .clk_3_W_in(clk_3_wires[33]),
     .clk_3_W_out(clk_3_wires[3]),
     .clk_3_E_out(clk_3_wires[1]),
-    .prog_clk_3_S_in(prog_clk_3_wires[33]),
     .prog_clk_3_N_in(prog_clk_3_wires[33]),
-    .prog_clk_3_E_in(prog_clk_3_wires[33]),
-    .prog_clk_3_W_in(prog_clk_3_wires[33]),
     .prog_clk_3_W_out(prog_clk_3_wires[3]),
     .prog_clk_3_E_out(prog_clk_3_wires[1]),
     .prog_clk_0_N_in(prog_clk_0_wires[109]),
@@ -13176,11 +12974,9 @@ module fpga_core
   sb_1__1_ sb_5__1_
   (
     .clk_1_N_in(clk_2_wires[34]),
-    .clk_1_S_in(clk_2_wires[34]),
     .clk_1_W_out(clk_1_wires[58]),
     .clk_1_E_out(clk_1_wires[57]),
     .prog_clk_1_N_in(prog_clk_2_wires[34]),
-    .prog_clk_1_S_in(prog_clk_2_wires[34]),
     .prog_clk_1_W_out(prog_clk_1_wires[58]),
     .prog_clk_1_E_out(prog_clk_1_wires[57]),
     .prog_clk_0_N_in(prog_clk_0_wires[126]),
@@ -13233,18 +13029,10 @@ module fpga_core
   (
     .clk_2_S_out(clk_2_wires[33]),
     .clk_2_N_out(clk_2_wires[31]),
-    .clk_2_E_in(clk_2_wires[30]),
-    .clk_2_W_in(clk_2_wires[30]),
     .clk_2_N_in(clk_2_wires[30]),
-    .clk_2_S_in(clk_2_wires[30]),
-
     .prog_clk_2_S_out(prog_clk_2_wires[33]),
     .prog_clk_2_N_out(prog_clk_2_wires[31]),
-    .prog_clk_2_E_in(prog_clk_2_wires[30]),
-    .prog_clk_2_W_in(prog_clk_2_wires[30]),
     .prog_clk_2_N_in(prog_clk_2_wires[30]),
-    .prog_clk_2_S_in(prog_clk_2_wires[30]),
-
     .prog_clk_0_N_in(prog_clk_0_wires[129]),
     .chany_top_in(cby_1__1__34_chany_bottom_out[0:19]),
     .top_left_grid_pin_42_(grid_clb_34_right_width_0_height_0__pin_42_lower[0]),
@@ -13293,11 +13081,9 @@ module fpga_core
 
   sb_1__1_ sb_5__3_
   (
-    .clk_1_S_in(clk_2_wires[32]),
     .clk_1_N_in(clk_2_wires[32]),
     .clk_1_W_out(clk_1_wires[65]),
     .clk_1_E_out(clk_1_wires[64]),
-    .prog_clk_1_S_in(prog_clk_2_wires[32]),
     .prog_clk_1_N_in(prog_clk_2_wires[32]),
 
     .prog_clk_1_W_out(prog_clk_1_wires[65]),
@@ -13351,17 +13137,10 @@ module fpga_core
   sb_1__1_ sb_5__4_
   (
     .clk_3_E_out(clk_3_wires[6]),
-    .clk_3_W_in(clk_3_wires[2]),
     .clk_3_N_in(clk_3_wires[2]),
-    .clk_3_S_in(clk_3_wires[2]),
-    .clk_3_E_in(clk_3_wires[2]),
 
     .prog_clk_3_E_out(prog_clk_3_wires[6]),
-    .prog_clk_3_W_in(prog_clk_3_wires[2]),
-    .prog_clk_3_E_in(prog_clk_3_wires[2]),
     .prog_clk_3_N_in(prog_clk_3_wires[2]),
-    .prog_clk_3_S_in(prog_clk_3_wires[2]),
-
     .prog_clk_0_N_in(prog_clk_0_wires[135]),
     .chany_top_in(cby_1__1__36_chany_bottom_out[0:19]),
     .top_left_grid_pin_42_(grid_clb_36_right_width_0_height_0__pin_42_lower[0]),
@@ -13411,13 +13190,9 @@ module fpga_core
   sb_1__1_ sb_5__5_
   (
     .clk_1_N_in(clk_2_wires[47]),
-    .clk_1_S_in(clk_2_wires[47]),
-
     .clk_1_W_out(clk_1_wires[72]),
     .clk_1_E_out(clk_1_wires[71]),
     .prog_clk_1_N_in(prog_clk_2_wires[47]),
-    .prog_clk_1_S_in(prog_clk_2_wires[47]),
-
     .prog_clk_1_W_out(prog_clk_1_wires[72]),
     .prog_clk_1_E_out(prog_clk_1_wires[71]),
     .prog_clk_0_N_in(prog_clk_0_wires[138]),
@@ -13470,18 +13245,10 @@ module fpga_core
   (
     .clk_2_S_out(clk_2_wires[46]),
     .clk_2_N_out(clk_2_wires[44]),
-    .clk_2_E_in(clk_2_wires[43]),
-        .clk_2_W_in(clk_2_wires[43]),
     .clk_2_N_in(clk_2_wires[43]),
-    .clk_2_S_in(clk_2_wires[43]),
-
     .prog_clk_2_S_out(prog_clk_2_wires[46]),
     .prog_clk_2_N_out(prog_clk_2_wires[44]),
-    .prog_clk_2_E_in(prog_clk_2_wires[43]),
-        .prog_clk_2_W_in(prog_clk_2_wires[43]),
     .prog_clk_2_N_in(prog_clk_2_wires[43]),
-    .prog_clk_2_S_in(prog_clk_2_wires[43]),
-
     .prog_clk_0_N_in(prog_clk_0_wires[141]),
     .chany_top_in(cby_1__1__38_chany_bottom_out[0:19]),
     .top_left_grid_pin_42_(grid_clb_38_right_width_0_height_0__pin_42_lower[0]),
@@ -13530,12 +13297,9 @@ module fpga_core
 
   sb_1__1_ sb_5__7_
   (
-    .clk_1_S_in(clk_2_wires[45]),
     .clk_1_N_in(clk_2_wires[45]),
-
     .clk_1_W_out(clk_1_wires[79]),
     .clk_1_E_out(clk_1_wires[78]),
-    .prog_clk_1_S_in(prog_clk_2_wires[45]),
     .prog_clk_1_N_in(prog_clk_2_wires[45]),
 
     .prog_clk_1_W_out(prog_clk_1_wires[79]),
@@ -13637,17 +13401,9 @@ module fpga_core
   sb_1__1_ sb_6__2_
   (
     .clk_2_N_in(clk_3_wires[25]),
-      .clk_2_S_in(clk_3_wires[25]),
-    .clk_2_E_in(clk_3_wires[25]),
-    .clk_2_W_in(clk_3_wires[25]),
-
     .clk_2_W_out(clk_2_wires[29]),
     .clk_2_E_out(clk_2_wires[27]),
     .prog_clk_2_N_in(prog_clk_3_wires[25]),
-        .prog_clk_2_E_in(prog_clk_3_wires[25]),
-    .prog_clk_2_S_in(prog_clk_3_wires[25]),
-    .prog_clk_2_W_in(prog_clk_3_wires[25]),
-
     .prog_clk_2_W_out(prog_clk_2_wires[29]),
     .prog_clk_2_E_out(prog_clk_2_wires[27]),
     .prog_clk_0_N_in(prog_clk_0_wires[155]),
@@ -13700,15 +13456,8 @@ module fpga_core
   (
     .clk_3_S_out(clk_3_wires[24]),
     .clk_3_N_in(clk_3_wires[21]),
-    .clk_3_E_in(clk_3_wires[21]),
-    .clk_3_W_in(clk_3_wires[21]),
-    .clk_3_S_in(clk_3_wires[21]),
     .prog_clk_3_S_out(prog_clk_3_wires[24]),
     .prog_clk_3_N_in(prog_clk_3_wires[21]),
-    .prog_clk_3_E_in(prog_clk_3_wires[21]),
-    .prog_clk_3_W_in(prog_clk_3_wires[21]),
-    .prog_clk_3_S_in(prog_clk_3_wires[21]),
-
     .prog_clk_0_N_in(prog_clk_0_wires[158]),
     .chany_top_in(cby_1__1__43_chany_bottom_out[0:19]),
     .top_left_grid_pin_42_(grid_clb_43_right_width_0_height_0__pin_42_lower[0]),
@@ -13759,18 +13508,11 @@ module fpga_core
   (
     .clk_3_S_out(clk_3_wires[20]),
     .clk_3_N_out(clk_3_wires[18]),
-    .clk_3_W_in(clk_3_wires[7]),
-    .clk_3_E_in(clk_3_wires[7]),
-    .clk_3_S_in(clk_3_wires[7]),
     .clk_3_N_in(clk_3_wires[7]),
 
     .prog_clk_3_S_out(prog_clk_3_wires[20]),
     .prog_clk_3_N_out(prog_clk_3_wires[18]),
-    .prog_clk_3_W_in(prog_clk_3_wires[7]),
-        .prog_clk_3_E_in(prog_clk_3_wires[7]),
     .prog_clk_3_N_in(prog_clk_3_wires[7]),
-    .prog_clk_3_S_in(prog_clk_3_wires[7]),
-
     .prog_clk_0_N_in(prog_clk_0_wires[161]),
     .chany_top_in(cby_1__1__44_chany_bottom_out[0:19]),
     .top_left_grid_pin_42_(grid_clb_44_right_width_0_height_0__pin_42_lower[0]),
@@ -13820,17 +13562,9 @@ module fpga_core
   sb_1__1_ sb_6__5_
   (
     .clk_3_N_out(clk_3_wires[22]),
-    .clk_3_S_in(clk_3_wires[19]),
     .clk_3_N_in(clk_3_wires[19]),
-    .clk_3_E_in(clk_3_wires[19]),
-    .clk_3_W_in(clk_3_wires[19]),
-
     .prog_clk_3_N_out(prog_clk_3_wires[22]),
-    .prog_clk_3_S_in(prog_clk_3_wires[19]),
-    .prog_clk_3_W_in(prog_clk_3_wires[19]),
-    .prog_clk_3_E_in(prog_clk_3_wires[19]),
     .prog_clk_3_N_in(prog_clk_3_wires[19]),
-
     .prog_clk_0_N_in(prog_clk_0_wires[164]),
     .chany_top_in(cby_1__1__45_chany_bottom_out[0:19]),
     .top_left_grid_pin_42_(grid_clb_45_right_width_0_height_0__pin_42_lower[0]),
@@ -13879,16 +13613,9 @@ module fpga_core
 
   sb_1__1_ sb_6__6_
   (
-    .clk_2_S_in(clk_3_wires[23]),
     .clk_2_N_in(clk_3_wires[23]),
-    .clk_2_W_in(clk_3_wires[23]),
-    .clk_2_E_in(clk_3_wires[23]),
-
     .clk_2_W_out(clk_2_wires[42]),
     .clk_2_E_out(clk_2_wires[40]),
-    .prog_clk_2_S_in(prog_clk_3_wires[23]),
-    .prog_clk_2_W_in(prog_clk_3_wires[23]),
-    .prog_clk_2_E_in(prog_clk_3_wires[23]),
     .prog_clk_2_N_in(prog_clk_3_wires[23]),
 
     .prog_clk_2_W_out(prog_clk_2_wires[42]),
@@ -13990,13 +13717,9 @@ module fpga_core
   sb_1__1_ sb_7__1_
   (
     .clk_1_N_in(clk_2_wires[38]),
-    .clk_1_S_in(clk_2_wires[38]),
-
     .clk_1_W_out(clk_1_wires[86]),
     .clk_1_E_out(clk_1_wires[85]),
     .prog_clk_1_N_in(prog_clk_2_wires[38]),
-    .prog_clk_1_S_in(prog_clk_2_wires[38]),
-
     .prog_clk_1_W_out(prog_clk_1_wires[86]),
     .prog_clk_1_E_out(prog_clk_1_wires[85]),
     .prog_clk_0_N_in(prog_clk_0_wires[178]),
@@ -14049,18 +13772,10 @@ module fpga_core
   (
     .clk_2_S_out(clk_2_wires[37]),
     .clk_2_N_out(clk_2_wires[35]),
-    .clk_2_W_in(clk_2_wires[28]),
-    .clk_2_E_in(clk_2_wires[28]),
     .clk_2_N_in(clk_2_wires[28]),
-    .clk_2_S_in(clk_2_wires[28]),
-
     .prog_clk_2_S_out(prog_clk_2_wires[37]),
     .prog_clk_2_N_out(prog_clk_2_wires[35]),
-    .prog_clk_2_W_in(prog_clk_2_wires[28]),
-    .prog_clk_2_E_in(prog_clk_2_wires[28]),
     .prog_clk_2_N_in(prog_clk_2_wires[28]),
-    .prog_clk_2_S_in(prog_clk_2_wires[28]),
-
     .prog_clk_0_N_in(prog_clk_0_wires[181]),
     .chany_top_in(cby_1__1__50_chany_bottom_out[0:19]),
     .top_left_grid_pin_42_(grid_clb_50_right_width_0_height_0__pin_42_lower[0]),
@@ -14109,12 +13824,10 @@ module fpga_core
 
   sb_1__1_ sb_7__3_
   (
-    .clk_1_S_in(clk_2_wires[36]),
       .clk_1_N_in(clk_2_wires[36]),
 
     .clk_1_W_out(clk_1_wires[93]),
     .clk_1_E_out(clk_1_wires[92]),
-    .prog_clk_1_S_in(prog_clk_2_wires[36]),
       .prog_clk_1_N_in(prog_clk_2_wires[36]),
 
     .prog_clk_1_W_out(prog_clk_1_wires[93]),
@@ -14216,13 +13929,9 @@ module fpga_core
   sb_1__1_ sb_7__5_
   (
     .clk_1_N_in(clk_2_wires[51]),
-    .clk_1_S_in(clk_2_wires[51]),
-
     .clk_1_W_out(clk_1_wires[100]),
     .clk_1_E_out(clk_1_wires[99]),
     .prog_clk_1_N_in(prog_clk_2_wires[51]),
-    .prog_clk_1_S_in(prog_clk_2_wires[51]),
-
     .prog_clk_1_W_out(prog_clk_1_wires[100]),
     .prog_clk_1_E_out(prog_clk_1_wires[99]),
     .prog_clk_0_N_in(prog_clk_0_wires[190]),
@@ -14275,19 +13984,10 @@ module fpga_core
   (
     .clk_2_S_out(clk_2_wires[50]),
     .clk_2_N_out(clk_2_wires[48]),
-    
-    .clk_2_W_in(clk_2_wires[41]),
-    .clk_2_E_in(clk_2_wires[41]),
     .clk_2_N_in(clk_2_wires[41]),
-    .clk_2_S_in(clk_2_wires[41]),
-
     .prog_clk_2_S_out(prog_clk_2_wires[50]),
     .prog_clk_2_N_out(prog_clk_2_wires[48]),
-    .prog_clk_2_W_in(prog_clk_2_wires[41]),
-    .prog_clk_2_E_in(prog_clk_2_wires[41]),
     .prog_clk_2_N_in(prog_clk_2_wires[41]),
-    .prog_clk_2_S_in(prog_clk_2_wires[41]),
-
     .prog_clk_0_N_in(prog_clk_0_wires[193]),
     .chany_top_in(cby_1__1__54_chany_bottom_out[0:19]),
     .top_left_grid_pin_42_(grid_clb_54_right_width_0_height_0__pin_42_lower[0]),
@@ -14336,12 +14036,10 @@ module fpga_core
 
   sb_1__1_ sb_7__7_
   (
-    .clk_1_S_in(clk_2_wires[49]),
     .clk_1_N_in(clk_2_wires[49]),
 
     .clk_1_W_out(clk_1_wires[107]),
     .clk_1_E_out(clk_1_wires[106]),
-    .prog_clk_1_S_in(prog_clk_2_wires[49]),
     .prog_clk_1_N_in(prog_clk_2_wires[49]),
 
     .prog_clk_1_W_out(prog_clk_1_wires[107]),
@@ -15457,11 +15155,9 @@ module fpga_core
   (
     .clk_1_S_out(clk_1_wires[4]),
     .clk_1_N_out(clk_1_wires[3]),
-    .clk_1_E_in(clk_1_wires[2]),
     .clk_1_W_in(clk_1_wires[2]),
     .prog_clk_1_S_out(prog_clk_1_wires[4]),
     .prog_clk_1_N_out(prog_clk_1_wires[3]),
-    .prog_clk_1_E_in(prog_clk_1_wires[2]),
     .prog_clk_1_W_in(prog_clk_1_wires[2]),
     .prog_clk_0_N_in(prog_clk_0_wires[6]),
     .prog_clk_0_W_out(prog_clk_0_wires[4]),
@@ -15531,11 +15227,9 @@ module fpga_core
   (
     .clk_1_S_out(clk_1_wires[11]),
     .clk_1_N_out(clk_1_wires[10]),
-    .clk_1_E_in(clk_1_wires[9]),
     .clk_1_W_in(clk_1_wires[9]),
     .prog_clk_1_S_out(prog_clk_1_wires[11]),
     .prog_clk_1_N_out(prog_clk_1_wires[10]),
-    .prog_clk_1_E_in(prog_clk_1_wires[9]),
     .prog_clk_1_W_in(prog_clk_1_wires[9]),
     .prog_clk_0_N_in(prog_clk_0_wires[16]),
     .prog_clk_0_W_out(prog_clk_0_wires[15]),
@@ -15605,11 +15299,9 @@ module fpga_core
   (
     .clk_1_S_out(clk_1_wires[18]),
     .clk_1_N_out(clk_1_wires[17]),
-    .clk_1_E_in(clk_1_wires[16]),
     .clk_1_W_in(clk_1_wires[16]),
     .prog_clk_1_S_out(prog_clk_1_wires[18]),
     .prog_clk_1_N_out(prog_clk_1_wires[17]),
-    .prog_clk_1_E_in(prog_clk_1_wires[16]),
     .prog_clk_1_W_in(prog_clk_1_wires[16]),
     .prog_clk_0_N_in(prog_clk_0_wires[26]),
     .prog_clk_0_W_out(prog_clk_0_wires[25]),
@@ -15679,11 +15371,9 @@ module fpga_core
   (
     .clk_1_S_out(clk_1_wires[25]),
     .clk_1_N_out(clk_1_wires[24]),
-    .clk_1_E_in(clk_1_wires[23]),
     .clk_1_W_in(clk_1_wires[23]),
     .prog_clk_1_S_out(prog_clk_1_wires[25]),
     .prog_clk_1_N_out(prog_clk_1_wires[24]),
-    .prog_clk_1_E_in(prog_clk_1_wires[23]),
     .prog_clk_1_W_in(prog_clk_1_wires[23]),
     .prog_clk_0_N_in(prog_clk_0_wires[36]),
     .prog_clk_0_W_out(prog_clk_0_wires[35]),
@@ -15721,11 +15411,9 @@ module fpga_core
     .clk_1_S_out(clk_1_wires[6]),
     .clk_1_N_out(clk_1_wires[5]),
     .clk_1_W_in(clk_1_wires[1]),
-    .clk_1_E_in(clk_1_wires[1]),
     .prog_clk_1_S_out(prog_clk_1_wires[6]),
     .prog_clk_1_N_out(prog_clk_1_wires[5]),
     .prog_clk_1_W_in(prog_clk_1_wires[1]),
-    .prog_clk_1_E_in(prog_clk_1_wires[1]),
     .prog_clk_0_N_in(prog_clk_0_wires[46]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[7]),
     .REGIN_FEEDTHROUGH(regin_feedthrough_wires[7]),
@@ -15759,10 +15447,8 @@ module fpga_core
   cbx_1__1_  cbx_2__2_
   (
     .clk_2_W_out(clk_2_wires[4]),
-    .clk_2_E_in(clk_2_wires[3]),
     .clk_2_W_in(clk_2_wires[3]),
     .prog_clk_2_W_out(prog_clk_2_wires[4]),
-    .prog_clk_2_E_in(prog_clk_2_wires[3]),
     .prog_clk_2_W_in(prog_clk_2_wires[3]),
     .prog_clk_0_N_in(prog_clk_0_wires[49]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[8]),
@@ -15799,11 +15485,9 @@ module fpga_core
     .clk_1_S_out(clk_1_wires[13]),
     .clk_1_N_out(clk_1_wires[12]),
     .clk_1_W_in(clk_1_wires[8]),
-    .clk_1_E_in(clk_1_wires[8]),
     .prog_clk_1_S_out(prog_clk_1_wires[13]),
     .prog_clk_1_N_out(prog_clk_1_wires[12]),
     .prog_clk_1_W_in(prog_clk_1_wires[8]),
-    .prog_clk_1_E_in(prog_clk_1_wires[8]),
     .prog_clk_0_N_in(prog_clk_0_wires[52]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[9]),
     .REGIN_FEEDTHROUGH(regin_feedthrough_wires[9]),
@@ -15871,11 +15555,9 @@ module fpga_core
     .clk_1_S_out(clk_1_wires[20]),
     .clk_1_N_out(clk_1_wires[19]),
     .clk_1_W_in(clk_1_wires[15]),
-    .clk_1_E_in(clk_1_wires[15]),
     .prog_clk_1_S_out(prog_clk_1_wires[20]),
     .prog_clk_1_N_out(prog_clk_1_wires[19]),
     .prog_clk_1_W_in(prog_clk_1_wires[15]),
-    .prog_clk_1_E_in(prog_clk_1_wires[15]),
     .prog_clk_0_N_in(prog_clk_0_wires[58]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[11]),
     .REGIN_FEEDTHROUGH(regin_feedthrough_wires[11]),
@@ -15909,10 +15591,8 @@ module fpga_core
   cbx_1__1_ cbx_2__6_
   (
     .clk_2_W_out(clk_2_wires[17]),
-    .clk_2_E_in(clk_2_wires[16]),
     .clk_2_W_in(clk_2_wires[16]),
     .prog_clk_2_W_out(prog_clk_2_wires[17]),
-    .prog_clk_2_E_in(prog_clk_2_wires[16]),
     .prog_clk_2_W_in(prog_clk_2_wires[16]),
     .prog_clk_0_N_in(prog_clk_0_wires[61]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[12]),
@@ -15949,11 +15629,9 @@ module fpga_core
     .clk_1_S_out(clk_1_wires[27]),
     .clk_1_N_out(clk_1_wires[26]),
     .clk_1_W_in(clk_1_wires[22]),
-    .clk_1_E_in(clk_1_wires[22]),
     .prog_clk_1_S_out(prog_clk_1_wires[27]),
     .prog_clk_1_N_out(prog_clk_1_wires[26]),
     .prog_clk_1_W_in(prog_clk_1_wires[22]),
-    .prog_clk_1_E_in(prog_clk_1_wires[22]),
     .prog_clk_0_N_in(prog_clk_0_wires[64]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[13]),
     .REGIN_FEEDTHROUGH(regin_feedthrough_wires[13]),
@@ -15988,11 +15666,9 @@ module fpga_core
   (
     .clk_1_S_out(clk_1_wires[32]),
     .clk_1_N_out(clk_1_wires[31]),
-    .clk_1_E_in(clk_1_wires[30]),
     .clk_1_W_in(clk_1_wires[30]),
     .prog_clk_1_S_out(prog_clk_1_wires[32]),
     .prog_clk_1_N_out(prog_clk_1_wires[31]),
-    .prog_clk_1_E_in(prog_clk_1_wires[30]),
     .prog_clk_1_W_in(prog_clk_1_wires[30]),
     .prog_clk_0_N_in(prog_clk_0_wires[72]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[14]),
@@ -16028,10 +15704,8 @@ module fpga_core
   (
     .clk_2_E_out(clk_2_wires[2]),
     .clk_2_W_in(clk_2_wires[1]),
-    .clk_2_E_in(clk_2_wires[1]),
     .prog_clk_2_E_out(prog_clk_2_wires[2]),
     .prog_clk_2_W_in(prog_clk_2_wires[1]),
-    .prog_clk_2_E_in(prog_clk_2_wires[1]),
     .prog_clk_0_N_in(prog_clk_0_wires[75]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[15]),
     .REGIN_FEEDTHROUGH(regin_feedthrough_wires[15]),
@@ -16066,11 +15740,9 @@ module fpga_core
   (
     .clk_1_S_out(clk_1_wires[39]),
     .clk_1_N_out(clk_1_wires[38]),
-    .clk_1_E_in(clk_1_wires[37]),
     .clk_1_W_in(clk_1_wires[37]),
     .prog_clk_1_S_out(prog_clk_1_wires[39]),
     .prog_clk_1_N_out(prog_clk_1_wires[38]),
-    .prog_clk_1_E_in(prog_clk_1_wires[37]),
     .prog_clk_1_W_in(prog_clk_1_wires[37]),
     .prog_clk_0_N_in(prog_clk_0_wires[78]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[16]),
@@ -16105,10 +15777,8 @@ module fpga_core
   cbx_1__1_ cbx_3__4_
   (
     .clk_3_W_out(clk_3_wires[9]),
-    .clk_3_E_in(clk_3_wires[8]),
     .clk_3_W_in(clk_3_wires[8]),
     .prog_clk_3_W_out(prog_clk_3_wires[9]),
-    .prog_clk_3_E_in(prog_clk_3_wires[8]),
     .prog_clk_3_W_in(prog_clk_3_wires[8]),
     .prog_clk_0_N_in(prog_clk_0_wires[81]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[17]),
@@ -16144,11 +15814,9 @@ module fpga_core
   (
     .clk_1_S_out(clk_1_wires[46]),
     .clk_1_N_out(clk_1_wires[45]),
-    .clk_1_E_in(clk_1_wires[44]),
     .clk_1_W_in(clk_1_wires[44]),
     .prog_clk_1_S_out(prog_clk_1_wires[46]),
     .prog_clk_1_N_out(prog_clk_1_wires[45]),
-    .prog_clk_1_E_in(prog_clk_1_wires[44]),
     .prog_clk_1_W_in(prog_clk_1_wires[44]),
     .prog_clk_0_N_in(prog_clk_0_wires[84]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[18]),
@@ -16184,10 +15852,8 @@ module fpga_core
   (
     .clk_2_E_out(clk_2_wires[15]),
     .clk_2_W_in(clk_2_wires[14]),
-    .clk_2_E_in(clk_2_wires[14]),
     .prog_clk_2_E_out(prog_clk_2_wires[15]),
     .prog_clk_2_W_in(prog_clk_2_wires[14]),
-    .prog_clk_2_E_in(prog_clk_2_wires[14]),
     .prog_clk_0_N_in(prog_clk_0_wires[87]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[19]),
     .REGIN_FEEDTHROUGH(regin_feedthrough_wires[19]),
@@ -16222,11 +15888,9 @@ module fpga_core
   (
     .clk_1_S_out(clk_1_wires[53]),
     .clk_1_N_out(clk_1_wires[52]),
-    .clk_1_E_in(clk_1_wires[51]),
     .clk_1_W_in(clk_1_wires[51]),
     .prog_clk_1_S_out(prog_clk_1_wires[53]),
     .prog_clk_1_N_out(prog_clk_1_wires[52]),
-    .prog_clk_1_E_in(prog_clk_1_wires[51]),
     .prog_clk_1_W_in(prog_clk_1_wires[51]),
     .prog_clk_0_N_in(prog_clk_0_wires[90]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[20]),
@@ -16263,11 +15927,9 @@ module fpga_core
     .clk_1_S_out(clk_1_wires[34]),
     .clk_1_N_out(clk_1_wires[33]),
     .clk_1_W_in(clk_1_wires[29]),
-    .clk_1_E_in(clk_1_wires[29]),
     .prog_clk_1_S_out(prog_clk_1_wires[34]),
     .prog_clk_1_N_out(prog_clk_1_wires[33]),
     .prog_clk_1_W_in(prog_clk_1_wires[29]),
-    .prog_clk_1_E_in(prog_clk_1_wires[29]),
     .prog_clk_0_N_in(prog_clk_0_wires[98]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[21]),
     .REGIN_FEEDTHROUGH(regin_feedthrough_wires[21]),
@@ -16335,11 +15997,9 @@ module fpga_core
     .clk_1_S_out(clk_1_wires[41]),
     .clk_1_N_out(clk_1_wires[40]),
     .clk_1_W_in(clk_1_wires[36]),
-    .clk_1_E_in(clk_1_wires[36]),
     .prog_clk_1_S_out(prog_clk_1_wires[41]),
     .prog_clk_1_N_out(prog_clk_1_wires[40]),
     .prog_clk_1_W_in(prog_clk_1_wires[36]),
-    .prog_clk_1_E_in(prog_clk_1_wires[36]),
     .prog_clk_0_N_in(prog_clk_0_wires[104]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[23]),
     .REGIN_FEEDTHROUGH(regin_feedthrough_wires[23]),
@@ -16373,10 +16033,8 @@ module fpga_core
   cbx_1__1_ cbx_4__4_
   (
     .clk_3_W_out(clk_3_wires[4]),
-    .clk_3_E_in(clk_3_wires[3]),
     .clk_3_W_in(clk_3_wires[3]),
     .prog_clk_3_W_out(prog_clk_3_wires[4]),
-    .prog_clk_3_E_in(prog_clk_3_wires[3]),
     .prog_clk_3_W_in(prog_clk_3_wires[3]),
     .prog_clk_0_N_in(prog_clk_0_wires[107]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[24]),
@@ -16413,11 +16071,9 @@ module fpga_core
     .clk_1_S_out(clk_1_wires[48]),
     .clk_1_N_out(clk_1_wires[47]),
     .clk_1_W_in(clk_1_wires[43]),
-    .clk_1_E_in(clk_1_wires[43]),
     .prog_clk_1_S_out(prog_clk_1_wires[48]),
     .prog_clk_1_N_out(prog_clk_1_wires[47]),
     .prog_clk_1_W_in(prog_clk_1_wires[43]),
-    .prog_clk_1_E_in(prog_clk_1_wires[43]),
     .prog_clk_0_N_in(prog_clk_0_wires[110]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[25]),
     .REGIN_FEEDTHROUGH(regin_feedthrough_wires[25]),
@@ -16485,11 +16141,9 @@ module fpga_core
     .clk_1_S_out(clk_1_wires[55]),
     .clk_1_N_out(clk_1_wires[54]),
     .clk_1_W_in(clk_1_wires[50]),
-    .clk_1_E_in(clk_1_wires[50]),
     .prog_clk_1_S_out(prog_clk_1_wires[55]),
     .prog_clk_1_N_out(prog_clk_1_wires[54]),
     .prog_clk_1_W_in(prog_clk_1_wires[50]),
-    .prog_clk_1_E_in(prog_clk_1_wires[50]),
     .prog_clk_0_N_in(prog_clk_0_wires[116]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[27]),
     .REGIN_FEEDTHROUGH(regin_feedthrough_wires[27]),
@@ -16524,11 +16178,9 @@ module fpga_core
   (
     .clk_1_S_out(clk_1_wires[60]),
     .clk_1_N_out(clk_1_wires[59]),
-    .clk_1_E_in(clk_1_wires[58]),
     .clk_1_W_in(clk_1_wires[58]),
     .prog_clk_1_S_out(prog_clk_1_wires[60]),
     .prog_clk_1_N_out(prog_clk_1_wires[59]),
-    .prog_clk_1_E_in(prog_clk_1_wires[58]),
     .prog_clk_1_W_in(prog_clk_1_wires[58]),
     .prog_clk_0_N_in(prog_clk_0_wires[124]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[28]),
@@ -16596,11 +16248,9 @@ module fpga_core
   (
     .clk_1_S_out(clk_1_wires[67]),
     .clk_1_N_out(clk_1_wires[66]),
-    .clk_1_E_in(clk_1_wires[65]),
     .clk_1_W_in(clk_1_wires[65]),
     .prog_clk_1_S_out(prog_clk_1_wires[67]),
     .prog_clk_1_N_out(prog_clk_1_wires[66]),
-    .prog_clk_1_E_in(prog_clk_1_wires[65]),
     .prog_clk_1_W_in(prog_clk_1_wires[65]),
     .prog_clk_0_N_in(prog_clk_0_wires[130]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[30]),
@@ -16636,10 +16286,8 @@ module fpga_core
   (
     .clk_3_E_out(clk_3_wires[2]),
     .clk_3_W_in(clk_3_wires[1]),
-    .clk_3_E_in(clk_3_wires[1]),
     .prog_clk_3_E_out(prog_clk_3_wires[2]),
     .prog_clk_3_W_in(prog_clk_3_wires[1]),
-    .prog_clk_3_E_in(prog_clk_3_wires[1]),
     .prog_clk_0_N_in(prog_clk_0_wires[133]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[31]),
     .REGIN_FEEDTHROUGH(regin_feedthrough_wires[31]),
@@ -16674,11 +16322,9 @@ module fpga_core
   (
     .clk_1_S_out(clk_1_wires[74]),
     .clk_1_N_out(clk_1_wires[73]),
-    .clk_1_E_in(clk_1_wires[72]),
     .clk_1_W_in(clk_1_wires[72]),
     .prog_clk_1_S_out(prog_clk_1_wires[74]),
     .prog_clk_1_N_out(prog_clk_1_wires[73]),
-    .prog_clk_1_E_in(prog_clk_1_wires[72]),
     .prog_clk_1_W_in(prog_clk_1_wires[72]),
     .prog_clk_0_N_in(prog_clk_0_wires[136]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[32]),
@@ -16746,11 +16392,9 @@ module fpga_core
   (
     .clk_1_S_out(clk_1_wires[81]),
     .clk_1_N_out(clk_1_wires[80]),
-    .clk_1_E_in(clk_1_wires[79]),
     .clk_1_W_in(clk_1_wires[79]),
     .prog_clk_1_S_out(prog_clk_1_wires[81]),
     .prog_clk_1_N_out(prog_clk_1_wires[80]),
-    .prog_clk_1_E_in(prog_clk_1_wires[79]),
     .prog_clk_1_W_in(prog_clk_1_wires[79]),
     .prog_clk_0_N_in(prog_clk_0_wires[142]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[34]),
@@ -16787,11 +16431,9 @@ module fpga_core
     .clk_1_S_out(clk_1_wires[62]),
     .clk_1_N_out(clk_1_wires[61]),
     .clk_1_W_in(clk_1_wires[57]),
-    .clk_1_E_in(clk_1_wires[57]),
     .prog_clk_1_S_out(prog_clk_1_wires[62]),
     .prog_clk_1_N_out(prog_clk_1_wires[61]),
     .prog_clk_1_W_in(prog_clk_1_wires[57]),
-    .prog_clk_1_E_in(prog_clk_1_wires[57]),
     .prog_clk_0_N_in(prog_clk_0_wires[150]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[35]),
     .REGIN_FEEDTHROUGH(regin_feedthrough_wires[35]),
@@ -16825,10 +16467,8 @@ module fpga_core
   cbx_1__1_ cbx_6__2_
   (
     .clk_2_W_out(clk_2_wires[30]),
-    .clk_2_E_in(clk_2_wires[29]),
     .clk_2_W_in(clk_2_wires[29]),
     .prog_clk_2_W_out(prog_clk_2_wires[30]),
-    .prog_clk_2_E_in(prog_clk_2_wires[29]),
     .prog_clk_2_W_in(prog_clk_2_wires[29]),
     .prog_clk_0_N_in(prog_clk_0_wires[153]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[36]),
@@ -16865,11 +16505,9 @@ module fpga_core
     .clk_1_S_out(clk_1_wires[69]),
     .clk_1_N_out(clk_1_wires[68]),
     .clk_1_W_in(clk_1_wires[64]),
-    .clk_1_E_in(clk_1_wires[64]),
     .prog_clk_1_S_out(prog_clk_1_wires[69]),
     .prog_clk_1_N_out(prog_clk_1_wires[68]),
     .prog_clk_1_W_in(prog_clk_1_wires[64]),
-    .prog_clk_1_E_in(prog_clk_1_wires[64]),
     .prog_clk_0_N_in(prog_clk_0_wires[156]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[37]),
     .REGIN_FEEDTHROUGH(regin_feedthrough_wires[37]),
@@ -16904,10 +16542,8 @@ module fpga_core
   (
     .clk_3_E_out(clk_3_wires[7]),
     .clk_3_W_in(clk_3_wires[6]),
-    .clk_3_E_in(clk_3_wires[6]),
     .prog_clk_3_E_out(prog_clk_3_wires[7]),
     .prog_clk_3_W_in(prog_clk_3_wires[6]),
-    .prog_clk_3_E_in(prog_clk_3_wires[6]),
     .prog_clk_0_N_in(prog_clk_0_wires[159]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[38]),
     .REGIN_FEEDTHROUGH(regin_feedthrough_wires[38]),
@@ -16943,11 +16579,9 @@ module fpga_core
     .clk_1_S_out(clk_1_wires[76]),
     .clk_1_N_out(clk_1_wires[75]),
     .clk_1_W_in(clk_1_wires[71]),
-    .clk_1_E_in(clk_1_wires[71]),
     .prog_clk_1_S_out(prog_clk_1_wires[76]),
     .prog_clk_1_N_out(prog_clk_1_wires[75]),
     .prog_clk_1_W_in(prog_clk_1_wires[71]),
-    .prog_clk_1_E_in(prog_clk_1_wires[71]),
     .prog_clk_0_N_in(prog_clk_0_wires[162]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[39]),
     .REGIN_FEEDTHROUGH(regin_feedthrough_wires[39]),
@@ -16981,10 +16615,8 @@ module fpga_core
   cbx_1__1_ cbx_6__6_
   (
     .clk_2_W_out(clk_2_wires[43]),
-    .clk_2_E_in(clk_2_wires[42]),
     .clk_2_W_in(clk_2_wires[42]),
     .prog_clk_2_W_out(prog_clk_2_wires[43]),
-    .prog_clk_2_E_in(prog_clk_2_wires[42]),
     .prog_clk_2_W_in(prog_clk_2_wires[42]),
     .prog_clk_0_N_in(prog_clk_0_wires[165]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[40]),
@@ -17021,11 +16653,9 @@ module fpga_core
     .clk_1_S_out(clk_1_wires[83]),
     .clk_1_N_out(clk_1_wires[82]),
     .clk_1_W_in(clk_1_wires[78]),
-    .clk_1_E_in(clk_1_wires[78]),
     .prog_clk_1_S_out(prog_clk_1_wires[83]),
     .prog_clk_1_N_out(prog_clk_1_wires[82]),
     .prog_clk_1_W_in(prog_clk_1_wires[78]),
-    .prog_clk_1_E_in(prog_clk_1_wires[78]),
     .prog_clk_0_N_in(prog_clk_0_wires[168]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[41]),
     .REGIN_FEEDTHROUGH(regin_feedthrough_wires[41]),
@@ -17060,11 +16690,9 @@ module fpga_core
   (
     .clk_1_S_out(clk_1_wires[88]),
     .clk_1_N_out(clk_1_wires[87]),
-    .clk_1_E_in(clk_1_wires[86]),
     .clk_1_W_in(clk_1_wires[86]),
     .prog_clk_1_S_out(prog_clk_1_wires[88]),
     .prog_clk_1_N_out(prog_clk_1_wires[87]),
-    .prog_clk_1_E_in(prog_clk_1_wires[86]),
     .prog_clk_1_W_in(prog_clk_1_wires[86]),
     .prog_clk_0_N_in(prog_clk_0_wires[176]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[42]),
@@ -17100,10 +16728,8 @@ module fpga_core
   (
     .clk_2_E_out(clk_2_wires[28]),
     .clk_2_W_in(clk_2_wires[27]),
-    .clk_2_E_in(clk_2_wires[27]),
     .prog_clk_2_E_out(prog_clk_2_wires[28]),
     .prog_clk_2_W_in(prog_clk_2_wires[27]),
-    .prog_clk_2_E_in(prog_clk_2_wires[27]),
     .prog_clk_0_N_in(prog_clk_0_wires[179]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[43]),
     .REGIN_FEEDTHROUGH(regin_feedthrough_wires[43]),
@@ -17138,11 +16764,9 @@ module fpga_core
   (
     .clk_1_S_out(clk_1_wires[95]),
     .clk_1_N_out(clk_1_wires[94]),
-    .clk_1_E_in(clk_1_wires[93]),
     .clk_1_W_in(clk_1_wires[93]),
     .prog_clk_1_S_out(prog_clk_1_wires[95]),
     .prog_clk_1_N_out(prog_clk_1_wires[94]),
-    .prog_clk_1_E_in(prog_clk_1_wires[93]),
     .prog_clk_1_W_in(prog_clk_1_wires[93]),
     .prog_clk_0_N_in(prog_clk_0_wires[182]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[44]),
@@ -17210,11 +16834,9 @@ module fpga_core
   (
     .clk_1_S_out(clk_1_wires[102]),
     .clk_1_N_out(clk_1_wires[101]),
-    .clk_1_E_in(clk_1_wires[100]),
     .clk_1_W_in(clk_1_wires[100]),
     .prog_clk_1_S_out(prog_clk_1_wires[102]),
     .prog_clk_1_N_out(prog_clk_1_wires[101]),
-    .prog_clk_1_E_in(prog_clk_1_wires[100]),
     .prog_clk_1_W_in(prog_clk_1_wires[100]),
     .prog_clk_0_N_in(prog_clk_0_wires[188]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[46]),
@@ -17250,10 +16872,8 @@ module fpga_core
   (
     .clk_2_E_out(clk_2_wires[41]),
     .clk_2_W_in(clk_2_wires[40]),
-    .clk_2_E_in(clk_2_wires[40]),
     .prog_clk_2_E_out(prog_clk_2_wires[41]),
     .prog_clk_2_W_in(prog_clk_2_wires[40]),
-    .prog_clk_2_E_in(prog_clk_2_wires[40]),
     .prog_clk_0_N_in(prog_clk_0_wires[191]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[47]),
     .REGIN_FEEDTHROUGH(regin_feedthrough_wires[47]),
@@ -17288,11 +16908,9 @@ module fpga_core
   (
     .clk_1_S_out(clk_1_wires[109]),
     .clk_1_N_out(clk_1_wires[108]),
-    .clk_1_E_in(clk_1_wires[107]),
     .clk_1_W_in(clk_1_wires[107]),
     .prog_clk_1_S_out(prog_clk_1_wires[109]),
     .prog_clk_1_N_out(prog_clk_1_wires[108]),
-    .prog_clk_1_E_in(prog_clk_1_wires[107]),
     .prog_clk_1_W_in(prog_clk_1_wires[107]),
     .prog_clk_0_N_in(prog_clk_0_wires[194]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[48]),
@@ -17329,11 +16947,9 @@ module fpga_core
     .clk_1_S_out(clk_1_wires[90]),
     .clk_1_N_out(clk_1_wires[89]),
     .clk_1_W_in(clk_1_wires[85]),
-    .clk_1_E_in(clk_1_wires[85]),
     .prog_clk_1_S_out(prog_clk_1_wires[90]),
     .prog_clk_1_N_out(prog_clk_1_wires[89]),
     .prog_clk_1_W_in(prog_clk_1_wires[85]),
-    .prog_clk_1_E_in(prog_clk_1_wires[85]),
     .prog_clk_0_N_in(prog_clk_0_wires[202]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[49]),
     .REGIN_FEEDTHROUGH(regin_feedthrough_wires[49]),
@@ -17401,11 +17017,9 @@ module fpga_core
     .clk_1_S_out(clk_1_wires[97]),
     .clk_1_N_out(clk_1_wires[96]),
     .clk_1_W_in(clk_1_wires[92]),
-    .clk_1_E_in(clk_1_wires[92]),
     .prog_clk_1_S_out(prog_clk_1_wires[97]),
     .prog_clk_1_N_out(prog_clk_1_wires[96]),
     .prog_clk_1_W_in(prog_clk_1_wires[92]),
-    .prog_clk_1_E_in(prog_clk_1_wires[92]),
     .prog_clk_0_N_in(prog_clk_0_wires[208]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[51]),
     .REGIN_FEEDTHROUGH(regin_feedthrough_wires[51]),
@@ -17473,11 +17087,9 @@ module fpga_core
     .clk_1_S_out(clk_1_wires[104]),
     .clk_1_N_out(clk_1_wires[103]),
     .clk_1_W_in(clk_1_wires[99]),
-    .clk_1_E_in(clk_1_wires[99]),
     .prog_clk_1_S_out(prog_clk_1_wires[104]),
     .prog_clk_1_N_out(prog_clk_1_wires[103]),
     .prog_clk_1_W_in(prog_clk_1_wires[99]),
-    .prog_clk_1_E_in(prog_clk_1_wires[99]),
     .prog_clk_0_N_in(prog_clk_0_wires[214]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[53]),
     .REGIN_FEEDTHROUGH(regin_feedthrough_wires[53]),
@@ -17545,11 +17157,9 @@ module fpga_core
     .clk_1_S_out(clk_1_wires[111]),
     .clk_1_N_out(clk_1_wires[110]),
     .clk_1_W_in(clk_1_wires[106]),
-    .clk_1_E_in(clk_1_wires[106]),
     .prog_clk_1_S_out(prog_clk_1_wires[111]),
     .prog_clk_1_N_out(prog_clk_1_wires[110]),
     .prog_clk_1_W_in(prog_clk_1_wires[106]),
-    .prog_clk_1_E_in(prog_clk_1_wires[106]),
     .prog_clk_0_N_in(prog_clk_0_wires[220]),
     .REGOUT_FEEDTHROUGH(regout_feedthrough_wires[55]),
     .REGIN_FEEDTHROUGH(regin_feedthrough_wires[55]),
@@ -18081,10 +17691,8 @@ module fpga_core
   cby_1__1_ cby_1__2_
   (
     .clk_2_S_out(clk_2_wires[8]),
-    .clk_2_N_in(clk_2_wires[7]),
     .clk_2_S_in(clk_2_wires[7]),
     .prog_clk_2_S_out(prog_clk_2_wires[8]),
-    .prog_clk_2_N_in(prog_clk_2_wires[7]),
     .prog_clk_2_S_in(prog_clk_2_wires[7]),
     .prog_clk_0_S_out(prog_clk_0_wires[8]),
     .prog_clk_0_W_in(prog_clk_0_wires[7]),
@@ -18121,10 +17729,8 @@ module fpga_core
   (
     .clk_2_N_out(clk_2_wires[6]),
     .clk_2_S_in(clk_2_wires[5]),
-    .clk_2_N_in(clk_2_wires[5]),
     .prog_clk_2_N_out(prog_clk_2_wires[6]),
     .prog_clk_2_S_in(prog_clk_2_wires[5]),
-    .prog_clk_2_N_in(prog_clk_2_wires[5]),
     .prog_clk_0_S_out(prog_clk_0_wires[13]),
     .prog_clk_0_W_in(prog_clk_0_wires[12]),
     .Test_en_E_in(Test_enWires[46]),
@@ -18225,10 +17831,8 @@ module fpga_core
   cby_1__1_ cby_1__6_
   (
     .clk_2_S_out(clk_2_wires[21]),
-    .clk_2_N_in(clk_2_wires[20]),
     .clk_2_S_in(clk_2_wires[20]),
     .prog_clk_2_S_out(prog_clk_2_wires[21]),
-    .prog_clk_2_N_in(prog_clk_2_wires[20]),
     .prog_clk_2_S_in(prog_clk_2_wires[20]),
     .prog_clk_0_S_out(prog_clk_0_wires[28]),
     .prog_clk_0_W_in(prog_clk_0_wires[27]),
@@ -18265,10 +17869,8 @@ module fpga_core
   (
     .clk_2_N_out(clk_2_wires[19]),
     .clk_2_S_in(clk_2_wires[18]),
-    .clk_2_N_in(clk_2_wires[18]),
     .prog_clk_2_N_out(prog_clk_2_wires[19]),
     .prog_clk_2_S_in(prog_clk_2_wires[18]),
-    .prog_clk_2_N_in(prog_clk_2_wires[18]),
     .prog_clk_0_S_out(prog_clk_0_wires[33]),
     .prog_clk_0_W_in(prog_clk_0_wires[32]),
     .Test_en_E_in(Test_enWires[102]),
@@ -18403,10 +18005,8 @@ module fpga_core
   cby_1__1_ cby_2__3_
   (
     .clk_3_S_out(clk_3_wires[17]),
-    .clk_3_N_in(clk_3_wires[16]),
     .clk_3_S_in(clk_3_wires[16]),
     .prog_clk_3_S_out(prog_clk_3_wires[17]),
-    .prog_clk_3_N_in(prog_clk_3_wires[16]),
     .prog_clk_3_S_in(prog_clk_3_wires[16]),
     .prog_clk_0_S_out(prog_clk_0_wires[51]),
     .prog_clk_0_W_in(prog_clk_0_wires[50]),
@@ -18442,10 +18042,8 @@ module fpga_core
   cby_1__1_ cby_2__4_
   (
     .clk_3_S_out(clk_3_wires[13]),
-    .clk_3_N_in(clk_3_wires[12]),
     .clk_3_S_in(clk_3_wires[12]),
     .prog_clk_3_S_out(prog_clk_3_wires[13]),
-    .prog_clk_3_N_in(prog_clk_3_wires[12]),
     .prog_clk_3_S_in(prog_clk_3_wires[12]),
     .prog_clk_0_S_out(prog_clk_0_wires[54]),
     .prog_clk_0_W_in(prog_clk_0_wires[53]),
@@ -18482,10 +18080,8 @@ module fpga_core
   (
     .clk_3_N_out(clk_3_wires[11]),
     .clk_3_S_in(clk_3_wires[10]),
-    .clk_3_N_in(clk_3_wires[10]),
     .prog_clk_3_N_out(prog_clk_3_wires[11]),
     .prog_clk_3_S_in(prog_clk_3_wires[10]),
-    .prog_clk_3_N_in(prog_clk_3_wires[10]),
     .prog_clk_0_S_out(prog_clk_0_wires[57]),
     .prog_clk_0_W_in(prog_clk_0_wires[56]),
     .Test_en_E_in(Test_enWires[76]),
@@ -18521,10 +18117,8 @@ module fpga_core
   (
     .clk_3_N_out(clk_3_wires[15]),
     .clk_3_S_in(clk_3_wires[14]),
-    .clk_3_N_in(clk_3_wires[14]),
     .prog_clk_3_N_out(prog_clk_3_wires[15]),
     .prog_clk_3_S_in(prog_clk_3_wires[14]),
-    .prog_clk_3_N_in(prog_clk_3_wires[14]),
     .prog_clk_0_S_out(prog_clk_0_wires[60]),
     .prog_clk_0_W_in(prog_clk_0_wires[59]),
     .Test_en_E_in(Test_enWires[90]),
@@ -18659,10 +18253,8 @@ module fpga_core
   cby_1__1_ cby_3__2_
   (
     .clk_2_S_out(clk_2_wires[12]),
-    .clk_2_N_in(clk_2_wires[11]),
     .clk_2_S_in(clk_2_wires[11]),
     .prog_clk_2_S_out(prog_clk_2_wires[12]),
-    .prog_clk_2_N_in(prog_clk_2_wires[11]),
     .prog_clk_2_S_in(prog_clk_2_wires[11]),
     .prog_clk_0_S_out(prog_clk_0_wires[74]),
     .prog_clk_0_W_in(prog_clk_0_wires[73]),
@@ -18699,10 +18291,8 @@ module fpga_core
   (
     .clk_2_N_out(clk_2_wires[10]),
     .clk_2_S_in(clk_2_wires[9]),
-    .clk_2_N_in(clk_2_wires[9]),
     .prog_clk_2_N_out(prog_clk_2_wires[10]),
     .prog_clk_2_S_in(prog_clk_2_wires[9]),
-    .prog_clk_2_N_in(prog_clk_2_wires[9]),
     .prog_clk_0_S_out(prog_clk_0_wires[77]),
     .prog_clk_0_W_in(prog_clk_0_wires[76]),
     .Test_en_E_in(Test_enWires[50]),
@@ -18803,10 +18393,8 @@ module fpga_core
   cby_1__1_  cby_3__6_
   (
     .clk_2_S_out(clk_2_wires[25]),
-    .clk_2_N_in(clk_2_wires[24]),
     .clk_2_S_in(clk_2_wires[24]),
     .prog_clk_2_S_out(prog_clk_2_wires[25]),
-    .prog_clk_2_N_in(prog_clk_2_wires[24]),
     .prog_clk_2_S_in(prog_clk_2_wires[24]),
     .prog_clk_0_S_out(prog_clk_0_wires[86]),
     .prog_clk_0_W_in(prog_clk_0_wires[85]),
@@ -18843,10 +18431,8 @@ module fpga_core
   (
     .clk_2_N_out(clk_2_wires[23]),
     .clk_2_S_in(clk_2_wires[22]),
-    .clk_2_N_in(clk_2_wires[22]),
     .prog_clk_2_N_out(prog_clk_2_wires[23]),
     .prog_clk_2_S_in(prog_clk_2_wires[22]),
-    .prog_clk_2_N_in(prog_clk_2_wires[22]),
     .prog_clk_0_S_out(prog_clk_0_wires[89]),
     .prog_clk_0_W_in(prog_clk_0_wires[88]),
     .Test_en_E_in(Test_enWires[106]),
@@ -18915,10 +18501,8 @@ module fpga_core
   cby_1__1_  cby_4__1_
   (
     .clk_3_S_in(clk_3_wires[28]),
-    .clk_3_N_in(clk_3_wires[28]),
     .clk_3_N_out(clk_3_wires[27]),
     .prog_clk_3_S_in(prog_clk_3_wires[28]),
-    .prog_clk_3_N_in(prog_clk_3_wires[28]),
     .prog_clk_3_N_out(prog_clk_3_wires[27]),
     .prog_clk_0_S_out(prog_clk_0_wires[97]),
     .prog_clk_0_W_in(prog_clk_0_wires[96]),
@@ -18956,10 +18540,8 @@ module fpga_core
   cby_1__1_ cby_4__2_
   (
     .clk_3_S_in(clk_3_wires[30]),
-    .clk_3_N_in(clk_3_wires[30]),
     .clk_3_N_out(clk_3_wires[29]),
     .prog_clk_3_S_in(prog_clk_3_wires[30]),
-    .prog_clk_3_N_in(prog_clk_3_wires[30]),
     .prog_clk_3_N_out(prog_clk_3_wires[29]),
     .prog_clk_0_S_out(prog_clk_0_wires[100]),
     .prog_clk_0_W_in(prog_clk_0_wires[99]),
@@ -18997,10 +18579,8 @@ module fpga_core
   cby_1__1_ cby_4__3_
   (
     .clk_3_S_in(clk_3_wires[32]),
-    .clk_3_N_in(clk_3_wires[32]),
     .clk_3_N_out(clk_3_wires[31]),
     .prog_clk_3_S_in(prog_clk_3_wires[32]),
-    .prog_clk_3_N_in(prog_clk_3_wires[32]),
     .prog_clk_3_N_out(prog_clk_3_wires[31]),
     .prog_clk_0_S_out(prog_clk_0_wires[103]),
     .prog_clk_0_W_in(prog_clk_0_wires[102]),
@@ -19038,10 +18618,8 @@ module fpga_core
   cby_1__1_ cby_4__4_
   (
     .clk_3_S_in(clk_3_wires[34]),
-    .clk_3_N_in(clk_3_wires[34]),
     .clk_3_N_out(clk_3_wires[33]),
     .prog_clk_3_S_in(prog_clk_3_wires[34]),
-    .prog_clk_3_N_in(prog_clk_3_wires[34]),
     .prog_clk_3_N_out(prog_clk_3_wires[33]),
     .prog_clk_0_S_out(prog_clk_0_wires[106]),
     .prog_clk_0_W_in(prog_clk_0_wires[105]),
@@ -19252,10 +18830,8 @@ module fpga_core
   cby_1__1_ cby_5__2_
   (
     .clk_2_S_out(clk_2_wires[34]),
-    .clk_2_N_in(clk_2_wires[33]),
     .clk_2_S_in(clk_2_wires[33]),
     .prog_clk_2_S_out(prog_clk_2_wires[34]),
-    .prog_clk_2_N_in(prog_clk_2_wires[33]),
     .prog_clk_2_S_in(prog_clk_2_wires[33]),
     .prog_clk_0_S_out(prog_clk_0_wires[126]),
     .prog_clk_0_W_in(prog_clk_0_wires[125]),
@@ -19292,10 +18868,8 @@ module fpga_core
   (
     .clk_2_N_out(clk_2_wires[32]),
     .clk_2_S_in(clk_2_wires[31]),
-    .clk_2_N_in(clk_2_wires[31]),
     .prog_clk_2_N_out(prog_clk_2_wires[32]),
     .prog_clk_2_S_in(prog_clk_2_wires[31]),
-    .prog_clk_2_N_in(prog_clk_2_wires[31]),
     .prog_clk_0_S_out(prog_clk_0_wires[129]),
     .prog_clk_0_W_in(prog_clk_0_wires[128]),
     .Test_en_E_out(Test_enWires[53]),
@@ -19396,10 +18970,8 @@ module fpga_core
   cby_1__1_ cby_5__6_
   (
     .clk_2_S_out(clk_2_wires[47]),
-    .clk_2_N_in(clk_2_wires[46]),
     .clk_2_S_in(clk_2_wires[46]),
     .prog_clk_2_S_out(prog_clk_2_wires[47]),
-    .prog_clk_2_N_in(prog_clk_2_wires[46]),
     .prog_clk_2_S_in(prog_clk_2_wires[46]),
     .prog_clk_0_S_out(prog_clk_0_wires[138]),
     .prog_clk_0_W_in(prog_clk_0_wires[137]),
@@ -19436,10 +19008,8 @@ module fpga_core
   (
     .clk_2_N_out(clk_2_wires[45]),
     .clk_2_S_in(clk_2_wires[44]),
-    .clk_2_N_in(clk_2_wires[44]),
     .prog_clk_2_N_out(prog_clk_2_wires[45]),
     .prog_clk_2_S_in(prog_clk_2_wires[44]),
-    .prog_clk_2_N_in(prog_clk_2_wires[44]),
     .prog_clk_0_S_out(prog_clk_0_wires[141]),
     .prog_clk_0_W_in(prog_clk_0_wires[140]),
     .Test_en_E_out(Test_enWires[109]),
@@ -19574,10 +19144,8 @@ module fpga_core
   cby_1__1_ cby_6__3_
   (
     .clk_3_S_out(clk_3_wires[25]),
-    .clk_3_N_in(clk_3_wires[24]),
     .clk_3_S_in(clk_3_wires[24]),
     .prog_clk_3_S_out(prog_clk_3_wires[25]),
-    .prog_clk_3_N_in(prog_clk_3_wires[24]),
     .prog_clk_3_S_in(prog_clk_3_wires[24]),
     .prog_clk_0_S_out(prog_clk_0_wires[155]),
     .prog_clk_0_W_in(prog_clk_0_wires[154]),
@@ -19613,10 +19181,8 @@ module fpga_core
   cby_1__1_ cby_6__4_
   (
     .clk_3_S_out(clk_3_wires[21]),
-    .clk_3_N_in(clk_3_wires[20]),
     .clk_3_S_in(clk_3_wires[20]),
     .prog_clk_3_S_out(prog_clk_3_wires[21]),
-    .prog_clk_3_N_in(prog_clk_3_wires[20]),
     .prog_clk_3_S_in(prog_clk_3_wires[20]),
     .prog_clk_0_S_out(prog_clk_0_wires[158]),
     .prog_clk_0_W_in(prog_clk_0_wires[157]),
@@ -19653,10 +19219,8 @@ module fpga_core
   (
     .clk_3_N_out(clk_3_wires[19]),
     .clk_3_S_in(clk_3_wires[18]),
-    .clk_3_N_in(clk_3_wires[18]),
     .prog_clk_3_N_out(prog_clk_3_wires[19]),
     .prog_clk_3_S_in(prog_clk_3_wires[18]),
-    .prog_clk_3_N_in(prog_clk_3_wires[18]),
     .prog_clk_0_S_out(prog_clk_0_wires[161]),
     .prog_clk_0_W_in(prog_clk_0_wires[160]),
     .Test_en_E_out(Test_enWires[83]),
@@ -19692,10 +19256,8 @@ module fpga_core
   (
     .clk_3_N_out(clk_3_wires[23]),
     .clk_3_S_in(clk_3_wires[22]),
-    .clk_3_N_in(clk_3_wires[22]),
     .prog_clk_3_N_out(prog_clk_3_wires[23]),
     .prog_clk_3_S_in(prog_clk_3_wires[22]),
-    .prog_clk_3_N_in(prog_clk_3_wires[22]),
     .prog_clk_0_S_out(prog_clk_0_wires[164]),
     .prog_clk_0_W_in(prog_clk_0_wires[163]),
     .Test_en_E_out(Test_enWires[97]),
@@ -19830,10 +19392,8 @@ module fpga_core
   cby_1__1_ cby_7__2_
   (
     .clk_2_S_out(clk_2_wires[38]),
-    .clk_2_N_in(clk_2_wires[37]),
     .clk_2_S_in(clk_2_wires[37]),
     .prog_clk_2_S_out(prog_clk_2_wires[38]),
-    .prog_clk_2_N_in(prog_clk_2_wires[37]),
     .prog_clk_2_S_in(prog_clk_2_wires[37]),
     .prog_clk_0_S_out(prog_clk_0_wires[178]),
     .prog_clk_0_W_in(prog_clk_0_wires[177]),
@@ -19870,10 +19430,8 @@ module fpga_core
   (
     .clk_2_N_out(clk_2_wires[36]),
     .clk_2_S_in(clk_2_wires[35]),
-    .clk_2_N_in(clk_2_wires[35]),
     .prog_clk_2_N_out(prog_clk_2_wires[36]),
     .prog_clk_2_S_in(prog_clk_2_wires[35]),
-    .prog_clk_2_N_in(prog_clk_2_wires[35]),
     .prog_clk_0_S_out(prog_clk_0_wires[181]),
     .prog_clk_0_W_in(prog_clk_0_wires[180]),
     .Test_en_E_out(Test_enWires[57]),
@@ -19974,10 +19532,8 @@ module fpga_core
   cby_1__1_ cby_7__6_
   (
     .clk_2_S_out(clk_2_wires[51]),
-    .clk_2_N_in(clk_2_wires[50]),
     .clk_2_S_in(clk_2_wires[50]),
     .prog_clk_2_S_out(prog_clk_2_wires[51]),
-    .prog_clk_2_N_in(prog_clk_2_wires[50]),
     .prog_clk_2_S_in(prog_clk_2_wires[50]),
     .prog_clk_0_S_out(prog_clk_0_wires[190]),
     .prog_clk_0_W_in(prog_clk_0_wires[189]),
@@ -20014,10 +19570,8 @@ module fpga_core
   (
     .clk_2_N_out(clk_2_wires[49]),
     .clk_2_S_in(clk_2_wires[48]),
-    .clk_2_N_in(clk_2_wires[48]),
     .prog_clk_2_N_out(prog_clk_2_wires[49]),
     .prog_clk_2_S_in(prog_clk_2_wires[48]),
-    .prog_clk_2_N_in(prog_clk_2_wires[48]),
     .prog_clk_0_S_out(prog_clk_0_wires[193]),
     .prog_clk_0_W_in(prog_clk_0_wires[192]),
     .Test_en_E_out(Test_enWires[113]),

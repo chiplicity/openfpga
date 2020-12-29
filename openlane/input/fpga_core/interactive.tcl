@@ -82,7 +82,7 @@ gen_pdn
 run_routing
 
 write_powered_verilog
-#set_netlist $::env(lvs_result_file_tag).powered.v
+set_netlist $::env(lvs_result_file_tag).powered.v
 
 if { $::env(DIODE_INSERTION_STRATEGY) == 2 } {
     run_magic_antenna_check; # produces a report of violators; extraction!
