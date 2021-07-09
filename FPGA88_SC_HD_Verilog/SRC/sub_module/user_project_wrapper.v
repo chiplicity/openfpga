@@ -26,7 +26,9 @@
  *-------------------------------------------------------------
  */
 
-`define MPRJ_IO_PADS 38
+`define MPRJ_IO_PADS_1 19	/* number of user GPIO pads on user1 side */
+`define MPRJ_IO_PADS_2 19	/* number of user GPIO pads on user2 side */
+`define MPRJ_IO_PADS (`MPRJ_IO_PADS_1 + `MPRJ_IO_PADS_2)
 
 module user_project_wrapper #(
     parameter BITS = 32
@@ -57,7 +59,7 @@ module user_project_wrapper #(
     // Logic Analyzer Signals
     input  [127:0] la_data_in,
     output [127:0] la_data_out,
-    input  [127:0] la_oen,
+    input  [127:0] la_oenb,
 
     // IOs
     input  [`MPRJ_IO_PADS-1:0] io_in,
@@ -67,11 +69,14 @@ module user_project_wrapper #(
     // Analog (direct connection to GPIO pad---use with caution)
     // Note that analog I/O is not available on the 7 lowest-numbered
     // GPIO pads, and so the analog_io indexing is offset from the
-    // GPIO indexing by 7.
-    inout [`MPRJ_IO_PADS-8:0] analog_io,
+    // GPIO indexing by 7 (also upper 2 GPIOs do not have analog_io).
+    inout [`MPRJ_IO_PADS-10:0] analog_io,
 
     // Independent clock (on independent integer divider)
-    input   user_clock2
+    input   user_clock2,
+
+    // User maskable interrupt signals
+    output [2:0] user_irq
 );
 
     /*
@@ -129,6 +134,15 @@ module user_project_wrapper #(
     // Use drive strength 8 as we will have 33 output pins which is driven by
     // the buffers
     sky130_fd_sc_hd__inv_8 WB_LA_SWITCH_INV (.A(wb_la_switch), .Y(wb_la_switch_b));
+
+    // Wishbone 
+    // wire valid;
+    // wire wen;
+    // wire [3:0] write_en; // write enable
+
+    // assign valid = wbs_cyc_i & wbs_stb_i;
+    // assign wen = wbs_we_i && valid;
+    // assign write_en = wb_sel_i & {4{ram_wen}} ;
 
     // Wire-bond TOP side I/O of FPGA to LEFT-side of Caravel interface
     assign gfpga_pad_EMBEDDED_IO_HD_SOC_IN[0] = io_in[24];

@@ -1,11 +1,11 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1609021636
+timestamp 1625786307
 << obsli1 >>
-rect 1104 2159 23615 22321
+rect 1104 1377 23615 22321
 << obsm1 >>
-rect 290 2128 24182 22500
+rect 290 1368 24182 22568
 << metal2 >>
 rect 294 23800 350 24600
 rect 938 23800 994 24600
@@ -228,7 +228,7 @@ rect 12140 2128 12460 22352
 rect 15872 2128 16192 22352
 rect 19604 2128 19924 22352
 << obsm4 >>
-rect 19379 8331 19445 9213
+rect 20115 11051 20549 15741
 << labels >>
 rlabel metal2 s 17038 23800 17094 24600 6 SC_IN_TOP
 port 1 nsew signal input
@@ -414,4 +414,8 @@ port 90 nsew ground bidirectional
 string LEFclass BLOCK
 string FIXED_BBOX 0 0 24600 24600
 string LEFview TRUE
+string GDS_FILE /project/openlane/grid_clb/runs/grid_clb/results/magic/grid_clb.gds
+string GDS_END 1742432
+string GDS_START 149464
 << end >>
+
