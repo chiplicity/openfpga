@@ -20,6 +20,10 @@
 // Design parameter for FPGA scan-chain sizes
 `define FPGA_SCANCHAIN_SIZE 1024
 
+`define MPRJ_IO_PADS_1 19	/* number of user GPIO pads on user1 side */
+`define MPRJ_IO_PADS_2 19	/* number of user GPIO pads on user2 side */
+`define MPRJ_IO_PADS (`MPRJ_IO_PADS_1 + `MPRJ_IO_PADS_2)
+
 `define UNIT_DELAY #1
 
 `include "and2.v"
@@ -112,7 +116,7 @@ wire [`MPRJ_IO_PADS-1:0] io_in;
 wire [`MPRJ_IO_PADS-1:0] io_out;
 wire [`MPRJ_IO_PADS-1:0] io_oeb;
 // ---- Analog I/O pins ----
-wire [`MPRJ_IO_PADS-8:0] analog_io;
+wire [`MPRJ_IO_PADS-10:0] analog_io;
 wire user_clock2;
 
 wire [0:0] IO_ISOL_N;
@@ -233,7 +237,7 @@ end
 			.wbs_dat_o(wbs_dat_o),
 			.la_data_in(la_data_in),
 			.la_data_out(la_data_out),
-			.la_oen(la_oen),
+			.la_oenb(la_oen),
 			.io_in(io_in),
 			.io_out(io_out),
 			.io_oeb(io_oeb),

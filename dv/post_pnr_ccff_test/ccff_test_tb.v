@@ -18,6 +18,10 @@
 // Design parameter for FPGA bitstream sizes
 `define FPGA_BITSTREAM_SIZE 29696
 
+`define MPRJ_IO_PADS_1 19	/* number of user GPIO pads on user1 side */
+`define MPRJ_IO_PADS_2 19	/* number of user GPIO pads on user2 side */
+`define MPRJ_IO_PADS (`MPRJ_IO_PADS_1 + `MPRJ_IO_PADS_2)
+
 `define UNIT_DELAY #1
 
 `include "and2.v"
@@ -44,6 +48,7 @@
 	`include "gl/grid_clb.v"
 	`include "gl/tie_array.v"
 	`include "gl/fpga_core.v"
+	`include "gl/user_project_wrapper.v"
 `else
 	`include "define_simulation.v"
 	`include "fabric_netlists.v"
@@ -54,7 +59,7 @@
 module post_pnr_ccff_test;
 
 // ---- Wrapper I/O wires ----
-wire [`MPRJ_IO_PADS-8:0] analog_io;
+wire [`MPRJ_IO_PADS-10:0] analog_io;
 
 // ---- Power pins ----
 wire [0:0] vdda1;
@@ -233,7 +238,7 @@ initial
 			.wbs_dat_o(wbs_dat_o),
 			.la_data_in(la_data_in),
 			.la_data_out(la_data_out),
-			.la_oen(la_oen),
+			.la_oenb(la_oen),
 			.io_in(io_in),
 			.io_out(io_out),
 			.io_oeb(io_oeb),

@@ -65,3 +65,4 @@
 // ------ Include fabric top-level netlists -----
 `include "fpga_core.v"
 
+`include "sub_module/user_project_wrapper.v"
