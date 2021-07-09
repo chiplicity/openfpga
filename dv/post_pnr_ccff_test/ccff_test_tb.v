@@ -53,7 +53,6 @@
 	`include "define_simulation.v"
 	`include "fabric_netlists.v"
 	`include "tie_array.v"
-    `include "sub_module/user_project_wrapper.v"
 `endif
 
 module post_pnr_ccff_test;
