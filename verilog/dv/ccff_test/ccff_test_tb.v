@@ -19,13 +19,11 @@
 
 `define USE_POWER_PINS 
 
-`include "defines.v"
 `include "fabric_netlists.v"
 `include "caravel_netlists.v"
 
 `include "spiflash.v"
 `include "tbuart.v"
-`include "tie_array.v"
 
 `define FPGA_BITSTREAM_SIZE 29696
 
@@ -35,7 +33,7 @@
 `define FPGA_PROG_CLOCK_PERIOD 12.5
 `define FPGA_CLOCK_PERIOD 12.5
 
-module io_ports;
+module ccff_test;
   reg clock;
   reg RSTB;
   reg power1, power2;
@@ -215,8 +213,8 @@ module io_ports;
   end
 
   initial begin
-    $dumpfile("io_ports.vcd");
-  	$dumpvars(0, io_ports);
+    $dumpfile("ccff_test.vcd");
+  	$dumpvars(0, ccff_test);
       repeat (`FPGA_BITSTREAM_SIZE + 10) @(posedge prog_clk);
     $display("%c[1;31m",27);
     $display ("Monitor: Timeout, Test Mega-Project IO (ccff_test) Failed");
@@ -276,7 +274,7 @@ module io_ports;
   );
 
   spiflash #(
-    .FILENAME("io_ports.hex")
+    .FILENAME("ccff_test.hex")
   ) spiflash (
     .csb(flash_csb),
     .clk(flash_clk),

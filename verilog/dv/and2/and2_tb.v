@@ -19,13 +19,12 @@
 
 `define USE_POWER_PINS 
 
-`include "defines.v"
 `include "fabric_netlists.v"
 `include "caravel_netlists.v"
 
 `include "spiflash.v"
 `include "tbuart.v"
-`include "tie_array.v"
+
 // Benchmark
 `include "and2.v"
 

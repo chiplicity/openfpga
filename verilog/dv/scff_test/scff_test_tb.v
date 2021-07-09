@@ -17,10 +17,11 @@
 
 `timescale 1 ns / 1 ps
 
-`include "caravel.v"
-`include "spiflash.v"
 `include "fabric_netlists.v"
-`include "tie_array.v"
+`include "caravel_netlists.v"
+
+`include "spiflash.v"
+`include "tbuart.v"
 
 `define FPGA_SCANCHAIN_SIZE 1024
 
@@ -30,7 +31,7 @@
 `define SOC_CLOCK_PERIOD 12.5
 `define FPGA_CLOCK_PERIOD 12.5
 
-module scff_test_post_pnr_caravel_autocheck_top_tb;
+module scff_test;
   reg clock;
   reg RSTB;
   reg power1, power2;
@@ -259,7 +260,7 @@ module scff_test_post_pnr_caravel_autocheck_top_tb;
   );
 
   spiflash #(
-    .FILENAME("io_ports.hex")
+    .FILENAME("scff_test.hex")
   ) spiflash (
     .csb(flash_csb),
     .clk(flash_clk),
