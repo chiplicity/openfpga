@@ -15,7 +15,8 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#include "../../defs.h"
+// This include is relative to $CARAVEL_PATH (see Makefile)
+#include "verilog/dv/caravel/defs.h"
 
 /*
  * Scan-chain Test:
