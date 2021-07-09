@@ -214,6 +214,17 @@ end
     assign ccff_tail[0] = io_out[35];
     assign io_in[26] = sc_head[0];
 	
+		
+	// Power 
+	assign vccd1 = 1'b1 ;
+	assign vccd2 = 1'b1 ;
+	assign vdda1 = 1'b1 ;
+	assign vdda2 = 1'b1 ;
+	assign vssd1 = 1'b0 ;
+	assign vssd2 = 1'b0 ;
+	assign vssa1 = 1'b0 ;
+	assign vssa2 = 1'b0 ;
+
     user_project_wrapper FPGA_DUT(
     `ifdef USE_POWER_PINS
 			.vdda1(vdda1),
