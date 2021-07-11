@@ -28,7 +28,7 @@
 // Benchmark
 `include "and2.v"
 
-`define POWER_UP_TIME_PERIOD 200
+`define POWER_UP_TIME_PERIOD 100
 `define SOC_RESET_TIME_PERIOD 2000
 `define SOC_SETUP_TIME_PERIOD 1000*2001
 `define SOC_CLOCK_PERIOD 12.5
