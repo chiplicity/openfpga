@@ -10,6 +10,7 @@ project:
   process: SKY130
   project_id: '21060004'
   project_name: caravel-openfpga-ef
+  shuttle_url: gitlab.com/efabless/chipignite/2106q/slot-004.git
   tags:
   - Open MPW
   - Test Harness
