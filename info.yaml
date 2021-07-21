@@ -1,0 +1,18 @@
+project:
+  category: Test Harness
+  cover_image: docs/source/_static/caravel_harness.png
+  description: An openfpga implementation using Caravel
+  foundry: SkyWater
+  git_url: https://github.com/efabless/openfpga.git
+  organization: Efabless
+  organization_url: http://efabless.com
+  owner: Manar Abdelatty
+  process: SKY130
+  project_id: '21060004'
+  project_name: caravel-openfpga-ef
+  tags:
+  - Open MPW
+  - Test Harness
+  top_level_netlist: verilog/gl/caravel.v
+  user_level_netlist: verilog/gl/user_project_wrapper.v
+  version: '1.00'
